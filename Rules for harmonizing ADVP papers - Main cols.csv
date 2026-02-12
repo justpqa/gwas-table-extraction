@@ -1,0 +1,20 @@
+﻿column,description,is_numeric
+SNP,"Variant identifier, or snp idenifier, or chr:pos. Keywords: chr:position, chr:pos, Variant, rsID, RS number, MarkerName, rs. Examples: rs12345, 20:45269867, 19:45411941:T:C, chr19:45411941, rs429358 (APOE ε4).",FALSE
+Chr,"Genomic chromosome identifier. Keywords: CHR, Chrom, Chromosome. Examples: 1, 19, X, chr19, chrX.",FALSE
+Position,"Genomic coordinate location. Keywords: BP, POS, Base Pair, start, end. Examples: 45411941, 10240500:10248600 (range), build 37.",FALSE
+Locus,"Specific named genomic region or hit identity. Keywords: Region, Band, Cytoband. Examples: 19q13.32, APOE locus, BIN1 region, locus 1.",FALSE
+Reported gene,"Official gene symbol or name used in gene-based tests. Keywords: Symbol, Mapped Gene. Examples: APOE, ABCA7, TREM2, PICALM.",FALSE
+SNV,"The count or specific list of variants in a gene-level analysis. Keywords: Variant count, N_SNPs, No. of variants. Examples: 45 variants, 12 SNVs, list of 5 variants.",FALSE
+Population,"The ancestral group or ethnicity of the participants. Keywords: Ancestry, Race, Ethnic. Examples: European (EUR), African American (AA), East Asian (EAS), Caribbean Hispanic.",FALSE
+Cohort,"The specific study or database name. Keywords: Study, Dataset, Discovery. Examples: ADNI, IGAP, UK Biobank, ADGC, CHARGE, EADI.",FALSE
+Sample size,"Total number of subjects or observations. Keywords: N, N_total, N_cases, N_controls. Examples: N=1500, 500 cases / 1000 controls, Total N: 12402.",TRUE
+Sample Information,"Metadata regarding where sample data was extracted. Keywords: Source, Table reference. Examples: Table 1, Supplementary Text, Methods Section, Cohort Table.",FALSE
+Subset Analyzed,"The subgroup or demographic filter applied to the analysis. Keywords: Stratification, Subgroup, Filter. Examples: Females only, Age > 80, APOE ε4 carriers, Non-carriers.",FALSE
+Phenotype,"The trait or biological marker being measured. Keywords: Trait, Diagnosis, Outcome. Examples: Alzheimer's Disease (AD), CSF Tau levels, MMSE Score, Hippocampal volume.",FALSE
+Association type,"The statistical framework or study design. Keywords: Model, Analysis, Survival. Examples: Logistic regression, Cox Proportional Hazards, eQTL analysis, Pleiotropy test.",FALSE
+RA,"The allele associated with the effect or risk. Keywords: Effect Allele, Risk Allele, A1, EA. Examples: A, T, G, C, minor, major.",FALSE
+AF,"Frequency of the reported allele in the sample. Keywords: EAF, MAF, RAF, Frequency. Examples: 0.12, 12%, 0.005 (rare), 0.45.",TRUE
+P-value,"The statistical significance of the association. Keywords: P, P-value, P_adj, FDR. Examples: 5.0E-08, 0.0012, 1.2 x 10^-5, 0.05.",TRUE
+Effect Size,"The magnitude and direction of the association. Keywords: Beta, OR, HR, Estimate. Examples: Beta=0.25, OR=1.45, HR=1.12, Log(OR)=0.37.",TRUE
+Confidence Interval,"The uncertainty range of the effect size. Keywords: 95% CI, L95, U95, Range. Examples: (1.20-1.75), [0.85, 0.95], 95% CI: 0.4-0.6.",TRUE
+Imputation,"The software or panel used to predict missing genotypes. Keywords: Panel, HRC, 1000G, TOPMed. Examples: 1000 Genomes Phase 3, HRC v1.1, Imputed via Minimac4.",FALSE

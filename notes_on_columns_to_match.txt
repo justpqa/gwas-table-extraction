@@ -1,0 +1,11 @@
+- Remove all columns that mentions details for some other columns
+- Remove all columns that is version 2 or 2nd copy of sth (RA1 and RA2 => single RA)
+- Remove study type, stage, model, platform type because that interfere with multiindex column, both can be derived from the paper
+- Effect size: add info about hazard ratio
+- Update more detailed description of locus to separate them with SNPid and location
+- Update more precised description of interaction terms
+- Might not keep record type since it can be derived from columns like SNP id, chr
+- pubmed, paper, table id can be derived directly, as well as notes
+- Remove case and control since it can be derived based on specific rule, need more clarification
+- Remove View in GenomicsDB since it need scraping from GenomicsDB on specific gene
+- Remove interaction since it can be derived from notes on the column if having there

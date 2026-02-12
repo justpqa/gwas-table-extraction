@@ -1,0 +1,16 @@
+- Extract table using Docling (for OCR power => accurate extract) and PMC API (for referencing on if we need to rotate page)
+- Clean any non-row (row with out SNP id) + cell and index with the subscript for extra info (like 0.123290 a)
+- Mapping columns => reference columns 
+    + Make the reference column prompt as: {reference col}: {description and examples}
+    + Convert any abbreviation in the name => actual meaning
+    + Make the column prompt as: {col}: {example values}
+    + For single-index col: map directly to reference prompt and find the best one with sim score >= 0.4
+    + For multi-index col: try each option of {subcol}: {example values}, find the best score with sim score >= 0.4
+- Create final tables
+    + Each col that do not share same ref col with other => add directly to final table 
+    + Each col that share same ref col with other
+        - If not in col to be melt => add directly to final table as {ref_col}_{inx} + add a note
+        - If in col to be melt 
+            => add to final table temporarily
+            => For each group to be melt, we melt the table with (not melt col) + (melt col in curr group)
+            => Later join all these tables on (not melt col)

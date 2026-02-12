@@ -1,0 +1,16 @@
+# camelot-py
+# pdfplumber
+# tabula-py
+# pymupdf 
+numpy
+pandas
+lxml
+ipykernel
+requests
+# rich
+# xmltodict
+docling
+sentence-transformers
+openpyxl
+torch
+transformers
