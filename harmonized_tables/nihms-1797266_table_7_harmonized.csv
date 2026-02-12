@@ -1,0 +1,4 @@
+Subset Analyzed,SNP_1,SNP_1 notes,SNP_2,SNP_2 notes,Sample size_1,Sample size_1 notes,Sample size_2,Sample size_2 notes,Effect Size,Confidence Interval,P-value,Gene,file_name
+No,17:11183894_G_A,SNP (chr:pos),rs146729640,SNP (rs),"1,785",N (AD),"1,565",N (controls),1.49,1.06 ; 2.08,0.0217,SHISA6,nihms-1797266_table_7.csv
+APOE4 carriers,17:11183894_G_A,SNP (chr:pos),rs146729640,SNP (rs),"1,326",N (AD),572,N (controls),1.35,0.95 ; 1.93,0.095,SHISA6,nihms-1797266_table_7.csv
+non- APOE4 carriers,17:11183894_G_A,SNP (chr:pos),rs146729640,SNP (rs),459,N (AD),993,N (controls),1.82,0.96 ; 3.43,0.0658,SHISA6,nihms-1797266_table_7.csv

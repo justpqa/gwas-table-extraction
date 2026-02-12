@@ -1,0 +1,7 @@
+Subset Analyzed,SNP_1,SNP_1 notes,SNP_2,SNP_2 notes,Sample size,Effect Size,P-value,Gene,Confidence Interval notes,Confidence Interval,file_name
+No,17:11183894_G_A,SNP (chr:pos),rs146729640,SNP (rs),"1,160",6.38,5.59e-09,SHISA6,N (CI),362,nihms-1797266_table_6.csv
+APOE4 carriers,17:11183894_G_A,SNP (chr:pos),rs146729640,SNP (rs),290,2.93,0.0232,SHISA6,N (CI),105,nihms-1797266_table_6.csv
+non- APOE4 carriers,17:11183894_G_A,SNP (chr:pos),rs146729640,SNP (rs),870,8.96,8.44e-09,SHISA6,N (CI),257,nihms-1797266_table_6.csv
+No,17:11183894_G_A,SNP (chr:pos),rs146729640,SNP (rs),"1,160",6.38,5.59e-09,SHISA6,Hazard Ratio 95% CI,3.42 ; 11.90,nihms-1797266_table_6.csv
+APOE4 carriers,17:11183894_G_A,SNP (chr:pos),rs146729640,SNP (rs),290,2.93,0.0232,SHISA6,Hazard Ratio 95% CI,1.16 ; 7.40,nihms-1797266_table_6.csv
+non- APOE4 carriers,17:11183894_G_A,SNP (chr:pos),rs146729640,SNP (rs),870,8.96,8.44e-09,SHISA6,Hazard Ratio 95% CI,4.25 ; 18.91,nihms-1797266_table_6.csv

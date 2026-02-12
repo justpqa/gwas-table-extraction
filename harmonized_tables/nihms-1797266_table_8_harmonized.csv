@@ -1,0 +1,13 @@
+Subset Analyzed,SNP,Studies combined.,Sample size,Confidence Interval,P-value,Effect Size notes,Effect Size,file_name
+NO,rs146729640,Amish and NIA- LOAD,"4,872",1.54; 2.78,<0.0001,Meta-Analysis results.Model,Fixed effect,nihms-1797266_table_8.csv
+NO,rs146729640,Amish and NIA- LOAD,"4,872",0.72; 12.50,0.1308,Meta-Analysis results.Model,Random effects,nihms-1797266_table_8.csv
+APOE4 carriers,rs146729640,Amish and NIA- LOAD,"2,293",1.072; 2.09,0.0178,Meta-Analysis results.Model,Fixed effect,nihms-1797266_table_8.csv
+APOE4 carriers,rs146729640,Amish and NIA- LOAD,"2,293",0.86; 3.60,0.1219,Meta-Analysis results.Model,Random effects,nihms-1797266_table_8.csv
+non- APOE4 carriers,rs146729640,Amish and NIA- LOAD,"2,579",2.19; 5.78,<0.0001,Meta-Analysis results.Model,Fixed effect,nihms-1797266_table_8.csv
+non- APOE4 carriers,rs146729640,Amish and NIA- LOAD,"2,579",0.83; 19.04,0.0831,Meta-Analysis results.Model,Random effects,nihms-1797266_table_8.csv
+NO,rs146729640,Amish and NIA- LOAD,"4,872",1.54; 2.78,<0.0001,Meta-Analysis results.Hazard Ratio,2.07,nihms-1797266_table_8.csv
+NO,rs146729640,Amish and NIA- LOAD,"4,872",0.72; 12.50,0.1308,Meta-Analysis results.Hazard Ratio,3.0,nihms-1797266_table_8.csv
+APOE4 carriers,rs146729640,Amish and NIA- LOAD,"2,293",1.072; 2.09,0.0178,Meta-Analysis results.Hazard Ratio,1.5,nihms-1797266_table_8.csv
+APOE4 carriers,rs146729640,Amish and NIA- LOAD,"2,293",0.86; 3.60,0.1219,Meta-Analysis results.Hazard Ratio,1.76,nihms-1797266_table_8.csv
+non- APOE4 carriers,rs146729640,Amish and NIA- LOAD,"2,579",2.19; 5.78,<0.0001,Meta-Analysis results.Hazard Ratio,3.56,nihms-1797266_table_8.csv
+non- APOE4 carriers,rs146729640,Amish and NIA- LOAD,"2,579",0.83; 19.04,0.0831,Meta-Analysis results.Hazard Ratio,3.99,nihms-1797266_table_8.csv

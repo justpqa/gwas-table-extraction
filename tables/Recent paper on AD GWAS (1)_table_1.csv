@@ -1,0 +1,3 @@
+Locus,SNP,Chromosome,Position,Effect allele,Reference allele,"P, MR-MEGA","P, ancestry heterogeneity","P, random effects","beta, random effects","SE, random effects",I2,Mean effect allele frequency,Minimum effect allele frequency,Maximum effect allele frequency
+VWA5B2,rs9837978,3,183936947,G,A,2.32E - 07,5.96E - 01,3.75E - 08,- 0.053,0.009,0.000,0.287,0.171,0.450
+TRANK1,rs9867455,3,36953424,A,T,7.33E - 08,1.18E - 01,3.49E - 08,- 0.042,0.008,0.000,0.405,0.326,0.503

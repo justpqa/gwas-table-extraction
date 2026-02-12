@@ -1,0 +1,7 @@
+Lobe.,Annotation (nearby).,Gene.,Rs-ID.,Chr.,Position.,A1.,A2.,European ancestry meta-analysis.Frq,European ancestry meta-analysis.Effect,European ancestry meta-analysis.SE,European ancestry meta-analysis.p,Multi-ethnic meta-analysis.Frq,Multi-ethnic meta-analysis.Effect,Multi-ethnic meta-analysis.SE,Multi-ethnic meta-analysis.p,"Replication sample ( n = 8,789).N","Replication sample ( n = 8,789).R 2 (%)","Replication sample ( n = 8,789).Frq","Replication sample ( n = 8,789).Effect","Replication sample ( n = 8,789).SE","Replication sample ( n = 8,789).p"
+Parietal,UTR3,ZIC4,rs2279829,3,147106319,T,C,0.21,- 0.92,0.16,5.3 × 10 - 9,0.21,- 0.95,0.15,4.4 × 10 - 10,"16,015",0.24,0.22,0.63,0.18,6.0 × 10 - 4
+Temporal,Intronic,MSRB3,rs146354218,12,65793942,A,G,0.37,0.69,0.11,1.2 × 10 - 9,0.37,0.69,0.11,6.4 × 10 - 10,"15,789",0.24,- 0.37 0.54,0.14,0.18,6.4 × 10 - 5
+Occipital,Intergenic,DAAM1 (dist = 24302),rs147148763,14,59631075,G,GTTGT,0.13,- 0.83,0.14,6.6 × 10 - 9,0.13,- 0.85,0.14,2.9 × 10 - 9,"15,220",0.23 0.12,- 0.80,0.12,0.18,3.1 × 10 - 11
+Occipital,Intronic,FGFRL1,rs74921869,4,1013382,A,G,0.2,- 0.84,0.14,5.9 × 10 - 9,0.2,- 0.82,0.14,6.2 × 10 - 9,"12,424",0.27,0.19 - 0.22,0.10,0.18,3.0 × 10 - 2
+Occipital,Intergenic,CENPW (dist = 175626),rs1337736,6,126845380,A,G,0.23,- 0.64,0.12,8.1 × 10 - 8,0.23,- 0.64,0.12,4.0 × 10 - 8,"16,016",0.19,0.23 - 0.46,0.09,0.18,8.0 × 10 - 7
+Occipital,Upstream,MIR92B/THBS3,rs12411216,1,155164480,A,C,0.46,- 0.52,0.10,3.9 × 10 - 8,0.46,- 0.49,0.09,1.4 × 10 - 7,"16,016",0.17,0.45 -,0.19,0.08 1.6,× 10 - 2
