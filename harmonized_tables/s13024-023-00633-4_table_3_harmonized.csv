@@ -1,4 +1,4 @@
-Chr,Position,SNP_1,SNP_1 notes,SNP_2,SNP_2 notes,RA,Nearest gene,Cognitive Domain.,Effect Size,P-value notes,P-value,file_name
+Chr,Position,SNP_1,SNP_1 notes,SNP_2,SNP_2 notes,RA,Reported gene,Cognitive Domain.,Effect Size,P-value notes,P-value,file_name
 2,127135234,rs6733839,Variant.,-0.002 (0.001) -0.002 (0.001),Individual locus.β G × Age (SE),T/C (0.403),BIN1 CYP27C1,Language Memory,-0.031 (0.006) -0.039 (0.006),Individual locus.P G,6.90 × 10 -8 2.20 × 10 -9,s13024-023-00633-4_table_3.csv
 4,179150192,rs73005629,Variant.,-0.007 (0.002) -0.006 (0.002),Individual locus.β G × Age (SE),C/T (0.022),LOC107984373,Language Memory,-0.048 (0.019) -0.062 (0.021),Individual locus.P G,1.21 × 10 -2 3.97 × 10 -3,s13024-023-00633-4_table_3.csv
 8,102060792,rs56162098,Variant.,0.001 (0.001) -0.001 (0.001),Individual locus.β G × Age (SE),C/T (0.138),NCALD,Language Memory,0.019 (0.008) -0.013 (0.009),Individual locus.P G,1.64 × 10 -2 1.68 × 10 -1,s13024-023-00633-4_table_3.csv

@@ -1,4 +1,4 @@
-Chr,Position,SNP,RA,Nearest gene,Cognitive Domain.,Cohorts b.,Effect Size notes,Effect Size,P-value notes,P-value,file_name
+Chr,Position,SNP,RA,Locus,Cognitive Domain.,Cohorts b.,Effect Size notes,Effect Size,P-value notes,P-value,file_name
 1,207573951,rs1752684,A/G (0.198),CR1,Executive Function,All,Genetic effects.β G (SE),-0.028 (0.007),Genetic effects.P G,1.53 × 10 -4,s13024-023-00633-4_table_2.csv
 1,207573951,rs1752684,A/G (0.198),CR1,Executive Function,All,Genetic effects.β G (SE),-0.028 (0.007),Genetic effects.P G × Age,6.05 × 10 -3,s13024-023-00633-4_table_2.csv
 1,207573951,rs1752684,A/G (0.198),CR1,Executive Function,All,Genetic effects.β G (SE),-0.028 (0.007),Genetic effects.P Joint,5.05 × 10 -5,s13024-023-00633-4_table_2.csv
