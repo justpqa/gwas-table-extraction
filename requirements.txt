@@ -14,3 +14,7 @@ sentence-transformers
 openpyxl
 torch
 transformers
+tqdm
+accelerate 
+bitsandbytes
+mlx-lm
