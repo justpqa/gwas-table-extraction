@@ -13,9 +13,7 @@ from docling.datamodel.base_models import InputFormat
 from docling.datamodel.pipeline_options import PdfPipelineOptions, TableFormerMode
 from docling.document_converter import DocumentConverter, PdfFormatOption
 from docling.datamodel.document import DocumentStream
-import torch
-import torch.nn.functional as F
-from transformers import AutoTokenizer, AutoModel, PreTrainedModel, PreTrainedTokenizerBase
+from gwas_column_matching_engine import GWASColumnMatchingEngine
 
 def extract_tables_num_col_lst_from_pmc(pmcid: str) -> List[int]:
     """
@@ -174,243 +172,241 @@ def extract_tables_lst_from_paper(pmcid: str, file_name: str, table_inx_to_extra
     df_lst = extract_tables_lst_from_pdf_and_num_col(file_name, tables_num_col_lst)
     return df_lst
 
-def create_embeddings_from_model(sentences: str | List[str], model: PreTrainedModel, tokenizer: PreTrainedTokenizerBase):
-    """
-    Generate embeddings from any model with mean pooling for sentence embeddings
-    """
-    input = tokenizer(sentences, padding=True, truncation=True, return_tensors='pt')
+# def create_embeddings_from_model(sentences: str | List[str], model: PreTrainedModel, tokenizer: PreTrainedTokenizerBase):
+#     """
+#     Generate embeddings from any model with mean pooling for sentence embeddings
+#     """
+#     input = tokenizer(sentences, padding=True, truncation=True, return_tensors='pt')
 
-    # get token embeddings
-    with torch.no_grad():
-        output = model(**input)
-    token_embeddings = output[0]
+#     # get token embeddings
+#     with torch.no_grad():
+#         output = model(**input)
+#     token_embeddings = output[0]
 
-    # extract mask and mean pooling for sentence embeddings
-    input_mask_expanded = input['attention_mask'].unsqueeze(-1).expand(token_embeddings.size()).float()
-    sentence_embeddings = torch.sum(token_embeddings * input_mask_expanded, 1) / torch.clamp(input_mask_expanded.sum(1), min=1e-9)
+#     # extract mask and mean pooling for sentence embeddings
+#     input_mask_expanded = input['attention_mask'].unsqueeze(-1).expand(token_embeddings.size()).float()
+#     sentence_embeddings = torch.sum(token_embeddings * input_mask_expanded, 1) / torch.clamp(input_mask_expanded.sum(1), min=1e-9)
 
-    # final normalization
-    sentence_embeddings = F.normalize(sentence_embeddings, p=2, dim=1)
+#     # final normalization
+#     sentence_embeddings = F.normalize(sentence_embeddings, p=2, dim=1)
 
-    return sentence_embeddings
+#     return sentence_embeddings
 
-def clean_col(col: str) -> str:
-    """
-    Clean a column by replacing any possible abbreviation with their actual meaning for better semantic matching
-    """
-    gwas_abbreviation_dict = {
-        "CHR": "Chromosome number",
-        "BP": "Base-pair position",
-        "POS": "Position",
-        "SNP": "Single nucleotide polymorphism identifier",
-        "RS": "Reference Single nucleotide polymorphism",
-        "VAR": "Variant",
-        "ID": "identifier",
-        "A1": "Effect allele / tested allele",
-        "A2": "Other allele / non-effect allele",
-        "REF": "Reference allele (genome reference)",
-        "ALT": "Alternate allele",
-        "EA": "Effect Allele",
-        "NEA": "Non-Effect Allele",
-        "RA": "Risk Allele",
-        "OA": "Other Allele",
-        "AF": "Allele Frequency (general term)",
-        "RAF": "Risk Allele Frequency",
-        "EAF": "Effect Allele Frequency",
-        "MAF": "Minor Allele Frequency",
-        "BETA": "Effect size (regression coefficient)",
-        "OR": "Odds Ratio",
-        "SE": "Standard Error of effect estimate",
-        "Z": "Z-score statistic",
-        "T": "T-statistic",
-        "CI": "Confidence Interval",
-        "P": "P-value",
-        "PVAL": "P-value",
-        "LOGP": "Negative log10 P-value",
-        "Q": "Heterogeneity statistic (meta-analysis)",
-        "I2": "I-squared heterogeneity metric",
-        "HWE": "Hardy-Weinberg Equilibrium test statistic",
-        "INFO": "Imputation quality score",
-        "R2": "Imputation accuracy metric",
-        "CALLRATE": "Genotype call rate",
-        "MISSING": "Missing genotype rate",
-        "N": "Total sample size",
-        "N_CASES": "Number of cases (for binary traits)",
-        "N_CONTROLS": "Number of controls (for binary traits)",
-        "EUR": "European ancestry",
-        "AFR": "African ancestry",
-        "ASN": "Asian ancestry",
-        "AMR": "Admixed American ancestry",
-        "SAS": "South Asian ancestry",
-        "EAS": "East Asian ancestry",
-        "LD": "Linkage Disequilibrium",
-        "DPRIME": "LD D’ value",
-        "CADD": "CADD score (functional impact)",
-        "EQTL": "Expression quantitative trait locus",
-        "PQTL": "Protein QTL",
-        "GWGAS": "Gene-wide association study",
-        "PRS": "Polygenic Risk Score",
-        "PGS": "Polygenic Score",
-        "QC": "Quality Control",
-        "MA": "Meta-analysis",
-        "HLA": "Human Leukocyte Antigen region",
-        "HR": "Hazard ratio",
-        "HET": "Heterogeneity test",
-        "APOE4": "APOE ε4",
-        "APOE*4": "APOE ε4",
-        "#": "Number of",
-        "frq": "Frequency",
-        'β': "Effect",
-        "nsnps": "Number of Variants"
-    }
+# def clean_col(col: str) -> str:
+#     """
+#     Clean a column by replacing any possible abbreviation with their actual meaning for better semantic matching
+#     """
+#     gwas_abbreviation_dict = {
+#         "CHR": "Chromosome number",
+#         "BP": "Base-pair position",
+#         "POS": "Position",
+#         "SNP": "Single nucleotide polymorphism identifier",
+#         "RS": "Reference Single nucleotide polymorphism",
+#         "VAR": "Variant",
+#         "ID": "identifier",
+#         "A1": "Effect allele / tested allele",
+#         "A2": "Other allele / non-effect allele",
+#         "REF": "Reference allele (genome reference)",
+#         "ALT": "Alternate allele",
+#         "EA": "Effect Allele",
+#         "NEA": "Non-Effect Allele",
+#         "RA": "Risk Allele",
+#         "OA": "Other Allele",
+#         "AF": "Allele Frequency (general term)",
+#         "RAF": "Risk Allele Frequency",
+#         "EAF": "Effect Allele Frequency",
+#         "MAF": "Minor Allele Frequency",
+#         "BETA": "Effect size (regression coefficient)",
+#         "OR": "Odds Ratio",
+#         "SE": "Standard Error of effect estimate",
+#         "Z": "Z-score statistic",
+#         "T": "T-statistic",
+#         "CI": "Confidence Interval",
+#         "P": "P-value",
+#         "PVAL": "P-value",
+#         "LOGP": "Negative log10 P-value",
+#         "Q": "Heterogeneity statistic (meta-analysis)",
+#         "I2": "I-squared heterogeneity metric",
+#         "HWE": "Hardy-Weinberg Equilibrium test statistic",
+#         "INFO": "Imputation quality score",
+#         "R2": "Imputation accuracy metric",
+#         "CALLRATE": "Genotype call rate",
+#         "MISSING": "Missing genotype rate",
+#         "N": "Total sample size",
+#         "N_CASES": "Number of cases (for binary traits)",
+#         "N_CONTROLS": "Number of controls (for binary traits)",
+#         "EUR": "European ancestry",
+#         "AFR": "African ancestry",
+#         "ASN": "Asian ancestry",
+#         "AMR": "Admixed American ancestry",
+#         "SAS": "South Asian ancestry",
+#         "EAS": "East Asian ancestry",
+#         "LD": "Linkage Disequilibrium",
+#         "DPRIME": "LD D’ value",
+#         "CADD": "CADD score (functional impact)",
+#         "EQTL": "Expression quantitative trait locus",
+#         "PQTL": "Protein QTL",
+#         "GWGAS": "Gene-wide association study",
+#         "PRS": "Polygenic Risk Score",
+#         "PGS": "Polygenic Score",
+#         "QC": "Quality Control",
+#         "MA": "Meta-analysis",
+#         "HLA": "Human Leukocyte Antigen region",
+#         "HR": "Hazard ratio",
+#         "HET": "Heterogeneity test",
+#         "APOE4": "APOE ε4",
+#         "APOE*4": "APOE ε4",
+#         "#": "Number of",
+#         "frq": "Frequency",
+#         'β': "Effect",
+#         "nsnps": "Number of Variants"
+#     }
     
-    new_col = col
-    for abb in gwas_abbreviation_dict:
-        if re.search(fr"[^a-zA-Z]{abb.lower()}[^a-zA-Z]", new_col.lower()):
-            new_col = re.sub(fr"([^a-zA-Z]){abb.lower()}([^a-zA-Z])", fr"\1{gwas_abbreviation_dict[abb]}\2", new_col.lower())
-        elif re.search(fr"^{abb.lower()}[^a-zA-Z]", new_col.lower()):
-            new_col = re.sub(fr"^{abb.lower()}([^a-zA-Z])", fr"{gwas_abbreviation_dict[abb]}\1", new_col.lower())
-        elif re.search(fr"[^a-zA-Z]{abb.lower()}$", new_col.lower()):
-            new_col = re.sub(fr"([^a-zA-Z]){abb.lower()}$", fr"\1{gwas_abbreviation_dict[abb]}", new_col.lower())
-        elif re.search(fr"^{abb.lower()}$", new_col.lower()):
-            new_col = re.sub(fr"{abb.lower()}", gwas_abbreviation_dict[abb], new_col.lower())
-    # new_col = new_col.replace(".", " ")
-    return new_col
+#     new_col = col
+#     for abb in gwas_abbreviation_dict:
+#         if re.search(fr"[^a-zA-Z]{abb.lower()}[^a-zA-Z]", new_col.lower()):
+#             new_col = re.sub(fr"([^a-zA-Z]){abb.lower()}([^a-zA-Z])", fr"\1{gwas_abbreviation_dict[abb]}\2", new_col.lower())
+#         elif re.search(fr"^{abb.lower()}[^a-zA-Z]", new_col.lower()):
+#             new_col = re.sub(fr"^{abb.lower()}([^a-zA-Z])", fr"{gwas_abbreviation_dict[abb]}\1", new_col.lower())
+#         elif re.search(fr"[^a-zA-Z]{abb.lower()}$", new_col.lower()):
+#             new_col = re.sub(fr"([^a-zA-Z]){abb.lower()}$", fr"\1{gwas_abbreviation_dict[abb]}", new_col.lower())
+#         elif re.search(fr"^{abb.lower()}$", new_col.lower()):
+#             new_col = re.sub(fr"{abb.lower()}", gwas_abbreviation_dict[abb], new_col.lower())
+#     # new_col = new_col.replace(".", " ")
+#     return new_col
 
-def make_col_prompt(col: str, example_values: Iterable, num_example_values: int = 5):
-    """
-    Based on the column title and some possible values of that columns, try to make a prompt
-    """
-    col_prompt = f"{col}: "
-    for i in range(min(num_example_values, len(example_values))):
-        col_prompt += f"{example_values[i]}, "
-    return col_prompt
+# def make_col_prompt(col: str, example_values: Iterable, num_example_values: int = 5):
+#     """
+#     Based on the column title and some possible values of that columns, try to make a prompt
+#     """
+#     col_prompt = f"{col}: "
+#     for i in range(min(num_example_values, len(example_values))):
+#         col_prompt += f"{example_values[i]}, "
+#     return col_prompt
 
-def match_single_col_to_ref_col(col: str, ref_col_lst: List[str], ref_col_embeddings: np.ndarray | torch.Tensor,
-                                embeddings_model: PreTrainedModel, embeddings_model_tokenizer: PreTrainedTokenizerBase):
-    """
-    match a single column to reference col given column, the list of referencing col and their embeddings
-    """
-    # calculate column embedding
-    # col_embeddings = embeddings_model.encode(col, normalize_embeddings=True)
-    # multi_index_pattern = r".+\..+"
-    # if re.search(multi_index_pattern, col):
-    #     col = col.replace(".", " ")
-    #     # sub_col_lst = col.split(".")
-    #     # sub_col_embeddings = create_embeddings_from_model(sub_col_lst, embeddings_model, embeddings_model_tokenizer)
-    #     # col_embeddings = torch.mean(sub_col_embeddings, dim = 0)
-    #     col = col.replace(".", " ")
-    #     col_embeddings = create_embeddings_from_model(col, embeddings_model, embeddings_model_tokenizer)
-    # else:
-    #     col_embeddings = create_embeddings_from_model(col, embeddings_model, embeddings_model_tokenizer)
-    col_embeddings = create_embeddings_from_model(col, embeddings_model, embeddings_model_tokenizer)
-    col_embeddings = col_embeddings.reshape(-1, 1)
+# def match_single_col_to_ref_col(col: str, ref_col_lst: List[str], ref_col_embeddings: np.ndarray | torch.Tensor,
+#                                 embeddings_model: PreTrainedModel, embeddings_model_tokenizer: PreTrainedTokenizerBase):
+#     """
+#     match a single column to reference col given column, the list of referencing col and their embeddings
+#     """
+#     # calculate column embedding
+#     # col_embeddings = embeddings_model.encode(col, normalize_embeddings=True)
+#     # multi_index_pattern = r".+\..+"
+#     # if re.search(multi_index_pattern, col):
+#     #     col = col.replace(".", " ")
+#     #     # sub_col_lst = col.split(".")
+#     #     # sub_col_embeddings = create_embeddings_from_model(sub_col_lst, embeddings_model, embeddings_model_tokenizer)
+#     #     # col_embeddings = torch.mean(sub_col_embeddings, dim = 0)
+#     #     col = col.replace(".", " ")
+#     #     col_embeddings = create_embeddings_from_model(col, embeddings_model, embeddings_model_tokenizer)
+#     # else:
+#     #     col_embeddings = create_embeddings_from_model(col, embeddings_model, embeddings_model_tokenizer)
+#     col_embeddings = create_embeddings_from_model(col, embeddings_model, embeddings_model_tokenizer)
+#     col_embeddings = col_embeddings.reshape(-1, 1)
 
-    # calculate similarity score
-    scores = torch.matmul(ref_col_embeddings, col_embeddings).reshape(-1)
+#     # calculate similarity score
+#     scores = torch.matmul(ref_col_embeddings, col_embeddings).reshape(-1)
 
-    # sort similairty score
-    top_k_indices = torch.argsort(scores, descending=True)
+#     # sort similairty score
+#     top_k_indices = torch.argsort(scores, descending=True)
 
-    # verify if we even got good enough similarity
-    best_inx = top_k_indices[0].item()
-    best_score = scores[best_inx].item()
-    # second_best_inx = top_k_indices[1].item()
-    # second_best_score = scores[second_best_inx].item()
-    # need a threshold for score or else, just return col
-    # if best_score < 0.4: 
-    #     return (col, 1)
+#     # verify if we even got good enough similarity
+#     best_inx = top_k_indices[0].item()
+#     best_score = scores[best_inx].item()
+#     # second_best_inx = top_k_indices[1].item()
+#     # second_best_score = scores[second_best_inx].item()
+#     # need a threshold for score or else, just return col
+#     # if best_score < 0.4: 
+#     #     return (col, 1)
     
-    # # now do rerank
-    # candidates = [ref_col_lst[inx] for inx in top_k_indices if scores[inx] >= 0.4]
-    # candidates_scores = [scores[inx] for inx in top_k_indices if scores[inx] >= 0.4]
-    # best_ref_col, best_ref_col_scores = reranking_from_model(col, candidates, candidates_scores)
-    # return (best_ref_col, best_ref_col_scores)
+#     # # now do rerank
+#     # candidates = [ref_col_lst[inx] for inx in top_k_indices if scores[inx] >= 0.4]
+#     # candidates_scores = [scores[inx] for inx in top_k_indices if scores[inx] >= 0.4]
+#     # best_ref_col, best_ref_col_scores = reranking_from_model(col, candidates, candidates_scores)
+#     # return (best_ref_col, best_ref_col_scores)
 
-    if best_score >= 0.4:
-        return (ref_col_lst[best_inx], best_score)
-    return (col, 1)
+#     if best_score >= 0.4:
+#         return (ref_col_lst[best_inx], best_score)
+#     return (col, 1)
 
-def match_many_col_to_ref_col(df: pd.DataFrame, ref_col_df: pd.DataFrame, 
-                              embeddings_model: PreTrainedModel, embeddings_model_tokenizer: PreTrainedTokenizerBase):
-    """
-    Given a list of column and a dataframe (could be dict later on if that fits better),
-    try to match each column to the best fitted reference col, 
-    return a dict of ref col : list of (col, cleaned col prompt, score)
-    """
-    # prepare the embeddings for reference col since we reuse them
-    ref_col_lst = ref_col_df["column"].to_list()
-    ref_col_context_lst = ref_col_df["column_with_context"].to_list()
-    ref_col_embeddings = create_embeddings_from_model(ref_col_context_lst, embeddings_model, embeddings_model_tokenizer)
+# def match_many_col_to_ref_col(df: pd.DataFrame, ref_col_df: pd.DataFrame, 
+#                               embeddings_model: PreTrainedModel, embeddings_model_tokenizer: PreTrainedTokenizerBase):
+#     """
+#     Given a list of column and a dataframe (could be dict later on if that fits better),
+#     try to match each column to the best fitted reference col, 
+#     return a dict of ref col : list of (col, cleaned col prompt, score)
+#     """
+#     # prepare the embeddings for reference col since we reuse them
+#     ref_col_lst = ref_col_df["column"].to_list()
+#     ref_col_context_lst = ref_col_df["column_with_context"].to_list()
+#     ref_col_embeddings = create_embeddings_from_model(ref_col_context_lst, embeddings_model, embeddings_model_tokenizer)
 
-    # conduct matching
-    multi_index_pattern = r"^.+\..+$" # need multi index pattern for handling multi index
-    ref_col_to_col_lst = {}
-    for col in df.columns:
+#     # conduct matching
+#     multi_index_pattern = r"^.+\..+$" # need multi index pattern for handling multi index
+#     ref_col_to_col_lst = {}
+#     for col in df.columns:
 
-        # extract values needed for prompt
-        cleaned_col = clean_col(col)
-        example_values = df[col].unique().tolist()
-        # prompt: {col}: example, need to delete all : first
+#         # extract values needed for prompt
+#         cleaned_col = clean_col(col)
+#         example_values = df[col].unique().tolist()
+#         # prompt: {col}: example, need to delete all : first
 
-        if re.search(multi_index_pattern, cleaned_col.strip()):
-            # try to assess each part and see if which one have highest score
-            best_ref_col, best_score = None, 0
-            best_cleaned_sub_col_prompt = None
-            for sub_col in cleaned_col.split("."):
+#         if re.search(multi_index_pattern, cleaned_col.strip()):
+#             # try to assess each part and see if which one have highest score
+#             best_ref_col, best_score = None, 0
+#             best_cleaned_sub_col_prompt = None
+#             for sub_col in cleaned_col.split("."):
 
-                # make column prompt for each sub col
-                cleaned_sub_col_prompt = make_col_prompt(sub_col, example_values)
+#                 # make column prompt for each sub col
+#                 cleaned_sub_col_prompt = make_col_prompt(sub_col, example_values)
                 
-                # matching and compare
-                ref_col, score = match_single_col_to_ref_col(cleaned_sub_col_prompt, ref_col_lst, ref_col_embeddings, embeddings_model, embeddings_model_tokenizer)
-                if score > best_score and ref_col != cleaned_sub_col_prompt:
-                    best_ref_col = ref_col
-                    best_score = score
-                    best_cleaned_sub_col_prompt = cleaned_sub_col_prompt
+#                 # matching and compare
+#                 ref_col, score = match_single_col_to_ref_col(cleaned_sub_col_prompt, ref_col_lst, ref_col_embeddings, embeddings_model, embeddings_model_tokenizer)
+#                 if score > best_score and ref_col != cleaned_sub_col_prompt:
+#                     best_ref_col = ref_col
+#                     best_score = score
+#                     best_cleaned_sub_col_prompt = cleaned_sub_col_prompt
             
-            # if we have a best one vs not
-            if best_ref_col is not None:
-                if best_ref_col not in ref_col_to_col_lst:
-                    ref_col_to_col_lst[best_ref_col] = []
-                ref_col_to_col_lst[best_ref_col].append((col, best_cleaned_sub_col_prompt, score))
-            else:
-                if col not in ref_col_to_col_lst:
-                    ref_col_to_col_lst[col] = []
-                ref_col_to_col_lst[col].append((col, best_cleaned_sub_col_prompt, 1))
-        else:
-            # match a single col with best fit referencing col and return a dict
-            # make the col prompt
-            # extra steps to remove .
-            cleaned_col = cleaned_col.replace(".", "")
-            cleaned_col_prompt = make_col_prompt(cleaned_col, example_values)
+#             # if we have a best one vs not
+#             if best_ref_col is not None:
+#                 if best_ref_col not in ref_col_to_col_lst:
+#                     ref_col_to_col_lst[best_ref_col] = []
+#                 ref_col_to_col_lst[best_ref_col].append((col, best_cleaned_sub_col_prompt, score))
+#             else:
+#                 if col not in ref_col_to_col_lst:
+#                     ref_col_to_col_lst[col] = []
+#                 ref_col_to_col_lst[col].append((col, best_cleaned_sub_col_prompt, 1))
+#         else:
+#             # match a single col with best fit referencing col and return a dict
+#             # make the col prompt
+#             # extra steps to remove .
+#             cleaned_col = cleaned_col.replace(".", "")
+#             cleaned_col_prompt = make_col_prompt(cleaned_col, example_values)
 
-            # matching for best col
-            ref_col, score = match_single_col_to_ref_col(cleaned_col_prompt, ref_col_lst, ref_col_embeddings, embeddings_model, embeddings_model_tokenizer)
-            # if we still get same col
-            if ref_col == cleaned_col_prompt: 
-                ref_col = col
-            if ref_col not in ref_col_to_col_lst:
-                ref_col_to_col_lst[ref_col] = []
-            ref_col_to_col_lst[ref_col].append((col, cleaned_col_prompt, score))
-        # ref_col, score = match_single_col_to_ref_col(cleaned_col_prompt, ref_col_lst, ref_col_embeddings)
-        # if ref_col == cleaned_col_prompt: 
-        #     ref_col = col
-        # if ref_col not in ref_col_to_col_lst:
-        #     ref_col_to_col_lst[ref_col] = []
-        # ref_col_to_col_lst[ref_col].append((col, cleaned_col_prompt, score))
+#             # matching for best col
+#             ref_col, score = match_single_col_to_ref_col(cleaned_col_prompt, ref_col_lst, ref_col_embeddings, embeddings_model, embeddings_model_tokenizer)
+#             # if we still get same col
+#             if ref_col == cleaned_col_prompt: 
+#                 ref_col = col
+#             if ref_col not in ref_col_to_col_lst:
+#                 ref_col_to_col_lst[ref_col] = []
+#             ref_col_to_col_lst[ref_col].append((col, cleaned_col_prompt, score))
+#         # ref_col, score = match_single_col_to_ref_col(cleaned_col_prompt, ref_col_lst, ref_col_embeddings)
+#         # if ref_col == cleaned_col_prompt: 
+#         #     ref_col = col
+#         # if ref_col not in ref_col_to_col_lst:
+#         #     ref_col_to_col_lst[ref_col] = []
+#         # ref_col_to_col_lst[ref_col].append((col, cleaned_col_prompt, score))
 
-    return ref_col_to_col_lst
+#     return ref_col_to_col_lst
 
-def format_original_table(df: pd.DataFrame, referencing_cols_df: pd.DataFrame, 
-                          embeddings_model: PreTrainedModel, embeddings_model_tokenizer: PreTrainedTokenizerBase,
-                          remove_unique_col: bool = False):
+def format_original_table(df: pd.DataFrame, gwas_column_matching_engine: GWASColumnMatchingEngine, remove_unique_col: bool = False):
     """
     Format final table by melt/make extra copies of reference columns, or simply rename column to reference column name
     """
     possible_ref_col_to_melt = ["P-value", "Effect Size", "Confidence Interval", "AF"]
     # map the columns
-    new_col_to_old_col_lst = match_many_col_to_ref_col(df, referencing_cols_df, embeddings_model, embeddings_model_tokenizer)
+    new_col_to_old_col_lst = gwas_column_matching_engine.match_many_col_to_ref_col(df)
     df_with_ref_col = None
     new_col_to_not_melt = [] # list of columns that are stable and not need to be melt
     new_col_to_old_col_lst_to_melt = {}
@@ -512,14 +508,10 @@ if __name__ == "__main__":
 
     # get the df for referencing column
     # Now try to map the columns with the actual col in advp
-    referencing_cols_df = pd.read_csv("Rules for harmonizing ADVP papers - Main cols.csv")
-    referencing_cols_df["column_with_context"] = referencing_cols_df.apply(lambda x: x["column"] if pd.isna(x["description"]) else x["column"] + ": " + x["description"], axis = 1)
+    referencing_col_df = pd.read_csv("Rules for harmonizing ADVP papers - Main cols.csv")
+    referencing_col_df["column_with_context"] = referencing_col_df.apply(lambda x: x["column"] if pd.isna(x["description"]) else x["column"] + ": " + x["description"], axis = 1)
 
-    # setting up models
-    embeddings_model_name = "NeuML/pubmedbert-base-embeddings"
-    embeddings_model_tokenizer = AutoTokenizer.from_pretrained(embeddings_model_name)
-    embeddings_model = AutoModel.from_pretrained(embeddings_model_name)
-    embeddings_model.eval()
+    gwas_column_matching_engine = GWASColumnMatchingEngine(referencing_col_df)
 
     # format table as needed
     modified_df_all = None
@@ -527,7 +519,7 @@ if __name__ == "__main__":
         if ".csv" in file and "table" in file and "harmonized" not in file:
             df = pd.read_csv(f"./tables/{file}")
             df.columns = ['' if 'Unnamed:' in col else col for col in df.columns]
-            modified_df = format_original_table(df, referencing_cols_df, embeddings_model, embeddings_model_tokenizer, remove_unique_col = False)
+            modified_df = format_original_table(df, gwas_column_matching_engine, remove_unique_col = False)
             modified_df["file_name"] = file
             if modified_df_all is None:
                 modified_df_all = modified_df.copy()

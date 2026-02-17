@@ -10,6 +10,7 @@ requests
 # rich
 # xmltodict
 docling
+docling[vlm]
 sentence-transformers
 openpyxl
 torch

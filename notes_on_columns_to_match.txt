@@ -9,3 +9,4 @@
 - Remove case and control since it can be derived based on specific rule, need more clarification
 - Remove View in GenomicsDB since it need scraping from GenomicsDB on specific gene
 - Remove interaction since it can be derived from notes on the column if having there
+- Remove imputation since it can ve derived via papers
