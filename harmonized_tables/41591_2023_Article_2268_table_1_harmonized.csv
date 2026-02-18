@@ -1,79 +1,157 @@
-Locus,SNP_1,SNP_1 notes,SNP_2,SNP_2 notes,Chr,RA,AF,Reported gene,Effect Size,Confidence Interval,Z - score,Dir,Sample size,P-value notes,P-value,file_name
-20q13.12,rs6011998,SNPALL,intronic,Function,20:45269867,C/T,0.95,SLC13A3,0.087,0.009,10.65,++++,"9,502/39,128",P valueEUR,1.90×10 -24,41591_2023_Article_2268_table_1.csv
-3p25.1,rs13079464,SNPALL,intergenic,Function,3:13822439,C/G,0.46,WNT7A,0.026,0.004,8.7,++++,"9,614/39,822",P valueEUR,8.64×10 -17,41591_2023_Article_2268_table_1.csv
-20q13.12,rs2425884,SNPALL,intronic,Function,20:45258292,C/T,0.57,SLC13A3,0.029,0.004,8.63,+-+-,"9,614/39,822",P valueEUR,2.60×10 -18,41591_2023_Article_2268_table_1.csv
-9q31.3,rs10817108,SNPALL,intronic,Function,9:113658671,A/G,0.21,LPAR1,0.029,0.004,8.2,+++?,"9,550/39,516",P valueEUR,1.07×10 -15,41591_2023_Article_2268_table_1.csv
-20q13.12,rs2425881,SNPALL,intronic,Function,20:45255618,A/G,0.83,SLC13A3,0.033,0.005,7.68,+-+?,"9,496/39,087",P valueEUR,2.02×10 -15,41591_2023_Article_2268_table_1.csv
-3q21.2,rs3772833,SNPALL,intronic,Function,3:124518362,G/A,0.83,"ITGB5 , UMPS",0.032,0.005,7.67,+++?,"9,496/39,087",P valueEUR,2.15×10 -13,41591_2023_Article_2268_table_1.csv
-20q13.12,rs112407396,SNPALL,intronic,Function,20:45276381,T/A,0.03,SLC13A3,0.078,0.012,6.91,+???,"8,426/34,530",P valueEUR,4.81×10 -12,41591_2023_Article_2268_table_1.csv
-1q41,rs10494988,SNPALL,intergenic,Function,1:215141570,C/T,0.63,"CENPF , KCNK2",0.021,0.004,6.54,++++,"9,614/39,822",P valueEUR,2.23×10 -10,41591_2023_Article_2268_table_1.csv
-20q13.12,rs72485816,SNPALL,UTR3,Function,20:45314435,T/C,0.96,"TP53RK , SLC13A3",0.059,0.01,6.45,++?-,"9,114/37,342",P valueEUR,1.47×10 -10,41591_2023_Article_2268_table_1.csv
-15q25.3,rs8041189,SNPALL,intergenic,Function,15:85686327,G/A,0.7,PDE8A,0.022,0.004,6.44,+-??,"9,486/39,315",P valueEUR,7.30×10 -11,41591_2023_Article_2268_table_1.csv
-3p25,rs4685022,SNPALL,intergenic,Function,3:13832611,G/A,0.65,WNT7A,0.019,0.004,6.4,+++?,"9,576/39,654",P valueEUR,2.36×10 -09,41591_2023_Article_2268_table_1.csv
-2p16.1,rs7596872,SNPALL,intronic,Function,2:56128091,C/A,0.9,EFEMP1,0.033,0.006,6.31,+-??,"9,333/38,442",P valueEUR,1.00×10 -10,41591_2023_Article_2268_table_1.csv
-17q21.31,rs1126642,SNPALL,exonic,Function,17:42989063,C/T,0.96,GFAP,0.051,0.009,6.23,+?+?,"9,119/37,466",P valueEUR,6.19×10 -10,41591_2023_Article_2268_table_1.csv
-3q29,rs687610,SNPALL,intergenic,Function,3:193515781,G/C,0.43,OPA1,0.021,0.004,6.2,+++-,"9,614/39,822",P valueEUR,2.99×10 -10,41591_2023_Article_2268_table_1.csv
-6p25.2,rs4959689,SNPALL,intergenic,Function,6:2617122,C/A,0.58,C6orf195,0.02,0.004,6.03,++++,"9,582/39,695",P valueEUR,3.37×10 -09,41591_2023_Article_2268_table_1.csv
-20q13.12,rs56104388,SNPALL,intronic,Function,20:45302135,T/C,0.99,SLC13A3,0.101,0.017,5.85,+???,"7,626/30,916",P valueEUR,4.80×10 -09,41591_2023_Article_2268_table_1.csv
-11q13.3,rs12417836,SNPALL,intergenic,Function,11:70089700,T/C,0.07,"FADD ,",0.034,0.007,5.58,+-+?,"9,464/38,960",P valueEUR,1.56×10 -08,41591_2023_Article_2268_table_1.csv
-8p11.21,rs2923437,SNPALL,intergenic,Function,8:42425399,A/C,0.41,"SMIM19 , CHRNB3 , SLC20A2",0.018,0.004,5.49,++--,"9,614/39,822",P valueEUR,4.73×10 -08,41591_2023_Article_2268_table_1.csv
-6p25.3,rs1922930,SNPALL,intergenic,Function,6:1364691,C/A,0.12,"FOXQ1 , FOXF2",0.029,0.006,5.47,++??,"9,406/38,748",P valueEUR,3.60×10 -08,41591_2023_Article_2268_table_1.csv
-19p13.11,rs2385089,SNPALL,intergenic,Function,19:18550434,A/C,0.74,"ISYNA1 , ELL , LRRC25",0.023,0.005,5.49,+++-,"9,614/39,822",P valueEUR,4.14×10 -08,41591_2023_Article_2268_table_1.csv
-7q33,rs10954468,SNPALL,intergenic,Function,7:134434661,C/A,0.4,"BPGM , CALD1",0.019,0.004,5.52,+-?+,"9,524/39,483",P valueEUR,3.39×10 -08,41591_2023_Article_2268_table_1.csv
-2q33.2,rs4675310,SNPALL,intronic,Function,2:203880834,A/G,0.87,"NBEAL1 , ICA1L",0.027,0.005,5.92,++??,"9,011/39,243",P valueEUR,2.71×10 -09,41591_2023_Article_2268_table_1.csv
-3q26.31,rs6769442,SNPALL,intronic,Function,3:171565463,G/A,0.75,TMEM212,0.02,0.004,5.74,++?+,"9,101/39,788",P valueEUR,1.68×10 -08,41591_2023_Article_2268_table_1.csv
-1q25.3,rs10797812,SNPALL,intergenic,Function,1:182984597,A/G,0.54,"SHCBP1L ,",0.027,0.004,7.84,++++,"9,399/40,095",P valueEUR,1.67×10 -14,41591_2023_Article_2268_table_1.csv
-2p16.1,rs78857879,SNPALL,intronic,Function,2:56135099,G/A,0.9,EFEMP1,0.038,0.006,6.43,+???,"9,033/38,008",P valueEUR,8.20×10 -11,41591_2023_Article_2268_table_1.csv
-1q41,rs6540873,SNPALL,intergenic,Function,1:215137222,A/C,0.62,"CENPF ,",0.02,0.004,5.95,+--+,"9,399/40,095",P valueEUR,1.38×10 -09,41591_2023_Article_2268_table_1.csv
-20q13.12,rs6011998,SNPALL,intronic,Function,20:45269867,C/T,0.95,SLC13A3,0.087,0.009,10.65,++++,"9,502/39,128",P valueAll,1.80×10 -26,41591_2023_Article_2268_table_1.csv
-3p25.1,rs13079464,SNPALL,intergenic,Function,3:13822439,C/G,0.46,WNT7A,0.026,0.004,8.7,++++,"9,614/39,822",P valueAll,3.41×10 -18,41591_2023_Article_2268_table_1.csv
-20q13.12,rs2425884,SNPALL,intronic,Function,20:45258292,C/T,0.57,SLC13A3,0.029,0.004,8.63,+-+-,"9,614/39,822",P valueAll,6.02×10 -18,41591_2023_Article_2268_table_1.csv
-9q31.3,rs10817108,SNPALL,intronic,Function,9:113658671,A/G,0.21,LPAR1,0.029,0.004,8.2,+++?,"9,550/39,516",P valueAll,2.46×10 -16,41591_2023_Article_2268_table_1.csv
-20q13.12,rs2425881,SNPALL,intronic,Function,20:45255618,A/G,0.83,SLC13A3,0.033,0.005,7.68,+-+?,"9,496/39,087",P valueAll,1.59×10 -14,41591_2023_Article_2268_table_1.csv
-3q21.2,rs3772833,SNPALL,intronic,Function,3:124518362,G/A,0.83,"ITGB5 , UMPS",0.032,0.005,7.67,+++?,"9,496/39,087",P valueAll,1.76×10 -14,41591_2023_Article_2268_table_1.csv
-20q13.12,rs112407396,SNPALL,intronic,Function,20:45276381,T/A,0.03,SLC13A3,0.078,0.012,6.91,+???,"8,426/34,530",P valueAll,4.81×10 -12,41591_2023_Article_2268_table_1.csv
-1q41,rs10494988,SNPALL,intergenic,Function,1:215141570,C/T,0.63,"CENPF , KCNK2",0.021,0.004,6.54,++++,"9,614/39,822",P valueAll,6.03×10 -11,41591_2023_Article_2268_table_1.csv
-20q13.12,rs72485816,SNPALL,UTR3,Function,20:45314435,T/C,0.96,"TP53RK , SLC13A3",0.059,0.01,6.45,++?-,"9,114/37,342",P valueAll,1.12×10 -10,41591_2023_Article_2268_table_1.csv
-15q25.3,rs8041189,SNPALL,intergenic,Function,15:85686327,G/A,0.7,PDE8A,0.022,0.004,6.44,+-??,"9,486/39,315",P valueAll,1.24×10 -10,41591_2023_Article_2268_table_1.csv
-3p25,rs4685022,SNPALL,intergenic,Function,3:13832611,G/A,0.65,WNT7A,0.019,0.004,6.4,+++?,"9,576/39,654",P valueAll,1.58×10 -10,41591_2023_Article_2268_table_1.csv
-2p16.1,rs7596872,SNPALL,intronic,Function,2:56128091,C/A,0.9,EFEMP1,0.033,0.006,6.31,+-??,"9,333/38,442",P valueAll,2.80×10 -10,41591_2023_Article_2268_table_1.csv
-17q21.31,rs1126642,SNPALL,exonic,Function,17:42989063,C/T,0.96,GFAP,0.051,0.009,6.23,+?+?,"9,119/37,466",P valueAll,4.67×10 -10,41591_2023_Article_2268_table_1.csv
-3q29,rs687610,SNPALL,intergenic,Function,3:193515781,G/C,0.43,OPA1,0.021,0.004,6.2,+++-,"9,614/39,822",P valueAll,5.81×10 -10,41591_2023_Article_2268_table_1.csv
-6p25.2,rs4959689,SNPALL,intergenic,Function,6:2617122,C/A,0.58,C6orf195,0.02,0.004,6.03,++++,"9,582/39,695",P valueAll,1.63×10 -09,41591_2023_Article_2268_table_1.csv
-20q13.12,rs56104388,SNPALL,intronic,Function,20:45302135,T/C,0.99,SLC13A3,0.101,0.017,5.85,+???,"7,626/30,916",P valueAll,4.80×10 -09,41591_2023_Article_2268_table_1.csv
-11q13.3,rs12417836,SNPALL,intergenic,Function,11:70089700,T/C,0.07,"FADD ,",0.034,0.007,5.58,+-+?,"9,464/38,960",P valueAll,2.47×10 -08,41591_2023_Article_2268_table_1.csv
-8p11.21,rs2923437,SNPALL,intergenic,Function,8:42425399,A/C,0.41,"SMIM19 , CHRNB3 , SLC20A2",0.018,0.004,5.49,++--,"9,614/39,822",P valueAll,4.08×10 -08,41591_2023_Article_2268_table_1.csv
-6p25.3,rs1922930,SNPALL,intergenic,Function,6:1364691,C/A,0.12,"FOXQ1 , FOXF2",0.029,0.006,5.47,++??,"9,406/38,748",P valueAll,4.62×10 -08,41591_2023_Article_2268_table_1.csv
-19p13.11,rs2385089,SNPALL,intergenic,Function,19:18550434,A/C,0.74,"ISYNA1 , ELL , LRRC25",0.023,0.005,5.49,+++-,"9,614/39,822",P valueAll,5.73×10 -08,41591_2023_Article_2268_table_1.csv
-7q33,rs10954468,SNPALL,intergenic,Function,7:134434661,C/A,0.4,"BPGM , CALD1",0.019,0.004,5.52,+-?+,"9,524/39,483",P valueAll,8.79×10 -08,41591_2023_Article_2268_table_1.csv
-2q33.2,rs4675310,SNPALL,intronic,Function,2:203880834,A/G,0.87,"NBEAL1 , ICA1L",0.027,0.005,5.92,++??,"9,011/39,243",P valueAll,3.27×10 -09,41591_2023_Article_2268_table_1.csv
-3q26.31,rs6769442,SNPALL,intronic,Function,3:171565463,G/A,0.75,TMEM212,0.02,0.004,5.74,++?+,"9,101/39,788",P valueAll,9.34×10 -09,41591_2023_Article_2268_table_1.csv
-1q25.3,rs10797812,SNPALL,intergenic,Function,1:182984597,A/G,0.54,"SHCBP1L ,",0.027,0.004,7.84,++++,"9,399/40,095",P valueAll,4.39×10 -15,41591_2023_Article_2268_table_1.csv
-2p16.1,rs78857879,SNPALL,intronic,Function,2:56135099,G/A,0.9,EFEMP1,0.038,0.006,6.43,+???,"9,033/38,008",P valueAll,1.31×10 -10,41591_2023_Article_2268_table_1.csv
-1q41,rs6540873,SNPALL,intergenic,Function,1:215137222,A/C,0.62,"CENPF ,",0.02,0.004,5.95,+--+,"9,399/40,095",P valueAll,2.72×10 -09,41591_2023_Article_2268_table_1.csv
-20q13.12,rs6011998,SNPALL,intronic,Function,20:45269867,C/T,0.95,SLC13A3,0.087,0.009,10.65,++++,"9,502/39,128",Het P value,0.11,41591_2023_Article_2268_table_1.csv
-3p25.1,rs13079464,SNPALL,intergenic,Function,3:13822439,C/G,0.46,WNT7A,0.026,0.004,8.7,++++,"9,614/39,822",Het P value,0.59,41591_2023_Article_2268_table_1.csv
-20q13.12,rs2425884,SNPALL,intronic,Function,20:45258292,C/T,0.57,SLC13A3,0.029,0.004,8.63,+-+-,"9,614/39,822",Het P value,0.14,41591_2023_Article_2268_table_1.csv
-9q31.3,rs10817108,SNPALL,intronic,Function,9:113658671,A/G,0.21,LPAR1,0.029,0.004,8.2,+++?,"9,550/39,516",Het P value,0.75,41591_2023_Article_2268_table_1.csv
-20q13.12,rs2425881,SNPALL,intronic,Function,20:45255618,A/G,0.83,SLC13A3,0.033,0.005,7.68,+-+?,"9,496/39,087",Het P value,0.06,41591_2023_Article_2268_table_1.csv
-3q21.2,rs3772833,SNPALL,intronic,Function,3:124518362,G/A,0.83,"ITGB5 , UMPS",0.032,0.005,7.67,+++?,"9,496/39,087",Het P value,0.39,41591_2023_Article_2268_table_1.csv
-20q13.12,rs112407396,SNPALL,intronic,Function,20:45276381,T/A,0.03,SLC13A3,0.078,0.012,6.91,+???,"8,426/34,530",Het P value,1.0,41591_2023_Article_2268_table_1.csv
-1q41,rs10494988,SNPALL,intergenic,Function,1:215141570,C/T,0.63,"CENPF , KCNK2",0.021,0.004,6.54,++++,"9,614/39,822",Het P value,0.69,41591_2023_Article_2268_table_1.csv
-20q13.12,rs72485816,SNPALL,UTR3,Function,20:45314435,T/C,0.96,"TP53RK , SLC13A3",0.059,0.01,6.45,++?-,"9,114/37,342",Het P value,0.87,41591_2023_Article_2268_table_1.csv
-15q25.3,rs8041189,SNPALL,intergenic,Function,15:85686327,G/A,0.7,PDE8A,0.022,0.004,6.44,+-??,"9,486/39,315",Het P value,0.31,41591_2023_Article_2268_table_1.csv
-3p25,rs4685022,SNPALL,intergenic,Function,3:13832611,G/A,0.65,WNT7A,0.019,0.004,6.4,+++?,"9,576/39,654",Het P value,0.11,41591_2023_Article_2268_table_1.csv
-2p16.1,rs7596872,SNPALL,intronic,Function,2:56128091,C/A,0.9,EFEMP1,0.033,0.006,6.31,+-??,"9,333/38,442",Het P value,0.11,41591_2023_Article_2268_table_1.csv
-17q21.31,rs1126642,SNPALL,exonic,Function,17:42989063,C/T,0.96,GFAP,0.051,0.009,6.23,+?+?,"9,119/37,466",Het P value,0.72,41591_2023_Article_2268_table_1.csv
-3q29,rs687610,SNPALL,intergenic,Function,3:193515781,G/C,0.43,OPA1,0.021,0.004,6.2,+++-,"9,614/39,822",Het P value,0.76,41591_2023_Article_2268_table_1.csv
-6p25.2,rs4959689,SNPALL,intergenic,Function,6:2617122,C/A,0.58,C6orf195,0.02,0.004,6.03,++++,"9,582/39,695",Het P value,1.0,41591_2023_Article_2268_table_1.csv
-20q13.12,rs56104388,SNPALL,intronic,Function,20:45302135,T/C,0.99,SLC13A3,0.101,0.017,5.85,+???,"7,626/30,916",Het P value,1.0,41591_2023_Article_2268_table_1.csv
-11q13.3,rs12417836,SNPALL,intergenic,Function,11:70089700,T/C,0.07,"FADD ,",0.034,0.007,5.58,+-+?,"9,464/38,960",Het P value,0.4,41591_2023_Article_2268_table_1.csv
-8p11.21,rs2923437,SNPALL,intergenic,Function,8:42425399,A/C,0.41,"SMIM19 , CHRNB3 , SLC20A2",0.018,0.004,5.49,++--,"9,614/39,822",Het P value,0.14,41591_2023_Article_2268_table_1.csv
-6p25.3,rs1922930,SNPALL,intergenic,Function,6:1364691,C/A,0.12,"FOXQ1 , FOXF2",0.029,0.006,5.47,++??,"9,406/38,748",Het P value,0.48,41591_2023_Article_2268_table_1.csv
-19p13.11,rs2385089,SNPALL,intergenic,Function,19:18550434,A/C,0.74,"ISYNA1 , ELL , LRRC25",0.023,0.005,5.49,+++-,"9,614/39,822",Het P value,0.57,41591_2023_Article_2268_table_1.csv
-7q33,rs10954468,SNPALL,intergenic,Function,7:134434661,C/A,0.4,"BPGM , CALD1",0.019,0.004,5.52,+-?+,"9,524/39,483",Het P value,0.29,41591_2023_Article_2268_table_1.csv
-2q33.2,rs4675310,SNPALL,intronic,Function,2:203880834,A/G,0.87,"NBEAL1 , ICA1L",0.027,0.005,5.92,++??,"9,011/39,243",Het P value,0.64,41591_2023_Article_2268_table_1.csv
-3q26.31,rs6769442,SNPALL,intronic,Function,3:171565463,G/A,0.75,TMEM212,0.02,0.004,5.74,++?+,"9,101/39,788",Het P value,0.96,41591_2023_Article_2268_table_1.csv
-1q25.3,rs10797812,SNPALL,intergenic,Function,1:182984597,A/G,0.54,"SHCBP1L ,",0.027,0.004,7.84,++++,"9,399/40,095",Het P value,0.68,41591_2023_Article_2268_table_1.csv
-2p16.1,rs78857879,SNPALL,intronic,Function,2:56135099,G/A,0.9,EFEMP1,0.038,0.006,6.43,+???,"9,033/38,008",Het P value,1.0,41591_2023_Article_2268_table_1.csv
-1q41,rs6540873,SNPALL,intergenic,Function,1:215137222,A/C,0.62,"CENPF ,",0.02,0.004,5.95,+--+,"9,399/40,095",Het P value,0.11,41591_2023_Article_2268_table_1.csv
+Chr_1,Chr_1 notes,Chr_2,Chr_2 notes,SNP_1,SNP_1 notes,SNP_2,SNP_2 notes,RA,AF,Effect Size notes,Effect Size,P-value notes,P-value,file_name
+20q13.12,Region,20:45269867,chr:position,rs6011998,SNPALL,intronic,Function,C/T,0.95,Effect (β),0.087,P valueEUR,1.90×10 -24,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45269867,chr:position,rs6011998,SNPALL,intronic,Function,C/T,0.95,Effect (β),0.087,P valueAll,1.80×10 -26,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45269867,chr:position,rs6011998,SNPALL,intronic,Function,C/T,0.95,Effect (β),0.087,Het P value,0.11,41591_2023_Article_2268_table_1.csv
+3p25.1,Region,3:13822439,chr:position,rs13079464,SNPALL,intergenic,Function,C/G,0.46,Effect (β),0.026,P valueEUR,8.64×10 -17,41591_2023_Article_2268_table_1.csv
+3p25.1,Region,3:13822439,chr:position,rs13079464,SNPALL,intergenic,Function,C/G,0.46,Effect (β),0.026,P valueAll,3.41×10 -18,41591_2023_Article_2268_table_1.csv
+3p25.1,Region,3:13822439,chr:position,rs13079464,SNPALL,intergenic,Function,C/G,0.46,Effect (β),0.026,Het P value,0.59,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45258292,chr:position,rs2425884,SNPALL,intronic,Function,C/T,0.57,Effect (β),0.029,P valueEUR,2.60×10 -18,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45258292,chr:position,rs2425884,SNPALL,intronic,Function,C/T,0.57,Effect (β),0.029,P valueAll,6.02×10 -18,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45258292,chr:position,rs2425884,SNPALL,intronic,Function,C/T,0.57,Effect (β),0.029,Het P value,0.14,41591_2023_Article_2268_table_1.csv
+9q31.3,Region,9:113658671,chr:position,rs10817108,SNPALL,intronic,Function,A/G,0.21,Effect (β),0.029,P valueEUR,1.07×10 -15,41591_2023_Article_2268_table_1.csv
+9q31.3,Region,9:113658671,chr:position,rs10817108,SNPALL,intronic,Function,A/G,0.21,Effect (β),0.029,P valueAll,2.46×10 -16,41591_2023_Article_2268_table_1.csv
+9q31.3,Region,9:113658671,chr:position,rs10817108,SNPALL,intronic,Function,A/G,0.21,Effect (β),0.029,Het P value,0.75,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45255618,chr:position,rs2425881,SNPALL,intronic,Function,A/G,0.83,Effect (β),0.033,P valueEUR,2.02×10 -15,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45255618,chr:position,rs2425881,SNPALL,intronic,Function,A/G,0.83,Effect (β),0.033,P valueAll,1.59×10 -14,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45255618,chr:position,rs2425881,SNPALL,intronic,Function,A/G,0.83,Effect (β),0.033,Het P value,0.06,41591_2023_Article_2268_table_1.csv
+3q21.2,Region,3:124518362,chr:position,rs3772833,SNPALL,intronic,Function,G/A,0.83,Effect (β),0.032,P valueEUR,2.15×10 -13,41591_2023_Article_2268_table_1.csv
+3q21.2,Region,3:124518362,chr:position,rs3772833,SNPALL,intronic,Function,G/A,0.83,Effect (β),0.032,P valueAll,1.76×10 -14,41591_2023_Article_2268_table_1.csv
+3q21.2,Region,3:124518362,chr:position,rs3772833,SNPALL,intronic,Function,G/A,0.83,Effect (β),0.032,Het P value,0.39,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45276381,chr:position,rs112407396,SNPALL,intronic,Function,T/A,0.03,Effect (β),0.078,P valueEUR,4.81×10 -12,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45276381,chr:position,rs112407396,SNPALL,intronic,Function,T/A,0.03,Effect (β),0.078,P valueAll,4.81×10 -12,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45276381,chr:position,rs112407396,SNPALL,intronic,Function,T/A,0.03,Effect (β),0.078,Het P value,1.0,41591_2023_Article_2268_table_1.csv
+1q41,Region,1:215141570,chr:position,rs10494988,SNPALL,intergenic,Function,C/T,0.63,Effect (β),0.021,P valueEUR,2.23×10 -10,41591_2023_Article_2268_table_1.csv
+1q41,Region,1:215141570,chr:position,rs10494988,SNPALL,intergenic,Function,C/T,0.63,Effect (β),0.021,P valueAll,6.03×10 -11,41591_2023_Article_2268_table_1.csv
+1q41,Region,1:215141570,chr:position,rs10494988,SNPALL,intergenic,Function,C/T,0.63,Effect (β),0.021,Het P value,0.69,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45314435,chr:position,rs72485816,SNPALL,UTR3,Function,T/C,0.96,Effect (β),0.059,P valueEUR,1.47×10 -10,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45314435,chr:position,rs72485816,SNPALL,UTR3,Function,T/C,0.96,Effect (β),0.059,P valueAll,1.12×10 -10,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45314435,chr:position,rs72485816,SNPALL,UTR3,Function,T/C,0.96,Effect (β),0.059,Het P value,0.87,41591_2023_Article_2268_table_1.csv
+15q25.3,Region,15:85686327,chr:position,rs8041189,SNPALL,intergenic,Function,G/A,0.7,Effect (β),0.022,P valueEUR,7.30×10 -11,41591_2023_Article_2268_table_1.csv
+15q25.3,Region,15:85686327,chr:position,rs8041189,SNPALL,intergenic,Function,G/A,0.7,Effect (β),0.022,P valueAll,1.24×10 -10,41591_2023_Article_2268_table_1.csv
+15q25.3,Region,15:85686327,chr:position,rs8041189,SNPALL,intergenic,Function,G/A,0.7,Effect (β),0.022,Het P value,0.31,41591_2023_Article_2268_table_1.csv
+3p25,Region,3:13832611,chr:position,rs4685022,SNPALL,intergenic,Function,G/A,0.65,Effect (β),0.019,P valueEUR,2.36×10 -09,41591_2023_Article_2268_table_1.csv
+3p25,Region,3:13832611,chr:position,rs4685022,SNPALL,intergenic,Function,G/A,0.65,Effect (β),0.019,P valueAll,1.58×10 -10,41591_2023_Article_2268_table_1.csv
+3p25,Region,3:13832611,chr:position,rs4685022,SNPALL,intergenic,Function,G/A,0.65,Effect (β),0.019,Het P value,0.11,41591_2023_Article_2268_table_1.csv
+2p16.1,Region,2:56128091,chr:position,rs7596872,SNPALL,intronic,Function,C/A,0.9,Effect (β),0.033,P valueEUR,1.00×10 -10,41591_2023_Article_2268_table_1.csv
+2p16.1,Region,2:56128091,chr:position,rs7596872,SNPALL,intronic,Function,C/A,0.9,Effect (β),0.033,P valueAll,2.80×10 -10,41591_2023_Article_2268_table_1.csv
+2p16.1,Region,2:56128091,chr:position,rs7596872,SNPALL,intronic,Function,C/A,0.9,Effect (β),0.033,Het P value,0.11,41591_2023_Article_2268_table_1.csv
+17q21.31,Region,17:42989063,chr:position,rs1126642,SNPALL,exonic,Function,C/T,0.96,Effect (β),0.051,P valueEUR,6.19×10 -10,41591_2023_Article_2268_table_1.csv
+17q21.31,Region,17:42989063,chr:position,rs1126642,SNPALL,exonic,Function,C/T,0.96,Effect (β),0.051,P valueAll,4.67×10 -10,41591_2023_Article_2268_table_1.csv
+17q21.31,Region,17:42989063,chr:position,rs1126642,SNPALL,exonic,Function,C/T,0.96,Effect (β),0.051,Het P value,0.72,41591_2023_Article_2268_table_1.csv
+3q29,Region,3:193515781,chr:position,rs687610,SNPALL,intergenic,Function,G/C,0.43,Effect (β),0.021,P valueEUR,2.99×10 -10,41591_2023_Article_2268_table_1.csv
+3q29,Region,3:193515781,chr:position,rs687610,SNPALL,intergenic,Function,G/C,0.43,Effect (β),0.021,P valueAll,5.81×10 -10,41591_2023_Article_2268_table_1.csv
+3q29,Region,3:193515781,chr:position,rs687610,SNPALL,intergenic,Function,G/C,0.43,Effect (β),0.021,Het P value,0.76,41591_2023_Article_2268_table_1.csv
+6p25.2,Region,6:2617122,chr:position,rs4959689,SNPALL,intergenic,Function,C/A,0.58,Effect (β),0.02,P valueEUR,3.37×10 -09,41591_2023_Article_2268_table_1.csv
+6p25.2,Region,6:2617122,chr:position,rs4959689,SNPALL,intergenic,Function,C/A,0.58,Effect (β),0.02,P valueAll,1.63×10 -09,41591_2023_Article_2268_table_1.csv
+6p25.2,Region,6:2617122,chr:position,rs4959689,SNPALL,intergenic,Function,C/A,0.58,Effect (β),0.02,Het P value,1.0,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45302135,chr:position,rs56104388,SNPALL,intronic,Function,T/C,0.99,Effect (β),0.101,P valueEUR,4.80×10 -09,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45302135,chr:position,rs56104388,SNPALL,intronic,Function,T/C,0.99,Effect (β),0.101,P valueAll,4.80×10 -09,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45302135,chr:position,rs56104388,SNPALL,intronic,Function,T/C,0.99,Effect (β),0.101,Het P value,1.0,41591_2023_Article_2268_table_1.csv
+11q13.3,Region,11:70089700,chr:position,rs12417836,SNPALL,intergenic,Function,T/C,0.07,Effect (β),0.034,P valueEUR,1.56×10 -08,41591_2023_Article_2268_table_1.csv
+11q13.3,Region,11:70089700,chr:position,rs12417836,SNPALL,intergenic,Function,T/C,0.07,Effect (β),0.034,P valueAll,2.47×10 -08,41591_2023_Article_2268_table_1.csv
+11q13.3,Region,11:70089700,chr:position,rs12417836,SNPALL,intergenic,Function,T/C,0.07,Effect (β),0.034,Het P value,0.4,41591_2023_Article_2268_table_1.csv
+8p11.21,Region,8:42425399,chr:position,rs2923437,SNPALL,intergenic,Function,A/C,0.41,Effect (β),0.018,P valueEUR,4.73×10 -08,41591_2023_Article_2268_table_1.csv
+8p11.21,Region,8:42425399,chr:position,rs2923437,SNPALL,intergenic,Function,A/C,0.41,Effect (β),0.018,P valueAll,4.08×10 -08,41591_2023_Article_2268_table_1.csv
+8p11.21,Region,8:42425399,chr:position,rs2923437,SNPALL,intergenic,Function,A/C,0.41,Effect (β),0.018,Het P value,0.14,41591_2023_Article_2268_table_1.csv
+6p25.3,Region,6:1364691,chr:position,rs1922930,SNPALL,intergenic,Function,C/A,0.12,Effect (β),0.029,P valueEUR,3.60×10 -08,41591_2023_Article_2268_table_1.csv
+6p25.3,Region,6:1364691,chr:position,rs1922930,SNPALL,intergenic,Function,C/A,0.12,Effect (β),0.029,P valueAll,4.62×10 -08,41591_2023_Article_2268_table_1.csv
+6p25.3,Region,6:1364691,chr:position,rs1922930,SNPALL,intergenic,Function,C/A,0.12,Effect (β),0.029,Het P value,0.48,41591_2023_Article_2268_table_1.csv
+19p13.11,Region,19:18550434,chr:position,rs2385089,SNPALL,intergenic,Function,A/C,0.74,Effect (β),0.023,P valueEUR,4.14×10 -08,41591_2023_Article_2268_table_1.csv
+19p13.11,Region,19:18550434,chr:position,rs2385089,SNPALL,intergenic,Function,A/C,0.74,Effect (β),0.023,P valueAll,5.73×10 -08,41591_2023_Article_2268_table_1.csv
+19p13.11,Region,19:18550434,chr:position,rs2385089,SNPALL,intergenic,Function,A/C,0.74,Effect (β),0.023,Het P value,0.57,41591_2023_Article_2268_table_1.csv
+7q33,Region,7:134434661,chr:position,rs10954468,SNPALL,intergenic,Function,C/A,0.4,Effect (β),0.019,P valueEUR,3.39×10 -08,41591_2023_Article_2268_table_1.csv
+7q33,Region,7:134434661,chr:position,rs10954468,SNPALL,intergenic,Function,C/A,0.4,Effect (β),0.019,P valueAll,8.79×10 -08,41591_2023_Article_2268_table_1.csv
+7q33,Region,7:134434661,chr:position,rs10954468,SNPALL,intergenic,Function,C/A,0.4,Effect (β),0.019,Het P value,0.29,41591_2023_Article_2268_table_1.csv
+2q33.2,Region,2:203880834,chr:position,rs4675310,SNPALL,intronic,Function,A/G,0.87,Effect (β),0.027,P valueEUR,2.71×10 -09,41591_2023_Article_2268_table_1.csv
+2q33.2,Region,2:203880834,chr:position,rs4675310,SNPALL,intronic,Function,A/G,0.87,Effect (β),0.027,P valueAll,3.27×10 -09,41591_2023_Article_2268_table_1.csv
+2q33.2,Region,2:203880834,chr:position,rs4675310,SNPALL,intronic,Function,A/G,0.87,Effect (β),0.027,Het P value,0.64,41591_2023_Article_2268_table_1.csv
+3q26.31,Region,3:171565463,chr:position,rs6769442,SNPALL,intronic,Function,G/A,0.75,Effect (β),0.02,P valueEUR,1.68×10 -08,41591_2023_Article_2268_table_1.csv
+3q26.31,Region,3:171565463,chr:position,rs6769442,SNPALL,intronic,Function,G/A,0.75,Effect (β),0.02,P valueAll,9.34×10 -09,41591_2023_Article_2268_table_1.csv
+3q26.31,Region,3:171565463,chr:position,rs6769442,SNPALL,intronic,Function,G/A,0.75,Effect (β),0.02,Het P value,0.96,41591_2023_Article_2268_table_1.csv
+1q25.3,Region,1:182984597,chr:position,rs10797812,SNPALL,intergenic,Function,A/G,0.54,Effect (β),0.027,P valueEUR,1.67×10 -14,41591_2023_Article_2268_table_1.csv
+1q25.3,Region,1:182984597,chr:position,rs10797812,SNPALL,intergenic,Function,A/G,0.54,Effect (β),0.027,P valueAll,4.39×10 -15,41591_2023_Article_2268_table_1.csv
+1q25.3,Region,1:182984597,chr:position,rs10797812,SNPALL,intergenic,Function,A/G,0.54,Effect (β),0.027,Het P value,0.68,41591_2023_Article_2268_table_1.csv
+2p16.1,Region,2:56135099,chr:position,rs78857879,SNPALL,intronic,Function,G/A,0.9,Effect (β),0.038,P valueEUR,8.20×10 -11,41591_2023_Article_2268_table_1.csv
+2p16.1,Region,2:56135099,chr:position,rs78857879,SNPALL,intronic,Function,G/A,0.9,Effect (β),0.038,P valueAll,1.31×10 -10,41591_2023_Article_2268_table_1.csv
+2p16.1,Region,2:56135099,chr:position,rs78857879,SNPALL,intronic,Function,G/A,0.9,Effect (β),0.038,Het P value,1.0,41591_2023_Article_2268_table_1.csv
+1q41,Region,1:215137222,chr:position,rs6540873,SNPALL,intergenic,Function,A/C,0.62,Effect (β),0.02,P valueEUR,1.38×10 -09,41591_2023_Article_2268_table_1.csv
+1q41,Region,1:215137222,chr:position,rs6540873,SNPALL,intergenic,Function,A/C,0.62,Effect (β),0.02,P valueAll,2.72×10 -09,41591_2023_Article_2268_table_1.csv
+1q41,Region,1:215137222,chr:position,rs6540873,SNPALL,intergenic,Function,A/C,0.62,Effect (β),0.02,Het P value,0.11,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45269867,chr:position,rs6011998,SNPALL,intronic,Function,C/T,0.95,SE,0.009,P valueEUR,1.90×10 -24,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45269867,chr:position,rs6011998,SNPALL,intronic,Function,C/T,0.95,SE,0.009,P valueAll,1.80×10 -26,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45269867,chr:position,rs6011998,SNPALL,intronic,Function,C/T,0.95,SE,0.009,Het P value,0.11,41591_2023_Article_2268_table_1.csv
+3p25.1,Region,3:13822439,chr:position,rs13079464,SNPALL,intergenic,Function,C/G,0.46,SE,0.004,P valueEUR,8.64×10 -17,41591_2023_Article_2268_table_1.csv
+3p25.1,Region,3:13822439,chr:position,rs13079464,SNPALL,intergenic,Function,C/G,0.46,SE,0.004,P valueAll,3.41×10 -18,41591_2023_Article_2268_table_1.csv
+3p25.1,Region,3:13822439,chr:position,rs13079464,SNPALL,intergenic,Function,C/G,0.46,SE,0.004,Het P value,0.59,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45258292,chr:position,rs2425884,SNPALL,intronic,Function,C/T,0.57,SE,0.004,P valueEUR,2.60×10 -18,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45258292,chr:position,rs2425884,SNPALL,intronic,Function,C/T,0.57,SE,0.004,P valueAll,6.02×10 -18,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45258292,chr:position,rs2425884,SNPALL,intronic,Function,C/T,0.57,SE,0.004,Het P value,0.14,41591_2023_Article_2268_table_1.csv
+9q31.3,Region,9:113658671,chr:position,rs10817108,SNPALL,intronic,Function,A/G,0.21,SE,0.004,P valueEUR,1.07×10 -15,41591_2023_Article_2268_table_1.csv
+9q31.3,Region,9:113658671,chr:position,rs10817108,SNPALL,intronic,Function,A/G,0.21,SE,0.004,P valueAll,2.46×10 -16,41591_2023_Article_2268_table_1.csv
+9q31.3,Region,9:113658671,chr:position,rs10817108,SNPALL,intronic,Function,A/G,0.21,SE,0.004,Het P value,0.75,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45255618,chr:position,rs2425881,SNPALL,intronic,Function,A/G,0.83,SE,0.005,P valueEUR,2.02×10 -15,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45255618,chr:position,rs2425881,SNPALL,intronic,Function,A/G,0.83,SE,0.005,P valueAll,1.59×10 -14,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45255618,chr:position,rs2425881,SNPALL,intronic,Function,A/G,0.83,SE,0.005,Het P value,0.06,41591_2023_Article_2268_table_1.csv
+3q21.2,Region,3:124518362,chr:position,rs3772833,SNPALL,intronic,Function,G/A,0.83,SE,0.005,P valueEUR,2.15×10 -13,41591_2023_Article_2268_table_1.csv
+3q21.2,Region,3:124518362,chr:position,rs3772833,SNPALL,intronic,Function,G/A,0.83,SE,0.005,P valueAll,1.76×10 -14,41591_2023_Article_2268_table_1.csv
+3q21.2,Region,3:124518362,chr:position,rs3772833,SNPALL,intronic,Function,G/A,0.83,SE,0.005,Het P value,0.39,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45276381,chr:position,rs112407396,SNPALL,intronic,Function,T/A,0.03,SE,0.012,P valueEUR,4.81×10 -12,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45276381,chr:position,rs112407396,SNPALL,intronic,Function,T/A,0.03,SE,0.012,P valueAll,4.81×10 -12,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45276381,chr:position,rs112407396,SNPALL,intronic,Function,T/A,0.03,SE,0.012,Het P value,1.0,41591_2023_Article_2268_table_1.csv
+1q41,Region,1:215141570,chr:position,rs10494988,SNPALL,intergenic,Function,C/T,0.63,SE,0.004,P valueEUR,2.23×10 -10,41591_2023_Article_2268_table_1.csv
+1q41,Region,1:215141570,chr:position,rs10494988,SNPALL,intergenic,Function,C/T,0.63,SE,0.004,P valueAll,6.03×10 -11,41591_2023_Article_2268_table_1.csv
+1q41,Region,1:215141570,chr:position,rs10494988,SNPALL,intergenic,Function,C/T,0.63,SE,0.004,Het P value,0.69,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45314435,chr:position,rs72485816,SNPALL,UTR3,Function,T/C,0.96,SE,0.01,P valueEUR,1.47×10 -10,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45314435,chr:position,rs72485816,SNPALL,UTR3,Function,T/C,0.96,SE,0.01,P valueAll,1.12×10 -10,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45314435,chr:position,rs72485816,SNPALL,UTR3,Function,T/C,0.96,SE,0.01,Het P value,0.87,41591_2023_Article_2268_table_1.csv
+15q25.3,Region,15:85686327,chr:position,rs8041189,SNPALL,intergenic,Function,G/A,0.7,SE,0.004,P valueEUR,7.30×10 -11,41591_2023_Article_2268_table_1.csv
+15q25.3,Region,15:85686327,chr:position,rs8041189,SNPALL,intergenic,Function,G/A,0.7,SE,0.004,P valueAll,1.24×10 -10,41591_2023_Article_2268_table_1.csv
+15q25.3,Region,15:85686327,chr:position,rs8041189,SNPALL,intergenic,Function,G/A,0.7,SE,0.004,Het P value,0.31,41591_2023_Article_2268_table_1.csv
+3p25,Region,3:13832611,chr:position,rs4685022,SNPALL,intergenic,Function,G/A,0.65,SE,0.004,P valueEUR,2.36×10 -09,41591_2023_Article_2268_table_1.csv
+3p25,Region,3:13832611,chr:position,rs4685022,SNPALL,intergenic,Function,G/A,0.65,SE,0.004,P valueAll,1.58×10 -10,41591_2023_Article_2268_table_1.csv
+3p25,Region,3:13832611,chr:position,rs4685022,SNPALL,intergenic,Function,G/A,0.65,SE,0.004,Het P value,0.11,41591_2023_Article_2268_table_1.csv
+2p16.1,Region,2:56128091,chr:position,rs7596872,SNPALL,intronic,Function,C/A,0.9,SE,0.006,P valueEUR,1.00×10 -10,41591_2023_Article_2268_table_1.csv
+2p16.1,Region,2:56128091,chr:position,rs7596872,SNPALL,intronic,Function,C/A,0.9,SE,0.006,P valueAll,2.80×10 -10,41591_2023_Article_2268_table_1.csv
+2p16.1,Region,2:56128091,chr:position,rs7596872,SNPALL,intronic,Function,C/A,0.9,SE,0.006,Het P value,0.11,41591_2023_Article_2268_table_1.csv
+17q21.31,Region,17:42989063,chr:position,rs1126642,SNPALL,exonic,Function,C/T,0.96,SE,0.009,P valueEUR,6.19×10 -10,41591_2023_Article_2268_table_1.csv
+17q21.31,Region,17:42989063,chr:position,rs1126642,SNPALL,exonic,Function,C/T,0.96,SE,0.009,P valueAll,4.67×10 -10,41591_2023_Article_2268_table_1.csv
+17q21.31,Region,17:42989063,chr:position,rs1126642,SNPALL,exonic,Function,C/T,0.96,SE,0.009,Het P value,0.72,41591_2023_Article_2268_table_1.csv
+3q29,Region,3:193515781,chr:position,rs687610,SNPALL,intergenic,Function,G/C,0.43,SE,0.004,P valueEUR,2.99×10 -10,41591_2023_Article_2268_table_1.csv
+3q29,Region,3:193515781,chr:position,rs687610,SNPALL,intergenic,Function,G/C,0.43,SE,0.004,P valueAll,5.81×10 -10,41591_2023_Article_2268_table_1.csv
+3q29,Region,3:193515781,chr:position,rs687610,SNPALL,intergenic,Function,G/C,0.43,SE,0.004,Het P value,0.76,41591_2023_Article_2268_table_1.csv
+6p25.2,Region,6:2617122,chr:position,rs4959689,SNPALL,intergenic,Function,C/A,0.58,SE,0.004,P valueEUR,3.37×10 -09,41591_2023_Article_2268_table_1.csv
+6p25.2,Region,6:2617122,chr:position,rs4959689,SNPALL,intergenic,Function,C/A,0.58,SE,0.004,P valueAll,1.63×10 -09,41591_2023_Article_2268_table_1.csv
+6p25.2,Region,6:2617122,chr:position,rs4959689,SNPALL,intergenic,Function,C/A,0.58,SE,0.004,Het P value,1.0,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45302135,chr:position,rs56104388,SNPALL,intronic,Function,T/C,0.99,SE,0.017,P valueEUR,4.80×10 -09,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45302135,chr:position,rs56104388,SNPALL,intronic,Function,T/C,0.99,SE,0.017,P valueAll,4.80×10 -09,41591_2023_Article_2268_table_1.csv
+20q13.12,Region,20:45302135,chr:position,rs56104388,SNPALL,intronic,Function,T/C,0.99,SE,0.017,Het P value,1.0,41591_2023_Article_2268_table_1.csv
+11q13.3,Region,11:70089700,chr:position,rs12417836,SNPALL,intergenic,Function,T/C,0.07,SE,0.007,P valueEUR,1.56×10 -08,41591_2023_Article_2268_table_1.csv
+11q13.3,Region,11:70089700,chr:position,rs12417836,SNPALL,intergenic,Function,T/C,0.07,SE,0.007,P valueAll,2.47×10 -08,41591_2023_Article_2268_table_1.csv
+11q13.3,Region,11:70089700,chr:position,rs12417836,SNPALL,intergenic,Function,T/C,0.07,SE,0.007,Het P value,0.4,41591_2023_Article_2268_table_1.csv
+8p11.21,Region,8:42425399,chr:position,rs2923437,SNPALL,intergenic,Function,A/C,0.41,SE,0.004,P valueEUR,4.73×10 -08,41591_2023_Article_2268_table_1.csv
+8p11.21,Region,8:42425399,chr:position,rs2923437,SNPALL,intergenic,Function,A/C,0.41,SE,0.004,P valueAll,4.08×10 -08,41591_2023_Article_2268_table_1.csv
+8p11.21,Region,8:42425399,chr:position,rs2923437,SNPALL,intergenic,Function,A/C,0.41,SE,0.004,Het P value,0.14,41591_2023_Article_2268_table_1.csv
+6p25.3,Region,6:1364691,chr:position,rs1922930,SNPALL,intergenic,Function,C/A,0.12,SE,0.006,P valueEUR,3.60×10 -08,41591_2023_Article_2268_table_1.csv
+6p25.3,Region,6:1364691,chr:position,rs1922930,SNPALL,intergenic,Function,C/A,0.12,SE,0.006,P valueAll,4.62×10 -08,41591_2023_Article_2268_table_1.csv
+6p25.3,Region,6:1364691,chr:position,rs1922930,SNPALL,intergenic,Function,C/A,0.12,SE,0.006,Het P value,0.48,41591_2023_Article_2268_table_1.csv
+19p13.11,Region,19:18550434,chr:position,rs2385089,SNPALL,intergenic,Function,A/C,0.74,SE,0.005,P valueEUR,4.14×10 -08,41591_2023_Article_2268_table_1.csv
+19p13.11,Region,19:18550434,chr:position,rs2385089,SNPALL,intergenic,Function,A/C,0.74,SE,0.005,P valueAll,5.73×10 -08,41591_2023_Article_2268_table_1.csv
+19p13.11,Region,19:18550434,chr:position,rs2385089,SNPALL,intergenic,Function,A/C,0.74,SE,0.005,Het P value,0.57,41591_2023_Article_2268_table_1.csv
+7q33,Region,7:134434661,chr:position,rs10954468,SNPALL,intergenic,Function,C/A,0.4,SE,0.004,P valueEUR,3.39×10 -08,41591_2023_Article_2268_table_1.csv
+7q33,Region,7:134434661,chr:position,rs10954468,SNPALL,intergenic,Function,C/A,0.4,SE,0.004,P valueAll,8.79×10 -08,41591_2023_Article_2268_table_1.csv
+7q33,Region,7:134434661,chr:position,rs10954468,SNPALL,intergenic,Function,C/A,0.4,SE,0.004,Het P value,0.29,41591_2023_Article_2268_table_1.csv
+2q33.2,Region,2:203880834,chr:position,rs4675310,SNPALL,intronic,Function,A/G,0.87,SE,0.005,P valueEUR,2.71×10 -09,41591_2023_Article_2268_table_1.csv
+2q33.2,Region,2:203880834,chr:position,rs4675310,SNPALL,intronic,Function,A/G,0.87,SE,0.005,P valueAll,3.27×10 -09,41591_2023_Article_2268_table_1.csv
+2q33.2,Region,2:203880834,chr:position,rs4675310,SNPALL,intronic,Function,A/G,0.87,SE,0.005,Het P value,0.64,41591_2023_Article_2268_table_1.csv
+3q26.31,Region,3:171565463,chr:position,rs6769442,SNPALL,intronic,Function,G/A,0.75,SE,0.004,P valueEUR,1.68×10 -08,41591_2023_Article_2268_table_1.csv
+3q26.31,Region,3:171565463,chr:position,rs6769442,SNPALL,intronic,Function,G/A,0.75,SE,0.004,P valueAll,9.34×10 -09,41591_2023_Article_2268_table_1.csv
+3q26.31,Region,3:171565463,chr:position,rs6769442,SNPALL,intronic,Function,G/A,0.75,SE,0.004,Het P value,0.96,41591_2023_Article_2268_table_1.csv
+1q25.3,Region,1:182984597,chr:position,rs10797812,SNPALL,intergenic,Function,A/G,0.54,SE,0.004,P valueEUR,1.67×10 -14,41591_2023_Article_2268_table_1.csv
+1q25.3,Region,1:182984597,chr:position,rs10797812,SNPALL,intergenic,Function,A/G,0.54,SE,0.004,P valueAll,4.39×10 -15,41591_2023_Article_2268_table_1.csv
+1q25.3,Region,1:182984597,chr:position,rs10797812,SNPALL,intergenic,Function,A/G,0.54,SE,0.004,Het P value,0.68,41591_2023_Article_2268_table_1.csv
+2p16.1,Region,2:56135099,chr:position,rs78857879,SNPALL,intronic,Function,G/A,0.9,SE,0.006,P valueEUR,8.20×10 -11,41591_2023_Article_2268_table_1.csv
+2p16.1,Region,2:56135099,chr:position,rs78857879,SNPALL,intronic,Function,G/A,0.9,SE,0.006,P valueAll,1.31×10 -10,41591_2023_Article_2268_table_1.csv
+2p16.1,Region,2:56135099,chr:position,rs78857879,SNPALL,intronic,Function,G/A,0.9,SE,0.006,Het P value,1.0,41591_2023_Article_2268_table_1.csv
+1q41,Region,1:215137222,chr:position,rs6540873,SNPALL,intergenic,Function,A/C,0.62,SE,0.004,P valueEUR,1.38×10 -09,41591_2023_Article_2268_table_1.csv
+1q41,Region,1:215137222,chr:position,rs6540873,SNPALL,intergenic,Function,A/C,0.62,SE,0.004,P valueAll,2.72×10 -09,41591_2023_Article_2268_table_1.csv
+1q41,Region,1:215137222,chr:position,rs6540873,SNPALL,intergenic,Function,A/C,0.62,SE,0.004,Het P value,0.11,41591_2023_Article_2268_table_1.csv

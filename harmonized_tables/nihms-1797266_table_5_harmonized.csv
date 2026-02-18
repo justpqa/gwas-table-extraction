@@ -1,7 +1,7 @@
-Chr,SNV,SNP,Cohort,Sample size,AF,Effect Size,P-value,file_name
-17,17:11183894_G_A,rs146729640,Amish,1520,0.012,6.38,5.59e-09,nihms-1797266_table_5.csv
-17,17:11183894_G_A,rs146729640,NIA-LOAD,3350,0.012,1.49,0.0217,nihms-1797266_table_5.csv
-9,9:128627091_C_G,rs534551495,Amish,1520,0.038,2.82,4.83e-08,nihms-1797266_table_5.csv
-9,9:128627091_C_G,rs534551495,NIA-LOAD,3350,0.006,0.98,0.9356,nihms-1797266_table_5.csv
-6,6:149756107_C_G,rs145348074,Amish,1520,0.024,3.35,5.26e-08,nihms-1797266_table_5.csv
-6,6:149756107_C_G,rs145348074,NIA-LOAD,3350,0.013,1.16,0.4164,nihms-1797266_table_5.csv
+Chr,SNP_1,SNP_1 notes,SNP_2,SNP_2 notes,AF,Effect Size,P-value,file_name
+17,17:11183894_G_A,Variant,rs146729640,Variant (rs),0.012,6.38,5.59e-09,nihms-1797266_table_5.csv
+17,17:11183894_G_A,Variant,rs146729640,Variant (rs),0.012,1.49,0.0217,nihms-1797266_table_5.csv
+9,9:128627091_C_G,Variant,rs534551495,Variant (rs),0.038,2.82,4.83e-08,nihms-1797266_table_5.csv
+9,9:128627091_C_G,Variant,rs534551495,Variant (rs),0.006,0.98,0.9356,nihms-1797266_table_5.csv
+6,6:149756107_C_G,Variant,rs145348074,Variant (rs),0.024,3.35,5.26e-08,nihms-1797266_table_5.csv
+6,6:149756107_C_G,Variant,rs145348074,Variant (rs),0.013,1.16,0.4164,nihms-1797266_table_5.csv

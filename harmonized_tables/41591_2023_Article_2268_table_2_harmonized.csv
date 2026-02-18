@@ -1,369 +1,369 @@
-SNP,Chr,RA,Reported gene,Effect Size notes,Effect Size,P-value notes,P-value,file_name
-rs6011998,20:45269867,C/T,SLC13A3,i-Share(dichotomous).OR(95% CI),1.26 (0.83-1.92),i-Share(dichotomous).P value,0.28,41591_2023_Article_2268_table_2.csv
-rs6011998,20:45269867,C/T,SLC13A3,i-Share(dichotomous).OR(95% CI),1.26 (0.83-1.92),i-Share (continuous).P value,4.20×10 -05,41591_2023_Article_2268_table_2.csv
-rs6011998,20:45269867,C/T,SLC13A3,i-Share(dichotomous).OR(95% CI),1.26 (0.83-1.92),Nagahama(dichotomous).P value,1.22×10 -05,41591_2023_Article_2268_table_2.csv
-rs6011998,20:45269867,C/T,SLC13A3,i-Share(dichotomous).OR(95% CI),1.26 (0.83-1.92),Nagahama (continuous).P value,6.21×10 -07,41591_2023_Article_2268_table_2.csv
-rs13079464,3:13822439,C/G,WNT7A,i-Share(dichotomous).OR(95% CI),1.12 (0.91-1.40),i-Share(dichotomous).P value,0.29,41591_2023_Article_2268_table_2.csv
-rs13079464,3:13822439,C/G,WNT7A,i-Share(dichotomous).OR(95% CI),1.12 (0.91-1.40),i-Share (continuous).P value,0.50,41591_2023_Article_2268_table_2.csv
-rs13079464,3:13822439,C/G,WNT7A,i-Share(dichotomous).OR(95% CI),1.12 (0.91-1.40),Nagahama(dichotomous).P value,0.11,41591_2023_Article_2268_table_2.csv
-rs13079464,3:13822439,C/G,WNT7A,i-Share(dichotomous).OR(95% CI),1.12 (0.91-1.40),Nagahama (continuous).P value,1.50×10 -02,41591_2023_Article_2268_table_2.csv
-rs2425884,20:45258292,C/T,SLC13A3,i-Share(dichotomous).OR(95% CI),1.18 (0.95-1.45),i-Share(dichotomous).P value,0.13,41591_2023_Article_2268_table_2.csv
-rs2425884,20:45258292,C/T,SLC13A3,i-Share(dichotomous).OR(95% CI),1.18 (0.95-1.45),i-Share (continuous).P value,2.98×10 -04,41591_2023_Article_2268_table_2.csv
-rs2425884,20:45258292,C/T,SLC13A3,i-Share(dichotomous).OR(95% CI),1.18 (0.95-1.45),Nagahama(dichotomous).P value,3.48×10 -03,41591_2023_Article_2268_table_2.csv
-rs2425884,20:45258292,C/T,SLC13A3,i-Share(dichotomous).OR(95% CI),1.18 (0.95-1.45),Nagahama (continuous).P value,1.77×10 -06,41591_2023_Article_2268_table_2.csv
-rs10817108,9:113658671,A/G,LPAR1,i-Share(dichotomous).OR(95% CI),0.90 (0.69-1.17),i-Share(dichotomous).P value,0.44,41591_2023_Article_2268_table_2.csv
-rs10817108,9:113658671,A/G,LPAR1,i-Share(dichotomous).OR(95% CI),0.90 (0.69-1.17),i-Share (continuous).P value,2.23×10 -02,41591_2023_Article_2268_table_2.csv
-rs10817108,9:113658671,A/G,LPAR1,i-Share(dichotomous).OR(95% CI),0.90 (0.69-1.17),Nagahama(dichotomous).P value,0.07,41591_2023_Article_2268_table_2.csv
-rs10817108,9:113658671,A/G,LPAR1,i-Share(dichotomous).OR(95% CI),0.90 (0.69-1.17),Nagahama (continuous).P value,4.10×10 -03,41591_2023_Article_2268_table_2.csv
-rs2425881,20:45255618,A/G,SLC13A3,i-Share(dichotomous).OR(95% CI),1.47 (1.03-2.01),i-Share(dichotomous).P value,1.40×10 -02,41591_2023_Article_2268_table_2.csv
-rs2425881,20:45255618,A/G,SLC13A3,i-Share(dichotomous).OR(95% CI),1.47 (1.03-2.01),i-Share (continuous).P value,2.62×10 -02,41591_2023_Article_2268_table_2.csv
-rs2425881,20:45255618,A/G,SLC13A3,i-Share(dichotomous).OR(95% CI),1.47 (1.03-2.01),Nagahama(dichotomous).P value,3.66×10 -02,41591_2023_Article_2268_table_2.csv
-rs2425881,20:45255618,A/G,SLC13A3,i-Share(dichotomous).OR(95% CI),1.47 (1.03-2.01),Nagahama (continuous).P value,4.68×10 -03,41591_2023_Article_2268_table_2.csv
-rs3772833,3:124518362,G/A,"ITGB5 , UMPS",i-Share(dichotomous).OR(95% CI),1.22 (0.89-1.66),i-Share(dichotomous).P value,0.21,41591_2023_Article_2268_table_2.csv
-rs3772833,3:124518362,G/A,"ITGB5 , UMPS",i-Share(dichotomous).OR(95% CI),1.22 (0.89-1.66),i-Share (continuous).P value,0.85,41591_2023_Article_2268_table_2.csv
-rs3772833,3:124518362,G/A,"ITGB5 , UMPS",i-Share(dichotomous).OR(95% CI),1.22 (0.89-1.66),Nagahama(dichotomous).P value,0.51,41591_2023_Article_2268_table_2.csv
-rs3772833,3:124518362,G/A,"ITGB5 , UMPS",i-Share(dichotomous).OR(95% CI),1.22 (0.89-1.66),Nagahama (continuous).P value,0.16,41591_2023_Article_2268_table_2.csv
-rs112407396,20:45276381,T/A,SLC13A3,i-Share(dichotomous).OR(95% CI),1.47 (0.77-2.78),i-Share(dichotomous).P value,0.24,41591_2023_Article_2268_table_2.csv
-rs112407396,20:45276381,T/A,SLC13A3,i-Share(dichotomous).OR(95% CI),1.47 (0.77-2.78),i-Share (continuous).P value,3.13×10 -02,41591_2023_Article_2268_table_2.csv
-rs112407396,20:45276381,T/A,SLC13A3,i-Share(dichotomous).OR(95% CI),1.47 (0.77-2.78),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs112407396,20:45276381,T/A,SLC13A3,i-Share(dichotomous).OR(95% CI),1.47 (0.77-2.78),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs10494988,1:215141570,C/T,"CENPF , KCNK2",i-Share(dichotomous).OR(95% CI),1.18 (0.95-1.47),i-Share(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
-rs10494988,1:215141570,C/T,"CENPF , KCNK2",i-Share(dichotomous).OR(95% CI),1.18 (0.95-1.47),i-Share (continuous).P value,1.94×10 -04,41591_2023_Article_2268_table_2.csv
-rs10494988,1:215141570,C/T,"CENPF , KCNK2",i-Share(dichotomous).OR(95% CI),1.18 (0.95-1.47),Nagahama(dichotomous).P value,0.90,41591_2023_Article_2268_table_2.csv
-rs10494988,1:215141570,C/T,"CENPF , KCNK2",i-Share(dichotomous).OR(95% CI),1.18 (0.95-1.47),Nagahama (continuous).P value,0.67,41591_2023_Article_2268_table_2.csv
-rs72485816,20:45314435,T/C,"TP53RK , SLC13A3",i-Share(dichotomous).OR(95% CI),1.01 (0.56-1.80),i-Share(dichotomous).P value,0.98,41591_2023_Article_2268_table_2.csv
-rs72485816,20:45314435,T/C,"TP53RK , SLC13A3",i-Share(dichotomous).OR(95% CI),1.01 (0.56-1.80),i-Share (continuous).P value,0.095,41591_2023_Article_2268_table_2.csv
-rs72485816,20:45314435,T/C,"TP53RK , SLC13A3",i-Share(dichotomous).OR(95% CI),1.01 (0.56-1.80),Nagahama(dichotomous).P value,2.83×10 -03,41591_2023_Article_2268_table_2.csv
-rs72485816,20:45314435,T/C,"TP53RK , SLC13A3",i-Share(dichotomous).OR(95% CI),1.01 (0.56-1.80),Nagahama (continuous).P value,1.91×10 -08,41591_2023_Article_2268_table_2.csv
-rs8041189,15:85686327,G/A,PDE8A,i-Share(dichotomous).OR(95% CI),1.14 (0.89-1.44),i-Share(dichotomous).P value,0.30,41591_2023_Article_2268_table_2.csv
-rs8041189,15:85686327,G/A,PDE8A,i-Share(dichotomous).OR(95% CI),1.14 (0.89-1.44),i-Share (continuous).P value,0.073,41591_2023_Article_2268_table_2.csv
-rs8041189,15:85686327,G/A,PDE8A,i-Share(dichotomous).OR(95% CI),1.14 (0.89-1.44),Nagahama(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
-rs8041189,15:85686327,G/A,PDE8A,i-Share(dichotomous).OR(95% CI),1.14 (0.89-1.44),Nagahama (continuous).P value,2.40×10 -02,41591_2023_Article_2268_table_2.csv
-rs4685022,3:13832611,G/A,WNT7A,i-Share(dichotomous).OR(95% CI),1.12 (0.88-1.42),i-Share(dichotomous).P value,0.34,41591_2023_Article_2268_table_2.csv
-rs4685022,3:13832611,G/A,WNT7A,i-Share(dichotomous).OR(95% CI),1.12 (0.88-1.42),i-Share (continuous).P value,0.31,41591_2023_Article_2268_table_2.csv
-rs4685022,3:13832611,G/A,WNT7A,i-Share(dichotomous).OR(95% CI),1.12 (0.88-1.42),Nagahama(dichotomous).P value,0.10,41591_2023_Article_2268_table_2.csv
-rs4685022,3:13832611,G/A,WNT7A,i-Share(dichotomous).OR(95% CI),1.12 (0.88-1.42),Nagahama (continuous).P value,0.075,41591_2023_Article_2268_table_2.csv
-rs7596872,2:56128091,C/A,EFEMP1,i-Share(dichotomous).OR(95% CI),1.65 (1.10-2.46),i-Share(dichotomous).P value,1.14×10 -02,41591_2023_Article_2268_table_2.csv
-rs7596872,2:56128091,C/A,EFEMP1,i-Share(dichotomous).OR(95% CI),1.65 (1.10-2.46),i-Share (continuous).P value,1.10×10 -02,41591_2023_Article_2268_table_2.csv
-rs7596872,2:56128091,C/A,EFEMP1,i-Share(dichotomous).OR(95% CI),1.65 (1.10-2.46),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs7596872,2:56128091,C/A,EFEMP1,i-Share(dichotomous).OR(95% CI),1.65 (1.10-2.46),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs1126642,17:42989063,C/T,GFAP,i-Share(dichotomous).OR(95% CI),1.13 (0.65-1.97),i-Share(dichotomous).P value,0.67,41591_2023_Article_2268_table_2.csv
-rs1126642,17:42989063,C/T,GFAP,i-Share(dichotomous).OR(95% CI),1.13 (0.65-1.97),i-Share (continuous).P value,1.27×10 -02,41591_2023_Article_2268_table_2.csv
-rs1126642,17:42989063,C/T,GFAP,i-Share(dichotomous).OR(95% CI),1.13 (0.65-1.97),Nagahama(dichotomous).P value,0.11,41591_2023_Article_2268_table_2.csv
-rs1126642,17:42989063,C/T,GFAP,i-Share(dichotomous).OR(95% CI),1.13 (0.65-1.97),Nagahama (continuous).P value,9.88×10 -07,41591_2023_Article_2268_table_2.csv
-rs687610,3:193515781,G/C,OPA1,i-Share(dichotomous).OR(95% CI),1.46 (1.18-1.80),i-Share(dichotomous).P value,4.88×10 -04,41591_2023_Article_2268_table_2.csv
-rs687610,3:193515781,G/C,OPA1,i-Share(dichotomous).OR(95% CI),1.46 (1.18-1.80),i-Share (continuous).P value,1.29×10 -07,41591_2023_Article_2268_table_2.csv
-rs687610,3:193515781,G/C,OPA1,i-Share(dichotomous).OR(95% CI),1.46 (1.18-1.80),Nagahama(dichotomous).P value,0.59,41591_2023_Article_2268_table_2.csv
-rs687610,3:193515781,G/C,OPA1,i-Share(dichotomous).OR(95% CI),1.46 (1.18-1.80),Nagahama (continuous).P value,0.28,41591_2023_Article_2268_table_2.csv
-rs4959689,6:2617122,C/A,C6orf195,i-Share(dichotomous).OR(95% CI),1.10 (0.89-1.37),i-Share(dichotomous).P value,0.37,41591_2023_Article_2268_table_2.csv
-rs4959689,6:2617122,C/A,C6orf195,i-Share(dichotomous).OR(95% CI),1.10 (0.89-1.37),i-Share (continuous).P value,0.30,41591_2023_Article_2268_table_2.csv
-rs4959689,6:2617122,C/A,C6orf195,i-Share(dichotomous).OR(95% CI),1.10 (0.89-1.37),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs4959689,6:2617122,C/A,C6orf195,i-Share(dichotomous).OR(95% CI),1.10 (0.89-1.37),Nagahama (continuous).P value,0.34,41591_2023_Article_2268_table_2.csv
-rs56104388,20:45302135,T/C,SLC13A3,i-Share(dichotomous).OR(95% CI),1.30 (0.40-4.24),i-Share(dichotomous).P value,0.67,41591_2023_Article_2268_table_2.csv
-rs56104388,20:45302135,T/C,SLC13A3,i-Share(dichotomous).OR(95% CI),1.30 (0.40-4.24),i-Share (continuous).P value,1.47×10 -02,41591_2023_Article_2268_table_2.csv
-rs56104388,20:45302135,T/C,SLC13A3,i-Share(dichotomous).OR(95% CI),1.30 (0.40-4.24),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs56104388,20:45302135,T/C,SLC13A3,i-Share(dichotomous).OR(95% CI),1.30 (0.40-4.24),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs12417836,11:70089700,T/C,"FADD , PPFIA1",i-Share(dichotomous).OR(95% CI),0.99 (0.64-1.56),i-Share(dichotomous).P value,0.99,41591_2023_Article_2268_table_2.csv
-rs12417836,11:70089700,T/C,"FADD , PPFIA1",i-Share(dichotomous).OR(95% CI),0.99 (0.64-1.56),i-Share (continuous).P value,0.29,41591_2023_Article_2268_table_2.csv
-rs12417836,11:70089700,T/C,"FADD , PPFIA1",i-Share(dichotomous).OR(95% CI),0.99 (0.64-1.56),Nagahama(dichotomous).P value,0.40,41591_2023_Article_2268_table_2.csv
-rs12417836,11:70089700,T/C,"FADD , PPFIA1",i-Share(dichotomous).OR(95% CI),0.99 (0.64-1.56),Nagahama (continuous).P value,0.84,41591_2023_Article_2268_table_2.csv
-rs2923437,8:42425399,A/C,"SMIM19 , CHRNB3 , SLC20A2",i-Share(dichotomous).OR(95% CI),0.98 (0.78-1.23),i-Share(dichotomous).P value,0.88,41591_2023_Article_2268_table_2.csv
-rs2923437,8:42425399,A/C,"SMIM19 , CHRNB3 , SLC20A2",i-Share(dichotomous).OR(95% CI),0.98 (0.78-1.23),i-Share (continuous).P value,2.60×10 -02,41591_2023_Article_2268_table_2.csv
-rs2923437,8:42425399,A/C,"SMIM19 , CHRNB3 , SLC20A2",i-Share(dichotomous).OR(95% CI),0.98 (0.78-1.23),Nagahama(dichotomous).P value,0.23,41591_2023_Article_2268_table_2.csv
-rs2923437,8:42425399,A/C,"SMIM19 , CHRNB3 , SLC20A2",i-Share(dichotomous).OR(95% CI),0.98 (0.78-1.23),Nagahama (continuous).P value,0.11,41591_2023_Article_2268_table_2.csv
-rs1922930,6:1364691,C/A,"FOXQ1 , FOXF2",i-Share(dichotomous).OR(95% CI),0.93 (0.65-1.33),i-Share(dichotomous).P value,0.70,41591_2023_Article_2268_table_2.csv
-rs1922930,6:1364691,C/A,"FOXQ1 , FOXF2",i-Share(dichotomous).OR(95% CI),0.93 (0.65-1.33),i-Share (continuous).P value,0.33,41591_2023_Article_2268_table_2.csv
-rs1922930,6:1364691,C/A,"FOXQ1 , FOXF2",i-Share(dichotomous).OR(95% CI),0.93 (0.65-1.33),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs1922930,6:1364691,C/A,"FOXQ1 , FOXF2",i-Share(dichotomous).OR(95% CI),0.93 (0.65-1.33),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs2385089,19:18550434,A/C,"ISYNA1 , ELL ,",i-Share(dichotomous).OR(95% CI),1.20 (0.94-1.53),i-Share(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
-rs2385089,19:18550434,A/C,"ISYNA1 , ELL ,",i-Share(dichotomous).OR(95% CI),1.20 (0.94-1.53),i-Share (continuous).P value,0.057,41591_2023_Article_2268_table_2.csv
-rs2385089,19:18550434,A/C,"ISYNA1 , ELL ,",i-Share(dichotomous).OR(95% CI),1.20 (0.94-1.53),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs2385089,19:18550434,A/C,"ISYNA1 , ELL ,",i-Share(dichotomous).OR(95% CI),1.20 (0.94-1.53),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs10954468,7:134434661,C/A,"BPGM , CALD1",i-Share(dichotomous).OR(95% CI),1.08 (0.86-1.36),i-Share(dichotomous).P value,0.50,41591_2023_Article_2268_table_2.csv
-rs10954468,7:134434661,C/A,"BPGM , CALD1",i-Share(dichotomous).OR(95% CI),1.08 (0.86-1.36),i-Share (continuous).P value,0.13,41591_2023_Article_2268_table_2.csv
-rs10954468,7:134434661,C/A,"BPGM , CALD1",i-Share(dichotomous).OR(95% CI),1.08 (0.86-1.36),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs10954468,7:134434661,C/A,"BPGM , CALD1",i-Share(dichotomous).OR(95% CI),1.08 (0.86-1.36),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs4675310,2:203880834,A/G,"NBEAL1 , ICA1L",i-Share(dichotomous).OR(95% CI),1.07 (0.81-1.41),i-Share(dichotomous).P value,0.61,41591_2023_Article_2268_table_2.csv
-rs4675310,2:203880834,A/G,"NBEAL1 , ICA1L",i-Share(dichotomous).OR(95% CI),1.07 (0.81-1.41),i-Share (continuous).P value,0.78,41591_2023_Article_2268_table_2.csv
-rs4675310,2:203880834,A/G,"NBEAL1 , ICA1L",i-Share(dichotomous).OR(95% CI),1.07 (0.81-1.41),Nagahama(dichotomous).P value,0.26,41591_2023_Article_2268_table_2.csv
-rs4675310,2:203880834,A/G,"NBEAL1 , ICA1L",i-Share(dichotomous).OR(95% CI),1.07 (0.81-1.41),Nagahama (continuous).P value,0.11,41591_2023_Article_2268_table_2.csv
-rs6769442,3:171565463,G/A,TMEM212,i-Share(dichotomous).OR(95% CI),1.10 (0.87-1.40),i-Share(dichotomous).P value,0.37,41591_2023_Article_2268_table_2.csv
-rs6769442,3:171565463,G/A,TMEM212,i-Share(dichotomous).OR(95% CI),1.10 (0.87-1.40),i-Share (continuous).P value,0.33,41591_2023_Article_2268_table_2.csv
-rs6769442,3:171565463,G/A,TMEM212,i-Share(dichotomous).OR(95% CI),1.10 (0.87-1.40),Nagahama(dichotomous).P value,0.82,41591_2023_Article_2268_table_2.csv
-rs6769442,3:171565463,G/A,TMEM212,i-Share(dichotomous).OR(95% CI),1.10 (0.87-1.40),Nagahama (continuous).P value,0.35,41591_2023_Article_2268_table_2.csv
-rs6011998,20:45269867,C/T,SLC13A3,i-Share (continuous).β(SE),0.164 (0.04),i-Share(dichotomous).P value,0.28,41591_2023_Article_2268_table_2.csv
-rs6011998,20:45269867,C/T,SLC13A3,i-Share (continuous).β(SE),0.164 (0.04),i-Share (continuous).P value,4.20×10 -05,41591_2023_Article_2268_table_2.csv
-rs6011998,20:45269867,C/T,SLC13A3,i-Share (continuous).β(SE),0.164 (0.04),Nagahama(dichotomous).P value,1.22×10 -05,41591_2023_Article_2268_table_2.csv
-rs6011998,20:45269867,C/T,SLC13A3,i-Share (continuous).β(SE),0.164 (0.04),Nagahama (continuous).P value,6.21×10 -07,41591_2023_Article_2268_table_2.csv
-rs13079464,3:13822439,C/G,WNT7A,i-Share (continuous).β(SE),0.014 (0.02),i-Share(dichotomous).P value,0.29,41591_2023_Article_2268_table_2.csv
-rs13079464,3:13822439,C/G,WNT7A,i-Share (continuous).β(SE),0.014 (0.02),i-Share (continuous).P value,0.50,41591_2023_Article_2268_table_2.csv
-rs13079464,3:13822439,C/G,WNT7A,i-Share (continuous).β(SE),0.014 (0.02),Nagahama(dichotomous).P value,0.11,41591_2023_Article_2268_table_2.csv
-rs13079464,3:13822439,C/G,WNT7A,i-Share (continuous).β(SE),0.014 (0.02),Nagahama (continuous).P value,1.50×10 -02,41591_2023_Article_2268_table_2.csv
-rs2425884,20:45258292,C/T,SLC13A3,i-Share (continuous).β(SE),0.077 (0.02),i-Share(dichotomous).P value,0.13,41591_2023_Article_2268_table_2.csv
-rs2425884,20:45258292,C/T,SLC13A3,i-Share (continuous).β(SE),0.077 (0.02),i-Share (continuous).P value,2.98×10 -04,41591_2023_Article_2268_table_2.csv
-rs2425884,20:45258292,C/T,SLC13A3,i-Share (continuous).β(SE),0.077 (0.02),Nagahama(dichotomous).P value,3.48×10 -03,41591_2023_Article_2268_table_2.csv
-rs2425884,20:45258292,C/T,SLC13A3,i-Share (continuous).β(SE),0.077 (0.02),Nagahama (continuous).P value,1.77×10 -06,41591_2023_Article_2268_table_2.csv
-rs10817108,9:113658671,A/G,LPAR1,i-Share (continuous).β(SE),0.058 (0.03),i-Share(dichotomous).P value,0.44,41591_2023_Article_2268_table_2.csv
-rs10817108,9:113658671,A/G,LPAR1,i-Share (continuous).β(SE),0.058 (0.03),i-Share (continuous).P value,2.23×10 -02,41591_2023_Article_2268_table_2.csv
-rs10817108,9:113658671,A/G,LPAR1,i-Share (continuous).β(SE),0.058 (0.03),Nagahama(dichotomous).P value,0.07,41591_2023_Article_2268_table_2.csv
-rs10817108,9:113658671,A/G,LPAR1,i-Share (continuous).β(SE),0.058 (0.03),Nagahama (continuous).P value,4.10×10 -03,41591_2023_Article_2268_table_2.csv
-rs2425881,20:45255618,A/G,SLC13A3,i-Share (continuous).β(SE),0.063 (0.03),i-Share(dichotomous).P value,1.40×10 -02,41591_2023_Article_2268_table_2.csv
-rs2425881,20:45255618,A/G,SLC13A3,i-Share (continuous).β(SE),0.063 (0.03),i-Share (continuous).P value,2.62×10 -02,41591_2023_Article_2268_table_2.csv
-rs2425881,20:45255618,A/G,SLC13A3,i-Share (continuous).β(SE),0.063 (0.03),Nagahama(dichotomous).P value,3.66×10 -02,41591_2023_Article_2268_table_2.csv
-rs2425881,20:45255618,A/G,SLC13A3,i-Share (continuous).β(SE),0.063 (0.03),Nagahama (continuous).P value,4.68×10 -03,41591_2023_Article_2268_table_2.csv
-rs3772833,3:124518362,G/A,"ITGB5 , UMPS",i-Share (continuous).β(SE),0.006 (0.03),i-Share(dichotomous).P value,0.21,41591_2023_Article_2268_table_2.csv
-rs3772833,3:124518362,G/A,"ITGB5 , UMPS",i-Share (continuous).β(SE),0.006 (0.03),i-Share (continuous).P value,0.85,41591_2023_Article_2268_table_2.csv
-rs3772833,3:124518362,G/A,"ITGB5 , UMPS",i-Share (continuous).β(SE),0.006 (0.03),Nagahama(dichotomous).P value,0.51,41591_2023_Article_2268_table_2.csv
-rs3772833,3:124518362,G/A,"ITGB5 , UMPS",i-Share (continuous).β(SE),0.006 (0.03),Nagahama (continuous).P value,0.16,41591_2023_Article_2268_table_2.csv
-rs112407396,20:45276381,T/A,SLC13A3,i-Share (continuous).β(SE),0.147 (0.07),i-Share(dichotomous).P value,0.24,41591_2023_Article_2268_table_2.csv
-rs112407396,20:45276381,T/A,SLC13A3,i-Share (continuous).β(SE),0.147 (0.07),i-Share (continuous).P value,3.13×10 -02,41591_2023_Article_2268_table_2.csv
-rs112407396,20:45276381,T/A,SLC13A3,i-Share (continuous).β(SE),0.147 (0.07),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs112407396,20:45276381,T/A,SLC13A3,i-Share (continuous).β(SE),0.147 (0.07),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs10494988,1:215141570,C/T,"CENPF , KCNK2",i-Share (continuous).β(SE),0.079 (0.02),i-Share(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
-rs10494988,1:215141570,C/T,"CENPF , KCNK2",i-Share (continuous).β(SE),0.079 (0.02),i-Share (continuous).P value,1.94×10 -04,41591_2023_Article_2268_table_2.csv
-rs10494988,1:215141570,C/T,"CENPF , KCNK2",i-Share (continuous).β(SE),0.079 (0.02),Nagahama(dichotomous).P value,0.90,41591_2023_Article_2268_table_2.csv
-rs10494988,1:215141570,C/T,"CENPF , KCNK2",i-Share (continuous).β(SE),0.079 (0.02),Nagahama (continuous).P value,0.67,41591_2023_Article_2268_table_2.csv
-rs72485816,20:45314435,T/C,"TP53RK , SLC13A3",i-Share (continuous).β(SE),0.093 (0.06),i-Share(dichotomous).P value,0.98,41591_2023_Article_2268_table_2.csv
-rs72485816,20:45314435,T/C,"TP53RK , SLC13A3",i-Share (continuous).β(SE),0.093 (0.06),i-Share (continuous).P value,0.095,41591_2023_Article_2268_table_2.csv
-rs72485816,20:45314435,T/C,"TP53RK , SLC13A3",i-Share (continuous).β(SE),0.093 (0.06),Nagahama(dichotomous).P value,2.83×10 -03,41591_2023_Article_2268_table_2.csv
-rs72485816,20:45314435,T/C,"TP53RK , SLC13A3",i-Share (continuous).β(SE),0.093 (0.06),Nagahama (continuous).P value,1.91×10 -08,41591_2023_Article_2268_table_2.csv
-rs8041189,15:85686327,G/A,PDE8A,i-Share (continuous).β(SE),0.041 (0.02),i-Share(dichotomous).P value,0.30,41591_2023_Article_2268_table_2.csv
-rs8041189,15:85686327,G/A,PDE8A,i-Share (continuous).β(SE),0.041 (0.02),i-Share (continuous).P value,0.073,41591_2023_Article_2268_table_2.csv
-rs8041189,15:85686327,G/A,PDE8A,i-Share (continuous).β(SE),0.041 (0.02),Nagahama(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
-rs8041189,15:85686327,G/A,PDE8A,i-Share (continuous).β(SE),0.041 (0.02),Nagahama (continuous).P value,2.40×10 -02,41591_2023_Article_2268_table_2.csv
-rs4685022,3:13832611,G/A,WNT7A,i-Share (continuous).β(SE),0.023 (0.02),i-Share(dichotomous).P value,0.34,41591_2023_Article_2268_table_2.csv
-rs4685022,3:13832611,G/A,WNT7A,i-Share (continuous).β(SE),0.023 (0.02),i-Share (continuous).P value,0.31,41591_2023_Article_2268_table_2.csv
-rs4685022,3:13832611,G/A,WNT7A,i-Share (continuous).β(SE),0.023 (0.02),Nagahama(dichotomous).P value,0.10,41591_2023_Article_2268_table_2.csv
-rs4685022,3:13832611,G/A,WNT7A,i-Share (continuous).β(SE),0.023 (0.02),Nagahama (continuous).P value,0.075,41591_2023_Article_2268_table_2.csv
-rs7596872,2:56128091,C/A,EFEMP1,i-Share (continuous).β(SE),0.089 (0.03),i-Share(dichotomous).P value,1.14×10 -02,41591_2023_Article_2268_table_2.csv
-rs7596872,2:56128091,C/A,EFEMP1,i-Share (continuous).β(SE),0.089 (0.03),i-Share (continuous).P value,1.10×10 -02,41591_2023_Article_2268_table_2.csv
-rs7596872,2:56128091,C/A,EFEMP1,i-Share (continuous).β(SE),0.089 (0.03),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs7596872,2:56128091,C/A,EFEMP1,i-Share (continuous).β(SE),0.089 (0.03),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs1126642,17:42989063,C/T,GFAP,i-Share (continuous).β(SE),0.127 (0.05),i-Share(dichotomous).P value,0.67,41591_2023_Article_2268_table_2.csv
-rs1126642,17:42989063,C/T,GFAP,i-Share (continuous).β(SE),0.127 (0.05),i-Share (continuous).P value,1.27×10 -02,41591_2023_Article_2268_table_2.csv
-rs1126642,17:42989063,C/T,GFAP,i-Share (continuous).β(SE),0.127 (0.05),Nagahama(dichotomous).P value,0.11,41591_2023_Article_2268_table_2.csv
-rs1126642,17:42989063,C/T,GFAP,i-Share (continuous).β(SE),0.127 (0.05),Nagahama (continuous).P value,9.88×10 -07,41591_2023_Article_2268_table_2.csv
-rs687610,3:193515781,G/C,OPA1,i-Share (continuous).β(SE),0.109 (0.02),i-Share(dichotomous).P value,4.88×10 -04,41591_2023_Article_2268_table_2.csv
-rs687610,3:193515781,G/C,OPA1,i-Share (continuous).β(SE),0.109 (0.02),i-Share (continuous).P value,1.29×10 -07,41591_2023_Article_2268_table_2.csv
-rs687610,3:193515781,G/C,OPA1,i-Share (continuous).β(SE),0.109 (0.02),Nagahama(dichotomous).P value,0.59,41591_2023_Article_2268_table_2.csv
-rs687610,3:193515781,G/C,OPA1,i-Share (continuous).β(SE),0.109 (0.02),Nagahama (continuous).P value,0.28,41591_2023_Article_2268_table_2.csv
-rs4959689,6:2617122,C/A,C6orf195,i-Share (continuous).β(SE),0.022 (0.02),i-Share(dichotomous).P value,0.37,41591_2023_Article_2268_table_2.csv
-rs4959689,6:2617122,C/A,C6orf195,i-Share (continuous).β(SE),0.022 (0.02),i-Share (continuous).P value,0.30,41591_2023_Article_2268_table_2.csv
-rs4959689,6:2617122,C/A,C6orf195,i-Share (continuous).β(SE),0.022 (0.02),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs4959689,6:2617122,C/A,C6orf195,i-Share (continuous).β(SE),0.022 (0.02),Nagahama (continuous).P value,0.34,41591_2023_Article_2268_table_2.csv
-rs56104388,20:45302135,T/C,SLC13A3,i-Share (continuous).β(SE),0.274 (0.11),i-Share(dichotomous).P value,0.67,41591_2023_Article_2268_table_2.csv
-rs56104388,20:45302135,T/C,SLC13A3,i-Share (continuous).β(SE),0.274 (0.11),i-Share (continuous).P value,1.47×10 -02,41591_2023_Article_2268_table_2.csv
-rs56104388,20:45302135,T/C,SLC13A3,i-Share (continuous).β(SE),0.274 (0.11),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs56104388,20:45302135,T/C,SLC13A3,i-Share (continuous).β(SE),0.274 (0.11),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs12417836,11:70089700,T/C,"FADD , PPFIA1",i-Share (continuous).β(SE),0.045 (0.04),i-Share(dichotomous).P value,0.99,41591_2023_Article_2268_table_2.csv
-rs12417836,11:70089700,T/C,"FADD , PPFIA1",i-Share (continuous).β(SE),0.045 (0.04),i-Share (continuous).P value,0.29,41591_2023_Article_2268_table_2.csv
-rs12417836,11:70089700,T/C,"FADD , PPFIA1",i-Share (continuous).β(SE),0.045 (0.04),Nagahama(dichotomous).P value,0.40,41591_2023_Article_2268_table_2.csv
-rs12417836,11:70089700,T/C,"FADD , PPFIA1",i-Share (continuous).β(SE),0.045 (0.04),Nagahama (continuous).P value,0.84,41591_2023_Article_2268_table_2.csv
-rs2923437,8:42425399,A/C,"SMIM19 , CHRNB3 , SLC20A2",i-Share (continuous).β(SE),0.047 (0.02),i-Share(dichotomous).P value,0.88,41591_2023_Article_2268_table_2.csv
-rs2923437,8:42425399,A/C,"SMIM19 , CHRNB3 , SLC20A2",i-Share (continuous).β(SE),0.047 (0.02),i-Share (continuous).P value,2.60×10 -02,41591_2023_Article_2268_table_2.csv
-rs2923437,8:42425399,A/C,"SMIM19 , CHRNB3 , SLC20A2",i-Share (continuous).β(SE),0.047 (0.02),Nagahama(dichotomous).P value,0.23,41591_2023_Article_2268_table_2.csv
-rs2923437,8:42425399,A/C,"SMIM19 , CHRNB3 , SLC20A2",i-Share (continuous).β(SE),0.047 (0.02),Nagahama (continuous).P value,0.11,41591_2023_Article_2268_table_2.csv
-rs1922930,6:1364691,C/A,"FOXQ1 , FOXF2",i-Share (continuous).β(SE),0.035 (0.04),i-Share(dichotomous).P value,0.70,41591_2023_Article_2268_table_2.csv
-rs1922930,6:1364691,C/A,"FOXQ1 , FOXF2",i-Share (continuous).β(SE),0.035 (0.04),i-Share (continuous).P value,0.33,41591_2023_Article_2268_table_2.csv
-rs1922930,6:1364691,C/A,"FOXQ1 , FOXF2",i-Share (continuous).β(SE),0.035 (0.04),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs1922930,6:1364691,C/A,"FOXQ1 , FOXF2",i-Share (continuous).β(SE),0.035 (0.04),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs2385089,19:18550434,A/C,"ISYNA1 , ELL ,",i-Share (continuous).β(SE),0.049 (0.03),i-Share(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
-rs2385089,19:18550434,A/C,"ISYNA1 , ELL ,",i-Share (continuous).β(SE),0.049 (0.03),i-Share (continuous).P value,0.057,41591_2023_Article_2268_table_2.csv
-rs2385089,19:18550434,A/C,"ISYNA1 , ELL ,",i-Share (continuous).β(SE),0.049 (0.03),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs2385089,19:18550434,A/C,"ISYNA1 , ELL ,",i-Share (continuous).β(SE),0.049 (0.03),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs10954468,7:134434661,C/A,"BPGM , CALD1",i-Share (continuous).β(SE),0.033 (0.02),i-Share(dichotomous).P value,0.50,41591_2023_Article_2268_table_2.csv
-rs10954468,7:134434661,C/A,"BPGM , CALD1",i-Share (continuous).β(SE),0.033 (0.02),i-Share (continuous).P value,0.13,41591_2023_Article_2268_table_2.csv
-rs10954468,7:134434661,C/A,"BPGM , CALD1",i-Share (continuous).β(SE),0.033 (0.02),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs10954468,7:134434661,C/A,"BPGM , CALD1",i-Share (continuous).β(SE),0.033 (0.02),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs4675310,2:203880834,A/G,"NBEAL1 , ICA1L",i-Share (continuous).β(SE),0.01 (0.04),i-Share(dichotomous).P value,0.61,41591_2023_Article_2268_table_2.csv
-rs4675310,2:203880834,A/G,"NBEAL1 , ICA1L",i-Share (continuous).β(SE),0.01 (0.04),i-Share (continuous).P value,0.78,41591_2023_Article_2268_table_2.csv
-rs4675310,2:203880834,A/G,"NBEAL1 , ICA1L",i-Share (continuous).β(SE),0.01 (0.04),Nagahama(dichotomous).P value,0.26,41591_2023_Article_2268_table_2.csv
-rs4675310,2:203880834,A/G,"NBEAL1 , ICA1L",i-Share (continuous).β(SE),0.01 (0.04),Nagahama (continuous).P value,0.11,41591_2023_Article_2268_table_2.csv
-rs6769442,3:171565463,G/A,TMEM212,i-Share (continuous).β(SE),0.03 (0.03),i-Share(dichotomous).P value,0.37,41591_2023_Article_2268_table_2.csv
-rs6769442,3:171565463,G/A,TMEM212,i-Share (continuous).β(SE),0.03 (0.03),i-Share (continuous).P value,0.33,41591_2023_Article_2268_table_2.csv
-rs6769442,3:171565463,G/A,TMEM212,i-Share (continuous).β(SE),0.03 (0.03),Nagahama(dichotomous).P value,0.82,41591_2023_Article_2268_table_2.csv
-rs6769442,3:171565463,G/A,TMEM212,i-Share (continuous).β(SE),0.03 (0.03),Nagahama (continuous).P value,0.35,41591_2023_Article_2268_table_2.csv
-rs6011998,20:45269867,C/T,SLC13A3,Nagahama(dichotomous).OR(95% CI),1.69 (1.33-2.13),i-Share(dichotomous).P value,0.28,41591_2023_Article_2268_table_2.csv
-rs6011998,20:45269867,C/T,SLC13A3,Nagahama(dichotomous).OR(95% CI),1.69 (1.33-2.13),i-Share (continuous).P value,4.20×10 -05,41591_2023_Article_2268_table_2.csv
-rs6011998,20:45269867,C/T,SLC13A3,Nagahama(dichotomous).OR(95% CI),1.69 (1.33-2.13),Nagahama(dichotomous).P value,1.22×10 -05,41591_2023_Article_2268_table_2.csv
-rs6011998,20:45269867,C/T,SLC13A3,Nagahama(dichotomous).OR(95% CI),1.69 (1.33-2.13),Nagahama (continuous).P value,6.21×10 -07,41591_2023_Article_2268_table_2.csv
-rs13079464,3:13822439,C/G,WNT7A,Nagahama(dichotomous).OR(95% CI),1.16 (0.97-1.40),i-Share(dichotomous).P value,0.29,41591_2023_Article_2268_table_2.csv
-rs13079464,3:13822439,C/G,WNT7A,Nagahama(dichotomous).OR(95% CI),1.16 (0.97-1.40),i-Share (continuous).P value,0.50,41591_2023_Article_2268_table_2.csv
-rs13079464,3:13822439,C/G,WNT7A,Nagahama(dichotomous).OR(95% CI),1.16 (0.97-1.40),Nagahama(dichotomous).P value,0.11,41591_2023_Article_2268_table_2.csv
-rs13079464,3:13822439,C/G,WNT7A,Nagahama(dichotomous).OR(95% CI),1.16 (0.97-1.40),Nagahama (continuous).P value,1.50×10 -02,41591_2023_Article_2268_table_2.csv
-rs2425884,20:45258292,C/T,SLC13A3,Nagahama(dichotomous).OR(95% CI),1.29 (1.09-1.52),i-Share(dichotomous).P value,0.13,41591_2023_Article_2268_table_2.csv
-rs2425884,20:45258292,C/T,SLC13A3,Nagahama(dichotomous).OR(95% CI),1.29 (1.09-1.52),i-Share (continuous).P value,2.98×10 -04,41591_2023_Article_2268_table_2.csv
-rs2425884,20:45258292,C/T,SLC13A3,Nagahama(dichotomous).OR(95% CI),1.29 (1.09-1.52),Nagahama(dichotomous).P value,3.48×10 -03,41591_2023_Article_2268_table_2.csv
-rs2425884,20:45258292,C/T,SLC13A3,Nagahama(dichotomous).OR(95% CI),1.29 (1.09-1.52),Nagahama (continuous).P value,1.77×10 -06,41591_2023_Article_2268_table_2.csv
-rs10817108,9:113658671,A/G,LPAR1,Nagahama(dichotomous).OR(95% CI),1.18 (0.98-1.43),i-Share(dichotomous).P value,0.44,41591_2023_Article_2268_table_2.csv
-rs10817108,9:113658671,A/G,LPAR1,Nagahama(dichotomous).OR(95% CI),1.18 (0.98-1.43),i-Share (continuous).P value,2.23×10 -02,41591_2023_Article_2268_table_2.csv
-rs10817108,9:113658671,A/G,LPAR1,Nagahama(dichotomous).OR(95% CI),1.18 (0.98-1.43),Nagahama(dichotomous).P value,0.07,41591_2023_Article_2268_table_2.csv
-rs10817108,9:113658671,A/G,LPAR1,Nagahama(dichotomous).OR(95% CI),1.18 (0.98-1.43),Nagahama (continuous).P value,4.10×10 -03,41591_2023_Article_2268_table_2.csv
-rs2425881,20:45255618,A/G,SLC13A3,Nagahama(dichotomous).OR(95% CI),1.18 (1.01-1.37),i-Share(dichotomous).P value,1.40×10 -02,41591_2023_Article_2268_table_2.csv
-rs2425881,20:45255618,A/G,SLC13A3,Nagahama(dichotomous).OR(95% CI),1.18 (1.01-1.37),i-Share (continuous).P value,2.62×10 -02,41591_2023_Article_2268_table_2.csv
-rs2425881,20:45255618,A/G,SLC13A3,Nagahama(dichotomous).OR(95% CI),1.18 (1.01-1.37),Nagahama(dichotomous).P value,3.66×10 -02,41591_2023_Article_2268_table_2.csv
-rs2425881,20:45255618,A/G,SLC13A3,Nagahama(dichotomous).OR(95% CI),1.18 (1.01-1.37),Nagahama (continuous).P value,4.68×10 -03,41591_2023_Article_2268_table_2.csv
-rs3772833,3:124518362,G/A,"ITGB5 , UMPS",Nagahama(dichotomous).OR(95% CI),1.06 (0.88-1.29),i-Share(dichotomous).P value,0.21,41591_2023_Article_2268_table_2.csv
-rs3772833,3:124518362,G/A,"ITGB5 , UMPS",Nagahama(dichotomous).OR(95% CI),1.06 (0.88-1.29),i-Share (continuous).P value,0.85,41591_2023_Article_2268_table_2.csv
-rs3772833,3:124518362,G/A,"ITGB5 , UMPS",Nagahama(dichotomous).OR(95% CI),1.06 (0.88-1.29),Nagahama(dichotomous).P value,0.51,41591_2023_Article_2268_table_2.csv
-rs3772833,3:124518362,G/A,"ITGB5 , UMPS",Nagahama(dichotomous).OR(95% CI),1.06 (0.88-1.29),Nagahama (continuous).P value,0.16,41591_2023_Article_2268_table_2.csv
-rs112407396,20:45276381,T/A,SLC13A3,Nagahama(dichotomous).OR(95% CI),,i-Share(dichotomous).P value,0.24,41591_2023_Article_2268_table_2.csv
-rs112407396,20:45276381,T/A,SLC13A3,Nagahama(dichotomous).OR(95% CI),,i-Share (continuous).P value,3.13×10 -02,41591_2023_Article_2268_table_2.csv
-rs112407396,20:45276381,T/A,SLC13A3,Nagahama(dichotomous).OR(95% CI),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs112407396,20:45276381,T/A,SLC13A3,Nagahama(dichotomous).OR(95% CI),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs10494988,1:215141570,C/T,"CENPF , KCNK2",Nagahama(dichotomous).OR(95% CI),1.01 (0.86-1.18),i-Share(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
-rs10494988,1:215141570,C/T,"CENPF , KCNK2",Nagahama(dichotomous).OR(95% CI),1.01 (0.86-1.18),i-Share (continuous).P value,1.94×10 -04,41591_2023_Article_2268_table_2.csv
-rs10494988,1:215141570,C/T,"CENPF , KCNK2",Nagahama(dichotomous).OR(95% CI),1.01 (0.86-1.18),Nagahama(dichotomous).P value,0.90,41591_2023_Article_2268_table_2.csv
-rs10494988,1:215141570,C/T,"CENPF , KCNK2",Nagahama(dichotomous).OR(95% CI),1.01 (0.86-1.18),Nagahama (continuous).P value,0.67,41591_2023_Article_2268_table_2.csv
-rs72485816,20:45314435,T/C,"TP53RK , SLC13A3",Nagahama(dichotomous).OR(95% CI),1.32 (1.10-1.59),i-Share(dichotomous).P value,0.98,41591_2023_Article_2268_table_2.csv
-rs72485816,20:45314435,T/C,"TP53RK , SLC13A3",Nagahama(dichotomous).OR(95% CI),1.32 (1.10-1.59),i-Share (continuous).P value,0.095,41591_2023_Article_2268_table_2.csv
-rs72485816,20:45314435,T/C,"TP53RK , SLC13A3",Nagahama(dichotomous).OR(95% CI),1.32 (1.10-1.59),Nagahama(dichotomous).P value,2.83×10 -03,41591_2023_Article_2268_table_2.csv
-rs72485816,20:45314435,T/C,"TP53RK , SLC13A3",Nagahama(dichotomous).OR(95% CI),1.32 (1.10-1.59),Nagahama (continuous).P value,1.91×10 -08,41591_2023_Article_2268_table_2.csv
-rs8041189,15:85686327,G/A,PDE8A,Nagahama(dichotomous).OR(95% CI),1.67 (0.84-3.33),i-Share(dichotomous).P value,0.30,41591_2023_Article_2268_table_2.csv
-rs8041189,15:85686327,G/A,PDE8A,Nagahama(dichotomous).OR(95% CI),1.67 (0.84-3.33),i-Share (continuous).P value,0.073,41591_2023_Article_2268_table_2.csv
-rs8041189,15:85686327,G/A,PDE8A,Nagahama(dichotomous).OR(95% CI),1.67 (0.84-3.33),Nagahama(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
-rs8041189,15:85686327,G/A,PDE8A,Nagahama(dichotomous).OR(95% CI),1.67 (0.84-3.33),Nagahama (continuous).P value,2.40×10 -02,41591_2023_Article_2268_table_2.csv
-rs4685022,3:13832611,G/A,WNT7A,Nagahama(dichotomous).OR(95% CI),1.15 (0.97-1.36),i-Share(dichotomous).P value,0.34,41591_2023_Article_2268_table_2.csv
-rs4685022,3:13832611,G/A,WNT7A,Nagahama(dichotomous).OR(95% CI),1.15 (0.97-1.36),i-Share (continuous).P value,0.31,41591_2023_Article_2268_table_2.csv
-rs4685022,3:13832611,G/A,WNT7A,Nagahama(dichotomous).OR(95% CI),1.15 (0.97-1.36),Nagahama(dichotomous).P value,0.10,41591_2023_Article_2268_table_2.csv
-rs4685022,3:13832611,G/A,WNT7A,Nagahama(dichotomous).OR(95% CI),1.15 (0.97-1.36),Nagahama (continuous).P value,0.075,41591_2023_Article_2268_table_2.csv
-rs7596872,2:56128091,C/A,EFEMP1,Nagahama(dichotomous).OR(95% CI),,i-Share(dichotomous).P value,1.14×10 -02,41591_2023_Article_2268_table_2.csv
-rs7596872,2:56128091,C/A,EFEMP1,Nagahama(dichotomous).OR(95% CI),,i-Share (continuous).P value,1.10×10 -02,41591_2023_Article_2268_table_2.csv
-rs7596872,2:56128091,C/A,EFEMP1,Nagahama(dichotomous).OR(95% CI),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs7596872,2:56128091,C/A,EFEMP1,Nagahama(dichotomous).OR(95% CI),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs1126642,17:42989063,C/T,GFAP,Nagahama(dichotomous).OR(95% CI),1.35 (1.09-1.67),i-Share(dichotomous).P value,0.67,41591_2023_Article_2268_table_2.csv
-rs1126642,17:42989063,C/T,GFAP,Nagahama(dichotomous).OR(95% CI),1.35 (1.09-1.67),i-Share (continuous).P value,1.27×10 -02,41591_2023_Article_2268_table_2.csv
-rs1126642,17:42989063,C/T,GFAP,Nagahama(dichotomous).OR(95% CI),1.35 (1.09-1.67),Nagahama(dichotomous).P value,0.11,41591_2023_Article_2268_table_2.csv
-rs1126642,17:42989063,C/T,GFAP,Nagahama(dichotomous).OR(95% CI),1.35 (1.09-1.67),Nagahama (continuous).P value,9.88×10 -07,41591_2023_Article_2268_table_2.csv
-rs687610,3:193515781,G/C,OPA1,Nagahama(dichotomous).OR(95% CI),0.95 (0.81-1.13),i-Share(dichotomous).P value,4.88×10 -04,41591_2023_Article_2268_table_2.csv
-rs687610,3:193515781,G/C,OPA1,Nagahama(dichotomous).OR(95% CI),0.95 (0.81-1.13),i-Share (continuous).P value,1.29×10 -07,41591_2023_Article_2268_table_2.csv
-rs687610,3:193515781,G/C,OPA1,Nagahama(dichotomous).OR(95% CI),0.95 (0.81-1.13),Nagahama(dichotomous).P value,0.59,41591_2023_Article_2268_table_2.csv
-rs687610,3:193515781,G/C,OPA1,Nagahama(dichotomous).OR(95% CI),0.95 (0.81-1.13),Nagahama (continuous).P value,0.28,41591_2023_Article_2268_table_2.csv
-rs4959689,6:2617122,C/A,C6orf195,Nagahama(dichotomous).OR(95% CI),,i-Share(dichotomous).P value,0.37,41591_2023_Article_2268_table_2.csv
-rs4959689,6:2617122,C/A,C6orf195,Nagahama(dichotomous).OR(95% CI),,i-Share (continuous).P value,0.30,41591_2023_Article_2268_table_2.csv
-rs4959689,6:2617122,C/A,C6orf195,Nagahama(dichotomous).OR(95% CI),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs4959689,6:2617122,C/A,C6orf195,Nagahama(dichotomous).OR(95% CI),,Nagahama (continuous).P value,0.34,41591_2023_Article_2268_table_2.csv
-rs56104388,20:45302135,T/C,SLC13A3,Nagahama(dichotomous).OR(95% CI),,i-Share(dichotomous).P value,0.67,41591_2023_Article_2268_table_2.csv
-rs56104388,20:45302135,T/C,SLC13A3,Nagahama(dichotomous).OR(95% CI),,i-Share (continuous).P value,1.47×10 -02,41591_2023_Article_2268_table_2.csv
-rs56104388,20:45302135,T/C,SLC13A3,Nagahama(dichotomous).OR(95% CI),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs56104388,20:45302135,T/C,SLC13A3,Nagahama(dichotomous).OR(95% CI),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs12417836,11:70089700,T/C,"FADD , PPFIA1",Nagahama(dichotomous).OR(95% CI),0.87 (0.62-1.21),i-Share(dichotomous).P value,0.99,41591_2023_Article_2268_table_2.csv
-rs12417836,11:70089700,T/C,"FADD , PPFIA1",Nagahama(dichotomous).OR(95% CI),0.87 (0.62-1.21),i-Share (continuous).P value,0.29,41591_2023_Article_2268_table_2.csv
-rs12417836,11:70089700,T/C,"FADD , PPFIA1",Nagahama(dichotomous).OR(95% CI),0.87 (0.62-1.21),Nagahama(dichotomous).P value,0.40,41591_2023_Article_2268_table_2.csv
-rs12417836,11:70089700,T/C,"FADD , PPFIA1",Nagahama(dichotomous).OR(95% CI),0.87 (0.62-1.21),Nagahama (continuous).P value,0.84,41591_2023_Article_2268_table_2.csv
-rs2923437,8:42425399,A/C,"SMIM19 , CHRNB3 , SLC20A2",Nagahama(dichotomous).OR(95% CI),1.11 (0.94-1.31),i-Share(dichotomous).P value,0.88,41591_2023_Article_2268_table_2.csv
-rs2923437,8:42425399,A/C,"SMIM19 , CHRNB3 , SLC20A2",Nagahama(dichotomous).OR(95% CI),1.11 (0.94-1.31),i-Share (continuous).P value,2.60×10 -02,41591_2023_Article_2268_table_2.csv
-rs2923437,8:42425399,A/C,"SMIM19 , CHRNB3 , SLC20A2",Nagahama(dichotomous).OR(95% CI),1.11 (0.94-1.31),Nagahama(dichotomous).P value,0.23,41591_2023_Article_2268_table_2.csv
-rs2923437,8:42425399,A/C,"SMIM19 , CHRNB3 , SLC20A2",Nagahama(dichotomous).OR(95% CI),1.11 (0.94-1.31),Nagahama (continuous).P value,0.11,41591_2023_Article_2268_table_2.csv
-rs1922930,6:1364691,C/A,"FOXQ1 , FOXF2",Nagahama(dichotomous).OR(95% CI),,i-Share(dichotomous).P value,0.70,41591_2023_Article_2268_table_2.csv
-rs1922930,6:1364691,C/A,"FOXQ1 , FOXF2",Nagahama(dichotomous).OR(95% CI),,i-Share (continuous).P value,0.33,41591_2023_Article_2268_table_2.csv
-rs1922930,6:1364691,C/A,"FOXQ1 , FOXF2",Nagahama(dichotomous).OR(95% CI),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs1922930,6:1364691,C/A,"FOXQ1 , FOXF2",Nagahama(dichotomous).OR(95% CI),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs2385089,19:18550434,A/C,"ISYNA1 , ELL ,",Nagahama(dichotomous).OR(95% CI),,i-Share(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
-rs2385089,19:18550434,A/C,"ISYNA1 , ELL ,",Nagahama(dichotomous).OR(95% CI),,i-Share (continuous).P value,0.057,41591_2023_Article_2268_table_2.csv
-rs2385089,19:18550434,A/C,"ISYNA1 , ELL ,",Nagahama(dichotomous).OR(95% CI),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs2385089,19:18550434,A/C,"ISYNA1 , ELL ,",Nagahama(dichotomous).OR(95% CI),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs10954468,7:134434661,C/A,"BPGM , CALD1",Nagahama(dichotomous).OR(95% CI),,i-Share(dichotomous).P value,0.50,41591_2023_Article_2268_table_2.csv
-rs10954468,7:134434661,C/A,"BPGM , CALD1",Nagahama(dichotomous).OR(95% CI),,i-Share (continuous).P value,0.13,41591_2023_Article_2268_table_2.csv
-rs10954468,7:134434661,C/A,"BPGM , CALD1",Nagahama(dichotomous).OR(95% CI),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs10954468,7:134434661,C/A,"BPGM , CALD1",Nagahama(dichotomous).OR(95% CI),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs4675310,2:203880834,A/G,"NBEAL1 , ICA1L",Nagahama(dichotomous).OR(95% CI),1.88 (0.63-5.60),i-Share(dichotomous).P value,0.61,41591_2023_Article_2268_table_2.csv
-rs4675310,2:203880834,A/G,"NBEAL1 , ICA1L",Nagahama(dichotomous).OR(95% CI),1.88 (0.63-5.60),i-Share (continuous).P value,0.78,41591_2023_Article_2268_table_2.csv
-rs4675310,2:203880834,A/G,"NBEAL1 , ICA1L",Nagahama(dichotomous).OR(95% CI),1.88 (0.63-5.60),Nagahama(dichotomous).P value,0.26,41591_2023_Article_2268_table_2.csv
-rs4675310,2:203880834,A/G,"NBEAL1 , ICA1L",Nagahama(dichotomous).OR(95% CI),1.88 (0.63-5.60),Nagahama (continuous).P value,0.11,41591_2023_Article_2268_table_2.csv
-rs6769442,3:171565463,G/A,TMEM212,Nagahama(dichotomous).OR(95% CI),1.04 (0.71-1.53),i-Share(dichotomous).P value,0.37,41591_2023_Article_2268_table_2.csv
-rs6769442,3:171565463,G/A,TMEM212,Nagahama(dichotomous).OR(95% CI),1.04 (0.71-1.53),i-Share (continuous).P value,0.33,41591_2023_Article_2268_table_2.csv
-rs6769442,3:171565463,G/A,TMEM212,Nagahama(dichotomous).OR(95% CI),1.04 (0.71-1.53),Nagahama(dichotomous).P value,0.82,41591_2023_Article_2268_table_2.csv
-rs6769442,3:171565463,G/A,TMEM212,Nagahama(dichotomous).OR(95% CI),1.04 (0.71-1.53),Nagahama (continuous).P value,0.35,41591_2023_Article_2268_table_2.csv
-rs6011998,20:45269867,C/T,SLC13A3,Nagahama (continuous).β(SE),0.037 (0.008),i-Share(dichotomous).P value,0.28,41591_2023_Article_2268_table_2.csv
-rs6011998,20:45269867,C/T,SLC13A3,Nagahama (continuous).β(SE),0.037 (0.008),i-Share (continuous).P value,4.20×10 -05,41591_2023_Article_2268_table_2.csv
-rs6011998,20:45269867,C/T,SLC13A3,Nagahama (continuous).β(SE),0.037 (0.008),Nagahama(dichotomous).P value,1.22×10 -05,41591_2023_Article_2268_table_2.csv
-rs6011998,20:45269867,C/T,SLC13A3,Nagahama (continuous).β(SE),0.037 (0.008),Nagahama (continuous).P value,6.21×10 -07,41591_2023_Article_2268_table_2.csv
-rs13079464,3:13822439,C/G,WNT7A,Nagahama (continuous).β(SE),0.015 (0.006),i-Share(dichotomous).P value,0.29,41591_2023_Article_2268_table_2.csv
-rs13079464,3:13822439,C/G,WNT7A,Nagahama (continuous).β(SE),0.015 (0.006),i-Share (continuous).P value,0.50,41591_2023_Article_2268_table_2.csv
-rs13079464,3:13822439,C/G,WNT7A,Nagahama (continuous).β(SE),0.015 (0.006),Nagahama(dichotomous).P value,0.11,41591_2023_Article_2268_table_2.csv
-rs13079464,3:13822439,C/G,WNT7A,Nagahama (continuous).β(SE),0.015 (0.006),Nagahama (continuous).P value,1.50×10 -02,41591_2023_Article_2268_table_2.csv
-rs2425884,20:45258292,C/T,SLC13A3,Nagahama (continuous).β(SE),0.026 (0.005),i-Share(dichotomous).P value,0.13,41591_2023_Article_2268_table_2.csv
-rs2425884,20:45258292,C/T,SLC13A3,Nagahama (continuous).β(SE),0.026 (0.005),i-Share (continuous).P value,2.98×10 -04,41591_2023_Article_2268_table_2.csv
-rs2425884,20:45258292,C/T,SLC13A3,Nagahama (continuous).β(SE),0.026 (0.005),Nagahama(dichotomous).P value,3.48×10 -03,41591_2023_Article_2268_table_2.csv
-rs2425884,20:45258292,C/T,SLC13A3,Nagahama (continuous).β(SE),0.026 (0.005),Nagahama (continuous).P value,1.77×10 -06,41591_2023_Article_2268_table_2.csv
-rs10817108,9:113658671,A/G,LPAR1,Nagahama (continuous).β(SE),0.017 (0.006),i-Share(dichotomous).P value,0.44,41591_2023_Article_2268_table_2.csv
-rs10817108,9:113658671,A/G,LPAR1,Nagahama (continuous).β(SE),0.017 (0.006),i-Share (continuous).P value,2.23×10 -02,41591_2023_Article_2268_table_2.csv
-rs10817108,9:113658671,A/G,LPAR1,Nagahama (continuous).β(SE),0.017 (0.006),Nagahama(dichotomous).P value,0.07,41591_2023_Article_2268_table_2.csv
-rs10817108,9:113658671,A/G,LPAR1,Nagahama (continuous).β(SE),0.017 (0.006),Nagahama (continuous).P value,4.10×10 -03,41591_2023_Article_2268_table_2.csv
-rs2425881,20:45255618,A/G,SLC13A3,Nagahama (continuous).β(SE),0.014 (0.005),i-Share(dichotomous).P value,1.40×10 -02,41591_2023_Article_2268_table_2.csv
-rs2425881,20:45255618,A/G,SLC13A3,Nagahama (continuous).β(SE),0.014 (0.005),i-Share (continuous).P value,2.62×10 -02,41591_2023_Article_2268_table_2.csv
-rs2425881,20:45255618,A/G,SLC13A3,Nagahama (continuous).β(SE),0.014 (0.005),Nagahama(dichotomous).P value,3.66×10 -02,41591_2023_Article_2268_table_2.csv
-rs2425881,20:45255618,A/G,SLC13A3,Nagahama (continuous).β(SE),0.014 (0.005),Nagahama (continuous).P value,4.68×10 -03,41591_2023_Article_2268_table_2.csv
-rs3772833,3:124518362,G/A,"ITGB5 , UMPS",Nagahama (continuous).β(SE),0.008 (0.006),i-Share(dichotomous).P value,0.21,41591_2023_Article_2268_table_2.csv
-rs3772833,3:124518362,G/A,"ITGB5 , UMPS",Nagahama (continuous).β(SE),0.008 (0.006),i-Share (continuous).P value,0.85,41591_2023_Article_2268_table_2.csv
-rs3772833,3:124518362,G/A,"ITGB5 , UMPS",Nagahama (continuous).β(SE),0.008 (0.006),Nagahama(dichotomous).P value,0.51,41591_2023_Article_2268_table_2.csv
-rs3772833,3:124518362,G/A,"ITGB5 , UMPS",Nagahama (continuous).β(SE),0.008 (0.006),Nagahama (continuous).P value,0.16,41591_2023_Article_2268_table_2.csv
-rs112407396,20:45276381,T/A,SLC13A3,Nagahama (continuous).β(SE),,i-Share(dichotomous).P value,0.24,41591_2023_Article_2268_table_2.csv
-rs112407396,20:45276381,T/A,SLC13A3,Nagahama (continuous).β(SE),,i-Share (continuous).P value,3.13×10 -02,41591_2023_Article_2268_table_2.csv
-rs112407396,20:45276381,T/A,SLC13A3,Nagahama (continuous).β(SE),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs112407396,20:45276381,T/A,SLC13A3,Nagahama (continuous).β(SE),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs10494988,1:215141570,C/T,"CENPF , KCNK2",Nagahama (continuous).β(SE),-0.002 (0.005),i-Share(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
-rs10494988,1:215141570,C/T,"CENPF , KCNK2",Nagahama (continuous).β(SE),-0.002 (0.005),i-Share (continuous).P value,1.94×10 -04,41591_2023_Article_2268_table_2.csv
-rs10494988,1:215141570,C/T,"CENPF , KCNK2",Nagahama (continuous).β(SE),-0.002 (0.005),Nagahama(dichotomous).P value,0.90,41591_2023_Article_2268_table_2.csv
-rs10494988,1:215141570,C/T,"CENPF , KCNK2",Nagahama (continuous).β(SE),-0.002 (0.005),Nagahama (continuous).P value,0.67,41591_2023_Article_2268_table_2.csv
-rs72485816,20:45314435,T/C,"TP53RK , SLC13A3",Nagahama (continuous).β(SE),0.033 (0.006),i-Share(dichotomous).P value,0.98,41591_2023_Article_2268_table_2.csv
-rs72485816,20:45314435,T/C,"TP53RK , SLC13A3",Nagahama (continuous).β(SE),0.033 (0.006),i-Share (continuous).P value,0.095,41591_2023_Article_2268_table_2.csv
-rs72485816,20:45314435,T/C,"TP53RK , SLC13A3",Nagahama (continuous).β(SE),0.033 (0.006),Nagahama(dichotomous).P value,2.83×10 -03,41591_2023_Article_2268_table_2.csv
-rs72485816,20:45314435,T/C,"TP53RK , SLC13A3",Nagahama (continuous).β(SE),0.033 (0.006),Nagahama (continuous).P value,1.91×10 -08,41591_2023_Article_2268_table_2.csv
-rs8041189,15:85686327,G/A,PDE8A,Nagahama (continuous).β(SE),0.046 (0.021),i-Share(dichotomous).P value,0.30,41591_2023_Article_2268_table_2.csv
-rs8041189,15:85686327,G/A,PDE8A,Nagahama (continuous).β(SE),0.046 (0.021),i-Share (continuous).P value,0.073,41591_2023_Article_2268_table_2.csv
-rs8041189,15:85686327,G/A,PDE8A,Nagahama (continuous).β(SE),0.046 (0.021),Nagahama(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
-rs8041189,15:85686327,G/A,PDE8A,Nagahama (continuous).β(SE),0.046 (0.021),Nagahama (continuous).P value,2.40×10 -02,41591_2023_Article_2268_table_2.csv
-rs4685022,3:13832611,G/A,WNT7A,Nagahama (continuous).β(SE),0.010 (0.005),i-Share(dichotomous).P value,0.34,41591_2023_Article_2268_table_2.csv
-rs4685022,3:13832611,G/A,WNT7A,Nagahama (continuous).β(SE),0.010 (0.005),i-Share (continuous).P value,0.31,41591_2023_Article_2268_table_2.csv
-rs4685022,3:13832611,G/A,WNT7A,Nagahama (continuous).β(SE),0.010 (0.005),Nagahama(dichotomous).P value,0.10,41591_2023_Article_2268_table_2.csv
-rs4685022,3:13832611,G/A,WNT7A,Nagahama (continuous).β(SE),0.010 (0.005),Nagahama (continuous).P value,0.075,41591_2023_Article_2268_table_2.csv
-rs7596872,2:56128091,C/A,EFEMP1,Nagahama (continuous).β(SE),,i-Share(dichotomous).P value,1.14×10 -02,41591_2023_Article_2268_table_2.csv
-rs7596872,2:56128091,C/A,EFEMP1,Nagahama (continuous).β(SE),,i-Share (continuous).P value,1.10×10 -02,41591_2023_Article_2268_table_2.csv
-rs7596872,2:56128091,C/A,EFEMP1,Nagahama (continuous).β(SE),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs7596872,2:56128091,C/A,EFEMP1,Nagahama (continuous).β(SE),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs1126642,17:42989063,C/T,GFAP,Nagahama (continuous).β(SE),0.033 (0.007),i-Share(dichotomous).P value,0.67,41591_2023_Article_2268_table_2.csv
-rs1126642,17:42989063,C/T,GFAP,Nagahama (continuous).β(SE),0.033 (0.007),i-Share (continuous).P value,1.27×10 -02,41591_2023_Article_2268_table_2.csv
-rs1126642,17:42989063,C/T,GFAP,Nagahama (continuous).β(SE),0.033 (0.007),Nagahama(dichotomous).P value,0.11,41591_2023_Article_2268_table_2.csv
-rs1126642,17:42989063,C/T,GFAP,Nagahama (continuous).β(SE),0.033 (0.007),Nagahama (continuous).P value,9.88×10 -07,41591_2023_Article_2268_table_2.csv
-rs687610,3:193515781,G/C,OPA1,Nagahama (continuous).β(SE),0.006 (0.005),i-Share(dichotomous).P value,4.88×10 -04,41591_2023_Article_2268_table_2.csv
-rs687610,3:193515781,G/C,OPA1,Nagahama (continuous).β(SE),0.006 (0.005),i-Share (continuous).P value,1.29×10 -07,41591_2023_Article_2268_table_2.csv
-rs687610,3:193515781,G/C,OPA1,Nagahama (continuous).β(SE),0.006 (0.005),Nagahama(dichotomous).P value,0.59,41591_2023_Article_2268_table_2.csv
-rs687610,3:193515781,G/C,OPA1,Nagahama (continuous).β(SE),0.006 (0.005),Nagahama (continuous).P value,0.28,41591_2023_Article_2268_table_2.csv
-rs4959689,6:2617122,C/A,C6orf195,Nagahama (continuous).β(SE),0.024 (0.026),i-Share(dichotomous).P value,0.37,41591_2023_Article_2268_table_2.csv
-rs4959689,6:2617122,C/A,C6orf195,Nagahama (continuous).β(SE),0.024 (0.026),i-Share (continuous).P value,0.30,41591_2023_Article_2268_table_2.csv
-rs4959689,6:2617122,C/A,C6orf195,Nagahama (continuous).β(SE),0.024 (0.026),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs4959689,6:2617122,C/A,C6orf195,Nagahama (continuous).β(SE),0.024 (0.026),Nagahama (continuous).P value,0.34,41591_2023_Article_2268_table_2.csv
-rs56104388,20:45302135,T/C,SLC13A3,Nagahama (continuous).β(SE),,i-Share(dichotomous).P value,0.67,41591_2023_Article_2268_table_2.csv
-rs56104388,20:45302135,T/C,SLC13A3,Nagahama (continuous).β(SE),,i-Share (continuous).P value,1.47×10 -02,41591_2023_Article_2268_table_2.csv
-rs56104388,20:45302135,T/C,SLC13A3,Nagahama (continuous).β(SE),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs56104388,20:45302135,T/C,SLC13A3,Nagahama (continuous).β(SE),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs12417836,11:70089700,T/C,"FADD , PPFIA1",Nagahama (continuous).β(SE),-0.002 (0.011),i-Share(dichotomous).P value,0.99,41591_2023_Article_2268_table_2.csv
-rs12417836,11:70089700,T/C,"FADD , PPFIA1",Nagahama (continuous).β(SE),-0.002 (0.011),i-Share (continuous).P value,0.29,41591_2023_Article_2268_table_2.csv
-rs12417836,11:70089700,T/C,"FADD , PPFIA1",Nagahama (continuous).β(SE),-0.002 (0.011),Nagahama(dichotomous).P value,0.40,41591_2023_Article_2268_table_2.csv
-rs12417836,11:70089700,T/C,"FADD , PPFIA1",Nagahama (continuous).β(SE),-0.002 (0.011),Nagahama (continuous).P value,0.84,41591_2023_Article_2268_table_2.csv
-rs2923437,8:42425399,A/C,"SMIM19 , CHRNB3 , SLC20A2",Nagahama (continuous).β(SE),0.008 (0.005),i-Share(dichotomous).P value,0.88,41591_2023_Article_2268_table_2.csv
-rs2923437,8:42425399,A/C,"SMIM19 , CHRNB3 , SLC20A2",Nagahama (continuous).β(SE),0.008 (0.005),i-Share (continuous).P value,2.60×10 -02,41591_2023_Article_2268_table_2.csv
-rs2923437,8:42425399,A/C,"SMIM19 , CHRNB3 , SLC20A2",Nagahama (continuous).β(SE),0.008 (0.005),Nagahama(dichotomous).P value,0.23,41591_2023_Article_2268_table_2.csv
-rs2923437,8:42425399,A/C,"SMIM19 , CHRNB3 , SLC20A2",Nagahama (continuous).β(SE),0.008 (0.005),Nagahama (continuous).P value,0.11,41591_2023_Article_2268_table_2.csv
-rs1922930,6:1364691,C/A,"FOXQ1 , FOXF2",Nagahama (continuous).β(SE),,i-Share(dichotomous).P value,0.70,41591_2023_Article_2268_table_2.csv
-rs1922930,6:1364691,C/A,"FOXQ1 , FOXF2",Nagahama (continuous).β(SE),,i-Share (continuous).P value,0.33,41591_2023_Article_2268_table_2.csv
-rs1922930,6:1364691,C/A,"FOXQ1 , FOXF2",Nagahama (continuous).β(SE),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs1922930,6:1364691,C/A,"FOXQ1 , FOXF2",Nagahama (continuous).β(SE),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs2385089,19:18550434,A/C,"ISYNA1 , ELL ,",Nagahama (continuous).β(SE),,i-Share(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
-rs2385089,19:18550434,A/C,"ISYNA1 , ELL ,",Nagahama (continuous).β(SE),,i-Share (continuous).P value,0.057,41591_2023_Article_2268_table_2.csv
-rs2385089,19:18550434,A/C,"ISYNA1 , ELL ,",Nagahama (continuous).β(SE),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs2385089,19:18550434,A/C,"ISYNA1 , ELL ,",Nagahama (continuous).β(SE),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs10954468,7:134434661,C/A,"BPGM , CALD1",Nagahama (continuous).β(SE),,i-Share(dichotomous).P value,0.50,41591_2023_Article_2268_table_2.csv
-rs10954468,7:134434661,C/A,"BPGM , CALD1",Nagahama (continuous).β(SE),,i-Share (continuous).P value,0.13,41591_2023_Article_2268_table_2.csv
-rs10954468,7:134434661,C/A,"BPGM , CALD1",Nagahama (continuous).β(SE),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
-rs10954468,7:134434661,C/A,"BPGM , CALD1",Nagahama (continuous).β(SE),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
-rs4675310,2:203880834,A/G,"NBEAL1 , ICA1L",Nagahama (continuous).β(SE),0.046 (0.03),i-Share(dichotomous).P value,0.61,41591_2023_Article_2268_table_2.csv
-rs4675310,2:203880834,A/G,"NBEAL1 , ICA1L",Nagahama (continuous).β(SE),0.046 (0.03),i-Share (continuous).P value,0.78,41591_2023_Article_2268_table_2.csv
-rs4675310,2:203880834,A/G,"NBEAL1 , ICA1L",Nagahama (continuous).β(SE),0.046 (0.03),Nagahama(dichotomous).P value,0.26,41591_2023_Article_2268_table_2.csv
-rs4675310,2:203880834,A/G,"NBEAL1 , ICA1L",Nagahama (continuous).β(SE),0.046 (0.03),Nagahama (continuous).P value,0.11,41591_2023_Article_2268_table_2.csv
-rs6769442,3:171565463,G/A,TMEM212,Nagahama (continuous).β(SE),0.008 (0.01),i-Share(dichotomous).P value,0.37,41591_2023_Article_2268_table_2.csv
-rs6769442,3:171565463,G/A,TMEM212,Nagahama (continuous).β(SE),0.008 (0.01),i-Share (continuous).P value,0.33,41591_2023_Article_2268_table_2.csv
-rs6769442,3:171565463,G/A,TMEM212,Nagahama (continuous).β(SE),0.008 (0.01),Nagahama(dichotomous).P value,0.82,41591_2023_Article_2268_table_2.csv
-rs6769442,3:171565463,G/A,TMEM212,Nagahama (continuous).β(SE),0.008 (0.01),Nagahama (continuous).P value,0.35,41591_2023_Article_2268_table_2.csv
+SNP,Chr,RA,Effect Size notes,Effect Size,P-value notes,P-value,file_name
+rs6011998,20:45269867,C/T,i-Share(dichotomous).OR(95% CI),1.26 (0.83-1.92),i-Share(dichotomous).P value,0.28,41591_2023_Article_2268_table_2.csv
+rs6011998,20:45269867,C/T,i-Share(dichotomous).OR(95% CI),1.26 (0.83-1.92),i-Share (continuous).P value,4.20×10 -05,41591_2023_Article_2268_table_2.csv
+rs6011998,20:45269867,C/T,i-Share(dichotomous).OR(95% CI),1.26 (0.83-1.92),Nagahama(dichotomous).P value,1.22×10 -05,41591_2023_Article_2268_table_2.csv
+rs6011998,20:45269867,C/T,i-Share(dichotomous).OR(95% CI),1.26 (0.83-1.92),Nagahama (continuous).P value,6.21×10 -07,41591_2023_Article_2268_table_2.csv
+rs13079464,3:13822439,C/G,i-Share(dichotomous).OR(95% CI),1.12 (0.91-1.40),i-Share(dichotomous).P value,0.29,41591_2023_Article_2268_table_2.csv
+rs13079464,3:13822439,C/G,i-Share(dichotomous).OR(95% CI),1.12 (0.91-1.40),i-Share (continuous).P value,0.50,41591_2023_Article_2268_table_2.csv
+rs13079464,3:13822439,C/G,i-Share(dichotomous).OR(95% CI),1.12 (0.91-1.40),Nagahama(dichotomous).P value,0.11,41591_2023_Article_2268_table_2.csv
+rs13079464,3:13822439,C/G,i-Share(dichotomous).OR(95% CI),1.12 (0.91-1.40),Nagahama (continuous).P value,1.50×10 -02,41591_2023_Article_2268_table_2.csv
+rs2425884,20:45258292,C/T,i-Share(dichotomous).OR(95% CI),1.18 (0.95-1.45),i-Share(dichotomous).P value,0.13,41591_2023_Article_2268_table_2.csv
+rs2425884,20:45258292,C/T,i-Share(dichotomous).OR(95% CI),1.18 (0.95-1.45),i-Share (continuous).P value,2.98×10 -04,41591_2023_Article_2268_table_2.csv
+rs2425884,20:45258292,C/T,i-Share(dichotomous).OR(95% CI),1.18 (0.95-1.45),Nagahama(dichotomous).P value,3.48×10 -03,41591_2023_Article_2268_table_2.csv
+rs2425884,20:45258292,C/T,i-Share(dichotomous).OR(95% CI),1.18 (0.95-1.45),Nagahama (continuous).P value,1.77×10 -06,41591_2023_Article_2268_table_2.csv
+rs10817108,9:113658671,A/G,i-Share(dichotomous).OR(95% CI),0.90 (0.69-1.17),i-Share(dichotomous).P value,0.44,41591_2023_Article_2268_table_2.csv
+rs10817108,9:113658671,A/G,i-Share(dichotomous).OR(95% CI),0.90 (0.69-1.17),i-Share (continuous).P value,2.23×10 -02,41591_2023_Article_2268_table_2.csv
+rs10817108,9:113658671,A/G,i-Share(dichotomous).OR(95% CI),0.90 (0.69-1.17),Nagahama(dichotomous).P value,0.07,41591_2023_Article_2268_table_2.csv
+rs10817108,9:113658671,A/G,i-Share(dichotomous).OR(95% CI),0.90 (0.69-1.17),Nagahama (continuous).P value,4.10×10 -03,41591_2023_Article_2268_table_2.csv
+rs2425881,20:45255618,A/G,i-Share(dichotomous).OR(95% CI),1.47 (1.03-2.01),i-Share(dichotomous).P value,1.40×10 -02,41591_2023_Article_2268_table_2.csv
+rs2425881,20:45255618,A/G,i-Share(dichotomous).OR(95% CI),1.47 (1.03-2.01),i-Share (continuous).P value,2.62×10 -02,41591_2023_Article_2268_table_2.csv
+rs2425881,20:45255618,A/G,i-Share(dichotomous).OR(95% CI),1.47 (1.03-2.01),Nagahama(dichotomous).P value,3.66×10 -02,41591_2023_Article_2268_table_2.csv
+rs2425881,20:45255618,A/G,i-Share(dichotomous).OR(95% CI),1.47 (1.03-2.01),Nagahama (continuous).P value,4.68×10 -03,41591_2023_Article_2268_table_2.csv
+rs3772833,3:124518362,G/A,i-Share(dichotomous).OR(95% CI),1.22 (0.89-1.66),i-Share(dichotomous).P value,0.21,41591_2023_Article_2268_table_2.csv
+rs3772833,3:124518362,G/A,i-Share(dichotomous).OR(95% CI),1.22 (0.89-1.66),i-Share (continuous).P value,0.85,41591_2023_Article_2268_table_2.csv
+rs3772833,3:124518362,G/A,i-Share(dichotomous).OR(95% CI),1.22 (0.89-1.66),Nagahama(dichotomous).P value,0.51,41591_2023_Article_2268_table_2.csv
+rs3772833,3:124518362,G/A,i-Share(dichotomous).OR(95% CI),1.22 (0.89-1.66),Nagahama (continuous).P value,0.16,41591_2023_Article_2268_table_2.csv
+rs112407396,20:45276381,T/A,i-Share(dichotomous).OR(95% CI),1.47 (0.77-2.78),i-Share(dichotomous).P value,0.24,41591_2023_Article_2268_table_2.csv
+rs112407396,20:45276381,T/A,i-Share(dichotomous).OR(95% CI),1.47 (0.77-2.78),i-Share (continuous).P value,3.13×10 -02,41591_2023_Article_2268_table_2.csv
+rs112407396,20:45276381,T/A,i-Share(dichotomous).OR(95% CI),1.47 (0.77-2.78),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs112407396,20:45276381,T/A,i-Share(dichotomous).OR(95% CI),1.47 (0.77-2.78),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs10494988,1:215141570,C/T,i-Share(dichotomous).OR(95% CI),1.18 (0.95-1.47),i-Share(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
+rs10494988,1:215141570,C/T,i-Share(dichotomous).OR(95% CI),1.18 (0.95-1.47),i-Share (continuous).P value,1.94×10 -04,41591_2023_Article_2268_table_2.csv
+rs10494988,1:215141570,C/T,i-Share(dichotomous).OR(95% CI),1.18 (0.95-1.47),Nagahama(dichotomous).P value,0.90,41591_2023_Article_2268_table_2.csv
+rs10494988,1:215141570,C/T,i-Share(dichotomous).OR(95% CI),1.18 (0.95-1.47),Nagahama (continuous).P value,0.67,41591_2023_Article_2268_table_2.csv
+rs72485816,20:45314435,T/C,i-Share(dichotomous).OR(95% CI),1.01 (0.56-1.80),i-Share(dichotomous).P value,0.98,41591_2023_Article_2268_table_2.csv
+rs72485816,20:45314435,T/C,i-Share(dichotomous).OR(95% CI),1.01 (0.56-1.80),i-Share (continuous).P value,0.095,41591_2023_Article_2268_table_2.csv
+rs72485816,20:45314435,T/C,i-Share(dichotomous).OR(95% CI),1.01 (0.56-1.80),Nagahama(dichotomous).P value,2.83×10 -03,41591_2023_Article_2268_table_2.csv
+rs72485816,20:45314435,T/C,i-Share(dichotomous).OR(95% CI),1.01 (0.56-1.80),Nagahama (continuous).P value,1.91×10 -08,41591_2023_Article_2268_table_2.csv
+rs8041189,15:85686327,G/A,i-Share(dichotomous).OR(95% CI),1.14 (0.89-1.44),i-Share(dichotomous).P value,0.30,41591_2023_Article_2268_table_2.csv
+rs8041189,15:85686327,G/A,i-Share(dichotomous).OR(95% CI),1.14 (0.89-1.44),i-Share (continuous).P value,0.073,41591_2023_Article_2268_table_2.csv
+rs8041189,15:85686327,G/A,i-Share(dichotomous).OR(95% CI),1.14 (0.89-1.44),Nagahama(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
+rs8041189,15:85686327,G/A,i-Share(dichotomous).OR(95% CI),1.14 (0.89-1.44),Nagahama (continuous).P value,2.40×10 -02,41591_2023_Article_2268_table_2.csv
+rs4685022,3:13832611,G/A,i-Share(dichotomous).OR(95% CI),1.12 (0.88-1.42),i-Share(dichotomous).P value,0.34,41591_2023_Article_2268_table_2.csv
+rs4685022,3:13832611,G/A,i-Share(dichotomous).OR(95% CI),1.12 (0.88-1.42),i-Share (continuous).P value,0.31,41591_2023_Article_2268_table_2.csv
+rs4685022,3:13832611,G/A,i-Share(dichotomous).OR(95% CI),1.12 (0.88-1.42),Nagahama(dichotomous).P value,0.10,41591_2023_Article_2268_table_2.csv
+rs4685022,3:13832611,G/A,i-Share(dichotomous).OR(95% CI),1.12 (0.88-1.42),Nagahama (continuous).P value,0.075,41591_2023_Article_2268_table_2.csv
+rs7596872,2:56128091,C/A,i-Share(dichotomous).OR(95% CI),1.65 (1.10-2.46),i-Share(dichotomous).P value,1.14×10 -02,41591_2023_Article_2268_table_2.csv
+rs7596872,2:56128091,C/A,i-Share(dichotomous).OR(95% CI),1.65 (1.10-2.46),i-Share (continuous).P value,1.10×10 -02,41591_2023_Article_2268_table_2.csv
+rs7596872,2:56128091,C/A,i-Share(dichotomous).OR(95% CI),1.65 (1.10-2.46),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs7596872,2:56128091,C/A,i-Share(dichotomous).OR(95% CI),1.65 (1.10-2.46),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs1126642,17:42989063,C/T,i-Share(dichotomous).OR(95% CI),1.13 (0.65-1.97),i-Share(dichotomous).P value,0.67,41591_2023_Article_2268_table_2.csv
+rs1126642,17:42989063,C/T,i-Share(dichotomous).OR(95% CI),1.13 (0.65-1.97),i-Share (continuous).P value,1.27×10 -02,41591_2023_Article_2268_table_2.csv
+rs1126642,17:42989063,C/T,i-Share(dichotomous).OR(95% CI),1.13 (0.65-1.97),Nagahama(dichotomous).P value,0.11,41591_2023_Article_2268_table_2.csv
+rs1126642,17:42989063,C/T,i-Share(dichotomous).OR(95% CI),1.13 (0.65-1.97),Nagahama (continuous).P value,9.88×10 -07,41591_2023_Article_2268_table_2.csv
+rs687610,3:193515781,G/C,i-Share(dichotomous).OR(95% CI),1.46 (1.18-1.80),i-Share(dichotomous).P value,4.88×10 -04,41591_2023_Article_2268_table_2.csv
+rs687610,3:193515781,G/C,i-Share(dichotomous).OR(95% CI),1.46 (1.18-1.80),i-Share (continuous).P value,1.29×10 -07,41591_2023_Article_2268_table_2.csv
+rs687610,3:193515781,G/C,i-Share(dichotomous).OR(95% CI),1.46 (1.18-1.80),Nagahama(dichotomous).P value,0.59,41591_2023_Article_2268_table_2.csv
+rs687610,3:193515781,G/C,i-Share(dichotomous).OR(95% CI),1.46 (1.18-1.80),Nagahama (continuous).P value,0.28,41591_2023_Article_2268_table_2.csv
+rs4959689,6:2617122,C/A,i-Share(dichotomous).OR(95% CI),1.10 (0.89-1.37),i-Share(dichotomous).P value,0.37,41591_2023_Article_2268_table_2.csv
+rs4959689,6:2617122,C/A,i-Share(dichotomous).OR(95% CI),1.10 (0.89-1.37),i-Share (continuous).P value,0.30,41591_2023_Article_2268_table_2.csv
+rs4959689,6:2617122,C/A,i-Share(dichotomous).OR(95% CI),1.10 (0.89-1.37),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs4959689,6:2617122,C/A,i-Share(dichotomous).OR(95% CI),1.10 (0.89-1.37),Nagahama (continuous).P value,0.34,41591_2023_Article_2268_table_2.csv
+rs56104388,20:45302135,T/C,i-Share(dichotomous).OR(95% CI),1.30 (0.40-4.24),i-Share(dichotomous).P value,0.67,41591_2023_Article_2268_table_2.csv
+rs56104388,20:45302135,T/C,i-Share(dichotomous).OR(95% CI),1.30 (0.40-4.24),i-Share (continuous).P value,1.47×10 -02,41591_2023_Article_2268_table_2.csv
+rs56104388,20:45302135,T/C,i-Share(dichotomous).OR(95% CI),1.30 (0.40-4.24),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs56104388,20:45302135,T/C,i-Share(dichotomous).OR(95% CI),1.30 (0.40-4.24),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs12417836,11:70089700,T/C,i-Share(dichotomous).OR(95% CI),0.99 (0.64-1.56),i-Share(dichotomous).P value,0.99,41591_2023_Article_2268_table_2.csv
+rs12417836,11:70089700,T/C,i-Share(dichotomous).OR(95% CI),0.99 (0.64-1.56),i-Share (continuous).P value,0.29,41591_2023_Article_2268_table_2.csv
+rs12417836,11:70089700,T/C,i-Share(dichotomous).OR(95% CI),0.99 (0.64-1.56),Nagahama(dichotomous).P value,0.40,41591_2023_Article_2268_table_2.csv
+rs12417836,11:70089700,T/C,i-Share(dichotomous).OR(95% CI),0.99 (0.64-1.56),Nagahama (continuous).P value,0.84,41591_2023_Article_2268_table_2.csv
+rs2923437,8:42425399,A/C,i-Share(dichotomous).OR(95% CI),0.98 (0.78-1.23),i-Share(dichotomous).P value,0.88,41591_2023_Article_2268_table_2.csv
+rs2923437,8:42425399,A/C,i-Share(dichotomous).OR(95% CI),0.98 (0.78-1.23),i-Share (continuous).P value,2.60×10 -02,41591_2023_Article_2268_table_2.csv
+rs2923437,8:42425399,A/C,i-Share(dichotomous).OR(95% CI),0.98 (0.78-1.23),Nagahama(dichotomous).P value,0.23,41591_2023_Article_2268_table_2.csv
+rs2923437,8:42425399,A/C,i-Share(dichotomous).OR(95% CI),0.98 (0.78-1.23),Nagahama (continuous).P value,0.11,41591_2023_Article_2268_table_2.csv
+rs1922930,6:1364691,C/A,i-Share(dichotomous).OR(95% CI),0.93 (0.65-1.33),i-Share(dichotomous).P value,0.70,41591_2023_Article_2268_table_2.csv
+rs1922930,6:1364691,C/A,i-Share(dichotomous).OR(95% CI),0.93 (0.65-1.33),i-Share (continuous).P value,0.33,41591_2023_Article_2268_table_2.csv
+rs1922930,6:1364691,C/A,i-Share(dichotomous).OR(95% CI),0.93 (0.65-1.33),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs1922930,6:1364691,C/A,i-Share(dichotomous).OR(95% CI),0.93 (0.65-1.33),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs2385089,19:18550434,A/C,i-Share(dichotomous).OR(95% CI),1.20 (0.94-1.53),i-Share(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
+rs2385089,19:18550434,A/C,i-Share(dichotomous).OR(95% CI),1.20 (0.94-1.53),i-Share (continuous).P value,0.057,41591_2023_Article_2268_table_2.csv
+rs2385089,19:18550434,A/C,i-Share(dichotomous).OR(95% CI),1.20 (0.94-1.53),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs2385089,19:18550434,A/C,i-Share(dichotomous).OR(95% CI),1.20 (0.94-1.53),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs10954468,7:134434661,C/A,i-Share(dichotomous).OR(95% CI),1.08 (0.86-1.36),i-Share(dichotomous).P value,0.50,41591_2023_Article_2268_table_2.csv
+rs10954468,7:134434661,C/A,i-Share(dichotomous).OR(95% CI),1.08 (0.86-1.36),i-Share (continuous).P value,0.13,41591_2023_Article_2268_table_2.csv
+rs10954468,7:134434661,C/A,i-Share(dichotomous).OR(95% CI),1.08 (0.86-1.36),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs10954468,7:134434661,C/A,i-Share(dichotomous).OR(95% CI),1.08 (0.86-1.36),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs4675310,2:203880834,A/G,i-Share(dichotomous).OR(95% CI),1.07 (0.81-1.41),i-Share(dichotomous).P value,0.61,41591_2023_Article_2268_table_2.csv
+rs4675310,2:203880834,A/G,i-Share(dichotomous).OR(95% CI),1.07 (0.81-1.41),i-Share (continuous).P value,0.78,41591_2023_Article_2268_table_2.csv
+rs4675310,2:203880834,A/G,i-Share(dichotomous).OR(95% CI),1.07 (0.81-1.41),Nagahama(dichotomous).P value,0.26,41591_2023_Article_2268_table_2.csv
+rs4675310,2:203880834,A/G,i-Share(dichotomous).OR(95% CI),1.07 (0.81-1.41),Nagahama (continuous).P value,0.11,41591_2023_Article_2268_table_2.csv
+rs6769442,3:171565463,G/A,i-Share(dichotomous).OR(95% CI),1.10 (0.87-1.40),i-Share(dichotomous).P value,0.37,41591_2023_Article_2268_table_2.csv
+rs6769442,3:171565463,G/A,i-Share(dichotomous).OR(95% CI),1.10 (0.87-1.40),i-Share (continuous).P value,0.33,41591_2023_Article_2268_table_2.csv
+rs6769442,3:171565463,G/A,i-Share(dichotomous).OR(95% CI),1.10 (0.87-1.40),Nagahama(dichotomous).P value,0.82,41591_2023_Article_2268_table_2.csv
+rs6769442,3:171565463,G/A,i-Share(dichotomous).OR(95% CI),1.10 (0.87-1.40),Nagahama (continuous).P value,0.35,41591_2023_Article_2268_table_2.csv
+rs6011998,20:45269867,C/T,i-Share (continuous).β(SE),0.164 (0.04),i-Share(dichotomous).P value,0.28,41591_2023_Article_2268_table_2.csv
+rs6011998,20:45269867,C/T,i-Share (continuous).β(SE),0.164 (0.04),i-Share (continuous).P value,4.20×10 -05,41591_2023_Article_2268_table_2.csv
+rs6011998,20:45269867,C/T,i-Share (continuous).β(SE),0.164 (0.04),Nagahama(dichotomous).P value,1.22×10 -05,41591_2023_Article_2268_table_2.csv
+rs6011998,20:45269867,C/T,i-Share (continuous).β(SE),0.164 (0.04),Nagahama (continuous).P value,6.21×10 -07,41591_2023_Article_2268_table_2.csv
+rs13079464,3:13822439,C/G,i-Share (continuous).β(SE),0.014 (0.02),i-Share(dichotomous).P value,0.29,41591_2023_Article_2268_table_2.csv
+rs13079464,3:13822439,C/G,i-Share (continuous).β(SE),0.014 (0.02),i-Share (continuous).P value,0.50,41591_2023_Article_2268_table_2.csv
+rs13079464,3:13822439,C/G,i-Share (continuous).β(SE),0.014 (0.02),Nagahama(dichotomous).P value,0.11,41591_2023_Article_2268_table_2.csv
+rs13079464,3:13822439,C/G,i-Share (continuous).β(SE),0.014 (0.02),Nagahama (continuous).P value,1.50×10 -02,41591_2023_Article_2268_table_2.csv
+rs2425884,20:45258292,C/T,i-Share (continuous).β(SE),0.077 (0.02),i-Share(dichotomous).P value,0.13,41591_2023_Article_2268_table_2.csv
+rs2425884,20:45258292,C/T,i-Share (continuous).β(SE),0.077 (0.02),i-Share (continuous).P value,2.98×10 -04,41591_2023_Article_2268_table_2.csv
+rs2425884,20:45258292,C/T,i-Share (continuous).β(SE),0.077 (0.02),Nagahama(dichotomous).P value,3.48×10 -03,41591_2023_Article_2268_table_2.csv
+rs2425884,20:45258292,C/T,i-Share (continuous).β(SE),0.077 (0.02),Nagahama (continuous).P value,1.77×10 -06,41591_2023_Article_2268_table_2.csv
+rs10817108,9:113658671,A/G,i-Share (continuous).β(SE),0.058 (0.03),i-Share(dichotomous).P value,0.44,41591_2023_Article_2268_table_2.csv
+rs10817108,9:113658671,A/G,i-Share (continuous).β(SE),0.058 (0.03),i-Share (continuous).P value,2.23×10 -02,41591_2023_Article_2268_table_2.csv
+rs10817108,9:113658671,A/G,i-Share (continuous).β(SE),0.058 (0.03),Nagahama(dichotomous).P value,0.07,41591_2023_Article_2268_table_2.csv
+rs10817108,9:113658671,A/G,i-Share (continuous).β(SE),0.058 (0.03),Nagahama (continuous).P value,4.10×10 -03,41591_2023_Article_2268_table_2.csv
+rs2425881,20:45255618,A/G,i-Share (continuous).β(SE),0.063 (0.03),i-Share(dichotomous).P value,1.40×10 -02,41591_2023_Article_2268_table_2.csv
+rs2425881,20:45255618,A/G,i-Share (continuous).β(SE),0.063 (0.03),i-Share (continuous).P value,2.62×10 -02,41591_2023_Article_2268_table_2.csv
+rs2425881,20:45255618,A/G,i-Share (continuous).β(SE),0.063 (0.03),Nagahama(dichotomous).P value,3.66×10 -02,41591_2023_Article_2268_table_2.csv
+rs2425881,20:45255618,A/G,i-Share (continuous).β(SE),0.063 (0.03),Nagahama (continuous).P value,4.68×10 -03,41591_2023_Article_2268_table_2.csv
+rs3772833,3:124518362,G/A,i-Share (continuous).β(SE),0.006 (0.03),i-Share(dichotomous).P value,0.21,41591_2023_Article_2268_table_2.csv
+rs3772833,3:124518362,G/A,i-Share (continuous).β(SE),0.006 (0.03),i-Share (continuous).P value,0.85,41591_2023_Article_2268_table_2.csv
+rs3772833,3:124518362,G/A,i-Share (continuous).β(SE),0.006 (0.03),Nagahama(dichotomous).P value,0.51,41591_2023_Article_2268_table_2.csv
+rs3772833,3:124518362,G/A,i-Share (continuous).β(SE),0.006 (0.03),Nagahama (continuous).P value,0.16,41591_2023_Article_2268_table_2.csv
+rs112407396,20:45276381,T/A,i-Share (continuous).β(SE),0.147 (0.07),i-Share(dichotomous).P value,0.24,41591_2023_Article_2268_table_2.csv
+rs112407396,20:45276381,T/A,i-Share (continuous).β(SE),0.147 (0.07),i-Share (continuous).P value,3.13×10 -02,41591_2023_Article_2268_table_2.csv
+rs112407396,20:45276381,T/A,i-Share (continuous).β(SE),0.147 (0.07),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs112407396,20:45276381,T/A,i-Share (continuous).β(SE),0.147 (0.07),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs10494988,1:215141570,C/T,i-Share (continuous).β(SE),0.079 (0.02),i-Share(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
+rs10494988,1:215141570,C/T,i-Share (continuous).β(SE),0.079 (0.02),i-Share (continuous).P value,1.94×10 -04,41591_2023_Article_2268_table_2.csv
+rs10494988,1:215141570,C/T,i-Share (continuous).β(SE),0.079 (0.02),Nagahama(dichotomous).P value,0.90,41591_2023_Article_2268_table_2.csv
+rs10494988,1:215141570,C/T,i-Share (continuous).β(SE),0.079 (0.02),Nagahama (continuous).P value,0.67,41591_2023_Article_2268_table_2.csv
+rs72485816,20:45314435,T/C,i-Share (continuous).β(SE),0.093 (0.06),i-Share(dichotomous).P value,0.98,41591_2023_Article_2268_table_2.csv
+rs72485816,20:45314435,T/C,i-Share (continuous).β(SE),0.093 (0.06),i-Share (continuous).P value,0.095,41591_2023_Article_2268_table_2.csv
+rs72485816,20:45314435,T/C,i-Share (continuous).β(SE),0.093 (0.06),Nagahama(dichotomous).P value,2.83×10 -03,41591_2023_Article_2268_table_2.csv
+rs72485816,20:45314435,T/C,i-Share (continuous).β(SE),0.093 (0.06),Nagahama (continuous).P value,1.91×10 -08,41591_2023_Article_2268_table_2.csv
+rs8041189,15:85686327,G/A,i-Share (continuous).β(SE),0.041 (0.02),i-Share(dichotomous).P value,0.30,41591_2023_Article_2268_table_2.csv
+rs8041189,15:85686327,G/A,i-Share (continuous).β(SE),0.041 (0.02),i-Share (continuous).P value,0.073,41591_2023_Article_2268_table_2.csv
+rs8041189,15:85686327,G/A,i-Share (continuous).β(SE),0.041 (0.02),Nagahama(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
+rs8041189,15:85686327,G/A,i-Share (continuous).β(SE),0.041 (0.02),Nagahama (continuous).P value,2.40×10 -02,41591_2023_Article_2268_table_2.csv
+rs4685022,3:13832611,G/A,i-Share (continuous).β(SE),0.023 (0.02),i-Share(dichotomous).P value,0.34,41591_2023_Article_2268_table_2.csv
+rs4685022,3:13832611,G/A,i-Share (continuous).β(SE),0.023 (0.02),i-Share (continuous).P value,0.31,41591_2023_Article_2268_table_2.csv
+rs4685022,3:13832611,G/A,i-Share (continuous).β(SE),0.023 (0.02),Nagahama(dichotomous).P value,0.10,41591_2023_Article_2268_table_2.csv
+rs4685022,3:13832611,G/A,i-Share (continuous).β(SE),0.023 (0.02),Nagahama (continuous).P value,0.075,41591_2023_Article_2268_table_2.csv
+rs7596872,2:56128091,C/A,i-Share (continuous).β(SE),0.089 (0.03),i-Share(dichotomous).P value,1.14×10 -02,41591_2023_Article_2268_table_2.csv
+rs7596872,2:56128091,C/A,i-Share (continuous).β(SE),0.089 (0.03),i-Share (continuous).P value,1.10×10 -02,41591_2023_Article_2268_table_2.csv
+rs7596872,2:56128091,C/A,i-Share (continuous).β(SE),0.089 (0.03),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs7596872,2:56128091,C/A,i-Share (continuous).β(SE),0.089 (0.03),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs1126642,17:42989063,C/T,i-Share (continuous).β(SE),0.127 (0.05),i-Share(dichotomous).P value,0.67,41591_2023_Article_2268_table_2.csv
+rs1126642,17:42989063,C/T,i-Share (continuous).β(SE),0.127 (0.05),i-Share (continuous).P value,1.27×10 -02,41591_2023_Article_2268_table_2.csv
+rs1126642,17:42989063,C/T,i-Share (continuous).β(SE),0.127 (0.05),Nagahama(dichotomous).P value,0.11,41591_2023_Article_2268_table_2.csv
+rs1126642,17:42989063,C/T,i-Share (continuous).β(SE),0.127 (0.05),Nagahama (continuous).P value,9.88×10 -07,41591_2023_Article_2268_table_2.csv
+rs687610,3:193515781,G/C,i-Share (continuous).β(SE),0.109 (0.02),i-Share(dichotomous).P value,4.88×10 -04,41591_2023_Article_2268_table_2.csv
+rs687610,3:193515781,G/C,i-Share (continuous).β(SE),0.109 (0.02),i-Share (continuous).P value,1.29×10 -07,41591_2023_Article_2268_table_2.csv
+rs687610,3:193515781,G/C,i-Share (continuous).β(SE),0.109 (0.02),Nagahama(dichotomous).P value,0.59,41591_2023_Article_2268_table_2.csv
+rs687610,3:193515781,G/C,i-Share (continuous).β(SE),0.109 (0.02),Nagahama (continuous).P value,0.28,41591_2023_Article_2268_table_2.csv
+rs4959689,6:2617122,C/A,i-Share (continuous).β(SE),0.022 (0.02),i-Share(dichotomous).P value,0.37,41591_2023_Article_2268_table_2.csv
+rs4959689,6:2617122,C/A,i-Share (continuous).β(SE),0.022 (0.02),i-Share (continuous).P value,0.30,41591_2023_Article_2268_table_2.csv
+rs4959689,6:2617122,C/A,i-Share (continuous).β(SE),0.022 (0.02),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs4959689,6:2617122,C/A,i-Share (continuous).β(SE),0.022 (0.02),Nagahama (continuous).P value,0.34,41591_2023_Article_2268_table_2.csv
+rs56104388,20:45302135,T/C,i-Share (continuous).β(SE),0.274 (0.11),i-Share(dichotomous).P value,0.67,41591_2023_Article_2268_table_2.csv
+rs56104388,20:45302135,T/C,i-Share (continuous).β(SE),0.274 (0.11),i-Share (continuous).P value,1.47×10 -02,41591_2023_Article_2268_table_2.csv
+rs56104388,20:45302135,T/C,i-Share (continuous).β(SE),0.274 (0.11),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs56104388,20:45302135,T/C,i-Share (continuous).β(SE),0.274 (0.11),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs12417836,11:70089700,T/C,i-Share (continuous).β(SE),0.045 (0.04),i-Share(dichotomous).P value,0.99,41591_2023_Article_2268_table_2.csv
+rs12417836,11:70089700,T/C,i-Share (continuous).β(SE),0.045 (0.04),i-Share (continuous).P value,0.29,41591_2023_Article_2268_table_2.csv
+rs12417836,11:70089700,T/C,i-Share (continuous).β(SE),0.045 (0.04),Nagahama(dichotomous).P value,0.40,41591_2023_Article_2268_table_2.csv
+rs12417836,11:70089700,T/C,i-Share (continuous).β(SE),0.045 (0.04),Nagahama (continuous).P value,0.84,41591_2023_Article_2268_table_2.csv
+rs2923437,8:42425399,A/C,i-Share (continuous).β(SE),0.047 (0.02),i-Share(dichotomous).P value,0.88,41591_2023_Article_2268_table_2.csv
+rs2923437,8:42425399,A/C,i-Share (continuous).β(SE),0.047 (0.02),i-Share (continuous).P value,2.60×10 -02,41591_2023_Article_2268_table_2.csv
+rs2923437,8:42425399,A/C,i-Share (continuous).β(SE),0.047 (0.02),Nagahama(dichotomous).P value,0.23,41591_2023_Article_2268_table_2.csv
+rs2923437,8:42425399,A/C,i-Share (continuous).β(SE),0.047 (0.02),Nagahama (continuous).P value,0.11,41591_2023_Article_2268_table_2.csv
+rs1922930,6:1364691,C/A,i-Share (continuous).β(SE),0.035 (0.04),i-Share(dichotomous).P value,0.70,41591_2023_Article_2268_table_2.csv
+rs1922930,6:1364691,C/A,i-Share (continuous).β(SE),0.035 (0.04),i-Share (continuous).P value,0.33,41591_2023_Article_2268_table_2.csv
+rs1922930,6:1364691,C/A,i-Share (continuous).β(SE),0.035 (0.04),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs1922930,6:1364691,C/A,i-Share (continuous).β(SE),0.035 (0.04),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs2385089,19:18550434,A/C,i-Share (continuous).β(SE),0.049 (0.03),i-Share(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
+rs2385089,19:18550434,A/C,i-Share (continuous).β(SE),0.049 (0.03),i-Share (continuous).P value,0.057,41591_2023_Article_2268_table_2.csv
+rs2385089,19:18550434,A/C,i-Share (continuous).β(SE),0.049 (0.03),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs2385089,19:18550434,A/C,i-Share (continuous).β(SE),0.049 (0.03),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs10954468,7:134434661,C/A,i-Share (continuous).β(SE),0.033 (0.02),i-Share(dichotomous).P value,0.50,41591_2023_Article_2268_table_2.csv
+rs10954468,7:134434661,C/A,i-Share (continuous).β(SE),0.033 (0.02),i-Share (continuous).P value,0.13,41591_2023_Article_2268_table_2.csv
+rs10954468,7:134434661,C/A,i-Share (continuous).β(SE),0.033 (0.02),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs10954468,7:134434661,C/A,i-Share (continuous).β(SE),0.033 (0.02),Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs4675310,2:203880834,A/G,i-Share (continuous).β(SE),0.01 (0.04),i-Share(dichotomous).P value,0.61,41591_2023_Article_2268_table_2.csv
+rs4675310,2:203880834,A/G,i-Share (continuous).β(SE),0.01 (0.04),i-Share (continuous).P value,0.78,41591_2023_Article_2268_table_2.csv
+rs4675310,2:203880834,A/G,i-Share (continuous).β(SE),0.01 (0.04),Nagahama(dichotomous).P value,0.26,41591_2023_Article_2268_table_2.csv
+rs4675310,2:203880834,A/G,i-Share (continuous).β(SE),0.01 (0.04),Nagahama (continuous).P value,0.11,41591_2023_Article_2268_table_2.csv
+rs6769442,3:171565463,G/A,i-Share (continuous).β(SE),0.03 (0.03),i-Share(dichotomous).P value,0.37,41591_2023_Article_2268_table_2.csv
+rs6769442,3:171565463,G/A,i-Share (continuous).β(SE),0.03 (0.03),i-Share (continuous).P value,0.33,41591_2023_Article_2268_table_2.csv
+rs6769442,3:171565463,G/A,i-Share (continuous).β(SE),0.03 (0.03),Nagahama(dichotomous).P value,0.82,41591_2023_Article_2268_table_2.csv
+rs6769442,3:171565463,G/A,i-Share (continuous).β(SE),0.03 (0.03),Nagahama (continuous).P value,0.35,41591_2023_Article_2268_table_2.csv
+rs6011998,20:45269867,C/T,Nagahama(dichotomous).OR(95% CI),1.69 (1.33-2.13),i-Share(dichotomous).P value,0.28,41591_2023_Article_2268_table_2.csv
+rs6011998,20:45269867,C/T,Nagahama(dichotomous).OR(95% CI),1.69 (1.33-2.13),i-Share (continuous).P value,4.20×10 -05,41591_2023_Article_2268_table_2.csv
+rs6011998,20:45269867,C/T,Nagahama(dichotomous).OR(95% CI),1.69 (1.33-2.13),Nagahama(dichotomous).P value,1.22×10 -05,41591_2023_Article_2268_table_2.csv
+rs6011998,20:45269867,C/T,Nagahama(dichotomous).OR(95% CI),1.69 (1.33-2.13),Nagahama (continuous).P value,6.21×10 -07,41591_2023_Article_2268_table_2.csv
+rs13079464,3:13822439,C/G,Nagahama(dichotomous).OR(95% CI),1.16 (0.97-1.40),i-Share(dichotomous).P value,0.29,41591_2023_Article_2268_table_2.csv
+rs13079464,3:13822439,C/G,Nagahama(dichotomous).OR(95% CI),1.16 (0.97-1.40),i-Share (continuous).P value,0.50,41591_2023_Article_2268_table_2.csv
+rs13079464,3:13822439,C/G,Nagahama(dichotomous).OR(95% CI),1.16 (0.97-1.40),Nagahama(dichotomous).P value,0.11,41591_2023_Article_2268_table_2.csv
+rs13079464,3:13822439,C/G,Nagahama(dichotomous).OR(95% CI),1.16 (0.97-1.40),Nagahama (continuous).P value,1.50×10 -02,41591_2023_Article_2268_table_2.csv
+rs2425884,20:45258292,C/T,Nagahama(dichotomous).OR(95% CI),1.29 (1.09-1.52),i-Share(dichotomous).P value,0.13,41591_2023_Article_2268_table_2.csv
+rs2425884,20:45258292,C/T,Nagahama(dichotomous).OR(95% CI),1.29 (1.09-1.52),i-Share (continuous).P value,2.98×10 -04,41591_2023_Article_2268_table_2.csv
+rs2425884,20:45258292,C/T,Nagahama(dichotomous).OR(95% CI),1.29 (1.09-1.52),Nagahama(dichotomous).P value,3.48×10 -03,41591_2023_Article_2268_table_2.csv
+rs2425884,20:45258292,C/T,Nagahama(dichotomous).OR(95% CI),1.29 (1.09-1.52),Nagahama (continuous).P value,1.77×10 -06,41591_2023_Article_2268_table_2.csv
+rs10817108,9:113658671,A/G,Nagahama(dichotomous).OR(95% CI),1.18 (0.98-1.43),i-Share(dichotomous).P value,0.44,41591_2023_Article_2268_table_2.csv
+rs10817108,9:113658671,A/G,Nagahama(dichotomous).OR(95% CI),1.18 (0.98-1.43),i-Share (continuous).P value,2.23×10 -02,41591_2023_Article_2268_table_2.csv
+rs10817108,9:113658671,A/G,Nagahama(dichotomous).OR(95% CI),1.18 (0.98-1.43),Nagahama(dichotomous).P value,0.07,41591_2023_Article_2268_table_2.csv
+rs10817108,9:113658671,A/G,Nagahama(dichotomous).OR(95% CI),1.18 (0.98-1.43),Nagahama (continuous).P value,4.10×10 -03,41591_2023_Article_2268_table_2.csv
+rs2425881,20:45255618,A/G,Nagahama(dichotomous).OR(95% CI),1.18 (1.01-1.37),i-Share(dichotomous).P value,1.40×10 -02,41591_2023_Article_2268_table_2.csv
+rs2425881,20:45255618,A/G,Nagahama(dichotomous).OR(95% CI),1.18 (1.01-1.37),i-Share (continuous).P value,2.62×10 -02,41591_2023_Article_2268_table_2.csv
+rs2425881,20:45255618,A/G,Nagahama(dichotomous).OR(95% CI),1.18 (1.01-1.37),Nagahama(dichotomous).P value,3.66×10 -02,41591_2023_Article_2268_table_2.csv
+rs2425881,20:45255618,A/G,Nagahama(dichotomous).OR(95% CI),1.18 (1.01-1.37),Nagahama (continuous).P value,4.68×10 -03,41591_2023_Article_2268_table_2.csv
+rs3772833,3:124518362,G/A,Nagahama(dichotomous).OR(95% CI),1.06 (0.88-1.29),i-Share(dichotomous).P value,0.21,41591_2023_Article_2268_table_2.csv
+rs3772833,3:124518362,G/A,Nagahama(dichotomous).OR(95% CI),1.06 (0.88-1.29),i-Share (continuous).P value,0.85,41591_2023_Article_2268_table_2.csv
+rs3772833,3:124518362,G/A,Nagahama(dichotomous).OR(95% CI),1.06 (0.88-1.29),Nagahama(dichotomous).P value,0.51,41591_2023_Article_2268_table_2.csv
+rs3772833,3:124518362,G/A,Nagahama(dichotomous).OR(95% CI),1.06 (0.88-1.29),Nagahama (continuous).P value,0.16,41591_2023_Article_2268_table_2.csv
+rs112407396,20:45276381,T/A,Nagahama(dichotomous).OR(95% CI),,i-Share(dichotomous).P value,0.24,41591_2023_Article_2268_table_2.csv
+rs112407396,20:45276381,T/A,Nagahama(dichotomous).OR(95% CI),,i-Share (continuous).P value,3.13×10 -02,41591_2023_Article_2268_table_2.csv
+rs112407396,20:45276381,T/A,Nagahama(dichotomous).OR(95% CI),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs112407396,20:45276381,T/A,Nagahama(dichotomous).OR(95% CI),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs10494988,1:215141570,C/T,Nagahama(dichotomous).OR(95% CI),1.01 (0.86-1.18),i-Share(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
+rs10494988,1:215141570,C/T,Nagahama(dichotomous).OR(95% CI),1.01 (0.86-1.18),i-Share (continuous).P value,1.94×10 -04,41591_2023_Article_2268_table_2.csv
+rs10494988,1:215141570,C/T,Nagahama(dichotomous).OR(95% CI),1.01 (0.86-1.18),Nagahama(dichotomous).P value,0.90,41591_2023_Article_2268_table_2.csv
+rs10494988,1:215141570,C/T,Nagahama(dichotomous).OR(95% CI),1.01 (0.86-1.18),Nagahama (continuous).P value,0.67,41591_2023_Article_2268_table_2.csv
+rs72485816,20:45314435,T/C,Nagahama(dichotomous).OR(95% CI),1.32 (1.10-1.59),i-Share(dichotomous).P value,0.98,41591_2023_Article_2268_table_2.csv
+rs72485816,20:45314435,T/C,Nagahama(dichotomous).OR(95% CI),1.32 (1.10-1.59),i-Share (continuous).P value,0.095,41591_2023_Article_2268_table_2.csv
+rs72485816,20:45314435,T/C,Nagahama(dichotomous).OR(95% CI),1.32 (1.10-1.59),Nagahama(dichotomous).P value,2.83×10 -03,41591_2023_Article_2268_table_2.csv
+rs72485816,20:45314435,T/C,Nagahama(dichotomous).OR(95% CI),1.32 (1.10-1.59),Nagahama (continuous).P value,1.91×10 -08,41591_2023_Article_2268_table_2.csv
+rs8041189,15:85686327,G/A,Nagahama(dichotomous).OR(95% CI),1.67 (0.84-3.33),i-Share(dichotomous).P value,0.30,41591_2023_Article_2268_table_2.csv
+rs8041189,15:85686327,G/A,Nagahama(dichotomous).OR(95% CI),1.67 (0.84-3.33),i-Share (continuous).P value,0.073,41591_2023_Article_2268_table_2.csv
+rs8041189,15:85686327,G/A,Nagahama(dichotomous).OR(95% CI),1.67 (0.84-3.33),Nagahama(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
+rs8041189,15:85686327,G/A,Nagahama(dichotomous).OR(95% CI),1.67 (0.84-3.33),Nagahama (continuous).P value,2.40×10 -02,41591_2023_Article_2268_table_2.csv
+rs4685022,3:13832611,G/A,Nagahama(dichotomous).OR(95% CI),1.15 (0.97-1.36),i-Share(dichotomous).P value,0.34,41591_2023_Article_2268_table_2.csv
+rs4685022,3:13832611,G/A,Nagahama(dichotomous).OR(95% CI),1.15 (0.97-1.36),i-Share (continuous).P value,0.31,41591_2023_Article_2268_table_2.csv
+rs4685022,3:13832611,G/A,Nagahama(dichotomous).OR(95% CI),1.15 (0.97-1.36),Nagahama(dichotomous).P value,0.10,41591_2023_Article_2268_table_2.csv
+rs4685022,3:13832611,G/A,Nagahama(dichotomous).OR(95% CI),1.15 (0.97-1.36),Nagahama (continuous).P value,0.075,41591_2023_Article_2268_table_2.csv
+rs7596872,2:56128091,C/A,Nagahama(dichotomous).OR(95% CI),,i-Share(dichotomous).P value,1.14×10 -02,41591_2023_Article_2268_table_2.csv
+rs7596872,2:56128091,C/A,Nagahama(dichotomous).OR(95% CI),,i-Share (continuous).P value,1.10×10 -02,41591_2023_Article_2268_table_2.csv
+rs7596872,2:56128091,C/A,Nagahama(dichotomous).OR(95% CI),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs7596872,2:56128091,C/A,Nagahama(dichotomous).OR(95% CI),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs1126642,17:42989063,C/T,Nagahama(dichotomous).OR(95% CI),1.35 (1.09-1.67),i-Share(dichotomous).P value,0.67,41591_2023_Article_2268_table_2.csv
+rs1126642,17:42989063,C/T,Nagahama(dichotomous).OR(95% CI),1.35 (1.09-1.67),i-Share (continuous).P value,1.27×10 -02,41591_2023_Article_2268_table_2.csv
+rs1126642,17:42989063,C/T,Nagahama(dichotomous).OR(95% CI),1.35 (1.09-1.67),Nagahama(dichotomous).P value,0.11,41591_2023_Article_2268_table_2.csv
+rs1126642,17:42989063,C/T,Nagahama(dichotomous).OR(95% CI),1.35 (1.09-1.67),Nagahama (continuous).P value,9.88×10 -07,41591_2023_Article_2268_table_2.csv
+rs687610,3:193515781,G/C,Nagahama(dichotomous).OR(95% CI),0.95 (0.81-1.13),i-Share(dichotomous).P value,4.88×10 -04,41591_2023_Article_2268_table_2.csv
+rs687610,3:193515781,G/C,Nagahama(dichotomous).OR(95% CI),0.95 (0.81-1.13),i-Share (continuous).P value,1.29×10 -07,41591_2023_Article_2268_table_2.csv
+rs687610,3:193515781,G/C,Nagahama(dichotomous).OR(95% CI),0.95 (0.81-1.13),Nagahama(dichotomous).P value,0.59,41591_2023_Article_2268_table_2.csv
+rs687610,3:193515781,G/C,Nagahama(dichotomous).OR(95% CI),0.95 (0.81-1.13),Nagahama (continuous).P value,0.28,41591_2023_Article_2268_table_2.csv
+rs4959689,6:2617122,C/A,Nagahama(dichotomous).OR(95% CI),,i-Share(dichotomous).P value,0.37,41591_2023_Article_2268_table_2.csv
+rs4959689,6:2617122,C/A,Nagahama(dichotomous).OR(95% CI),,i-Share (continuous).P value,0.30,41591_2023_Article_2268_table_2.csv
+rs4959689,6:2617122,C/A,Nagahama(dichotomous).OR(95% CI),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs4959689,6:2617122,C/A,Nagahama(dichotomous).OR(95% CI),,Nagahama (continuous).P value,0.34,41591_2023_Article_2268_table_2.csv
+rs56104388,20:45302135,T/C,Nagahama(dichotomous).OR(95% CI),,i-Share(dichotomous).P value,0.67,41591_2023_Article_2268_table_2.csv
+rs56104388,20:45302135,T/C,Nagahama(dichotomous).OR(95% CI),,i-Share (continuous).P value,1.47×10 -02,41591_2023_Article_2268_table_2.csv
+rs56104388,20:45302135,T/C,Nagahama(dichotomous).OR(95% CI),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs56104388,20:45302135,T/C,Nagahama(dichotomous).OR(95% CI),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs12417836,11:70089700,T/C,Nagahama(dichotomous).OR(95% CI),0.87 (0.62-1.21),i-Share(dichotomous).P value,0.99,41591_2023_Article_2268_table_2.csv
+rs12417836,11:70089700,T/C,Nagahama(dichotomous).OR(95% CI),0.87 (0.62-1.21),i-Share (continuous).P value,0.29,41591_2023_Article_2268_table_2.csv
+rs12417836,11:70089700,T/C,Nagahama(dichotomous).OR(95% CI),0.87 (0.62-1.21),Nagahama(dichotomous).P value,0.40,41591_2023_Article_2268_table_2.csv
+rs12417836,11:70089700,T/C,Nagahama(dichotomous).OR(95% CI),0.87 (0.62-1.21),Nagahama (continuous).P value,0.84,41591_2023_Article_2268_table_2.csv
+rs2923437,8:42425399,A/C,Nagahama(dichotomous).OR(95% CI),1.11 (0.94-1.31),i-Share(dichotomous).P value,0.88,41591_2023_Article_2268_table_2.csv
+rs2923437,8:42425399,A/C,Nagahama(dichotomous).OR(95% CI),1.11 (0.94-1.31),i-Share (continuous).P value,2.60×10 -02,41591_2023_Article_2268_table_2.csv
+rs2923437,8:42425399,A/C,Nagahama(dichotomous).OR(95% CI),1.11 (0.94-1.31),Nagahama(dichotomous).P value,0.23,41591_2023_Article_2268_table_2.csv
+rs2923437,8:42425399,A/C,Nagahama(dichotomous).OR(95% CI),1.11 (0.94-1.31),Nagahama (continuous).P value,0.11,41591_2023_Article_2268_table_2.csv
+rs1922930,6:1364691,C/A,Nagahama(dichotomous).OR(95% CI),,i-Share(dichotomous).P value,0.70,41591_2023_Article_2268_table_2.csv
+rs1922930,6:1364691,C/A,Nagahama(dichotomous).OR(95% CI),,i-Share (continuous).P value,0.33,41591_2023_Article_2268_table_2.csv
+rs1922930,6:1364691,C/A,Nagahama(dichotomous).OR(95% CI),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs1922930,6:1364691,C/A,Nagahama(dichotomous).OR(95% CI),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs2385089,19:18550434,A/C,Nagahama(dichotomous).OR(95% CI),,i-Share(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
+rs2385089,19:18550434,A/C,Nagahama(dichotomous).OR(95% CI),,i-Share (continuous).P value,0.057,41591_2023_Article_2268_table_2.csv
+rs2385089,19:18550434,A/C,Nagahama(dichotomous).OR(95% CI),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs2385089,19:18550434,A/C,Nagahama(dichotomous).OR(95% CI),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs10954468,7:134434661,C/A,Nagahama(dichotomous).OR(95% CI),,i-Share(dichotomous).P value,0.50,41591_2023_Article_2268_table_2.csv
+rs10954468,7:134434661,C/A,Nagahama(dichotomous).OR(95% CI),,i-Share (continuous).P value,0.13,41591_2023_Article_2268_table_2.csv
+rs10954468,7:134434661,C/A,Nagahama(dichotomous).OR(95% CI),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs10954468,7:134434661,C/A,Nagahama(dichotomous).OR(95% CI),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs4675310,2:203880834,A/G,Nagahama(dichotomous).OR(95% CI),1.88 (0.63-5.60),i-Share(dichotomous).P value,0.61,41591_2023_Article_2268_table_2.csv
+rs4675310,2:203880834,A/G,Nagahama(dichotomous).OR(95% CI),1.88 (0.63-5.60),i-Share (continuous).P value,0.78,41591_2023_Article_2268_table_2.csv
+rs4675310,2:203880834,A/G,Nagahama(dichotomous).OR(95% CI),1.88 (0.63-5.60),Nagahama(dichotomous).P value,0.26,41591_2023_Article_2268_table_2.csv
+rs4675310,2:203880834,A/G,Nagahama(dichotomous).OR(95% CI),1.88 (0.63-5.60),Nagahama (continuous).P value,0.11,41591_2023_Article_2268_table_2.csv
+rs6769442,3:171565463,G/A,Nagahama(dichotomous).OR(95% CI),1.04 (0.71-1.53),i-Share(dichotomous).P value,0.37,41591_2023_Article_2268_table_2.csv
+rs6769442,3:171565463,G/A,Nagahama(dichotomous).OR(95% CI),1.04 (0.71-1.53),i-Share (continuous).P value,0.33,41591_2023_Article_2268_table_2.csv
+rs6769442,3:171565463,G/A,Nagahama(dichotomous).OR(95% CI),1.04 (0.71-1.53),Nagahama(dichotomous).P value,0.82,41591_2023_Article_2268_table_2.csv
+rs6769442,3:171565463,G/A,Nagahama(dichotomous).OR(95% CI),1.04 (0.71-1.53),Nagahama (continuous).P value,0.35,41591_2023_Article_2268_table_2.csv
+rs6011998,20:45269867,C/T,Nagahama (continuous).β(SE),0.037 (0.008),i-Share(dichotomous).P value,0.28,41591_2023_Article_2268_table_2.csv
+rs6011998,20:45269867,C/T,Nagahama (continuous).β(SE),0.037 (0.008),i-Share (continuous).P value,4.20×10 -05,41591_2023_Article_2268_table_2.csv
+rs6011998,20:45269867,C/T,Nagahama (continuous).β(SE),0.037 (0.008),Nagahama(dichotomous).P value,1.22×10 -05,41591_2023_Article_2268_table_2.csv
+rs6011998,20:45269867,C/T,Nagahama (continuous).β(SE),0.037 (0.008),Nagahama (continuous).P value,6.21×10 -07,41591_2023_Article_2268_table_2.csv
+rs13079464,3:13822439,C/G,Nagahama (continuous).β(SE),0.015 (0.006),i-Share(dichotomous).P value,0.29,41591_2023_Article_2268_table_2.csv
+rs13079464,3:13822439,C/G,Nagahama (continuous).β(SE),0.015 (0.006),i-Share (continuous).P value,0.50,41591_2023_Article_2268_table_2.csv
+rs13079464,3:13822439,C/G,Nagahama (continuous).β(SE),0.015 (0.006),Nagahama(dichotomous).P value,0.11,41591_2023_Article_2268_table_2.csv
+rs13079464,3:13822439,C/G,Nagahama (continuous).β(SE),0.015 (0.006),Nagahama (continuous).P value,1.50×10 -02,41591_2023_Article_2268_table_2.csv
+rs2425884,20:45258292,C/T,Nagahama (continuous).β(SE),0.026 (0.005),i-Share(dichotomous).P value,0.13,41591_2023_Article_2268_table_2.csv
+rs2425884,20:45258292,C/T,Nagahama (continuous).β(SE),0.026 (0.005),i-Share (continuous).P value,2.98×10 -04,41591_2023_Article_2268_table_2.csv
+rs2425884,20:45258292,C/T,Nagahama (continuous).β(SE),0.026 (0.005),Nagahama(dichotomous).P value,3.48×10 -03,41591_2023_Article_2268_table_2.csv
+rs2425884,20:45258292,C/T,Nagahama (continuous).β(SE),0.026 (0.005),Nagahama (continuous).P value,1.77×10 -06,41591_2023_Article_2268_table_2.csv
+rs10817108,9:113658671,A/G,Nagahama (continuous).β(SE),0.017 (0.006),i-Share(dichotomous).P value,0.44,41591_2023_Article_2268_table_2.csv
+rs10817108,9:113658671,A/G,Nagahama (continuous).β(SE),0.017 (0.006),i-Share (continuous).P value,2.23×10 -02,41591_2023_Article_2268_table_2.csv
+rs10817108,9:113658671,A/G,Nagahama (continuous).β(SE),0.017 (0.006),Nagahama(dichotomous).P value,0.07,41591_2023_Article_2268_table_2.csv
+rs10817108,9:113658671,A/G,Nagahama (continuous).β(SE),0.017 (0.006),Nagahama (continuous).P value,4.10×10 -03,41591_2023_Article_2268_table_2.csv
+rs2425881,20:45255618,A/G,Nagahama (continuous).β(SE),0.014 (0.005),i-Share(dichotomous).P value,1.40×10 -02,41591_2023_Article_2268_table_2.csv
+rs2425881,20:45255618,A/G,Nagahama (continuous).β(SE),0.014 (0.005),i-Share (continuous).P value,2.62×10 -02,41591_2023_Article_2268_table_2.csv
+rs2425881,20:45255618,A/G,Nagahama (continuous).β(SE),0.014 (0.005),Nagahama(dichotomous).P value,3.66×10 -02,41591_2023_Article_2268_table_2.csv
+rs2425881,20:45255618,A/G,Nagahama (continuous).β(SE),0.014 (0.005),Nagahama (continuous).P value,4.68×10 -03,41591_2023_Article_2268_table_2.csv
+rs3772833,3:124518362,G/A,Nagahama (continuous).β(SE),0.008 (0.006),i-Share(dichotomous).P value,0.21,41591_2023_Article_2268_table_2.csv
+rs3772833,3:124518362,G/A,Nagahama (continuous).β(SE),0.008 (0.006),i-Share (continuous).P value,0.85,41591_2023_Article_2268_table_2.csv
+rs3772833,3:124518362,G/A,Nagahama (continuous).β(SE),0.008 (0.006),Nagahama(dichotomous).P value,0.51,41591_2023_Article_2268_table_2.csv
+rs3772833,3:124518362,G/A,Nagahama (continuous).β(SE),0.008 (0.006),Nagahama (continuous).P value,0.16,41591_2023_Article_2268_table_2.csv
+rs112407396,20:45276381,T/A,Nagahama (continuous).β(SE),,i-Share(dichotomous).P value,0.24,41591_2023_Article_2268_table_2.csv
+rs112407396,20:45276381,T/A,Nagahama (continuous).β(SE),,i-Share (continuous).P value,3.13×10 -02,41591_2023_Article_2268_table_2.csv
+rs112407396,20:45276381,T/A,Nagahama (continuous).β(SE),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs112407396,20:45276381,T/A,Nagahama (continuous).β(SE),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs10494988,1:215141570,C/T,Nagahama (continuous).β(SE),-0.002 (0.005),i-Share(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
+rs10494988,1:215141570,C/T,Nagahama (continuous).β(SE),-0.002 (0.005),i-Share (continuous).P value,1.94×10 -04,41591_2023_Article_2268_table_2.csv
+rs10494988,1:215141570,C/T,Nagahama (continuous).β(SE),-0.002 (0.005),Nagahama(dichotomous).P value,0.90,41591_2023_Article_2268_table_2.csv
+rs10494988,1:215141570,C/T,Nagahama (continuous).β(SE),-0.002 (0.005),Nagahama (continuous).P value,0.67,41591_2023_Article_2268_table_2.csv
+rs72485816,20:45314435,T/C,Nagahama (continuous).β(SE),0.033 (0.006),i-Share(dichotomous).P value,0.98,41591_2023_Article_2268_table_2.csv
+rs72485816,20:45314435,T/C,Nagahama (continuous).β(SE),0.033 (0.006),i-Share (continuous).P value,0.095,41591_2023_Article_2268_table_2.csv
+rs72485816,20:45314435,T/C,Nagahama (continuous).β(SE),0.033 (0.006),Nagahama(dichotomous).P value,2.83×10 -03,41591_2023_Article_2268_table_2.csv
+rs72485816,20:45314435,T/C,Nagahama (continuous).β(SE),0.033 (0.006),Nagahama (continuous).P value,1.91×10 -08,41591_2023_Article_2268_table_2.csv
+rs8041189,15:85686327,G/A,Nagahama (continuous).β(SE),0.046 (0.021),i-Share(dichotomous).P value,0.30,41591_2023_Article_2268_table_2.csv
+rs8041189,15:85686327,G/A,Nagahama (continuous).β(SE),0.046 (0.021),i-Share (continuous).P value,0.073,41591_2023_Article_2268_table_2.csv
+rs8041189,15:85686327,G/A,Nagahama (continuous).β(SE),0.046 (0.021),Nagahama(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
+rs8041189,15:85686327,G/A,Nagahama (continuous).β(SE),0.046 (0.021),Nagahama (continuous).P value,2.40×10 -02,41591_2023_Article_2268_table_2.csv
+rs4685022,3:13832611,G/A,Nagahama (continuous).β(SE),0.010 (0.005),i-Share(dichotomous).P value,0.34,41591_2023_Article_2268_table_2.csv
+rs4685022,3:13832611,G/A,Nagahama (continuous).β(SE),0.010 (0.005),i-Share (continuous).P value,0.31,41591_2023_Article_2268_table_2.csv
+rs4685022,3:13832611,G/A,Nagahama (continuous).β(SE),0.010 (0.005),Nagahama(dichotomous).P value,0.10,41591_2023_Article_2268_table_2.csv
+rs4685022,3:13832611,G/A,Nagahama (continuous).β(SE),0.010 (0.005),Nagahama (continuous).P value,0.075,41591_2023_Article_2268_table_2.csv
+rs7596872,2:56128091,C/A,Nagahama (continuous).β(SE),,i-Share(dichotomous).P value,1.14×10 -02,41591_2023_Article_2268_table_2.csv
+rs7596872,2:56128091,C/A,Nagahama (continuous).β(SE),,i-Share (continuous).P value,1.10×10 -02,41591_2023_Article_2268_table_2.csv
+rs7596872,2:56128091,C/A,Nagahama (continuous).β(SE),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs7596872,2:56128091,C/A,Nagahama (continuous).β(SE),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs1126642,17:42989063,C/T,Nagahama (continuous).β(SE),0.033 (0.007),i-Share(dichotomous).P value,0.67,41591_2023_Article_2268_table_2.csv
+rs1126642,17:42989063,C/T,Nagahama (continuous).β(SE),0.033 (0.007),i-Share (continuous).P value,1.27×10 -02,41591_2023_Article_2268_table_2.csv
+rs1126642,17:42989063,C/T,Nagahama (continuous).β(SE),0.033 (0.007),Nagahama(dichotomous).P value,0.11,41591_2023_Article_2268_table_2.csv
+rs1126642,17:42989063,C/T,Nagahama (continuous).β(SE),0.033 (0.007),Nagahama (continuous).P value,9.88×10 -07,41591_2023_Article_2268_table_2.csv
+rs687610,3:193515781,G/C,Nagahama (continuous).β(SE),0.006 (0.005),i-Share(dichotomous).P value,4.88×10 -04,41591_2023_Article_2268_table_2.csv
+rs687610,3:193515781,G/C,Nagahama (continuous).β(SE),0.006 (0.005),i-Share (continuous).P value,1.29×10 -07,41591_2023_Article_2268_table_2.csv
+rs687610,3:193515781,G/C,Nagahama (continuous).β(SE),0.006 (0.005),Nagahama(dichotomous).P value,0.59,41591_2023_Article_2268_table_2.csv
+rs687610,3:193515781,G/C,Nagahama (continuous).β(SE),0.006 (0.005),Nagahama (continuous).P value,0.28,41591_2023_Article_2268_table_2.csv
+rs4959689,6:2617122,C/A,Nagahama (continuous).β(SE),0.024 (0.026),i-Share(dichotomous).P value,0.37,41591_2023_Article_2268_table_2.csv
+rs4959689,6:2617122,C/A,Nagahama (continuous).β(SE),0.024 (0.026),i-Share (continuous).P value,0.30,41591_2023_Article_2268_table_2.csv
+rs4959689,6:2617122,C/A,Nagahama (continuous).β(SE),0.024 (0.026),Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs4959689,6:2617122,C/A,Nagahama (continuous).β(SE),0.024 (0.026),Nagahama (continuous).P value,0.34,41591_2023_Article_2268_table_2.csv
+rs56104388,20:45302135,T/C,Nagahama (continuous).β(SE),,i-Share(dichotomous).P value,0.67,41591_2023_Article_2268_table_2.csv
+rs56104388,20:45302135,T/C,Nagahama (continuous).β(SE),,i-Share (continuous).P value,1.47×10 -02,41591_2023_Article_2268_table_2.csv
+rs56104388,20:45302135,T/C,Nagahama (continuous).β(SE),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs56104388,20:45302135,T/C,Nagahama (continuous).β(SE),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs12417836,11:70089700,T/C,Nagahama (continuous).β(SE),-0.002 (0.011),i-Share(dichotomous).P value,0.99,41591_2023_Article_2268_table_2.csv
+rs12417836,11:70089700,T/C,Nagahama (continuous).β(SE),-0.002 (0.011),i-Share (continuous).P value,0.29,41591_2023_Article_2268_table_2.csv
+rs12417836,11:70089700,T/C,Nagahama (continuous).β(SE),-0.002 (0.011),Nagahama(dichotomous).P value,0.40,41591_2023_Article_2268_table_2.csv
+rs12417836,11:70089700,T/C,Nagahama (continuous).β(SE),-0.002 (0.011),Nagahama (continuous).P value,0.84,41591_2023_Article_2268_table_2.csv
+rs2923437,8:42425399,A/C,Nagahama (continuous).β(SE),0.008 (0.005),i-Share(dichotomous).P value,0.88,41591_2023_Article_2268_table_2.csv
+rs2923437,8:42425399,A/C,Nagahama (continuous).β(SE),0.008 (0.005),i-Share (continuous).P value,2.60×10 -02,41591_2023_Article_2268_table_2.csv
+rs2923437,8:42425399,A/C,Nagahama (continuous).β(SE),0.008 (0.005),Nagahama(dichotomous).P value,0.23,41591_2023_Article_2268_table_2.csv
+rs2923437,8:42425399,A/C,Nagahama (continuous).β(SE),0.008 (0.005),Nagahama (continuous).P value,0.11,41591_2023_Article_2268_table_2.csv
+rs1922930,6:1364691,C/A,Nagahama (continuous).β(SE),,i-Share(dichotomous).P value,0.70,41591_2023_Article_2268_table_2.csv
+rs1922930,6:1364691,C/A,Nagahama (continuous).β(SE),,i-Share (continuous).P value,0.33,41591_2023_Article_2268_table_2.csv
+rs1922930,6:1364691,C/A,Nagahama (continuous).β(SE),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs1922930,6:1364691,C/A,Nagahama (continuous).β(SE),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs2385089,19:18550434,A/C,Nagahama (continuous).β(SE),,i-Share(dichotomous).P value,0.14,41591_2023_Article_2268_table_2.csv
+rs2385089,19:18550434,A/C,Nagahama (continuous).β(SE),,i-Share (continuous).P value,0.057,41591_2023_Article_2268_table_2.csv
+rs2385089,19:18550434,A/C,Nagahama (continuous).β(SE),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs2385089,19:18550434,A/C,Nagahama (continuous).β(SE),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs10954468,7:134434661,C/A,Nagahama (continuous).β(SE),,i-Share(dichotomous).P value,0.50,41591_2023_Article_2268_table_2.csv
+rs10954468,7:134434661,C/A,Nagahama (continuous).β(SE),,i-Share (continuous).P value,0.13,41591_2023_Article_2268_table_2.csv
+rs10954468,7:134434661,C/A,Nagahama (continuous).β(SE),,Nagahama(dichotomous).P value,,41591_2023_Article_2268_table_2.csv
+rs10954468,7:134434661,C/A,Nagahama (continuous).β(SE),,Nagahama (continuous).P value,,41591_2023_Article_2268_table_2.csv
+rs4675310,2:203880834,A/G,Nagahama (continuous).β(SE),0.046 (0.03),i-Share(dichotomous).P value,0.61,41591_2023_Article_2268_table_2.csv
+rs4675310,2:203880834,A/G,Nagahama (continuous).β(SE),0.046 (0.03),i-Share (continuous).P value,0.78,41591_2023_Article_2268_table_2.csv
+rs4675310,2:203880834,A/G,Nagahama (continuous).β(SE),0.046 (0.03),Nagahama(dichotomous).P value,0.26,41591_2023_Article_2268_table_2.csv
+rs4675310,2:203880834,A/G,Nagahama (continuous).β(SE),0.046 (0.03),Nagahama (continuous).P value,0.11,41591_2023_Article_2268_table_2.csv
+rs6769442,3:171565463,G/A,Nagahama (continuous).β(SE),0.008 (0.01),i-Share(dichotomous).P value,0.37,41591_2023_Article_2268_table_2.csv
+rs6769442,3:171565463,G/A,Nagahama (continuous).β(SE),0.008 (0.01),i-Share (continuous).P value,0.33,41591_2023_Article_2268_table_2.csv
+rs6769442,3:171565463,G/A,Nagahama (continuous).β(SE),0.008 (0.01),Nagahama(dichotomous).P value,0.82,41591_2023_Article_2268_table_2.csv
+rs6769442,3:171565463,G/A,Nagahama (continuous).β(SE),0.008 (0.01),Nagahama (continuous).P value,0.35,41591_2023_Article_2268_table_2.csv

@@ -9,10 +9,12 @@ import pandas as pd
 import requests
 import re
 from pypdf import PdfReader, PdfWriter
+from docling.datamodel import vlm_model_specs
 from docling.datamodel.base_models import InputFormat
-from docling.datamodel.pipeline_options import PdfPipelineOptions, TableFormerMode
+from docling.datamodel.pipeline_options import PdfPipelineOptions, TableFormerMode, VlmPipelineOptions
 from docling.document_converter import DocumentConverter, PdfFormatOption
 from docling.datamodel.document import DocumentStream
+from docling.pipeline.vlm_pipeline import VlmPipeline
 from gwas_column_matching_engine import GWASColumnMatchingEngine
 
 def extract_tables_num_col_lst_from_pmc(pmcid: str) -> List[int]:
@@ -84,7 +86,7 @@ def extract_tables_lst_from_pdf_and_num_col(file_name: str, tables_num_col_lst: 
     reader = PdfReader(file_name)
     options = PdfPipelineOptions()
     options.table_structure_options.mode = TableFormerMode.ACCURATE
-    converter = DocumentConverter(
+    ocr_converter = DocumentConverter(
         format_options={
             InputFormat.PDF: PdfFormatOption(pipeline_options=options)
         }
@@ -94,9 +96,9 @@ def extract_tables_lst_from_pdf_and_num_col(file_name: str, tables_num_col_lst: 
 
     page_num = 1
     while len(df_lst) < len(tables_num_col_lst) and page_num <= len(reader.pages):
+        filled = False # flag if we found table
         for angle in [0, 90]: # Try normal, then try rotated
-            filled = False # flag if we found table
-
+            
             writer = PdfWriter()
             page = reader.pages[page_num - 1]
             
@@ -111,8 +113,8 @@ def extract_tables_lst_from_pdf_and_num_col(file_name: str, tables_num_col_lst: 
             pdf_buffer.seek(0)
             
             doc_stream = DocumentStream(name=f"page_{page_num}.pdf", stream=pdf_buffer)
-            result = converter.convert(doc_stream)
-            
+            result = ocr_converter.convert(doc_stream)
+
             # Check if this rotation produced valid table rows
             temp_dfs = []
             for table in result.document.tables:
@@ -161,6 +163,120 @@ def extract_tables_lst_from_pdf_and_num_col(file_name: str, tables_num_col_lst: 
         page_num += 1
 
     return df_lst
+
+# def extract_tables_lst_from_pdf_and_num_col(file_name: str, tables_num_col_lst: List[int]) -> List[pd.DataFrame]:
+#     """
+#     Extract tables from a paper given a file_name string and a list of number of col for each tables 
+#     (for cross-check to see if we need to do rotation)
+#     """
+#     print(tables_num_col_lst)
+#     reader = PdfReader(file_name)
+#     options = PdfPipelineOptions()
+#     options.table_structure_options.mode = TableFormerMode.ACCURATE
+#     ocr_converter = DocumentConverter(
+#         format_options={
+#             InputFormat.PDF: PdfFormatOption(pipeline_options=options)
+#         }
+#     )
+#     pipeline_options = VlmPipelineOptions(
+#         vlm_options=vlm_model_specs.QWEN25_VL_3B_MLX,
+#     )
+#     vlm_converter = DocumentConverter(
+#         format_options={
+#             InputFormat.PDF: PdfFormatOption(
+#                 pipeline_cls=VlmPipeline,
+#                 pipeline_options=pipeline_options,
+#             ),
+#         }
+#     )
+#     df_lst = []
+#     row_pattern = r"\b(?:rs|s)\d+\S*"
+
+#     page_num = 1
+#     while len(df_lst) < len(tables_num_col_lst) and page_num <= len(reader.pages):
+#         filled = False # flag if we found table
+#         has_table = False
+#         for pipeline in ["OCR", "VLM"]:
+#             if pipeline == "OCR" or (has_table and pipeline == "VLM"):
+#                 print(f"Start trying {pipeline} pipeline")
+#                 for angle in [0, 90]: # Try normal, then try rotated
+#                     print(f"Start trying {angle}")
+                    
+#                     writer = PdfWriter()
+#                     page = reader.pages[page_num - 1]
+                    
+#                     if angle != 0:
+#                         page.rotate(angle)
+                    
+#                     writer.add_page(page)
+                    
+#                     # Convert just this one page
+#                     pdf_buffer = io.BytesIO()
+#                     writer.write(pdf_buffer)
+#                     pdf_buffer.seek(0)
+                    
+#                     doc_stream = DocumentStream(name=f"page_{page_num}.pdf", stream=pdf_buffer)
+#                     if pipeline == "OCR":
+#                         result = ocr_converter.convert(doc_stream)
+#                     else:
+#                         result = vlm_converter.convert(doc_stream)
+                    
+#                     if pipeline == "OCR" and len(result.document.tables) > 0:
+#                         has_table = True
+
+#                     # Check if this rotation produced valid table rows
+#                     temp_dfs = []
+#                     for table in result.document.tables:
+#                         df = table.export_to_dataframe()
+#                         print(df.shape)
+#                         # check if table is empty
+#                         if (not df.empty):
+#                             # Case 1: continue from previous table
+#                             if len(df_lst) > 0 and df.shape[1] == df_lst[-1].shape[1]:
+#                                 # extra filters for tables that are snp related, we need to remove rows that do not have snp id
+#                                 # often are separation between sections
+#                                 for col in df.columns:
+#                                     # first modify "" -> nan
+#                                     df[col] = df[col].replace(r'^\s*$', np.nan, regex=True).ffill()
+#                                 df["valid_row"] = df.apply(lambda x: any(re.search(row_pattern, str(c)) for c in x), axis=1)
+#                                 df = df[df["valid_row"]].drop("valid_row", axis=1).reset_index().drop("index", axis = 1)
+#                                 # some cell have the tag the end (often include a space and a small letter)
+#                                 df = df.map(clean_cell) 
+#                                 df = clean_headers(df) 
+#                                 if df_lst[-1].columns.equals(df.columns):
+#                                     df_lst[-1] = pd.concat([df_lst[-1], df], ignore_index = True)
+#                                     filled = True
+#                                 elif df.shape[1] == tables_num_col_lst[len(df_lst) + len(temp_dfs)]:
+#                                     # fail that test => add to temp since this is a new table
+#                                     temp_dfs.append(df)
+#                                     filled = True
+#                             # Case 2: new table
+#                             elif (len(df_lst) + len(temp_dfs)) < len(tables_num_col_lst) and df.shape[1] == tables_num_col_lst[len(df_lst) + len(temp_dfs)]: 
+#                                 # extra filters for tables that are snp related, we need to remove rows that do not have snp id
+#                                 # often are separation between sections
+#                                 for col in df.columns:
+#                                     # first modify "" -> nan
+#                                     df[col] = df[col].replace(r'^\s*$', np.nan, regex=True).ffill()
+#                                 df["valid_row"] = df.apply(lambda x: any(re.search(row_pattern, str(c)) for c in x), axis=1)
+#                                 df = df[df["valid_row"]].drop("valid_row", axis=1).reset_index().drop("index", axis = 1)
+#                                 # some cell have the tag the end (often include a space and a small letter)
+#                                 df = df.map(clean_cell) 
+#                                 df = clean_headers(df)             
+#                                 temp_dfs.append(df)
+#                                 filled = True
+#                     print(filled)
+#                     if temp_dfs:
+#                         df_lst.extend(temp_dfs)
+                    
+#                     if filled:
+#                         break
+            
+#             if filled:
+#                 break
+            
+#         page_num += 1
+
+#     return df_lst
 
 def extract_tables_lst_from_paper(pmcid: str, file_name: str, table_inx_to_extract: List[int] = []) -> list[pd.DataFrame]:
     """

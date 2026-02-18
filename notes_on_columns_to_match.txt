@@ -10,3 +10,5 @@
 - Remove View in GenomicsDB since it need scraping from GenomicsDB on specific gene
 - Remove interaction since it can be derived from notes on the column if having there
 - Remove imputation since it can ve derived via papers
+- Imputation/Stage/association type/model type/meta joint can be derived from other scripts?
+- Keep CI definition here Confidence Interval,"The uncertainty range of the effect size. Keywords: 95% CI, L95, U95, Range. Examples: (1.20-1.75), [0.85, 0.95], 95% CI: 0.4-0.6.",TRUE
