@@ -167,5 +167,27 @@ def test_snp_pvalue_str():
             test_snp_pvalue = test_snp_df["P-value"].apply(lambda x: str(x))
             assert (curr_snp_pvalue == test_snp_pvalue).all(), f"Table {file_name} does not contain right set of p-value for SNP {snp}"
 
+def test_snp_cohort():
+    for file_name in os.listdir(dir_path):
+        curr_df, test_df = import_table_and_test_table(dir_path, file_name)
+        test_unique_snp = test_df["SNP"].unique()
+        for snp in test_unique_snp:
+            curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", "Cohort"]].sort_values("Cohort")
+            curr_snp_cohort = curr_snp_df["Cohort"]
+            test_snp_df = test_df[test_df["SNP"] == snp][["SNP", "Cohort"]].sort_values("Cohort")
+            test_snp_cohort = test_snp_df["Cohort"]
+            assert (curr_snp_cohort == test_snp_cohort).all(), f"Table {file_name} does not contain right set of cohort for SNP {snp}"
+
+def test_snp_population():
+    for file_name in os.listdir(dir_path):
+        curr_df, test_df = import_table_and_test_table(dir_path, file_name)
+        test_unique_snp = test_df["SNP"].unique()
+        for snp in test_unique_snp:
+            curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", "Population"]].sort_values("Population")
+            curr_snp_population = curr_snp_df["Population"]
+            test_snp_df = test_df[test_df["SNP"] == snp][["SNP", "Population"]].sort_values("Population")
+            test_snp_population = test_snp_df["Population"]
+            assert (curr_snp_population == test_snp_population).all(), f"Table {file_name} does not contain right set of population for SNP {snp}"
+
 # if __name__ == "__main__":
     # create_test_tables_from_advp()
