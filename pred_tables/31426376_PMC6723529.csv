@@ -1,4 +1,4 @@
-P-value notes,P-value
-ε 3 / ε 3 ε 3 with our association analysis..Ratio CI) association,5.13 (4.40-5.98) 3/ ε 3
-p Odds (95% CI) of APOE E) disease.,5.10 GLYPH<2> 10 GLYPH<0> 98 3/ ε 4
-ε 4 / ε 4.p and,8.80 GLYPH<2> 10 GLYPH<0> 94
+SNP,Chr,Position,RA,AF,P-value,Effect,Population,Cohort,P-value notes
+,,,,,5.13 (4.40-5.98) 3/ ε 3,,,,ε 3 / ε 3 ε 3 with our association analysis..Ratio CI) association
+,,,,,5.10 GLYPH<2> 10 GLYPH<0> 98 3/ ε 4,,,,p Odds (95% CI) of APOE E) disease.
+,,,,,8.80 GLYPH<2> 10 GLYPH<0> 94,,,,ε 4 / ε 4.p and

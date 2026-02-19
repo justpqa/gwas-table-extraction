@@ -1,84 +1,84 @@
-SNP,Chr,P-value notes,P-value,RA,Effect,Position
-rs7664889,4,Min Conj FDR,4.84E - 02,,,
-rs9268877,6,Min Conj FDR,4.84E - 02,,,
-rs676768,10,Min Conj FDR,4.27E - 02,,,
-rs10784359,12,Min Conj FDR,3.26E - 02,,,
-rs2893253,13,Min Conj FDR,3.55E - 02,,,
-rs199528,17,Min Conj FDR,1.80E - 02,,,
-rs1358071,17,Min Conj FDR,2.02E - 02,,,
-rs12964543,18,Min Conj FDR,2.73E - 02,,,
-rs405509,19,Min Conj FDR,5.22E - 03,,,
-rs7664889,4,FTD p-value,1.75E - 04,,,
-rs9268877,6,FTD p-value,1.04E - 10,,,
-rs676768,10,FTD p-value,3.12E - 04,,,
-rs10784359,12,FTD p-value,1.58E - 04,,,
-rs2893253,13,FTD p-value,2.02E - 04,,,
-rs199528,17,FTD p-value,4.09E - 05,,,
-rs1358071,17,FTD p-value,4.96E - 05,,,
-rs12964543,18,FTD p-value,1.12E - 04,,,
-rs405509,19,FTD p-value,1.25E - 05,,,
-rs7664889,4,Associated phenotype p-value,8.88E - 04,,,
-rs9268877,6,Associated phenotype p-value,7.41E - 04,,,
-rs676768,10,Associated phenotype p-value,6.14E - 04,,,
-rs10784359,12,Associated phenotype p-value,7.47E - 05,,,
-rs2893253,13,Associated phenotype p-value,1.11E - 04,,,
-rs199528,17,Associated phenotype p-value,9.82E - 16,,,
-rs1358071,17,Associated phenotype p-value,7.76E - 15,,,
-rs12964543,18,Associated phenotype p-value,3.08E - 04,,,
-rs405509,19,Associated phenotype p-value,6.16E - 70,,,
-rs4417745,2,Min Cond FDR,2.73E - 02,A,1.22 (1.09 - 1.36),
-rs7664889,4,Min Cond FDR,3.23E - 02,T,0.83 (0.73 - 0.94),
-rs676768,10,Min Cond FDR,4.25E - 02,T,0.86 (0.78 - 0.95),
-rs1328032,13,Min Cond FDR,1.38E - 02,A,0.80 (0.72 - 0.88),
-rs2446406,15,Min Cond FDR,2.59E - 02,A,0.87 (0.82 - 0.93),
-rs7184882,16,Min Cond FDR,4.24E - 02,T,0.78 (0.71 - 0.86),
-rs199528,17,Min Cond FDR,1.79E - 02,T,0.85 (0.79 - 0.91),
-rs1358071,17,Min Cond FDR,2.01E - 02,A,1.19 (1.11 - 1.27),
-rs12964543,18,Min Cond FDR,2.71E - 02,A,1.12 (1.05 - 1.2),
-rs6857,19,Min Cond FDR,4.69E - 02,T,1.34 (1.23 - 1.45),
-rs405509,19,Min Cond FDR,5.26E - 03,T,1.15 (1.08 - 1.24),
-rs4417745,2,IFGC phase I p-value,2.52E - 05,A,1.22 (1.09 - 1.36),
-rs7664889,4,IFGC phase I p-value,1.75E - 04,T,0.83 (0.73 - 0.94),
-rs676768,10,IFGC phase I p-value,3.12E - 04,T,0.86 (0.78 - 0.95),
-rs1328032,13,IFGC phase I p-value,1.93E - 07,A,0.80 (0.72 - 0.88),
-rs2446406,15,IFGC phase I p-value,7.18E - 07,A,0.87 (0.82 - 0.93),
-rs7184882,16,IFGC phase I p-value,6.64E - 07,T,0.78 (0.71 - 0.86),
-rs199528,17,IFGC phase I p-value,4.09E - 05,T,0.85 (0.79 - 0.91),
-rs1358071,17,IFGC phase I p-value,4.96E - 05,A,1.19 (1.11 - 1.27),
-rs12964543,18,IFGC phase I p-value,1.12E - 04,A,1.12 (1.05 - 1.2),
-rs6857,19,IFGC phase I p-value,7.03E - 07,T,1.34 (1.23 - 1.45),
-rs405509,19,IFGC phase I p-value,1.25E - 05,T,1.15 (1.08 - 1.24),
-rs4417745,2,IFGC phase II p-value,0.47,A,1.22 (1.09 - 1.36),
-rs7664889,4,IFGC phase II p-value,0.82,T,0.83 (0.73 - 0.94),
-rs676768,10,IFGC phase II p-value,0.55,T,0.86 (0.78 - 0.95),
-rs1328032,13,IFGC phase II p-value,0.34,A,0.80 (0.72 - 0.88),
-rs2446406,15,IFGC phase II p-value,0.40,A,0.87 (0.82 - 0.93),
-rs7184882,16,IFGC phase II p-value,0.08,T,0.78 (0.71 - 0.86),
-rs199528,17,IFGC phase II p-value,0.03,T,0.85 (0.79 - 0.91),
-rs1358071,17,IFGC phase II p-value,0.001,A,1.19 (1.11 - 1.27),
-rs12964543,18,IFGC phase II p-value,0.24,A,1.12 (1.05 - 1.2),
-rs6857,19,IFGC phase II p-value,4.46E - 07,T,1.34 (1.23 - 1.45),
-rs405509,19,IFGC phase II p-value,0.93,T,1.15 (1.08 - 1.24),
-rs4417745,2,Meta-analysis p-value,3.20E - 04,A,1.22 (1.09 - 1.36),
-rs7664889,4,Meta-analysis p-value,3.18E - 03,T,0.83 (0.73 - 0.94),
-rs676768,10,Meta-analysis p-value,2.40E - 03,T,0.86 (0.78 - 0.95),
-rs1328032,13,Meta-analysis p-value,7.39E - 05,A,0.80 (0.72 - 0.88),
-rs2446406,15,Meta-analysis p-value,2.24E - 05,A,0.87 (0.82 - 0.93),
-rs7184882,16,Meta-analysis p-value,3.08E - 06,T,0.78 (0.71 - 0.86),
-rs199528,17,Meta-analysis p-value,9.59E - 06,T,0.85 (0.79 - 0.91),
-rs1358071,17,Meta-analysis p-value,4.91E - 07,A,1.19 (1.11 - 1.27),
-rs12964543,18,Meta-analysis p-value,9.10E - 04,A,1.12 (1.05 - 1.2),
-rs6857,19,Meta-analysis p-value,2.21E - 12,T,1.34 (1.23 - 1.45),
-rs405509,19,Meta-analysis p-value,5.98E - 05,T,1.15 (1.08 - 1.24),
-rs7664889,4,Braineac.p-value,,/,,77087704
-rs9268877,6,Braineac.p-value,3.1×10 - 5,A,,32431147
-rs676768 rs10784359 rs2893253,10 12,Braineac.p-value,3.1×10 - 5,/ /,,116030773 40445750 107067203
-rs199528,13 17,Braineac.p-value,3×10 - 6,/ C,,44843136
-rs199528,17,Braineac.p-value,3×10 - 6,C,,44843136
-rs199528,17,Braineac.p-value,1×10 - 5,C,,44843136
-rs7664889,4,p-value,,/,,77087704
-rs9268877,6,p-value,5.2×10 - 8 8.8×10 - 8 8.9×10 - 7 1.3×10 - 6,A,,32431147
-rs676768 rs10784359 rs2893253,10 12,p-value,5.2×10 - 8 8.8×10 - 8 8.9×10 - 7 1.3×10 - 6,/ /,,116030773 40445750 107067203
-rs199528,13 17,p-value,4×10 - 14 1.7×10 - 12 4.5×10 - 12 1.6×10 - 11 4.5×10 - 20 6.6×10 - 20 1.9×10 - 19 3.5×10 - 19 5.4×10 - 7 1.1×10 - 18 - 17,/ C,,44843136
-rs199528,17,p-value,2×10 - 10 4.6×10 - 10 1.6×10 - 8 1.3×10 - 7,C,,44843136
-rs199528,17,p-value,2×10 - 25 3.9×10 - 20 6.2×10 - 19 1.6×10 - 17 4×10 - 13 1.3×10 - 12 8.7×10 - 12 3.6×10 - 8 1.3×10 - 7 2.4×10 - 18 5.1×10 - 18 1.3×10 - 17 2.5×10 - 14 1.3×10 - 20 1.5×10 - 16 -,C,,44843136
+SNP,Chr,Position,RA,AF,P-value,Effect,Population,Cohort,P-value notes
+rs7664889,4,,,,4.84E - 02,,,,Min Conj FDR
+rs9268877,6,,,,4.84E - 02,,,,Min Conj FDR
+rs676768,10,,,,4.27E - 02,,,,Min Conj FDR
+rs10784359,12,,,,3.26E - 02,,,,Min Conj FDR
+rs2893253,13,,,,3.55E - 02,,,,Min Conj FDR
+rs199528,17,,,,1.80E - 02,,,,Min Conj FDR
+rs1358071,17,,,,2.02E - 02,,,,Min Conj FDR
+rs12964543,18,,,,2.73E - 02,,,,Min Conj FDR
+rs405509,19,,,,5.22E - 03,,,,Min Conj FDR
+rs7664889,4,,,,1.75E - 04,,,,FTD p-value
+rs9268877,6,,,,1.04E - 10,,,,FTD p-value
+rs676768,10,,,,3.12E - 04,,,,FTD p-value
+rs10784359,12,,,,1.58E - 04,,,,FTD p-value
+rs2893253,13,,,,2.02E - 04,,,,FTD p-value
+rs199528,17,,,,4.09E - 05,,,,FTD p-value
+rs1358071,17,,,,4.96E - 05,,,,FTD p-value
+rs12964543,18,,,,1.12E - 04,,,,FTD p-value
+rs405509,19,,,,1.25E - 05,,,,FTD p-value
+rs7664889,4,,,,8.88E - 04,,,,Associated phenotype p-value
+rs9268877,6,,,,7.41E - 04,,,,Associated phenotype p-value
+rs676768,10,,,,6.14E - 04,,,,Associated phenotype p-value
+rs10784359,12,,,,7.47E - 05,,,,Associated phenotype p-value
+rs2893253,13,,,,1.11E - 04,,,,Associated phenotype p-value
+rs199528,17,,,,9.82E - 16,,,,Associated phenotype p-value
+rs1358071,17,,,,7.76E - 15,,,,Associated phenotype p-value
+rs12964543,18,,,,3.08E - 04,,,,Associated phenotype p-value
+rs405509,19,,,,6.16E - 70,,,,Associated phenotype p-value
+rs4417745,2,,A,,2.73E - 02,1.22 (1.09 - 1.36),,,Min Cond FDR
+rs7664889,4,,T,,3.23E - 02,0.83 (0.73 - 0.94),,,Min Cond FDR
+rs676768,10,,T,,4.25E - 02,0.86 (0.78 - 0.95),,,Min Cond FDR
+rs1328032,13,,A,,1.38E - 02,0.80 (0.72 - 0.88),,,Min Cond FDR
+rs2446406,15,,A,,2.59E - 02,0.87 (0.82 - 0.93),,,Min Cond FDR
+rs7184882,16,,T,,4.24E - 02,0.78 (0.71 - 0.86),,,Min Cond FDR
+rs199528,17,,T,,1.79E - 02,0.85 (0.79 - 0.91),,,Min Cond FDR
+rs1358071,17,,A,,2.01E - 02,1.19 (1.11 - 1.27),,,Min Cond FDR
+rs12964543,18,,A,,2.71E - 02,1.12 (1.05 - 1.2),,,Min Cond FDR
+rs6857,19,,T,,4.69E - 02,1.34 (1.23 - 1.45),,,Min Cond FDR
+rs405509,19,,T,,5.26E - 03,1.15 (1.08 - 1.24),,,Min Cond FDR
+rs4417745,2,,A,,2.52E - 05,1.22 (1.09 - 1.36),,,IFGC phase I p-value
+rs7664889,4,,T,,1.75E - 04,0.83 (0.73 - 0.94),,,IFGC phase I p-value
+rs676768,10,,T,,3.12E - 04,0.86 (0.78 - 0.95),,,IFGC phase I p-value
+rs1328032,13,,A,,1.93E - 07,0.80 (0.72 - 0.88),,,IFGC phase I p-value
+rs2446406,15,,A,,7.18E - 07,0.87 (0.82 - 0.93),,,IFGC phase I p-value
+rs7184882,16,,T,,6.64E - 07,0.78 (0.71 - 0.86),,,IFGC phase I p-value
+rs199528,17,,T,,4.09E - 05,0.85 (0.79 - 0.91),,,IFGC phase I p-value
+rs1358071,17,,A,,4.96E - 05,1.19 (1.11 - 1.27),,,IFGC phase I p-value
+rs12964543,18,,A,,1.12E - 04,1.12 (1.05 - 1.2),,,IFGC phase I p-value
+rs6857,19,,T,,7.03E - 07,1.34 (1.23 - 1.45),,,IFGC phase I p-value
+rs405509,19,,T,,1.25E - 05,1.15 (1.08 - 1.24),,,IFGC phase I p-value
+rs4417745,2,,A,,0.47,1.22 (1.09 - 1.36),,,IFGC phase II p-value
+rs7664889,4,,T,,0.82,0.83 (0.73 - 0.94),,,IFGC phase II p-value
+rs676768,10,,T,,0.55,0.86 (0.78 - 0.95),,,IFGC phase II p-value
+rs1328032,13,,A,,0.34,0.80 (0.72 - 0.88),,,IFGC phase II p-value
+rs2446406,15,,A,,0.40,0.87 (0.82 - 0.93),,,IFGC phase II p-value
+rs7184882,16,,T,,0.08,0.78 (0.71 - 0.86),,,IFGC phase II p-value
+rs199528,17,,T,,0.03,0.85 (0.79 - 0.91),,,IFGC phase II p-value
+rs1358071,17,,A,,0.001,1.19 (1.11 - 1.27),,,IFGC phase II p-value
+rs12964543,18,,A,,0.24,1.12 (1.05 - 1.2),,,IFGC phase II p-value
+rs6857,19,,T,,4.46E - 07,1.34 (1.23 - 1.45),,,IFGC phase II p-value
+rs405509,19,,T,,0.93,1.15 (1.08 - 1.24),,,IFGC phase II p-value
+rs4417745,2,,A,,3.20E - 04,1.22 (1.09 - 1.36),,,Meta-analysis p-value
+rs7664889,4,,T,,3.18E - 03,0.83 (0.73 - 0.94),,,Meta-analysis p-value
+rs676768,10,,T,,2.40E - 03,0.86 (0.78 - 0.95),,,Meta-analysis p-value
+rs1328032,13,,A,,7.39E - 05,0.80 (0.72 - 0.88),,,Meta-analysis p-value
+rs2446406,15,,A,,2.24E - 05,0.87 (0.82 - 0.93),,,Meta-analysis p-value
+rs7184882,16,,T,,3.08E - 06,0.78 (0.71 - 0.86),,,Meta-analysis p-value
+rs199528,17,,T,,9.59E - 06,0.85 (0.79 - 0.91),,,Meta-analysis p-value
+rs1358071,17,,A,,4.91E - 07,1.19 (1.11 - 1.27),,,Meta-analysis p-value
+rs12964543,18,,A,,9.10E - 04,1.12 (1.05 - 1.2),,,Meta-analysis p-value
+rs6857,19,,T,,2.21E - 12,1.34 (1.23 - 1.45),,,Meta-analysis p-value
+rs405509,19,,T,,5.98E - 05,1.15 (1.08 - 1.24),,,Meta-analysis p-value
+rs7664889,4,77087704,/,,,,,,Braineac.p-value
+rs9268877,6,32431147,A,,3.1×10 - 5,,,,Braineac.p-value
+rs676768 rs10784359 rs2893253,10 12,116030773 40445750 107067203,/ /,,3.1×10 - 5,,,,Braineac.p-value
+rs199528,13 17,44843136,/ C,,3×10 - 6,,,,Braineac.p-value
+rs199528,17,44843136,C,,3×10 - 6,,,,Braineac.p-value
+rs199528,17,44843136,C,,1×10 - 5,,,,Braineac.p-value
+rs7664889,4,77087704,/,,,,,,p-value
+rs9268877,6,32431147,A,,5.2×10 - 8 8.8×10 - 8 8.9×10 - 7 1.3×10 - 6,,,,p-value
+rs676768 rs10784359 rs2893253,10 12,116030773 40445750 107067203,/ /,,5.2×10 - 8 8.8×10 - 8 8.9×10 - 7 1.3×10 - 6,,,,p-value
+rs199528,13 17,44843136,/ C,,4×10 - 14 1.7×10 - 12 4.5×10 - 12 1.6×10 - 11 4.5×10 - 20 6.6×10 - 20 1.9×10 - 19 3.5×10 - 19 5.4×10 - 7 1.1×10 - 18 - 17,,,,p-value
+rs199528,17,44843136,C,,2×10 - 10 4.6×10 - 10 1.6×10 - 8 1.3×10 - 7,,,,p-value
+rs199528,17,44843136,C,,2×10 - 25 3.9×10 - 20 6.2×10 - 19 1.6×10 - 17 4×10 - 13 1.3×10 - 12 8.7×10 - 12 3.6×10 - 8 1.3×10 - 7 2.4×10 - 18 5.1×10 - 18 1.3×10 - 17 2.5×10 - 14 1.3×10 - 20 1.5×10 - 16 -,,,,p-value
