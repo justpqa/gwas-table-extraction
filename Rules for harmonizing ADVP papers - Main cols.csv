@@ -5,4 +5,6 @@ Position,"Genomic coordinate location. Keywords: BP, POS, Base Pair, start, end.
 RA,"The allele associated with the effect or risk. Keywords: Effect Allele, Risk Allele, A1, EA. Examples: A, T, G, C, minor, major.",FALSE
 AF,"Frequency of the reported allele in the sample. Keywords: EAF, MAF, RAF, Frequency. Examples: 0.12, 12%, 0.005 (rare), 0.45.",TRUE
 P-value,"The statistical significance of the association. Keywords: P, P-value, P_adj, FDR. Examples: 5.0E-08, 0.0012, 1.2 x 10^-5, 0.05.",TRUE
-Effect Size,"The magnitude and direction of the association. Keywords: Beta, OR, HR, Estimate. Examples: Beta=0.25, OR=1.45, HR=1.12, Log(OR)=0.37.",TRUE
+Effect,"The magnitude and direction of the association. Keywords: Beta, OR, HR, Estimate. Examples: Beta=0.25, OR=1.45, HR=1.12, Log(OR)=0.37.",TRUE
+Population,"The ancestral group or ethnicity of the participants. Keywords: Ancestry, Race, Ethnic. Examples: European (EUR), African American (AA), East Asian (EAS), Caribbean Hispanic.",FALSE
+Cohort,"The specific study or database name. Keywords: Study, Dataset, Discovery. Examples: ADNI, IGAP, UK Biobank, ADGC, CHARGE, EADI.",TRUE

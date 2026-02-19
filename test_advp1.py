@@ -2,6 +2,9 @@ import os
 import re
 import pandas as pd
 
+# Script for testing, require a directory of resulting table, where each test case name is {pmid}_{pmcid}.csv
+# run by pytest test_advp1.py
+
 # Paper tested
 test_papers_info = [
     (30448613, "PMC6331247"), (30979435, "PMC6783343"), (31055733, "PMC6544706"),  (30617256, "PMC6836675"),

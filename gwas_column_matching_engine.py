@@ -332,11 +332,12 @@ Best Match: """
         # finally, filter col that cannot have multiple copies
         for ref_col in ref_col_to_col_lst:
             if ref_col not in self.col_with_multiple_copies and len(ref_col_to_col_lst[ref_col]) > 1:
-                best_col, best_score = None, float("-inf")
-                for col, score in ref_col_to_col_lst[ref_col]:
+                best_col, best_cleaned_col_prompt, best_score = None, None, float("-inf")
+                for col, cleaned_col_prompt, score in ref_col_to_col_lst[ref_col]:
                     if score > best_score:
                         best_col = col
+                        best_cleaned_col_prompt = cleaned_col_prompt
                         best_score = score
-                ref_col_to_col_lst[ref_col] = [(best_col, best_score)]
+                ref_col_to_col_lst[ref_col] = [(best_col, best_cleaned_col_prompt, best_score)]
 
         return ref_col_to_col_lst
