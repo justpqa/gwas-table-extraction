@@ -1,4 +1,3 @@
 .DS_Store
 venv/
 __pycache__/
-advp.variant.records.hg38.tsv

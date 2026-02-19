@@ -19,3 +19,4 @@ tqdm
 accelerate 
 bitsandbytes
 mlx-lm
+pytest
