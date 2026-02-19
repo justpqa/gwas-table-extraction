@@ -1,0 +1,77 @@
+SNP,Chr,P-value notes,P-value,Effect
+rs185031519,1,CSF A β 42.Original P,2.08×10 -8,
+rs316341,6,CSF A β 42.Original P,1.72×10 -8,
+rs769449,19,CSF A β 42.Original P,4.78×10 -94,
+rs769449,19,CSF A β 42.Original P,CSF Total Tau,
+rs35055419,3,CSF A β 42.Original P,3.07×10 -11,
+rs769449,19,CSF A β 42.Original P,4.05×10 -29,
+rs769449,19,CSF A β 42.Original P,CSF Phosphorylated Tau,
+rs9527039,13,CSF A β 42.Original P,5.95×10 -9,
+rs12961169,18,CSF A β 42.Original P,5.12×10 -10,
+rs35055419,3,CSF A β 42.Original P,7.62×10 -10,
+rs514716,9,CSF A β 42.Original P,2.94×10 -8,
+rs769449,19,CSF A β 42.Original P,5.30×10 -33,
+rs185031519,1,CSF A β 42.Male P,1.06×10 -4,
+rs316341,6,CSF A β 42.Male P,0.009,
+rs769449,19,CSF A β 42.Male P,3.29×10 -53.,
+rs769449,19,CSF A β 42.Male P,CSF Total Tau,
+rs35055419,3,CSF A β 42.Male P,0.0003,
+rs769449,19,CSF A β 42.Male P,4.41×10 -12,
+rs769449,19,CSF A β 42.Male P,CSF Phosphorylated Tau,
+rs9527039,13,CSF A β 42.Male P,0.002,
+rs12961169,18,CSF A β 42.Male P,1.16×10 -5,
+rs35055419,3,CSF A β 42.Male P,0.0002,
+rs514716,9,CSF A β 42.Male P,0.0004,
+rs769449,19,CSF A β 42.Male P,5.83×10 -14,
+rs185031519,1,CSF A β 42.Female P,7.92×10 -5,
+rs316341,6,CSF A β 42.Female P,4.25×10 -8,
+rs769449,19,CSF A β 42.Female P,6.76×10 -43,
+rs769449,19,CSF A β 42.Female P,CSF Total Tau,
+rs35055419,3,CSF A β 42.Female P,2.57×10 -8,
+rs769449,19,CSF A β 42.Female P,5.58×10 -20,
+rs769449,19,CSF A β 42.Female P,CSF Phosphorylated Tau,
+rs9527039,13,CSF A β 42.Female P,5.64×10 -7,
+rs12961169,18,CSF A β 42.Female P,3.58×10 -5,
+rs35055419,3,CSF A β 42.Female P,1.48×10 -6,
+rs514716,9,CSF A β 42.Female P,3.45×10 -5,
+rs769449,19,CSF A β 42.Female P,4.31×10 -22,
+rs185031519,1,CSF A β 42.Interaction P,0.90,
+rs316341,6,CSF A β 42.Interaction P,0.04 *,
+rs769449,19,CSF A β 42.Interaction P,0.31,
+rs769449,19,CSF A β 42.Interaction P,CSF Total Tau,
+rs35055419,3,CSF A β 42.Interaction P,0.17,
+rs769449,19,CSF A β 42.Interaction P,0.10,
+rs769449,19,CSF A β 42.Interaction P,CSF Phosphorylated Tau,
+rs9527039,13,CSF A β 42.Interaction P,0.15,
+rs12961169,18,CSF A β 42.Interaction P,0.81,
+rs35055419,3,CSF A β 42.Interaction P,0.45,
+rs514716,9,CSF A β 42.Interaction P,0.51,
+rs769449,19,CSF A β 42.Interaction P,0.10,
+rs13115400,4,CSF A β 42.Male P,0.20,0.01 (0.01)
+rs316341,6,CSF A β 42.Male P,0.009,-0.02 (0.01)
+rs316341,6,CSF A β 42.Male P,CSF Total Tau,CSF Total Tau
+rs1393060,3,CSF A β 42.Male P,0.03,0.02 (0.01)
+rs13115400,4,CSF A β 42.Female P,3.97×10 -8,0.01 (0.01)
+rs316341,6,CSF A β 42.Female P,4.25×10 -8,-0.02 (0.01)
+rs316341,6,CSF A β 42.Female P,CSF Total Tau,CSF Total Tau
+rs1393060,3,CSF A β 42.Female P,4.57×10 -10,0.02 (0.01)
+rs13115400,4,CSF A β 42.Interaction β (SE),0.03 (0.01),0.01 (0.01)
+rs316341,6,CSF A β 42.Interaction β (SE),-0.02 (0.01),-0.02 (0.01)
+rs316341,6,CSF A β 42.Interaction β (SE),CSF Total Tau,CSF Total Tau
+rs1393060,3,CSF A β 42.Interaction β (SE),0.03 (0.01),0.02 (0.01)
+rs13115400,4,CSF A β 42.Interaction P,0.002 *,0.01 (0.01)
+rs316341,6,CSF A β 42.Interaction P,0.04 *,-0.02 (0.01)
+rs316341,6,CSF A β 42.Interaction P,CSF Total Tau,CSF Total Tau
+rs1393060,3,CSF A β 42.Interaction P,0.004 *,0.02 (0.01)
+rs316341,6,Amyloid Burden.Male P,0.06,0.19 (0.10)
+rs13115400,4,Amyloid Burden.Male P,0.79,0.02 (0.09)
+rs13115400,4,Amyloid Burden.Male P,Neuronal Neurofibrillary Tangles,Neuronal Neurofibrillary Tangles
+rs1393060,3,Amyloid Burden.Male P,0.93,-0.01 (0.10)
+rs316341,6,Amyloid Burden.Female P,0.99,0.19 (0.10)
+rs13115400,4,Amyloid Burden.Female P,0.24,0.02 (0.09)
+rs13115400,4,Amyloid Burden.Female P,Neuronal Neurofibrillary Tangles,Neuronal Neurofibrillary Tangles
+rs1393060,3,Amyloid Burden.Female P,0.047,-0.01 (0.10)
+rs316341,6,Amyloid Burden.Interaction P,0.14,0.19 (0.10)
+rs13115400,4,Amyloid Burden.Interaction P,0.59,0.02 (0.09)
+rs13115400,4,Amyloid Burden.Interaction P,Neuronal Neurofibrillary Tangles,Neuronal Neurofibrillary Tangles
+rs1393060,3,Amyloid Burden.Interaction P,0.18,-0.01 (0.10)

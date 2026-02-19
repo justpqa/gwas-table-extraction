@@ -1,0 +1,7 @@
+SNP,Chr,Position,RA,P-value notes,P-value
+rs10792421,11q13.1,Upstream,G/A,P -value . AD /,6.68E-05
+rs11649476,16q22.2,Intronic,T/C,P -value . AD /,1.35E-05
+rs10792421,11q13.1,Upstream,G/A,P -value . BIP /,2.16E-05
+rs11649476,16q22.2,Intronic,T/C,P -value . BIP /,2.98E-05
+rs10792421,11q13.1,Upstream,G/A,conjFDR . AD & BIP /,3.02E-02
+rs11649476,16q22.2,Intronic,T/C,conjFDR . AD & BIP /,2.18E-02

@@ -1,0 +1,520 @@
+SNP,Chr,RA,P-value notes,P-value,Position,Effect,AF notes,AF
+rs61779841,1,A,Min ConjFDR,3.75E-02,,,,
+rs78363635,1,C,Min ConjFDR,2.02E-02,,,,
+rs1759499,1,G,Min ConjFDR,2.50E-02,,,,
+rs6587723,1,C,Min ConjFDR,2.89E-02,,,,
+rs1431985,1,A,Min ConjFDR,3.78E-02,,,,
+rs858952,2,C,Min ConjFDR,1.11E-02,,,,
+rs6733839,2,T,Min ConjFDR,4.38E-02,,,,
+rs72796734,2,T,Min ConjFDR,2.02E-02,,,,
+rs55819441,2,T,Min ConjFDR,2.30E-02,,,,
+rs7421448,2,T,Min ConjFDR,2.58E-02,,,,
+rs12994639,2,G,Min ConjFDR,4.35E-02,,,,
+rs61208496,2,T,Min ConjFDR,3.22E-02,,,,
+rs6805910,3,C,Min ConjFDR,3.78E-02,,,,
+rs28670348,4,G,Min ConjFDR,4.79E-02,,,,
+rs13114818,4,C,Min ConjFDR,1.88E-02,,,,
+rs6852075,4,G,Min ConjFDR,2.80E-02,,,,
+rs2074613,5,C,Min ConjFDR,1.30E-03,,,,
+rs4912851,5,G,Min ConjFDR,1.99E-02,,,,
+rs12188460,5,G,Min ConjFDR,4.20E-02,,,,
+rs5744712,5,C,Min ConjFDR,3.15E-02,,,,
+rs6883056,5,C,Min ConjFDR,3.96E-02,,,,
+rs62383992,5,A,Min ConjFDR,3.64E-02,,,,
+rs2176298,5,T,Min ConjFDR,2.52E-02,,,,
+rs141129230,6,G,Min ConjFDR,4.15E-02,,,,
+rs145749015,6,T,Min ConjFDR,2.11E-03,,,,
+rs115785781,6,C,Min ConjFDR,3.17E-02,,,,
+rs9272561,6,G,Min ConjFDR,2.17E-05,,,,
+rs115795926,6,C,Min ConjFDR,5.84E-05,,,,
+rs115674098,6,T,Min ConjFDR,2.85E-05,,,,
+rs116715716,6,T,Min ConjFDR,2.57E-03,,,,
+rs7774782,6,C,Min ConjFDR,9.25E-03,,,,
+rs3103351,6,G,Min ConjFDR,4.06E-02,,,,
+rs115802139,6,G,Min ConjFDR,8.23E-04,,,,
+rs114465688,6,G,Min ConjFDR,1.66E-02,,,,
+rs536810,6,T,Min ConjFDR,4.51E-03,,,,
+rs12194027,6,C,Min ConjFDR,1.03E-02,,,,
+rs115813375,6,A,Min ConjFDR,3.27E-02,,,,
+rs1048365,7,T,Min ConjFDR,2.18E-02,,,,
+rs2597283,7,C,Min ConjFDR,1.53E-02,,,,
+rs35991721,7,T,Min ConjFDR,1.03E-02,,,,
+rs702483,7,T,Min ConjFDR,3.82E-02,,,,
+rs12056620,8,T,Min ConjFDR,2.12E-02,,,,
+rs2011566,8,G,Min ConjFDR,4.47E-02,,,,
+rs7014168,8,A,Min ConjFDR,1.09E-02,,,,
+rs16895579,8,A,Min ConjFDR,1.27E-03,,,,
+rs117922969,8,T,Min ConjFDR,3.97E-02,,,,
+rs13277568,8,G,Min ConjFDR,3.97E-02,,,,
+rs10991386,9,G,Min ConjFDR,3.67E-02,,,,
+rs12339683,9,T,Min ConjFDR,2.80E-03 3.08E-02,,,,
+rs11144711,9,G,Min ConjFDR,4.23E-02,,,,
+rs145301439,10,A,Min ConjFDR,1.61E-02,,,,
+rs12784561,10,A,Min ConjFDR,2.55E-02,,,,
+rs12783314,10,A,Min ConjFDR,2.72E-02,,,,
+rs10906257,10,G,Min ConjFDR,1.36E-02,,,,
+rs7098392,10,A,Min ConjFDR,3.81E-02,,,,
+rs6597951,11,C,Min ConjFDR,1.03E-02,,,,
+rs7928842,11,C,Min ConjFDR,2.37E-02,,,,
+rs1893306,11,G,Min ConjFDR,4.26E-02,,,,
+rs1534576,11,T,Min ConjFDR,1.79E-03,,,,
+rs11039131,11,T,Min ConjFDR,6.47E-03,,,,
+rs2071305,11,C,Min ConjFDR,2.58E-04,,,,
+rs3844143,11,T,Min ConjFDR,1.44E-02,,,,
+rs1263170,11,T,Min ConjFDR,3.73E-02,,,,
+rs11039297,11,A,Min ConjFDR,8.51E-03,,,,
+rs7972529,12,G,Min ConjFDR,9.05E-03,,,,
+rs77451327,12,C,Min ConjFDR,4.58E-02,,,,
+rs1635142,12,A,Min ConjFDR,3.01E-02,,,,
+rs7331792,13,A,Min ConjFDR,2.93E-02,,,,
+rs61963560,13,A,Min ConjFDR,3.61E-02,,,,
+rs7981577,13,C,Min ConjFDR,4.16E-02,,,,
+rs17125924,14,G,Min ConjFDR,3.65E-02,,,,
+rs650366,15,G,Min ConjFDR,1.96E-02,,,,
+rs3131575,15,G,Min ConjFDR,1.42E-02,,,,
+rs16953089,16,C,Min ConjFDR,3.32E-02,,,,
+rs9941245,16,G,Min ConjFDR,4.96E-02,,,,
+rs4985557,16,T,Min ConjFDR,1.02E-02,,,,
+rs9931998,16,A,Min ConjFDR,3.45E-02,,,,
+rs12595955,16,G,Min ConjFDR,3.98E-02,,,,
+rs246174,16,T,Min ConjFDR,1.93E-02,,,,
+rs79161472,16,A,Min ConjFDR,1.78E-02,,,,
+rs4985556,16,A,Min ConjFDR,3.42E-02,,,,
+rs8062895,16,G,Min ConjFDR,4.27E-02,,,,
+rs8070572,17,C,Min ConjFDR,2.33E-02,,,,
+rs2960171,17,C,Min ConjFDR,2.33E-02,,,,
+rs7221196,17,G,Min ConjFDR,4.67E-03,,,,
+rs8071250,17,C,Min ConjFDR,2.18E-02,,,,
+rs850520,17,A,Min ConjFDR,7.79E-03,,,,
+rs9954848,18,A,Min ConjFDR,7.79E-03,,,,
+rs9954848,18,A,Min ConjFDR,2.19E-02,,,,
+rs2298428,22,T,Min ConjFDR,6.45E-03,,,,
+rs61779841,1,A,AD p value,5.44E-04,,,,
+rs78363635,1,C,AD p value,8.30E-04,,,,
+rs1759499,1,G,AD p value,1.05E-03,,,,
+rs6587723,1,C,AD p value,3.26E-04,,,,
+rs1431985,1,A,AD p value,6.63E-04,,,,
+rs858952,2,C,AD p value,9.45E-06,,,,
+rs6733839,2,T,AD p value,7.11E-26,,,,
+rs72796734,2,T,AD p value,8.29E-04,,,,
+rs55819441,2,T,AD p value,9.56E-04,,,,
+rs7421448,2,T,AD p value,5.84E-04,,,,
+rs12994639,2,G,AD p value,1.60E-03,,,,
+rs61208496,2,T,AD p value,5.73E-05,,,,
+rs6805910,3,C,AD p value,6.10E-04,,,,
+rs28670348,4,G,AD p value,1.81E-04,,,,
+rs13114818,4,C,AD p value,6.28E-04,,,,
+rs6852075,4,G,AD p value,4.02E-04,,,,
+rs2074613,5,C,AD p value,9.29E-07,,,,
+rs4912851,5,G,AD p value,3.39E-05,,,,
+rs12188460,5,G,AD p value,6.23E-04,,,,
+rs5744712,5,C,AD p value,1.35E-03,,,,
+rs6883056,5,C,AD p value,8.48E-05,,,,
+rs62383992,5,A,AD p value,1.30E-03,,,,
+rs2176298,5,T,AD p value,1.50E-04,,,,
+rs141129230,6,G,AD p value,6.73E-04,,,,
+rs145749015,6,T,AD p value,2.71E-05,,,,
+rs115785781,6,C,AD p value,1.35E-03,,,,
+rs9272561,6,G,AD p value,5.37E-09,,,,
+rs115795926,6,C,AD p value,1.94E-06,,,,
+rs115674098,6,T,AD p value,9.28E-07,,,,
+rs116715716,6,T,AD p value,7.87E-05,,,,
+rs7774782,6,C,AD p value,2.93E-04,,,,
+rs3103351,6,G,AD p value,1.78E-03,,,,
+rs115802139,6,G,AD p value,4.39E-06,,,,
+rs114465688,6,G,AD p value,9.45E-05,,,,
+rs536810,6,T,AD p value,7.18E-06,,,,
+rs12194027,6,C,AD p value,1.39E-04,,,,
+rs115813375,6,A,AD p value,5.67E-04,,,,
+rs1048365,7,T,AD p value,7.84E-05,,,,
+rs2597283,7,C,AD p value,4.20E-05,,,,
+rs35991721,7,T,AD p value,5.77E-05,,,,
+rs702483,7,T,AD p value,6.18E-04,,,,
+rs12056620,8,T,AD p value,7.56E-05,,,,
+rs2011566,8,G,AD p value,2.78E-04,,,,
+rs7014168,8,A,AD p value,4.28E-04,,,,
+rs16895579,8,A,AD p value,8.90E-06,,,,
+rs117922969,8,T,AD p value,1.43E-03,,,,
+rs13277568,8,G,AD p value,1.19E-03,,,,
+rs10991386,9,G,AD p value,8.54E-05,,,,
+rs12339683,9,T,AD p value,1.31E-03,,,,
+rs11144711,9,G,AD p value,5.65E-04,,,,
+rs145301439,10,A,AD p value,2.42E-04,,,,
+rs12784561,10,A,AD p value,3.80E-04,,,,
+rs12783314,10,A,AD p value,2.60E-04,,,,
+rs10906257,10,G,AD p value,4.39E-04,,,,
+rs7098392,10,A,AD p value,1.37E-03,,,,
+rs6597951,11,C,AD p value,2.94E-05,,,,
+rs7928842,11,C,AD p value,8.75E-05,,,,
+rs1893306,11,G,AD p value,4.25E-05,,,,
+rs1534576,11,T,AD p value,3.21E-06,,,,
+rs11039131,11,T,AD p value,4.08E-05,,,,
+rs2071305,11,C,AD p value,3.01E-06,,,,
+rs3844143,11,T,AD p value,1.94E-08,,,,
+rs1263170,11,T,AD p value,6.55E-04,,,,
+rs11039297,11,A,AD p value,1.24E-05,,,,
+rs7972529,12,G,AD p value,3.52E-04,,,,
+rs77451327,12,C,AD p value,9.06E-04,,,,
+rs1635142,12,A,AD p value,5.32E-05,,,,
+rs7331792,13,A,AD p value,1.25E-03,,,,
+rs61963560,13,A,AD p value,5.92E-04,,,,
+rs7981577,13,C,AD p value,1.37E-04,,,,
+rs17125924,14,G,AD p value,1.48E-05,,,,
+rs650366,15,G,AD p value,6.54E-04,,,,
+rs3131575,15,G,AD p value,4.59E-04,,,,
+rs16953089,16,C,AD p value,1.36E-04,,,,
+rs9941245,16,G,AD p value,2.29E-04,,,,
+rs4985557,16,T,AD p value,2.87E-05,,,,
+rs9931998,16,A,AD p value,5.23E-04,,,,
+rs12595955,16,G,AD p value,1.74E-03,,,,
+rs246174,16,T,AD p value,7.89E-04,,,,
+rs79161472,16,A,AD p value,5.87E-04,,,,
+rs4985556,16,A,AD p value,2.11E-04,,,,
+rs8062895,16,G,AD p value,1.56E-03,,,,
+rs8070572,17,C,AD p value,4.92E-06,,,,
+rs2960171,17,C,AD p value,1.37E-04,,,,
+rs7221196,17,G,AD p value,1.78E-04,,,,
+rs8071250,17,C,AD p value,7.56E-04,,,,
+rs850520,17,A,AD p value,1.25E-04,,,,
+rs9954848,18,A,AD p value,1.25E-04,,,,
+rs9954848,18,A,AD p value,4.58E-04,,,,
+rs2298428,22,T,AD p value,9.00E-05,,,,
+rs61779841,1,A,Reference trait p value,7.37E-04,,,,
+rs78363635,1,C,Reference trait p value,5.46E-05,,,,
+rs1759499,1,G,Reference trait p value,1.57E-09,,,,
+rs6587723,1,C,Reference trait p value,1.50E-03,,,,
+rs1431985,1,A,Reference trait p value,4.20E-04,,,,
+rs858952,2,C,Reference trait p value,2.22E-04,,,,
+rs6733839,2,T,Reference trait p value,8.94E-04,,,,
+rs72796734,2,T,Reference trait p value,2.33E-05,,,,
+rs55819441,2,T,Reference trait p value,1.40E-04,,,,
+rs7421448,2,T,Reference trait p value,1.45E-03,,,,
+rs12994639,2,G,Reference trait p value,9.53E-05,,,,
+rs61208496,2,T,Reference trait p value,1.88E-04,,,,
+rs6805910,3,C,Reference trait p value,6.93E-04,,,,
+rs28670348,4,G,Reference trait p value,1.01E-03,,,,
+rs13114818,4,C,Reference trait p value,8.96E-04,,,,
+rs6852075,4,G,Reference trait p value,5.17E-04,,,,
+rs2074613,5,C,Reference trait p value,1.36E-05,,,,
+rs4912851,5,G,Reference trait p value,2.32E-05,,,,
+rs12188460,5,G,Reference trait p value,8.49E-04,,,,
+rs5744712,5,C,Reference trait p value,1.29E-17,,,,
+rs6883056,5,C,Reference trait p value,2.30E-03,,,,
+rs62383992,5,A,Reference trait p value,9.12E-04,,,,
+rs2176298,5,T,Reference trait p value,4.56E-04,,,,
+rs141129230,6,G,Reference trait p value,1.75E-04,,,,
+rs145749015,6,T,Reference trait p value,6.54E-06,,,,
+rs115785781,6,C,Reference trait p value,1.81E-05,,,,
+rs9272561,6,G,Reference trait p value,7.23E-07,,,,
+rs115795926,6,C,Reference trait p value,1.28E-06,,,,
+rs115674098,6,T,Reference trait p value,2.21E-08,,,,
+rs116715716,6,T,Reference trait p value,2.25E-05,,,,
+rs7774782,6,C,Reference trait p value,1.83E-04,,,,
+rs3103351,6,G,Reference trait p value,4.04E-06,,,,
+rs115802139,6,G,Reference trait p value,2.35E-07,,,,
+rs114465688,6,G,Reference trait p value,1.23E-04,,,,
+rs536810,6,T,Reference trait p value,4.33E-14,,,,
+rs12194027,6,C,Reference trait p value,1.53E-04,,,,
+rs115813375,6,A,Reference trait p value,1.05E-06,,,,
+rs1048365,7,T,Reference trait p value,2.22E-04,,,,
+rs2597283,7,C,Reference trait p value,3.46E-04,,,,
+rs35991721,7,T,Reference trait p value,3.22E-06,,,,
+rs702483,7,T,Reference trait p value,3.11E-04,,,,
+rs12056620,8,T,Reference trait p value,3.35E-04,,,,
+rs2011566,8,G,Reference trait p value,3.83E-04,,,,
+rs7014168,8,A,Reference trait p value,4.01E-04,,,,
+rs16895579,8,A,Reference trait p value,5.77E-05,,,,
+rs117922969,8,T,Reference trait p value,5.31E-04,,,,
+rs13277568,8,G,Reference trait p value,1.17E-03,,,,
+rs10991386,9,G,Reference trait p value,6.19E-07,,,,
+rs12339683,9,T,Reference trait p value,3.11E-04,,,,
+rs11144711,9,G,Reference trait p value,2.49E-03,,,,
+rs145301439,10,A,Reference trait p value,1.57E-04,,,,
+rs12784561,10,A,Reference trait p value,1.43E-03,,,,
+rs12783314,10,A,Reference trait p value,1.53E-03,,,,
+rs10906257,10,G,Reference trait p value,4.72E-04,,,,
+rs7098392,10,A,Reference trait p value,9.00E-04,,,,
+rs6597951,11,C,Reference trait p value,1.38E-04,,,,
+rs7928842,11,C,Reference trait p value,3.19E-24,,,,
+rs1893306,11,G,Reference trait p value,1.46E-03,,,,
+rs1534576,11,T,Reference trait p value,6.62E-08,,,,
+rs11039131,11,T,Reference trait p value,8.55E-05,,,,
+rs2071305,11,C,Reference trait p value,2.53E-07,,,,
+rs3844143,11,T,Reference trait p value,7.79E-04,,,,
+rs1263170,11,T,Reference trait p value,4.33E-09,,,,
+rs11039297,11,A,Reference trait p value,5.15E-05,,,,
+rs7972529,12,G,Reference trait p value,4.49E-04,,,,
+rs77451327,12,C,Reference trait p value,2.56E-03,,,,
+rs1635142,12,A,Reference trait p value,2.28E-04,,,,
+rs7331792,13,A,Reference trait p value,4.69E-04,,,,
+rs61963560,13,A,Reference trait p value,1.94E-03,,,,
+rs7981577,13,C,Reference trait p value,2.28E-03,,,,
+rs17125924,14,G,Reference trait p value,1.17E-03,,,,
+rs650366,15,G,Reference trait p value,6.86E-04,,,,
+rs3131575,15,G,Reference trait p value,4.34E-04,,,,
+rs16953089,16,C,Reference trait p value,8.62E-04,,,,
+rs9941245,16,G,Reference trait p value,5.27E-16,,,,
+rs4985557,16,T,Reference trait p value,1.19E-04,,,,
+rs9931998,16,A,Reference trait p value,1.99E-03,,,,
+rs12595955,16,G,Reference trait p value,4.69E-04,,,,
+rs246174,16,T,Reference trait p value,5.91E-04,,,,
+rs79161472,16,A,Reference trait p value,6.23E-04,,,,
+rs4985556,16,A,Reference trait p value,4.10E-04,,,,
+rs8062895,16,G,Reference trait p value,4.12E-04,,,,
+rs8070572,17,C,Reference trait p value,6.24E-04,,,,
+rs2960171,17,C,Reference trait p value,8.72E-05,,,,
+rs7221196,17,G,Reference trait p value,1.57E-07,,,,
+rs8071250,17,C,Reference trait p value,1.21E-03,,,,
+rs850520,17,A,Reference trait p value,1.08E-04,,,,
+rs9954848,18,A,Reference trait p value,1.09E-03,,,,
+rs9954848,18,A,Reference trait p value,1.09E-03,,,,
+rs2298428,22,T,Reference trait p value,1.58E-08,,,,
+rs1431985 1,,A,ADGC 2 p value,0.9779,AK092251,1.04,Ref trait,6.55E-01
+rs1431985 1,,A,ADGC 2 95% CI,2.40E-03,AK092251,1.04,Ref trait,6.55E-01
+rs1431985 1,,A,Meta- p value,,AK092251,1.04,Ref trait,6.55E-01
+rs78363635,,C,ADGC 2 p value,0.9625,C4BPA,1.08,Ref trait,7.42E-01
+rs78363635,,C,ADGC 2 95% CI,6.22E-03,C4BPA,1.08,Ref trait,7.42E-01
+rs78363635,,C,Meta- p value,,C4BPA,1.08,Ref trait,7.42E-01
+1 rs55819441 2,,T,ADGC 2 p value,1.049,AK097952,0.966,Ref trait,6.35E-01
+1 rs55819441 2,,T,ADGC 2 95% CI,7.55E-02,AK097952,0.966,Ref trait,6.35E-01
+1 rs55819441 2,,T,Meta- p value,1.01E-01,AK097952,0.966,Ref trait,6.35E-01
+rs6733839 2,,T,ADGC 2 p value,1.165,BIN1,1.21,Ref trait,8.05E-03
+rs6733839 2,,T,ADGC 2 95% CI,6.94E - 44,BIN1,1.21,Ref trait,8.05E-03
+rs6733839 2,,T,Meta- p value,1.44E - 45,BIN1,1.21,Ref trait,8.05E-03
+rs72796734 rs7421448,,T,ADGC 2 p value,1.06,INPP5D,0.918,Ref trait,5.75E-01
+rs72796734 rs7421448,,T,ADGC 2 95% CI,2.23E-04,INPP5D,0.918,Ref trait,5.75E-01
+rs72796734 rs7421448,,T,Meta- p value,5.59E-04,INPP5D,0.918,Ref trait,5.75E-01
+2 rs858952 2,,C,ADGC 2 p value,0.9602,NRXN1,1.04,Ref trait,4.67E-01
+2 rs858952 2,,C,ADGC 2 95% CI,3.08E-03,NRXN1,1.04,Ref trait,4.67E-01
+2 rs858952 2,,C,Meta- p value,7.69E-03,NRXN1,1.04,Ref trait,4.67E-01
+rs13114818 4,,C,ADGC 2 p value,0.9441,UBA6,1.05,Ref trait,4.08E-01
+rs13114818 4,,C,ADGC 2 95% CI,3.03E-03,UBA6,1.05,Ref trait,4.08E-01
+rs13114818 4,,C,Meta- p value,7.50E-03,UBA6,1.05,Ref trait,4.08E-01
+rs28670348 4,,G,ADGC 2 p value,0.9918,INPP4B,1.06,Ref trait,9.30E-01
+rs28670348 4,,G,ADGC 2 95% CI,7.76E-03,INPP4B,1.06,Ref trait,9.30E-01
+rs28670348 4,,G,Meta- p value,1.10E-02,INPP4B,1.06,Ref trait,9.30E-01
+rs6852075 4,,G,ADGC 2 p value,0.9767,ART3,0.97,Ref trait,6.23E-01
+rs6852075 4,,G,ADGC 2 95% CI,1.96E-02,ART3,0.97,Ref trait,6.23E-01
+rs6852075 4,,G,Meta- p value,1.77E-02,ART3,0.97,Ref trait,6.23E-01
+rs12188460 5,,G,ADGC 2 p value,1.057,FBXL17,1.04,Ref trait,2.50E-01
+rs12188460 5,,G,ADGC 2 95% CI,4.85E-03,FBXL17,1.04,Ref trait,2.50E-01
+rs12188460 5,,G,Meta- p value,2.64E-03,FBXL17,1.04,Ref trait,2.50E-01
+rs2176298 5,,T,ADGC 2 p value,0.9628,LOC285629,1.03,Ref trait,4.52E-01
+rs2176298 5,,T,ADGC 2 95% CI,1.47E-02,LOC285629,1.03,Ref trait,4.52E-01
+rs2176298 5,,T,Meta- p value,3.07E-02,LOC285629,1.03,Ref trait,4.52E-01
+rs4912851 5,,G,ADGC 2 p value,1.06,SPRY4,1.04,Ref trait,2.32E-01
+rs4912851 5,,G,ADGC 2 95% CI,7.07E-03,SPRY4,1.04,Ref trait,2.32E-01
+rs4912851 5,,G,Meta- p value,3.58E-03,SPRY4,1.04,Ref trait,2.32E-01
+rs536810 6,,T,ADGC 2 p value,0.9311,HLA-DRB5,0.924,Ref trait,1.53E-01
+rs536810 6,,T,ADGC 2 95% CI,3.48E,HLA-DRB5,0.924,Ref trait,1.53E-01
+rs536810 6,,T,Meta- p value,1.14E - 08,HLA-DRB5,0.924,Ref trait,1.53E-01
+rs2597283 7,,C,ADGC 2 p value,1.048,BC043356,0.939,Ref trait,3.53E-01
+rs2597283 7,,C,ADGC 2 95% CI,1.67E - 07,BC043356,0.939,Ref trait,3.53E-01
+rs2597283 7,,C,Meta- p value,1.65E-06,BC043356,0.939,Ref trait,3.53E-01
+rs35991721 7,,T,ADGC 2 p value,0.8255,MBLAC1,0.921,Ref trait,7.17E-04
+rs35991721 7,,T,ADGC 2 95% CI,2.62E - 07,MBLAC1,0.921,Ref trait,7.17E-04
+rs35991721 7,,T,Meta- p value,5.32E - 09,MBLAC1,0.921,Ref trait,7.17E-04
+rs702483 7,,T,ADGC 2 p value,1.029,RAC1,0.973,Ref trait,5.60E-01
+rs702483 7,,T,ADGC 2 95% CI,1.75E-02,RAC1,0.973,Ref trait,5.60E-01
+rs702483 7,,T,Meta- p value,3.17E-02,RAC1,0.973,Ref trait,5.60E-01
+rs12056620 8,,T,ADGC 2 p value,1.029,PTK2B,1.04,Ref trait,5.50E-01
+rs12056620 8,,T,ADGC 2 95% CI,1.75E-02,PTK2B,1.04,Ref trait,5.50E-01
+rs12056620 8,,T,Meta- p value,2.23E-03,PTK2B,1.04,Ref trait,5.50E-01
+rs7014168 8,,A,ADGC 2 p value,1.024,SOX7,0.948,Ref trait,6.74E-01
+rs7014168 8,,A,ADGC 2 95% CI,1.75E-02,SOX7,0.948,Ref trait,6.74E-01
+rs7014168 8,,A,Meta- p value,3.57E-04,SOX7,0.948,Ref trait,6.74E-01
+rs10906257 10,,G,ADGC 2 p value,1.022,CCDC3,1.06,Ref trait,7.75E-01
+rs10906257 10,,G,ADGC 2 95% CI,5.37E-03,CCDC3,1.06,Ref trait,7.75E-01
+rs10906257 10,,G,Meta- p value,5.80E-03,CCDC3,1.06,Ref trait,7.75E-01
+rs12784561 10,,A,ADGC 2 p value,0.9262,CR595071,0.918,Ref trait,3.50E-01
+rs12784561 10,,A,ADGC 2 95% CI,1.31E-04,CR595071,0.918,Ref trait,3.50E-01
+rs12784561 10,,A,Meta- p value,8.51E-05,CR595071,0.918,Ref trait,3.50E-01
+rs11039131 11,,T,ADGC 2 p value,0.8803,DDB2,0.934,Ref trait,2.18E-02
+rs11039131 11,,T,ADGC 2 95% CI,5.18E-06,DDB2,0.934,Ref trait,2.18E-02
+rs11039131 11,,T,Meta- p value,7.01E - 07,DDB2,0.934,Ref trait,2.18E-02
+rs1263170 11,,T,ADGC 2 p value,1.007,APOA4,1.04,Ref trait,8.95E-01
+rs1263170 11,,T,ADGC 2 95% CI,3.37E-03,APOA4,1.04,Ref trait,8.95E-01
+rs1263170 11,,T,Meta- p value,4.22E-03,APOA4,1.04,Ref trait,8.95E-01
+rs1534576 11,,T,ADGC 2 p value,1.139,SLC39A13,1.08,Ref trait,7.03E-03
+rs1534576 11,,T,ADGC 2 95% CI,2.97E -,SLC39A13,1.08,Ref trait,7.03E-03
+rs1534576 11,,T,Meta- p value,1.49E - 09,SLC39A13,1.08,Ref trait,7.03E-03
+rs1893306 11,,G,ADGC 2 p value,1.023,GUCY2EP,0.958,Ref trait,6.68E-01
+rs1893306 11,,G,ADGC 2 95% CI,1.09E-03,GUCY2EP,0.958,Ref trait,6.68E-01
+rs1893306 11,,G,Meta- p value,2.35E-03,GUCY2EP,0.958,Ref trait,6.68E-01
+rs2071305 11,,C,ADGC 2 p value,0.8264,MYBPC3,0.928,Ref trait,1.12E-03
+rs2071305 11,,C,ADGC 2 95% CI,1.54E-06,MYBPC3,0.928,Ref trait,1.12E-03
+rs2071305 11,,C,Meta- p value,5.62E - 08,MYBPC3,0.928,Ref trait,1.12E-03
+rs3844143 11,,T,ADGC 2 p value,0.9349,PICALM,0.899,Ref trait,1.62E-01
+rs3844143 11,,T,ADGC 2 95% CI,1.33E - 16,PICALM,0.899,Ref trait,1.62E-01
+rs3844143 11,,T,Meta- p value,6.52E - 17,PICALM,0.899,Ref trait,1.62E-01
+rs1635142 12,,A,ADGC 2 p value,1.04,OAS2,0.953,Ref trait,4.61E-01
+rs1635142 12,,A,ADGC 2 95% CI,1.33E - 16,OAS2,0.953,Ref trait,4.61E-01
+rs1635142 12,,A,Meta- p value,5.00E-04,OAS2,0.953,Ref trait,4.61E-01
+rs61963560 13,,A,ADGC 2 p value,1.126,BC035340,0.952,Ref trait,7.43E-02
+rs61963560 13,,A,ADGC 2 95% CI,7.58E-04,BC035340,0.952,Ref trait,7.43E-02
+rs61963560 13,,A,Meta- p value,5.79E-03,BC035340,0.952,Ref trait,7.43E-02
+rs7981577 13,,C,ADGC 2 p value,0.9898,RASA3,0.977,Ref trait,8.34E-01
+rs7981577 13,,C,ADGC 2 95% CI,7.58E-04,RASA3,0.977,Ref trait,8.34E-01
+rs7981577 13,,C,Meta- p value,9.76E-02,RASA3,0.977,Ref trait,8.34E-01
+rs17125924 14,,G,ADGC 2 p value,1.026,FERMT2,1.13,Ref trait,7.69E-01
+rs17125924 14,,G,ADGC 2 95% CI,1.55E,FERMT2,1.13,Ref trait,7.69E-01
+rs17125924 14,,G,Meta- p value,2.62E - 08,FERMT2,1.13,Ref trait,7.69E-01
+rs3131575 15,,G,ADGC 2 p value,1.055,USP8,0.942,Ref trait,3.52E-01
+rs3131575 15,,G,ADGC 2 95% CI,0.943-1.18,USP8,0.942,Ref trait,3.52E-01
+rs3131575 15,,G,Meta- p value,2.13E-04,USP8,0.942,Ref trait,3.52E-01
+rs16953089 16,,C,ADGC 2 p value,1.055,FTO,0.962,Ref trait,1.84E-01
+rs16953089 16,,C,ADGC 2 95% CI,0.968-1.19,FTO,0.962,Ref trait,1.84E-01
+rs16953089 16,,C,Meta- p value,4.63E-03,FTO,0.962,Ref trait,1.84E-01
+rs4985556 16,,A,ADGC 2 p value,1.025,IL34,1.1,Ref trait,7.48E-01
+rs4985556 16,,A,ADGC 2 95% CI,0.882-1.19,IL34,1.1,Ref trait,7.48E-01
+rs4985556 16,,A,Meta- p value,2.06E-06,IL34,1.1,Ref trait,7.48E-01
+rs1431985 1,,A,ADGC 2 p value,0.9779,AK092251,1.04,IGAP 1 and 2 p value IGAP OR,1.04
+rs1431985 1,,A,ADGC 2 95% CI,2.40E-03,AK092251,1.04,IGAP 1 and 2 p value IGAP OR,1.04
+rs1431985 1,,A,Meta- p value,,AK092251,1.04,IGAP 1 and 2 p value IGAP OR,1.04
+rs78363635,,C,ADGC 2 p value,0.9625,C4BPA,1.08,IGAP 1 and 2 p value IGAP OR,1.09
+rs78363635,,C,ADGC 2 95% CI,6.22E-03,C4BPA,1.08,IGAP 1 and 2 p value IGAP OR,1.09
+rs78363635,,C,Meta- p value,,C4BPA,1.08,IGAP 1 and 2 p value IGAP OR,1.09
+1 rs55819441 2,,T,ADGC 2 p value,1.049,AK097952,0.966,IGAP 1 and 2 p value IGAP OR,0.962
+1 rs55819441 2,,T,ADGC 2 95% CI,7.55E-02,AK097952,0.966,IGAP 1 and 2 p value IGAP OR,0.962
+1 rs55819441 2,,T,Meta- p value,1.01E-01,AK097952,0.966,IGAP 1 and 2 p value IGAP OR,0.962
+rs6733839 2,,T,ADGC 2 p value,1.165,BIN1,1.21,IGAP 1 and 2 p value IGAP OR,1.22
+rs6733839 2,,T,ADGC 2 95% CI,6.94E - 44,BIN1,1.21,IGAP 1 and 2 p value IGAP OR,1.22
+rs6733839 2,,T,Meta- p value,1.44E - 45,BIN1,1.21,IGAP 1 and 2 p value IGAP OR,1.22
+rs72796734 rs7421448,,T,ADGC 2 p value,1.06,INPP5D,0.918,IGAP 1 and 2 p value IGAP OR,0.911
+rs72796734 rs7421448,,T,ADGC 2 95% CI,2.23E-04,INPP5D,0.918,IGAP 1 and 2 p value IGAP OR,0.911
+rs72796734 rs7421448,,T,Meta- p value,5.59E-04,INPP5D,0.918,IGAP 1 and 2 p value IGAP OR,0.911
+2 rs858952 2,,C,ADGC 2 p value,0.9602,NRXN1,1.04,IGAP 1 and 2 p value IGAP OR,1.05
+2 rs858952 2,,C,ADGC 2 95% CI,3.08E-03,NRXN1,1.04,IGAP 1 and 2 p value IGAP OR,1.05
+2 rs858952 2,,C,Meta- p value,7.69E-03,NRXN1,1.04,IGAP 1 and 2 p value IGAP OR,1.05
+rs13114818 4,,C,ADGC 2 p value,0.9441,UBA6,1.05,IGAP 1 and 2 p value IGAP OR,1.05
+rs13114818 4,,C,ADGC 2 95% CI,3.03E-03,UBA6,1.05,IGAP 1 and 2 p value IGAP OR,1.05
+rs13114818 4,,C,Meta- p value,7.50E-03,UBA6,1.05,IGAP 1 and 2 p value IGAP OR,1.05
+rs28670348 4,,G,ADGC 2 p value,0.9918,INPP4B,1.06,IGAP 1 and 2 p value IGAP OR,1.05
+rs28670348 4,,G,ADGC 2 95% CI,7.76E-03,INPP4B,1.06,IGAP 1 and 2 p value IGAP OR,1.05
+rs28670348 4,,G,Meta- p value,1.10E-02,INPP4B,1.06,IGAP 1 and 2 p value IGAP OR,1.05
+rs6852075 4,,G,ADGC 2 p value,0.9767,ART3,0.97,IGAP 1 and 2 p value IGAP OR,0.969
+rs6852075 4,,G,ADGC 2 95% CI,1.96E-02,ART3,0.97,IGAP 1 and 2 p value IGAP OR,0.969
+rs6852075 4,,G,Meta- p value,1.77E-02,ART3,0.97,IGAP 1 and 2 p value IGAP OR,0.969
+rs12188460 5,,G,ADGC 2 p value,1.057,FBXL17,1.04,IGAP 1 and 2 p value IGAP OR,0.969
+rs12188460 5,,G,ADGC 2 95% CI,4.85E-03,FBXL17,1.04,IGAP 1 and 2 p value IGAP OR,0.969
+rs12188460 5,,G,Meta- p value,2.64E-03,FBXL17,1.04,IGAP 1 and 2 p value IGAP OR,0.969
+rs2176298 5,,T,ADGC 2 p value,0.9628,LOC285629,1.03,IGAP 1 and 2 p value IGAP OR,0.969
+rs2176298 5,,T,ADGC 2 95% CI,1.47E-02,LOC285629,1.03,IGAP 1 and 2 p value IGAP OR,0.969
+rs2176298 5,,T,Meta- p value,3.07E-02,LOC285629,1.03,IGAP 1 and 2 p value IGAP OR,0.969
+rs4912851 5,,G,ADGC 2 p value,1.06,SPRY4,1.04,IGAP 1 and 2 p value IGAP OR,0.969
+rs4912851 5,,G,ADGC 2 95% CI,7.07E-03,SPRY4,1.04,IGAP 1 and 2 p value IGAP OR,0.969
+rs4912851 5,,G,Meta- p value,3.58E-03,SPRY4,1.04,IGAP 1 and 2 p value IGAP OR,0.969
+rs536810 6,,T,ADGC 2 p value,0.9311,HLA-DRB5,0.924,IGAP 1 and 2 p value IGAP OR,- 08
+rs536810 6,,T,ADGC 2 95% CI,3.48E,HLA-DRB5,0.924,IGAP 1 and 2 p value IGAP OR,- 08
+rs536810 6,,T,Meta- p value,1.14E - 08,HLA-DRB5,0.924,IGAP 1 and 2 p value IGAP OR,- 08
+rs2597283 7,,C,ADGC 2 p value,1.048,BC043356,0.939,IGAP 1 and 2 p value IGAP OR,0.932
+rs2597283 7,,C,ADGC 2 95% CI,1.67E - 07,BC043356,0.939,IGAP 1 and 2 p value IGAP OR,0.932
+rs2597283 7,,C,Meta- p value,1.65E-06,BC043356,0.939,IGAP 1 and 2 p value IGAP OR,0.932
+rs35991721 7,,T,ADGC 2 p value,0.8255,MBLAC1,0.921,IGAP 1 and 2 p value IGAP OR,0.928
+rs35991721 7,,T,ADGC 2 95% CI,2.62E - 07,MBLAC1,0.921,IGAP 1 and 2 p value IGAP OR,0.928
+rs35991721 7,,T,Meta- p value,5.32E - 09,MBLAC1,0.921,IGAP 1 and 2 p value IGAP OR,0.928
+rs702483 7,,T,ADGC 2 p value,1.029,RAC1,0.973,IGAP 1 and 2 p value IGAP OR,0.928
+rs702483 7,,T,ADGC 2 95% CI,1.75E-02,RAC1,0.973,IGAP 1 and 2 p value IGAP OR,0.928
+rs702483 7,,T,Meta- p value,3.17E-02,RAC1,0.973,IGAP 1 and 2 p value IGAP OR,0.928
+rs12056620 8,,T,ADGC 2 p value,1.029,PTK2B,1.04,IGAP 1 and 2 p value IGAP OR,2.66E-03
+rs12056620 8,,T,ADGC 2 95% CI,1.75E-02,PTK2B,1.04,IGAP 1 and 2 p value IGAP OR,2.66E-03
+rs12056620 8,,T,Meta- p value,2.23E-03,PTK2B,1.04,IGAP 1 and 2 p value IGAP OR,2.66E-03
+rs7014168 8,,A,ADGC 2 p value,1.024,SOX7,0.948,IGAP 1 and 2 p value IGAP OR,1.39E-04
+rs7014168 8,,A,ADGC 2 95% CI,1.75E-02,SOX7,0.948,IGAP 1 and 2 p value IGAP OR,1.39E-04
+rs7014168 8,,A,Meta- p value,3.57E-04,SOX7,0.948,IGAP 1 and 2 p value IGAP OR,1.39E-04
+rs10906257 10,,G,ADGC 2 p value,1.022,CCDC3,1.06,IGAP 1 and 2 p value IGAP OR,1.39E-04
+rs10906257 10,,G,ADGC 2 95% CI,5.37E-03,CCDC3,1.06,IGAP 1 and 2 p value IGAP OR,1.39E-04
+rs10906257 10,,G,Meta- p value,5.80E-03,CCDC3,1.06,IGAP 1 and 2 p value IGAP OR,1.39E-04
+rs12784561 10,,A,ADGC 2 p value,0.9262,CR595071,0.918,IGAP 1 and 2 p value IGAP OR,1.39E-04
+rs12784561 10,,A,ADGC 2 95% CI,1.31E-04,CR595071,0.918,IGAP 1 and 2 p value IGAP OR,1.39E-04
+rs12784561 10,,A,Meta- p value,8.51E-05,CR595071,0.918,IGAP 1 and 2 p value IGAP OR,1.39E-04
+rs11039131 11,,T,ADGC 2 p value,0.8803,DDB2,0.934,IGAP 1 and 2 p value IGAP OR,1.39E-04
+rs11039131 11,,T,ADGC 2 95% CI,5.18E-06,DDB2,0.934,IGAP 1 and 2 p value IGAP OR,1.39E-04
+rs11039131 11,,T,Meta- p value,7.01E - 07,DDB2,0.934,IGAP 1 and 2 p value IGAP OR,1.39E-04
+rs1263170 11,,T,ADGC 2 p value,1.007,APOA4,1.04,IGAP 1 and 2 p value IGAP OR,1.39E-04
+rs1263170 11,,T,ADGC 2 95% CI,3.37E-03,APOA4,1.04,IGAP 1 and 2 p value IGAP OR,1.39E-04
+rs1263170 11,,T,Meta- p value,4.22E-03,APOA4,1.04,IGAP 1 and 2 p value IGAP OR,1.39E-04
+rs1534576 11,,T,ADGC 2 p value,1.139,SLC39A13,1.08,IGAP 1 and 2 p value IGAP OR,08 1.08
+rs1534576 11,,T,ADGC 2 95% CI,2.97E -,SLC39A13,1.08,IGAP 1 and 2 p value IGAP OR,08 1.08
+rs1534576 11,,T,Meta- p value,1.49E - 09,SLC39A13,1.08,IGAP 1 and 2 p value IGAP OR,08 1.08
+rs1893306 11,,G,ADGC 2 p value,1.023,GUCY2EP,0.958,IGAP 1 and 2 p value IGAP OR,08 1.08
+rs1893306 11,,G,ADGC 2 95% CI,1.09E-03,GUCY2EP,0.958,IGAP 1 and 2 p value IGAP OR,08 1.08
+rs1893306 11,,G,Meta- p value,2.35E-03,GUCY2EP,0.958,IGAP 1 and 2 p value IGAP OR,08 1.08
+rs2071305 11,,C,ADGC 2 p value,0.8264,MYBPC3,0.928,IGAP 1 and 2 p value IGAP OR,08 1.08
+rs2071305 11,,C,ADGC 2 95% CI,1.54E-06,MYBPC3,0.928,IGAP 1 and 2 p value IGAP OR,08 1.08
+rs2071305 11,,C,Meta- p value,5.62E - 08,MYBPC3,0.928,IGAP 1 and 2 p value IGAP OR,08 1.08
+rs3844143 11,,T,ADGC 2 p value,0.9349,PICALM,0.899,IGAP 1 and 2 p value IGAP OR,08 1.08
+rs3844143 11,,T,ADGC 2 95% CI,1.33E - 16,PICALM,0.899,IGAP 1 and 2 p value IGAP OR,08 1.08
+rs3844143 11,,T,Meta- p value,6.52E - 17,PICALM,0.899,IGAP 1 and 2 p value IGAP OR,08 1.08
+rs1635142 12,,A,ADGC 2 p value,1.04,OAS2,0.953,IGAP 1 and 2 p value IGAP OR,1.50E-04
+rs1635142 12,,A,ADGC 2 95% CI,1.33E - 16,OAS2,0.953,IGAP 1 and 2 p value IGAP OR,1.50E-04
+rs1635142 12,,A,Meta- p value,5.00E-04,OAS2,0.953,IGAP 1 and 2 p value IGAP OR,1.50E-04
+rs61963560 13,,A,ADGC 2 p value,1.126,BC035340,0.952,IGAP 1 and 2 p value IGAP OR,0.939
+rs61963560 13,,A,ADGC 2 95% CI,7.58E-04,BC035340,0.952,IGAP 1 and 2 p value IGAP OR,0.939
+rs61963560 13,,A,Meta- p value,5.79E-03,BC035340,0.952,IGAP 1 and 2 p value IGAP OR,0.939
+rs7981577 13,,C,ADGC 2 p value,0.9898,RASA3,0.977,IGAP 1 and 2 p value IGAP OR,9.56E-02
+rs7981577 13,,C,ADGC 2 95% CI,7.58E-04,RASA3,0.977,IGAP 1 and 2 p value IGAP OR,9.56E-02
+rs7981577 13,,C,Meta- p value,9.76E-02,RASA3,0.977,IGAP 1 and 2 p value IGAP OR,9.56E-02
+rs17125924 14,,G,ADGC 2 p value,1.026,FERMT2,1.13,IGAP 1 and 2 p value IGAP OR,- 08
+rs17125924 14,,G,ADGC 2 95% CI,1.55E,FERMT2,1.13,IGAP 1 and 2 p value IGAP OR,- 08
+rs17125924 14,,G,Meta- p value,2.62E - 08,FERMT2,1.13,IGAP 1 and 2 p value IGAP OR,- 08
+rs3131575 15,,G,ADGC 2 p value,1.055,USP8,0.942,IGAP 1 and 2 p value IGAP OR,3.74E-05
+rs3131575 15,,G,ADGC 2 95% CI,0.943-1.18,USP8,0.942,IGAP 1 and 2 p value IGAP OR,3.74E-05
+rs3131575 15,,G,Meta- p value,2.13E-04,USP8,0.942,IGAP 1 and 2 p value IGAP OR,3.74E-05
+rs16953089 16,,C,ADGC 2 p value,1.055,FTO,0.962,IGAP 1 and 2 p value IGAP OR,9.85E-04
+rs16953089 16,,C,ADGC 2 95% CI,0.968-1.19,FTO,0.962,IGAP 1 and 2 p value IGAP OR,9.85E-04
+rs16953089 16,,C,Meta- p value,4.63E-03,FTO,0.962,IGAP 1 and 2 p value IGAP OR,9.85E-04
+rs4985556 16,,A,ADGC 2 p value,1.025,IL34,1.1,IGAP 1 and 2 p value IGAP OR,1.41E-06
+rs4985556 16,,A,ADGC 2 95% CI,0.882-1.19,IL34,1.1,IGAP 1 and 2 p value IGAP OR,1.41E-06
+rs4985556 16,,A,Meta- p value,2.06E-06,IL34,1.1,IGAP 1 and 2 p value IGAP OR,1.41E-06
+rs1431985,1,A,,8.04E-01,214148246,1,,
+rs61779841,1,A,,8.12E-01,40324666,1,,
+rs78363635,1,C,,2.05E-01,207324781,1.002,,
+rs12994639,2,G,,2.34E-01,64959331,1.002,,
+rs55819441,2,T,,6.27E-01,65082415,0.9992,,
+rs61208496,2,T,,8.04E - 03,37464230,1.004,,
+rs72796734,2,T,,6.24E-01,44063731,1.001,,
+rs7421448,2,T,,1.52E - 05,233982205,0.9929,,
+rs858952,2,C,,2.34E-01,50875879,1.002,,
+rs6805910,3,C,,7.18E-01,56739923,0.9994,,
+rs13114818,4,C,,4.40E-01,68550295,0.9987,,
+rs28670348,4,G,,9.18E-01,143625388,1,,
+rs12188460,5,G,,4.58E-01,107172269,0.9988,,
+rs2074613,5,C,,1.57E-01,139714564,1.002,,
+rs2176298,5,T,,1.86E-01,160388643,1.002,,
+rs4912851,5,G,,9.38E-01,141815488,1,,
+rs5744712,5,C,,9.67E-01,74892002,0.9999,,
+rs62383992,5,A,,1.50E-01,170866296,0.9976,,
+rs6883056,5,C,,4.71E-01,35080145,1.001,,
+rs12194027,6,C,,1.47E-01,53255776,0.9976,,
+rs3103351,6,G,,4.52E - 02,160716066,0.9967,,
+rs536810,6,T,,2.03E - 04,32577497,0.9939,,
+rs7774782,6,C,,5.06E-01,57618491,1.001,,
+rs1048365,7,T,,9.45E-01,100804430,0.9999,,
+rs2597283,7,C,,6.48E-02,37690507,0.997,,
+rs35991721,7,T,,2.34E - 04,99728790,0.9939,,
+rs702483,7,T,,1.05E-01,6426941,0.9973,,
+rs117922969,8,T,,5.98E-01,9257853,0.9991,,
+rs12056620,8,T,,1.27E-01,27291749,1.003,,
+rs13277568,8,G,,2.61E-01,116679547,1.002,,
+rs16895579,8,A,,1.08E-01,98364076,1.003,,
+rs2011566,8,G,,3.35E - 03,95971921,0.9952,,
+rs7014168,8,A,,5.65E-02,10641965,0.9968,,
+rs10991386,9,G,,2.33E - 02,107630433,1.004,,
+rs11144711,9,G,,8.55E-01,78614020,1,,
+rs12339683,9,T,,3.06E - 03,86214149,1.005,,
+rs12784561,10,A,,1.82E-01,11712965,0.9978,,
+rs145301439,10,A,,1.27E-01,23146430,0.9975,,
+rs11039131,11,T,,3.34E - 02,47232038,0.9965,,
+rs11039297,11,A,,2.80E - 02,47581443,1.004,,
+rs1263170,11,T,,4.42E-01,116678413,1.001,,
+rs1534576,11,T,,7.46E - 04,47419663,1.006,,
+rs1893306,11,G,,7.46E - 04,76434820,0.999,,
+rs1893306,11,C,,5.58E-01,85850243,0.999,,
+rs3844143,11 11,C,,5.31E - 11,991530,0.9892,,
+rs6597951 rs7928842,11,C,,1.70E-01 8.25E-01,47566352,0.9977 0.9996,,
+rs6597951 rs7928842,12,A,,1.70E-01 8.25E-01,113434518,0.9977 0.9996,,
+rs1635142 rs77451327,12,C,,3.06E-01,53524259,0.9983 1.001,,
+rs61963560,13,A,,7.26E-01 8.67E-01,113605534,0.9997,,
+rs7981577,13,C,,3.44E-01,114835802,0.9984,,
+rs17125924,14,G,,1.47E - 03,53391680,1.005,,
