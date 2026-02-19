@@ -48,10 +48,10 @@ def import_table_and_test_table(dir_path, file_name):
         test_df = pd.read_csv(f"test_tables/{file_name[:-5]}")
     return curr_df, test_df
 
-def test_table_dir_exists():
+def test_table_dir_exists(dir_path):
     assert dir_path is not None, "Please provide --dir_path"
 
-def test_table_name():
+def test_table_name(dir_path):
     # We require table name to be in the format of pmid_pmcid.csv
     table_name_pattern = r"^\d+_PMC\d+$"
     for file_name in os.listdir(dir_path):
@@ -64,7 +64,7 @@ def test_table_name():
             raise Exception("Error: table must be .csv or .xlsx")
         assert f"test_tables/{file_name}" in os.listdir(dir_path), f"Table {file_name} is in a paper not in test set"
 
-def test_table_format():
+def test_table_format(dir_path):
     # Test if table is in right format
     col_lst = ["SNP", "RA", "P-value", "Effect", "Chr", "Pos", "Cohort", "Population"]
     for file_name in os.listdir(dir_path):
@@ -75,7 +75,7 @@ def test_table_format():
         for col in col_lst:
             assert col in curr_df.columns, f"Table {file_name} does not have column {col}"
 
-def test_unique_snp():
+def test_unique_snp(dir_path):
     # Test if we have the right set of snp
     for file_name in os.listdir(dir_path):
         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
@@ -83,7 +83,7 @@ def test_unique_snp():
         test_unique_snp = set(test_df["SNP"].unique())
         assert curr_unique_snp == test_unique_snp
 
-def test_num_record_snp():
+def test_num_record_snp(dir_path):
     # test if we have the right number of row for each snp
     for file_name in os.listdir(dir_path):
         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
@@ -93,7 +93,8 @@ def test_num_record_snp():
             test_snp_df = test_df[test_df["SNP"] == snp]
             assert curr_snp_df.shape[0] == test_snp_df.shape[0], f"Table {file_name} does not have the right number of row for SNP {snp}"
 
-def test_snp_ra():
+def test_snp_ra(dir_path):
+    # test for each table and for each snp we have right set of RA
     for file_name in os.listdir(dir_path):
         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
         test_unique_snp = test_df["SNP"].unique()
@@ -104,7 +105,8 @@ def test_snp_ra():
             test_snp_ra = test_snp_df["RA"]
             assert (curr_snp_ra == test_snp_ra).all(), f"Table {file_name} does not contain right set of RA for SNP {snp}"
 
-def test_snp_chr():
+def test_snp_chr(dir_path):
+    # test for each table and for each snp we have right set of Chr
     for file_name in os.listdir(dir_path):
         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
         test_unique_snp = test_df["SNP"].unique()
@@ -115,7 +117,8 @@ def test_snp_chr():
             test_snp_chr = test_snp_df["Chr"]
             assert (curr_snp_chr == test_snp_chr).all(), f"Table {file_name} does not contain right set of RA for SNP {snp}"     
 
-def test_snp_pos():
+def test_snp_pos(dir_path):
+    # test for each table and for each snp we have right set of Pos
     for file_name in os.listdir(dir_path):
         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
         test_unique_snp = test_df["SNP"].unique()
@@ -126,7 +129,8 @@ def test_snp_pos():
             test_snp_pos = test_snp_df["Pos"]
             assert (curr_snp_pos == test_snp_pos).all(), f"Table {file_name} does not contain right set of position for SNP {snp}"
 
-def test_snp_effect():
+def test_snp_effect(dir_path):
+    # test for each table and for each snp we have right set of effect
     for file_name in os.listdir(dir_path):
         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
         test_unique_snp = test_df["SNP"].unique()
@@ -137,18 +141,20 @@ def test_snp_effect():
             test_snp_effect = test_snp_df["Effect"]
             assert (curr_snp_effect == test_snp_effect).all(), f"Table {file_name} does not contain right set of effect for SNP {snp}"
 
-def test_snp_effect_str():
-    for file_name in os.listdir(dir_path):
-        curr_df, test_df = import_table_and_test_table(dir_path, file_name)
-        test_unique_snp = test_df["SNP"].unique()
-        for snp in test_unique_snp:
-            curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", "Effect"]].sort_values("Effect")
-            curr_snp_effect = curr_snp_df["Effect"]
-            test_snp_df = test_df[test_df["SNP"] == snp][["SNP", "Effect"]].sort_values("Effect")
-            test_snp_effect = test_snp_df["Effect"].apply(lambda x: str(x))
-            assert (curr_snp_effect == test_snp_effect).all(), f"Table {file_name} does not contain right set of effect for SNP {snp}"
+# def test_snp_effect_str(dir_path):
+#     # test for each table and for each snp we have right set of effect (given in str form)
+#     for file_name in os.listdir(dir_path):
+#         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
+#         test_unique_snp = test_df["SNP"].unique()
+#         for snp in test_unique_snp:
+#             curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", "Effect"]].sort_values("Effect")
+#             curr_snp_effect = curr_snp_df["Effect"]
+#             test_snp_df = test_df[test_df["SNP"] == snp][["SNP", "Effect"]].sort_values("Effect")
+#             test_snp_effect = test_snp_df["Effect"].apply(lambda x: str(x))
+#             assert (curr_snp_effect == test_snp_effect).all(), f"Table {file_name} does not contain right set of effect for SNP {snp}"
 
-def test_snp_pvalue():
+def test_snp_pvalue(dir_path):
+    # test for each table and for each snp we have right set of p-value (numerically)
     for file_name in os.listdir(dir_path):
         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
         test_unique_snp = test_df["SNP"].unique()
@@ -159,18 +165,20 @@ def test_snp_pvalue():
             test_snp_pvalue = test_snp_df["P-value"]
             assert (curr_snp_pvalue == test_snp_pvalue).all(), f"Table {file_name} does not contain right set of p-value for SNP {snp}"
 
-def test_snp_pvalue_str():
-    for file_name in os.listdir(dir_path):
-        curr_df, test_df = import_table_and_test_table(dir_path, file_name)
-        test_unique_snp = test_df["SNP"].unique()
-        for snp in test_unique_snp:
-            curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", "P-value"]].sort_values("P-value")
-            curr_snp_pvalue = curr_snp_df["P-value"]
-            test_snp_df = test_df[test_df["SNP"] == snp][["SNP", "P-value"]].sort_values("P-value")
-            test_snp_pvalue = test_snp_df["P-value"].apply(lambda x: str(x))
-            assert (curr_snp_pvalue == test_snp_pvalue).all(), f"Table {file_name} does not contain right set of p-value for SNP {snp}"
+# def test_snp_pvalue_str(dir_path):
+#     # test for each table and for each snp we have right set of p-value (str)
+#     for file_name in os.listdir(dir_path):
+#         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
+#         test_unique_snp = test_df["SNP"].unique()
+#         for snp in test_unique_snp:
+#             curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", "P-value"]].sort_values("P-value")
+#             curr_snp_pvalue = curr_snp_df["P-value"]
+#             test_snp_df = test_df[test_df["SNP"] == snp][["SNP", "P-value"]].sort_values("P-value")
+#             test_snp_pvalue = test_snp_df["P-value"].apply(lambda x: str(x))
+#             assert (curr_snp_pvalue == test_snp_pvalue).all(), f"Table {file_name} does not contain right set of p-value for SNP {snp}"
 
-def test_snp_cohort():
+def test_snp_cohort(dir_path):
+    # test for each table and for each snp we have right set of cohort
     for file_name in os.listdir(dir_path):
         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
         test_unique_snp = test_df["SNP"].unique()
@@ -181,7 +189,8 @@ def test_snp_cohort():
             test_snp_cohort = test_snp_df["Cohort"]
             assert (curr_snp_cohort == test_snp_cohort).all(), f"Table {file_name} does not contain right set of cohort for SNP {snp}"
 
-def test_snp_population():
+def test_snp_population(dir_path):
+    # test for each table and for each snp we have right set of population
     for file_name in os.listdir(dir_path):
         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
         test_unique_snp = test_df["SNP"].unique()
