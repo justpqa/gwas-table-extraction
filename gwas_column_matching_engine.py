@@ -101,18 +101,21 @@ class GWASColumnMatchingEngine:
         # also make col embeddings
         self.referencing_col_embeddings = self.create_col_embeddings_from_model(self.referencing_col_context_lst)
 
-        # llm model
-        self.use_llm = use_llm
-        if use_llm:
-            self.llm_model_tokenizer = AutoTokenizer.from_pretrained(llm_model_name)
-            self.llm_model = AutoModelForCausalLM.from_pretrained(
-                llm_model_name,
-                torch_dtype=torch.bfloat16
-            ).to(device)
-            self.llm_model.eval()
+        # # llm model
+        # self.use_llm = use_llm
+        # if use_llm:
+        #     self.llm_model_tokenizer = AutoTokenizer.from_pretrained(llm_model_name)
+        #     self.llm_model = AutoModelForCausalLM.from_pretrained(
+        #         llm_model_name,
+        #         torch_dtype=torch.bfloat16
+        #     ).to(device)
+        #     self.llm_model.eval()
 
-        # device
-        self.device = device
+        # # device
+        # self.device = device
+
+        # column list
+        self.col_with_multiple_copies = ["P-value", "Effect Size", "AF"]
 
     def clean_col(self, col: str) -> str:
         """
@@ -325,5 +328,15 @@ Best Match: """
             # if ref_col not in ref_col_to_col_lst:
             #     ref_col_to_col_lst[ref_col] = []
             # ref_col_to_col_lst[ref_col].append((col, cleaned_col_prompt, score))
+
+        # finally, filter col that cannot have multiple copies
+        for ref_col in ref_col_to_col_lst:
+            if ref_col not in self.col_with_multiple_copies and len(ref_col_to_col_lst[ref_col]) > 1:
+                best_col, best_score = None, float("-inf")
+                for col, score in ref_col_to_col_lst[ref_col]:
+                    if score > best_score:
+                        best_col = col
+                        best_score = score
+                ref_col_to_col_lst[ref_col] = [(best_col, best_score)]
 
         return ref_col_to_col_lst

@@ -520,7 +520,7 @@ def format_original_table(df: pd.DataFrame, gwas_column_matching_engine: GWASCol
     """
     Format final table by melt/make extra copies of reference columns, or simply rename column to reference column name
     """
-    possible_ref_col_to_melt = ["P-value", "Effect Size", "Confidence Interval", "AF"]
+    possible_ref_col_to_melt = ["P-value", "Effect Size", "AF"]
     # map the columns
     new_col_to_old_col_lst = gwas_column_matching_engine.match_many_col_to_ref_col(df)
     df_with_ref_col = None
