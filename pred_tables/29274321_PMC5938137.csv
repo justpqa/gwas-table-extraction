@@ -1,3 +1,47 @@
-SNP,Chr,Position,RA,AF,P-value,Effect,Population,Cohort
-rs118130881,,,,,,,,
-rs2819438,,,,,eQTL,,,
+SNP,Chr,Position,RA,AF,P-value,Effect,Population,Cohort,P-value notes
+,,,,,0.38,0.14,,,MTUS1 | β
+,,,,,0.16,0.03,,,MTUS1 | β
+,,,,,,,,,MTUS1 | β
+,,,,,0.0,0.02,,,MTUS1 | β
+,,,,,0.09,0.02,,,MTUS1 | β
+,,,,,0.09,0.03,,,MTUS1 | β
+,,,,,0.02,0.14,,,MTUS1 | P
+,,,,,3.9×10−4,0.03,,,MTUS1 | P
+,,,,,,,,,MTUS1 | P
+,,,,,0.78,0.02,,,MTUS1 | P
+,,,,,0.01,0.02,,,MTUS1 | P
+,,,,,0.01,0.03,,,MTUS1 | P
+,,,,,0.76,0.14,,,C14orf79 | P
+,,,,,0.06,0.03,,,C14orf79 | P
+,,,,,,,,,C14orf79 | P
+,,,,,7.5×10−8,0.02,,,C14orf79 | P
+,,,,,3.3×10−7,0.02,,,C14orf79 | P
+,,,,,2.1×10−8,0.03,,,C14orf79 | P
+rs55644114,8,20647323,A,0.16,2.54×10−8,0.41,,,
+rs74442473,12,13870464,G,0.07,2.53×10−8,−1.02,,,
+rs2378873,17,59687842,T,0.44,2.03×10−8,−0.53,,,
+rs10775009,12,119390525,T,0.34,1.59×10−9,0.51,,,
+rs2819438,14,105385352,A,0.13,6.94×10−9,−0.80,,,
+rs4921790,8,17496561,C,0.12,4.58×10−9,0.61,,,
+rs74834332,1,57739164,A,0.03,4.30×10−8,0.79,,,
+rs12268753,10,53818149,C,0.21,2.01×10−8,0.30,,,
+rs111882035,4,86416554,G,0.02,2.74×10−8,−0.93,,,
+rs73705514,7,88406552,C,0.02,2.86×10−9,−0.84,,,
+rs118130881,8,31228770,G,0.04,1.72×10−8,−0.61,,,
+rs79846291,6,136077929,T,0.02,1.76×10−8,1.85,,,
+rs10775009,,,,,0.09 (0.09),,,,eSNP Association Summary | Hippocampus | P-value (β)
+rs2819438,,,,,0.47 (0.12),,,,eSNP Association Summary | Hippocampus | P-value (β)
+rs2819438,,,,,0.15 (0.23),,,,eSNP Association Summary | Hippocampus | P-value (β)
+rs2819438,,,,,3.8×10−4 (0.44),,,,eSNP Association Summary | Hippocampus | P-value (β)
+rs2819438,,,,,3.8×10−4 (0.44),,,,eSNP Association Summary | Hippocampus | P-value (β)
+rs4921790,,,,,1.0 (0.0),,,,eSNP Association Summary | Hippocampus | P-value (β)
+rs55653268,,,,,0.8 (0.04),,,,eSNP Association Summary | Hippocampus | P-value (β)
+rs55653268,,,,,0.8 (0.04),,,,eSNP Association Summary | Hippocampus | P-value (β)
+rs10775009,,,,,0.16 (0.10),,,,eSNP Association Summary | Other brain region | P-value (β)
+rs2819438,,,,,0.10 (0.42),,,,eSNP Association Summary | Other brain region | P-value (β)
+rs2819438,,,,,0.06 (−0.28),,,,eSNP Association Summary | Other brain region | P-value (β)
+rs2819438,,,,,3.9×10−3 (0.31),,,,eSNP Association Summary | Other brain region | P-value (β)
+rs2819438,,,,,6.0×10−3 (0.44),,,,eSNP Association Summary | Other brain region | P-value (β)
+rs4921790,,,,,0.09 (−0.16),,,,eSNP Association Summary | Other brain region | P-value (β)
+rs55653268,,,,,9.7×10−3 (−0.33),,,,eSNP Association Summary | Other brain region | P-value (β)
+rs55653268,,,,,0.02 (−0.41),,,,eSNP Association Summary | Other brain region | P-value (β)

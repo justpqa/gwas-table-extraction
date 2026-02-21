@@ -1,89 +1,89 @@
 SNP,Chr,Position,RA,AF,P-value,Effect,Population,Cohort,P-value notes,AF notes
-rs3818361,1,,A/G,0.204,4.70 /C2 10 /C0 6,"1.12 (1.01, 1.23)",,,p value.,Age 60 e 79 y (younger).Frq
-rs3818361,1,,A/G,0.195,4.70 /C2 10 /C0 6,"1.12 (1.01, 1.23)",,,p value.,Age /C21 80 y (older).Frq
-rs6431219,2,,T/C,0.419,3.67 3 10 L 8,"1.04 (0.96, 1.13)",,,p value.,Age 60 e 79 y (younger).Frq
-rs6431219,2,,T/C,0.408,3.67 3 10 L 8,"1.04 (0.96, 1.13)",,,p value.,Age /C21 80 y (older).Frq
-rs12378268,9,,T/C,0.320,8.45 3 10 L 7,"1.04 (0.96, 1.13)",,,p value.,Age 60 e 79 y (younger).Frq
-rs12378268,9,,T/C,0.320,8.45 3 10 L 7,"1.04 (0.96, 1.13)",,,p value.,Age /C21 80 y (older).Frq
-rs1834550,11,,C/T,0.389,8.68 /C2 10 /C0 6,"0.86 (0.80, 0.94)",,,p value.,Age 60 e 79 y (younger).Frq
-rs1834550,11,,C/T,0.402,8.68 /C2 10 /C0 6,"0.86 (0.80, 0.94)",,,p value.,Age /C21 80 y (older).Frq
-rs184909761,11,,C/T,0.353,2.10 /C2 10 /C0 6,"0.85 (0.78, 0.93)",,,p value.,Age 60 e 79 y (younger).Frq
-rs184909761,11,,C/T,0.360,2.10 /C2 10 /C0 6,"0.85 (0.78, 0.93)",,,p value.,Age /C21 80 y (older).Frq
-rs639012,11,,A/G,0.309,8.90 3 10 L 8,"0.98 (0.90, 1.06)",,,p value.,Age 60 e 79 y (younger).Frq
-rs639012,11,,A/G,0.322,8.90 3 10 L 8,"0.98 (0.90, 1.06)",,,p value.,Age /C21 80 y (older).Frq
-rs73298734,14,,G/A,0.108,4.16 3 10 L 6,"0.95 (0.83, 1.09)",,,p value.,Age 60 e 79 y (younger).Frq
-rs73298734,14,,G/A,0.096,4.16 3 10 L 6,"0.95 (0.83, 1.09)",,,p value.,Age /C21 80 y (older).Frq
-rs429358,19,,C/T,0.248,1.49 /C2 10 /C0 154,"2.39 (2.11, 2.70)",,,p value.,Age 60 e 79 y (younger).Frq
-rs429358,19,,C/T,0.126,1.49 /C2 10 /C0 154,"2.39 (2.11, 2.70)",,,p value.,Age /C21 80 y (older).Frq
-rs4277762,4,,T/C,0.299,4.13 3 10 L 6,"1.20 (1.10, 1.30)",,,p value.,Age 60 e 79 y (younger).Frq
-rs4277762,4,,T/C,0.306,4.13 3 10 L 6,"1.20 (1.10, 1.30)",,,p value.,Age /C21 80 y (older).Frq
-rs429358,19,,C/T,0.248,4.57 /C2 10 /C0 30,"2.39 (2.11, 2.70)",,,p value.,Age 60 e 79 y (younger).Frq
-rs429358,19,,C/T,0.126,4.57 /C2 10 /C0 30,"2.39 (2.11, 2.70)",,,p value.,Age /C21 80 y (older).Frq
-rs6002167,22,,T/A,0.052,2.82 3 10 L 6,"0.67 (0.55, 0.80)",,,p value.,Age 60 e 79 y (younger).Frq
-rs6002167,22,,T/A,0.051,2.82 3 10 L 6,"0.67 (0.55, 0.80)",,,p value.,Age /C21 80 y (older).Frq
-rs3818361,1,,A/G,0.204,5.41 /C2 10 /C0 9,"1.12 (1.01, 1.23)",,,Age 60 e 79 y (younger).p value,Age 60 e 79 y (younger).Frq
-rs3818361,1,,A/G,0.195,5.41 /C2 10 /C0 9,"1.12 (1.01, 1.23)",,,Age 60 e 79 y (younger).p value,Age /C21 80 y (older).Frq
-rs6431219,2,,T/C,0.419,6.06 3 10 L 14,"1.04 (0.96, 1.13)",,,Age 60 e 79 y (younger).p value,Age 60 e 79 y (younger).Frq
-rs6431219,2,,T/C,0.408,6.06 3 10 L 14,"1.04 (0.96, 1.13)",,,Age 60 e 79 y (younger).p value,Age /C21 80 y (older).Frq
-rs12378268,9,,T/C,0.320,5.43 3 10 L 6,"1.04 (0.96, 1.13)",,,Age 60 e 79 y (younger).p value,Age 60 e 79 y (younger).Frq
-rs12378268,9,,T/C,0.320,5.43 3 10 L 6,"1.04 (0.96, 1.13)",,,Age 60 e 79 y (younger).p value,Age /C21 80 y (older).Frq
-rs1834550,11,,C/T,0.389,1.08 /C2 10 /C0 5,"0.86 (0.80, 0.94)",,,Age 60 e 79 y (younger).p value,Age 60 e 79 y (younger).Frq
-rs1834550,11,,C/T,0.402,1.08 /C2 10 /C0 5,"0.86 (0.80, 0.94)",,,Age 60 e 79 y (younger).p value,Age /C21 80 y (older).Frq
-rs184909761,11,,C/T,0.353,1.45 /C2 10 /C0 6,"0.85 (0.78, 0.93)",,,Age 60 e 79 y (younger).p value,Age 60 e 79 y (younger).Frq
-rs184909761,11,,C/T,0.360,1.45 /C2 10 /C0 6,"0.85 (0.78, 0.93)",,,Age 60 e 79 y (younger).p value,Age /C21 80 y (older).Frq
-rs639012,11,,A/G,0.309,1.86 3 10 L 7,"0.98 (0.90, 1.06)",,,Age 60 e 79 y (younger).p value,Age 60 e 79 y (younger).Frq
-rs639012,11,,A/G,0.322,1.86 3 10 L 7,"0.98 (0.90, 1.06)",,,Age 60 e 79 y (younger).p value,Age /C21 80 y (older).Frq
-rs73298734,14,,G/A,0.108,1.69 3 10 L 6,"0.95 (0.83, 1.09)",,,Age 60 e 79 y (younger).p value,Age 60 e 79 y (younger).Frq
-rs73298734,14,,G/A,0.096,1.69 3 10 L 6,"0.95 (0.83, 1.09)",,,Age 60 e 79 y (younger).p value,Age /C21 80 y (older).Frq
-rs429358,19,,C/T,0.248,4.90 /C2 10 /C0 286,"2.39 (2.11, 2.70)",,,Age 60 e 79 y (younger).p value,Age 60 e 79 y (younger).Frq
-rs429358,19,,C/T,0.126,4.90 /C2 10 /C0 286,"2.39 (2.11, 2.70)",,,Age 60 e 79 y (younger).p value,Age /C21 80 y (older).Frq
-rs4277762,4,,T/C,0.299,0.476,"1.20 (1.10, 1.30)",,,Age 60 e 79 y (younger).p value,Age 60 e 79 y (younger).Frq
-rs4277762,4,,T/C,0.306,0.476,"1.20 (1.10, 1.30)",,,Age 60 e 79 y (younger).p value,Age /C21 80 y (older).Frq
-rs429358,19,,C/T,0.248,4.90 /C2 10 /C0 286,"2.39 (2.11, 2.70)",,,Age 60 e 79 y (younger).p value,Age 60 e 79 y (younger).Frq
-rs429358,19,,C/T,0.126,4.90 /C2 10 /C0 286,"2.39 (2.11, 2.70)",,,Age 60 e 79 y (younger).p value,Age /C21 80 y (older).Frq
-rs6002167,22,,T/A,0.052,0.502,"0.67 (0.55, 0.80)",,,Age 60 e 79 y (younger).p value,Age 60 e 79 y (younger).Frq
-rs6002167,22,,T/A,0.051,0.502,"0.67 (0.55, 0.80)",,,Age 60 e 79 y (younger).p value,Age /C21 80 y (older).Frq
-rs3818361,1,,A/G,0.204,0.027,"1.12 (1.01, 1.23)",,,Age /C21 80 y (older).p value,Age 60 e 79 y (younger).Frq
-rs3818361,1,,A/G,0.195,0.027,"1.12 (1.01, 1.23)",,,Age /C21 80 y (older).p value,Age /C21 80 y (older).Frq
-rs6431219,2,,T/C,0.419,0.340,"1.04 (0.96, 1.13)",,,Age /C21 80 y (older).p value,Age 60 e 79 y (younger).Frq
-rs6431219,2,,T/C,0.408,0.340,"1.04 (0.96, 1.13)",,,Age /C21 80 y (older).p value,Age /C21 80 y (older).Frq
-rs12378268,9,,T/C,0.320,0.363,"1.04 (0.96, 1.13)",,,Age /C21 80 y (older).p value,Age 60 e 79 y (younger).Frq
-rs12378268,9,,T/C,0.320,0.363,"1.04 (0.96, 1.13)",,,Age /C21 80 y (older).p value,Age /C21 80 y (older).Frq
-rs1834550,11,,C/T,0.389,3.38 /C2 10 /C0 4,"0.86 (0.80, 0.94)",,,Age /C21 80 y (older).p value,Age 60 e 79 y (younger).Frq
-rs1834550,11,,C/T,0.402,3.38 /C2 10 /C0 4,"0.86 (0.80, 0.94)",,,Age /C21 80 y (older).p value,Age /C21 80 y (older).Frq
-rs184909761,11,,C/T,0.353,5.53 /C2 10 /C0 4,"0.85 (0.78, 0.93)",,,Age /C21 80 y (older).p value,Age 60 e 79 y (younger).Frq
-rs184909761,11,,C/T,0.360,5.53 /C2 10 /C0 4,"0.85 (0.78, 0.93)",,,Age /C21 80 y (older).p value,Age /C21 80 y (older).Frq
-rs639012,11,,A/G,0.309,0.601,"0.98 (0.90, 1.06)",,,Age /C21 80 y (older).p value,Age 60 e 79 y (younger).Frq
-rs639012,11,,A/G,0.322,0.601,"0.98 (0.90, 1.06)",,,Age /C21 80 y (older).p value,Age /C21 80 y (older).Frq
-rs73298734,14,,G/A,0.108,0.455,"0.95 (0.83, 1.09)",,,Age /C21 80 y (older).p value,Age 60 e 79 y (younger).Frq
-rs73298734,14,,G/A,0.096,0.455,"0.95 (0.83, 1.09)",,,Age /C21 80 y (older).p value,Age /C21 80 y (older).Frq
-rs429358,19,,C/T,0.248,3.90 /C2 10 /C0 43,"2.39 (2.11, 2.70)",,,Age /C21 80 y (older).p value,Age 60 e 79 y (younger).Frq
-rs429358,19,,C/T,0.126,3.90 /C2 10 /C0 43,"2.39 (2.11, 2.70)",,,Age /C21 80 y (older).p value,Age /C21 80 y (older).Frq
-rs4277762,4,,T/C,0.299,2.05 3 10 L 5,"1.20 (1.10, 1.30)",,,Age /C21 80 y (older).p value,Age 60 e 79 y (younger).Frq
-rs4277762,4,,T/C,0.306,2.05 3 10 L 5,"1.20 (1.10, 1.30)",,,Age /C21 80 y (older).p value,Age /C21 80 y (older).Frq
-rs429358,19,,C/T,0.248,3.90 /C2 10 /C0 43,"2.39 (2.11, 2.70)",,,Age /C21 80 y (older).p value,Age 60 e 79 y (younger).Frq
-rs429358,19,,C/T,0.126,3.90 /C2 10 /C0 43,"2.39 (2.11, 2.70)",,,Age /C21 80 y (older).p value,Age /C21 80 y (older).Frq
-rs6002167,22,,T/A,0.052,2.27 3 10 L 5,"0.67 (0.55, 0.80)",,,Age /C21 80 y (older).p value,Age 60 e 79 y (younger).Frq
-rs6002167,22,,T/A,0.051,2.27 3 10 L 5,"0.67 (0.55, 0.80)",,,Age /C21 80 y (older).p value,Age /C21 80 y (older).Frq
-rs3818361,1,,A/G,0.204,0.159,"1.12 (1.01, 1.23)",,,Heterogeneity between the younger & older age groups.p value,Age 60 e 79 y (younger).Frq
-rs3818361,1,,A/G,0.195,0.159,"1.12 (1.01, 1.23)",,,Heterogeneity between the younger & older age groups.p value,Age /C21 80 y (older).Frq
-rs6431219,2,,T/C,0.419,6.86 3 10 L 4,"1.04 (0.96, 1.13)",,,Heterogeneity between the younger & older age groups.p value,Age 60 e 79 y (younger).Frq
-rs6431219,2,,T/C,0.408,6.86 3 10 L 4,"1.04 (0.96, 1.13)",,,Heterogeneity between the younger & older age groups.p value,Age /C21 80 y (older).Frq
-rs12378268,9,,T/C,0.320,0.0695,"1.04 (0.96, 1.13)",,,Heterogeneity between the younger & older age groups.p value,Age 60 e 79 y (younger).Frq
-rs12378268,9,,T/C,0.320,0.0695,"1.04 (0.96, 1.13)",,,Heterogeneity between the younger & older age groups.p value,Age /C21 80 y (older).Frq
-rs1834550,11,,C/T,0.389,0.587,"0.86 (0.80, 0.94)",,,Heterogeneity between the younger & older age groups.p value,Age 60 e 79 y (younger).Frq
-rs1834550,11,,C/T,0.402,0.587,"0.86 (0.80, 0.94)",,,Heterogeneity between the younger & older age groups.p value,Age /C21 80 y (older).Frq
-rs184909761,11,,C/T,0.353,0.863,"0.85 (0.78, 0.93)",,,Heterogeneity between the younger & older age groups.p value,Age 60 e 79 y (younger).Frq
-rs184909761,11,,C/T,0.360,0.863,"0.85 (0.78, 0.93)",,,Heterogeneity between the younger & older age groups.p value,Age /C21 80 y (older).Frq
-rs639012,11,,A/G,0.309,0.0132,"0.98 (0.90, 1.06)",,,Heterogeneity between the younger & older age groups.p value,Age 60 e 79 y (younger).Frq
-rs639012,11,,A/G,0.322,0.0132,"0.98 (0.90, 1.06)",,,Heterogeneity between the younger & older age groups.p value,Age /C21 80 y (older).Frq
-rs73298734,14,,G/A,0.108,1.29 3 10 L 3,"0.95 (0.83, 1.09)",,,Heterogeneity between the younger & older age groups.p value,Age 60 e 79 y (younger).Frq
-rs73298734,14,,G/A,0.096,1.29 3 10 L 3,"0.95 (0.83, 1.09)",,,Heterogeneity between the younger & older age groups.p value,Age /C21 80 y (older).Frq
-rs429358,19,,C/T,0.248,1.41 /C2 10 /C0 11,"2.39 (2.11, 2.70)",,,Heterogeneity between the younger & older age groups.p value,Age 60 e 79 y (younger).Frq
-rs429358,19,,C/T,0.126,1.41 /C2 10 /C0 11,"2.39 (2.11, 2.70)",,,Heterogeneity between the younger & older age groups.p value,Age /C21 80 y (older).Frq
-rs4277762,4,,T/C,0.299,8.32 3 10 L 5,"1.20 (1.10, 1.30)",,,Heterogeneity between the younger & older age groups.p value,Age 60 e 79 y (younger).Frq
-rs4277762,4,,T/C,0.306,8.32 3 10 L 5,"1.20 (1.10, 1.30)",,,Heterogeneity between the younger & older age groups.p value,Age /C21 80 y (older).Frq
-rs429358,19,,C/T,0.248,1.41 /C2 10 /C0 11,"2.39 (2.11, 2.70)",,,Heterogeneity between the younger & older age groups.p value,Age 60 e 79 y (younger).Frq
-rs429358,19,,C/T,0.126,1.41 /C2 10 /C0 11,"2.39 (2.11, 2.70)",,,Heterogeneity between the younger & older age groups.p value,Age /C21 80 y (older).Frq
-rs6002167,22,,T/A,0.052,8.01 3 10 L 5,"0.67 (0.55, 0.80)",,,Heterogeneity between the younger & older age groups.p value,Age 60 e 79 y (younger).Frq
-rs6002167,22,,T/A,0.051,8.01 3 10 L 5,"0.67 (0.55, 0.80)",,,Heterogeneity between the younger & older age groups.p value,Age /C21 80 y (older).Frq
+rs3818361,1,,A/G,0.204,4.70×10−6,"1.12 (1.01, 1.23)",,,P value | P value,Age 60–79 years (younger) | Frq
+rs3818361,1,,A/G,0.195,4.70×10−6,"1.12 (1.01, 1.23)",,,P value | P value,Age ≥ 80 years (older) | Frq
+rs6431219,2,,T/C,0.419,3.67×10−8,"1.04 (0.96, 1.13)",,,P value | P value,Age 60–79 years (younger) | Frq
+rs6431219,2,,T/C,0.408,3.67×10−8,"1.04 (0.96, 1.13)",,,P value | P value,Age ≥ 80 years (older) | Frq
+rs12378268,9,,T/C,0.32,8.45×10−7,"1.04 (0.96, 1.13)",,,P value | P value,Age 60–79 years (younger) | Frq
+rs12378268,9,,T/C,0.32,8.45×10−7,"1.04 (0.96, 1.13)",,,P value | P value,Age ≥ 80 years (older) | Frq
+rs1834550,11,,C/T,0.389,8.68×10−6,"0.86 (0.80, 0.94)",,,P value | P value,Age 60–79 years (younger) | Frq
+rs1834550,11,,C/T,0.402,8.68×10−6,"0.86 (0.80, 0.94)",,,P value | P value,Age ≥ 80 years (older) | Frq
+rs184909761,11,,C/T,0.353,2.10×10−6,"0.85 (0.78, 0.93)",,,P value | P value,Age 60–79 years (younger) | Frq
+rs184909761,11,,C/T,0.36,2.10×10−6,"0.85 (0.78, 0.93)",,,P value | P value,Age ≥ 80 years (older) | Frq
+rs639012,11,,A/G,0.309,8.90×10−8,"0.98 (0.90, 1.06)",,,P value | P value,Age 60–79 years (younger) | Frq
+rs639012,11,,A/G,0.322,8.90×10−8,"0.98 (0.90, 1.06)",,,P value | P value,Age ≥ 80 years (older) | Frq
+rs73298734,14,,G/A,0.108,4.16×10−6,"0.95 (0.83, 1.09)",,,P value | P value,Age 60–79 years (younger) | Frq
+rs73298734,14,,G/A,0.096,4.16×10−6,"0.95 (0.83, 1.09)",,,P value | P value,Age ≥ 80 years (older) | Frq
+rs429358,19,,C/T,0.248,1.49×10−154,"2.39 (2.11, 2.70)",,,P value | P value,Age 60–79 years (younger) | Frq
+rs429358,19,,C/T,0.126,1.49×10−154,"2.39 (2.11, 2.70)",,,P value | P value,Age ≥ 80 years (older) | Frq
+rs4277762,4,,T/C,0.299,4.13×10−6,"1.20 (1.10, 1.30)",,,P value | P value,Age 60–79 years (younger) | Frq
+rs4277762,4,,T/C,0.306,4.13×10−6,"1.20 (1.10, 1.30)",,,P value | P value,Age ≥ 80 years (older) | Frq
+rs429358,19,,C/T,0.248,4.57×10−30,"2.39 (2.11, 2.70)",,,P value | P value,Age 60–79 years (younger) | Frq
+rs429358,19,,C/T,0.126,4.57×10−30,"2.39 (2.11, 2.70)",,,P value | P value,Age ≥ 80 years (older) | Frq
+rs6002167,22,,T/A,0.052,2.82×10−6,"0.67 (0.55, 0.80)",,,P value | P value,Age 60–79 years (younger) | Frq
+rs6002167,22,,T/A,0.051,2.82×10−6,"0.67 (0.55, 0.80)",,,P value | P value,Age ≥ 80 years (older) | Frq
+rs3818361,1,,A/G,0.204,5.41×10−9,"1.12 (1.01, 1.23)",,,Age 60–79 years (younger) | P value,Age 60–79 years (younger) | Frq
+rs3818361,1,,A/G,0.195,5.41×10−9,"1.12 (1.01, 1.23)",,,Age 60–79 years (younger) | P value,Age ≥ 80 years (older) | Frq
+rs6431219,2,,T/C,0.419,6.06×10−14,"1.04 (0.96, 1.13)",,,Age 60–79 years (younger) | P value,Age 60–79 years (younger) | Frq
+rs6431219,2,,T/C,0.408,6.06×10−14,"1.04 (0.96, 1.13)",,,Age 60–79 years (younger) | P value,Age ≥ 80 years (older) | Frq
+rs12378268,9,,T/C,0.32,5.43×10−6,"1.04 (0.96, 1.13)",,,Age 60–79 years (younger) | P value,Age 60–79 years (younger) | Frq
+rs12378268,9,,T/C,0.32,5.43×10−6,"1.04 (0.96, 1.13)",,,Age 60–79 years (younger) | P value,Age ≥ 80 years (older) | Frq
+rs1834550,11,,C/T,0.389,1.08×10−5,"0.86 (0.80, 0.94)",,,Age 60–79 years (younger) | P value,Age 60–79 years (younger) | Frq
+rs1834550,11,,C/T,0.402,1.08×10−5,"0.86 (0.80, 0.94)",,,Age 60–79 years (younger) | P value,Age ≥ 80 years (older) | Frq
+rs184909761,11,,C/T,0.353,1.45×10−6,"0.85 (0.78, 0.93)",,,Age 60–79 years (younger) | P value,Age 60–79 years (younger) | Frq
+rs184909761,11,,C/T,0.36,1.45×10−6,"0.85 (0.78, 0.93)",,,Age 60–79 years (younger) | P value,Age ≥ 80 years (older) | Frq
+rs639012,11,,A/G,0.309,1.86×10−7,"0.98 (0.90, 1.06)",,,Age 60–79 years (younger) | P value,Age 60–79 years (younger) | Frq
+rs639012,11,,A/G,0.322,1.86×10−7,"0.98 (0.90, 1.06)",,,Age 60–79 years (younger) | P value,Age ≥ 80 years (older) | Frq
+rs73298734,14,,G/A,0.108,1.69×10−6,"0.95 (0.83, 1.09)",,,Age 60–79 years (younger) | P value,Age 60–79 years (younger) | Frq
+rs73298734,14,,G/A,0.096,1.69×10−6,"0.95 (0.83, 1.09)",,,Age 60–79 years (younger) | P value,Age ≥ 80 years (older) | Frq
+rs429358,19,,C/T,0.248,4.90×10−286,"2.39 (2.11, 2.70)",,,Age 60–79 years (younger) | P value,Age 60–79 years (younger) | Frq
+rs429358,19,,C/T,0.126,4.90×10−286,"2.39 (2.11, 2.70)",,,Age 60–79 years (younger) | P value,Age ≥ 80 years (older) | Frq
+rs4277762,4,,T/C,0.299,0.476,"1.20 (1.10, 1.30)",,,Age 60–79 years (younger) | P value,Age 60–79 years (younger) | Frq
+rs4277762,4,,T/C,0.306,0.476,"1.20 (1.10, 1.30)",,,Age 60–79 years (younger) | P value,Age ≥ 80 years (older) | Frq
+rs429358,19,,C/T,0.248,4.90×10−286,"2.39 (2.11, 2.70)",,,Age 60–79 years (younger) | P value,Age 60–79 years (younger) | Frq
+rs429358,19,,C/T,0.126,4.90×10−286,"2.39 (2.11, 2.70)",,,Age 60–79 years (younger) | P value,Age ≥ 80 years (older) | Frq
+rs6002167,22,,T/A,0.052,0.502,"0.67 (0.55, 0.80)",,,Age 60–79 years (younger) | P value,Age 60–79 years (younger) | Frq
+rs6002167,22,,T/A,0.051,0.502,"0.67 (0.55, 0.80)",,,Age 60–79 years (younger) | P value,Age ≥ 80 years (older) | Frq
+rs3818361,1,,A/G,0.204,0.027,"1.12 (1.01, 1.23)",,,Age ≥ 80 years (older) | P value,Age 60–79 years (younger) | Frq
+rs3818361,1,,A/G,0.195,0.027,"1.12 (1.01, 1.23)",,,Age ≥ 80 years (older) | P value,Age ≥ 80 years (older) | Frq
+rs6431219,2,,T/C,0.419,0.340,"1.04 (0.96, 1.13)",,,Age ≥ 80 years (older) | P value,Age 60–79 years (younger) | Frq
+rs6431219,2,,T/C,0.408,0.340,"1.04 (0.96, 1.13)",,,Age ≥ 80 years (older) | P value,Age ≥ 80 years (older) | Frq
+rs12378268,9,,T/C,0.32,0.363,"1.04 (0.96, 1.13)",,,Age ≥ 80 years (older) | P value,Age 60–79 years (younger) | Frq
+rs12378268,9,,T/C,0.32,0.363,"1.04 (0.96, 1.13)",,,Age ≥ 80 years (older) | P value,Age ≥ 80 years (older) | Frq
+rs1834550,11,,C/T,0.389,3.38×10−4,"0.86 (0.80, 0.94)",,,Age ≥ 80 years (older) | P value,Age 60–79 years (younger) | Frq
+rs1834550,11,,C/T,0.402,3.38×10−4,"0.86 (0.80, 0.94)",,,Age ≥ 80 years (older) | P value,Age ≥ 80 years (older) | Frq
+rs184909761,11,,C/T,0.353,5.53×10−4,"0.85 (0.78, 0.93)",,,Age ≥ 80 years (older) | P value,Age 60–79 years (younger) | Frq
+rs184909761,11,,C/T,0.36,5.53×10−4,"0.85 (0.78, 0.93)",,,Age ≥ 80 years (older) | P value,Age ≥ 80 years (older) | Frq
+rs639012,11,,A/G,0.309,0.601,"0.98 (0.90, 1.06)",,,Age ≥ 80 years (older) | P value,Age 60–79 years (younger) | Frq
+rs639012,11,,A/G,0.322,0.601,"0.98 (0.90, 1.06)",,,Age ≥ 80 years (older) | P value,Age ≥ 80 years (older) | Frq
+rs73298734,14,,G/A,0.108,0.455,"0.95 (0.83, 1.09)",,,Age ≥ 80 years (older) | P value,Age 60–79 years (younger) | Frq
+rs73298734,14,,G/A,0.096,0.455,"0.95 (0.83, 1.09)",,,Age ≥ 80 years (older) | P value,Age ≥ 80 years (older) | Frq
+rs429358,19,,C/T,0.248,3.90×10−43,"2.39 (2.11, 2.70)",,,Age ≥ 80 years (older) | P value,Age 60–79 years (younger) | Frq
+rs429358,19,,C/T,0.126,3.90×10−43,"2.39 (2.11, 2.70)",,,Age ≥ 80 years (older) | P value,Age ≥ 80 years (older) | Frq
+rs4277762,4,,T/C,0.299,2.05×10−5,"1.20 (1.10, 1.30)",,,Age ≥ 80 years (older) | P value,Age 60–79 years (younger) | Frq
+rs4277762,4,,T/C,0.306,2.05×10−5,"1.20 (1.10, 1.30)",,,Age ≥ 80 years (older) | P value,Age ≥ 80 years (older) | Frq
+rs429358,19,,C/T,0.248,3.90×10−43,"2.39 (2.11, 2.70)",,,Age ≥ 80 years (older) | P value,Age 60–79 years (younger) | Frq
+rs429358,19,,C/T,0.126,3.90×10−43,"2.39 (2.11, 2.70)",,,Age ≥ 80 years (older) | P value,Age ≥ 80 years (older) | Frq
+rs6002167,22,,T/A,0.052,2.27×10−5,"0.67 (0.55, 0.80)",,,Age ≥ 80 years (older) | P value,Age 60–79 years (younger) | Frq
+rs6002167,22,,T/A,0.051,2.27×10−5,"0.67 (0.55, 0.80)",,,Age ≥ 80 years (older) | P value,Age ≥ 80 years (older) | Frq
+rs3818361,1,,A/G,0.204,0.159,"1.12 (1.01, 1.23)",,,Heterogeneity between the younger & older age groups | P value,Age 60–79 years (younger) | Frq
+rs3818361,1,,A/G,0.195,0.159,"1.12 (1.01, 1.23)",,,Heterogeneity between the younger & older age groups | P value,Age ≥ 80 years (older) | Frq
+rs6431219,2,,T/C,0.419,6.86×10−4,"1.04 (0.96, 1.13)",,,Heterogeneity between the younger & older age groups | P value,Age 60–79 years (younger) | Frq
+rs6431219,2,,T/C,0.408,6.86×10−4,"1.04 (0.96, 1.13)",,,Heterogeneity between the younger & older age groups | P value,Age ≥ 80 years (older) | Frq
+rs12378268,9,,T/C,0.32,0.0695,"1.04 (0.96, 1.13)",,,Heterogeneity between the younger & older age groups | P value,Age 60–79 years (younger) | Frq
+rs12378268,9,,T/C,0.32,0.0695,"1.04 (0.96, 1.13)",,,Heterogeneity between the younger & older age groups | P value,Age ≥ 80 years (older) | Frq
+rs1834550,11,,C/T,0.389,0.587,"0.86 (0.80, 0.94)",,,Heterogeneity between the younger & older age groups | P value,Age 60–79 years (younger) | Frq
+rs1834550,11,,C/T,0.402,0.587,"0.86 (0.80, 0.94)",,,Heterogeneity between the younger & older age groups | P value,Age ≥ 80 years (older) | Frq
+rs184909761,11,,C/T,0.353,0.863,"0.85 (0.78, 0.93)",,,Heterogeneity between the younger & older age groups | P value,Age 60–79 years (younger) | Frq
+rs184909761,11,,C/T,0.36,0.863,"0.85 (0.78, 0.93)",,,Heterogeneity between the younger & older age groups | P value,Age ≥ 80 years (older) | Frq
+rs639012,11,,A/G,0.309,0.0132,"0.98 (0.90, 1.06)",,,Heterogeneity between the younger & older age groups | P value,Age 60–79 years (younger) | Frq
+rs639012,11,,A/G,0.322,0.0132,"0.98 (0.90, 1.06)",,,Heterogeneity between the younger & older age groups | P value,Age ≥ 80 years (older) | Frq
+rs73298734,14,,G/A,0.108,1.29×10−3,"0.95 (0.83, 1.09)",,,Heterogeneity between the younger & older age groups | P value,Age 60–79 years (younger) | Frq
+rs73298734,14,,G/A,0.096,1.29×10−3,"0.95 (0.83, 1.09)",,,Heterogeneity between the younger & older age groups | P value,Age ≥ 80 years (older) | Frq
+rs429358,19,,C/T,0.248,1.41×10−11,"2.39 (2.11, 2.70)",,,Heterogeneity between the younger & older age groups | P value,Age 60–79 years (younger) | Frq
+rs429358,19,,C/T,0.126,1.41×10−11,"2.39 (2.11, 2.70)",,,Heterogeneity between the younger & older age groups | P value,Age ≥ 80 years (older) | Frq
+rs4277762,4,,T/C,0.299,8.32×10−5,"1.20 (1.10, 1.30)",,,Heterogeneity between the younger & older age groups | P value,Age 60–79 years (younger) | Frq
+rs4277762,4,,T/C,0.306,8.32×10−5,"1.20 (1.10, 1.30)",,,Heterogeneity between the younger & older age groups | P value,Age ≥ 80 years (older) | Frq
+rs429358,19,,C/T,0.248,1.41×10−11,"2.39 (2.11, 2.70)",,,Heterogeneity between the younger & older age groups | P value,Age 60–79 years (younger) | Frq
+rs429358,19,,C/T,0.126,1.41×10−11,"2.39 (2.11, 2.70)",,,Heterogeneity between the younger & older age groups | P value,Age ≥ 80 years (older) | Frq
+rs6002167,22,,T/A,0.052,8.01×10−5,"0.67 (0.55, 0.80)",,,Heterogeneity between the younger & older age groups | P value,Age 60–79 years (younger) | Frq
+rs6002167,22,,T/A,0.051,8.01×10−5,"0.67 (0.55, 0.80)",,,Heterogeneity between the younger & older age groups | P value,Age ≥ 80 years (older) | Frq

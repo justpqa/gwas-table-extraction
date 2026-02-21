@@ -543,11 +543,21 @@ def format_original_table(df: pd.DataFrame, gwas_column_matching_engine: GWASCol
             if new_col in possible_ref_col_to_melt:
                 old_col_lst = []
                 for col, _, _ in new_col_to_old_col_lst[new_col]:
-                    old_col_lst.append(col)
-                    if df_with_ref_col is None:
-                        df_with_ref_col = df[[col]]
+                    # NOTE: special case, if col is the same as new_col, then melt will get error
+                    if col == new_col:
+                        old_col_lst.append(col + " ")
                     else:
-                        df_with_ref_col[col] = df[col]
+                        old_col_lst.append(col)
+                    if df_with_ref_col is None:
+                        if col == new_col:
+                            df_with_ref_col = df[[col]].rename({col: col + " "}, axis = 1)
+                        else:
+                            df_with_ref_col = df[[col]]
+                    else:
+                        if col == new_col:
+                            df_with_ref_col[col + " "] = df[col]
+                        else:
+                            df_with_ref_col[col] = df[col]
                 new_col_to_old_col_lst_to_melt[new_col] = old_col_lst.copy()
             else:
                 # make multiple copies with notes

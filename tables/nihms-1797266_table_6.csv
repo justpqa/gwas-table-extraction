@@ -1,4 +1,0 @@
-APOE4 stratification Amish,SNP (chr:pos),SNP (rs),N (CI),N (CU),Hazard Ratio,Hazard Ratio 95% CI,P-value,Gene
-No,17:11183894_G_A,rs146729640,362,"1,160",6.38,3.42 ; 11.90,5.59E-09,SHISA6
-APOE4 carriers,17:11183894_G_A,rs146729640,105,290,2.93,1.16 ; 7.40,2.32E-02,SHISA6
-non- APOE4 carriers,17:11183894_G_A,rs146729640,257,870,8.96,4.25 ; 18.91,8.44E-09,SHISA6

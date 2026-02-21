@@ -163,63 +163,63 @@ class GWASColumnMatchingEngine:
 
         return col_embeddings
     
-    def reranking_with_llm(self, col: str, candidates: List[str]) -> str:
-        """
-        LLM acts as a re-ranker to pick the best match from a list of candidates.
-        """
-        # Format the candidates as a numbered list for the LLM
+#     def reranking_with_llm(self, col: str, candidates: List[str]) -> str:
+#         """
+#         LLM acts as a re-ranker to pick the best match from a list of candidates.
+#         """
+#         # Format the candidates as a numbered list for the LLM
 
-        prompt = f"""Task: Map clinical table headers to GWAS standard ontology, return a single number for the best choice
+#         prompt = f"""Task: Map clinical table headers to GWAS standard ontology, return a single number for the best choice
 
-Header: "p-value: 0.001, 5e-8, 0.43"
-Candidates: 
-    1. P-value: The statistical significance of the association. Keywords: P, P-value, P_adj, FDR. Examples: 5.0E-08, 0.0012, 1.2 x 10^-5, 0.05.
-    2. Effect Size: The magnitude and direction of the association. Keywords: Beta, OR, HR, Estimate. Examples: Beta=0.25, OR=1.45, HR=1.12, Log(OR)=0.37.
-    3. SNP: Variant identifier, or snp idenifier, or chr:pos. Keywords: chr:position, chr:pos, Variant, rsID, RS number, MarkerName, rs. Examples: rs12345, 20:45269867, 19:45411941:T:C, chr19:45411941, rs429358 (APOE ε4).
-Best Match: 1
+# Header: "p-value: 0.001, 5e-8, 0.43"
+# Candidates: 
+#     1. P-value: The statistical significance of the association. Keywords: P, P-value, P_adj, FDR. Examples: 5.0E-08, 0.0012, 1.2 x 10^-5, 0.05.
+#     2. Effect Size: The magnitude and direction of the association. Keywords: Beta, OR, HR, Estimate. Examples: Beta=0.25, OR=1.45, HR=1.12, Log(OR)=0.37.
+#     3. SNP: Variant identifier, or snp idenifier, or chr:pos. Keywords: chr:position, chr:pos, Variant, rsID, RS number, MarkerName, rs. Examples: rs12345, 20:45269867, 19:45411941:T:C, chr19:45411941, rs429358 (APOE ε4).
+# Best Match: 1
 
-Header: "rs_number: rs123, rs456, rs789"
-Candidates: 
-    1. Chr: Genomic chromosome identifier. Keywords: CHR, Chrom, Chromosome. Examples: 1, 19, X, chr19, chrX.
-    2. Position: Genomic coordinate location. Keywords: BP, POS, Base Pair, start, end. Examples: 45411941, 10240500:10248600 (range), build 37.
-    3. SNP: Variant identifier, or snp idenifier, or chr:pos. Keywords: chr:position, chr:pos, Variant, rsID, RS number, MarkerName, rs. Examples: rs12345, 20:45269867, 19:45411941:T:C, chr19:45411941, rs429358 (APOE ε4).
-Best Match: 2
+# Header: "rs_number: rs123, rs456, rs789"
+# Candidates: 
+#     1. Chr: Genomic chromosome identifier. Keywords: CHR, Chrom, Chromosome. Examples: 1, 19, X, chr19, chrX.
+#     2. Position: Genomic coordinate location. Keywords: BP, POS, Base Pair, start, end. Examples: 45411941, 10240500:10248600 (range), build 37.
+#     3. SNP: Variant identifier, or snp idenifier, or chr:pos. Keywords: chr:position, chr:pos, Variant, rsID, RS number, MarkerName, rs. Examples: rs12345, 20:45269867, 19:45411941:T:C, chr19:45411941, rs429358 (APOE ε4).
+# Best Match: 2
 
-Header: "{col}"
-Candidates: 
-    - {candidates[0]}
-    - {candidates[1]}
-    - {candidates[2]}
-Best Match: """
+# Header: "{col}"
+# Candidates: 
+#     - {candidates[0]}
+#     - {candidates[1]}
+#     - {candidates[2]}
+# Best Match: """
 
-        allowed_indices = [str(i+1) for i in range(len(candidates))]
-        allowed_token_ids = [self.llm_model_tokenizer.encode(idx, add_special_tokens=False)[0] for idx in allowed_indices]
+#         allowed_indices = [str(i+1) for i in range(len(candidates))]
+#         allowed_token_ids = [self.llm_model_tokenizer.encode(idx, add_special_tokens=False)[0] for idx in allowed_indices]
         
-        # logit bias to limit tokens that can be output
-        bias_processor = SingleTokenBiasProcessor(allowed_token_ids, 100.0)
-        logits_processor = LogitsProcessorList([bias_processor])
+#         # logit bias to limit tokens that can be output
+#         bias_processor = SingleTokenBiasProcessor(allowed_token_ids, 100.0)
+#         logits_processor = LogitsProcessorList([bias_processor])
 
-        # 4. Generate exactly ONE token
-        inputs = self.llm_model_tokenizer(prompt, return_tensors="pt").to(self.device)
+#         # 4. Generate exactly ONE token
+#         inputs = self.llm_model_tokenizer(prompt, return_tensors="pt").to(self.device)
         
-        with torch.no_grad():
-            output = self.llm_model.generate(
-                **inputs,
-                max_new_tokens=1,      # Force exactly one token
-                logits_processor=logits_processor, # Force it to be one of our numbers
-                pad_token_id=self.llm_model_tokenizer.eos_token_id,
-                do_sample=False        # Greedy decoding for consistency
-            )
+#         with torch.no_grad():
+#             output = self.llm_model.generate(
+#                 **inputs,
+#                 max_new_tokens=1,      # Force exactly one token
+#                 logits_processor=logits_processor, # Force it to be one of our numbers
+#                 pad_token_id=self.llm_model_tokenizer.eos_token_id,
+#                 do_sample=False        # Greedy decoding for consistency
+#             )
 
-        # 5. Extract and Convert to Integer
-        new_token = output[0][-1]
-        predicted_text = self.llm_model_tokenizer.decode(new_token).strip()
+#         # 5. Extract and Convert to Integer
+#         new_token = output[0][-1]
+#         predicted_text = self.llm_model_tokenizer.decode(new_token).strip()
         
-        try:
-            idx = int(predicted_text) - 1 # Convert back to 0-based list index
-            return candidates[idx]
-        except (ValueError, IndexError):
-            return col
+#         try:
+#             idx = int(predicted_text) - 1 # Convert back to 0-based list index
+#             return candidates[idx]
+#         except (ValueError, IndexError):
+#             return col
         
     def match_single_col_to_ref_col(self, col: str) -> Tuple[str, float]:
         """
@@ -273,7 +273,8 @@ Best Match: """
         """
 
         # conduct matching
-        multi_index_pattern = r"^.+\..+$" # need multi index pattern for handling multi index
+        multi_index_pattern_1 = r"^.+\..+$" # need multi index pattern for handling multi index
+        multi_index_pattern_2 = r"^.+\|.+$"
         ref_col_to_col_lst = {}
         for col in df.columns:
 
@@ -282,11 +283,36 @@ Best Match: """
             example_values = df[col].unique().tolist()
             # prompt: {col}: example, need to delete all : first
 
-            if re.search(multi_index_pattern, cleaned_col.strip()):
+            if re.search(multi_index_pattern_1, cleaned_col.strip()):
                 # try to assess each part and see if which one have highest score
                 best_ref_col, best_score = None, 0
                 best_cleaned_sub_col_prompt = None
                 for sub_col in cleaned_col.split("."):
+
+                    # make column prompt for each sub col
+                    cleaned_sub_col_prompt = self.make_col_prompt(sub_col, example_values)
+                    
+                    # matching and compare
+                    ref_col, score = self.match_single_col_to_ref_col(cleaned_sub_col_prompt)
+                    if score > best_score and ref_col != cleaned_sub_col_prompt:
+                        best_ref_col = ref_col
+                        best_score = score
+                        best_cleaned_sub_col_prompt = cleaned_sub_col_prompt
+                
+                # if we have a best one vs not
+                if best_ref_col is not None:
+                    if best_ref_col not in ref_col_to_col_lst:
+                        ref_col_to_col_lst[best_ref_col] = []
+                    ref_col_to_col_lst[best_ref_col].append((col, best_cleaned_sub_col_prompt, score))
+                else:
+                    if col not in ref_col_to_col_lst:
+                        ref_col_to_col_lst[col] = []
+                    ref_col_to_col_lst[col].append((col, best_cleaned_sub_col_prompt, 1))
+            elif re.search(multi_index_pattern_2, cleaned_col.strip()):
+                # try to assess each part and see if which one have highest score
+                best_ref_col, best_score = None, 0
+                best_cleaned_sub_col_prompt = None
+                for sub_col in cleaned_col.split("|"):
 
                     # make column prompt for each sub col
                     cleaned_sub_col_prompt = self.make_col_prompt(sub_col, example_values)

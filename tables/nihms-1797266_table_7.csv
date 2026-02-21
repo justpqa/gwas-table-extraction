@@ -1,4 +1,0 @@
-APOE4 stratification NIA-LOAD,SNP (chr:pos),SNP (rs),N (AD),N (controls),Hazard Ratio,Hazard Ratio 95% CI,P-value,Gene
-No,17:11183894_G_A,rs146729640,"1,785","1,565",1.49,1.06 ; 2.08,0.0217,SHISA6
-APOE4 carriers,17:11183894_G_A,rs146729640,"1,326",572,1.35,0.95 ; 1.93,0.0950,SHISA6
-non- APOE4 carriers,17:11183894_G_A,rs146729640,459,993,1.82,0.96 ; 3.43,0.0658,SHISA6

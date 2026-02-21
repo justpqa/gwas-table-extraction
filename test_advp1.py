@@ -77,79 +77,74 @@ def test_table_name(dir_path):
 
 def test_unique_snp(dir_path):
     # Test if we have the right set of snp
+    failed_table = [] # store (table, error)
     for file_name in os.listdir(dir_path):
         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
-        assert "SNP" in curr_df.columns, f"Table {file_name} does not have SNP column"
-        curr_unique_snp = set(curr_df["SNP"].unique())
-        test_unique_snp = set(test_df["SNP"].unique())
-        assert curr_unique_snp == test_unique_snp
+        if "SNP" not in curr_df.columns:
+            failed_table.append((file_name, f"Table {file_name} does not have SNP column"))
+        else:
+            curr_unique_snp = set(curr_df["SNP"].unique())
+            test_unique_snp = set(test_df["SNP"].unique())
+            if curr_unique_snp != test_unique_snp:
+                failed_table.append((file_name, f"Table {file_name} do not have the right SNP"))
+    assert len(failed_table) == 0, f"Failed test_unique_snp on {len(failed_table)}, detail: {failed_table}"
 
 def test_num_record_snp(dir_path):
     # test if we have the right number of row for each snp
+    failed_table = []
     for file_name in os.listdir(dir_path):
         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
-        assert "SNP" in curr_df.columns, f"Table {file_name} does not have SNP column"
-        test_unique_snp = test_df["SNP"].unique()
-        for snp in test_unique_snp:
-            curr_snp_df = curr_df[curr_df["SNP"] == snp]
-            test_snp_df = test_df[test_df["SNP"] == snp]
-            assert curr_snp_df.shape[0] == test_snp_df.shape[0], f"Table {file_name} does not have the right number of row for SNP {snp}"
+        if "SNP" not in curr_df.columns:
+            failed_table.append((file_name, f"Table {file_name} does not have SNP column"))
+        else:
+            test_unique_snp = test_df["SNP"].unique()
+            for snp in test_unique_snp:
+                curr_snp_df = curr_df[curr_df["SNP"] == snp]
+                test_snp_df = test_df[test_df["SNP"] == snp]
+                if curr_snp_df.shape[0] != test_snp_df.shape[0]:
+                    failed_table.append((file_name, f"Table {file_name} does not have the right number of row for SNP {snp}"))
+                    break
+    assert len(failed_table) == 0, f"Failed test_num_record_snp on {len(failed_table)} tables, detail: {failed_table}"
+
+def get_failed_table_for_test(dir_path, col):
+    failed_table = []
+    for file_name in os.listdir(dir_path):
+        curr_df, test_df = import_table_and_test_table(dir_path, file_name)
+        if "SNP" not in curr_df.columns:
+            failed_table.append((file_name, f"Table {file_name} does not have SNP column"))
+        else:
+            if col not in curr_df.columns:
+                failed_table.append((file_name, f"Table {file_name} does not have {col} column"))
+            else:
+                test_unique_snp = test_df["SNP"].unique()
+                for snp in test_unique_snp:
+                    curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", col]].sort_values(col).reset_index().drop("index", axis = 1)
+                    curr_snp_col = curr_snp_df[col]
+                    test_snp_df = test_df[test_df["SNP"] == snp][["SNP", col]].sort_values(col).reset_index().drop("index", axis = 1)
+                    test_snp_col = test_snp_df[col]
+                    if not (curr_snp_col == test_snp_col).all():
+                        failed_table.append((file_name, f"Table {file_name} does not contain right set of {col} for SNP {snp}"))
+                        break
+    return failed_table
 
 def test_snp_ra(dir_path):
-    # test for each table and for each snp we have right set of RA
-    for file_name in os.listdir(dir_path):
-        curr_df, test_df = import_table_and_test_table(dir_path, file_name)
-        assert "SNP" in curr_df.columns, f"Table {file_name} does not have SNP column"
-        assert "RA" in curr_df.columns, f"Table {file_name} does not have RA column"
-        test_unique_snp = test_df["SNP"].unique()
-        for snp in test_unique_snp:
-            curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", "RA"]].sort_values("RA").reset_index().drop("index", axis = 1)
-            curr_snp_ra = curr_snp_df["RA"]
-            test_snp_df = test_df[test_df["SNP"] == snp][["SNP", "RA"]].sort_values("RA").reset_index().drop("index", axis = 1)
-            test_snp_ra = test_snp_df["RA"]
-            assert (curr_snp_ra == test_snp_ra).all(), f"Table {file_name} does not contain right set of RA for SNP {snp}"
+    failed_table = get_failed_table_for_test(dir_path, "RA")
+    assert len(failed_table) == 0, f"Failed test_snp_ra on {len(failed_table)} tables, detail: {failed_table}"
 
 def test_snp_chr(dir_path):
     # test for each table and for each snp we have right set of Chr
-    for file_name in os.listdir(dir_path):
-        curr_df, test_df = import_table_and_test_table(dir_path, file_name)
-        assert "SNP" in curr_df.columns, f"Table {file_name} does not have SNP column"
-        assert "Chr" in curr_df.columns, f"Table {file_name} does not have Chr column"
-        test_unique_snp = test_df["SNP"].unique()
-        for snp in test_unique_snp:
-            curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", "Chr"]].sort_values("Chr").reset_index().drop("index", axis = 1)
-            curr_snp_chr = curr_snp_df["Chr"]
-            test_snp_df = test_df[test_df["SNP"] == snp][["SNP", "Chr"]].sort_values("Chr").reset_index().drop("index", axis = 1)
-            test_snp_chr = test_snp_df["Chr"]
-            assert (curr_snp_chr == test_snp_chr).all(), f"Table {file_name} does not contain right set of RA for SNP {snp}"     
+    failed_table = get_failed_table_for_test(dir_path, "Chr")
+    assert len(failed_table) == 0, f"Failed test_snp_chr on {len(failed_table)} tables, detail: {failed_table}" 
 
 def test_snp_pos(dir_path):
     # test for each table and for each snp we have right set of Pos
-    for file_name in os.listdir(dir_path):
-        curr_df, test_df = import_table_and_test_table(dir_path, file_name)
-        assert "SNP" in curr_df.columns, f"Table {file_name} does not have SNP column"
-        assert "Pos" in curr_df.columns, f"Table {file_name} does not have Pos column"
-        test_unique_snp = test_df["SNP"].unique()
-        for snp in test_unique_snp:
-            curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", "Pos"]].sort_values("Pos").reset_index().drop("index", axis = 1)
-            curr_snp_pos = curr_snp_df["Pos"]
-            test_snp_df = test_df[test_df["SNP"] == snp][["SNP", "Pos"]].sort_values("Pos").reset_index().drop("index", axis = 1)
-            test_snp_pos = test_snp_df["Pos"]
-            assert (curr_snp_pos == test_snp_pos).all(), f"Table {file_name} does not contain right set of position for SNP {snp}"
+    failed_table = get_failed_table_for_test(dir_path, "Pos")
+    assert len(failed_table) == 0, f"Failed test_snp_pos on {len(failed_table)} tables, detail: {failed_table}" 
 
 def test_snp_effect(dir_path):
     # test for each table and for each snp we have right set of effect
-    for file_name in os.listdir(dir_path):
-        curr_df, test_df = import_table_and_test_table(dir_path, file_name)
-        assert "SNP" in curr_df.columns, f"Table {file_name} does not have SNP column"
-        assert "Effect" in curr_df.columns, f"Table {file_name} does not have Effect column"
-        test_unique_snp = test_df["SNP"].unique()
-        for snp in test_unique_snp:
-            curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", "Effect"]].sort_values("Effect").reset_index().drop("index", axis = 1)
-            curr_snp_effect = curr_snp_df["Effect"]
-            test_snp_df = test_df[test_df["SNP"] == snp][["SNP", "Effect"]].sort_values("Effect").reset_index().drop("index", axis = 1)
-            test_snp_effect = test_snp_df["Effect"]
-            assert (curr_snp_effect == test_snp_effect).all(), f"Table {file_name} does not contain right set of effect for SNP {snp}"
+    failed_table = get_failed_table_for_test(dir_path, "Effect")
+    assert len(failed_table) == 0, f"Failed test_snp_effect on {len(failed_table)} tables, detail: {failed_table}" 
 
 # def test_snp_effect_str(dir_path):
 #     # test for each table and for each snp we have right set of effect (given in str form)
@@ -165,17 +160,9 @@ def test_snp_effect(dir_path):
 
 def test_snp_pvalue(dir_path):
     # test for each table and for each snp we have right set of p-value (numerically)
-    for file_name in os.listdir(dir_path):
-        curr_df, test_df = import_table_and_test_table(dir_path, file_name)
-        assert "SNP" in curr_df.columns, f"Table {file_name} does not have SNP column"
-        assert "P-value" in curr_df.columns, f"Table {file_name} does not have P-value column"
-        test_unique_snp = test_df["SNP"].unique()
-        for snp in test_unique_snp:
-            curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", "P-value"]].sort_values("P-value").reset_index().drop("index", axis = 1)
-            curr_snp_pvalue = curr_snp_df["P-value"]
-            test_snp_df = test_df[test_df["SNP"] == snp][["SNP", "P-value"]].sort_values("P-value").reset_index().drop("index", axis = 1)
-            test_snp_pvalue = test_snp_df["P-value"]
-            assert (curr_snp_pvalue == test_snp_pvalue).all(), f"Table {file_name} does not contain right set of p-value for SNP {snp}"
+    failed_table = get_failed_table_for_test(dir_path, "P-value")
+    assert len(failed_table) == 0, f"Failed test_snp_pvalue on {len(failed_table)} tables, detail: {failed_table}" 
+
 
 # def test_snp_pvalue_str(dir_path):
 #     # test for each table and for each snp we have right set of p-value (str)
@@ -191,31 +178,13 @@ def test_snp_pvalue(dir_path):
 
 def test_snp_cohort(dir_path):
     # test for each table and for each snp we have right set of cohort
-    for file_name in os.listdir(dir_path):
-        curr_df, test_df = import_table_and_test_table(dir_path, file_name)
-        assert "SNP" in curr_df.columns, f"Table {file_name} does not have SNP column"
-        assert "Cohort" in curr_df.columns, f"Table {file_name} does not have Cohort column"
-        test_unique_snp = test_df["SNP"].unique()
-        for snp in test_unique_snp:
-            curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", "Cohort"]].sort_values("Cohort").reset_index().drop("index", axis = 1)
-            curr_snp_cohort = curr_snp_df["Cohort"]
-            test_snp_df = test_df[test_df["SNP"] == snp][["SNP", "Cohort"]].sort_values("Cohort").reset_index().drop("index", axis = 1)
-            test_snp_cohort = test_snp_df["Cohort"]
-            assert (curr_snp_cohort == test_snp_cohort).all(), f"Table {file_name} does not contain right set of cohort for SNP {snp}"
+    failed_table = get_failed_table_for_test(dir_path, "Cohort")
+    assert len(failed_table) == 0, f"Failed test_snp_cohort on {len(failed_table)} tables, detail: {failed_table}" 
 
 def test_snp_population(dir_path):
     # test for each table and for each snp we have right set of population
-    for file_name in os.listdir(dir_path):
-        curr_df, test_df = import_table_and_test_table(dir_path, file_name)
-        assert "SNP" in curr_df.columns, f"Table {file_name} does not have SNP column"
-        assert "Population" in curr_df.columns, f"Table {file_name} does not have Population column"
-        test_unique_snp = test_df["SNP"].unique()
-        for snp in test_unique_snp:
-            curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", "Population"]].sort_values("Population").reset_index().drop("index", axis = 1)
-            curr_snp_population = curr_snp_df["Population"]
-            test_snp_df = test_df[test_df["SNP"] == snp][["SNP", "Population"]].sort_values("Population").reset_index().drop("index", axis = 1)
-            test_snp_population = test_snp_df["Population"]
-            assert (curr_snp_population == test_snp_population).all(), f"Table {file_name} does not contain right set of population for SNP {snp}"
+    failed_table = get_failed_table_for_test(dir_path, "Population")
+    assert len(failed_table) == 0, f"Failed test_snp_population on {len(failed_table)} tables, detail: {failed_table}" 
 
 # if __name__ == "__main__":
     # create_test_tables_from_advp()

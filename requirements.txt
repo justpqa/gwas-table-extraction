@@ -9,7 +9,7 @@ ipykernel
 requests
 # rich
 # xmltodict
-docling
+docling==2.73.1 # must be this version since 2.74.0 extract some uri and got error
 docling[vlm]
 sentence-transformers
 openpyxl
@@ -20,3 +20,6 @@ accelerate
 bitsandbytes
 mlx-lm
 pytest
+openpyxl
+xlrd
+beautifulsoup4
