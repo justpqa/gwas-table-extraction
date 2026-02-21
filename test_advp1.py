@@ -1,9 +1,11 @@
 import os
 import re
 import pandas as pd
+import json
 
 # Script for testing, require a directory of resulting table, where each test case name is {pmid}_{pmcid}.csv
 # run by pytest test_advp1.py
+# Test log is in test_logs with detail of error for each table
 
 # Paper tested
 test_papers_info = [
@@ -86,8 +88,15 @@ def test_unique_snp(dir_path):
             curr_unique_snp = set(curr_df["SNP"].unique())
             test_unique_snp = set(test_df["SNP"].unique())
             if curr_unique_snp != test_unique_snp:
-                failed_table.append((file_name, f"Table {file_name} do not have the right SNP"))
-    assert len(failed_table) == 0, f"Failed test_unique_snp on {len(failed_table)}, detail: {failed_table}"
+                failed_table.append((file_name, f"Table {file_name} do not have the right SNP: {curr_unique_snp} vs {test_unique_snp}"))
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        print(f"Failed test_unique_snp on {len(failed_table)}")
+        with open("test_logs/test_unique_snp.json", "w") as f:
+            json.dump(failed_table, f, indent=2)
+        raise
+
 
 def test_num_record_snp(dir_path):
     # test if we have the right number of row for each snp
@@ -104,7 +113,12 @@ def test_num_record_snp(dir_path):
                 if curr_snp_df.shape[0] != test_snp_df.shape[0]:
                     failed_table.append((file_name, f"Table {file_name} does not have the right number of row for SNP {snp}"))
                     break
-    assert len(failed_table) == 0, f"Failed test_num_record_snp on {len(failed_table)} tables, detail: {failed_table}"
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_num_record_snp.json", "w") as f:
+            json.dump(failed_table, f, indent=2)
+        raise AssertionError(f"Failed test_num_record_snp on {len(failed_table)} tables")
 
 def get_failed_table_for_test(dir_path, col):
     failed_table = []
@@ -122,29 +136,53 @@ def get_failed_table_for_test(dir_path, col):
                     curr_snp_col = curr_snp_df[col]
                     test_snp_df = test_df[test_df["SNP"] == snp][["SNP", col]].sort_values(col).reset_index().drop("index", axis = 1)
                     test_snp_col = test_snp_df[col]
-                    if not (curr_snp_col == test_snp_col).all():
+                    try:
+                        if not (curr_snp_col == test_snp_col).all():
+                            failed_table.append((file_name, f"Table {file_name} does not contain right set of {col} for SNP {snp}"))
+                            break
+                    except:
                         failed_table.append((file_name, f"Table {file_name} does not contain right set of {col} for SNP {snp}"))
                         break
     return failed_table
 
 def test_snp_ra(dir_path):
     failed_table = get_failed_table_for_test(dir_path, "RA")
-    assert len(failed_table) == 0, f"Failed test_snp_ra on {len(failed_table)} tables, detail: {failed_table}"
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_ra.json", "w") as f:
+            json.dump(failed_table, f, indent=2)
+        raise AssertionError(f"Failed test_snp_ra on {len(failed_table)} tables")
 
 def test_snp_chr(dir_path):
     # test for each table and for each snp we have right set of Chr
     failed_table = get_failed_table_for_test(dir_path, "Chr")
-    assert len(failed_table) == 0, f"Failed test_snp_chr on {len(failed_table)} tables, detail: {failed_table}" 
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_chr.json", "w") as f:
+            json.dump(failed_table, f, indent=2)
+        raise AssertionError(f"Failed test_snp_chr on {len(failed_table)} tables")
 
 def test_snp_pos(dir_path):
     # test for each table and for each snp we have right set of Pos
     failed_table = get_failed_table_for_test(dir_path, "Pos")
-    assert len(failed_table) == 0, f"Failed test_snp_pos on {len(failed_table)} tables, detail: {failed_table}" 
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_pos.json", "w") as f:
+            json.dump(failed_table, f, indent=2)
+        raise AssertionError(f"Failed test_snp_pos on {len(failed_table)} tables")
 
 def test_snp_effect(dir_path):
     # test for each table and for each snp we have right set of effect
     failed_table = get_failed_table_for_test(dir_path, "Effect")
-    assert len(failed_table) == 0, f"Failed test_snp_effect on {len(failed_table)} tables, detail: {failed_table}" 
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_effect.json", "w") as f:
+            json.dump(failed_table, f, indent=2)
+        raise AssertionError(f"Failed test_snp_effect on {len(failed_table)} tables")
 
 # def test_snp_effect_str(dir_path):
 #     # test for each table and for each snp we have right set of effect (given in str form)
@@ -161,8 +199,12 @@ def test_snp_effect(dir_path):
 def test_snp_pvalue(dir_path):
     # test for each table and for each snp we have right set of p-value (numerically)
     failed_table = get_failed_table_for_test(dir_path, "P-value")
-    assert len(failed_table) == 0, f"Failed test_snp_pvalue on {len(failed_table)} tables, detail: {failed_table}" 
-
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_pvalue.json", "w") as f:
+            json.dump(failed_table, f, indent=2)
+        raise AssertionError(f"Failed test_snp_pvalue on {len(failed_table)} tables")
 
 # def test_snp_pvalue_str(dir_path):
 #     # test for each table and for each snp we have right set of p-value (str)
@@ -179,12 +221,22 @@ def test_snp_pvalue(dir_path):
 def test_snp_cohort(dir_path):
     # test for each table and for each snp we have right set of cohort
     failed_table = get_failed_table_for_test(dir_path, "Cohort")
-    assert len(failed_table) == 0, f"Failed test_snp_cohort on {len(failed_table)} tables, detail: {failed_table}" 
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_cohort.json", "w") as f:
+            json.dump(failed_table, f, indent=2) 
+        raise AssertionError(f"Failed test_snp_cohort on {len(failed_table)} tables")
 
 def test_snp_population(dir_path):
     # test for each table and for each snp we have right set of population
     failed_table = get_failed_table_for_test(dir_path, "Population")
-    assert len(failed_table) == 0, f"Failed test_snp_population on {len(failed_table)} tables, detail: {failed_table}" 
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_population.json", "w") as f:
+            json.dump(failed_table, f, indent=2)
+        raise AssertionError(f"Failed test_snp_population on {len(failed_table)} tables")
 
 # if __name__ == "__main__":
     # create_test_tables_from_advp()
