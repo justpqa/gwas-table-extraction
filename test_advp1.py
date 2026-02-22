@@ -88,7 +88,7 @@ def test_unique_snp(dir_path):
             curr_unique_snp = set(curr_df["SNP"].unique())
             test_unique_snp = set(test_df["SNP"].unique())
             if curr_unique_snp != test_unique_snp:
-                failed_table.append((file_name, f"Table {file_name} do not have the right SNP: {curr_unique_snp} vs {test_unique_snp}"))
+                failed_table.append((file_name, f"Table {file_name} do not have the right SNP, differ at: {curr_unique_snp - test_unique_snp} vs {test_unique_snp - curr_unique_snp}"))
     try:
         assert len(failed_table) == 0
     except AssertionError:

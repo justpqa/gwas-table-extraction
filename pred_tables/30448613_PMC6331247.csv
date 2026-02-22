@@ -1,4 +1,52 @@
 SNP,Chr,Position,RA,AF,P-value,Effect,Population,Cohort,P-value notes
+rs4844600,,,,,8.49 ×10−7,,,,IGAP SNP | ADGC a | P-value
+rs2296160,,,,,,,,,IGAP SNP | ADGC a | P-value
+rs9270303,,,,,2.66×10−4,,,,IGAP SNP | ADGC a | P-value
+rs2405442,,,,,1.41×10−3,,,,IGAP SNP | ADGC a | P-value
+rs1859788,,,,,,,,,IGAP SNP | ADGC a | P-value
+rs7982,,,,,1.02×10−3,,,,IGAP SNP | ADGC a | P-value
+rs2293576,,,,,0.054,,,,IGAP SNP | ADGC a | P-value
+rs12453,,,,,7.22×10−9,,,,IGAP SNP | ADGC a | P-value
+rs3752246,,,,,1.39×10−3,,,,IGAP SNP | ADGC a | P-value
+rs12459419,,,,,4.49 ×10−4,,,,IGAP SNP | ADGC a | P-value
+rs4844600,,,,,4.22×10−7,,,,Exonic SNP | ADGC a | P-value
+rs2296160,,,,,4.24×10−8,,,,Exonic SNP | ADGC a | P-value
+rs9270303,,,,,-,,,,Exonic SNP | ADGC a | P-value
+rs2405442,,,,,2.12×10−3,,,,Exonic SNP | ADGC a | P-value
+rs1859788,,,,,5.62×10−3,,,,Exonic SNP | ADGC a | P-value
+rs7982,,,,,3.64×10−4,,,,Exonic SNP | ADGC a | P-value
+rs2293576,,,,,0.24,,,,Exonic SNP | ADGC a | P-value
+rs12453,,,,,1.34×10−9,,,,Exonic SNP | ADGC a | P-value
+rs3752246,,,,,2.70×10−3,,,,Exonic SNP | ADGC a | P-value
+rs12459419,,,,,4.02×10−4,,,,Exonic SNP | ADGC a | P-value
+rs4844600,,,,,-,,,,Exonic SNP | ADSP b | P-value
+rs2296160,,,,,8.56×10−3,,,,Exonic SNP | ADSP b | P-value
+rs9270303,,,,,2.50×10−4,,,,Exonic SNP | ADSP b | P-value
+rs2405442,,,,,1.09×10−3,,,,Exonic SNP | ADSP b | P-value
+rs1859788,,,,,1.12×10−3,,,,Exonic SNP | ADSP b | P-value
+rs7982,,,,,1.62×10−3,,,,Exonic SNP | ADSP b | P-value
+rs2293576,,,,,0.040,,,,Exonic SNP | ADSP b | P-value
+rs12453,,,,,3.60×10−4,,,,Exonic SNP | ADSP b | P-value
+rs3752246,,,,,9.89×10−5,,,,Exonic SNP | ADSP b | P-value
+rs12459419,,,,,0.090,,,,Exonic SNP | ADSP b | P-value
+rs6733839,,11719631_s_at,,,1.51 × 10−7,0.071,,,eQTL association | P-valueb
+rs111418223,,11730933_a_at,,,1.83×10−11,0.120,,,eQTL association | P-valueb
+rs1476679,,11722909_a_at,,,1.53×10−17,0.177,,,eQTL association | P-valueb
+rs11771145,,11755327 s at,,,3.68×10−6,0.109,,,eQTL association | P-valueb
+rs28834970,,11720981_a_at,,,6.86×10−18,0.114,,,eQTL association | P-valueb
+rs10838725,,11725151_at,,,1.07×10−7,0.140,,,eQTL association | P-valueb
+rs983392,,11716846_a_at,,,2.34×10−12,−0.082,,,eQTL association | P-valueb
+rs6733839,,11719631_s_at,,,0.28,0.071,,,AD association | P-value c
+rs111418223,,11730933_a_at,,,0.91,0.120,,,AD association | P-value c
+rs1476679,,11722909_a_at,,,0.53,0.177,,,AD association | P-value c
+rs11771145,,11755327 s at,,,0.40,0.109,,,AD association | P-value c
+rs28834970,,11720981_a_at,,,0.40,0.114,,,AD association | P-value c
+rs10838725,,11725151_at,,,8.13×10−5,0.140,,,AD association | P-value c
+rs983392,,11716846_a_at,,,4.97×10−3,−0.082,,,AD association | P-value c
+rs8093731,,ILMN_23 80779,,,1.36×10−8,0.77,,,
+rs4147929,,t3862068,,,3.94×10−6,0.259,,,
+rs10948363,,t2969159,,,1.64×10−5,0.343,,,
+rs3865444,,t3822216,,,1.96×10−5,-0.255,,,
 ,,Identified in NABEC,,,,,,,EC | P-value
 ,,DLGAP1,,,,,,,EC | P-value
 ,,206489_s_at,,,5.68× 10-3,−0.318,,,EC | P-value
@@ -67,51 +115,3 @@ SNP,Chr,Position,RA,AF,P-value,Effect,Population,Cohort,P-value notes
 ,,1564002_a_at,,,0.41,0.083,,,TCTX | P-value
 ,,IER2,,,,,,,TCTX | P-value
 ,,202081 at,,,4.48×10−5,0.949,,,TCTX | P-value
-rs8093731,,ILMN_23 80779,,,1.36×10−8,0.77,,,
-rs4147929,,t3862068,,,3.94×10−6,0.259,,,
-rs10948363,,t2969159,,,1.64×10−5,0.343,,,
-rs3865444,,t3822216,,,1.96×10−5,-0.255,,,
-rs6733839,,11719631_s_at,,,1.51 × 10−7,0.071,,,eQTL association | P-valueb
-rs111418223,,11730933_a_at,,,1.83×10−11,0.120,,,eQTL association | P-valueb
-rs1476679,,11722909_a_at,,,1.53×10−17,0.177,,,eQTL association | P-valueb
-rs11771145,,11755327 s at,,,3.68×10−6,0.109,,,eQTL association | P-valueb
-rs28834970,,11720981_a_at,,,6.86×10−18,0.114,,,eQTL association | P-valueb
-rs10838725,,11725151_at,,,1.07×10−7,0.140,,,eQTL association | P-valueb
-rs983392,,11716846_a_at,,,2.34×10−12,−0.082,,,eQTL association | P-valueb
-rs6733839,,11719631_s_at,,,0.28,0.071,,,AD association | P-value c
-rs111418223,,11730933_a_at,,,0.91,0.120,,,AD association | P-value c
-rs1476679,,11722909_a_at,,,0.53,0.177,,,AD association | P-value c
-rs11771145,,11755327 s at,,,0.40,0.109,,,AD association | P-value c
-rs28834970,,11720981_a_at,,,0.40,0.114,,,AD association | P-value c
-rs10838725,,11725151_at,,,8.13×10−5,0.140,,,AD association | P-value c
-rs983392,,11716846_a_at,,,4.97×10−3,−0.082,,,AD association | P-value c
-rs4844600,,,,,8.49 ×10−7,,,,IGAP SNP | ADGC a | P-value
-rs2296160,,,,,,,,,IGAP SNP | ADGC a | P-value
-rs9270303,,,,,2.66×10−4,,,,IGAP SNP | ADGC a | P-value
-rs2405442,,,,,1.41×10−3,,,,IGAP SNP | ADGC a | P-value
-rs1859788,,,,,,,,,IGAP SNP | ADGC a | P-value
-rs7982,,,,,1.02×10−3,,,,IGAP SNP | ADGC a | P-value
-rs2293576,,,,,0.054,,,,IGAP SNP | ADGC a | P-value
-rs12453,,,,,7.22×10−9,,,,IGAP SNP | ADGC a | P-value
-rs3752246,,,,,1.39×10−3,,,,IGAP SNP | ADGC a | P-value
-rs12459419,,,,,4.49 ×10−4,,,,IGAP SNP | ADGC a | P-value
-rs4844600,,,,,4.22×10−7,,,,Exonic SNP | ADGC a | P-value
-rs2296160,,,,,4.24×10−8,,,,Exonic SNP | ADGC a | P-value
-rs9270303,,,,,-,,,,Exonic SNP | ADGC a | P-value
-rs2405442,,,,,2.12×10−3,,,,Exonic SNP | ADGC a | P-value
-rs1859788,,,,,5.62×10−3,,,,Exonic SNP | ADGC a | P-value
-rs7982,,,,,3.64×10−4,,,,Exonic SNP | ADGC a | P-value
-rs2293576,,,,,0.24,,,,Exonic SNP | ADGC a | P-value
-rs12453,,,,,1.34×10−9,,,,Exonic SNP | ADGC a | P-value
-rs3752246,,,,,2.70×10−3,,,,Exonic SNP | ADGC a | P-value
-rs12459419,,,,,4.02×10−4,,,,Exonic SNP | ADGC a | P-value
-rs4844600,,,,,-,,,,Exonic SNP | ADSP b | P-value
-rs2296160,,,,,8.56×10−3,,,,Exonic SNP | ADSP b | P-value
-rs9270303,,,,,2.50×10−4,,,,Exonic SNP | ADSP b | P-value
-rs2405442,,,,,1.09×10−3,,,,Exonic SNP | ADSP b | P-value
-rs1859788,,,,,1.12×10−3,,,,Exonic SNP | ADSP b | P-value
-rs7982,,,,,1.62×10−3,,,,Exonic SNP | ADSP b | P-value
-rs2293576,,,,,0.040,,,,Exonic SNP | ADSP b | P-value
-rs12453,,,,,3.60×10−4,,,,Exonic SNP | ADSP b | P-value
-rs3752246,,,,,9.89×10−5,,,,Exonic SNP | ADSP b | P-value
-rs12459419,,,,,0.090,,,,Exonic SNP | ADSP b | P-value
