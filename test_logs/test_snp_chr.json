@@ -12,24 +12,12 @@
     "Table 30805717_PMC7193309.csv does not contain right set of Chr for SNP rs10501320"
   ],
   [
-    "30979435_PMC6783343.csv",
-    "Table 30979435_PMC6783343.csv does not contain right set of Chr for SNP rs12378268"
-  ],
-  [
     "31497858_PMC6736148.csv",
     "Table 31497858_PMC6736148.csv does not contain right set of Chr for SNP rs34331204"
   ],
   [
-    "29107063_PMC5920782.csv",
-    "Table 29107063_PMC5920782.csv does not contain right set of Chr for SNP rs12721046"
-  ],
-  [
     "30636644_PMC6330399.csv",
     "Table 30636644_PMC6330399.csv does not contain right set of Chr for SNP rs10111328"
-  ],
-  [
-    "29274321_PMC5938137.csv",
-    "Table 29274321_PMC5938137.csv does not contain right set of Chr for SNP rs10775009"
   ],
   [
     "31055733_PMC6544706.csv",
@@ -49,7 +37,7 @@
   ],
   [
     "27899424_PMC5237405.csv",
-    "Table 27899424_PMC5237405.csv does not contain right set of Chr for SNP rs10784359"
+    "Table 27899424_PMC5237405.csv does not contain right set of Chr for SNP rs1358071"
   ],
   [
     "29752348_PMC5976227.csv",
@@ -57,6 +45,6 @@
   ],
   [
     "30820047_PMC6463297.csv",
-    "Table 30820047_PMC6463297.csv does not contain right set of Chr for SNP rs10808026"
+    "Table 30820047_PMC6463297.csv does not contain right set of Chr for SNP rs7920721"
   ]
 ]

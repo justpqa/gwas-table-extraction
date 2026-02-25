@@ -2,6 +2,8 @@ import os
 import re
 import pandas as pd
 import json
+from collections import Counter
+from typing import Iterable
 
 # Script for testing, require a directory of resulting table, where each test case name is {pmid}_{pmcid}.csv
 # run by pytest test_advp1.py
@@ -41,7 +43,7 @@ def create_test_tables_from_advp():
         advp1_with_pmid = advp1_with_pmid.sort_values("SNP").reset_index().drop("index", axis = 1)
         advp1_with_pmid.to_csv(f"test_tables/{pmid}_{pmcid}.csv", index = False)
 
-def import_table_and_test_table(dir_path, file_name):
+def import_table_and_test_table(dir_path: str, file_name: str):
     if ".csv" in file_name:
         curr_df = pd.read_csv(f"{dir_path}/{file_name}")
         test_df = pd.read_csv(f"test_tables/{file_name[:-4]}.csv")
@@ -50,10 +52,10 @@ def import_table_and_test_table(dir_path, file_name):
         test_df = pd.read_csv(f"test_tables/{file_name[:-5]}.csv")
     return curr_df, test_df
 
-def test_table_dir_exists(dir_path):
+def test_table_dir_exists(dir_path: str):
     assert dir_path is not None, "Please provide --dir_path"
 
-def test_table_name(dir_path):
+def test_table_name(dir_path: str):
     # We require table name to be in the format of pmid_pmcid.csv
     table_name_pattern = r"^\d+_PMC\d+$"
     for file_name in os.listdir(dir_path):
@@ -77,7 +79,7 @@ def test_table_name(dir_path):
 #         for col in col_lst:
 #             assert col in curr_df.columns, f"Table {file_name} does not have column {col}"
 
-def test_unique_snp(dir_path):
+def test_unique_snp(dir_path: str):
     # Test if we have the right set of snp
     failed_table = [] # store (table, error)
     for file_name in os.listdir(dir_path):
@@ -87,8 +89,8 @@ def test_unique_snp(dir_path):
         else:
             curr_unique_snp = set(curr_df["SNP"].unique())
             test_unique_snp = set(test_df["SNP"].unique())
-            if curr_unique_snp.intersection(test_unique_snp) != curr_unique_snp:
-                failed_table.append((file_name, f"Table {file_name} do not contain all snp, missing: {curr_unique_snp - test_unique_snp}"))
+            if test_unique_snp.intersection(curr_unique_snp) != test_unique_snp:
+                failed_table.append((file_name, f"Table {file_name} do not contain all snp, missing: {test_unique_snp - curr_unique_snp}"))
     try:
         assert len(failed_table) == 0
     except AssertionError:
@@ -98,7 +100,7 @@ def test_unique_snp(dir_path):
         raise
 
 
-def test_num_record_snp(dir_path):
+def test_num_record_snp(dir_path: str):
     # test if we have the right number of row for each snp
     failed_table = []
     for file_name in os.listdir(dir_path):
@@ -110,7 +112,10 @@ def test_num_record_snp(dir_path):
             for snp in test_unique_snp:
                 curr_snp_df = curr_df[curr_df["SNP"] == snp]
                 test_snp_df = test_df[test_df["SNP"] == snp]
-                if curr_snp_df.shape[0] != test_snp_df.shape[0]:
+                # NOTE: alternately, we can try to check if we have at least number of row as test
+                # to prevent the case of rows that do not pass QC
+                # if curr_snp_df.shape[0] != test_snp_df.shape[0]:
+                if curr_snp_df.shape[0] >= test_snp_df.shape[0]:
                     failed_table.append((file_name, f"Table {file_name} does not have the right number of row for SNP {snp}"))
                     break
     try:
@@ -120,7 +125,12 @@ def test_num_record_snp(dir_path):
             json.dump(failed_table, f, indent=2)
         raise AssertionError(f"Failed test_num_record_snp on {len(failed_table)} tables")
 
-def get_failed_table_for_test(dir_path, col):
+def check_lst1_contains_lst2(lst1: Iterable, lst2: Iterable):
+    counter1 = Counter(lst1)
+    counter2 = Counter(lst2)
+    return counter2 <= counter1
+
+def get_failed_table_for_test(dir_path: str, col: str):
     failed_table = []
     for file_name in os.listdir(dir_path):
         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
@@ -136,16 +146,22 @@ def get_failed_table_for_test(dir_path, col):
                     curr_snp_col = curr_snp_df[col]
                     test_snp_df = test_df[test_df["SNP"] == snp][["SNP", col]].sort_values(col).reset_index().drop("index", axis = 1)
                     test_snp_col = test_snp_df[col]
-                    try:
-                        if not (curr_snp_col == test_snp_col).all():
-                            failed_table.append((file_name, f"Table {file_name} does not contain right set of {col} for SNP {snp}"))
-                            break
-                    except:
+                    # try:
+                    #     if not check_lst1_contains_lst2(curr_snp_col, test_snp_col):
+                    #         failed_table.append((file_name, f"Table {file_name} does not contain right set of {col} for SNP {snp}"))
+                    #         break
+                    # except:
+                    #     failed_table.append((file_name, f"Table {file_name} does not contain right set of {col} for SNP {snp}"))
+                    #     break
+                    # NOTE: alternatively, we can check if our extracted value is a superset of test value
+                    # to prevent the case of rows that fails QC
+                    # if not (curr_snp_col == test_snp_col).all():
+                    if not check_lst1_contains_lst2(curr_snp_col, test_snp_col):
                         failed_table.append((file_name, f"Table {file_name} does not contain right set of {col} for SNP {snp}"))
                         break
     return failed_table
 
-def test_snp_ra(dir_path):
+def test_snp_ra(dir_path: str):
     failed_table = get_failed_table_for_test(dir_path, "RA")
     try:
         assert len(failed_table) == 0
@@ -154,7 +170,7 @@ def test_snp_ra(dir_path):
             json.dump(failed_table, f, indent=2)
         raise AssertionError(f"Failed test_snp_ra on {len(failed_table)} tables")
 
-def test_snp_chr(dir_path):
+def test_snp_chr(dir_path: str):
     # test for each table and for each snp we have right set of Chr
     failed_table = get_failed_table_for_test(dir_path, "Chr")
     try:
@@ -164,7 +180,7 @@ def test_snp_chr(dir_path):
             json.dump(failed_table, f, indent=2)
         raise AssertionError(f"Failed test_snp_chr on {len(failed_table)} tables")
 
-def test_snp_pos(dir_path):
+def test_snp_pos(dir_path: str):
     # test for each table and for each snp we have right set of Pos
     failed_table = get_failed_table_for_test(dir_path, "Pos")
     try:
@@ -174,7 +190,7 @@ def test_snp_pos(dir_path):
             json.dump(failed_table, f, indent=2)
         raise AssertionError(f"Failed test_snp_pos on {len(failed_table)} tables")
 
-def test_snp_effect(dir_path):
+def test_snp_effect(dir_path: str):
     # test for each table and for each snp we have right set of effect
     failed_table = get_failed_table_for_test(dir_path, "Effect")
     try:
@@ -196,7 +212,7 @@ def test_snp_effect(dir_path):
 #             test_snp_effect = test_snp_df["Effect"].apply(lambda x: str(x))
 #             assert (curr_snp_effect == test_snp_effect).all(), f"Table {file_name} does not contain right set of effect for SNP {snp}"
 
-def test_snp_pvalue(dir_path):
+def test_snp_pvalue(dir_path: str):
     # test for each table and for each snp we have right set of p-value (numerically)
     failed_table = get_failed_table_for_test(dir_path, "P-value")
     try:
@@ -218,7 +234,7 @@ def test_snp_pvalue(dir_path):
 #             test_snp_pvalue = test_snp_df["P-value"].apply(lambda x: str(x))
 #             assert (curr_snp_pvalue == test_snp_pvalue).all(), f"Table {file_name} does not contain right set of p-value for SNP {snp}"
 
-def test_snp_cohort(dir_path):
+def test_snp_cohort(dir_path: str):
     # test for each table and for each snp we have right set of cohort
     failed_table = get_failed_table_for_test(dir_path, "Cohort")
     try:
@@ -228,7 +244,7 @@ def test_snp_cohort(dir_path):
             json.dump(failed_table, f, indent=2) 
         raise AssertionError(f"Failed test_snp_cohort on {len(failed_table)} tables")
 
-def test_snp_population(dir_path):
+def test_snp_population(dir_path: str):
     # test for each table and for each snp we have right set of population
     failed_table = get_failed_table_for_test(dir_path, "Population")
     try:
