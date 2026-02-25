@@ -1,0 +1,2744 @@
+{
+    "30448613_PMC6331247_T1_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "Exonic SNP | SNP ID | SNP ID",
+                "exonic single nucleotide polymorphism identifier : rs4844600, rs2296160, rs9270303, rs2405442, rs1859788, ",
+                0.6521754860877991
+            ]
+        ],
+        "P-value": [
+            [
+                "IGAP SNP | ADGC a | P-value",
+                " P-value-value: 8.49 \u00d710\u22127, nan, 2.66\u00d710\u22124, 1.41\u00d710\u22123, 1.02\u00d710\u22123, ",
+                0.752504825592041
+            ],
+            [
+                "Exonic SNP | ADGC a | P-value",
+                " P-value-value: 4.22\u00d710\u22127, 4.24\u00d710\u22128, -, 2.12\u00d710\u22123, 5.62\u00d710\u22123, ",
+                0.7648813724517822
+            ],
+            [
+                "Exonic SNP | ADSP b | P-value",
+                " P-value-value: -, 8.56\u00d710\u22123, 2.50\u00d710\u22124, 1.09\u00d710\u22123, 1.12\u00d710\u22123, ",
+                0.7647982835769653
+            ]
+        ]
+    },
+    "30448613_PMC6331247_T2_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "IGAP SNP | IGAP SNP",
+                "igap Single nucleotide polymorphism identifier : rs6733839, rs111418223, rs1476679, rs11771145, rs28834970, ",
+                0.5877882242202759
+            ]
+        ],
+        "Closest gene | Closest gene": [
+            [
+                "Closest gene | Closest gene",
+                null,
+                1
+            ]
+        ],
+        "Position": [
+            [
+                "Probe set ID a | Probe set ID a",
+                "probe set identifier a : 11719631_s_at, 11730933_a_at, 11722909_a_at, 11755327 s at, 11720981_a_at, ",
+                0.5362222790718079
+            ]
+        ],
+        "Effect": [
+            [
+                "eQTL association | \u03b2^",
+                " Effect^: 0.071, 0.120, 0.177, 0.109, 0.114, ",
+                0.5098397731781006
+            ]
+        ],
+        "P-value": [
+            [
+                "eQTL association | P-valueb",
+                " p-value-valueb: 1.51 \u00d7 10\u22127, 1.83\u00d710\u221211, 1.53\u00d710\u221217, 3.68\u00d710\u22126, 6.86\u00d710\u221218, ",
+                0.7653515338897705
+            ],
+            [
+                "AD association | P-value c",
+                " P-value-value c: 0.28, 0.91, 0.53, 0.40, 8.13\u00d710\u22125, ",
+                0.7758418321609497
+            ]
+        ]
+    },
+    "30448613_PMC6331247_T3_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "IGAP SNP",
+                "igap Single nucleotide polymorphism identifier: rs8093731, rs4147929, rs10948363, rs3865444, ",
+                0.579810380935669
+            ]
+        ],
+        "Closest  gene": [
+            [
+                "Closest  gene",
+                "Closest  gene: DSG2, ABCA7, CD2AP, CD33, ",
+                1
+            ]
+        ],
+        "Position": [
+            [
+                "Probe set ID a",
+                "probe set identifier a: ILMN_23 80779, t3862068, t2969159, t3822216, ",
+                0.4994127154350281
+            ]
+        ],
+        "Gene  expression": [
+            [
+                "Gene  expression",
+                "Gene  expression: DLGAP1, EID2B, AK9, IER2, ",
+                1
+            ]
+        ],
+        "Brain  region": [
+            [
+                "Brain  region",
+                "Brain  region: FCTX, TCTX, ",
+                1
+            ]
+        ],
+        "Effect": [
+            [
+                "\u03b2^",
+                "Effect^: 0.77, 0.259, 0.343, -0.255, ",
+                0.4993380904197693
+            ]
+        ],
+        "P-value": [
+            [
+                "P-value b",
+                "P-value-value b: 1.36\u00d710\u22128, 3.94\u00d710\u22126, 1.64\u00d710\u22125, 1.96\u00d710\u22125, ",
+                0.7425382137298584
+            ]
+        ]
+    },
+    "30448613_PMC6331247_T4_from_pmc.xlsx": {
+        "Position": [
+            [
+                "Probe set ID a | Probe set ID a",
+                "probe set identifier a : Identified in NABEC, DLGAP1, 206489_s_at, 206490_at, 210750 s at, ",
+                0.49349552392959595
+            ]
+        ],
+        "EC | \u03b2^": [
+            [
+                "EC | \u03b2^",
+                null,
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "EC | P-value",
+                " P-value-value: nan, 5.68\u00d7 10-3, 0.071, 0.013, 5.36\u00d710\u22123, ",
+                0.78243088722229
+            ],
+            [
+                "FCTX | P-value",
+                " P-value-value: nan, 0.013, 0.039, 0.13, 0.14, ",
+                0.6986386179924011
+            ],
+            [
+                "HIPP | P-value",
+                " P-value-value: nan, 2.77\u00d710\u22126, 3.18\u00d710\u22124, 0.27, 1.53\u00d710\u22125, ",
+                0.7636691927909851
+            ],
+            [
+                "TCTX | P-value",
+                " P-value-value: nan, 1.58 \u00d7 10\u22124, 0.052, 0.071, 0.58, ",
+                0.7670282125473022
+            ]
+        ],
+        "FCTX | \u03b2^": [
+            [
+                "FCTX | \u03b2^",
+                null,
+                1
+            ]
+        ],
+        "HIPP | \u03b2^": [
+            [
+                "HIPP | \u03b2^",
+                null,
+                1
+            ]
+        ],
+        "Effect": [
+            [
+                "TCTX | \u03b2^",
+                " Effect^: nan, \u22120.318, \u22120.212, 0.214, \u22120.088, ",
+                0.4023553729057312
+            ]
+        ]
+    },
+    "30979435_PMC6783343_T1_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "Top SNP in gene | Top SNP in gene",
+                "top Single nucleotide polymorphism identifier in gene : rs3818361, rs6431219, rs12378268, rs1834550, rs184909761, ",
+                0.6773247718811035
+            ]
+        ],
+        "Chr": [
+            [
+                "Unnamed: 1_level_0 | Chr",
+                " Chromosome number: 1, 2, 9, 11, 14, ",
+                0.6727339029312134
+            ]
+        ],
+        "P-value": [
+            [
+                "P value | P value",
+                " P-value value: 4.70\u00d710\u22126, 3.67\u00d710\u22128, 8.45\u00d710\u22127, 8.68\u00d710\u22126, 2.10\u00d710\u22126, ",
+                0.7387067079544067
+            ],
+            [
+                "Age 60\u201379 years (younger) | P value",
+                " P-value value: 5.41\u00d710\u22129, 6.06\u00d710\u221214, 5.43\u00d710\u22126, 1.08\u00d710\u22125, 1.45\u00d710\u22126, ",
+                0.7423481941223145
+            ],
+            [
+                "Age \u2265 80 years (older) | P value",
+                " P-value value: 0.027, 0.340, 0.363, 3.38\u00d710\u22124, 5.53\u00d710\u22124, ",
+                0.7745984792709351
+            ],
+            [
+                "Heterogeneity between the younger & older age groups | P value",
+                " P-value value: 0.159, 6.86\u00d710\u22124, 0.0695, 0.587, 0.863, ",
+                0.7703710794448853
+            ]
+        ],
+        "RA": [
+            [
+                "A1/A2 | A1/A2",
+                "a1/Other allele / non-effect allele : A/G, T/C, C/T, G/A, T/A, ",
+                0.5830537676811218
+            ]
+        ],
+        "AF": [
+            [
+                "Age 60\u201379 years (younger) | Frq",
+                " Frequency: 0.204, 0.419, 0.32, 0.389, 0.353, ",
+                0.4497758150100708
+            ],
+            [
+                "Age \u2265 80 years (older) | Frq",
+                " Frequency: 0.195, 0.408, 0.32, 0.402, 0.36, ",
+                0.4339182376861572
+            ]
+        ],
+        "Age 60\u201379 years (younger) | N": [
+            [
+                "Age 60\u201379 years (younger) | N",
+                null,
+                1
+            ]
+        ],
+        "Effect": [
+            [
+                "Age \u2265 80 years (older) | OR (95%CI)",
+                " odds ratio (95%Confidence Interval): 1.12 (1.01, 1.23), 1.04 (0.96, 1.13), 0.86 (0.80, 0.94), 0.85 (0.78, 0.93), 0.98 (0.90, 1.06), ",
+                0.506210207939148
+            ]
+        ],
+        "Age \u2265 80 years (older) | N": [
+            [
+                "Age \u2265 80 years (older) | N",
+                null,
+                1
+            ]
+        ]
+    },
+    "30617256_PMC6836675_T1_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "Overall (Phase 3) | SNP",
+                " Single nucleotide polymorphism identifier: rs4575098, rs2093760, rs4663105, rs10933431, rs184384746, ",
+                0.660340428352356
+            ]
+        ],
+        "Chr": [
+            [
+                "Region | Chr",
+                " Chromosome number: 1, 2, 3, 4, 6, ",
+                0.6408736705780029
+            ]
+        ],
+        "Region | Gene": [
+            [
+                "Region | Gene",
+                null,
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "Case-control status (Phase 1) | p",
+                " P-value: 0.000157, 1.39e-17, 3.58e-29, 1.67e-06, nan, ",
+                0.6874815821647644
+            ],
+            [
+                "AD-by-proxy (Phase 2) | p",
+                " P-value: 6.88e-08, 8.85e-10, 5.460000000000001e-26, 2.51e-06, 1.24e-08, ",
+                0.7377603650093079
+            ],
+            [
+                "Overall (Phase 3) | Z",
+                " Z-score statistic: 6.36, 8.82, 13.94, \u22126.13, 5.69, ",
+                0.40366894006729126
+            ],
+            [
+                "Overall (Phase 3) | p",
+                " P-value: 2.05e-10, 1.1e-18, 3.38e-44, 8.92e-10, 1.24e-08, ",
+                0.7129616737365723
+            ]
+        ],
+        "Position": [
+            [
+                "Overall (Phase 3) | bp",
+                " Base-pair position: 161155392, 207786828, 127891427, 233981912, 57226150, ",
+                0.6496379375457764
+            ]
+        ],
+        "RA": [
+            [
+                "Overall (Phase 3) | A1",
+                " Effect allele / tested allele: A, C, G, T, ",
+                0.6727954149246216
+            ]
+        ],
+        "AF": [
+            [
+                "Overall (Phase 3) | MAF",
+                " Minor Allele Frequency: 0.24, 0.205, 0.415, 0.235, 0.002, ",
+                0.6496443152427673
+            ]
+        ],
+        "Overall (Phase 3) | direction": [
+            [
+                "Overall (Phase 3) | direction",
+                null,
+                1
+            ]
+        ]
+    },
+    "30820047_PMC6463297_T3_from_pmc.xlsx": {
+        "Pathway": [
+            [
+                "Pathway",
+                "Pathway: nan, GO:65005, GO:1902003, GO:32994, GO:1902991, ",
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "No. of genes in the pathway in the dataset",
+                " of genes in the pathway in the dataset: nan, 20.0, 10.0, 39.0, 12.0, ",
+                0.4602929651737213
+            ],
+            [
+                "Common variant q value",
+                "common variant Heterogeneity statistic (meta-analysis) value: nan, 9.5 \u00d7 10\u22124, 1.4 \u00d7 10\u22123, 2.5 \u00d7 10\u22123, 5.8 \u00d7 10\u22123, ",
+                0.5543541312217712
+            ],
+            [
+                "Rare variant Pa",
+                "Rare variant Pa: nan, 6.7 \u00d7 10\u22122, 4.9 \u00d7 10\u22122, 1.7 \u00d7 10\u22122, 5.6 \u00d7 10\u22122, ",
+                0.49039527773857117
+            ],
+            [
+                "Rare variant q value",
+                "rare variant Heterogeneity statistic (meta-analysis) value: nan, 8.4 \u00d7 10\u22121, 8.1 \u00d7 10\u22121, 8.5 \u00d7 10\u22121, ",
+                0.5576223134994507
+            ]
+        ],
+        "AF": [
+            [
+                "Common variant Pa",
+                "Common variant Pa: nan, 1.4 \u00d7 10\u22127a, 4.5 \u00d7 10\u22127a, 1.1 \u00d7 10\u22126a, 3.5 \u00d7 10\u22126a, ",
+                0.48021554946899414
+            ]
+        ],
+        "Pathway description": [
+            [
+                "Pathway description",
+                "Pathway description: nan, Protein\u2212lipid complex assembly, Regulation of A\u03b2 formation, Protein\u2212lipid complex, Regulation of amyloid precursor protein catabolic process, ",
+                1
+            ]
+        ]
+    },
+    "30820047_PMC6463297_T4_from_pmc.xlsx": {
+        "Category": [
+            [
+                "Category",
+                "Category: nan, A\u03b2-centered biological network (all genes), Clearance and degradation of A\u03b2, Aggregation of A\u03b2, APP processing and trafficking, ",
+                1
+            ]
+        ],
+        "Subcategory": [
+            [
+                "Subcategory",
+                "Subcategory: nan, \u2013, Microglia, Miscellaneous, Clathrin/caveolin-dependent endocytosis, ",
+                1
+            ]
+        ],
+        "SNP": [
+            [
+                "No. of genes",
+                " of genes: nan, 331.0, 74.0, 47.0, 35.0, ",
+                0.40037208795547485
+            ]
+        ],
+        "P-value": [
+            [
+                "Common variant P 0 kb",
+                "common variant P-value 0 kb: nan, 2.2 \u00d7 10\u22124a, 2.1 \u00d7 10\u22124a, 7.0 \u00d7 10\u22124a, 1.0 \u00d7 10\u22123a, ",
+                0.6393244862556458
+            ],
+            [
+                "Common variant P 35\u201310 kb",
+                "common variant P-value 35\u201310 kb: nan, 1.5 \u00d7 10\u22124a, 3.2 \u00d7 10\u22123, 1.8 \u00d7 10\u22122, 9.9 \u00d7 10\u22123, ",
+                0.6460230350494385
+            ],
+            [
+                "Rare variant P 0 kb",
+                "rare variant P-value 0 kb: nan, 8.2 \u00d7 10\u22121, 3.1 \u00d7 10\u22121, 2.4 \u00d7 10\u22121, 9.0 \u00d7 10\u22122, ",
+                0.6320345401763916
+            ],
+            [
+                "Rare variant P 35\u201310 kb",
+                "rare variant P-value 35\u201310 kb: nan, 5.1 \u00d7 10\u22121, 6.8 \u00d7 10\u22121, 1.6 \u00d7 10\u22121, 1.9 \u00d7 10\u22121, ",
+                0.6215927600860596
+            ]
+        ]
+    },
+    "30820047_PMC6463297_T1_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "Unnamed: 0_level_0 | Variant a",
+                "Unnamed: 0_level_0 : rs4844610, rs6733839, rs10933431, rs9271058, rs75932628, ",
+                0.6015458106994629
+            ]
+        ],
+        "Chr": [
+            [
+                "Unnamed: 1_level_0 | chr.",
+                " Chromosome number.: 1, 2, 6, 7, 8, ",
+                0.6713723540306091
+            ]
+        ],
+        "Position": [
+            [
+                "Unnamed: 2_level_0 | Positionb",
+                " Positionb: 207802552, 127892810, 233981912, 32575406, 41129252, ",
+                0.460541307926178
+            ]
+        ],
+        "RA": [
+            [
+                "Unnamed: 4_level_0 | Major/minor alleles",
+                " Major/minor alleles: C/A, C/T, C/G, T/A, A/C, ",
+                0.5726288557052612
+            ]
+        ],
+        "AF": [
+            [
+                "Unnamed: 5_level_0 | MAFd",
+                " MAFd: 0.187, 0.407, 0.223, 0.27, 0.008, ",
+                0.6067736148834229
+            ]
+        ],
+        "Effect": [
+            [
+                "Stage 2 (n = 18,845) | OR",
+                " odds ratio: 1.20, 1.23, 0.92, 1.11, 2.50, ",
+                0.552829384803772
+            ]
+        ],
+        "Cohort": [
+            [
+                "Stage 1 discovery (n = 63,926) | 95% CIe",
+                "stage 1 discovery (Total sample size = 63,926) : 1.12\u20131.20, 1.15\u20131.22, 0.87\u20130.94, 1.06\u20131.14, 1.65\u20132.44, ",
+                0.4263216257095337
+            ]
+        ],
+        "P-value": [
+            [
+                "Stage 1 discovery (n = 63,926) | P",
+                " p-value: 8.2 \u00d7 10\u221216, 4.0 \u00d7 10\u221228, 2.6 \u00d7 10\u22127, 5.1 \u00d7 10\u22128, 2.9 \u00d7 10\u221212, ",
+                0.6850153207778931
+            ],
+            [
+                "Stage 2 (n = 18,845) | P",
+                " p-value: 3.8 \u00d7 10\u221210, 2.0 \u00d7 10\u221218, 3.2 \u00d7 10\u22123, 5.7 \u00d7 10\u22125, 1.5 \u00d7 10\u22124, ",
+                0.7078959941864014
+            ],
+            [
+                "Overall stage 1 + stage 2 (n = 82,771) | Meta P",
+                " meta p-value: 3.6 \u00d7 10\u221224, 2.1 \u00d7 10\u221244, 3.4 \u00d7 10\u22129, 1.4 \u00d7 10\u221211, 2.7 \u00d7 10\u221215, ",
+                0.7093628644943237
+            ],
+            [
+                "Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf",
+                " i-squared heterogeneity metric (%), pf: 0, 8 \u00d7 10\u22121, 15, 2 \u00d7 10\u22121, 10, 3 \u00d7 10\u22121, 0, 6 \u00d7 10\u22121, 0, 5 \u00d7 10\u22121, ",
+                0.44838494062423706
+            ]
+        ]
+    },
+    "30820047_PMC6463297_T2_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "Stage 3A | SNPa",
+                " SNPa: rs4735340, rs7920721g, rs7295246, rs10467994, rs593742, ",
+                0.6320605874061584
+            ]
+        ],
+        "Chr": [
+            [
+                "Stage 3A | Chr.",
+                " Chromosome number.: 8, 10, 12, 15, 16, ",
+                0.6610638499259949
+            ]
+        ],
+        "Position": [
+            [
+                "Stage 3A | Positionb",
+                " Positionb: 95976251, 11720308, 43967677, 51008687, 59045774, ",
+                0.4355379045009613
+            ]
+        ],
+        "Stage 3A | Closest genec": [
+            [
+                "Stage 3A | Closest genec",
+                null,
+                1
+            ]
+        ],
+        "RA": [
+            [
+                "Stage 3A | Major/ minor allele",
+                " Major/ minor allele: T/A, A/G, T/G, T/C, G/C, ",
+                0.5520792007446289
+            ]
+        ],
+        "AF": [
+            [
+                "Stage 3A | MAFe",
+                " MAFe: 0.476, 0.39, 0.413, 0.333, 0.295, ",
+                0.5512399077415466
+            ]
+        ],
+        "Effect": [
+            [
+                "Overall (n = 94,437) | 95% CIf",
+                "overall (Total sample size = 94,437) : 0.92\u20130.96, 1.06\u20131.11, 1.04\u20131.08, 0.91\u20130.95, 0.89\u20130.95, ",
+                1
+            ]
+        ],
+        "Stage 1 + 2 (n = 82,771) | 95% CIf": [
+            [
+                "Stage 1 + 2 (n = 82,771) | 95% CIf",
+                null,
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "Stage 1 + 2 (n = 82,771) | P",
+                " p-value: 3.4 \u00d7 10\u22127, 2.3 \u00d7 10\u22129, 2.7 \u00d7 10\u22127, 3.9 \u00d7 10\u22127, 1.3 \u00d7 10\u22127, ",
+                0.6551910638809204
+            ],
+            [
+                "Stage 3A (n = 11,666) | P",
+                " p-value: 9.7 \u00d7 10\u22122, 1.5 \u00d7 10\u22123, 4.5 \u00d7 10\u22121, 6.2 \u00d7 10\u22121, 1.5 \u00d7 10\u22122, ",
+                0.6951203346252441
+            ],
+            [
+                "Overall (n = 94,437) | Meta P",
+                " meta p-value: 9.2 \u00d7 10\u22128, 1.8 \u00d7 10\u221211, 3.9 \u00d7 10\u22127, 4.3 \u00d7 10\u22127, 6.8 \u00d7 10\u22129, ",
+                0.6941023468971252
+            ]
+        ],
+        "Stage 3A (n = 11,666) | 95% CIf": [
+            [
+                "Stage 3A (n = 11,666) | 95% CIf",
+                null,
+                1
+            ]
+        ]
+    },
+    "29458411_PMC5819208_Tab3_from_pmc.xlsx": {
+        "Unnamed: 0_level_0 | Unnamed: 0_level_1 | Gene": [
+            [
+                "Unnamed: 0_level_0 | Unnamed: 0_level_1 | Gene",
+                null,
+                1
+            ]
+        ],
+        "Effect": [
+            [
+                "RNA-Seq | CER | \u03b2 value (SE)",
+                " Effect value (standard error of effect estimate): 0.06 (0.20), \u22120.24 (0.12), \u22120.05 (0.06), 0.22 (0.12), \u22120.10 (0.08), ",
+                0.5518528819084167
+            ]
+        ],
+        "P-value": [
+            [
+                "RNA-Seq | CER | P value",
+                " P-value value: 0.77, 0.04, 0.35, 0.06, 0.19, ",
+                0.6992135047912598
+            ],
+            [
+                "RNA-Seq | TCX | P value",
+                " P-value value: 0.43, 1.5 \u00d7 10 \u22124, 0.01, 1.3 \u00d7 10 \u22123, 0.36, ",
+                0.7278379201889038
+            ],
+            [
+                "Microarray | CER | P value",
+                " P-value value: 1.6 \u00d7 10 \u22123, 0.77, 1.1 \u00d7 10 \u22123, \u2013, 4.9 \u00d7 10 \u22124, ",
+                0.6855233907699585
+            ],
+            [
+                "Microarray | DLPFC | P value",
+                " P-value value: 0.04, 7.9 \u00d7 10\u22123, 0.09, \u2013, 0.31, ",
+                0.7761914730072021
+            ],
+            [
+                "Microarray | VCX | P value",
+                " P-value value: 2.7 \u00d7 10\u22123, 5.6 \u00d7 10 \u22124, 3.2 \u00d7 10 \u22124, \u2013, 0.64, ",
+                0.7395997643470764
+            ]
+        ]
+    },
+    "29458411_PMC5819208_Tab2_from_pmc.xlsx": {
+        "Chr": [
+            [
+                "Unnamed: 0_level_0 | Chromosome",
+                " Chromosome: 2, ",
+                0.7091495394706726
+            ]
+        ],
+        "Position": [
+            [
+                "Unnamed: 1_level_0 | Start",
+                " Start: 3383446, 3485013, 3501690, ",
+                0.44859829545021057
+            ]
+        ],
+        "Unnamed: 3_level_0 | Gene": [
+            [
+                "Unnamed: 3_level_0 | Gene",
+                null,
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "Univariate gene-based tests | NP",
+                "Univariate gene-based tests : 0.09, 0.002, 0.003, ",
+                0.46966901421546936
+            ],
+            [
+                "Univariate gene-based tests | NFT",
+                "Univariate gene-based tests : 4.0 \u00d7 10\u22125, 3.9 \u00d7 10\u22125, 1.6 \u00d7 10\u22125, ",
+                0.4728603959083557
+            ],
+            [
+                "Univariate gene-based tests | CAA",
+                "Univariate gene-based tests : 0.5, 5.0 \u00d7 10\u22123, 7.0 \u00d7 10\u22124, ",
+                1
+            ],
+            [
+                "Pleiotropy gene-based tests | NP + NFT",
+                "Pleiotropy gene-based tests : 0.01, 1.6 \u00d7 10\u22125, 3.2 \u00d7 10\u22125, ",
+                0.42760807275772095
+            ],
+            [
+                "Pleiotropy gene-based tests | NP + CAA",
+                "Pleiotropy gene-based tests : 0.07, 2.1 \u00d7 10\u22125, 4.0 \u00d7 10\u22126, ",
+                1
+            ],
+            [
+                "Pleiotropy gene-based tests | NFT + CAA",
+                "Pleiotropy gene-based tests : 2.0 \u00d7 10\u22126, <\u20091.0 \u00d7 10\u22126, ",
+                0.4573650658130646
+            ]
+        ]
+    },
+    "29458411_PMC5819208_Tab1_from_pmc.xlsx": {
+        "Chr": [
+            [
+                "Unnamed: 0_level_0 | Unnamed: 0_level_1 | Chromosome",
+                " Chromosome: 2, 7, ",
+                0.6997159719467163
+            ]
+        ],
+        "SNP": [
+            [
+                "Unnamed: 1_level_0 | Unnamed: 1_level_1 | SNP",
+                " Single nucleotide polymorphism identifier: rs34487851, rs79524815, ",
+                0.5977967977523804
+            ]
+        ],
+        "Unnamed: 2_level_0 | Unnamed: 2_level_1 | Gene": [
+            [
+                "Unnamed: 2_level_0 | Unnamed: 2_level_1 | Gene",
+                null,
+                1
+            ]
+        ],
+        "RA": [
+            [
+                "Unnamed: 4_level_0 | Unnamed: 4_level_1 | RA",
+                " Risk Allele: A, T, ",
+                0.738206148147583
+            ]
+        ],
+        "Effect": [
+            [
+                "Univariate models | NP | \u03b2 value (SE)",
+                " Effect value (standard error of effect estimate): \u22120.3 (0.06), 0.43 (0.19), ",
+                0.5615378618240356
+            ]
+        ],
+        "P-value": [
+            [
+                "Univariate models | AD status | P value",
+                " P-value value: 5.8 \u00d7 10\u22126, 0.03, ",
+                0.7916383743286133
+            ],
+            [
+                "Univariate models | NP | P value",
+                " P-value value: 7.7 \u00d7 10\u22127, 0.03, ",
+                0.7796822190284729
+            ],
+            [
+                "Univariate models | NFT | P value",
+                " P-value value: 4.5 \u00d7 10\u22126, 2.3 \u00d7 10\u22125, ",
+                0.7360464334487915
+            ],
+            [
+                "Univariate models | CAA | P value",
+                " P-value value: 0.06, 9.1 \u00d7 10\u22126, ",
+                0.7738890051841736
+            ],
+            [
+                "Joint models | NP + NFT | P value",
+                " P-value value: 2.0 \u00d7 10\u22128, 1.3 \u00d7 10\u22124, ",
+                0.7385224103927612
+            ],
+            [
+                "Joint models | NP + CAA | P value",
+                " P-value value: 2.5 \u00d7 10\u22126, 3.3 \u00d7 10\u22126, ",
+                0.7189385294914246
+            ],
+            [
+                "Joint models | NFT + CAA | P value",
+                " P-value value: 2.1 \u00d7 10\u22125, 1.1 \u00d7 10\u22128, ",
+                0.7261147499084473
+            ]
+        ],
+        "Joint models | NP + NFT | Direction": [
+            [
+                "Joint models | NP + NFT | Direction",
+                null,
+                1
+            ]
+        ],
+        "Joint models | NP + CAA | Direction": [
+            [
+                "Joint models | NP + CAA | Direction",
+                null,
+                1
+            ]
+        ],
+        "Joint models | NFT + CAA | Direction": [
+            [
+                "Joint models | NFT + CAA | Direction",
+                null,
+                1
+            ]
+        ]
+    },
+    "29777097_PMC5959890_Tab1_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "Lead SNP",
+                "lead Single nucleotide polymorphism identifier: rs593742, rs889555, rs6504163, ",
+                0.6666811108589172
+            ]
+        ],
+        "Chr": [
+            [
+                "Chr",
+                "Chromosome number: 15, 16, 17, ",
+                0.6158106327056885
+            ]
+        ],
+        "RA": [
+            [
+                "A1",
+                "Effect allele / tested allele: A, T, ",
+                0.7011879086494446
+            ]
+        ],
+        "Position": [
+            [
+                "BP",
+                "Base-pair position: 59045774, 31122571, 61545779, ",
+                0.6574130654335022
+            ]
+        ],
+        "AF": [
+            [
+                "Freq",
+                "Freq: 0.69, 0.29, 0.63, ",
+                0.4226173162460327
+            ]
+        ],
+        "Effect": [
+            [
+                "OR 95% CI",
+                "odds ratio 95% Confidence Interval: 1.06 (1.04, 1.07), 0.95 (0.94, 0.97), 1.05 (1.03, 1.07), ",
+                0.5052474141120911
+            ]
+        ],
+        "P-value": [
+            [
+                "P",
+                "P-value: 6.20E\u221211, 3.20E\u221208, 5.40E\u221209, ",
+                0.7578873038291931
+            ]
+        ],
+        "Directiona": [
+            [
+                "Directiona",
+                "Directiona: ++?+, \u2212\u2212?\u2212, +++?, ",
+                1
+            ]
+        ]
+    },
+    "30930738_PMC6425305_T1_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "SNP",
+                "Single nucleotide polymorphism identifier: rs10792421, rs11649476, ",
+                0.5985006093978882
+            ]
+        ],
+        "Chr": [
+            [
+                "Chr. region",
+                "Chromosome number: 11q13.1, 16q22.2, ",
+                0.5427395105361938
+            ]
+        ],
+        "Position": [
+            [
+                "Location relative to the closest gene",
+                "Location relative to the closest gene: Upstream, Intronic, ",
+                0.5840801000595093
+            ]
+        ],
+        "Closest gene": [
+            [
+                "Closest gene",
+                "Closest gene: MARK2, VAC14, ",
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "P-value(AD)",
+                "P-value-value(ad): 6.68e-05, 1.35e-05, ",
+                0.7007535696029663
+            ],
+            [
+                "P-value(BIP)",
+                "P-value-value(bip): 2.16e-05, 2.98e-05, ",
+                0.7201761603355408
+            ]
+        ],
+        "conjFDR(AD&BIP)": [
+            [
+                "conjFDR(AD&BIP)",
+                "conjFDR(AD&BIP): 0.0302, 0.0218, ",
+                1
+            ]
+        ],
+        "RA": [
+            [
+                "Effective/ other allele",
+                "Effective/ other allele: G/A, T/C, ",
+                0.5892931222915649
+            ]
+        ],
+        "Direction of effect in AD/BIP": [
+            [
+                "Direction of effect in AD/BIP",
+                "Direction of effect in AD/BIP: +/+, -/+, ",
+                1
+            ]
+        ]
+    },
+    "31426376_PMC6723529_jcm-08-01236-t003_from_pmc.xlsx": {
+        "Region of Interest | Region of Interest | Unnamed: 0_level_2": [
+            [
+                "Region of Interest | Region of Interest | Unnamed: 0_level_2",
+                null,
+                1
+            ]
+        ],
+        "SNP": [
+            [
+                "rs405509-TT | \u03b54/\u03b54 vs. \u03b53/\u03b53 (n = 175) | p",
+                "reference single nucleotide polymorphism405509-tt | \u03b54/\u03b54 vs: 0.013, 0.005, 3.4 \u00d7 10\u22125, ",
+                0.5936111211776733
+            ]
+        ]
+    },
+    "31426376_PMC6723529_jcm-08-01236-t001_from_pmc.xlsx": {
+        "Population": [
+            [
+                "Population | Population",
+                "Population : East Asian b, European ancestry (ADGC), African ancestry (ADGC), ",
+                0.8110930919647217
+            ]
+        ],
+        "N | N": [
+            [
+                "N | N",
+                null,
+                1
+            ]
+        ],
+        "Cohort": [
+            [
+                "Control/AD | Control/AD",
+                "Control/AD : 17,096/2302, 7417/8419, 3462/1523, ",
+                0.4549925625324249
+            ]
+        ],
+        "Effect": [
+            [
+                "\u03b53/\u03b54 | OR (95% CI) a",
+                " odds ratio (95% Confidence Interval) a: 4.98 (4.4\u20135.6), 3.83 (3.6\u20134.1), 2.49 (2.2\u20132.9), ",
+                0.4754531979560852
+            ]
+        ],
+        "P-value": [
+            [
+                "\u03b53/\u03b54 | p",
+                " P-value: 2.6 \u00d7 10\u2212152, 2.0 \u00d7 10\u2212270, 1.3 \u00d7 10\u221235, ",
+                0.7346789836883545
+            ],
+            [
+                "\u03b54/\u03b54 | p",
+                " P-value: 2.8 \u00d7 10\u2212109, 2.3 \u00d7 10\u2212187, 3.0 \u00d7 10\u221254, ",
+                0.699268639087677
+            ]
+        ],
+        "SNP": [
+            [
+                "\u03b54/\u03b54 | OR (95% CI) a",
+                "\u03b54/\u03b54 : 25.12 (19.0\u201333.5), 14.35 (12.0\u201317.1), 8.17 (6.3\u201310.7), ",
+                0.45253628492355347
+            ]
+        ]
+    },
+    "31426376_PMC6723529_jcm-08-01236-t002_from_pmc.xlsx": {
+        "Population": [
+            [
+                "Population | Population",
+                "Population : East Asian, European ancestry (ADGC), Total, ",
+                0.7923392653465271
+            ]
+        ],
+        "RA": [
+            [
+                "rs405509 | rs405509",
+                " Reference Single nucleotide polymorphism405509: TT, GT, GG, ",
+                0.45288923382759094
+            ]
+        ],
+        "n | n": [
+            [
+                "n | n",
+                null,
+                1
+            ]
+        ],
+        "\u03b53/\u03b53 | Unnamed: 3_level_1": [
+            [
+                "\u03b53/\u03b53 | Unnamed: 3_level_1",
+                null,
+                1
+            ]
+        ],
+        "SNP": [
+            [
+                "\u03b54/\u03b54 | Odds Ratio (95% CI)",
+                "\u03b54/\u03b54 : 27.02 (19.81\u201337.18), 15.87 (6.32\u201339.49), NAa, 18.13 (14.02\u201323.44), 12.63 (9.41\u201316.94), ",
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "\u03b53/\u03b54 | p",
+                " P-value: 5.10 \u00d7 10\u221298, 1.09 \u00d7 10\u221245, 0.006, 1.55 \u00d7 10\u221294, 2.55 \u00d7 10\u2212134, ",
+                0.7167975902557373
+            ],
+            [
+                "\u03b54/\u03b54 | p",
+                " P-value: 8.80 \u00d7 10\u221294, 2.62 \u00d7 10\u22129, -, 2.69 \u00d7 10\u2212108, 3.44\u00d7 10\u221264, ",
+                0.7116461396217346
+            ]
+        ]
+    },
+    "29967939_PMC6280657_T3_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "SNP | SNP",
+                " snp: rs13115400, rs316341, rs1393060, ",
+                0.6473381519317627
+            ]
+        ],
+        "Chr": [
+            [
+                "Chr | Chr",
+                " chr: 4, 6, 3, ",
+                0.7671300768852234
+            ]
+        ],
+        "Gene+ | Gene+": [
+            [
+                "Gene+ | Gene+",
+                null,
+                1
+            ]
+        ],
+        "Function | Function": [
+            [
+                "Function | Function",
+                null,
+                1
+            ]
+        ],
+        "Effect": [
+            [
+                "CSF A\u03b242 | Interaction \u03b2 (SE)",
+                " interaction Effect (standard error of effect estimate): 0.03 (0.01), \u22120.02 (0.01), ",
+                0.564649760723114
+            ]
+        ],
+        "P-value": [
+            [
+                "CSF A\u03b242 | Male P",
+                " male P-value: 0.2, 0.009, 0.03, ",
+                0.6272653341293335
+            ],
+            [
+                "CSF A\u03b242 | Female P",
+                " female P-value: 3.97\u00d710\u22128, 4.25\u00d710\u22128, 4.57\u00d710\u221210, ",
+                0.6797189116477966
+            ],
+            [
+                "CSF A\u03b242 | Interaction P",
+                " interaction P-value: 0.002*, 0.04*, 0.004*, ",
+                0.6544767022132874
+            ]
+        ]
+    },
+    "29967939_PMC6280657_T4_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "SNP | SNP",
+                " snp: rs316341, rs13115400, rs1393060, ",
+                0.646466076374054
+            ]
+        ],
+        "Chr": [
+            [
+                "Chr | Chr",
+                " chr: 6, 4, 3, ",
+                0.7660539150238037
+            ]
+        ],
+        "Gene+ | Gene+": [
+            [
+                "Gene+ | Gene+",
+                null,
+                1
+            ]
+        ],
+        "Function | Function": [
+            [
+                "Function | Function",
+                null,
+                1
+            ]
+        ],
+        "Effect": [
+            [
+                "Amyloid Burden | Interaction \u03b2 (SE)",
+                " interaction Effect (standard error of effect estimate): \u22120.18 (0.12), 0.06 (0.11), 0.16 (0.12), ",
+                0.5807574987411499
+            ]
+        ],
+        "P-value": [
+            [
+                "Amyloid Burden | Male P",
+                " male P-value: 0.06, 0.79, 0.93, ",
+                0.5703554153442383
+            ],
+            [
+                "Amyloid Burden | Female P",
+                " female P-value: 0.99, 0.24, 0.047, ",
+                0.6178828477859497
+            ],
+            [
+                "Amyloid Burden | Interaction P",
+                " interaction P-value: 0.14, 0.59, 0.18, ",
+                0.6766873598098755
+            ]
+        ]
+    },
+    "29967939_PMC6280657_T1_from_pmc.xlsx": {
+        "Unnamed: 0": [
+            [
+                "Unnamed: 0",
+                "Unnamed: 0: Sample Size (n), Age (years), % APOE \u03b54, % CDR > 0, Normalized CSF A\u03b242 (pg/mL)*, ",
+                1
+            ]
+        ],
+        "Males": [
+            [
+                "Males",
+                "Males: 1527, 73.06 \u00b1 10.66, 43%, 51%, \u22120.03 \u00b1 0.17, ",
+                1
+            ]
+        ],
+        "Females": [
+            [
+                "Females",
+                "Females: 1509, 70.85 \u00b1 10.93, 45%, 44%, \u22120.02 \u00b1 0.16, ",
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "P",
+                "P-value: --, <0.001, 0.15, 0.01, 0.67, ",
+                0.662028431892395
+            ]
+        ]
+    },
+    "29967939_PMC6280657_T2_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "SNP | SNP",
+                " snp: rs185031519, rs316341, rs769449, rs35055419, rs9527039, ",
+                0.6569358110427856
+            ]
+        ],
+        "Chr": [
+            [
+                "Chr | Chr",
+                " chr: 1, 6, 19, 3, 13, ",
+                0.7855592966079712
+            ]
+        ],
+        "Function | Function": [
+            [
+                "Function | Function",
+                null,
+                1
+            ]
+        ],
+        "Effect": [
+            [
+                "CSF A\u03b242 | Interaction \u03b2 (SE)",
+                " interaction Effect (standard error of effect estimate): \u22120.003 (0.02), \u22120.02 (0.01), 0.01 (0.01), 0.02 (0.01), \u22120.03 (0.02), ",
+                0.5770491361618042
+            ]
+        ],
+        "P-value": [
+            [
+                "CSF A\u03b242 | Original P",
+                " original P-value: 2.08\u00d710\u22128, 1.72\u00d710\u22128, 4.78\u00d710\u221294, 3.07\u00d710\u221211, 4.05\u00d710\u221229, ",
+                0.6979579925537109
+            ],
+            [
+                "CSF A\u03b242 | Male P",
+                " male P-value: 1.06\u00d710\u22124, 0.009, 3.29\u00d710\u221253., 0.0003, 4.41\u00d710\u221212, ",
+                0.6897827386856079
+            ],
+            [
+                "CSF A\u03b242 | Female P",
+                " female P-value: 7.92\u00d710\u22125, 4.25\u00d710\u22128, 6.76\u00d710\u221243, 2.57\u00d710\u22128, 5.58\u00d710\u221220, ",
+                0.6671126484870911
+            ],
+            [
+                "CSF A\u03b242 | Interaction P",
+                " interaction P-value: 0.90, 0.04*, 0.31, 0.17, 0.10, ",
+                0.6628069281578064
+            ]
+        ]
+    },
+    "29107063_PMC5920782_T1_from_pmc.xlsx": {
+        "By gender | Dataset | Dataset": [
+            [
+                "By gender | Dataset | Dataset",
+                null,
+                1
+            ]
+        ],
+        "By gender | Before QC | #Samples": [
+            [
+                "By gender | Before QC | #Samples",
+                null,
+                1
+            ]
+        ],
+        "By gender | Before QC | #Males": [
+            [
+                "By gender | Before QC | #Males",
+                null,
+                1
+            ]
+        ],
+        "By gender | Before QC | #Females": [
+            [
+                "By gender | Before QC | #Females",
+                null,
+                1
+            ]
+        ],
+        "SNP": [
+            [
+                "By gender | After QC | #SNPs",
+                " #snps: 33328, 35259, 1329158, 551330, ",
+                0.6478742361068726
+            ]
+        ],
+        "By gender | After QC | #Samples": [
+            [
+                "By gender | After QC | #Samples",
+                null,
+                1
+            ]
+        ],
+        "By gender | After QC | #Males": [
+            [
+                "By gender | After QC | #Males",
+                null,
+                1
+            ]
+        ],
+        "By gender | After QC | #Females": [
+            [
+                "By gender | After QC | #Females",
+                null,
+                1
+            ]
+        ]
+    },
+    "29107063_PMC5920782_T5_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "SNP",
+                "Single nucleotide polymorphism identifier: rs2075650, rs405509, rs8106922, rs6859, rs12721046, ",
+                0.6738146543502808
+            ]
+        ],
+        "Closest gene (involved in, associated with)": [
+            [
+                "Closest gene (involved in, associated with)",
+                "Closest gene (involved in, associated with): TOMM40 (protein precursors\u2019 import into mitochondria, AD)a, APOE (lipid transport, AD, stroke, cancer, longevity, hippocampus atrophy, response to viruses (HCV))b, TOMM40 (protein precursors\u2019 import into mitochondria, AD), PVRL2 (adherens junctions, resistance to herpesviruses, cancer prognosis), APOC1 (AD, cancer, HDL, VLDL, virus (HCV) infectivity), ",
+                1
+            ]
+        ],
+        "References": [
+            [
+                "References",
+                "References: (Harold et al., 2009; Deelen et al., 2011; Holliday et al., 2013; Abe et al., 2015), (Wang et al., 2017; Lu et al., 2014; Ryu et al., 2016; Ma et al., 2016), (Lin et al., 2016; Salakhov et al., 2014), (Logue et al., 2011), (Kettunen et al., 2012; Musunuru et al., 2012), ",
+                1
+            ]
+        ]
+    },
+    "29107063_PMC5920782_T2_from_pmc.xlsx": {
+        "By race | Dataset | Dataset": [
+            [
+                "By race | Dataset | Dataset",
+                null,
+                1
+            ]
+        ],
+        "Population": [
+            [
+                "By race | Before QC | #White",
+                "by race : 4434, 7968, 3894, ",
+                1
+            ]
+        ]
+    },
+    "29107063_PMC5920782_T3_from_pmc.xlsx": {
+        "Dataset": [
+            [
+                "Dataset",
+                "Dataset: CHS, nan, FHS, HRS, LOADFS, ",
+                1
+            ]
+        ],
+        "SNP": [
+            [
+                "SNP",
+                "Single nucleotide polymorphism identifier: rs2075650, rs405509, rs8106922, rs6859, rs769450, ",
+                0.6657114028930664
+            ]
+        ],
+        "P-value": [
+            [
+                "p-Value",
+                "P-value-value: 9.32E\u201315, 1.31E\u201306, 4.54E\u201305, 5.34E\u201305, 1.59E\u201304, ",
+                0.7215082049369812
+            ]
+        ],
+        "Effect": [
+            [
+                "OR",
+                "Odds Ratio: 2.3, 1.5, 0.7, 1.4, 2.2, ",
+                0.5309467911720276
+            ]
+        ],
+        "Chr": [
+            [
+                "Chr",
+                "Chromosome number: 19, ",
+                0.6995686292648315
+            ]
+        ],
+        "RA": [
+            [
+                "Major",
+                "Major: A, G, C, T, ",
+                0.43686550855636597
+            ]
+        ],
+        "AF": [
+            [
+                "MAF case",
+                "Minor Allele Frequency case: 0.22, 0.53, 0.3, 0.49, 0.33, ",
+                0.6450169086456299
+            ],
+            [
+                "MAF contr",
+                "Minor Allele Frequency contr: 0.12, 0.43, 0.39, 0.4, 0.41, ",
+                0.592670202255249
+            ]
+        ]
+    },
+    "29107063_PMC5920782_T4_from_pmc.xlsx": {
+        "Dataset": [
+            [
+                "Dataset",
+                "Dataset: CHS, nan, FHS, HRS, ",
+                1
+            ]
+        ],
+        "SNP": [
+            [
+                "SNP",
+                "Single nucleotide polymorphism identifier: rs2075650, rs12721046, rs405509, rs6859, rs8106922, ",
+                0.674237847328186
+            ]
+        ],
+        "P-value": [
+            [
+                "p-Value",
+                "P-value-value: 1.99E\u201315, 2.39E\u201314, 1.16E\u201305, 2.87E\u201305, 8.34E\u201305, ",
+                0.7206288576126099
+            ]
+        ],
+        "Effect": [
+            [
+                "HR",
+                "Hazard ratio: 2.3, 2.2, 1.4, 0.7, 2.0, ",
+                0.5646812915802002
+            ]
+        ],
+        "Chr": [
+            [
+                "Chr",
+                "Chromosome number: 19, ",
+                0.6995686292648315
+            ]
+        ],
+        "RA": [
+            [
+                "Alt",
+                "Alternate allele: G, A, G,T, T, C, ",
+                0.4874271750450134
+            ]
+        ],
+        "AF": [
+            [
+                "MAF",
+                "Minor Allele Frequency: 0.12, 0.08, 0.47, 0.37, 0.3, ",
+                0.639016330242157
+            ]
+        ]
+    },
+    "29274321_PMC5938137_T1_from_pmc.xlsx": {
+        "Group": [
+            [
+                "Group",
+                "Group: ALL, CN, MCI, AD, ",
+                1
+            ]
+        ],
+        "Traits": [
+            [
+                "Traits",
+                "Traits: A\u03b242, t-Tau, HPV, LMdT, LMiT, ",
+                1
+            ]
+        ],
+        "Chr": [
+            [
+                "CHR",
+                "Chromosome number: 8, 12, 17, 14, 1, ",
+                0.6680134534835815
+            ]
+        ],
+        "Position": [
+            [
+                "BP",
+                "Base-pair position: 20647323, 13870464, 59687842, 119390525, 105385352, ",
+                0.6693691611289978
+            ]
+        ],
+        "SNP": [
+            [
+                "SNP",
+                "Single nucleotide polymorphism identifier: rs55644114, rs74442473, rs2378873, rs10775009, rs2819438, ",
+                0.6498023271560669
+            ]
+        ],
+        "RA": [
+            [
+                "MA",
+                "Meta-analysis: A, G, T, C, ",
+                0.4317367672920227
+            ]
+        ],
+        "AF": [
+            [
+                "MAF",
+                "Minor Allele Frequency: 0.16, 0.07, 0.44, 0.34, 0.13, ",
+                0.6360485553741455
+            ]
+        ],
+        "Effect": [
+            [
+                "BETA",
+                "Effect size (regression coefficient): 0.41, \u22121.02, \u22120.53, 0.51, \u22120.80, ",
+                0.5519554615020752
+            ]
+        ],
+        "P-value": [
+            [
+                "P",
+                "P-value: 2.54\u00d710\u22128, 2.53\u00d710\u22128, 2.03\u00d710\u22128, 1.59\u00d710\u22129, 6.94\u00d710\u22129, ",
+                0.6994024515151978
+            ]
+        ],
+        "Closest Genes": [
+            [
+                "Closest Genes",
+                "Closest Genes: GFRA2, LZTS1, GRIN2B, BRIP1, NACA2, SRRM4, PLD4, C14orf79, ",
+                1
+            ]
+        ],
+        "Unnamed: 11": [
+            [
+                "Unnamed: 11",
+                "Unnamed: 11: nan, ",
+                1
+            ]
+        ]
+    },
+    "29274321_PMC5938137_T2_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "eQTL | eQTL | eQTL",
+                "eqtl : rs10775009, rs2819438, rs4921790, rs55653268, ",
+                0.5942931175231934
+            ]
+        ],
+        "RA": [
+            [
+                "EA | EA | EA",
+                " Effect Allele : T, A, C, ",
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "eSNP Association Summary | Hippocampus | P-value (\u03b2)",
+                " p-value-value (Effect): 0.09 (0.09), 0.47 (0.12), 0.15 (0.23), 3.8\u00d710\u22124 (0.44), 1.0 (0.0), ",
+                0.7335914373397827
+            ],
+            [
+                "eSNP Association Summary | Other brain region | P-value (\u03b2)",
+                " p-value-value (Effect): 0.16 (0.10), 0.10 (0.42), 0.06 (\u22120.28), 3.9\u00d710\u22123 (0.31), 6.0\u00d710\u22123 (0.44), ",
+                0.7376546859741211
+            ]
+        ],
+        "eSNP Association Summary | Other brain region | Region": [
+            [
+                "eSNP Association Summary | Other brain region | Region",
+                null,
+                1
+            ]
+        ]
+    },
+    "29274321_PMC5938137_T3_from_pmc.xlsx": {
+        "Source | Source": [
+            [
+                "Source | Source",
+                null,
+                1
+            ]
+        ],
+        "Brain region | Brain region": [
+            [
+                "Brain region | Brain region",
+                null,
+                1
+            ]
+        ],
+        "Predictor | Predictor": [
+            [
+                "Predictor | Predictor",
+                null,
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "MTUS1 | \u03b2",
+                " Effect: 0.38, 0.16, nan, 0.0, 0.09, ",
+                0.40497633814811707
+            ],
+            [
+                "MTUS1 | P",
+                " P-value: 0.02, 3.9\u00d710\u22124, nan, 0.78, 0.01, ",
+                0.7292892336845398
+            ],
+            [
+                "C14orf79 | P",
+                " P-value: 0.76, 0.06, nan, 7.5\u00d710\u22128, 3.3\u00d710\u22127, ",
+                0.7359699010848999
+            ]
+        ],
+        "Effect": [
+            [
+                "C14orf79 | SE",
+                " Standard Error of effect estimate: 0.14, 0.03, nan, 0.02, ",
+                0.4576316475868225
+            ]
+        ],
+        "C14orf79 | \u03b2": [
+            [
+                "C14orf79 | \u03b2",
+                null,
+                1
+            ]
+        ]
+    },
+    "30413934_PMC6358498_T1_from_pmc.xlsx": {
+        "Disease/trait": [
+            [
+                "Disease/trait",
+                "Disease/trait: Alzheimer\u2019s disease, High-density lipoprotein, Low-density lipoprotein, Total triglycerides, Total cholesterol, ",
+                1
+            ]
+        ],
+        "Abbr": [
+            [
+                "Abbr",
+                "Abbr: AD, HDL, LDL, TG, TC, ",
+                1
+            ]
+        ],
+        "Sample size": [
+            [
+                "Sample size",
+                "Sample size: nan, 62166.0, 681275.0, 180423.0, ",
+                1
+            ]
+        ],
+        "Cases": [
+            [
+                "Cases",
+                "Cases: 17008.0, nan, 48286.0, 17283.0, ",
+                1
+            ]
+        ],
+        "Controls": [
+            [
+                "Controls",
+                "Controls: 37154.0, nan, 250671.0, 137914.0, ",
+                1
+            ]
+        ],
+        "References": [
+            [
+                "References",
+                "References: [24], [44], [47], [28], [31], ",
+                1
+            ]
+        ],
+        "Cohort": [
+            [
+                "URL",
+                "URL: http://web.pasteur-lille.fr/en/recherche/u744/igap/igap_download.php, http://diagram-consortium.org/2015_ENGAGE_1KG/ file: HDL-C, http://diagram-consortium.org/2015_ENGAGE_1KG/ file: LDL-C, http://diagram-consortium.org/2015_ENGAGE_1KG/ file: TG, http://diagram-consortium.org/2015_ENGAGE_1KG/ file: TC, ",
+                0.4675033390522003
+            ]
+        ],
+        "Population": [
+            [
+                "Ethnicities included",
+                "Ethnicities included: EUR, ",
+                0.7003945112228394
+            ]
+        ],
+        "SNP": [
+            [
+                "SNPs",
+                "SNPs: 7055881, 9549055, 9545543, 9544499, 9553380, ",
+                0.5986727476119995
+            ]
+        ],
+        "Covariate adjustments": [
+            [
+                "Covariate adjustments",
+                "Covariate adjustments: Adjusted for age, sex and principal components, Adjusted for age, age2, and first 3 principal components, Adjusted for age, sex, recruitment center, genotyping batches, and ten principle components calculated from SNPs pre-selected by the UKB quality control team for PC analysis, Adjusted for age, sex, six axes of genetic variation, genotyping array, and body mass index, Adjusted for array (UK Biobank versus UK BiLEVE) and the first five principal components, ",
+                1
+            ]
+        ]
+    },
+    "30413934_PMC6358498_T2_from_pmc.xlsx": {
+        "Unnamed: 0": [
+            [
+                "Unnamed: 0",
+                "Unnamed: 0: 1, 2, 4, 5, 6, ",
+                1
+            ]
+        ],
+        "SNP": [
+            [
+                "SNP",
+                "Single nucleotide polymorphism identifier: rs61779841, rs78363635, rs6587723, rs1431985, rs858952, ",
+                0.6346052289009094
+            ]
+        ],
+        "Chr": [
+            [
+                "Chr",
+                "Chromosome number: 1, 2, 3, 4, 5, ",
+                0.6440418362617493
+            ]
+        ],
+        "Closest gene": [
+            [
+                "Closest gene",
+                "Closest gene: TRIT1, C4BPA, OTUD7B, AK092251, NRXN1, ",
+                1
+            ]
+        ],
+        "RA": [
+            [
+                "A1",
+                "Effect allele / tested allele: A, C, T, G, ",
+                0.6725916862487793
+            ]
+        ],
+        "Reference trait": [
+            [
+                "Reference trait",
+                "Reference trait: HDL, LDL, TC, TG, BMI, ",
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "Min ConjFDR",
+                "Min ConjFDR: 3.75E\u221202, 2.02E\u221202, 2.89E\u221202, 3.78E\u221202, 1.11E\u221202, ",
+                0.4374805986881256
+            ],
+            [
+                "AD p value",
+                "ad P-value value: 5.44E\u221204, 8.30E\u221204, 3.26E\u221204, 6.63E\u221204, 9.45E\u221206, ",
+                0.7033088207244873
+            ],
+            [
+                "Reference trait p value",
+                "reference trait P-value value: 7.37E\u221204, 5.46E\u221205, 1.50E\u221203, 4.20E\u221204, 2.22E\u221204, ",
+                0.6897056102752686
+            ]
+        ]
+    },
+    "30413934_PMC6358498_T3_from_pmc.xlsx": {
+        "Unnamed: 0": [
+            [
+                "Unnamed: 0",
+                "Unnamed: 0: 1, 2, 3, 4, 5, ",
+                1
+            ]
+        ],
+        "SNP": [
+            [
+                "SNP",
+                "Single nucleotide polymorphism identifier: rs1431985, rs78363635, rs55819441, rs6733839, rs72796734, ",
+                0.6284253001213074
+            ]
+        ],
+        "Chr": [
+            [
+                "Chr",
+                "Chromosome number: 1, 2, 4, 5, 6, ",
+                0.6468435525894165
+            ]
+        ],
+        "Closest gene": [
+            [
+                "Closest gene",
+                "Closest gene: AK092251, C4BPA, AK097952, BIN1, ABCG5, ",
+                1
+            ]
+        ],
+        "RA": [
+            [
+                "A1",
+                "Effect allele / tested allele: A, C, T, G, ",
+                0.6725916862487793
+            ]
+        ],
+        "Ref trait": [
+            [
+                "Ref trait",
+                "Reference allele (genome reference) trait: TG, LDL, HDL, BMI, WHR, ",
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "ADGC2 p value",
+                "adgc2 P-value value: 6.55E\u221201, 7.42E\u221201, 6.35E\u221201, 8.05E\u221203, 1.15E\u221201, ",
+                0.738639235496521
+            ],
+            [
+                "IGAP 1 and 2 p value",
+                "igap 1 and 2 P-value value: 2.40E\u221203, 6.22E\u221203, 7.55E\u221202, 6.94E\u221244, 3.26E\u221202, ",
+                0.5798231363296509
+            ],
+            [
+                "Meta-p value",
+                "meta-P-value value: 4.84E\u221203, 1.03E\u221202, 1.01E\u221201, 1.44E\u221245, 1.32E\u221202, ",
+                0.7182613611221313
+            ]
+        ],
+        "Effect": [
+            [
+                "Meta-OR",
+                "meta-Odds Ratio: 1.04, 1.08, 0.966, 1.21, 0.93, ",
+                0.6054844260215759
+            ]
+        ],
+        "ADGC2 95% CI": [
+            [
+                "ADGC2 95% CI",
+                "adgc2 95% Confidence Interval: 0.887\u22121.08, 0.767\u22121.21, 0.861\u22121.28, 1.04\u22121.3, 0.677\u22121.04, ",
+                1
+            ]
+        ],
+        "AF": [
+            [
+                "IGAP 1 and 2 OR",
+                "igap 1 and 2 Odds Ratio: 1.04, 1.09, 0.962, 1.22, 0.937, ",
+                0.41580814123153687
+            ]
+        ],
+        "IGAP 1 and 2 95% CI": [
+            [
+                "IGAP 1 and 2 95% CI",
+                "igap 1 and 2 95% Confidence Interval: 1.01\u22121.07, 1.02\u22121.16, 0.922\u22121, 1.22\u22121.22, 0.883\u22120.995, ",
+                1
+            ]
+        ]
+    },
+    "30413934_PMC6358498_T4_from_pmc.xlsx": {
+        "Unnamed: 0": [
+            [
+                "Unnamed: 0",
+                "Unnamed: 0: 2, 3, 4, 5, 6, ",
+                1
+            ]
+        ],
+        "SNP": [
+            [
+                "SNP",
+                "Single nucleotide polymorphism identifier: rs61779841, rs78363635, rs12994639, rs55819441, rs61208496, ",
+                0.635873556137085
+            ]
+        ],
+        "Chr": [
+            [
+                "Chr",
+                "Chromosome number: 1, 2, 3, 4, 5, ",
+                0.6440418362617493
+            ]
+        ],
+        "Position": [
+            [
+                "BP",
+                "Base-pair position: 40324666, 207324781, 64959331, 65082415, 37464230, ",
+                0.6794754862785339
+            ]
+        ],
+        "RA": [
+            [
+                "A1",
+                "Effect allele / tested allele: A, C, G, T, ",
+                0.6727954149246216
+            ]
+        ],
+        "NMfSS": [
+            [
+                "NMfSS",
+                "NMfSS: 364772, 364859, 363628, 364005, 353852, ",
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "P",
+                "P-value: 8.12E\u221201, 2.05E\u221201, 2.34E\u221201, 6.27E\u221201, 8.04E\u221203, ",
+                0.7072122097015381
+            ]
+        ],
+        "Effect": [
+            [
+                "OR",
+                "Odds Ratio: 1.0, 1.002, 0.9992, 1.004, 1.001, ",
+                0.5316587686538696
+            ]
+        ],
+        "Cfs": [
+            [
+                "Cfs",
+                "Cfs: 1\u20131, 0.999\u20131.01, 0.996\u20131, 1\u20131.01, 0.997\u20131.01, ",
+                1
+            ]
+        ]
+    },
+    "30805717_PMC7193309_T1_from_pmc.xlsx": {
+        "Phenotype 1": [
+            [
+                "Phenotype 1",
+                "Phenotype 1: Alzheimer\u2019s disease, ",
+                1
+            ]
+        ],
+        "Phenotype 2": [
+            [
+                "Phenotype 2",
+                "Phenotype 2: BMI, WHR, T2D, FG, FINS, ",
+                1
+            ]
+        ],
+        "Rg": [
+            [
+                "Rg",
+                "Rg: 0.046, 0.012, 0.106, 0.169, \u22120.196, ",
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "Rg_SE",
+                "rg_Standard Error of effect estimate: 0.05, 0.073, 0.096, 0.097, 0.115, ",
+                0.44767022132873535
+            ],
+            [
+                "P-value",
+                "P-value-value: 0.358, 0.865, 0.268, 0.081, 0.087, ",
+                0.6997421383857727
+            ]
+        ],
+        "H2": [
+            [
+                "H2",
+                "H2: 0.137, 0.094, 0.077, 0.099, 0.069, ",
+                1
+            ]
+        ],
+        "Effect": [
+            [
+                "H2_SE",
+                "h2_Standard Error of effect estimate: 0.007, 0.006, 0.018, 0.01, 0.038, ",
+                0.5362504720687866
+            ]
+        ]
+    },
+    "30805717_PMC7193309_T2_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "Position | Position",
+                "Position : chr11:46297631..48009074, chr11:45838926..45932800, chr11:48333360..48333360, chr10:114752503..114808902, ",
+                0.7209118604660034
+            ]
+        ],
+        "Chr": [
+            [
+                "CHR | CHR",
+                " chr: 11, 10, ",
+                0.7720402479171753
+            ]
+        ],
+        "N | N": [
+            [
+                "N | N",
+                null,
+                1
+            ]
+        ],
+        "Effect": [
+            [
+                "AD | BETA",
+                " Effect size (regression coefficient): 8.23\u00d710\u22122, 5.62\u00d710\u22122, 6.65\u00d710\u22122, \u22124.12\u00d710\u22122, ",
+                0.5103996992111206
+            ]
+        ],
+        "P-value": [
+            [
+                "AD | P",
+                " P-value: 2.98\u00d710\u22126, 3.38\u00d710\u22124, 2.58\u00d710\u22123, 3.23\u00d710\u22122, ",
+                0.7212966680526733
+            ],
+            [
+                "Fasting Glucose | P",
+                " P-value: 7.11\u00d710\u221213, 9.55\u00d710\u221213, 1.66\u00d710\u22129, 7.50\u00d710\u221210, ",
+                0.7269186973571777
+            ],
+            [
+                "CPASSOC P | CPASSOC P",
+                "cpassoc P-value : 2.80\u00d710\u221216, 1.57\u00d710\u221213, 6.10\u00d710\u221210, 4.52\u00d710\u22129, ",
+                0.5998843908309937
+            ]
+        ],
+        "pQTL | pQTL": [
+            [
+                "pQTL | pQTL",
+                null,
+                1
+            ]
+        ]
+    },
+    "30805717_PMC7193309_T3_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "Position | Position",
+                "Position : chr8:27422740..27477509, chr1:207653395..207804141, chr19:45242173..45247627, ",
+                0.7157695293426514
+            ]
+        ],
+        "Chr": [
+            [
+                "CHR | CHR",
+                " chr: 8, 1, 19, ",
+                0.7971235513687134
+            ]
+        ],
+        "N | N": [
+            [
+                "N | N",
+                null,
+                1
+            ]
+        ],
+        "Effect": [
+            [
+                "Fasting insulin | BETA",
+                " Effect size (regression coefficient): 7.20\u00d710\u22123, \u22129.60\u00d710\u22123, \u22121.90\u00d710\u22122, ",
+                0.5195198059082031
+            ]
+        ],
+        "P-value": [
+            [
+                "AD | P",
+                " P-value: 3.75\u00d710\u221217, 7.73\u00d710\u221215, 9.04\u00d710\u221213, ",
+                0.752618670463562
+            ],
+            [
+                "Fasting insulin | P",
+                " P-value: 0.036, 0.018, 0.008, ",
+                0.683460533618927
+            ],
+            [
+                "CPASSOC P | CPASSOC P",
+                "cpassoc P-value : 1.14\u00d710\u221217, 3.71\u00d710\u221215, 6.54\u00d710\u221213, ",
+                0.6080245971679688
+            ]
+        ],
+        "Position": [
+            [
+                "Genes within clumping region | Genes within clumping region",
+                "Genes within clumping region : CLU,MIR6843, CR1,CR2, Intergenic region, BCL3*, ",
+                0.44402170181274414
+            ]
+        ],
+        "pQTL | pQTL": [
+            [
+                "pQTL | pQTL",
+                null,
+                1
+            ]
+        ]
+    },
+    "30636644_PMC6330399_Tab5_from_pmc.xlsx": {
+        "Position": [
+            [
+                "Position",
+                "Position: 61149328, 82030091, 60260669, 123034319, 5852503, ",
+                0.5201720595359802
+            ]
+        ],
+        "SNP": [
+            [
+                "Top eQTL",
+                "top Expression quantitative trait locus: rs720201, rs11741569, rs7108663, rs641760, rs117856560, ",
+                0.5826698541641235
+            ]
+        ],
+        "Chr": [
+            [
+                "Chromosomal region",
+                "Chromosomal region: 2p15, 5q14.1, 11q12.2, 12q24.31, 7p22.1, ",
+                0.5851404070854187
+            ]
+        ],
+        "RA": [
+            [
+                "A1",
+                "Effect allele / tested allele: C, G, T, A, ",
+                0.672467052936554
+            ]
+        ],
+        "AF": [
+            [
+                "A1 Freq",
+                "Effect allele / tested allele freq: 0.413, 0.09, 0.412, 0.214, 0.048, ",
+                0.6395040154457092
+            ]
+        ],
+        "P-value": [
+            [
+                "P GWAS",
+                "P-value gwas: 6.94E\u201304, 9.96E\u201304, 2.17E\u201304, 2.75E\u201304, 1.50E\u201302, ",
+                0.7409454584121704
+            ],
+            [
+                "P eQTL",
+                "p-value Expression quantitative trait locus: 1.34E\u2013164, 9.69E\u201327, 1.41E\u201348, 9.79E\u201317, 8.23E\u201349, ",
+                0.5908845663070679
+            ],
+            [
+                "SESMR",
+                "SESMR: 0.047, 0.097, 0.088, 0.162, 0.092, ",
+                0.4060789942741394
+            ],
+            [
+                "P SMR",
+                "P-value smr: 5.54E\u201305, 5.66E\u201305, 1.59E\u201305, 6.03E\u201305, 2.22E\u201305, ",
+                0.7398136854171753
+            ],
+            [
+                "P HEIDI",
+                "P-value heidi: 6.64E\u201301, 8.32E\u201302, 8.57E\u201301, 1.14E\u201301, 8.80E\u201302, ",
+                0.6135331988334656
+            ]
+        ],
+        "Effect": [
+            [
+                "b SMR",
+                "b SMR: 0.189, \u22120.391, 0.380, \u22120.650, 0.389, ",
+                0.4195499122142792
+            ]
+        ]
+    },
+    "30636644_PMC6330399_Tab1_from_pmc.xlsx": {
+        "Cohort": [
+            [
+                "Cohort",
+                "Cohort: LOADFS, FHS, CHS, HRS, ",
+                1
+            ]
+        ],
+        "Total": [
+            [
+                "Total",
+                "Total: 3716, 4409, 3197, 6158, ",
+                1
+            ]
+        ],
+        "Female%": [
+            [
+                "Female%",
+                "Female%: 62.43, 54.77, 60.28, 57.31, ",
+                1
+            ]
+        ],
+        "Case%": [
+            [
+                "Case%",
+                "Case%: 49.78, 9.37, 6.16, 4.56, ",
+                1
+            ]
+        ],
+        "AgeCase (SD)": [
+            [
+                "AgeCase (SD)",
+                "AgeCase (SD): 85.93 (8.39), 79.85 (8.49), 74.76 (5.36), 80.44 (6.71), ",
+                1
+            ]
+        ],
+        "AgeControl (SD)": [
+            [
+                "AgeControl (SD)",
+                "AgeControl (SD): 71.19 (11.53), 62.77 (11.65), 73.01 (5.57), 73.69 (7.85), ",
+                1
+            ]
+        ]
+    },
+    "30636644_PMC6330399_Tab6_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "Top eQTL",
+                "top Expression quantitative trait locus: rs3817604, rs55746218, rs2600667, rs11748868, ",
+                0.6032364964485168
+            ]
+        ],
+        "Gene": [
+            [
+                "Gene",
+                "Gene: CRIPAK, PRDM10, AHSA2, ATG10, ",
+                1
+            ]
+        ],
+        "Chr": [
+            [
+                "Chromosomal region",
+                "Chromosomal region: 4p16.3, 11q24.3, 2p15, 5q14.1, ",
+                0.5968391299247742
+            ]
+        ],
+        "Position": [
+            [
+                "Position",
+                "Position: 1297549, 129964624, 61177796, 82066661, ",
+                0.5297496318817139
+            ]
+        ],
+        "RA": [
+            [
+                "A1",
+                "Effect allele / tested allele: T, C, ",
+                0.6757611036300659
+            ]
+        ],
+        "AF": [
+            [
+                "A1 Freq",
+                "Effect allele / tested allele freq: 0.12, 0.076, 0.297, 0.091, ",
+                0.6371830701828003
+            ]
+        ],
+        "P-value": [
+            [
+                "P GWAS",
+                "P-value gwas: 4.10E\u201304, 9.33E\u201303, 1.75E\u201304, 4.30E\u201305, ",
+                0.7664703130722046
+            ],
+            [
+                "P eQTL",
+                "p-value Expression quantitative trait locus: 1.14E\u201309, 2.10E\u201309, 1.53E\u201322, 9.79E\u201340, 6.30E\u201328, ",
+                0.5929688215255737
+            ],
+            [
+                "SESMR",
+                "SESMR: 0.089, 0.205, 0.075, 0.047, 0.065, ",
+                0.42937329411506653
+            ],
+            [
+                "P SMR",
+                "P-value smr: 6.24E\u201305, 2.33E\u201305, 1.19E\u201305, 4.36E\u201306, 7.72E\u201306, ",
+                0.7162749767303467
+            ],
+            [
+                "P HEIDI",
+                "P-value heidi: 4.13E\u201301, 2.81E\u201301, 9.70E\u201302, 1.29E\u201301, 1.33E\u201301, ",
+                0.6020667552947998
+            ]
+        ],
+        "Effect": [
+            [
+                "b SMR",
+                "b SMR: 0.358, 0.867, \u22120.330, \u22120.216, \u22120.292, ",
+                0.44088393449783325
+            ]
+        ],
+        "Brain region": [
+            [
+                "Brain region",
+                "Brain region: Hippocampus, Cerebellar hemisphere, Caudate basal ganglia, Cerebellum, Cortex, ",
+                1
+            ]
+        ]
+    },
+    "30636644_PMC6330399_Tab2_from_pmc.xlsx": {
+        "Chr": [
+            [
+                "Chromosome",
+                "Chromosome: 6p22.3, 7q22.1, 9p22.3, 9p13.2, 11p15.5, ",
+                0.6002672910690308
+            ]
+        ],
+        "Position": [
+            [
+                "Position",
+                "Position: 19350484, 101103377, 16161235, 37036250, 924904, ",
+                0.5057457685470581
+            ]
+        ],
+        "SNP": [
+            [
+                "SNP",
+                "Single nucleotide polymorphism identifier: rs62402815a, rs10953322, rs4961664, rs2282079, rs10794342, ",
+                0.6418663263320923
+            ]
+        ],
+        "RA": [
+            [
+                "A1",
+                "Effect allele / tested allele: G, T, C, A, ",
+                0.6782984733581543
+            ]
+        ],
+        "Sig?": [
+            [
+                "Sig?",
+                "Sig?: NYYN, YYNN, YNNY, Y?NN, YNYY, ",
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "P min",
+                "P-value min: 1.94E\u201307, 2.89E\u201303, 3.45E\u201303, 6.49E\u201305, 2.46E\u201304, ",
+                0.6722911596298218
+            ],
+            [
+                "P meta",
+                "P-value meta: 1.80E\u201306, 4.65E\u201306, 4.44E\u201306, 3.81E\u201306, 4.45E\u201306, ",
+                0.6658141016960144
+            ],
+            [
+                "P q",
+                "p-value Heterogeneity statistic (meta-analysis): 1.41E\u201304, 7.84E\u201301, 8.14E\u201301, 4.48E\u201301, 1.19E\u201301, ",
+                0.5807701945304871
+            ],
+            [
+                "P abs",
+                "P-value abs: 1.80E\u201306, 4.66E\u201306, 4.44E\u201306, 3.81E\u201306, 4.42E\u201306, ",
+                0.6479284763336182
+            ]
+        ],
+        "Effects": [
+            [
+                "Effects",
+                "Effects: \u2013 \u2013 \u2013 \u2013, \u2013\u2009?\u2009\u2013\u2009\u2013, +\u2009+\u2009+\u2009+, \u2013\u2009\u2013\u00a0\u2013\u2009+, +\u2009\u2013\u00a0\u2013\u2009\u2013, ",
+                1
+            ]
+        ],
+        "AF": [
+            [
+                "Freq",
+                "Freq: 0.941, 0.871, 0.711, 0.959, 0.456, ",
+                0.4293767213821411
+            ]
+        ],
+        "Effect": [
+            [
+                "OR (se)",
+                "odds ratio (Standard Error of effect estimate): 0.690 (0.050), 0.758 (0.043), 0.811 (0.035), 0.595 (0.06), 0.824 (0.033), ",
+                0.6026962995529175
+            ]
+        ],
+        "Proxy?": [
+            [
+                "Proxy?",
+                "Proxy?: N, Y, ",
+                1
+            ]
+        ],
+        "Region?": [
+            [
+                "Region?",
+                "Region?: N, Y, ",
+                1
+            ]
+        ]
+    },
+    "30636644_PMC6330399_Tab3_from_pmc.xlsx": {
+        "Gene | Gene": [
+            [
+                "Gene | Gene",
+                null,
+                1
+            ]
+        ],
+        "Chr": [
+            [
+                "Chromosomal region | Chromosomal region",
+                "Chromosomal region : 19q13.32, 21q21.3, ",
+                0.6156142950057983
+            ]
+        ],
+        "Position": [
+            [
+                "Start | Start",
+                "Start : 44699150, 44748720, 44758656, 44777868, 44809058, ",
+                0.43364471197128296
+            ]
+        ],
+        "SNP": [
+            [
+                "Number of SNPs | Number of SNPs",
+                "Number of SNPs : 83, 63, 52, 62, 51, ",
+                0.5177576541900635
+            ]
+        ],
+        "Plan 1 (males and females) | \u03c7 2": [
+            [
+                "Plan 1 (males and females) | \u03c7 2",
+                null,
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "Plan 1 (males and females) | p value",
+                " P-value value: 7.52E\u201306, 3.95E\u201306, 8.72E\u201306, 2.02E\u201310, 1.07E\u201310, ",
+                0.7154093980789185
+            ],
+            [
+                "Plan 2 (only males) | p value",
+                " P-value value: NS, 4.52E\u201325, 8.98E\u201330, 1.09E\u201329, 1.63E\u201330, ",
+                0.6666579842567444
+            ],
+            [
+                "Plan 3 (only females) | p value",
+                " P-value value: NS, 5.44E\u201306, 5.00E\u201307, 7.11E\u201343, 1.26E\u201350, ",
+                0.6907579302787781
+            ]
+        ],
+        "Plan 2 (only males) | \u03c7 2": [
+            [
+                "Plan 2 (only males) | \u03c7 2",
+                null,
+                1
+            ]
+        ],
+        "Plan 3 (only females) | \u03c7 2": [
+            [
+                "Plan 3 (only females) | \u03c7 2",
+                null,
+                1
+            ]
+        ]
+    },
+    "30636644_PMC6330399_Tab4_from_pmc.xlsx": {
+        "Pathway | Pathway": [
+            [
+                "Pathway | Pathway",
+                null,
+                1
+            ]
+        ],
+        "Pathway GSEA ID | Pathway GSEA ID": [
+            [
+                "Pathway GSEA ID | Pathway GSEA ID",
+                null,
+                1
+            ]
+        ],
+        "Position": [
+            [
+                "Number of genes | Number of genes",
+                "Number of genes : 58, 16, 30, 15, 28, ",
+                0.43304455280303955
+            ]
+        ],
+        "Plan 1 (males and females) | \u03c7 2": [
+            [
+                "Plan 1 (males and females) | \u03c7 2",
+                null,
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "Plan 1 (males and females) | p value",
+                " P-value value: 3.83E\u201344, 1.11E\u201341, 6.52E\u201339, 5.08E\u201338, 2.11E\u201337, ",
+                0.6986051797866821
+            ],
+            [
+                "Plan 2 (only males) | p value",
+                " P-value value: 4.65E\u201312, 7.13E\u201314, 6.09E\u201309, 1.98E\u201312, 1.86E\u201310, ",
+                0.6990891695022583
+            ],
+            [
+                "Plan 3 (only females) | p value",
+                " P-value value: 7.07E\u201325, 4.86E\u201325, 1.39E\u201319, 6.00E\u201320, 3.47E\u201320, ",
+                0.6973185539245605
+            ]
+        ],
+        "Plan 2 (only males) | \u03c7 2": [
+            [
+                "Plan 2 (only males) | \u03c7 2",
+                null,
+                1
+            ]
+        ],
+        "Plan 3 (only females) | \u03c7 2": [
+            [
+                "Plan 3 (only females) | \u03c7 2",
+                null,
+                1
+            ]
+        ]
+    },
+    "28560309_PMC5440281_tbl1_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "SNP",
+                "Single nucleotide polymorphism identifier: rs17090219, rs3936289, rs56378310, rs192470679, rs11121365, ",
+                0.6455006003379822
+            ]
+        ],
+        "Chr": [
+            [
+                "Chr",
+                "Chromosome number: 18, 3, 13, 1, 10, ",
+                0.6944001317024231
+            ]
+        ],
+        "Gene": [
+            [
+                "Gene",
+                "Gene: nan, ST6GAL1, RAB20, PDS5B, SPSB1, ",
+                1
+            ]
+        ],
+        "AF": [
+            [
+                "MAF",
+                "Minor Allele Frequency: 0.093, 0.256, 0.424, 0.3, 0.062, ",
+                0.6237070560455322
+            ]
+        ],
+        "Coefficient": [
+            [
+                "Coefficient",
+                "Coefficient: 5.15, 3.34, \u22122.98, 2.89, 5.76, ",
+                1
+            ]
+        ],
+        "Effect": [
+            [
+                "SE",
+                "Standard Error of effect estimate: 0.93, 0.64, 0.6, 0.59, 1.18, ",
+                0.5174520015716553
+            ]
+        ],
+        "P-value": [
+            [
+                "F value",
+                "F value: 30.54, 26.83, 24.4, 24.36, 24.0, ",
+                0.4569544792175293
+            ],
+            [
+                "P value",
+                "P-value value: 9.48\u00a0\u00d7\u00a010\u22128, 4.92\u00a0\u00d7\u00a010\u22127, 1.52\u00a0\u00d7\u00a010\u22126, 1.55\u00a0\u00d7\u00a010\u22126, 1.92\u00a0\u00d7\u00a010\u22126, ",
+                0.6932398080825806
+            ]
+        ]
+    },
+    "27899424_PMC5237405_T3_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "SNP",
+                "Single nucleotide polymorphism identifier: rs4417745, rs7664889, rs676768, rs1328032, rs2446406, ",
+                0.6690664291381836
+            ]
+        ],
+        "Position": [
+            [
+                "Position",
+                "Position: 241 225 364, 77 087 704, 116 030 773, 71 420 424, 51 679 783, ",
+                1
+            ]
+        ],
+        "Chr": [
+            [
+                "Chr",
+                "Chromosome number: 2, 4, 10, 13, 15, ",
+                0.672945499420166
+            ]
+        ],
+        "RA": [
+            [
+                "Reference allele",
+                "Reference allele: A, T, ",
+                0.5889571309089661
+            ]
+        ],
+        "Associated phenotype": [
+            [
+                "Associated phenotype",
+                "Associated phenotype: PD, AD, ",
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "Min Cond FDR",
+                "Min Cond FDR: 2.73E-02, 3.23E-02, 4.25E-02, 1.38E-02, 2.59E-02, ",
+                0.5451606512069702
+            ],
+            [
+                "IFGC phase I p-value",
+                "ifgc phase i P-value-value: 2.52e-05, 0.000175, 0.000312, 1.93e-07, 7.18e-07, ",
+                0.5753830075263977
+            ],
+            [
+                "IFGC phase II p-value",
+                "ifgc phase ii P-value-value: 0.47, 0.82, 0.55, 0.34, 0.4, ",
+                0.532479465007782
+            ],
+            [
+                "Meta-analysis p-value",
+                "meta-analysis P-value-value: 3.20E-04, 3.18E-03, 2.40E-03, 7.39E-05, 2.24E-05, ",
+                0.6895135641098022
+            ]
+        ],
+        "IFGC phase I OR (95% CI)": [
+            [
+                "IFGC phase I OR (95% CI)",
+                "ifgc phase i odds ratio (95% Confidence Interval): 1.36 (1.18-1.57), 0.73 (0.62-0.86), 0.78 (0.68-0.90), 0.67 (0.57-0.78), 0.81 (0.74-0.88), ",
+                1
+            ]
+        ],
+        "IFGC phase II OR (95% CI)": [
+            [
+                "IFGC phase II OR (95% CI)",
+                "ifgc phase ii odds ratio (95% Confidence Interval): 1.06 (0.90-1.25), 0.98 (0.81-1.18), 0.96 (0.82-1.11), 0.94 (0.83-1.06), 0.96 (0.87-1.06), ",
+                1
+            ]
+        ],
+        "Effect": [
+            [
+                "Meta-analysis OR (95% CI)",
+                "meta-analysis odds ratio (95% Confidence Interval): 1.22 (1.09-1.36), 0.83 (0.73-0.94), 0.86 (0.78-0.95), 0.80 (0.72-0.88), 0.87 (0.82-0.93), ",
+                0.5192468166351318
+            ]
+        ]
+    },
+    "27899424_PMC5237405_T4_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "Unnamed: 0_level_0 | Unnamed: 0_level_1 | SNP",
+                " Single nucleotide polymorphism identifier: rs9268877, rs199528, rs1358071, ",
+                0.6337406039237976
+            ]
+        ],
+        "Position": [
+            [
+                "Unnamed: 1_level_0 | Unnamed: 1_level_1 | bp",
+                " Base-pair position: 32431147, 44843136, 43803189, ",
+                0.6563348770141602
+            ]
+        ],
+        "RA": [
+            [
+                "Unnamed: 2_level_0 | Unnamed: 2_level_1 | Risk allele",
+                " Risk allele: A, C, ",
+                0.7626799941062927
+            ]
+        ],
+        "Chr": [
+            [
+                "Unnamed: 3_level_0 | Unnamed: 3_level_1 | Chr",
+                " Chromosome number: 6, 17, ",
+                0.674493670463562
+            ]
+        ],
+        "eQTL | Braineac | Gene": [
+            [
+                "eQTL | Braineac | Gene",
+                null,
+                1
+            ]
+        ],
+        "eQTL | Braineac | Brain region": [
+            [
+                "eQTL | Braineac | Brain region",
+                null,
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "eQTL | Braineac | p-value",
+                " p-value-value: 3.1\u00d710\u22125, 3\u00d710\u22126, 3\u00d710\u22126 1\u00d710\u22125, 1\u00d710\u22125, 7.4\u00d710\u221222 1.8\u00d710\u221216 3.6\u00d710\u221210 4.7\u00d710\u221210 5.3\u00d710\u22127 2.7\u00d710\u22128 1.9\u00d710\u221211 5.5\u00d710\u221211 2.2\u00d710\u22126 7.3\u00d710\u221211 2.4\u00d710\u22127, ",
+                0.6932602524757385
+            ],
+            [
+                "eQTL | GTEx | p-value",
+                " p-value-value: 5.2\u00d710\u22128 8.8\u00d710\u22128 8.9\u00d710\u22127 1.3\u00d710\u22126, 4\u00d710\u221214 1.7\u00d710\u221212 4.5\u00d710\u221212 1.6\u00d710\u221211 4.5\u00d710\u221220 6.6\u00d710\u221220 1.9\u00d710\u221219 3.5\u00d710\u221219 5.4\u00d710\u22127 1.1\u00d710\u221218 5.7\u00d710\u221217 2.3\u00d710\u221216 2\u00d710\u221213 2\u00d710\u221210, 4.6\u00d710\u221210 1.6\u00d710\u22128 1.3\u00d710\u22127 2\u00d710\u221225 3.9\u00d710\u221220 6.2\u00d710\u221219 1.6\u00d710\u221217 4\u00d710\u221213 1.3\u00d710\u221212 8.7\u00d710\u221212 3.6\u00d710\u22128 1.3\u00d710\u22127 2.4\u00d710\u221218 5.1\u00d710\u221218 1.3\u00d710\u221217 2.5\u00d710\u221214 1.3\u00d710\u221220 1.5\u00d710\u221216 2.3\u00d710\u221216 8.4\u00d710\u221216 1.3\u00d710\u22127 2.4\u00d710\u221216 3.1\u00d710\u221213 7\u00d710\u221213 3.7\u00d710\u221212 1.3\u00d710\u221215, 7.6\u00d710\u221215 1.6\u00d710\u221213 5.8\u00d710\u221213 5.6\u00d710\u22128 1.8\u00d710\u221220 1.4\u00d710\u221218 4.9\u00d710\u221217 3.4\u00d710\u221216 7.3\u00d710\u22127 2.5\u00d710\u221219 6.9\u00d710\u221215 3.1\u00d710\u221214 9.6\u00d710\u221211 1\u00d710\u22126 1.6\u00d710\u22126, 1.9\u00d710\u221211 1.6\u00d710\u22129 4.3\u00d710\u22129 5.3\u00d710\u22128 7.5\u00d710\u22127 9.7\u00d710\u22127 7.3\u00d710\u221215 1.7\u00d710\u221214 4.5\u00d710\u221213 3.1\u00d710\u221212 2.8\u00d710\u221211, ",
+                0.6234985589981079
+            ]
+        ],
+        "eQTL | Braineac | Effect of risk allele": [
+            [
+                "eQTL | Braineac | Effect of risk allele",
+                null,
+                1
+            ]
+        ],
+        "eQTL | GTEx | Gene": [
+            [
+                "eQTL | GTEx | Gene",
+                null,
+                1
+            ]
+        ],
+        "eQTL | GTEx | Brain region": [
+            [
+                "eQTL | GTEx | Brain region",
+                null,
+                1
+            ]
+        ],
+        "eQTL | GTEx | Effect of risk allele": [
+            [
+                "eQTL | GTEx | Effect of risk allele",
+                null,
+                1
+            ]
+        ]
+    },
+    "27899424_PMC5237405_T1_from_pmc.xlsx": {
+        "Disease/trait": [
+            [
+                "Disease/trait",
+                "Disease/trait: Frontotemporal dementia (FTD)\u2014 IFGC phase I, Frontotemporal dementia (FTD)\u2014 IFGC phase II, Alzheimer\u2019s disease (AD)\u2014phase I, Parkinson\u2019s disease (PD), ",
+                1
+            ]
+        ],
+        "Total N": [
+            [
+                "Total N",
+                "total Total sample size: 6462, 6466, 54 162, 17 352, ",
+                1
+            ]
+        ],
+        "SNP": [
+            [
+                "# SNPs",
+                "Number of snps: 6 026 384, Illumina NeuroX Chip, 7 055 881, 7 689 524, ",
+                0.5300339460372925
+            ]
+        ],
+        "Reference": [
+            [
+                "Reference",
+                "Reference: 16, 23, 24, ",
+                1
+            ]
+        ]
+    },
+    "27899424_PMC5237405_T2_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "SNP",
+                "Single nucleotide polymorphism identifier: rs7664889, rs9268877, rs676768, rs10784359, rs2893253, ",
+                0.63079434633255
+            ]
+        ],
+        "Position": [
+            [
+                "Position",
+                "Position: 77 087 704, 32 431 147, 116 030 773, 40 445 750, 107 067 203, ",
+                1
+            ]
+        ],
+        "Chr": [
+            [
+                "Chr",
+                "Chromosome number: 4, 6, 10, 12, 13, ",
+                0.6533175706863403
+            ]
+        ],
+        "Associated phenotype": [
+            [
+                "Associated phenotype",
+                "Associated phenotype: PD, AD, ",
+                1
+            ]
+        ],
+        "P-value": [
+            [
+                "Min Conj FDR",
+                "Min Conj FDR: 0.0484, 0.0427, 0.0326, 0.0355, 0.018, ",
+                0.6550523638725281
+            ],
+            [
+                "FTD p-value",
+                "ftd P-value-value: 0.000175, 1.04e-10, 0.000312, 0.000158, 0.000202, ",
+                0.693922758102417
+            ],
+            [
+                "Associated phenotype p-value",
+                "associated phenotype P-value-value: 0.000888, 0.000741, 0.000614, 7.47e-05, 0.000111, ",
+                0.7081254720687866
+            ]
+        ],
+        "Direction of effect": [
+            [
+                "Direction of effect",
+                "Direction of effect: ++++, ",
+                1
+            ]
+        ]
+    }
+}

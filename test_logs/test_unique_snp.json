@@ -1,70 +1,50 @@
 [
   [
     "30413934_PMC6358498.csv",
-    "Table 30413934_PMC6358498.csv do not have the right SNP, differ at: {'133587', '27375637', '9549055', 'rs145749015', '9553380', 'rs79161472', '9544499', '7055881', '2336270', '9026568', '9545543'} vs {'rs10991386', 'rs1759499', 'rs11039131', 'rs13277568', 'rs116715716', 'rs12783314', 'rs16895579', 'rs11144711', 'rs11039297', 'rs12339683', 'rs12194027', 'rs10906257', 'rs12595955'}"
-  ],
-  [
-    "30651383_PMC6369905.csv",
-    "Table 30651383_PMC6369905.csv do not have the right SNP, differ at: set() vs {'rs39938', 'rs74587705', 'rs9371194', 'rs75889566', 'rs12373108', 'rs12583648'}"
+    "Table 30413934_PMC6358498.csv do not contain all snp, missing: {'27375637', '9026568', '2336270', '9545543', 'rs145749015', '9553380', '7055881', '9544499', '9549055', '133587', 'rs79161472'}"
   ],
   [
     "30805717_PMC7193309.csv",
-    "Table 30805717_PMC7193309.csv do not have the right SNP, differ at: {'chr10:114752503..114808902', 'chr8:27422740..27477509', 'chr1:207653395..207804141', 'chr11:45838926..45932800', 'chr19:45242173..45247627', 'chr11:48333360..48333360', nan, 'chr11:46297631..48009074'} vs {'rs12805422', 'rs17747324', 'rs6656401', 'rs4803750', 'rs10501320', 'rs2279590', 'rs1483121'}"
-  ],
-  [
-    "31497858_PMC6736148.csv",
-    "Table 31497858_PMC6736148.csv do not have the right SNP, differ at: set() vs {'rs34331204'}"
+    "Table 30805717_PMC7193309.csv do not contain all snp, missing: {'chr11:48333360..48333360', 'chr1:207653395..207804141', 'chr10:114752503..114808902', 'chr8:27422740..27477509', 'chr19:45242173..45247627', 'chr11:45838926..45932800', nan, 'chr11:46297631..48009074'}"
   ],
   [
     "29107063_PMC5920782.csv",
-    "Table 29107063_PMC5920782.csv do not have the right SNP, differ at: {'1329158', '35259', '33328', '551330'} vs set()"
+    "Table 29107063_PMC5920782.csv do not contain all snp, missing: {'551330', '1329158', '33328', '35259'}"
   ],
   [
     "28560309_PMC5440281.csv",
-    "Table 28560309_PMC5440281.csv do not have the right SNP, differ at: {'rs11121365', 'rs3936289', 'rs192470679', 'rs56378310', 'rs2484', 'rs17090219', 'rs10903488'} vs set()"
+    "Table 28560309_PMC5440281.csv do not contain all snp, missing: {'rs11121365', 'rs192470679', 'rs2484', 'rs17090219', 'rs3936289', 'rs56378310', 'rs10903488'}"
   ],
   [
     "29458411_PMC5819208.csv",
-    "Table 29458411_PMC5819208.csv do not have the right SNP, differ at: {nan} vs set()"
+    "Table 29458411_PMC5819208.csv do not contain all snp, missing: {nan}"
   ],
   [
     "31426376_PMC6723529.csv",
-    "Table 31426376_PMC6723529.csv do not have the right SNP, differ at: {'14.35 (12.0\u201317.1)', '0.013', nan, '3.4 \u00d7 10\u22125', '0.005', '25.12 (19.0\u201333.5)', '8.17 (6.3\u201310.7)'} vs set()"
+    "Table 31426376_PMC6723529.csv do not contain all snp, missing: {'3.4 \u00d7 10\u22125', '8.17 (6.3\u201310.7)', '0.005', '14.35 (12.0\u201317.1)', nan, '25.12 (19.0\u201333.5)', '0.013'}"
   ],
   [
     "30636644_PMC6330399.csv",
-    "Table 30636644_PMC6330399.csv do not have the right SNP, differ at: {'rs62402815a,b', '51', '62', '67', '53', '24', 'rs2298369b', '52', '57', nan, '47', 'rs12386284b', '90', '42', '83', '63', '46', 'rs2829803b', '22', '36', '73', '39', 'rs726411a', '70', 'rs62402815a', '27', 'rs9918162a'} vs {'rs2829803', 'rs62402815', 'rs12386284', 'rs9918162', 'rs726411'}"
+    "Table 30636644_PMC6330399.csv do not contain all snp, missing: {'rs62402815a', '90', '51', '63', '46', 'rs726411a', 'rs9918162a', '27', '47', '67', '22', '73', '39', '36', 'rs12386284b', '70', nan, '53', 'rs2829803b', '42', 'rs62402815a,b', '57', '83', 'rs2298369b', '62', '52', '24'}"
   ],
   [
     "29274321_PMC5938137.csv",
-    "Table 29274321_PMC5938137.csv do not have the right SNP, differ at: {'rs55653268', nan, 'rs118130881'} vs set()"
+    "Table 29274321_PMC5938137.csv do not contain all snp, missing: {'rs55653268', 'rs118130881', nan}"
   ],
   [
     "29967939_PMC6280657.csv",
-    "Table 29967939_PMC6280657.csv do not have the right SNP, differ at: {'rs13115400', 'rs185031519', 'rs12961169', 'rs35055419', 'rs514716', nan, 'rs1393060', 'rs9527039', 'rs769449', 'rs316341'} vs set()"
-  ],
-  [
-    "31055733_PMC6544706.csv",
-    "Table 31055733_PMC6544706.csv do not have the right SNP, differ at: set() vs {'rs17182607', 'rs7106970', 'rs35758766', 'rs2666895', 'rs41293100', 'rs17867001', 'rs74528420', 'rs72934313', 'rs6884266', 'rs11658260', 'rs3786974', 'rs3812071', 'rs75036080', 'rs4501143', 'rs74019790', 'rs11024482', 'rs2295797', 'rs28868104', 'rs78210707', 'rs11602981', 'rs12952045', 'rs3814837', 'rs7858861', 'rs61095322', 'rs12269733', 'rs62286001', 'rs10968750', 'rs111388896', 'rs1447575', 'rs1447576', 'rs1925458', 'rs4150436', 'rs76576833', 'rs7557705', 'rs1353581', 'rs34008994', 'rs17656050', 'rs118164920', 'rs8047645', 'rs10483284', 'rs16824888', 'rs11909995', 'rs41284944', 'rs12984273', 'rs243034'}"
-  ],
-  [
-    "30617256_PMC6836675.csv",
-    "Table 30617256_PMC6836675.csv do not have the right SNP, differ at: set() vs {'rs6656401', 'rs6448451', 'rs9269853', 'rs3844143', 'rs1582763', 'rs11257242', 'rs4147929', 'rs3752241', 'rs7935829', 'rs679515', 'rs75627662', 'rs9916042', 'rs11763230', 'rs10792832', 'rs7384878', 'rs1532278'}"
+    "Table 29967939_PMC6280657.csv do not contain all snp, missing: {'rs185031519', 'rs35055419', 'rs316341', 'rs13115400', 'rs12961169', 'rs514716', 'rs1393060', 'rs769449', nan, 'rs9527039'}"
   ],
   [
     "30448613_PMC6331247.csv",
-    "Table 30448613_PMC6331247.csv do not have the right SNP, differ at: {'rs111418223', nan, 'rs9270303'} vs {'rs9271192', 'rs6656401', 'rs9331896'}"
+    "Table 30448613_PMC6331247.csv do not contain all snp, missing: {'rs111418223', 'rs9270303', nan}"
   ],
   [
     "27899424_PMC5237405.csv",
-    "Table 27899424_PMC5237405.csv do not have the right SNP, differ at: {'7 689 524', 'Illumina NeuroX Chip', '6 026 384', '7 055 881'} vs set()"
-  ],
-  [
-    "29752348_PMC5976227.csv",
-    "Table 29752348_PMC5976227.csv do not have the right SNP, differ at: set() vs {'rs3744020', 'rs67827860', 'rs13164785', 'rs146896516'}"
+    "Table 27899424_PMC5237405.csv do not contain all snp, missing: {'7 055 881', 'Illumina NeuroX Chip', '7 689 524', '6 026 384'}"
   ],
   [
     "30820047_PMC6463297.csv",
-    "Table 30820047_PMC6463297.csv do not have the right SNP, differ at: {'35.0', '3.0', '74.0', '10.0', '20.0', '6.0', '47.0', '331.0', nan, '9.0', '15.0', 'rs7920721g', '51.0', '21.0'} vs set()"
+    "Table 30820047_PMC6463297.csv do not contain all snp, missing: {'35.0', '9.0', '47.0', '6.0', '331.0', '10.0', '15.0', '20.0', nan, '21.0', '74.0', '51.0', '3.0', 'rs7920721g'}"
   ]
 ]
