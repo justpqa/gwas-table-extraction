@@ -115,8 +115,8 @@ def test_num_record_snp(dir_path: str):
                 # NOTE: alternately, we can try to check if we have at least number of row as test
                 # to prevent the case of rows that do not pass QC
                 # if curr_snp_df.shape[0] != test_snp_df.shape[0]:
-                if curr_snp_df.shape[0] >= test_snp_df.shape[0]:
-                    failed_table.append((file_name, f"Table {file_name} does not have the right number of row for SNP {snp}"))
+                if curr_snp_df.shape[0] < test_snp_df.shape[0]:
+                    failed_table.append((file_name, f"Table {file_name} does not have the enough number of row for SNP {snp}"))
                     break
     try:
         assert len(failed_table) == 0
