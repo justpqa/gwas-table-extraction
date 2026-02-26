@@ -10,261 +10,261 @@ SNP,Chr,Position,RA,AF,P-value,Effect,Population,Cohort,P-value notes
 ,,,,3.1 × 10−5a,10.0,,,,No. of genes in the pathway in the dataset
 ,,,,6.3 × 10−5a,382.0,,,,No. of genes in the pathway in the dataset
 ,,,,,,,,,Common variant q value
-,,,,1.4 × 10−7a,9.5 × 10−4,,,,Common variant q value
-,,,,4.5 × 10−7a,1.4 × 10−3,,,,Common variant q value
-,,,,1.1 × 10−6a,2.5 × 10−3,,,,Common variant q value
-,,,,3.5 × 10−6a,5.8 × 10−3,,,,Common variant q value
-,,,,5.5 × 10−6a,6.7 × 10−3,,,,Common variant q value
-,,,,6.1 × 10−6a,6.7 × 10−3,,,,Common variant q value
-,,,,1.6 × 10−5a,1.5 × 10−2,,,,Common variant q value
-,,,,3.1 × 10−5a,2.6 × 10−2,,,,Common variant q value
-,,,,6.3 × 10−5a,4.6 × 10−2,,,,Common variant q value
+,,,,1.4 × 10−7a,0.00095,,,,Common variant q value
+,,,,4.5 × 10−7a,0.0014,,,,Common variant q value
+,,,,1.1 × 10−6a,0.0025,,,,Common variant q value
+,,,,3.5 × 10−6a,0.0058,,,,Common variant q value
+,,,,5.5 × 10−6a,0.0067,,,,Common variant q value
+,,,,6.1 × 10−6a,0.0067,,,,Common variant q value
+,,,,1.6 × 10−5a,0.015,,,,Common variant q value
+,,,,3.1 × 10−5a,0.026000000000000002,,,,Common variant q value
+,,,,6.3 × 10−5a,0.046,,,,Common variant q value
 ,,,,,,,,,Rare variant Pa
-,,,,1.4 × 10−7a,6.7 × 10−2,,,,Rare variant Pa
-,,,,4.5 × 10−7a,4.9 × 10−2,,,,Rare variant Pa
-,,,,1.1 × 10−6a,1.7 × 10−2,,,,Rare variant Pa
-,,,,3.5 × 10−6a,5.6 × 10−2,,,,Rare variant Pa
-,,,,5.5 × 10−6a,3.0 × 10−2,,,,Rare variant Pa
-,,,,6.1 × 10−6a,1.2 × 10−1,,,,Rare variant Pa
-,,,,1.6 × 10−5a,1.8 × 10−1,,,,Rare variant Pa
-,,,,3.1 × 10−5a,7.7 × 10−1,,,,Rare variant Pa
-,,,,6.3 × 10−5a,2.0 × 10−1,,,,Rare variant Pa
+,,,,1.4 × 10−7a,0.067,,,,Rare variant Pa
+,,,,4.5 × 10−7a,0.049,,,,Rare variant Pa
+,,,,1.1 × 10−6a,0.017,,,,Rare variant Pa
+,,,,3.5 × 10−6a,0.055999999999999994,,,,Rare variant Pa
+,,,,5.5 × 10−6a,0.03,,,,Rare variant Pa
+,,,,6.1 × 10−6a,0.12,,,,Rare variant Pa
+,,,,1.6 × 10−5a,0.18000000000000002,,,,Rare variant Pa
+,,,,3.1 × 10−5a,0.77,,,,Rare variant Pa
+,,,,6.3 × 10−5a,0.2,,,,Rare variant Pa
 ,,,,,,,,,Rare variant q value
-,,,,1.4 × 10−7a,8.4 × 10−1,,,,Rare variant q value
-,,,,4.5 × 10−7a,8.4 × 10−1,,,,Rare variant q value
-,,,,1.1 × 10−6a,8.1 × 10−1,,,,Rare variant q value
-,,,,3.5 × 10−6a,8.4 × 10−1,,,,Rare variant q value
-,,,,5.5 × 10−6a,8.1 × 10−1,,,,Rare variant q value
-,,,,6.1 × 10−6a,8.4 × 10−1,,,,Rare variant q value
-,,,,1.6 × 10−5a,8.4 × 10−1,,,,Rare variant q value
-,,,,3.1 × 10−5a,8.5 × 10−1,,,,Rare variant q value
-,,,,6.3 × 10−5a,8.4 × 10−1,,,,Rare variant q value
+,,,,1.4 × 10−7a,0.8400000000000001,,,,Rare variant q value
+,,,,4.5 × 10−7a,0.8400000000000001,,,,Rare variant q value
+,,,,1.1 × 10−6a,0.81,,,,Rare variant q value
+,,,,3.5 × 10−6a,0.8400000000000001,,,,Rare variant q value
+,,,,5.5 × 10−6a,0.81,,,,Rare variant q value
+,,,,6.1 × 10−6a,0.8400000000000001,,,,Rare variant q value
+,,,,1.6 × 10−5a,0.8400000000000001,,,,Rare variant q value
+,,,,3.1 × 10−5a,0.8500000000000001,,,,Rare variant q value
+,,,,6.3 × 10−5a,0.8400000000000001,,,,Rare variant q value
 ,,,,,,,,,Common variant P 0 kb
-331.0,,,,,2.2 × 10−4a,,,,Common variant P 0 kb
-74.0,,,,,2.1 × 10−4a,,,,Common variant P 0 kb
-47.0,,,,,2.2 × 10−4a,,,,Common variant P 0 kb
-35.0,,,,,7.0 × 10−4a,,,,Common variant P 0 kb
-21.0,,,,,1.0 × 10−3a,,,,Common variant P 0 kb
-10.0,,,,,1.1 × 10−3,,,,Common variant P 0 kb
-51.0,,,,,3.8 × 10−2,,,,Common variant P 0 kb
-6.0,,,,,6.9 × 10−2,,,,Common variant P 0 kb
-3.0,,,,,7.6 × 10−2,,,,Common variant P 0 kb
-15.0,,,,,7.7 × 10−2,,,,Common variant P 0 kb
-20.0,,,,,9.0 × 10−2,,,,Common variant P 0 kb
-9.0,,,,,1.5 × 10−1,,,,Common variant P 0 kb
+331.0,,,,,0.00022000000000000003,,,,Common variant P 0 kb
+74.0,,,,,0.00021,,,,Common variant P 0 kb
+47.0,,,,,0.00022000000000000003,,,,Common variant P 0 kb
+35.0,,,,,0.0007,,,,Common variant P 0 kb
+21.0,,,,,0.001,,,,Common variant P 0 kb
+10.0,,,,,0.0011,,,,Common variant P 0 kb
+51.0,,,,,0.038,,,,Common variant P 0 kb
+6.0,,,,,0.069,,,,Common variant P 0 kb
+3.0,,,,,0.076,,,,Common variant P 0 kb
+15.0,,,,,0.077,,,,Common variant P 0 kb
+20.0,,,,,0.09,,,,Common variant P 0 kb
+9.0,,,,,0.15000000000000002,,,,Common variant P 0 kb
 ,,,,,,,,,Common variant P 35–10 kb
-331.0,,,,,1.5 × 10−4a,,,,Common variant P 35–10 kb
-74.0,,,,,3.2 × 10−3,,,,Common variant P 35–10 kb
-47.0,,,,,1.8 × 10−2,,,,Common variant P 35–10 kb
-35.0,,,,,9.9 × 10−3,,,,Common variant P 35–10 kb
-21.0,,,,,3.3 × 10−2,,,,Common variant P 35–10 kb
-10.0,,,,,1.1 × 10−2,,,,Common variant P 35–10 kb
-51.0,,,,,4.6 × 10−2,,,,Common variant P 35–10 kb
-6.0,,,,,1.2 × 10−1,,,,Common variant P 35–10 kb
-3.0,,,,,2.3 × 10−2,,,,Common variant P 35–10 kb
-15.0,,,,,2.6 × 10−2,,,,Common variant P 35–10 kb
-20.0,,,,,3.4 × 10−1,,,,Common variant P 35–10 kb
-9.0,,,,,3.0 × 10−1,,,,Common variant P 35–10 kb
+331.0,,,,,0.00015000000000000001,,,,Common variant P 35–10 kb
+74.0,,,,,0.0032,,,,Common variant P 35–10 kb
+47.0,,,,,0.018000000000000002,,,,Common variant P 35–10 kb
+35.0,,,,,0.0099,,,,Common variant P 35–10 kb
+21.0,,,,,0.033,,,,Common variant P 35–10 kb
+10.0,,,,,0.011000000000000001,,,,Common variant P 35–10 kb
+51.0,,,,,0.046,,,,Common variant P 35–10 kb
+6.0,,,,,0.12,,,,Common variant P 35–10 kb
+3.0,,,,,0.023,,,,Common variant P 35–10 kb
+15.0,,,,,0.026000000000000002,,,,Common variant P 35–10 kb
+20.0,,,,,0.34,,,,Common variant P 35–10 kb
+9.0,,,,,0.30000000000000004,,,,Common variant P 35–10 kb
 ,,,,,,,,,Rare variant P 0 kb
-331.0,,,,,8.2 × 10−1,,,,Rare variant P 0 kb
-74.0,,,,,3.1 × 10−1,,,,Rare variant P 0 kb
-47.0,,,,,2.4 × 10−1,,,,Rare variant P 0 kb
-35.0,,,,,9.0 × 10−2,,,,Rare variant P 0 kb
-21.0,,,,,9.5 × 10−2,,,,Rare variant P 0 kb
-10.0,,,,,3.6 × 10−1,,,,Rare variant P 0 kb
-51.0,,,,,5.8 × 10−1,,,,Rare variant P 0 kb
-6.0,,,,,3.9 × 10−1,,,,Rare variant P 0 kb
-3.0,,,,,9.7 × 10−1,,,,Rare variant P 0 kb
-15.0,,,,,6.1 × 10−1,,,,Rare variant P 0 kb
-20.0,,,,,7.1 × 10−1,,,,Rare variant P 0 kb
-9.0,,,,,1.9 × 10−1,,,,Rare variant P 0 kb
+331.0,,,,,0.82,,,,Rare variant P 0 kb
+74.0,,,,,0.31000000000000005,,,,Rare variant P 0 kb
+47.0,,,,,0.24,,,,Rare variant P 0 kb
+35.0,,,,,0.09,,,,Rare variant P 0 kb
+21.0,,,,,0.095,,,,Rare variant P 0 kb
+10.0,,,,,0.36000000000000004,,,,Rare variant P 0 kb
+51.0,,,,,0.58,,,,Rare variant P 0 kb
+6.0,,,,,0.39,,,,Rare variant P 0 kb
+3.0,,,,,0.97,,,,Rare variant P 0 kb
+15.0,,,,,0.61,,,,Rare variant P 0 kb
+20.0,,,,,0.71,,,,Rare variant P 0 kb
+9.0,,,,,0.19,,,,Rare variant P 0 kb
 ,,,,,,,,,Rare variant P 35–10 kb
-331.0,,,,,5.1 × 10−1,,,,Rare variant P 35–10 kb
-74.0,,,,,5.1 × 10−1,,,,Rare variant P 35–10 kb
-47.0,,,,,6.8 × 10−1,,,,Rare variant P 35–10 kb
-35.0,,,,,1.6 × 10−1,,,,Rare variant P 35–10 kb
-21.0,,,,,1.9 × 10−1,,,,Rare variant P 35–10 kb
-10.0,,,,,1.8 × 10−1,,,,Rare variant P 35–10 kb
-51.0,,,,,5.7 × 10−1,,,,Rare variant P 35–10 kb
-6.0,,,,,2.5 × 10−1,,,,Rare variant P 35–10 kb
-3.0,,,,,7.6 × 10−1,,,,Rare variant P 35–10 kb
-15.0,,,,,2.9 × 10−1,,,,Rare variant P 35–10 kb
-20.0,,,,,6.8 × 10−1,,,,Rare variant P 35–10 kb
-9.0,,,,,1.1 × 10−2,,,,Rare variant P 35–10 kb
-rs4844610,,207802552,C/A,0.187,3.8 × /thinspace10 - 10,1.20,,1.12-1.20,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs6733839,,127892810,C/T,0.407,2.0 × /thinspace10 - 18,1.23,,1.15-1.22,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs10933431,,233981912,C/G,0.223,3.2 × /thinspace10 - 3,0.92,,0.87-0.94,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs9271058,,32575406,T/A,0.27,5.7 × /thinspace10 - 5,1.11,,1.06-1.14,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs75932628,,41129252,C/T,0.008,1.5/thinspace × /thinspace10 - 4,2.50,,1.65-2.44,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs9473117,,47431284,A/C,0.28,1.0 × /thinspace10 - 4,1.11,,1.05-1.12,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs12539172,,100091795,C/T,0.303,2.1 × /thinspace10 - 6,0.89,,0.91-0.96,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs10808026,,143099133,C/A,0.199,1.1 × /thinspace10 - 3,0.91,,0.87-0.94,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs73223431,,27219987,C/T,0.367,1.5 × /thinspace10 - 5,1.11,,1.07-1.13,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs9331896,,27467686,T/C,0.387,1.7 × /thinspace10 - 9,0.87,,0.85-0.91,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs3740688,,47380340,T/G,0.448,1.2 × /thinspace10 - 3,0.93,,0.89-0.94,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs7933202,,59936926,A/C,0.391,1.6 × /thinspace10 - 5,0.90,,0.86-0.92,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs3851179,,85868640,C/T,0.356,6.1/thinspace × /thinspace10 - 11,0.85,,0.86-0.91,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs11218343,,121435587,T/C,0.04,1.8 × /thinspace10 - 5,0.77,,0.76-0.88,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs17125924,,53391680,A/G,0.093,5.0 × /thinspace10 - 4,1.15,,1.08-1.19,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs12881735,,92932828,T/C,0.221,4.3 × /thinspace10 - 3,0.92,,0.88-0.95,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs3752246,,1056492,C/G,0.182,4.7 × /thinspace10 - 8,1.18,,1.09-1.18,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs429358,,45411941,T/C,0.216,region not carried forward to replication stage,APOE,,3.20-3.45,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs6024870,,54997568,G/A,0.088,9.0 × /thinspace10 - 3,0.90,,0.84-0.93,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs7920721,,11720308,A/G,0.389,3.2 × /thinspace10 - 3,1.07,,1.05-1.11,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs138190086,,61538148,G/A,0.02,1.8 × /thinspace10 - 4,1.41,,1.15-1.44,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs190982,,88223420,A/G,0.39,2.7/thinspace × /thinspace10 - 3,0.93,,0.92-0.97,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs4723711,,37844263,A/T,0.356,1.0 × /thinspace10 - 4,0.91,,0.92-0.98,"stage 2 ( n /thinspace = /thinspace18,845).P"
-rs4844610,,207802552,C/A,0.187,3.6 × /thinspace10 - 24,1.20,,1.12-1.20,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs6733839,,127892810,C/T,0.407,2.1 × /thinspace10 - 44,1.23,,1.15-1.22,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs10933431,,233981912,C/G,0.223,3.4 × /thinspace10 - 9,0.92,,0.87-0.94,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs9271058,,32575406,T/A,0.27,1.4 × /thinspace10 - 11,1.11,,1.06-1.14,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs75932628,,41129252,C/T,0.008,2.7 × /thinspace10 - 15,2.50,,1.65-2.44,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs9473117,,47431284,A/C,0.28,1.2/thinspace × /thinspace10 - 10,1.11,,1.05-1.12,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs12539172,,100091795,C/T,0.303,9.3 × /thinspace10 - 10,0.89,,0.91-0.96,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs10808026,,143099133,C/A,0.199,1.3 × /thinspace10 - 10,0.91,,0.87-0.94,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs73223431,,27219987,C/T,0.367,6.3 × /thinspace10 - 14,1.11,,1.07-1.13,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs9331896,,27467686,T/C,0.387,4.6 × /thinspace10 - 24,0.87,,0.85-0.91,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs3740688,,47380340,T/G,0.448,5.4 × /thinspace10 - 13,0.93,,0.89-0.94,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs7933202,,59936926,A/C,0.391,1.9 × /thinspace10 - 19,0.90,,0.86-0.92,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs3851179,,85868640,C/T,0.356,6.0 × /thinspace10 - 25,0.85,,0.86-0.91,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs11218343,,121435587,T/C,0.04,2.9 × /thinspace10 - 12,0.77,,0.76-0.88,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs17125924,,53391680,A/G,0.093,1.4 × /thinspace10 - 9,1.15,,1.08-1.19,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs12881735,,92932828,T/C,0.221,7.4x 10 - 9,0.92,,0.88-0.95,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs3752246,,1056492,C/G,0.182,3.1 × /thinspace10 - 16,1.18,,1.09-1.18,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs429358,,45411941,T/C,0.216,region not carried forward to replication stage,APOE,,3.20-3.45,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs6024870,,54997568,G/A,0.088,3.5 × /thinspace10 - 8,0.90,,0.84-0.93,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs7920721,,11720308,A/G,0.389,2.3 × /thinspace10 - 9,1.07,,1.05-1.11,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs138190086,,61538148,G/A,0.02,7.5 × /thinspace10 - 9,1.41,,1.15-1.44,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs190982,,88223420,A/G,0.39,2.8 × /thinspace10 - 6,0.93,,0.92-0.97,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs4723711,,37844263,A/T,0.356,2.8 × /thinspace10 - 7,0.91,,0.92-0.98,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
-rs4844610,1,207802552,C/A,0.187,8.2 × 10−16,1.20,,1.12–1.20,"Stage 1 discovery (n = 63,926) | P"
-rs6733839,2,127892810,C/T,0.407,4.0 × 10−28,1.23,,1.15–1.22,"Stage 1 discovery (n = 63,926) | P"
-rs10933431,2,233981912,C/G,0.223,2.6 × 10−7,0.92,,0.87–0.94,"Stage 1 discovery (n = 63,926) | P"
-rs9271058,6,32575406,T/A,0.27,5.1 × 10−8,1.11,,1.06–1.14,"Stage 1 discovery (n = 63,926) | P"
-rs75932628,6,41129252,C/T,0.008,2.9 × 10−12,2.50,,1.65–2.44,"Stage 1 discovery (n = 63,926) | P"
-rs9473117,6,47431284,A/C,0.28,2.3 × 10−7,1.11,,1.05–1.12,"Stage 1 discovery (n = 63,926) | P"
-rs12539172,7,100091795,C/T,0.303,2.1 × 10−5,0.89,,0.91–0.96,"Stage 1 discovery (n = 63,926) | P"
-rs10808026,7,143099133,C/A,0.199,3.1 × 10−8,0.91,,0.87–0.94,"Stage 1 discovery (n = 63,926) | P"
-rs73223431,8,27219987,C/T,0.367,8.3 × 10−10,1.11,,1.07–1.13,"Stage 1 discovery (n = 63,926) | P"
-rs9331896,8,27467686,T/C,0.387,3.6 × 10−16,0.87,,0.85–0.91,"Stage 1 discovery (n = 63,926) | P"
-rs3740688,11,47380340,T/G,0.448,9.7 × 10−11,0.93,,0.89–0.94,"Stage 1 discovery (n = 63,926) | P"
-rs7933202,11,59936926,A/C,0.391,2.2 × 10−15,0.90,,0.86–0.92,"Stage 1 discovery (n = 63,926) | P"
-rs3851179,11,85868640,C/T,0.356,5.8 × 10−16,0.85,,0.86–0.91,"Stage 1 discovery (n = 63,926) | P"
-rs11218343,11,121435587,T/C,0.04,2.7 × 10−8,0.77,,0.76–0.88,"Stage 1 discovery (n = 63,926) | P"
-rs17125924,14,53391680,A/G,0.093,6.6 × 10−7,1.15,,1.08–1.19,"Stage 1 discovery (n = 63,926) | P"
-rs12881735,14,92932828,T/C,0.221,4.9 × 10−7,0.92,,0.88–0.95,"Stage 1 discovery (n = 63,926) | P"
-rs3752246,19,1056492,C/G,0.182,6.6 × 10−10,1.18,,1.09–1.18,"Stage 1 discovery (n = 63,926) | P"
-rs429358,19,45411941,T/C,0.216,1.2 × 10−881,APOE region not carried forward to replication stage,,3.20–3.45,"Stage 1 discovery (n = 63,926) | P"
-rs6024870,20,54997568,G/A,0.088,1.1 × 10−6,0.90,,0.84–0.93,"Stage 1 discovery (n = 63,926) | P"
-rs7920721,10,11720308,A/G,0.389,1.9 × 10−7,1.07,,1.05–1.11,"Stage 1 discovery (n = 63,926) | P"
-rs138190086,17,61538148,G/A,0.02,7.5 × 10−6,1.41,,1.15–1.44,"Stage 1 discovery (n = 63,926) | P"
-rs190982,5,88223420,A/G,0.39,2.8 × 10−4,0.93,,0.92–0.97,"Stage 1 discovery (n = 63,926) | P"
-rs4723711,7,37844263,A/T,0.356,2.7 × 10−4,0.91,,0.92–0.98,"Stage 1 discovery (n = 63,926) | P"
-rs4844610,1,207802552,C/A,0.187,3.8 × 10−10,1.20,,1.12–1.20,"Stage 2 (n = 18,845) | P"
-rs6733839,2,127892810,C/T,0.407,2.0 × 10−18,1.23,,1.15–1.22,"Stage 2 (n = 18,845) | P"
-rs10933431,2,233981912,C/G,0.223,3.2 × 10−3,0.92,,0.87–0.94,"Stage 2 (n = 18,845) | P"
-rs9271058,6,32575406,T/A,0.27,5.7 × 10−5,1.11,,1.06–1.14,"Stage 2 (n = 18,845) | P"
-rs75932628,6,41129252,C/T,0.008,1.5 × 10−4,2.50,,1.65–2.44,"Stage 2 (n = 18,845) | P"
-rs9473117,6,47431284,A/C,0.28,1.0 × 10−4,1.11,,1.05–1.12,"Stage 2 (n = 18,845) | P"
-rs12539172,7,100091795,C/T,0.303,2.1 × 10−6,0.89,,0.91–0.96,"Stage 2 (n = 18,845) | P"
-rs10808026,7,143099133,C/A,0.199,1.1 × 10−3,0.91,,0.87–0.94,"Stage 2 (n = 18,845) | P"
-rs73223431,8,27219987,C/T,0.367,1.5 × 10−5,1.11,,1.07–1.13,"Stage 2 (n = 18,845) | P"
-rs9331896,8,27467686,T/C,0.387,1.7 × 10−9,0.87,,0.85–0.91,"Stage 2 (n = 18,845) | P"
-rs3740688,11,47380340,T/G,0.448,1.2 × 10−3,0.93,,0.89–0.94,"Stage 2 (n = 18,845) | P"
-rs7933202,11,59936926,A/C,0.391,1.6 × 10−5,0.90,,0.86–0.92,"Stage 2 (n = 18,845) | P"
-rs3851179,11,85868640,C/T,0.356,6.1 × 10−11,0.85,,0.86–0.91,"Stage 2 (n = 18,845) | P"
-rs11218343,11,121435587,T/C,0.04,1.8 × 10−5,0.77,,0.76–0.88,"Stage 2 (n = 18,845) | P"
-rs17125924,14,53391680,A/G,0.093,5.0 × 10−4,1.15,,1.08–1.19,"Stage 2 (n = 18,845) | P"
-rs12881735,14,92932828,T/C,0.221,4.3 × 10−3,0.92,,0.88–0.95,"Stage 2 (n = 18,845) | P"
-rs3752246,19,1056492,C/G,0.182,4.7 × 10−8,1.18,,1.09–1.18,"Stage 2 (n = 18,845) | P"
-rs429358,19,45411941,T/C,0.216,APOE region not carried forward to replication stage,APOE region not carried forward to replication stage,,3.20–3.45,"Stage 2 (n = 18,845) | P"
-rs6024870,20,54997568,G/A,0.088,9.0 × 10−3,0.90,,0.84–0.93,"Stage 2 (n = 18,845) | P"
-rs7920721,10,11720308,A/G,0.389,3.2 × 10−3,1.07,,1.05–1.11,"Stage 2 (n = 18,845) | P"
-rs138190086,17,61538148,G/A,0.02,1.8 × 10−4,1.41,,1.15–1.44,"Stage 2 (n = 18,845) | P"
-rs190982,5,88223420,A/G,0.39,2.7 × 10−3,0.93,,0.92–0.97,"Stage 2 (n = 18,845) | P"
-rs4723711,7,37844263,A/T,0.356,1.0 × 10−4,0.91,,0.92–0.98,"Stage 2 (n = 18,845) | P"
-rs4844610,1,207802552,C/A,0.187,3.6 × 10−24,1.20,,1.12–1.20,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs6733839,2,127892810,C/T,0.407,2.1 × 10−44,1.23,,1.15–1.22,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs10933431,2,233981912,C/G,0.223,3.4 × 10−9,0.92,,0.87–0.94,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs9271058,6,32575406,T/A,0.27,1.4 × 10−11,1.11,,1.06–1.14,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs75932628,6,41129252,C/T,0.008,2.7 × 10−15,2.50,,1.65–2.44,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs9473117,6,47431284,A/C,0.28,1.2 × 10−10,1.11,,1.05–1.12,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs12539172,7,100091795,C/T,0.303,9.3 × 10−10,0.89,,0.91–0.96,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs10808026,7,143099133,C/A,0.199,1.3 × 10−10,0.91,,0.87–0.94,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs73223431,8,27219987,C/T,0.367,6.3 × 10−14,1.11,,1.07–1.13,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs9331896,8,27467686,T/C,0.387,4.6 × 10−24,0.87,,0.85–0.91,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs3740688,11,47380340,T/G,0.448,5.4 × 10−13,0.93,,0.89–0.94,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs7933202,11,59936926,A/C,0.391,1.9 × 10−19,0.90,,0.86–0.92,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs3851179,11,85868640,C/T,0.356,6.0 × 10−25,0.85,,0.86–0.91,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs11218343,11,121435587,T/C,0.04,2.9 × 10−12,0.77,,0.76–0.88,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs17125924,14,53391680,A/G,0.093,1.4 × 10−9,1.15,,1.08–1.19,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs12881735,14,92932828,T/C,0.221,7.4× 10−9,0.92,,0.88–0.95,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs3752246,19,1056492,C/G,0.182,3.1 × 10−16,1.18,,1.09–1.18,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs429358,19,45411941,T/C,0.216,APOE region not carried forward to replication stage,APOE region not carried forward to replication stage,,3.20–3.45,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs6024870,20,54997568,G/A,0.088,3.5 × 10−8,0.90,,0.84–0.93,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs7920721,10,11720308,A/G,0.389,2.3 × 10−9,1.07,,1.05–1.11,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs138190086,17,61538148,G/A,0.02,7.5 × 10−9,1.41,,1.15–1.44,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs190982,5,88223420,A/G,0.39,2.8 × 10−6,0.93,,0.92–0.97,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs4723711,7,37844263,A/T,0.356,2.8 × 10−7,0.91,,0.92–0.98,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
-rs4844610,1,207802552,C/A,0.187,"0, 8 × 10−1",1.20,,1.12–1.20,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs6733839,2,127892810,C/T,0.407,"15, 2 × 10−1",1.23,,1.15–1.22,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs10933431,2,233981912,C/G,0.223,"0, 8 × 10−1",0.92,,0.87–0.94,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs9271058,6,32575406,T/A,0.27,"10, 3 × 10−1",1.11,,1.06–1.14,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs75932628,6,41129252,C/T,0.008,"0, 6 × 10−1",2.50,,1.65–2.44,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs9473117,6,47431284,A/C,0.28,"0, 6 × 10−1",1.11,,1.05–1.12,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs12539172,7,100091795,C/T,0.303,"0, 8 × 10−1",0.89,,0.91–0.96,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs10808026,7,143099133,C/A,0.199,"0, 5 × 10−1",0.91,,0.87–0.94,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs73223431,8,27219987,C/T,0.367,"0, 6 × 10−1",1.11,,1.07–1.13,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs9331896,8,27467686,T/C,0.387,"3, 4 × 10−1",0.87,,0.85–0.91,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs3740688,11,47380340,T/G,0.448,"4, 4 × 10−1",0.93,,0.89–0.94,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs7933202,11,59936926,A/C,0.391,"27, 5 × 10−2",0.90,,0.86–0.92,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs3851179,11,85868640,C/T,0.356,"0, 8 × 10−1",0.85,,0.86–0.91,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs11218343,11,121435587,T/C,0.04,"7, 3 × 10−1",0.77,,0.76–0.88,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs17125924,14,53391680,A/G,0.093,"8, 3 × 10−1",1.15,,1.08–1.19,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs12881735,14,92932828,T/C,0.221,"0, 6 × 10−1",0.92,,0.88–0.95,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs3752246,19,1056492,C/G,0.182,"0, 5 × 10−1",1.18,,1.09–1.18,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs429358,19,45411941,T/C,0.216,,APOE region not carried forward to replication stage,,3.20–3.45,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs6024870,20,54997568,G/A,0.088,"0, 9 × 10−1",0.90,,0.84–0.93,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs7920721,10,11720308,A/G,0.389,"0,8 × 10−1",1.07,,1.05–1.11,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs138190086,17,61538148,G/A,0.02,"0, 9 × 10−1",1.41,,1.15–1.44,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs190982,5,88223420,A/G,0.39,"0, 6 × 10−1",0.93,,0.92–0.97,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs4723711,7,37844263,A/T,0.356,"0, 5 × 10−1",0.91,,0.92–0.98,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
-rs4735340,8,95976251,T/A,0.476,3.4 × 10−7,,,,"Stage 1 + 2 (n = 82,771) | P"
-rs7920721g,10,11720308,A/G,0.39,2.3 × 10−9,,,,"Stage 1 + 2 (n = 82,771) | P"
-rs7295246,12,43967677,T/G,0.413,2.7 × 10−7,,,,"Stage 1 + 2 (n = 82,771) | P"
-rs10467994,15,51008687,T/C,0.333,3.9 × 10−7,,,,"Stage 1 + 2 (n = 82,771) | P"
-rs593742,15,59045774,A/G,0.295,1.3 × 10−7,,,,"Stage 1 + 2 (n = 82,771) | P"
-rs7185636,16,19808163,T/C,0.18,8.4 × 10−8,,,,"Stage 1 + 2 (n = 82,771) | P"
-rs2632516,17,56409089,G/C,0.44,2.3 × 10−7,,,,"Stage 1 + 2 (n = 82,771) | P"
-rs138190086,17,61538148,G/A,0.02,7.5 × 10−9,,,,"Stage 1 + 2 (n = 82,771) | P"
-rs2830500,21,28156856,C/A,0.308,7.4 × 10−8,,,,"Stage 1 + 2 (n = 82,771) | P"
-rs71618613,5,29005985,A/C,0.01,9.8 × 10−6,,,,"Stage 1 + 2 (n = 82,771) | P"
-rs35868327,5,52665230,A/C,0.013,7.8 × 10−7,,,,"Stage 1 + 2 (n = 82,771) | P"
-rs114812713,6,41034000,G/C,0.03,4.5 × 10−12,,,,"Stage 1 + 2 (n = 82,771) | P"
-rs62039712,16,79355857,G/A,0.116,1.2 × 10−7,,,,"Stage 1 + 2 (n = 82,771) | P"
-rs4735340,8,95976251,T/A,0.476,9.7 × 10−2,,,,"Stage 3A (n = 11,666) | P"
-rs7920721g,10,11720308,A/G,0.39,1.5 × 10−3,,,,"Stage 3A (n = 11,666) | P"
-rs7295246,12,43967677,T/G,0.413,4.5 × 10−1,,,,"Stage 3A (n = 11,666) | P"
-rs10467994,15,51008687,T/C,0.333,6.2 × 10−1,,,,"Stage 3A (n = 11,666) | P"
-rs593742,15,59045774,A/G,0.295,1.5 × 10−2,,,,"Stage 3A (n = 11,666) | P"
-rs7185636,16,19808163,T/C,0.18,1.1 × 10−1,,,,"Stage 3A (n = 11,666) | P"
-rs2632516,17,56409089,G/C,0.44,7.5 × 10−2,,,,"Stage 3A (n = 11,666) | P"
-rs138190086,17,61538148,G/A,0.02,2.1 × 10−1,,,,"Stage 3A (n = 11,666) | P"
-rs2830500,21,28156856,C/A,0.308,1.3 × 10−1,,,,"Stage 3A (n = 11,666) | P"
-rs71618613,5,29005985,A/C,0.01,6.8 × 10−3,,,,"Stage 3A (n = 11,666) | P"
-rs35868327,5,52665230,A/C,0.013,1.2 × 10−1,,,,"Stage 3A (n = 11,666) | P"
-rs114812713,6,41034000,G/C,0.03,7.2 × 10−3,,,,"Stage 3A (n = 11,666) | P"
-rs62039712,16,79355857,G/A,0.116,1.3 × 10−1,,,,"Stage 3A (n = 11,666) | P"
-rs4735340,8,95976251,T/A,0.476,9.2 × 10−8,,,,"Overall (n = 94,437) | Meta P"
-rs7920721g,10,11720308,A/G,0.39,1.8 × 10−11,,,,"Overall (n = 94,437) | Meta P"
-rs7295246,12,43967677,T/G,0.413,3.9 × 10−7,,,,"Overall (n = 94,437) | Meta P"
-rs10467994,15,51008687,T/C,0.333,4.3 × 10−7,,,,"Overall (n = 94,437) | Meta P"
-rs593742,15,59045774,A/G,0.295,6.8 × 10−9,,,,"Overall (n = 94,437) | Meta P"
-rs7185636,16,19808163,T/C,0.18,2.4 × 10−8,,,,"Overall (n = 94,437) | Meta P"
-rs2632516,17,56409089,G/C,0.44,5.3 × 10−8,,,,"Overall (n = 94,437) | Meta P"
-rs138190086,17,61538148,G/A,0.02,5.3 × 10−9,,,,"Overall (n = 94,437) | Meta P"
-rs2830500,21,28156856,C/A,0.308,2.6 × 10−8,,,,"Overall (n = 94,437) | Meta P"
-rs71618613,5,29005985,A/C,0.01,3.3 × 10−7,,,,"Overall (n = 94,437) | Meta P"
-rs35868327,5,52665230,A/C,0.013,2.6 × 10−7,,,,"Overall (n = 94,437) | Meta P"
-rs114812713,6,41034000,G/C,0.03,2.1 × 10−13,,,,"Overall (n = 94,437) | Meta P"
-rs62039712,16,79355857,G/A,0.116,3.7 × 10−8,,,,"Overall (n = 94,437) | Meta P"
+331.0,,,,,0.51,,,,Rare variant P 35–10 kb
+74.0,,,,,0.51,,,,Rare variant P 35–10 kb
+47.0,,,,,0.68,,,,Rare variant P 35–10 kb
+35.0,,,,,0.16000000000000003,,,,Rare variant P 35–10 kb
+21.0,,,,,0.19,,,,Rare variant P 35–10 kb
+10.0,,,,,0.18000000000000002,,,,Rare variant P 35–10 kb
+51.0,,,,,0.5700000000000001,,,,Rare variant P 35–10 kb
+6.0,,,,,0.25,,,,Rare variant P 35–10 kb
+3.0,,,,,0.76,,,,Rare variant P 35–10 kb
+15.0,,,,,0.29,,,,Rare variant P 35–10 kb
+20.0,,,,,0.68,,,,Rare variant P 35–10 kb
+9.0,,,,,0.011000000000000001,,,,Rare variant P 35–10 kb
+rs4844610,,207802552.0,C/A,0.187,,1.2,,1.12-1.20,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs6733839,,127892810.0,C/T,0.407,,1.23,,1.15-1.22,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs10933431,,233981912.0,C/G,0.223,,0.92,,0.87-0.94,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs9271058,,32575406.0,T/A,0.27,,1.11,,1.06-1.14,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs75932628,,41129252.0,C/T,0.008,,2.5,,1.65-2.44,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs9473117,,47431284.0,A/C,0.28,,1.11,,1.05-1.12,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs12539172,,100091795.0,C/T,0.303,,0.89,,0.91-0.96,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs10808026,,143099133.0,C/A,0.199,,0.91,,0.87-0.94,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs73223431,,27219987.0,C/T,0.367,,1.11,,1.07-1.13,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs9331896,,27467686.0,T/C,0.387,,0.87,,0.85-0.91,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs3740688,,47380340.0,T/G,0.448,,0.93,,0.89-0.94,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs7933202,,59936926.0,A/C,0.391,,0.9,,0.86-0.92,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs3851179,,85868640.0,C/T,0.356,,0.85,,0.86-0.91,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs11218343,,121435587.0,T/C,0.04,,0.77,,0.76-0.88,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs17125924,,53391680.0,A/G,0.093,,1.15,,1.08-1.19,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs12881735,,92932828.0,T/C,0.221,,0.92,,0.88-0.95,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs3752246,,1056492.0,C/G,0.182,,1.18,,1.09-1.18,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs429358,,45411941.0,T/C,0.216,,,,3.20-3.45,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs6024870,,54997568.0,G/A,0.088,,0.9,,0.84-0.93,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs7920721,,11720308.0,A/G,0.389,,1.07,,1.05-1.11,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs138190086,,61538148.0,G/A,0.02,,1.41,,1.15-1.44,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs190982,,88223420.0,A/G,0.39,,0.93,,0.92-0.97,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs4723711,,37844263.0,A/T,0.356,,0.91,,0.92-0.98,"stage 2 ( n /thinspace = /thinspace18,845).P"
+rs4844610,,207802552.0,C/A,0.187,,1.2,,1.12-1.20,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs6733839,,127892810.0,C/T,0.407,,1.23,,1.15-1.22,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs10933431,,233981912.0,C/G,0.223,,0.92,,0.87-0.94,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs9271058,,32575406.0,T/A,0.27,,1.11,,1.06-1.14,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs75932628,,41129252.0,C/T,0.008,,2.5,,1.65-2.44,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs9473117,,47431284.0,A/C,0.28,,1.11,,1.05-1.12,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs12539172,,100091795.0,C/T,0.303,,0.89,,0.91-0.96,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs10808026,,143099133.0,C/A,0.199,,0.91,,0.87-0.94,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs73223431,,27219987.0,C/T,0.367,,1.11,,1.07-1.13,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs9331896,,27467686.0,T/C,0.387,,0.87,,0.85-0.91,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs3740688,,47380340.0,T/G,0.448,,0.93,,0.89-0.94,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs7933202,,59936926.0,A/C,0.391,,0.9,,0.86-0.92,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs3851179,,85868640.0,C/T,0.356,,0.85,,0.86-0.91,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs11218343,,121435587.0,T/C,0.04,,0.77,,0.76-0.88,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs17125924,,53391680.0,A/G,0.093,,1.15,,1.08-1.19,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs12881735,,92932828.0,T/C,0.221,7.400000000000001e-09,0.92,,0.88-0.95,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs3752246,,1056492.0,C/G,0.182,,1.18,,1.09-1.18,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs429358,,45411941.0,T/C,0.216,,,,3.20-3.45,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs6024870,,54997568.0,G/A,0.088,,0.9,,0.84-0.93,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs7920721,,11720308.0,A/G,0.389,,1.07,,1.05-1.11,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs138190086,,61538148.0,G/A,0.02,,1.41,,1.15-1.44,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs190982,,88223420.0,A/G,0.39,,0.93,,0.92-0.97,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs4723711,,37844263.0,A/T,0.356,,0.91,,0.92-0.98,"Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P"
+rs4844610,1.0,207802552.0,C/A,0.187,8.199999999999999e-16,1.2,,1.12–1.20,"Stage 1 discovery (n = 63,926) | P"
+rs6733839,2.0,127892810.0,C/T,0.407,4e-28,1.23,,1.15–1.22,"Stage 1 discovery (n = 63,926) | P"
+rs10933431,2.0,233981912.0,C/G,0.223,2.6e-07,0.92,,0.87–0.94,"Stage 1 discovery (n = 63,926) | P"
+rs9271058,6.0,32575406.0,T/A,0.27,5.1e-08,1.11,,1.06–1.14,"Stage 1 discovery (n = 63,926) | P"
+rs75932628,6.0,41129252.0,C/T,0.008,2.8999999999999998e-12,2.5,,1.65–2.44,"Stage 1 discovery (n = 63,926) | P"
+rs9473117,6.0,47431284.0,A/C,0.28,2.2999999999999997e-07,1.11,,1.05–1.12,"Stage 1 discovery (n = 63,926) | P"
+rs12539172,7.0,100091795.0,C/T,0.303,2.1000000000000002e-05,0.89,,0.91–0.96,"Stage 1 discovery (n = 63,926) | P"
+rs10808026,7.0,143099133.0,C/A,0.199,3.1e-08,0.91,,0.87–0.94,"Stage 1 discovery (n = 63,926) | P"
+rs73223431,8.0,27219987.0,C/T,0.367,8.300000000000001e-10,1.11,,1.07–1.13,"Stage 1 discovery (n = 63,926) | P"
+rs9331896,8.0,27467686.0,T/C,0.387,3.6e-16,0.87,,0.85–0.91,"Stage 1 discovery (n = 63,926) | P"
+rs3740688,11.0,47380340.0,T/G,0.448,9.699999999999999e-11,0.93,,0.89–0.94,"Stage 1 discovery (n = 63,926) | P"
+rs7933202,11.0,59936926.0,A/C,0.391,2.2000000000000002e-15,0.9,,0.86–0.92,"Stage 1 discovery (n = 63,926) | P"
+rs3851179,11.0,85868640.0,C/T,0.356,5.8e-16,0.85,,0.86–0.91,"Stage 1 discovery (n = 63,926) | P"
+rs11218343,11.0,121435587.0,T/C,0.04,2.7000000000000004e-08,0.77,,0.76–0.88,"Stage 1 discovery (n = 63,926) | P"
+rs17125924,14.0,53391680.0,A/G,0.093,6.599999999999999e-07,1.15,,1.08–1.19,"Stage 1 discovery (n = 63,926) | P"
+rs12881735,14.0,92932828.0,T/C,0.221,4.9e-07,0.92,,0.88–0.95,"Stage 1 discovery (n = 63,926) | P"
+rs3752246,19.0,1056492.0,C/G,0.182,6.6e-10,1.18,,1.09–1.18,"Stage 1 discovery (n = 63,926) | P"
+rs429358,19.0,45411941.0,T/C,0.216,0.0,,,3.20–3.45,"Stage 1 discovery (n = 63,926) | P"
+rs6024870,20.0,54997568.0,G/A,0.088,1.1e-06,0.9,,0.84–0.93,"Stage 1 discovery (n = 63,926) | P"
+rs7920721,10.0,11720308.0,A/G,0.389,1.8999999999999998e-07,1.07,,1.05–1.11,"Stage 1 discovery (n = 63,926) | P"
+rs138190086,17.0,61538148.0,G/A,0.02,7.499999999999999e-06,1.41,,1.15–1.44,"Stage 1 discovery (n = 63,926) | P"
+rs190982,5.0,88223420.0,A/G,0.39,0.00028,0.93,,0.92–0.97,"Stage 1 discovery (n = 63,926) | P"
+rs4723711,7.0,37844263.0,A/T,0.356,0.00027000000000000006,0.91,,0.92–0.98,"Stage 1 discovery (n = 63,926) | P"
+rs4844610,1.0,207802552.0,C/A,0.187,3.8e-10,1.2,,1.12–1.20,"Stage 2 (n = 18,845) | P"
+rs6733839,2.0,127892810.0,C/T,0.407,2e-18,1.23,,1.15–1.22,"Stage 2 (n = 18,845) | P"
+rs10933431,2.0,233981912.0,C/G,0.223,0.0032,0.92,,0.87–0.94,"Stage 2 (n = 18,845) | P"
+rs9271058,6.0,32575406.0,T/A,0.27,5.7e-05,1.11,,1.06–1.14,"Stage 2 (n = 18,845) | P"
+rs75932628,6.0,41129252.0,C/T,0.008,0.00015000000000000001,2.5,,1.65–2.44,"Stage 2 (n = 18,845) | P"
+rs9473117,6.0,47431284.0,A/C,0.28,0.0001,1.11,,1.05–1.12,"Stage 2 (n = 18,845) | P"
+rs12539172,7.0,100091795.0,C/T,0.303,2.1e-06,0.89,,0.91–0.96,"Stage 2 (n = 18,845) | P"
+rs10808026,7.0,143099133.0,C/A,0.199,0.0011,0.91,,0.87–0.94,"Stage 2 (n = 18,845) | P"
+rs73223431,8.0,27219987.0,C/T,0.367,1.5000000000000002e-05,1.11,,1.07–1.13,"Stage 2 (n = 18,845) | P"
+rs9331896,8.0,27467686.0,T/C,0.387,1.7000000000000001e-09,0.87,,0.85–0.91,"Stage 2 (n = 18,845) | P"
+rs3740688,11.0,47380340.0,T/G,0.448,0.0012,0.93,,0.89–0.94,"Stage 2 (n = 18,845) | P"
+rs7933202,11.0,59936926.0,A/C,0.391,1.6000000000000003e-05,0.9,,0.86–0.92,"Stage 2 (n = 18,845) | P"
+rs3851179,11.0,85868640.0,C/T,0.356,6.1e-11,0.85,,0.86–0.91,"Stage 2 (n = 18,845) | P"
+rs11218343,11.0,121435587.0,T/C,0.04,1.8e-05,0.77,,0.76–0.88,"Stage 2 (n = 18,845) | P"
+rs17125924,14.0,53391680.0,A/G,0.093,0.0005,1.15,,1.08–1.19,"Stage 2 (n = 18,845) | P"
+rs12881735,14.0,92932828.0,T/C,0.221,0.0043,0.92,,0.88–0.95,"Stage 2 (n = 18,845) | P"
+rs3752246,19.0,1056492.0,C/G,0.182,4.7000000000000004e-08,1.18,,1.09–1.18,"Stage 2 (n = 18,845) | P"
+rs429358,19.0,45411941.0,T/C,0.216,,,,3.20–3.45,"Stage 2 (n = 18,845) | P"
+rs6024870,20.0,54997568.0,G/A,0.088,0.009000000000000001,0.9,,0.84–0.93,"Stage 2 (n = 18,845) | P"
+rs7920721,10.0,11720308.0,A/G,0.389,0.0032,1.07,,1.05–1.11,"Stage 2 (n = 18,845) | P"
+rs138190086,17.0,61538148.0,G/A,0.02,0.00018,1.41,,1.15–1.44,"Stage 2 (n = 18,845) | P"
+rs190982,5.0,88223420.0,A/G,0.39,0.0027,0.93,,0.92–0.97,"Stage 2 (n = 18,845) | P"
+rs4723711,7.0,37844263.0,A/T,0.356,0.0001,0.91,,0.92–0.98,"Stage 2 (n = 18,845) | P"
+rs4844610,1.0,207802552.0,C/A,0.187,3.6e-24,1.2,,1.12–1.20,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs6733839,2.0,127892810.0,C/T,0.407,2.1e-44,1.23,,1.15–1.22,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs10933431,2.0,233981912.0,C/G,0.223,3.4000000000000003e-09,0.92,,0.87–0.94,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs9271058,6.0,32575406.0,T/A,0.27,1.3999999999999999e-11,1.11,,1.06–1.14,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs75932628,6.0,41129252.0,C/T,0.008,2.7000000000000005e-15,2.5,,1.65–2.44,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs9473117,6.0,47431284.0,A/C,0.28,1.2e-10,1.11,,1.05–1.12,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs12539172,7.0,100091795.0,C/T,0.303,9.300000000000001e-10,0.89,,0.91–0.96,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs10808026,7.0,143099133.0,C/A,0.199,1.3000000000000002e-10,0.91,,0.87–0.94,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs73223431,8.0,27219987.0,C/T,0.367,6.3e-14,1.11,,1.07–1.13,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs9331896,8.0,27467686.0,T/C,0.387,4.5999999999999995e-24,0.87,,0.85–0.91,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs3740688,11.0,47380340.0,T/G,0.448,5.4e-13,0.93,,0.89–0.94,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs7933202,11.0,59936926.0,A/C,0.391,1.8999999999999998e-19,0.9,,0.86–0.92,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs3851179,11.0,85868640.0,C/T,0.356,6.0000000000000005e-25,0.85,,0.86–0.91,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs11218343,11.0,121435587.0,T/C,0.04,2.8999999999999998e-12,0.77,,0.76–0.88,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs17125924,14.0,53391680.0,A/G,0.093,1.4e-09,1.15,,1.08–1.19,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs12881735,14.0,92932828.0,T/C,0.221,7.400000000000001e-09,0.92,,0.88–0.95,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs3752246,19.0,1056492.0,C/G,0.182,3.1e-16,1.18,,1.09–1.18,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs429358,19.0,45411941.0,T/C,0.216,,,,3.20–3.45,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs6024870,20.0,54997568.0,G/A,0.088,3.5e-08,0.9,,0.84–0.93,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs7920721,10.0,11720308.0,A/G,0.389,2.3e-09,1.07,,1.05–1.11,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs138190086,17.0,61538148.0,G/A,0.02,7.500000000000001e-09,1.41,,1.15–1.44,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs190982,5.0,88223420.0,A/G,0.39,2.8e-06,0.93,,0.92–0.97,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs4723711,7.0,37844263.0,A/T,0.356,2.7999999999999997e-07,0.91,,0.92–0.98,"Overall stage 1 + stage 2 (n = 82,771) | Meta P"
+rs4844610,1.0,207802552.0,C/A,0.187,0.8,1.2,,1.12–1.20,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs6733839,2.0,127892810.0,C/T,0.407,0.2,1.23,,1.15–1.22,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs10933431,2.0,233981912.0,C/G,0.223,0.8,0.92,,0.87–0.94,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs9271058,6.0,32575406.0,T/A,0.27,0.30000000000000004,1.11,,1.06–1.14,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs75932628,6.0,41129252.0,C/T,0.008,0.6000000000000001,2.5,,1.65–2.44,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs9473117,6.0,47431284.0,A/C,0.28,0.6000000000000001,1.11,,1.05–1.12,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs12539172,7.0,100091795.0,C/T,0.303,0.8,0.89,,0.91–0.96,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs10808026,7.0,143099133.0,C/A,0.199,0.5,0.91,,0.87–0.94,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs73223431,8.0,27219987.0,C/T,0.367,0.6000000000000001,1.11,,1.07–1.13,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs9331896,8.0,27467686.0,T/C,0.387,0.4,0.87,,0.85–0.91,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs3740688,11.0,47380340.0,T/G,0.448,0.4,0.93,,0.89–0.94,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs7933202,11.0,59936926.0,A/C,0.391,0.05,0.9,,0.86–0.92,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs3851179,11.0,85868640.0,C/T,0.356,0.8,0.85,,0.86–0.91,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs11218343,11.0,121435587.0,T/C,0.04,0.30000000000000004,0.77,,0.76–0.88,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs17125924,14.0,53391680.0,A/G,0.093,0.30000000000000004,1.15,,1.08–1.19,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs12881735,14.0,92932828.0,T/C,0.221,0.6000000000000001,0.92,,0.88–0.95,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs3752246,19.0,1056492.0,C/G,0.182,0.5,1.18,,1.09–1.18,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs429358,19.0,45411941.0,T/C,0.216,,,,3.20–3.45,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs6024870,20.0,54997568.0,G/A,0.088,0.9,0.9,,0.84–0.93,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs7920721,10.0,11720308.0,A/G,0.389,0.8,1.07,,1.05–1.11,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs138190086,17.0,61538148.0,G/A,0.02,0.9,1.41,,1.15–1.44,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs190982,5.0,88223420.0,A/G,0.39,0.6000000000000001,0.93,,0.92–0.97,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs4723711,7.0,37844263.0,A/T,0.356,0.5,0.91,,0.92–0.98,"Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf"
+rs4735340,8.0,95976251.0,T/A,0.476,3.4e-07,,,,"Stage 1 + 2 (n = 82,771) | P"
+rs7920721g,10.0,11720308.0,A/G,0.39,2.3e-09,,,,"Stage 1 + 2 (n = 82,771) | P"
+rs7295246,12.0,43967677.0,T/G,0.413,2.7e-07,,,,"Stage 1 + 2 (n = 82,771) | P"
+rs10467994,15.0,51008687.0,T/C,0.333,3.8999999999999997e-07,,,,"Stage 1 + 2 (n = 82,771) | P"
+rs593742,15.0,59045774.0,A/G,0.295,1.3e-07,,,,"Stage 1 + 2 (n = 82,771) | P"
+rs7185636,16.0,19808163.0,T/C,0.18,8.400000000000001e-08,,,,"Stage 1 + 2 (n = 82,771) | P"
+rs2632516,17.0,56409089.0,G/C,0.44,2.2999999999999997e-07,,,,"Stage 1 + 2 (n = 82,771) | P"
+rs138190086,17.0,61538148.0,G/A,0.02,7.500000000000001e-09,,,,"Stage 1 + 2 (n = 82,771) | P"
+rs2830500,21.0,28156856.0,C/A,0.308,7.4e-08,,,,"Stage 1 + 2 (n = 82,771) | P"
+rs71618613,5.0,29005985.0,A/C,0.01,9.800000000000001e-06,,,,"Stage 1 + 2 (n = 82,771) | P"
+rs35868327,5.0,52665230.0,A/C,0.013,7.799999999999999e-07,,,,"Stage 1 + 2 (n = 82,771) | P"
+rs114812713,6.0,41034000.0,G/C,0.03,4.5e-12,,,,"Stage 1 + 2 (n = 82,771) | P"
+rs62039712,16.0,79355857.0,G/A,0.116,1.2e-07,,,,"Stage 1 + 2 (n = 82,771) | P"
+rs4735340,8.0,95976251.0,T/A,0.476,0.09699999999999999,,,,"Stage 3A (n = 11,666) | P"
+rs7920721g,10.0,11720308.0,A/G,0.39,0.0015,,,,"Stage 3A (n = 11,666) | P"
+rs7295246,12.0,43967677.0,T/G,0.413,0.45,,,,"Stage 3A (n = 11,666) | P"
+rs10467994,15.0,51008687.0,T/C,0.333,0.6200000000000001,,,,"Stage 3A (n = 11,666) | P"
+rs593742,15.0,59045774.0,A/G,0.295,0.015,,,,"Stage 3A (n = 11,666) | P"
+rs7185636,16.0,19808163.0,T/C,0.18,0.11000000000000001,,,,"Stage 3A (n = 11,666) | P"
+rs2632516,17.0,56409089.0,G/C,0.44,0.075,,,,"Stage 3A (n = 11,666) | P"
+rs138190086,17.0,61538148.0,G/A,0.02,0.21000000000000002,,,,"Stage 3A (n = 11,666) | P"
+rs2830500,21.0,28156856.0,C/A,0.308,0.13,,,,"Stage 3A (n = 11,666) | P"
+rs71618613,5.0,29005985.0,A/C,0.01,0.0068,,,,"Stage 3A (n = 11,666) | P"
+rs35868327,5.0,52665230.0,A/C,0.013,0.12,,,,"Stage 3A (n = 11,666) | P"
+rs114812713,6.0,41034000.0,G/C,0.03,0.007200000000000001,,,,"Stage 3A (n = 11,666) | P"
+rs62039712,16.0,79355857.0,G/A,0.116,0.13,,,,"Stage 3A (n = 11,666) | P"
+rs4735340,8.0,95976251.0,T/A,0.476,9.199999999999999e-08,,,,"Overall (n = 94,437) | Meta P"
+rs7920721g,10.0,11720308.0,A/G,0.39,1.8e-11,,,,"Overall (n = 94,437) | Meta P"
+rs7295246,12.0,43967677.0,T/G,0.413,3.8999999999999997e-07,,,,"Overall (n = 94,437) | Meta P"
+rs10467994,15.0,51008687.0,T/C,0.333,4.2999999999999996e-07,,,,"Overall (n = 94,437) | Meta P"
+rs593742,15.0,59045774.0,A/G,0.295,6.8000000000000005e-09,,,,"Overall (n = 94,437) | Meta P"
+rs7185636,16.0,19808163.0,T/C,0.18,2.4e-08,,,,"Overall (n = 94,437) | Meta P"
+rs2632516,17.0,56409089.0,G/C,0.44,5.3e-08,,,,"Overall (n = 94,437) | Meta P"
+rs138190086,17.0,61538148.0,G/A,0.02,5.3e-09,,,,"Overall (n = 94,437) | Meta P"
+rs2830500,21.0,28156856.0,C/A,0.308,2.6e-08,,,,"Overall (n = 94,437) | Meta P"
+rs71618613,5.0,29005985.0,A/C,0.01,3.2999999999999996e-07,,,,"Overall (n = 94,437) | Meta P"
+rs35868327,5.0,52665230.0,A/C,0.013,2.6e-07,,,,"Overall (n = 94,437) | Meta P"
+rs114812713,6.0,41034000.0,G/C,0.03,2.1000000000000001e-13,,,,"Overall (n = 94,437) | Meta P"
+rs62039712,16.0,79355857.0,G/A,0.116,3.7e-08,,,,"Overall (n = 94,437) | Meta P"

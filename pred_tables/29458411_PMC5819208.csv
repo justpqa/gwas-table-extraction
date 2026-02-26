@@ -1,58 +1,58 @@
 SNP,Chr,Position,RA,AF,P-value,Effect,Population,Cohort,P-value notes
-,,,,,0.77,0.06 (0.20),,,RNA-Seq | CER | P value
-,,,,,0.04,−0.24 (0.12),,,RNA-Seq | CER | P value
-,,,,,0.35,−0.05 (0.06),,,RNA-Seq | CER | P value
-,,,,,0.06,0.22 (0.12),,,RNA-Seq | CER | P value
-,,,,,0.19,−0.10 (0.08),,,RNA-Seq | CER | P value
-,,,,,0.43,0.06 (0.20),,,RNA-Seq | TCX | P value
-,,,,,1.5 × 10 −4,−0.24 (0.12),,,RNA-Seq | TCX | P value
-,,,,,0.01,−0.05 (0.06),,,RNA-Seq | TCX | P value
-,,,,,1.3 × 10 −3,0.22 (0.12),,,RNA-Seq | TCX | P value
-,,,,,0.36,−0.10 (0.08),,,RNA-Seq | TCX | P value
-,,,,,1.6 × 10 −3,0.06 (0.20),,,Microarray | CER | P value
-,,,,,0.77,−0.24 (0.12),,,Microarray | CER | P value
-,,,,,1.1 × 10 −3,−0.05 (0.06),,,Microarray | CER | P value
-,,,,,–,0.22 (0.12),,,Microarray | CER | P value
-,,,,,4.9 × 10 −4,−0.10 (0.08),,,Microarray | CER | P value
-,,,,,0.04,0.06 (0.20),,,Microarray | DLPFC | P value
-,,,,,7.9 × 10−3,−0.24 (0.12),,,Microarray | DLPFC | P value
-,,,,,0.09,−0.05 (0.06),,,Microarray | DLPFC | P value
-,,,,,–,0.22 (0.12),,,Microarray | DLPFC | P value
-,,,,,0.31,−0.10 (0.08),,,Microarray | DLPFC | P value
-,,,,,2.7 × 10−3,0.06 (0.20),,,Microarray | VCX | P value
-,,,,,5.6 × 10 −4,−0.24 (0.12),,,Microarray | VCX | P value
-,,,,,3.2 × 10 −4,−0.05 (0.06),,,Microarray | VCX | P value
-,,,,,–,0.22 (0.12),,,Microarray | VCX | P value
-,,,,,0.64,−0.10 (0.08),,,Microarray | VCX | P value
-,2,3383446,,,0.09,,,,Univariate gene-based tests | NP
-,2,3485013,,,0.002,,,,Univariate gene-based tests | NP
-,2,3501690,,,0.003,,,,Univariate gene-based tests | NP
-,2,3383446,,,4.0 × 10−5,,,,Univariate gene-based tests | NFT
-,2,3485013,,,3.9 × 10−5,,,,Univariate gene-based tests | NFT
-,2,3501690,,,1.6 × 10−5,,,,Univariate gene-based tests | NFT
-,2,3383446,,,0.5,,,,Univariate gene-based tests | CAA
-,2,3485013,,,5.0 × 10−3,,,,Univariate gene-based tests | CAA
-,2,3501690,,,7.0 × 10−4,,,,Univariate gene-based tests | CAA
-,2,3383446,,,0.01,,,,Pleiotropy gene-based tests | NP + NFT
-,2,3485013,,,1.6 × 10−5,,,,Pleiotropy gene-based tests | NP + NFT
-,2,3501690,,,3.2 × 10−5,,,,Pleiotropy gene-based tests | NP + NFT
-,2,3383446,,,0.07,,,,Pleiotropy gene-based tests | NP + CAA
-,2,3485013,,,2.1 × 10−5,,,,Pleiotropy gene-based tests | NP + CAA
-,2,3501690,,,4.0 × 10−6,,,,Pleiotropy gene-based tests | NP + CAA
-,2,3383446,,,2.0 × 10−6,,,,Pleiotropy gene-based tests | NFT + CAA
-,2,3485013,,,< 1.0 × 10−6,,,,Pleiotropy gene-based tests | NFT + CAA
-,2,3501690,,,< 1.0 × 10−6,,,,Pleiotropy gene-based tests | NFT + CAA
-rs34487851,2,,A,,5.8 × 10−6,−0.3 (0.06),,,Univariate models | AD status | P value
-rs79524815,7,,T,,0.03,0.43 (0.19),,,Univariate models | AD status | P value
-rs34487851,2,,A,,7.7 × 10−7,−0.3 (0.06),,,Univariate models | NP | P value
-rs79524815,7,,T,,0.03,0.43 (0.19),,,Univariate models | NP | P value
-rs34487851,2,,A,,4.5 × 10−6,−0.3 (0.06),,,Univariate models | NFT | P value
-rs79524815,7,,T,,2.3 × 10−5,0.43 (0.19),,,Univariate models | NFT | P value
-rs34487851,2,,A,,0.06,−0.3 (0.06),,,Univariate models | CAA | P value
-rs79524815,7,,T,,9.1 × 10−6,0.43 (0.19),,,Univariate models | CAA | P value
-rs34487851,2,,A,,2.0 × 10−8,−0.3 (0.06),,,Joint models | NP + NFT | P value
-rs79524815,7,,T,,1.3 × 10−4,0.43 (0.19),,,Joint models | NP + NFT | P value
-rs34487851,2,,A,,2.5 × 10−6,−0.3 (0.06),,,Joint models | NP + CAA | P value
-rs79524815,7,,T,,3.3 × 10−6,0.43 (0.19),,,Joint models | NP + CAA | P value
-rs34487851,2,,A,,2.1 × 10−5,−0.3 (0.06),,,Joint models | NFT + CAA | P value
-rs79524815,7,,T,,1.1 × 10−8,0.43 (0.19),,,Joint models | NFT + CAA | P value
+,,,,,0.77,,,,RNA-Seq | CER | P value
+,,,,,0.04,,,,RNA-Seq | CER | P value
+,,,,,0.35,,,,RNA-Seq | CER | P value
+,,,,,0.06,,,,RNA-Seq | CER | P value
+,,,,,0.19,,,,RNA-Seq | CER | P value
+,,,,,0.43,,,,RNA-Seq | TCX | P value
+,,,,,0.00015000000000000001,,,,RNA-Seq | TCX | P value
+,,,,,0.01,,,,RNA-Seq | TCX | P value
+,,,,,0.0013000000000000002,,,,RNA-Seq | TCX | P value
+,,,,,0.36,,,,RNA-Seq | TCX | P value
+,,,,,0.0016,,,,Microarray | CER | P value
+,,,,,0.77,,,,Microarray | CER | P value
+,,,,,0.0011,,,,Microarray | CER | P value
+,,,,,,,,,Microarray | CER | P value
+,,,,,0.0004900000000000001,,,,Microarray | CER | P value
+,,,,,0.04,,,,Microarray | DLPFC | P value
+,,,,,0.0079,,,,Microarray | DLPFC | P value
+,,,,,0.09,,,,Microarray | DLPFC | P value
+,,,,,,,,,Microarray | DLPFC | P value
+,,,,,0.31,,,,Microarray | DLPFC | P value
+,,,,,0.0027,,,,Microarray | VCX | P value
+,,,,,0.00056,,,,Microarray | VCX | P value
+,,,,,0.00032,,,,Microarray | VCX | P value
+,,,,,,,,,Microarray | VCX | P value
+,,,,,0.64,,,,Microarray | VCX | P value
+,2.0,3383446.0,,,0.09,,,,Univariate gene-based tests | NP
+,2.0,3485013.0,,,0.002,,,,Univariate gene-based tests | NP
+,2.0,3501690.0,,,0.003,,,,Univariate gene-based tests | NP
+,2.0,3383446.0,,,4e-05,,,,Univariate gene-based tests | NFT
+,2.0,3485013.0,,,3.9e-05,,,,Univariate gene-based tests | NFT
+,2.0,3501690.0,,,1.6000000000000003e-05,,,,Univariate gene-based tests | NFT
+,2.0,3383446.0,,,0.5,,,,Univariate gene-based tests | CAA
+,2.0,3485013.0,,,0.005,,,,Univariate gene-based tests | CAA
+,2.0,3501690.0,,,0.0007,,,,Univariate gene-based tests | CAA
+,2.0,3383446.0,,,0.01,,,,Pleiotropy gene-based tests | NP + NFT
+,2.0,3485013.0,,,1.6000000000000003e-05,,,,Pleiotropy gene-based tests | NP + NFT
+,2.0,3501690.0,,,3.2000000000000005e-05,,,,Pleiotropy gene-based tests | NP + NFT
+,2.0,3383446.0,,,0.07,,,,Pleiotropy gene-based tests | NP + CAA
+,2.0,3485013.0,,,2.1000000000000002e-05,,,,Pleiotropy gene-based tests | NP + CAA
+,2.0,3501690.0,,,4e-06,,,,Pleiotropy gene-based tests | NP + CAA
+,2.0,3383446.0,,,2e-06,,,,Pleiotropy gene-based tests | NFT + CAA
+,2.0,3485013.0,,,1e-06,,,,Pleiotropy gene-based tests | NFT + CAA
+,2.0,3501690.0,,,1e-06,,,,Pleiotropy gene-based tests | NFT + CAA
+rs34487851,2.0,,A,,5.7999999999999995e-06,,,,Univariate models | AD status | P value
+rs79524815,7.0,,T,,0.03,,,,Univariate models | AD status | P value
+rs34487851,2.0,,A,,7.699999999999999e-07,,,,Univariate models | NP | P value
+rs79524815,7.0,,T,,0.03,,,,Univariate models | NP | P value
+rs34487851,2.0,,A,,4.5e-06,,,,Univariate models | NFT | P value
+rs79524815,7.0,,T,,2.3e-05,,,,Univariate models | NFT | P value
+rs34487851,2.0,,A,,0.06,,,,Univariate models | CAA | P value
+rs79524815,7.0,,T,,9.1e-06,,,,Univariate models | CAA | P value
+rs34487851,2.0,,A,,2e-08,,,,Joint models | NP + NFT | P value
+rs79524815,7.0,,T,,0.00013000000000000002,,,,Joint models | NP + NFT | P value
+rs34487851,2.0,,A,,2.4999999999999998e-06,,,,Joint models | NP + CAA | P value
+rs79524815,7.0,,T,,3.2999999999999997e-06,,,,Joint models | NP + CAA | P value
+rs34487851,2.0,,A,,2.1000000000000002e-05,,,,Joint models | NFT + CAA | P value
+rs79524815,7.0,,T,,1.1000000000000001e-08,,,,Joint models | NFT + CAA | P value

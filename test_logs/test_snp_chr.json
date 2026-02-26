@@ -1,7 +1,7 @@
 [
   [
     "30413934_PMC6358498.csv",
-    "Table 30413934_PMC6358498.csv does not have the right single unique value of Chr for SNP rs1048365: 7 vs 7"
+    "Table 30413934_PMC6358498.csv does not contain a single unique value of Chr for SNP rs3844143: [11.0, 1111.0] vs [11]"
   ],
   [
     "30651383_PMC6369905.csv",
@@ -17,7 +17,7 @@
   ],
   [
     "30636644_PMC6330399.csv",
-    "Table 30636644_PMC6330399.csv does not have the right single unique value of Chr for SNP rs10111328: 8q24.11 vs 8"
+    "Table 30636644_PMC6330399.csv does not contain a single unique value of Chr for SNP rs10111328: [nan] vs ['8']"
   ],
   [
     "31055733_PMC6544706.csv",
@@ -25,7 +25,7 @@
   ],
   [
     "30930738_PMC6425305.csv",
-    "Table 30930738_PMC6425305.csv does not have the right single unique value of Chr for SNP rs10792421: 11q13.1 vs 11"
+    "Table 30930738_PMC6425305.csv does not contain a single unique value of Chr for SNP rs10792421: [nan] vs [11]"
   ],
   [
     "30617256_PMC6836675.csv",
@@ -37,7 +37,7 @@
   ],
   [
     "27899424_PMC5237405.csv",
-    "Table 27899424_PMC5237405.csv does not have the right single unique value of Chr for SNP rs10784359: 12 vs 12"
+    "Table 27899424_PMC5237405.csv does not contain a single unique value of Chr for SNP rs199528: [17.0, 1317.0] vs [17]"
   ],
   [
     "29752348_PMC5976227.csv",
