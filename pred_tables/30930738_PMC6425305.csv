@@ -1,4 +1,8 @@
 SNP,Chr,Position,RA,AF,P-value,Effect,Population,Cohort,P-value notes
+rs10792421,11q13.1,Upstream,G/A,,6.68e-05,,,,P -value . AD /
+rs11649476,16q22.2,Intronic,T/C,,1.35e-05,,,,P -value . AD /
+rs10792421,11q13.1,Upstream,G/A,,2.16e-05,,,,P -value . BIP /
+rs11649476,16q22.2,Intronic,T/C,,2.98e-05,,,,P -value . BIP /
 rs10792421,11q13.1,Upstream,G/A,,6.68e-05,,,,P-value(AD)
 rs11649476,16q22.2,Intronic,T/C,,1.35e-05,,,,P-value(AD)
 rs10792421,11q13.1,Upstream,G/A,,2.16e-05,,,,P-value(BIP)

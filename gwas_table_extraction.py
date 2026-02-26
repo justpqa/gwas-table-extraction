@@ -78,6 +78,14 @@ def clean_headers(df: pd.DataFrame) -> pd.DataFrame:
     df.columns = new_cols
     return df
 
+def contains_valid_snp(row):
+    row_snp_pattern = r"\b(?:rs|s)\d+\S*"
+    return any(re.search(row_snp_pattern, str(value)) for value in row)
+
+def contains_valid_pvalue(row):
+    row_pvalue_pattern = r"\d+\.\d+"
+    return any(re.search(row_pvalue_pattern, str(value)) for value in row)
+
 def extract_tables_lst_from_pdf_and_num_col(file_name: str, tables_num_col_lst: List[int]) -> List[pd.DataFrame]:
     """
     Extract tables from a paper given a file_name string and a list of number of col for each tables 
@@ -92,7 +100,6 @@ def extract_tables_lst_from_pdf_and_num_col(file_name: str, tables_num_col_lst: 
         }
     )
     df_lst = []
-    row_pattern = r"\b(?:rs|s)\d+\S*"
 
     page_num = 1
     while len(df_lst) < len(tables_num_col_lst) and page_num <= len(reader.pages):
@@ -128,7 +135,7 @@ def extract_tables_lst_from_pdf_and_num_col(file_name: str, tables_num_col_lst: 
                         for col in df.columns:
                             # first modify "" -> nan
                             df[col] = df[col].replace(r'^\s*$', np.nan, regex=True).ffill()
-                        df["valid_row"] = df.apply(lambda x: any(re.search(row_pattern, str(c)) for c in x), axis=1)
+                        df["valid_row"] = df.apply(lambda x: contains_valid_snp(x) and contains_valid_pvalue(x), axis=1)
                         df = df[df["valid_row"]].drop("valid_row", axis=1).reset_index().drop("index", axis = 1)
                         # some cell have the tag the end (often include a space and a small letter)
                         df = df.map(clean_cell) 
@@ -147,7 +154,7 @@ def extract_tables_lst_from_pdf_and_num_col(file_name: str, tables_num_col_lst: 
                         for col in df.columns:
                             # first modify "" -> nan
                             df[col] = df[col].replace(r'^\s*$', np.nan, regex=True).ffill()
-                        df["valid_row"] = df.apply(lambda x: any(re.search(row_pattern, str(c)) for c in x), axis=1)
+                        df["valid_row"] = df.apply(lambda x: contains_valid_snp(x) and contains_valid_pvalue(x), axis=1)
                         df = df[df["valid_row"]].drop("valid_row", axis=1).reset_index().drop("index", axis = 1)
                         # some cell have the tag the end (often include a space and a small letter)
                         df = df.map(clean_cell) 

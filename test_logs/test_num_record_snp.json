@@ -1,7 +1,7 @@
 [
   [
     "30413934_PMC6358498.csv",
-    "Table 30413934_PMC6358498.csv does not have the enough number of row for SNP rs1048365"
+    "Table 30413934_PMC6358498.csv does not have the enough number of row for SNP rs10906257"
   ],
   [
     "30651383_PMC6369905.csv",
@@ -16,10 +16,6 @@
     "Table 31497858_PMC6736148.csv does not have the enough number of row for SNP rs34331204"
   ],
   [
-    "30636644_PMC6330399.csv",
-    "Table 30636644_PMC6330399.csv does not have the enough number of row for SNP rs12386284"
-  ],
-  [
     "31055733_PMC6544706.csv",
     "Table 31055733_PMC6544706.csv does not have the enough number of row for SNP rs10483284"
   ],
@@ -32,15 +28,7 @@
     "Table 30448613_PMC6331247.csv does not have the enough number of row for SNP rs1476679"
   ],
   [
-    "27899424_PMC5237405.csv",
-    "Table 27899424_PMC5237405.csv does not have the enough number of row for SNP rs1358071"
-  ],
-  [
     "29752348_PMC5976227.csv",
     "Table 29752348_PMC5976227.csv does not have the enough number of row for SNP rs13164785"
-  ],
-  [
-    "30820047_PMC6463297.csv",
-    "Table 30820047_PMC6463297.csv does not have the enough number of row for SNP rs7920721"
   ]
 ]
