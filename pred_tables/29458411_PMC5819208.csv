@@ -40,8 +40,8 @@ SNP,Chr,Position,RA,AF,P-value,Effect,Population,Cohort,P-value notes
 ,2.0,3485013.0,,,2.1000000000000002e-05,,,,Pleiotropy gene-based tests | NP + CAA
 ,2.0,3501690.0,,,4e-06,,,,Pleiotropy gene-based tests | NP + CAA
 ,2.0,3383446.0,,,2e-06,,,,Pleiotropy gene-based tests | NFT + CAA
-,2.0,3485013.0,,,1e-06,,,,Pleiotropy gene-based tests | NFT + CAA
-,2.0,3501690.0,,,1e-06,,,,Pleiotropy gene-based tests | NFT + CAA
+,2.0,3485013.0,,,,,,,Pleiotropy gene-based tests | NFT + CAA
+,2.0,3501690.0,,,,,,,Pleiotropy gene-based tests | NFT + CAA
 rs34487851,2.0,,A,,5.7999999999999995e-06,,,,Univariate models | AD status | P value
 rs79524815,7.0,,T,,0.03,,,,Univariate models | AD status | P value
 rs34487851,2.0,,A,,7.699999999999999e-07,,,,Univariate models | NP | P value

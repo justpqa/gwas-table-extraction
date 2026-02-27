@@ -9,40 +9,6 @@ from typing import Iterable
 # run by pytest test_advp1.py
 # Test log is in test_logs with detail of error for each table
 
-# Paper tested
-test_papers_info = [
-    (30448613, "PMC6331247"), (30979435, "PMC6783343"), (31055733, "PMC6544706"),  (30617256, "PMC6836675"),
-    (30820047, "PMC6463297"), (29458411, "PMC5819208"), (29777097, "PMC5959890"), (30651383, "PMC6369905"),
-    (31497858, "PMC6736148"), (30930738, "PMC6425305"), (31426376, "PMC6723529"), (29967939, "PMC6280657"),
-    (29107063, "PMC5920782"), (29274321, "PMC5938137"), (30413934, "PMC6358498"), (30805717, "PMC7193309"),
-    (30636644, "PMC6330399"), (29752348, "PMC5976227"), (28560309, "PMC5440281"), (27899424, "PMC5237405"),
-]
-
-def create_test_tables_from_advp():
-    advp1 = pd.read_csv("test_tables/advp.variant.records.hg38.tsv", sep = "\t")
-
-    # modify column name of those used to test
-    advp1 = advp1.rename({
-        "Top SNP": "SNP",
-        "RA 1(Reported Allele 1)": "RA",
-        "OR_nonref": "Effect",
-        "#dbSNP_hg38_chr": "Chr",
-        "dbSNP_hg38_position": "Pos",
-        "Cohort_simple3": "Cohort",
-        "Population_map": "Population"
-    }, axis = 1)[[
-        "Pubmed PMID", "SNP", "RA", "P-value", "Effect", "Chr", "Pos", "Cohort", "Population"
-    ]]
-
-    # Update chr to right format
-    advp1["Chr"] = advp1["Chr"].apply(lambda x: (x[3:]))
-
-    for pmid, pmcid in test_papers_info:
-        advp1_with_pmid = advp1[advp1["Pubmed PMID"] == pmid]
-        # sort by snp
-        advp1_with_pmid = advp1_with_pmid.sort_values("SNP").reset_index().drop("index", axis = 1)
-        advp1_with_pmid.to_csv(f"test_tables/{pmid}_{pmcid}.csv", index = False)
-
 def import_table_and_test_table(dir_path: str, file_name: str):
     if ".csv" in file_name:
         curr_df = pd.read_csv(f"{dir_path}/{file_name}")
@@ -98,7 +64,6 @@ def test_unique_snp(dir_path: str):
         with open("test_logs/test_unique_snp.json", "w") as f:
             json.dump(failed_table, f, indent=2)
         raise
-
 
 def test_num_record_snp(dir_path: str):
     # test if we have the right number of row for each snp
@@ -264,6 +229,3 @@ def test_snp_population(dir_path: str):
         with open("test_logs/test_snp_population.json", "w") as f:
             json.dump(failed_table, f, indent=2)
         raise AssertionError(f"Failed test_snp_population on {len(failed_table)} tables")
-
-# if __name__ == "__main__":
-    # create_test_tables_from_advp()

@@ -6,22 +6,9 @@ import pandas as pd
 import torch
 import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModel, AutoModelForCausalLM, BitsAndBytesConfig, LogitsProcessor, LogitsProcessorList
-
-class SingleTokenBiasProcessor(LogitsProcessor):
-    def __init__(self, token_ids, bias_value):
-        self.token_ids = token_ids
-        self.bias_value = bias_value
-
-    def __call__(self, input_ids, scores):
-        # Create a mask for allowed tokens
-        mask = torch.full_like(scores, -float("inf"))
-        for tid in self.token_ids:
-            mask[:, tid] = self.bias_value
-        return scores + mask
     
 class GWASColumnMatchingEngine:
-    def __init__(self, referencing_col_df: pd.DataFrame, embeddings_model_name: str = "NeuML/pubmedbert-base-embeddings", 
-                 use_llm: bool = False, llm_model_name: str = "stanford-crfm/BioMedLM", device: str = "cpu"):
+    def __init__(self, referencing_col_df: pd.DataFrame, embeddings_model_name: str = "NeuML/pubmedbert-base-embeddings"):
         # df of referencing col
         self.referencing_col_lst = referencing_col_df["column"].to_list()
         self.referencing_col_context_lst = referencing_col_df.apply(lambda x: x["column"] if pd.isna(x["description"]) else x["column"] + ": " + x["description"], axis = 1).to_list()
@@ -115,7 +102,7 @@ class GWASColumnMatchingEngine:
         # self.device = device
 
         # column list
-        self.col_with_multiple_copies = ["P-value", "Effect Size", "AF"]
+        # self.col_with_multiple_copies = ["P-value", "Effect Size", "AF"]
 
     def clean_col(self, col: str) -> str:
         """
@@ -162,64 +149,6 @@ class GWASColumnMatchingEngine:
         col_embeddings = F.normalize(col_embeddings, p=2, dim=1)
 
         return col_embeddings
-    
-#     def reranking_with_llm(self, col: str, candidates: List[str]) -> str:
-#         """
-#         LLM acts as a re-ranker to pick the best match from a list of candidates.
-#         """
-#         # Format the candidates as a numbered list for the LLM
-
-#         prompt = f"""Task: Map clinical table headers to GWAS standard ontology, return a single number for the best choice
-
-# Header: "p-value: 0.001, 5e-8, 0.43"
-# Candidates: 
-#     1. P-value: The statistical significance of the association. Keywords: P, P-value, P_adj, FDR. Examples: 5.0E-08, 0.0012, 1.2 x 10^-5, 0.05.
-#     2. Effect Size: The magnitude and direction of the association. Keywords: Beta, OR, HR, Estimate. Examples: Beta=0.25, OR=1.45, HR=1.12, Log(OR)=0.37.
-#     3. SNP: Variant identifier, or snp idenifier, or chr:pos. Keywords: chr:position, chr:pos, Variant, rsID, RS number, MarkerName, rs. Examples: rs12345, 20:45269867, 19:45411941:T:C, chr19:45411941, rs429358 (APOE ε4).
-# Best Match: 1
-
-# Header: "rs_number: rs123, rs456, rs789"
-# Candidates: 
-#     1. Chr: Genomic chromosome identifier. Keywords: CHR, Chrom, Chromosome. Examples: 1, 19, X, chr19, chrX.
-#     2. Position: Genomic coordinate location. Keywords: BP, POS, Base Pair, start, end. Examples: 45411941, 10240500:10248600 (range), build 37.
-#     3. SNP: Variant identifier, or snp idenifier, or chr:pos. Keywords: chr:position, chr:pos, Variant, rsID, RS number, MarkerName, rs. Examples: rs12345, 20:45269867, 19:45411941:T:C, chr19:45411941, rs429358 (APOE ε4).
-# Best Match: 2
-
-# Header: "{col}"
-# Candidates: 
-#     - {candidates[0]}
-#     - {candidates[1]}
-#     - {candidates[2]}
-# Best Match: """
-
-#         allowed_indices = [str(i+1) for i in range(len(candidates))]
-#         allowed_token_ids = [self.llm_model_tokenizer.encode(idx, add_special_tokens=False)[0] for idx in allowed_indices]
-        
-#         # logit bias to limit tokens that can be output
-#         bias_processor = SingleTokenBiasProcessor(allowed_token_ids, 100.0)
-#         logits_processor = LogitsProcessorList([bias_processor])
-
-#         # 4. Generate exactly ONE token
-#         inputs = self.llm_model_tokenizer(prompt, return_tensors="pt").to(self.device)
-        
-#         with torch.no_grad():
-#             output = self.llm_model.generate(
-#                 **inputs,
-#                 max_new_tokens=1,      # Force exactly one token
-#                 logits_processor=logits_processor, # Force it to be one of our numbers
-#                 pad_token_id=self.llm_model_tokenizer.eos_token_id,
-#                 do_sample=False        # Greedy decoding for consistency
-#             )
-
-#         # 5. Extract and Convert to Integer
-#         new_token = output[0][-1]
-#         predicted_text = self.llm_model_tokenizer.decode(new_token).strip()
-        
-#         try:
-#             idx = int(predicted_text) - 1 # Convert back to 0-based list index
-#             return candidates[idx]
-#         except (ValueError, IndexError):
-#             return col
         
     def match_single_col_to_ref_col(self, col: str) -> Tuple[str, float]:
         """
@@ -354,16 +283,5 @@ class GWASColumnMatchingEngine:
             # if ref_col not in ref_col_to_col_lst:
             #     ref_col_to_col_lst[ref_col] = []
             # ref_col_to_col_lst[ref_col].append((col, cleaned_col_prompt, score))
-
-        # finally, filter col that cannot have multiple copies
-        for ref_col in ref_col_to_col_lst:
-            if ref_col not in self.col_with_multiple_copies and len(ref_col_to_col_lst[ref_col]) > 1:
-                best_col, best_cleaned_col_prompt, best_score = None, None, float("-inf")
-                for col, cleaned_col_prompt, score in ref_col_to_col_lst[ref_col]:
-                    if score > best_score:
-                        best_col = col
-                        best_cleaned_col_prompt = cleaned_col_prompt
-                        best_score = score
-                ref_col_to_col_lst[ref_col] = [(best_col, best_cleaned_col_prompt, best_score)]
 
         return ref_col_to_col_lst
