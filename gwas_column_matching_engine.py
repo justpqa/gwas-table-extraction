@@ -1,4 +1,5 @@
 import re
+import json
 from typing import List, Union, Tuple, Dict
 from collections.abc import Iterable
 import numpy as np
@@ -12,6 +13,7 @@ class GWASColumnMatchingEngine:
         # df of referencing col
         self.referencing_col_lst = referencing_col_df["column"].to_list()
         self.referencing_col_context_lst = referencing_col_df.apply(lambda x: x["column"] if pd.isna(x["description"]) else x["column"] + ": " + x["description"], axis = 1).to_list()
+        self.referencing_col_example_lst = referencing_col_df["example"].to_list()
 
         # Try to first convert any abbreviation, then we match column with right semantic
         self.gwas_abbreviation_dict = {
@@ -87,22 +89,31 @@ class GWASColumnMatchingEngine:
 
         # also make col embeddings
         self.referencing_col_embeddings = self.create_col_embeddings_from_model(self.referencing_col_context_lst)
+        self.referencing_col_example_embeddings = self.create_col_embeddings_from_model(self.referencing_col_example_lst)
 
-        # # llm model
-        # self.use_llm = use_llm
-        # if use_llm:
-        #     self.llm_model_tokenizer = AutoTokenizer.from_pretrained(llm_model_name)
-        #     self.llm_model = AutoModelForCausalLM.from_pretrained(
-        #         llm_model_name,
-        #         torch_dtype=torch.bfloat16
-        #     ).to(device)
-        #     self.llm_model.eval()
-
-        # # device
-        # self.device = device
-
-        # column list
-        # self.col_with_multiple_copies = ["P-value", "Effect Size", "AF"]
+        # NOTE: these are experimental part of using llm
+        # adapter_path = "biomedlm_seqcls_lora"
+        # base_model_name = "stanford-crfm/BioMedLM"
+        # self.tokenizer = AutoTokenizer.from_pretrained(adapter_path, use_fast=True)
+        # if self.tokenizer.pad_token is None:
+        #     self.tokenizer.pad_token = self.tokenizer.eos_token
+        # bnb_config = BitsAndBytesConfig(
+        #     load_in_4bit=True,
+        #     bnb_4bit_compute_dtype=torch.bfloat16, 
+        #     bnb_4bit_use_double_quant=True,
+        #     bnb_4bit_quant_type="nf4",
+        # )
+        # base_model = AutoModelForSequenceClassification.from_pretrained(
+        #     base_model_name,
+        #     num_labels=4,
+        #     quantization_config=bnb_config,
+        #     device_map="auto",
+        # )
+        # base_model.config.pad_token_id = self.tokenizer.pad_token_id
+        # base_model.config.use_cache = False
+        # self.model = PeftModel.from_pretrained(base_model, adapter_path)
+        # self.model.eval()
+        # self.device = "mps"
 
     def clean_col(self, col: str) -> str:
         """
@@ -126,9 +137,11 @@ class GWASColumnMatchingEngine:
         Based on the column title and some possible values of that columns, try to make a prompt
         """
         col_prompt = f"{col}: "
+        col_example = f""
         for i in range(min(num_example_values, len(example_values))):
             col_prompt += f"{example_values[i]}, "
-        return col_prompt
+            col_example += f"{example_values[i]},"
+        return col_prompt, col_example
 
     def create_col_embeddings_from_model(self, col: str | List[str]) -> np.ndarray | torch.Tensor:
         """
@@ -149,8 +162,30 @@ class GWASColumnMatchingEngine:
         col_embeddings = F.normalize(col_embeddings, p=2, dim=1)
 
         return col_embeddings
-        
-    def match_single_col_to_ref_col(self, col: str) -> Tuple[str, float]:
+    
+#     def make_prompt(self, col, candidates):
+#         prompt = f"""Header: "{col}"
+# Choose the best mapping:
+# 1) {candidates[0]}
+# 2) {candidates[1]}
+# 3) {candidates[2]}
+# Answer:"""
+#         return prompt
+
+#     def predict_class(self, prompt, max_length=256):
+#         inputs = self.tokenizer(
+#             prompt,
+#             return_tensors="pt",
+#             truncation=True,
+#             max_length=max_length,
+#         ).to(self.device)
+
+#         with torch.no_grad():
+#             logits = self.model(**inputs).logits
+
+#         return torch.argmax(logits, dim=-1).item()
+
+    def match_single_col_to_ref_col(self, col: str, col_example: str) -> Tuple[str, float]:
         """
         match a single column to reference col given column, the list of referencing col and their embeddings
         """
@@ -168,8 +203,11 @@ class GWASColumnMatchingEngine:
         #     col_embeddings = create_embeddings_from_model(col, embeddings_model, embeddings_model_tokenizer)
         col_embeddings = self.create_col_embeddings_from_model(col)
         col_embeddings = col_embeddings.reshape(-1, 1)
+        col_example_embeddings = self.create_col_embeddings_from_model(col_example)
+        col_example_embeddings = col_example_embeddings.reshape(-1, 1)
 
         # calculate similarity score
+        # scores = 1/2 * (torch.matmul(self.referencing_col_embeddings, col_embeddings).reshape(-1) + torch.matmul(self.referencing_col_example_embeddings, col_example_embeddings).reshape(-1))
         scores = torch.matmul(self.referencing_col_embeddings, col_embeddings).reshape(-1)
 
         # sort similairty score
@@ -193,6 +231,55 @@ class GWASColumnMatchingEngine:
         if best_score >= 0.4:
             return (self.referencing_col_lst[best_inx], best_score)
         return (col, 1)
+
+    # def match_single_col_to_ref_col(self, col: str, col_example: str) -> Tuple[str, float]:
+    #     """
+    #     match a single column to reference col given column, the list of referencing col and their embeddings
+    #     """
+    #     # calculate column embedding
+    #     # col_embeddings = embeddings_model.encode(col, normalize_embeddings=True)
+    #     # multi_index_pattern = r".+\..+"
+    #     # if re.search(multi_index_pattern, col):
+    #     #     col = col.replace(".", " ")
+    #     #     # sub_col_lst = col.split(".")
+    #     #     # sub_col_embeddings = create_embeddings_from_model(sub_col_lst, embeddings_model, embeddings_model_tokenizer)
+    #     #     # col_embeddings = torch.mean(sub_col_embeddings, dim = 0)
+    #     #     col = col.replace(".", " ")
+    #     #     col_embeddings = create_embeddings_from_model(col, embeddings_model, embeddings_model_tokenizer)
+    #     # else:
+    #     #     col_embeddings = create_embeddings_from_model(col, embeddings_model, embeddings_model_tokenizer)
+    #     col_embeddings = self.create_col_embeddings_from_model(col)
+    #     col_embeddings = col_embeddings.reshape(-1, 1)
+    #     col_example_embeddings = self.create_col_embeddings_from_model(col_example)
+    #     col_example_embeddings = col_example_embeddings.reshape(-1, 1)
+
+    #     # calculate similarity score
+    #     scores = 1/2 * (torch.matmul(self.referencing_col_embeddings, col_embeddings).reshape(-1) + torch.matmul(self.referencing_col_example_embeddings, col_example_embeddings).reshape(-1))
+
+    #     # sort similairty score
+    #     top_k_indices = torch.argsort(scores, descending=True)
+
+    #     # verify if we even got good enough similarity
+    #     best_inx = top_k_indices[0].item()
+    #     best_score = scores[best_inx].item()
+    #     # second_best_inx = top_k_indices[1].item()
+    #     # second_best_score = scores[second_best_inx].item()
+    #     # need a threshold for score or else, just return col
+    #     # if best_score < 0.4: 
+    #     #     return (col, 1)
+        
+    #     # # now do rerank
+    #     # candidates = [ref_col_lst[inx] for inx in top_k_indices if scores[inx] >= 0.4]
+    #     # candidates_scores = [scores[inx] for inx in top_k_indices if scores[inx] >= 0.4]
+    #     # best_ref_col, best_ref_col_scores = reranking_from_model(col, candidates, candidates_scores)
+    #     # return (best_ref_col, best_ref_col_scores)
+
+    #     if best_score >= 0.4:
+    #         candidates_inx = []
+    #         for i in range(3):
+    #             candidates_inx.append((top_k_indices[i], scores[top_k_indices[i]]))
+    #         return candidates_inx
+    #     return []
 
     def match_many_col_to_ref_col(self, df: pd.DataFrame) -> Dict:
         """
@@ -219,24 +306,23 @@ class GWASColumnMatchingEngine:
                 for sub_col in cleaned_col.split("."):
 
                     # make column prompt for each sub col
-                    cleaned_sub_col_prompt = self.make_col_prompt(sub_col, example_values)
+                    cleaned_sub_col_prompt, cleaned_sub_col_example = self.make_col_prompt(sub_col, example_values)
                     
                     # matching and compare
-                    ref_col, score = self.match_single_col_to_ref_col(cleaned_sub_col_prompt)
+                    ref_col, score = self.match_single_col_to_ref_col(cleaned_sub_col_prompt, cleaned_sub_col_example)
                     if score > best_score and ref_col != cleaned_sub_col_prompt:
                         best_ref_col = ref_col
                         best_score = score
-                        best_cleaned_sub_col_prompt = cleaned_sub_col_prompt
                 
                 # if we have a best one vs not
                 if best_ref_col is not None:
                     if best_ref_col not in ref_col_to_col_lst:
                         ref_col_to_col_lst[best_ref_col] = []
-                    ref_col_to_col_lst[best_ref_col].append((col, best_cleaned_sub_col_prompt, score))
+                    ref_col_to_col_lst[best_ref_col].append((col, best_score))
                 else:
                     if col not in ref_col_to_col_lst:
                         ref_col_to_col_lst[col] = []
-                    ref_col_to_col_lst[col].append((col, best_cleaned_sub_col_prompt, 1))
+                    ref_col_to_col_lst[col].append((col, 1))
             elif re.search(multi_index_pattern_2, cleaned_col.strip()):
                 # try to assess each part and see if which one have highest score
                 best_ref_col, best_score = None, 0
@@ -244,39 +330,38 @@ class GWASColumnMatchingEngine:
                 for sub_col in cleaned_col.split("|"):
 
                     # make column prompt for each sub col
-                    cleaned_sub_col_prompt = self.make_col_prompt(sub_col, example_values)
+                    cleaned_sub_col_prompt, cleaned_sub_col_example = self.make_col_prompt(sub_col, example_values)
                     
                     # matching and compare
-                    ref_col, score = self.match_single_col_to_ref_col(cleaned_sub_col_prompt)
+                    ref_col, score = self.match_single_col_to_ref_col(cleaned_sub_col_prompt, cleaned_sub_col_example)
                     if score > best_score and ref_col != cleaned_sub_col_prompt:
                         best_ref_col = ref_col
                         best_score = score
-                        best_cleaned_sub_col_prompt = cleaned_sub_col_prompt
                 
                 # if we have a best one vs not
                 if best_ref_col is not None:
                     if best_ref_col not in ref_col_to_col_lst:
                         ref_col_to_col_lst[best_ref_col] = []
-                    ref_col_to_col_lst[best_ref_col].append((col, best_cleaned_sub_col_prompt, score))
+                    ref_col_to_col_lst[best_ref_col].append((col, best_score))
                 else:
                     if col not in ref_col_to_col_lst:
                         ref_col_to_col_lst[col] = []
-                    ref_col_to_col_lst[col].append((col, best_cleaned_sub_col_prompt, 1))
+                    ref_col_to_col_lst[col].append((col, 1))
             else:
                 # match a single col with best fit referencing col and return a dict
                 # make the col prompt
                 # extra steps to remove .
                 cleaned_col = cleaned_col.replace(".", "")
-                cleaned_col_prompt = self.make_col_prompt(cleaned_col, example_values)
+                cleaned_col_prompt, cleaned_col_example = self.make_col_prompt(cleaned_col, example_values)
 
                 # matching for best col
-                ref_col, score = self.match_single_col_to_ref_col(cleaned_col_prompt)
+                ref_col, score = self.match_single_col_to_ref_col(cleaned_col_prompt, cleaned_col_example)
                 # if we still get same col
                 if ref_col == cleaned_col_prompt: 
                     ref_col = col
                 if ref_col not in ref_col_to_col_lst:
                     ref_col_to_col_lst[ref_col] = []
-                ref_col_to_col_lst[ref_col].append((col, cleaned_col_prompt, score))
+                ref_col_to_col_lst[ref_col].append((col, score))
             # ref_col, score = match_single_col_to_ref_col(cleaned_col_prompt, ref_col_lst, ref_col_embeddings)
             # if ref_col == cleaned_col_prompt: 
             #     ref_col = col
@@ -285,3 +370,118 @@ class GWASColumnMatchingEngine:
             # ref_col_to_col_lst[ref_col].append((col, cleaned_col_prompt, score))
 
         return ref_col_to_col_lst
+
+    # def match_many_col_to_ref_col(self, df: pd.DataFrame) -> Dict:
+    #     """
+    #     Given a list of column and a dataframe (could be dict later on if that fits better),
+    #     try to match each column to the best fitted reference col, 
+    #     return a dict of ref col : list of (col, cleaned col prompt, score)
+    #     """
+
+    #     # conduct matching
+    #     multi_index_pattern_1 = r"^.+\..+$" # need multi index pattern for handling multi index
+    #     multi_index_pattern_2 = r"^.+\|.+$"
+    #     ref_col_to_col_lst = {}
+    #     for col in df.columns:
+
+    #         # extract values needed for prompt
+    #         cleaned_col = self.clean_col(col)
+    #         example_values = df[col].unique().tolist()
+    #         # prompt: {col}: example, need to delete all : first
+
+    #         if re.search(multi_index_pattern_1, cleaned_col.strip()):
+    #             # try to assess each part and see if which one have highest score
+    #             all_candidates = []
+    #             for sub_col in cleaned_col.split("."):
+
+    #                 # make column prompt for each sub col
+    #                 cleaned_sub_col_prompt, cleaned_sub_col_example = self.make_col_prompt(sub_col, example_values)
+                    
+    #                 # matching and compare
+    #                 candidates = self.match_single_col_to_ref_col(cleaned_sub_col_prompt, cleaned_sub_col_example)
+    #                 all_candidates.extend(candidates)
+                
+    #             all_candidates.sort(key = lambda x: x[1], reverse = True)
+    #             if len(all_candidates) >= 3:
+    #                 candidates_ref_col = [self.referencing_col_lst[all_candidates[i][0]] for i in range(3)]
+    #                 candidates_ref_col_score = [candidates[i][1] for i in range(3)]
+    #                 candidates = [self.referencing_col_context_lst[all_candidates[i][0]] for i in range(3)]
+    #                 prompt = self.make_prompt(cleaned_col, candidates)
+    #                 ref_col_inx = self.predict_class(prompt)
+    #                 if ref_col_inx == 3:
+    #                     ref_col = col
+    #                     ref_col_score = 1
+    #                 else:
+    #                     ref_col = candidates_ref_col[ref_col_inx]
+    #                     ref_col_score = candidates_ref_col_score[ref_col_inx]
+    #                 if ref_col not in ref_col_to_col_lst:
+    #                     ref_col_to_col_lst[ref_col] = []
+    #                 ref_col_to_col_lst[ref_col].append((col, ref_col_score))
+    #             else:
+    #                 ref_col_to_col_lst[col] = [(col, 1)]
+    #         elif re.search(multi_index_pattern_2, cleaned_col.strip()):
+    #             # try to assess each part and see if which one have highest score
+    #             all_candidates = []
+    #             for sub_col in cleaned_col.split("|"):
+
+    #                 # make column prompt for each sub col
+    #                 cleaned_sub_col_prompt, cleaned_sub_col_example = self.make_col_prompt(sub_col, example_values)
+                    
+    #                 # matching and compare
+    #                 candidates = self.match_single_col_to_ref_col(cleaned_sub_col_prompt, cleaned_sub_col_example)
+    #                 all_candidates.extend(candidates)
+                
+    #             all_candidates.sort(key = lambda x: x[1], reverse = True)
+    #             if len(all_candidates) >= 3:
+    #                 candidates_ref_col = [self.referencing_col_lst[all_candidates[i][0]] for i in range(3)]
+    #                 candidates_ref_col_score = [candidates[i][1] for i in range(3)]
+    #                 candidates = [self.referencing_col_context_lst[all_candidates[i][0]] for i in range(3)]
+    #                 prompt = self.make_prompt(cleaned_col, candidates)
+    #                 ref_col_inx = self.predict_class(prompt)
+    #                 if ref_col_inx == 3:
+    #                     ref_col = col
+    #                     ref_col_score = 1
+    #                 else:
+    #                     ref_col = candidates_ref_col[ref_col_inx]
+    #                     ref_col_score = candidates_ref_col_score[ref_col_inx]
+    #                 if ref_col not in ref_col_to_col_lst:
+    #                     ref_col_to_col_lst[ref_col] = []
+    #                 ref_col_to_col_lst[ref_col].append((col, ref_col_score))
+    #             else:
+    #                 ref_col_to_col_lst[col] = [(col, 1)]
+    #         else:
+    #             # match a single col with best fit referencing col and return a dict
+    #             # make the col prompt
+    #             # extra steps to remove .
+    #             cleaned_col = cleaned_col.replace(".", "")
+    #             cleaned_col_prompt, cleaned_col_example = self.make_col_prompt(cleaned_col, example_values)
+
+    #             # matching for best col
+    #             candidates = self.match_single_col_to_ref_col(cleaned_col_prompt, cleaned_col_example)
+    #             candidates.sort(key = lambda x: x[1], reverse = True)
+    #             # if we still get same col
+    #             if len(candidates) >= 3:
+    #                 candidates_ref_col = [self.referencing_col_lst[candidates[i][0]] for i in range(3)]
+    #                 candidates_ref_col_score = [candidates[i][1] for i in range(3)]
+    #                 candidates = [self.referencing_col_context_lst[candidates[i][0]] for i in range(3)]
+    #                 prompt = self.make_prompt(cleaned_col, candidates)
+    #                 ref_col_inx = self.predict_class(prompt)
+    #                 if ref_col_inx == 3:
+    #                     ref_col = col
+    #                     ref_col_score = 1
+    #                 else:
+    #                     ref_col = candidates_ref_col[ref_col_inx]
+    #                     ref_col_score = candidates_ref_col_score[ref_col_inx]
+    #                 if ref_col not in ref_col_to_col_lst:
+    #                     ref_col_to_col_lst[ref_col] = []
+    #                 ref_col_to_col_lst[ref_col].append((col, ref_col_score))
+    #             else:
+    #                 ref_col_to_col_lst[col] = [(col, 1)]
+    #         # ref_col, score = match_single_col_to_ref_col(cleaned_col_prompt, ref_col_lst, ref_col_embeddings)
+    #         # if ref_col == cleaned_col_prompt: 
+    #         #     ref_col = col
+    #         # if ref_col not in ref_col_to_col_lst:
+    #         #     ref_col_to_col_lst[ref_col] = []
+    #         # ref_col_to_col_lst[ref_col].append((col, cleaned_col_prompt, score))
+
+    #     return ref_col_to_col_lst

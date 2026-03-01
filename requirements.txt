@@ -16,9 +16,9 @@ openpyxl
 torch
 transformers
 tqdm
+peft
 accelerate 
 bitsandbytes
-mlx-lm
 pytest
 openpyxl
 xlrd

@@ -187,7 +187,7 @@ def format_original_table_from_col_matching(df: pd.DataFrame, new_col_to_old_col
     """
     Format final table by melt/make extra copies of reference columns, or simply rename column to reference column name
     """
-    possible_ref_col_to_melt = ["P-value", "Effect", "AF"]
+    # possible_ref_col_to_melt = ["P-value", "Effect", "AF"]
     # map the columns
     # new_col_to_old_col_lst = gwas_column_matching_engine.match_many_col_to_ref_col(df)
     df_with_ref_col = None
@@ -196,7 +196,7 @@ def format_original_table_from_col_matching(df: pd.DataFrame, new_col_to_old_col
     for new_col in new_col_to_old_col_lst:
         if len(new_col_to_old_col_lst[new_col]) == 1:
             # check if we remove unique col or not and if yes, is this a case of a col map to itself (score = 1)
-            if (not remove_unique_col) or (remove_unique_col and new_col_to_old_col_lst[new_col][0][2] != 1):
+            if (not remove_unique_col) or (remove_unique_col and new_col_to_old_col_lst[new_col][0][1] != 1):
                 if df_with_ref_col is None:
                     df_with_ref_col = df[[new_col_to_old_col_lst[new_col][0][0]]]
                     df_with_ref_col = df_with_ref_col.rename({new_col_to_old_col_lst[new_col][0][0]: new_col}, axis = 1)
@@ -205,37 +205,55 @@ def format_original_table_from_col_matching(df: pd.DataFrame, new_col_to_old_col
                 # add these single col to the list of not melt
                 new_col_to_not_melt.append(new_col)
         else:
-            if new_col in possible_ref_col_to_melt:
-                old_col_lst = []
-                for col, _, _ in new_col_to_old_col_lst[new_col]:
-                    # NOTE: special case, if col is the same as new_col, then melt will get error
-                    if col == new_col:
-                        old_col_lst.append(col + " ")
+            # if new_col in possible_ref_col_to_melt:
+            #     old_col_lst = []
+            #     for col, _ in new_col_to_old_col_lst[new_col]:
+            #         # NOTE: special case, if col is the same as new_col, then melt will get error
+            #         if col in new_col_to_old_col_lst:
+            #             old_col_lst.append(col + " ")
+            #         else:
+            #             old_col_lst.append(col)
+            #         if df_with_ref_col is None:
+            #             if col in new_col_to_old_col_lst:
+            #                 df_with_ref_col = df[[col]].rename({col: col + " "}, axis = 1)
+            #             else:
+            #                 df_with_ref_col = df[[col]]
+            #         else:
+            #             if col in new_col_to_old_col_lst:
+            #                 df_with_ref_col[col + " "] = df[col]
+            #             else:
+            #                 df_with_ref_col[col] = df[col]
+            #     new_col_to_old_col_lst_to_melt[new_col] = old_col_lst.copy()
+            # else:
+            #     # make multiple copies with notes
+            #     for inx, (col, _) in enumerate(new_col_to_old_col_lst[new_col]):
+            #         if df_with_ref_col is None:
+            #             df_with_ref_col = df[[col]]
+            #             df_with_ref_col = df_with_ref_col.rename({col: f"{new_col}_{inx + 1}"}, axis = 1)
+            #         else:
+            #             df_with_ref_col[f"{new_col}_{inx + 1}"] = df[col]
+            #         df_with_ref_col[f"{new_col}_{inx + 1} notes"] = col
+            #         # add these cols in group but not need to melt
+            #         new_col_to_not_melt.append(f"{new_col}_{inx + 1}")
+            #         new_col_to_not_melt.append(f"{new_col}_{inx + 1} notes")
+            old_col_lst = []
+            for col, _ in new_col_to_old_col_lst[new_col]:
+                # NOTE: special case, if col is the same as new_col, then melt will get error
+                if col in new_col_to_old_col_lst:
+                    old_col_lst.append(col + " ")
+                else:
+                    old_col_lst.append(col)
+                if df_with_ref_col is None:
+                    if col in new_col_to_old_col_lst:
+                        df_with_ref_col = df[[col]].rename({col: col + " "}, axis = 1)
                     else:
-                        old_col_lst.append(col)
-                    if df_with_ref_col is None:
-                        if col == new_col:
-                            df_with_ref_col = df[[col]].rename({col: col + " "}, axis = 1)
-                        else:
-                            df_with_ref_col = df[[col]]
-                    else:
-                        if col == new_col:
-                            df_with_ref_col[col + " "] = df[col]
-                        else:
-                            df_with_ref_col[col] = df[col]
-                new_col_to_old_col_lst_to_melt[new_col] = old_col_lst.copy()
-            else:
-                # make multiple copies with notes
-                for inx, (col, _, _) in enumerate(new_col_to_old_col_lst[new_col]):
-                    if df_with_ref_col is None:
                         df_with_ref_col = df[[col]]
-                        df_with_ref_col = df_with_ref_col.rename({col: f"{new_col}_{inx + 1}"}, axis = 1)
+                else:
+                    if col in new_col_to_old_col_lst:
+                        df_with_ref_col[col + " "] = df[col]
                     else:
-                        df_with_ref_col[f"{new_col}_{inx + 1}"] = df[col]
-                    df_with_ref_col[f"{new_col}_{inx + 1} notes"] = col
-                    # add these cols in group but not need to melt
-                    new_col_to_not_melt.append(f"{new_col}_{inx + 1}")
-                    new_col_to_not_melt.append(f"{new_col}_{inx + 1} notes")
+                        df_with_ref_col[col] = df[col]
+            new_col_to_old_col_lst_to_melt[new_col] = old_col_lst.copy()
     # Melting stage
     if len(new_col_to_old_col_lst_to_melt) > 0:
         # now melting column in same groups
@@ -270,16 +288,15 @@ def format_original_table(df: pd.DataFrame, gwas_column_matching_engine: GWASCol
     ref_col_to_col_lst = gwas_column_matching_engine.match_many_col_to_ref_col(df)
 
     # finally, filter col that cannot have multiple copies
-    # col_with_multiple_copies = ["P-value", "Effect", "AF"]
-    # for ref_col in ref_col_to_col_lst:
-    #     if ref_col not in col_with_multiple_copies and len(ref_col_to_col_lst[ref_col]) > 1:
-    #         best_col, best_cleaned_col_prompt, best_score = None, None, float("-inf")
-    #         for col, cleaned_col_prompt, score in ref_col_to_col_lst[ref_col]:
-    #             if score > best_score:
-    #                 best_col = col
-    #                 best_cleaned_col_prompt = cleaned_col_prompt
-    #                 best_score = score
-    #         ref_col_to_col_lst[ref_col] = [(best_col, best_cleaned_col_prompt, best_score)]
+    col_with_multiple_copies = ["P-value", "Effect", "AF"]
+    for ref_col in ref_col_to_col_lst:
+        if ref_col not in col_with_multiple_copies and len(ref_col_to_col_lst[ref_col]) > 1:
+            best_col, best_score = None, float("-inf")
+            for col, score in ref_col_to_col_lst[ref_col]:
+                if score > best_score:
+                    best_col = col
+                    best_score = score
+            ref_col_to_col_lst[ref_col] = [(best_col, best_score)]
 
     # then do final melt
     final_df = format_original_table_from_col_matching(df, ref_col_to_col_lst, remove_unique_col)

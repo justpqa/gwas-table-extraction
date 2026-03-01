@@ -1,31 +1,31 @@
 SNP,Chr,Position,RA,AF,P-value,Effect,Population,Cohort,P-value notes
-0.013,,,,,,,,,
-0.005,,,,,,,,,
-3.4 × 10−5,,,,,,,,,
-,,,,,,,,,ε 3 / ε 3 ε 3 with our association analysis..Ratio CI) association
-,,,,,,,,,p Odds (95% CI) of APOE E) disease.
-,,,,,,,,,ε 4 / ε 4.p and
+6.33,,,,,,,,,
+8.27,,,,,,,,,
+18.13,,,,,,,,,
+Ref ε,,,,,,,,,ε 3 / ε 3 ε 3 with our association analysis..Ratio CI) association
+Ref ε,,,,,,,,,p Odds (95% CI) of APOE E) disease.
+Ref ε,,,,,,,,,ε 4 / ε 4.p and
 25.12 (19.0–33.5),,,,,2.6e-152,,East Asian b,"17,096/2302",ε3/ε4 | p
 14.35 (12.0–17.1),,,,,2e-270,,European ancestry (ADGC),7417/8419,ε3/ε4 | p
 8.17 (6.3–10.7),,,,,1.3e-35,,African ancestry (ADGC),3462/1523,ε3/ε4 | p
 25.12 (19.0–33.5),,,,,2.8e-109,,East Asian b,"17,096/2302",ε4/ε4 | p
 14.35 (12.0–17.1),,,,,2.3e-187,,European ancestry (ADGC),7417/8419,ε4/ε4 | p
 8.17 (6.3–10.7),,,,,3e-54,,African ancestry (ADGC),3462/1523,ε4/ε4 | p
-,,,TT,,5.0999999999999996e-98,,East Asian,,ε3/ε4 | p
-,,,GT,,1.09e-45,,East Asian,,ε3/ε4 | p
-,,,GG,,0.006,,East Asian,,ε3/ε4 | p
-,,,TT,,1.55e-94,,European ancestry (ADGC),,ε3/ε4 | p
-,,,GT,,2.55e-134,,European ancestry (ADGC),,ε3/ε4 | p
-,,,GG,,4.87e-37,,European ancestry (ADGC),,ε3/ε4 | p
-,,,TT,,2.6e-187,,Total,,ε3/ε4 | p
-,,,GT,,4.53e-176,,Total,,ε3/ε4 | p
-,,,GG,,7.16e-39,,Total,,ε3/ε4 | p
-,,,TT,,8.8e-94,,East Asian,,ε4/ε4 | p
-,,,GT,,2.6200000000000005e-09,,East Asian,,ε4/ε4 | p
-,,,GG,,,,East Asian,,ε4/ε4 | p
-,,,TT,,2.69e-108,,European ancestry (ADGC),,ε4/ε4 | p
-,,,GT,,3.4399999999999995e-64,,European ancestry (ADGC),,ε4/ε4 | p
-,,,GG,,4.07e-12,,European ancestry (ADGC),,ε4/ε4 | p
-,,,TT,,7.69e-186,,Total,,ε4/ε4 | p
-,,,GT,,1.05e-71,,Total,,ε4/ε4 | p
-,,,GG,,1.8400000000000002e-12,,Total,,ε4/ε4 | p
+5.13 (4.40–5.98),,,TT,,5.0999999999999996e-98,,East Asian,,ε3/ε4 | p
+4.55 (3.69–5.61),,,GT,,1.09e-45,,East Asian,,ε3/ε4 | p
+3.55 (1.38–8.60),,,GG,,0.006,,East Asian,,ε3/ε4 | p
+4.25 (3.71–4.88),,,TT,,1.55e-94,,European ancestry (ADGC),,ε3/ε4 | p
+3.89 (3.49–4.34),,,GT,,2.55e-134,,European ancestry (ADGC),,ε3/ε4 | p
+3.39 (2.81–4.09),,,GG,,4.87e-37,,European ancestry (ADGC),,ε3/ε4 | p
+4.62 (4.17–5.11),,,TT,,2.6e-187,,Total,,ε3/ε4 | p
+4.10 (3.55–4.74),,,GT,,4.53e-176,,Total,,ε3/ε4 | p
+3.40 (2.83–4.08),,,GG,,7.16e-39,,Total,,ε3/ε4 | p
+5.13 (4.40–5.98),,,TT,,8.8e-94,,East Asian,,ε4/ε4 | p
+4.55 (3.69–5.61),,,GT,,2.6200000000000005e-09,,East Asian,,ε4/ε4 | p
+3.55 (1.38–8.60),,,GG,,,,East Asian,,ε4/ε4 | p
+4.25 (3.71–4.88),,,TT,,2.69e-108,,European ancestry (ADGC),,ε4/ε4 | p
+3.89 (3.49–4.34),,,GT,,3.4399999999999995e-64,,European ancestry (ADGC),,ε4/ε4 | p
+3.39 (2.81–4.09),,,GG,,4.07e-12,,European ancestry (ADGC),,ε4/ε4 | p
+4.62 (4.17–5.11),,,TT,,7.69e-186,,Total,,ε4/ε4 | p
+4.10 (3.55–4.74),,,GT,,1.05e-71,,Total,,ε4/ε4 | p
+3.40 (2.83–4.08),,,GG,,1.8400000000000002e-12,,Total,,ε4/ε4 | p
