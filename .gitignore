@@ -4,3 +4,4 @@ __pycache__/
 .pytest_cache/
 train.jsonl
 biomedlm_seqcls_lora/
+test_tables/
