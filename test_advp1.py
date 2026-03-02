@@ -113,6 +113,7 @@ def get_failed_table_for_test(dir_path: str, col: str, is_numeric: bool = False)
                     # NOTE: since Counter in python treat each NaN as a different value since NaN != NaN in pandas, we need to remove them first
                     curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", col]].sort_values(col).reset_index().drop("index", axis = 1)
                     curr_snp_col = curr_snp_df[[col]].dropna().reset_index().drop("index", axis = 1)[col]
+                    # NOTE: if it is numeric, we round it to 15 digits to prevent unexpected error
                     if is_numeric:
                         curr_snp_col = curr_snp_col.apply(lambda x: round(x, 15))
                     test_snp_df = test_df[test_df["SNP"] == snp][["SNP", col]].sort_values(col).reset_index().drop("index", axis = 1)
