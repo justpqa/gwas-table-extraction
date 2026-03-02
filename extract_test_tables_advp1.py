@@ -75,6 +75,7 @@ def safe_int(x) -> Optional[float]:
 
 def create_test_tables_from_advp():
     advp1 = pd.read_csv("test_tables/advp.variant.records.hg38.tsv", sep = "\t")
+    advp1 = advp1.replace("NR", pd.NA)
 
     # modify column name of those used to test
     advp1 = advp1.rename({
@@ -102,7 +103,8 @@ def create_test_tables_from_advp():
 
 def create_test_tables_from_advp_v2():
     advp1 = pd.read_csv("test_tables/ADVP_1026_v3p8_extracted.txt", sep = "\t")
-
+    advp1 = advp1.replace("NR", pd.NA)
+    
     # modify column name of those used to test
     advp1 = advp1.rename({
         "Top SNP": "SNP",
