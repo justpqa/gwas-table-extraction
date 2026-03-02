@@ -100,5 +100,31 @@ def create_test_tables_from_advp():
         advp1_with_pmid = advp1_with_pmid.sort_values("SNP").reset_index().drop("index", axis = 1)
         advp1_with_pmid.to_csv(f"test_tables/{pmid}_{pmcid}.csv", index = False)
 
+def create_test_tables_from_advp_v2():
+    advp1 = pd.read_csv("test_tables/ADVP_1026_v3p8_extracted.txt", sep = "\t")
+
+    # modify column name of those used to test
+    advp1 = advp1.rename({
+        "Top SNP": "SNP",
+        "ReportedAF": "AF",
+        "Effect Size (alt vs ref)": "Effect",
+        "Effect Size Type (OR or Beta)": "Effect Type",
+        "Cohort_simplified_no_counts": "Cohort",
+        "LocusName": "Locus"
+    }, axis = 1)[[
+        "Pubmed ID", "PMCID", "SNP", "Chr", "Locus", "AF", "P-value", "Effect", "Effect Type", "Population", "Cohort", "Stage",
+    ]]
+
+    # Update chr to right format
+    advp1["Chr"] = advp1["Chr"].apply(lambda x: safe_int(x))
+    advp1["P-value"] = advp1["P-value"].apply(lambda x: safe_float(x))
+    advp1["Effect"] = advp1["Effect"].apply(lambda x: safe_float(x))
+
+    for pmid, pmcid in test_papers_info:
+        advp1_with_pmid = advp1[advp1["Pubmed ID"] == pmid]
+        # sort by snp
+        advp1_with_pmid = advp1_with_pmid.sort_values("SNP").reset_index().drop("index", axis = 1)
+        advp1_with_pmid.to_csv(f"test_tables/{pmid}_{pmcid}.csv", index = False)
+
 if __name__ == "__main__":
-    create_test_tables_from_advp()
+    create_test_tables_from_advp_v2()

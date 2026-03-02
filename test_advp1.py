@@ -147,14 +147,23 @@ def get_failed_table_for_test(dir_path: str, col: str, is_numeric: bool = False)
                     failed_table.append((file_name, f"Table {file_name} ({round(100 * (1 - len(missed_snp) / len(test_unique_snp)), 2)}) does not contain right set of {col} for SNP {missed_snp}"))
     return failed_table
 
-def test_snp_ra(dir_path: str):
-    failed_table = get_failed_table_for_test(dir_path, "RA")
+# def test_snp_ra(dir_path: str):
+#     failed_table = get_failed_table_for_test(dir_path, "RA")
+#     try:
+#         assert len(failed_table) == 0
+#     except AssertionError:
+#         with open("test_logs/test_snp_ra.json", "w") as f:
+#             json.dump(failed_table, f, indent=2)
+#         raise AssertionError(f"Failed test_snp_ra on {len(failed_table)} tables")
+
+def test_snp_af(dir_path: str):
+    failed_table = get_failed_table_for_test(dir_path, "AF", is_numeric = True)
     try:
         assert len(failed_table) == 0
     except AssertionError:
         with open("test_logs/test_snp_ra.json", "w") as f:
             json.dump(failed_table, f, indent=2)
-        raise AssertionError(f"Failed test_snp_ra on {len(failed_table)} tables")
+        raise AssertionError(f"Failed test_snp_af on {len(failed_table)} tables")
 
 def test_snp_chr(dir_path: str):
     # test for each table and for each snp we have right set of Chr
@@ -166,15 +175,25 @@ def test_snp_chr(dir_path: str):
             json.dump(failed_table, f, indent=2)
         raise AssertionError(f"Failed test_snp_chr on {len(failed_table)} tables")
 
-def test_snp_pos(dir_path: str):
-    # test for each table and for each snp we have right set of Position
-    failed_table = get_failed_table_for_test(dir_path, "Position")
+def test_snp_locus(dir_path: str):
+    # test for each table and for each snp we have right set of Chr
+    failed_table = get_failed_table_for_test(dir_path, "Locus")
     try:
         assert len(failed_table) == 0
     except AssertionError:
-        with open("test_logs/test_snp_pos.json", "w") as f:
+        with open("test_logs/test_snp_locus.json", "w") as f:
             json.dump(failed_table, f, indent=2)
-        raise AssertionError(f"Failed test_snp_pos on {len(failed_table)} tables")
+        raise AssertionError(f"Failed test_snp_locus on {len(failed_table)} tables")
+
+# def test_snp_pos(dir_path: str):
+#     # test for each table and for each snp we have right set of Position
+#     failed_table = get_failed_table_for_test(dir_path, "Position")
+#     try:
+#         assert len(failed_table) == 0
+#     except AssertionError:
+#         with open("test_logs/test_snp_pos.json", "w") as f:
+#             json.dump(failed_table, f, indent=2)
+#         raise AssertionError(f"Failed test_snp_pos on {len(failed_table)} tables")
 
 def test_snp_effect(dir_path: str):
     # test for each table and for each snp we have right set of effect
@@ -186,18 +205,6 @@ def test_snp_effect(dir_path: str):
             json.dump(failed_table, f, indent=2)
         raise AssertionError(f"Failed test_snp_effect on {len(failed_table)} tables")
 
-# def test_snp_effect_str(dir_path):
-#     # test for each table and for each snp we have right set of effect (given in str form)
-#     for file_name in os.listdir(dir_path):
-#         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
-#         test_unique_snp = test_df["SNP"].unique()
-#         for snp in test_unique_snp:
-#             curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", "Effect"]].sort_values("Effect")
-#             curr_snp_effect = curr_snp_df["Effect"]
-#             test_snp_df = test_df[test_df["SNP"] == snp][["SNP", "Effect"]].sort_values("Effect")
-#             test_snp_effect = test_snp_df["Effect"].apply(lambda x: str(x))
-#             assert (curr_snp_effect == test_snp_effect).all(), f"Table {file_name} does not contain right set of effect for SNP {snp}"
-
 def test_snp_pvalue(dir_path: str):
     # test for each table and for each snp we have right set of p-value (numerically)
     failed_table = get_failed_table_for_test(dir_path, "P-value", is_numeric = True)
@@ -207,18 +214,6 @@ def test_snp_pvalue(dir_path: str):
         with open("test_logs/test_snp_pvalue.json", "w") as f:
             json.dump(failed_table, f, indent=2)
         raise AssertionError(f"Failed test_snp_pvalue on {len(failed_table)} tables")
-
-# def test_snp_pvalue_str(dir_path):
-#     # test for each table and for each snp we have right set of p-value (str)
-#     for file_name in os.listdir(dir_path):
-#         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
-#         test_unique_snp = test_df["SNP"].unique()
-#         for snp in test_unique_snp:
-#             curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", "P-value"]].sort_values("P-value")
-#             curr_snp_pvalue = curr_snp_df["P-value"]
-#             test_snp_df = test_df[test_df["SNP"] == snp][["SNP", "P-value"]].sort_values("P-value")
-#             test_snp_pvalue = test_snp_df["P-value"].apply(lambda x: str(x))
-#             assert (curr_snp_pvalue == test_snp_pvalue).all(), f"Table {file_name} does not contain right set of p-value for SNP {snp}"
 
 def test_snp_cohort(dir_path: str):
     # test for each table and for each snp we have right set of cohort
