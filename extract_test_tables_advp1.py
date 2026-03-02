@@ -82,11 +82,11 @@ def create_test_tables_from_advp():
         "RA 1(Reported Allele 1)": "RA",
         "OR_nonref": "Effect",
         "#dbSNP_hg38_chr": "Chr",
-        "dbSNP_hg38_position": "Pos",
+        "dbSNP_hg38_position": "Position",
         "Cohort_simple3": "Cohort",
         "Population_map": "Population"
     }, axis = 1)[[
-        "Pubmed PMID", "SNP", "RA", "P-value", "Effect", "Chr", "Pos", "Cohort", "Population"
+        "Pubmed PMID", "SNP", "RA", "P-value", "Effect", "Chr", "Position", "Cohort", "Population"
     ]]
 
     # Update chr to right format

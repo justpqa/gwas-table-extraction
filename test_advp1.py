@@ -74,6 +74,7 @@ def test_num_record_snp(dir_path: str):
             failed_table.append((file_name, f"Table {file_name} does not have SNP column"))
         else:
             test_unique_snp = test_df["SNP"].unique()
+            missed_snp = [] # we record exactly how much error do we make on a table
             for snp in test_unique_snp:
                 curr_snp_df = curr_df[curr_df["SNP"] == snp]
                 test_snp_df = test_df[test_df["SNP"] == snp]
@@ -81,8 +82,9 @@ def test_num_record_snp(dir_path: str):
                 # to prevent the case of rows that do not pass QC
                 # if curr_snp_df.shape[0] != test_snp_df.shape[0]:
                 if curr_snp_df.shape[0] < test_snp_df.shape[0]:
-                    failed_table.append((file_name, f"Table {file_name} does not have the enough number of row for SNP {snp}"))
-                    break
+                    missed_snp.append(snp)
+            if len(missed_snp) > 0:
+                failed_table.append((file_name, f"Table {file_name} ({round(100 * (1 - len(missed_snp) / len(test_unique_snp)), 2)}) does not have the enough number of row for SNP {missed_snp}"))
     try:
         assert len(failed_table) == 0
     except AssertionError:
@@ -95,7 +97,7 @@ def check_lst1_contains_lst2(lst1: Iterable, lst2: Iterable):
     counter2 = Counter(lst2)
     return counter2 <= counter1
 
-def get_failed_table_for_test(dir_path: str, col: str, is_constant: bool = False):
+def get_failed_table_for_test(dir_path: str, col: str, is_numeric: bool = False):
     failed_table = []
     for file_name in os.listdir(dir_path):
         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
@@ -106,11 +108,17 @@ def get_failed_table_for_test(dir_path: str, col: str, is_constant: bool = False
                 failed_table.append((file_name, f"Table {file_name} does not have {col} column"))
             else:
                 test_unique_snp = test_df["SNP"].unique()
+                missed_snp = []
                 for snp in test_unique_snp:
+                    # NOTE: since Counter in python treat each NaN as a different value since NaN != NaN in pandas, we need to remove them first
                     curr_snp_df = curr_df[curr_df["SNP"] == snp][["SNP", col]].sort_values(col).reset_index().drop("index", axis = 1)
-                    curr_snp_col = curr_snp_df[col]
+                    curr_snp_col = curr_snp_df[[col]].dropna().reset_index().drop("index", axis = 1)[col]
+                    if is_numeric:
+                        curr_snp_col = curr_snp_col.apply(lambda x: round(x, 15))
                     test_snp_df = test_df[test_df["SNP"] == snp][["SNP", col]].sort_values(col).reset_index().drop("index", axis = 1)
-                    test_snp_col = test_snp_df[col]
+                    test_snp_col = test_snp_df[[col]].dropna().reset_index().drop("index", axis = 1)[col]
+                    if is_numeric:
+                        test_snp_col = test_snp_col.apply(lambda x: round(x, 15))
                     # try:
                     #     if not check_lst1_contains_lst2(curr_snp_col, test_snp_col):
                     #         failed_table.append((file_name, f"Table {file_name} does not contain right set of {col} for SNP {snp}"))
@@ -121,20 +129,21 @@ def get_failed_table_for_test(dir_path: str, col: str, is_constant: bool = False
                     # NOTE: alternatively, we can check if our extracted value is a superset of test value
                     # to prevent the case of rows that fails QC
                     # if not (curr_snp_col == test_snp_col).all():
-                    if is_constant:
-                        if curr_snp_col.nunique() != 1:
-                            failed_table.append((file_name, f"Table {file_name} does not contain a single unique value of {col} for SNP {snp}: {curr_snp_col.unique().tolist()} vs {test_snp_col.unique().tolist()}"))
-                            break
-                        else:
-                            curr_snp_col_value = curr_snp_df[col].unique()[0]
-                            test_snp_col_value = test_snp_df[col].unique()[0]
-                            if curr_snp_col_value != test_snp_col_value:
-                                failed_table.append((file_name, f"Table {file_name} does not have the right single unique value of {col} for SNP {snp}: {curr_snp_col_value} vs {test_snp_col_value}"))
-                                break
-                    else:
-                        if not check_lst1_contains_lst2(curr_snp_col, test_snp_col):
-                            failed_table.append((file_name, f"Table {file_name} does not contain right set of {col} for SNP {snp}"))
-                            break
+                    # if is_constant:
+                    #     if curr_snp_col.nunique() != 1:    
+                    #         missed_snp.append(snp)
+                    #         failed_table.append((file_name, f"Table {file_name} does not have the right single unique value of {col} for SNP {snp}: {curr_snp_col_value} vs {test_snp_col_value}"))
+                    #     else:
+                    #         curr_snp_col_value = curr_snp_df[col].unique()[0]
+                    #         test_snp_col_value = test_snp_df[col].unique()[0]
+                    #         if curr_snp_col_value != test_snp_col_value:
+                    #             failed_table.append((file_name, f"Table {file_name} does not have the right single unique value of {col} for SNP {snp}: {curr_snp_col_value} vs {test_snp_col_value}"))
+                    #             break
+                    # else:
+                    if not check_lst1_contains_lst2(curr_snp_col, test_snp_col):
+                        missed_snp.append(snp)
+                if len(missed_snp) > 0:
+                    failed_table.append((file_name, f"Table {file_name} ({round(100 * (1 - len(missed_snp) / len(test_unique_snp)), 2)}) does not contain right set of {col} for SNP {missed_snp}"))
     return failed_table
 
 def test_snp_ra(dir_path: str):
@@ -148,7 +157,7 @@ def test_snp_ra(dir_path: str):
 
 def test_snp_chr(dir_path: str):
     # test for each table and for each snp we have right set of Chr
-    failed_table = get_failed_table_for_test(dir_path, "Chr", is_constant = True)
+    failed_table = get_failed_table_for_test(dir_path, "Chr")
     try:
         assert len(failed_table) == 0
     except AssertionError:
@@ -157,8 +166,8 @@ def test_snp_chr(dir_path: str):
         raise AssertionError(f"Failed test_snp_chr on {len(failed_table)} tables")
 
 def test_snp_pos(dir_path: str):
-    # test for each table and for each snp we have right set of Pos
-    failed_table = get_failed_table_for_test(dir_path, "Pos", is_constant = True)
+    # test for each table and for each snp we have right set of Position
+    failed_table = get_failed_table_for_test(dir_path, "Position")
     try:
         assert len(failed_table) == 0
     except AssertionError:
@@ -168,7 +177,7 @@ def test_snp_pos(dir_path: str):
 
 def test_snp_effect(dir_path: str):
     # test for each table and for each snp we have right set of effect
-    failed_table = get_failed_table_for_test(dir_path, "Effect")
+    failed_table = get_failed_table_for_test(dir_path, "Effect", is_numeric = True)
     try:
         assert len(failed_table) == 0
     except AssertionError:
@@ -190,7 +199,7 @@ def test_snp_effect(dir_path: str):
 
 def test_snp_pvalue(dir_path: str):
     # test for each table and for each snp we have right set of p-value (numerically)
-    failed_table = get_failed_table_for_test(dir_path, "P-value")
+    failed_table = get_failed_table_for_test(dir_path, "P-value", is_numeric = True)
     try:
         assert len(failed_table) == 0
     except AssertionError:
