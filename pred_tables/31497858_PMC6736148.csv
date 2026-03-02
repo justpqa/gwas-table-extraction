@@ -1,1 +1,1 @@
-SNP,Chr,Position,RA,AF,P-value,Effect,Population,Cohort
+P-value,Effect,AF,SNP,Chr,Position,RA,Population,Cohort

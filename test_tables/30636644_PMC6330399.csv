@@ -1,4 +1,4 @@
-Pubmed PMID,SNP,RA,P-value,Effect,Chr,Pos,Cohort,Population
+Pubmed PMID,SNP,RA,P-value,Effect,Chr,Position,Cohort,Population
 30636644,rs10111328,T,0.000379,,8.0,117525450,"ADGC, CHS, CHARGE, HRS",Caucasian
 30636644,rs10111328,T,1.67e-20,,8.0,117525450,"ADGC, CHS, CHARGE, HRS",Caucasian
 30636644,rs1046135,T,4.32e-115,,7.0,23530965,"ADGC, CHS, CHARGE, HRS",Caucasian

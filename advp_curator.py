@@ -2,6 +2,7 @@ import re
 import json
 import argparse
 import os
+import difflib
 from dataclasses import dataclass, asdict
 from typing import List, Dict, Optional, Tuple, Any
 
@@ -22,6 +23,26 @@ try:
     import camelot
 except Exception:
     camelot = None
+
+try:
+    from docling.document_converter import DocumentConverter
+except Exception:
+    DocumentConverter = None
+
+try:
+    import fitz  # PyMuPDF
+except Exception:
+    fitz = None
+
+try:
+    import pytesseract
+except Exception:
+    pytesseract = None
+
+try:
+    from PIL import Image
+except Exception:
+    Image = None
 
 
 
@@ -81,6 +102,72 @@ COVARIATE_HINTS = [
     "adjust", "adjusted", "covariate", "age", "sex", "site", "batch", "pcs", "principal components",
     "ancestry", "education", "scanner"
 ]
+
+COHORT_VOCAB = ["ADGC", "IGAP", "EADI", "GERAD", "CHARGE", "PENN", "ADNI", "AGES", "HRS", "ADSP"]
+
+COHORT_SYNONYM_MAP = {
+    "alzheimer's disease genetics consortium": "ADGC",
+    "alzheimer’s disease genetics consortium": "ADGC",
+    "adgc": "ADGC",
+    "international genomics of alzheimer's project": "IGAP",
+    "international genomics of alzheimer’s project": "IGAP",
+    "igap": "IGAP",
+    "eadi": "EADI",
+    "gerad": "GERAD",
+    "cohorts for heart and aging research in genomic epidemiology": "CHARGE",
+    "charge": "CHARGE",
+    "penn": "PENN",
+    "alzheimer's disease neuroimaging initiative": "ADNI",
+    "alzheimer’s disease neuroimaging initiative": "ADNI",
+    "adni": "ADNI",
+    "ages": "AGES",
+    "health and retirement study": "HRS",
+    "hrs": "HRS",
+    "adsp": "ADSP",
+}
+
+ABBREVIATION_MAP = {
+    "adgc": "Alzheimer's Disease Genetics Consortium",
+    "igap": "International Genomics of Alzheimer's Project",
+    "eadi": "European Alzheimer's Disease Initiative",
+    "gerad": "Genetic and Environmental Risk in AD",
+    "hrc": "Haplotype Reference Consortium",
+    "topmed": "Trans-Omics for Precision Medicine",
+    "1000g": "1000 Genomes",
+    "maf": "minor allele frequency",
+    "eaf": "effect allele frequency",
+    "ea": "effect allele",
+    "oa": "other allele",
+}
+
+IMPUTATION_CANONICAL_MAP = {
+    "haplotype reference consortium": "HRC",
+    "hrc": "HRC",
+    "trans-omics for precision medicine": "TOPMed",
+    "topmed": "TOPMed",
+    "1000 genomes": "1000G",
+    "1000g": "1000G",
+    "1000genomes": "1000G",
+}
+
+REFERENCE_COLUMN_PROMPTS = {
+    "TopSNP": "Variant identifier, usually rsID. Example: rs429358",
+    "Chr": "Chromosome label. Example: 19",
+    "BP(Position)": "Base-pair position. Example: 45411941",
+    "P-value": "Association p-value. Example: 2.4e-8",
+    "EffectSize(altvsref)": "Effect estimate (OR/Beta/HR). Example: 1.23 or -0.08",
+    "95%ConfidenceInterval": "Confidence interval for effect. Example: (1.10-1.37)",
+    "RA 1(Reported Allele 1)": "Effect/minor allele. Example: C",
+    "RA 2(Reported Allele 2)": "Other/major allele. Example: T",
+    "ReportedAF(MAF)": "Allele frequency. Example: 0.27",
+    "LocusName": "Nearest/reported gene symbol. Example: APOE",
+    "Population": "Population ancestry descriptor. Example: European ancestry",
+    "Cohort": "Cohort or consortium names. Example: ADGC;IGAP",
+    "Sample size": "Total N or subgroup N. Example: 12345",
+    "Imputation_simple2": "Imputation panel/method. Example: HRC;TOPMed",
+    "Stage": "Study stage, e.g., Discovery/Replication/Meta-analysis",
+    "Model type": "Statistical model family. Example: logistic regression",
+}
 
 
 # -----------------------------
@@ -180,6 +267,255 @@ def safe_float(x) -> Optional[float]:
         return v
     except Exception:
         return None
+
+
+def infer_pub_ids_from_text(full_text: str) -> Tuple[str, str, str]:
+    """
+    Extract PMCID and PMID from paper full text.
+    Returns (pmcid, pmid, evidence).
+    """
+    text = str(full_text or "")
+    if not text:
+        return "NR", "NR", ""
+
+    pmcid = "NR"
+    pmid = "NR"
+    evidence = ""
+
+    pmcid_m = re.search(r"\bPMCID\s*[:：]?\s*(PMC\d{4,})\b", text, flags=re.I)
+    if not pmcid_m:
+        pmcid_m = re.search(r"\b(PMC\d{4,})\b", text, flags=re.I)
+    if pmcid_m:
+        pmcid = pmcid_m.group(1).upper()
+
+    pmid_m = re.search(r"\bPMID\s*[:：]?\s*(\d{6,10})\b", text, flags=re.I)
+    if not pmid_m:
+        pmid_m = re.search(r"\bPubMed\s*[:：]?\s*(\d{6,10})\b", text, flags=re.I)
+    if pmid_m:
+        pmid = pmid_m.group(1)
+
+    if pmcid != "NR" or pmid != "NR":
+        snippets = []
+        if pmcid != "NR":
+            snippets += find_snippets(text, [pmcid], window=80)
+        if pmid != "NR":
+            snippets += find_snippets(text, [pmid], window=80)
+        evidence = snippets[0] if snippets else ""
+
+    return pmcid, pmid, evidence
+
+
+def infer_pmid_from_source_name(pdf_or_url: Optional[str], table_input: Optional[str]) -> str:
+    """
+    Fallback PMID extraction from input filename, e.g.:
+    30448613_table1.xlsx -> 30448613
+    """
+    candidates: List[str] = []
+    if table_input:
+        candidates.extend(parse_table_sources(table_input))
+    if pdf_or_url:
+        candidates.append(pdf_or_url)
+
+    for src in candidates:
+        name = os.path.basename(str(src))
+        m = re.match(r"^(\d{6,10})", name)
+        if m:
+            return m.group(1)
+    return "NR"
+
+
+def expand_abbreviations(text: str) -> str:
+    out = str(text or "")
+    for short, full in ABBREVIATION_MAP.items():
+        out = re.sub(rf"\b{re.escape(short)}\b", full, out, flags=re.I)
+    return out
+
+
+def to_canonical_cohort_codes(text: str) -> str:
+    s = str(text or "").strip()
+    if not s or s.upper() == "NR":
+        return "NR"
+    items = re.split(r"[;,/|]+", s)
+    out: List[str] = []
+    seen = set()
+    for it in items:
+        t = normalize_text(it)
+        if not t:
+            continue
+        canon = None
+        for key, code in COHORT_SYNONYM_MAP.items():
+            if key in t or t == key:
+                canon = code
+                break
+        if not canon:
+            # If already like ADNI/ADGC keep uppercase token
+            tok = re.sub(r"[^A-Za-z0-9-]+", "", it).upper()
+            if tok in set(COHORT_SYNONYM_MAP.values()):
+                canon = tok
+        if canon and canon not in seen:
+            out.append(canon)
+            seen.add(canon)
+    return ";".join(out) if out else "NR"
+
+
+def to_canonical_imputation_codes(text: str) -> str:
+    s = normalize_text(text)
+    if not s or s == "nr":
+        return "NR"
+    hits = []
+    for key, code in IMPUTATION_CANONICAL_MAP.items():
+        if key in s:
+            hits.append(code)
+    # Also preserve already-coded input like "HRC;TOPMed"
+    for token in re.split(r"[;,/| ]+", str(text or "")):
+        tok = token.strip()
+        if tok in {"HRC", "TOPMed", "1000G"}:
+            hits.append(tok)
+    uniq = []
+    seen = set()
+    for h in hits:
+        if h not in seen:
+            uniq.append(h)
+            seen.add(h)
+    return ";".join(uniq) if uniq else "NR"
+
+
+def _tokenize_for_similarity(s: str) -> List[str]:
+    s = expand_abbreviations(_norm_colname(s))
+    return [t for t in re.split(r"[^a-z0-9]+", s) if t]
+
+
+def _semantic_similarity(a: str, b: str) -> float:
+    seq = difflib.SequenceMatcher(None, _norm_colname(a), _norm_colname(b)).ratio()
+    ta = set(_tokenize_for_similarity(a))
+    tb = set(_tokenize_for_similarity(b))
+    jacc = (len(ta & tb) / len(ta | tb)) if (ta and tb) else 0.0
+    return max(seq, jacc)
+
+
+def map_columns_to_reference(columns: List[str], threshold: float = 0.4) -> Dict[str, Dict[str, Any]]:
+    mapped: Dict[str, Dict[str, Any]] = {}
+    for col in columns:
+        options = [col]
+        if "|" in str(col):
+            options = [p.strip() for p in str(col).split("|") if p.strip()]
+
+        best_ref = None
+        best_score = 0.0
+        best_hint = ""
+        for opt in options:
+            for ref_col, desc in REFERENCE_COLUMN_PROMPTS.items():
+                score = _semantic_similarity(opt, f"{ref_col}: {desc}")
+                if score > best_score:
+                    best_score = score
+                    best_ref = ref_col
+                    best_hint = opt
+
+        mapped[col] = {
+            "reference_col": best_ref if (best_ref and best_score >= threshold) else "UNMAPPED",
+            "score": round(best_score, 4),
+            "needs_review": best_score < threshold,
+            "match_hint": best_hint,
+        }
+    return mapped
+
+
+def _sectionize_text(full_text: str) -> Dict[str, str]:
+    lines = [ln.strip() for ln in str(full_text or "").splitlines()]
+    lines = [ln for ln in lines if ln]
+    if not lines:
+        return {"all": ""}
+
+    heading_alias = {
+        "methods": ["methods", "materials and methods", "method", "patients and methods"],
+        "results": ["results", "findings"],
+        "supplement": ["supplement", "supplementary", "appendix"],
+    }
+    heading_to_section = {}
+    for sec, aliases in heading_alias.items():
+        for a in aliases:
+            heading_to_section[a] = sec
+
+    sections: Dict[str, List[str]] = {"all": []}
+    current = "all"
+    for ln in lines:
+        n = normalize_text(ln)
+        if len(n) <= 70 and n in heading_to_section:
+            current = heading_to_section[n]
+            sections.setdefault(current, [])
+            continue
+        sections.setdefault(current, []).append(ln)
+        sections["all"].append(ln)
+
+    return {k: "\n".join(v) for k, v in sections.items()}
+
+
+def _has_methods_results_signal(text: str) -> bool:
+    t = normalize_text(text)
+    if len(t) < 500:
+        return False
+    return ("methods" in t or "materials and methods" in t) and ("results" in t)
+
+
+def _extract_text_with_docling(pdf_path: str) -> str:
+    if DocumentConverter is None or not pdf_path:
+        return ""
+    try:
+        conv = DocumentConverter()
+        res = conv.convert(pdf_path)
+        doc = getattr(res, "document", None)
+        if doc is None:
+            return ""
+        if hasattr(doc, "export_to_markdown"):
+            return doc.export_to_markdown() or ""
+        if hasattr(doc, "text"):
+            return str(doc.text or "")
+        return str(doc)
+    except Exception:
+        return ""
+
+
+def _extract_text_with_ocr_rotation(pdf_path: str) -> str:
+    if not pdf_path or fitz is None or pytesseract is None or Image is None:
+        return ""
+    texts: List[str] = []
+    try:
+        doc = fitz.open(pdf_path)
+        for page in doc:
+            pix = page.get_pixmap(matrix=fitz.Matrix(2.0, 2.0), alpha=False)
+            img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+
+            best = ""
+            best_score = -1
+            for angle in (0, 90, 180, 270):
+                candidate_img = img.rotate(angle, expand=True) if angle else img
+                candidate = pytesseract.image_to_string(candidate_img) or ""
+                score = len(candidate)
+                score += 200 if "methods" in normalize_text(candidate) else 0
+                score += 200 if "results" in normalize_text(candidate) else 0
+                if score > best_score:
+                    best_score = score
+                    best = candidate
+            texts.append(best)
+    except Exception:
+        return ""
+    return "\n".join(texts)
+
+
+def extract_full_text_with_fallback(pdf_path: str) -> Tuple[str, str]:
+    text = extract_full_text(pdf_path) if pdf_path else ""
+    if _has_methods_results_signal(text):
+        return text, "pdfplumber"
+
+    docling_text = _extract_text_with_docling(pdf_path)
+    if _has_methods_results_signal(docling_text) or (len(normalize_text(docling_text)) > len(normalize_text(text)) + 500):
+        return docling_text, "docling"
+
+    ocr_text = _extract_text_with_ocr_rotation(pdf_path)
+    if _has_methods_results_signal(ocr_text) or (len(normalize_text(ocr_text)) > len(normalize_text(text)) + 500):
+        return ocr_text, "ocr_rotation"
+
+    return text or docling_text or ocr_text, "best_effort"
 
 
 # -----------------------------
@@ -413,12 +749,152 @@ def infer_model_type(full_text: str) -> Tuple[str, FieldAudit]:
     return value, FieldAudit("Model type", value, conf, evidence, rule, needs_review)
 
 
+def infer_population(section_text: Dict[str, str]) -> Tuple[str, FieldAudit]:
+    scoped = "\n".join([
+        section_text.get("methods", ""),
+        section_text.get("results", ""),
+        section_text.get("supplement", ""),
+    ]).strip() or section_text.get("all", "")
+    t = normalize_text(scoped)
+
+    rules = [
+        ("European ancestry", [r"\beuropean ancestry\b", r"\beuropeans?\b"]),
+        ("Asian ancestry", [r"\basian ancestry\b", r"\basians?\b"]),
+        ("African ancestry", [r"\bafrican ancestry\b", r"\bafricans?\b"]),
+        ("Hispanic/Latino ancestry", [r"\bhispanic\b", r"\blatino\b"]),
+        ("Multi-ethnic", [r"\bmulti[- ]ethnic\b", r"\btrans[- ]ethnic\b"]),
+    ]
+    for label, regs in rules:
+        if any(re.search(rg, t) for rg in regs):
+            snippets = find_snippets(scoped, [label.split()[0]], window=220)
+            evidence = snippets[0] if snippets else ""
+            return label, FieldAudit("Population", label, 0.75, evidence, "section-aware population keyword", True)
+
+    return "NR", FieldAudit("Population", "NR", 0.25, "", "no population cues found in methods/results/supplement", True)
+
+
+def infer_sample_size(section_text: Dict[str, str]) -> Tuple[str, FieldAudit]:
+    scoped = "\n".join([
+        section_text.get("methods", ""),
+        section_text.get("results", ""),
+        section_text.get("supplement", ""),
+    ]).strip() or section_text.get("all", "")
+
+    # Prefer explicit total N mentions.
+    patterns = [
+        r"\b(?:sample size|total n|n\s*=\s*)(?:\s*[:=]?\s*)?([0-9][0-9,]{2,})\b",
+        r"\b([0-9][0-9,]{2,})\s*(?:participants|subjects|individuals|cases|controls)\b",
+    ]
+    for rg in patterns:
+        m = re.search(rg, scoped, flags=re.I)
+        if m:
+            n = m.group(1).replace(",", "")
+            snippets = find_snippets(scoped, [m.group(0)], window=180)
+            evidence = snippets[0] if snippets else m.group(0)
+            return n, FieldAudit("Sample size", n, 0.7, evidence, "section-aware sample size extraction", True)
+
+    return "NR", FieldAudit("Sample size", "NR", 0.25, "", "no sample size cues found", True)
+
+
 def classify_meta_joint(stage_value: str) -> str:
     if stage_value.lower().startswith("meta"):
         return "Meta"
     if stage_value.lower().startswith("joint"):
         return "Joint"
     return "NR"
+
+
+def infer_cohort_from_row_and_text(record: Dict[str, Any], full_text: str, table_ref: str) -> Tuple[str, float, str, bool]:
+    """
+    Infer broad cohort labels using controlled vocab, from row-level context first,
+    then full-text fallback.
+    """
+    row_context = " ".join([
+        str(record.get("Analysis group", "")),
+        str(record.get("Table Ref in paper", "")),
+        str(table_ref or ""),
+        str(record.get("_evidence", "")),
+    ])
+    row_context_low = normalize_text(row_context)
+    full_text_low = normalize_text(full_text)
+    table_ref_low = normalize_text(table_ref or record.get("Table Ref in paper", ""))
+
+    def _unique(items: List[str]) -> List[str]:
+        out = []
+        seen = set()
+        for x in items:
+            if x not in seen:
+                out.append(x)
+                seen.add(x)
+        return out
+
+    hits = []
+    row_hits = []
+    full_hits = []
+    for key, canon in COHORT_SYNONYM_MAP.items():
+        if key in row_context_low:
+            row_hits.append(canon)
+        elif key in full_text_low:
+            full_hits.append(canon)
+    row_hits = _unique(row_hits)
+    full_hits = _unique(full_hits)
+
+    # Table-local context: prefer cohorts found near "Table N" mention in full text.
+    table_hits = []
+    if table_ref_low and full_text:
+        snippets = find_snippets(full_text, [table_ref_low], window=1200)
+        table_context = normalize_text(" ".join(snippets))
+        table_counts: Dict[str, int] = {}
+        for key, canon in COHORT_SYNONYM_MAP.items():
+            if key in table_context:
+                table_hits.append(canon)
+                table_counts[canon] = table_counts.get(canon, 0) + table_context.count(key)
+        table_hits = _unique(table_hits)
+        # If one cohort is clearly dominant near the table mention, prefer single label.
+        if len(table_counts) > 1:
+            sorted_counts = sorted(table_counts.items(), key=lambda kv: kv[1], reverse=True)
+            top_label, top_count = sorted_counts[0]
+            second_count = sorted_counts[1][1]
+            if top_count >= max(2, second_count + 1):
+                table_hits = [top_label]
+
+    # Priority:
+    # 1) row hits (most specific)
+    # 2) table-local hits
+    # 3) document-level full text hits
+    if row_hits:
+        hits.extend(row_hits)
+    elif table_hits:
+        hits.extend(table_hits)
+    else:
+        hits.extend(full_hits)
+
+    # Domain heuristic for common AD GWAS table split:
+    # eQTL rows are frequently ADNI-derived; AD association rows are often IGAP/meta cohorts.
+    if "eqtl" in row_context_low and "ADNI" not in hits:
+        hits.append("ADNI")
+    if ("ad association" in row_context_low or "disease association" in row_context_low) and "IGAP" not in hits:
+        hits.append("IGAP")
+
+    # Deduplicate while preserving order
+    uniq = _unique(hits)
+
+    if not uniq:
+        return "NR", 0.25, "", True
+
+    value = ";".join(uniq)
+    if row_hits and len(uniq) == 1:
+        return value, 0.9, f"row context matched cohort keyword -> {uniq[0]}", False
+    if row_hits and len(uniq) > 1:
+        return value, 0.65, f"multiple row cohort hits: {value}", True
+    if table_hits and len(uniq) == 1:
+        return value, 0.8, f"table-local context matched cohort keyword -> {uniq[0]}", False
+    if table_hits and len(uniq) > 1:
+        return value, 0.6, f"multiple table-local cohort hits: {value}", True
+    # full-text only fallback
+    if len(uniq) == 1:
+        return value, 0.6, f"full text matched cohort keyword -> {uniq[0]}", True
+    return value, 0.45, f"multiple full-text cohort hits: {value}", True
 
 
 # -----------------------------
@@ -582,6 +1058,14 @@ def _pick_preferred_column(columns: List[str], primary_patterns: List[str], fall
 
 def _pick_pvalue_column(columns: List[str]) -> Optional[str]:
     nmap = {c: _norm_colname(c) for c in columns}
+    p_meta_candidates = [c for c in columns if ("p meta" in nmap[c] or "meta p" in nmap[c])]
+    if p_meta_candidates:
+        return p_meta_candidates[-1]
+
+    p_joint_candidates = [c for c in columns if "p joint" in nmap[c]]
+    if p_joint_candidates:
+        return p_joint_candidates[-1]
+
     p_all_candidates = [c for c in columns if "p value all" in nmap[c] or "p-value all" in nmap[c]]
     if p_all_candidates:
         return p_all_candidates[-1]
@@ -617,8 +1101,35 @@ def _pick_pvalue_column(columns: List[str]) -> Optional[str]:
     return None
 
 
+def _infer_group_label_from_columns(columns: List[str]) -> str:
+    """
+    Infer a table-level analysis group label from column headers, e.g. 'HTN-P group'.
+    """
+    candidates: List[str] = []
+    for col in columns:
+        parts = [p.strip() for p in str(col).split("|")]
+        for p in parts:
+            if re.search(r"\bgroup\b", p, flags=re.I):
+                candidates.append(re.sub(r"\s+", " ", p).strip())
+    # prefer non-generic label
+    for c in candidates:
+        if c.lower() not in {"group", "analysis group"}:
+            return c
+    return candidates[0] if candidates else ""
+
+
 def _pick_effect_column(columns: List[str]) -> Tuple[Optional[str], str]:
     nmap = {c: _norm_colname(c) for c in columns}
+
+    # Prefer main-effect beta (e.g., "β G") over interaction beta (e.g., "β G×Age").
+    beta_g_candidates = []
+    for c in columns:
+        n = nmap[c]
+        if ("beta" in n or "β" in n) and (" g" in n or n.endswith("g")) and "x" not in n and "×" not in n and "interaction" not in n:
+            beta_g_candidates.append(c)
+    if beta_g_candidates:
+        return beta_g_candidates[-1], "Beta"
+
     order = [
         ("OR", [r"\bor\b", r"odds ratio"]),
         ("Beta", [r"\bbeta\b", r"\bβ\b"]),
@@ -702,6 +1213,130 @@ def _parse_chr_bp(chr_text: str, pos_text: str) -> Tuple[str, str]:
     return c, p
 
 
+def _looks_missing(v: str) -> bool:
+    s = _normalize_cell_text(v).strip().lower()
+    return (not s) or s in {"-", "na", "n/a", "nr", "none", "nan"}
+
+
+def _parse_pipe_grouped_columns(columns: List[str]) -> Dict[str, Dict[str, Dict[str, str]]]:
+    """
+    Parse columns like:
+      'Exonic SNP | ADGC a | P-value'
+      'IGAP SNP | SNP | SNP'
+    Return nested mapping:
+      section -> subgroup -> metric_key -> original_col
+    """
+    out: Dict[str, Dict[str, Dict[str, str]]] = {}
+    for col in columns:
+        parts = [p.strip() for p in str(col).split("|")]
+        if len(parts) < 3:
+            continue
+        section = parts[0]
+        subgroup = parts[1]
+        metric_raw = parts[2].lower()
+
+        metric_key = ""
+        if "snp" in metric_raw:
+            metric_key = "snp"
+        elif "closest gene" in metric_raw or "nearest gene" in metric_raw or "gene" == metric_raw:
+            metric_key = "gene"
+        elif "or" == metric_raw or "or " in metric_raw or metric_raw.startswith("or"):
+            metric_key = "or"
+        elif "p-value" in metric_raw or "p value" in metric_raw or metric_raw == "p":
+            metric_key = "p"
+        elif "chr" in metric_raw:
+            metric_key = "chr"
+        elif "position" in metric_raw or "bp" in metric_raw:
+            metric_key = "pos"
+
+        if not metric_key:
+            continue
+
+        out.setdefault(section, {}).setdefault(subgroup, {})[metric_key] = col
+    return out
+
+
+def _extract_records_from_pipe_layout(body: pd.DataFrame, table_idx: int, paper_id: str, pmcid: str, table_ref: str, table_link: str) -> List[Dict[str, Any]]:
+    columns = list(body.columns)
+    parsed = _parse_pipe_grouped_columns(columns)
+    if not parsed:
+        return []
+    table_group_label = _infer_group_label_from_columns(columns)
+
+    records: List[Dict[str, Any]] = []
+
+    for _, row in body.iterrows():
+        # global fallbacks from row
+        row_chr = ""
+        row_pos = ""
+        row_gene = ""
+        for c in columns:
+            lc = _norm_colname(c)
+            if (not row_chr) and ("chr" in lc):
+                row_chr = _normalize_cell_text(row.get(c))
+            if (not row_pos) and ("position" in lc or "bp" in lc):
+                row_pos = _normalize_cell_text(row.get(c))
+            if (not row_gene) and ("closest gene" in lc or "nearest gene" in lc or lc == "gene"):
+                row_gene = _normalize_cell_text(row.get(c))
+
+        for section, subgroup_map in parsed.items():
+            # section-level gene/snp helper fallback
+            section_gene = ""
+            section_snp = ""
+            for sg, metrics in subgroup_map.items():
+                if (not section_gene) and metrics.get("gene"):
+                    section_gene = _normalize_cell_text(row.get(metrics["gene"]))
+                if (not section_snp) and metrics.get("snp"):
+                    section_snp = _normalize_cell_text(row.get(metrics["snp"]))
+
+            for subgroup, metrics in subgroup_map.items():
+                snp_val = _normalize_cell_text(row.get(metrics.get("snp", ""))) if metrics.get("snp") else section_snp
+                gene_val = _normalize_cell_text(row.get(metrics.get("gene", ""))) if metrics.get("gene") else section_gene
+                if _looks_missing(gene_val):
+                    gene_val = row_gene
+                or_val_raw = _normalize_cell_text(row.get(metrics.get("or", ""))) if metrics.get("or") else ""
+                p_val_raw = _normalize_cell_text(row.get(metrics.get("p", ""))) if metrics.get("p") else ""
+                chr_val = _normalize_cell_text(row.get(metrics.get("chr", ""))) if metrics.get("chr") else row_chr
+                pos_val = _normalize_cell_text(row.get(metrics.get("pos", ""))) if metrics.get("pos") else row_pos
+
+                if _looks_missing(snp_val):
+                    continue
+                if not re.search(r"\brs\d+\b", snp_val, flags=re.I):
+                    continue
+                if _looks_missing(or_val_raw) and _looks_missing(p_val_raw):
+                    continue
+
+                effect_val, ci_val = _extract_effect_and_ci(or_val_raw, "OR")
+                if effect_val is None:
+                    effect_val = safe_float(or_val_raw)
+                p_val = safe_float(p_val_raw)
+
+                rec = {k: "" for k in CURATED_COLUMNS}
+                rec["Name"] = gene_val if not _looks_missing(gene_val) else ""
+                rec["PaperIDX"] = paper_id
+                rec["PMCID"] = pmcid
+                rec["TableIDX"] = f"T{table_idx:05d}"
+                rec["Table Ref in paper"] = table_ref
+                rec["Table links"] = table_link
+                rec["TopSNP"] = snp_val
+                rec["SNP-based, Gene-based"] = "SNP-based"
+                subgroup_clean = re.sub(r"\s+[a-z]$", "", re.sub(r"\s+", " ", str(subgroup)).strip(), flags=re.I)
+                rec["Analysis group"] = table_group_label or subgroup_clean
+                rec["LocusName"] = gene_val if not _looks_missing(gene_val) else ""
+                rec["Chr"] = chr_val
+                rec["BP(Position)"] = pos_val
+                rec["Effect Size Type (OR or Beta)"] = "OR"
+                rec["EffectSize(altvsref)"] = effect_val if effect_val is not None else ""
+                rec["95%ConfidenceInterval"] = ci_val if ci_val else ""
+                rec["P-value"] = p_val if p_val is not None else ""
+                rec["_confidence"] = 0.7
+                rec["_needs_review"] = True
+                rec["_evidence"] = f"Pipe-layout row parsed ({section} | {subgroup})"
+                records.append(rec)
+
+    return records
+
+
 def _extract_effect_and_ci(effect_text: str, effect_type: str) -> Tuple[Optional[float], str]:
     """
     Parse patterns like:
@@ -733,55 +1368,76 @@ def _effect_type_from_colname(colname: str) -> str:
         return "OR"
     if re.search(r"\bhr\b", n) or "hazard ratio" in n:
         return "HR"
-    if "z-score" in n or "zscore" in n:
+    if "z-score" in n or "zscore" in n or re.search(r"\bz\b", n):
         return "Zscore"
     return "NR"
 
 
 def _detect_subgroup_defs(columns: List[str]) -> Dict[str, Dict[str, str]]:
     """
-    Detect per-subgroup metric columns, e.g.:
-    - i-Share (dichotomous)
-    - i-Share (continuous)
-    - Nagahama (dichotomous)
-    - Nagahama (continuous)
+    Detect melt-able subgroup metric columns from broad naming patterns.
+    Expected output:
+      { "<group label>": {"snp": col, "p": col, "effect": col, "ci": col}, ... }
     """
     defs: Dict[str, Dict[str, str]] = {}
-    subgroup_labels = [
-        ("i-Share", ["i-share"]),
-        ("Nagahama", ["nagahama"]),
-        ("European ancestry meta-analysis", ["european ancestry", "european meta-analysis"]),
-        ("Multi-ethnic meta-analysis", ["multi-ethnic", "multi ethnic"]),
-        ("Replication sample", ["replication sample", "replication"]),
-    ]
+
+    metric_tokens = {
+        "snp": [r"\bsnp\b", r"\bvariant\b", r"\brsid\b", r"\bmarker\b"],
+        "p": [r"\bp\b", r"p value", r"p-value", r"meta p", r"p meta", r"p min", r"p q", r"p abs"],
+        "ci": [r"95", r"\bci\b", r"confidence interval"],
+        "effect": [r"\bor\b", r"odds ratio", r"\bbeta\b", r"β", r"\bhr\b", r"hazard ratio", r"z-score", r"\bz\b", r"effect"],
+    }
+
+    def metric_of(col_norm: str) -> str:
+        if ("het p" in col_norm) or ("pf" in col_norm):
+            return ""
+        for metric, regs in metric_tokens.items():
+            if any(re.search(rg, col_norm) for rg in regs):
+                return metric
+        return ""
 
     for col in columns:
-        n = _norm_colname(col)
-        subgroup_name = None
-        for label, keys in subgroup_labels:
-            if any(k in n for k in keys):
-                subgroup_name = label
-                break
-        if subgroup_name is None:
+        raw = str(col)
+        n = _norm_colname(raw)
+        metric = metric_of(n)
+        if not metric:
             continue
 
-        mode = ""
-        if "dichotomous" in n:
-            mode = "dichotomous"
-        elif "continuous" in n:
-            mode = "continuous"
+        # Prefer explicit subgroup headers in multi-index flatten format: "Group | metric".
+        group_label = ""
+        if "|" in raw:
+            parts = [p.strip() for p in raw.split("|") if p.strip()]
+            if parts:
+                # Prefer the part explicitly containing 'group'
+                grp_parts = [p for p in parts if re.search(r"\bgroup\b", p, flags=re.I)]
+                if grp_parts:
+                    group_label = grp_parts[0]
+                elif len(parts) >= 2:
+                    group_label = parts[-2]
+        if not group_label:
+            gm = re.search(r"([A-Za-z0-9\-]+(?:\s*[-/]\s*[A-Za-z0-9]+)?\s+group)\b", raw, flags=re.I)
+            if gm:
+                group_label = gm.group(1)
+        if not group_label:
+            group_label = re.sub(
+                r"(p\s*-?value.*|p\s*meta.*|meta p.*|p\s*min.*|p\s*q.*|p\s*abs.*|95.*ci.*|confidence interval.*|odds ratio.*|\bor\b.*|\bbeta\b.*|β.*|\bhr\b.*|hazard ratio.*|z-?score.*|\bz\b.*|effect.*)$",
+                "",
+                raw,
+                flags=re.I,
+            ).strip(" -_:|")
+        group_label = re.sub(r"\b(snp|variant|rsid|marker)\b.*$", "", group_label, flags=re.I).strip(" -_:|")
 
-        label = f"{subgroup_name} ({mode})" if mode else subgroup_name
+        group_label = re.sub(r"\s+", " ", group_label).strip()
+        if not group_label:
+            continue
 
-        defs.setdefault(label, {})
-        if "p value all" in n or "p-value all" in n:
-            defs[label]["p"] = col
-        elif ("p value" in n or "p-value" in n or re.search(r"\bp\b", n)) and "het p" not in n and "pf" not in n:
-            defs[label].setdefault("p", col)
-        elif "95" in n and "ci" in n:
-            defs[label]["ci"] = col
-        elif any(k in n for k in ["beta", "β", "effect", "odds ratio", " hr", "hazard ratio", "z-score", "zscore"]):
-            defs[label]["effect"] = col
+        defs.setdefault(group_label, {})
+        # For p-metrics, prioritize P meta over all others.
+        if metric == "p" and re.search(r"p\s*meta|meta p", n, flags=re.I):
+            defs[group_label]["p"] = col
+        else:
+            # keep first metric hit for stability
+            defs[group_label].setdefault(metric, col)
 
     return defs
 
@@ -806,13 +1462,42 @@ def extract_records_from_table(df: pd.DataFrame, table_idx: int, paper_id: str, 
     if body.empty:
         return records
 
+    # Special layout: columns are grouped with "|" (e.g., IGAP/Exonic with ADGC/ADSP blocks).
+    pipe_records = _extract_records_from_pipe_layout(body, table_idx, paper_id, pmcid, table_ref, table_link)
+    if pipe_records:
+        return pipe_records
+
     columns = list(body.columns)
+    table_group_label = _infer_group_label_from_columns(columns)
+    col_mapping = map_columns_to_reference(columns, threshold=0.4)
+
+    def mapped_col(ref_col: str) -> Optional[str]:
+        candidates = [(c, meta.get("score", 0.0)) for c, meta in col_mapping.items() if meta.get("reference_col") == ref_col]
+        if not candidates:
+            return None
+        candidates.sort(key=lambda x: x[1], reverse=True)
+        return candidates[0][0]
+
     variant_col = _pick_preferred_column(columns, ["snp all", "variant all", "variant", "rsid", "snp", "marker"])
+    if not variant_col:
+        variant_col = mapped_col("TopSNP")
     rs_col = variant_col
     chr_col = _pick_preferred_column(columns, ["chr:position", "chr", "chromosome"])
+    if not chr_col:
+        chr_col = mapped_col("Chr")
     bp_col = _pick_preferred_column(columns, ["position", "bp", "base pair", "pos"])
-    locus_col = _pick_preferred_column(columns, ["nearest gene", "closest gene", "nearestgene", "locusname", "locus name"])
+    if not bp_col:
+        bp_col = mapped_col("BP(Position)")
+    locus_col = _pick_preferred_column(columns, ["nearest gene", "closest gene", "nearestgene", "locusname", "locus name", "gene"])
+    if not locus_col:
+        locus_col = mapped_col("LocusName")
     maf_col = _pick_preferred_column(columns, ["eaf", "maf", "af"])
+    if not maf_col:
+        maf_col = mapped_col("ReportedAF(MAF)")
+    cohort_col = _pick_preferred_column(columns, ["cohort", "consortium", "study", "dataset", "sample set"])
+    imputation_col = _pick_preferred_column(columns, ["imputation", "reference panel", "panel"])
+    population_col = _pick_preferred_column(columns, ["population", "ancestry", "ethnicity"])
+    sample_size_col = _pick_preferred_column(columns, ["sample size", "total n", "n=", "participants", "subjects"])
     a1_col = _pick_preferred_column(columns, ["a1"], ["allele 1"])
     a2_col = _pick_preferred_column(columns, ["a2"], ["allele 2"])
     ea_oa_col = _pick_preferred_column(columns, ["ea/oa", "ea / oa", "effect allele/other allele"])
@@ -820,7 +1505,11 @@ def extract_records_from_table(df: pd.DataFrame, table_idx: int, paper_id: str, 
     major_minor_col = _pick_preferred_column(columns, ["major/ minor alleles", "major/minor", "alleles", "allele"])
 
     p_col = _pick_pvalue_column(columns)
+    if not p_col:
+        p_col = mapped_col("P-value")
     ci_col = _pick_preferred_column(columns, ["95", "ci"])
+    if not ci_col:
+        ci_col = mapped_col("95%ConfidenceInterval")
 
     # Effect type/value priority: OR > Beta > HR > Zscore
     effect_col, effect_type = _pick_effect_column(columns)
@@ -828,6 +1517,19 @@ def extract_records_from_table(df: pd.DataFrame, table_idx: int, paper_id: str, 
     # Interaction terms are uncommon in GWAS summary tables; still capture if present.
     interaction_col = _pick_preferred_column(columns, ["interaction", "snp x", "snp*"])
     subgroup_defs = _detect_subgroup_defs(columns)
+    carry: Dict[str, str] = {
+        "variant": "",
+        "locus": "",
+        "chr": "",
+        "bp": "",
+        "ra1": "",
+        "ra2": "",
+        "maf": "",
+        "cohort": "",
+        "imputation": "",
+        "population": "",
+        "sample_size": "",
+    }
 
     for _, row in body.iterrows():
         row_vals = [_normalize_cell_text(x) for x in row.tolist()]
@@ -845,6 +1547,10 @@ def extract_records_from_table(df: pd.DataFrame, table_idx: int, paper_id: str, 
         bp_raw = _normalize_cell_text(row.get(bp_col)) if bp_col else ""
         chr_val, bp_val = _parse_chr_bp(chr_raw, bp_raw)
         maf_val = _normalize_cell_text(row.get(maf_col)) if maf_col else ""
+        row_cohort_hint = _normalize_cell_text(row.get(cohort_col)) if cohort_col else ""
+        row_imputation_hint = _normalize_cell_text(row.get(imputation_col)) if imputation_col else ""
+        row_population_hint = _normalize_cell_text(row.get(population_col)) if population_col else ""
+        row_sample_size_hint = _normalize_cell_text(row.get(sample_size_col)) if sample_size_col else ""
         interaction_val = _normalize_cell_text(row.get(interaction_col)) if interaction_col else ""
 
         # keep rows with actionable stats even when rsID is absent
@@ -875,6 +1581,52 @@ def extract_records_from_table(df: pd.DataFrame, table_idx: int, paper_id: str, 
         else:
             ra1_minor, ra2_major = _split_major_minor(_normalize_cell_text(row.get(major_minor_col)) if major_minor_col else "")
 
+        # Forward-fill common merged-cell fields.
+        if variant_text:
+            carry["variant"] = variant_text
+        else:
+            variant_text = carry["variant"]
+        if locus_name:
+            carry["locus"] = locus_name
+        else:
+            locus_name = carry["locus"]
+        if chr_val:
+            carry["chr"] = chr_val
+        else:
+            chr_val = carry["chr"]
+        if bp_val:
+            carry["bp"] = bp_val
+        else:
+            bp_val = carry["bp"]
+        if ra1_minor:
+            carry["ra1"] = ra1_minor
+        else:
+            ra1_minor = carry["ra1"]
+        if ra2_major:
+            carry["ra2"] = ra2_major
+        else:
+            ra2_major = carry["ra2"]
+        if maf_val:
+            carry["maf"] = maf_val
+        else:
+            maf_val = carry["maf"]
+        if row_cohort_hint:
+            carry["cohort"] = row_cohort_hint
+        else:
+            row_cohort_hint = carry["cohort"]
+        if row_imputation_hint:
+            carry["imputation"] = row_imputation_hint
+        else:
+            row_imputation_hint = carry["imputation"]
+        if row_population_hint:
+            carry["population"] = row_population_hint
+        else:
+            row_population_hint = carry["population"]
+        if row_sample_size_hint:
+            carry["sample_size"] = row_sample_size_hint
+        else:
+            row_sample_size_hint = carry["sample_size"]
+
         # Skip section headers and non-data rows.
         if not rsids and pval_default is None and effect_default is None and not chr_val and not bp_val:
             continue
@@ -883,6 +1635,8 @@ def extract_records_from_table(df: pd.DataFrame, table_idx: int, paper_id: str, 
         subgroup_records = []
         if subgroup_defs:
             for sub_label, metric_cols in subgroup_defs.items():
+                sub_snp_text = _normalize_cell_text(row.get(metric_cols["snp"])) if metric_cols.get("snp") else ""
+                sub_rsids = sorted(set([r.lower() for r in RSID_RE.findall(sub_snp_text)])) if sub_snp_text else []
                 sp = safe_float(row.get(metric_cols["p"])) if metric_cols.get("p") else None
                 subgroup_effect_type = _effect_type_from_colname(metric_cols["effect"]) if metric_cols.get("effect") else effect_type
                 se = safe_float(row.get(metric_cols["effect"])) if metric_cols.get("effect") else None
@@ -903,6 +1657,8 @@ def extract_records_from_table(df: pd.DataFrame, table_idx: int, paper_id: str, 
                     continue
                 subgroup_records.append({
                     "label": sub_label,
+                    "sub_snp_text": sub_snp_text,
+                    "sub_rsids": sub_rsids,
                     "p": sp,
                     "effect": se,
                     "ci": sci,
@@ -917,17 +1673,19 @@ def extract_records_from_table(df: pd.DataFrame, table_idx: int, paper_id: str, 
                 "effect_type": effect_type,
             }]
 
-        for rsid in names:
-            for sub in subgroup_records:
+        for sub in subgroup_records:
+            sub_names = sub.get("sub_rsids") or names
+            for rsid in sub_names:
+                snp_for_sub = sub.get("sub_snp_text") or variant_text or (rsid if rsid != "NR" else "")
                 rec = {k: "" for k in CURATED_COLUMNS}
-                rec["Name"] = rsid if rsid != "NR" else (variant_text or "")
+                rec["Name"] = rsid if rsid != "NR" else (snp_for_sub or "")
                 rec["PaperIDX"] = paper_id
                 rec["PMCID"] = pmcid
                 rec["TableIDX"] = f"T{table_idx:05d}"
                 rec["Table Ref in paper"] = table_ref
                 rec["Table links"] = table_link
-                rec["TopSNP"] = variant_text if variant_text else (rsid if rsid != "NR" else "")
-                rec["SNP-based, Gene-based"] = "SNP-based" if (rsid != "NR" or variant_text.lower().startswith("rs")) else ("Gene-based" if locus_name else "")
+                rec["TopSNP"] = snp_for_sub
+                rec["SNP-based, Gene-based"] = "SNP-based" if (rsid != "NR" or snp_for_sub.lower().startswith("rs")) else ("Gene-based" if locus_name else "")
                 rec["Interactions"] = interaction_val
                 rec["Chr"] = chr_val
                 rec["P-value"] = sub["p"] if sub["p"] is not None else ""
@@ -939,11 +1697,19 @@ def extract_records_from_table(df: pd.DataFrame, table_idx: int, paper_id: str, 
                 rec["EffectSize(altvsref)"] = sub["effect"] if sub["effect"] is not None else ""
                 rec["95%ConfidenceInterval"] = sub["ci"] if sub["ci"] else ""
                 rec["LocusName"] = locus_name
-                rec["Analysis group"] = sub["label"]
+                rec["_row_cohort_hint"] = row_cohort_hint
+                rec["_row_imputation_hint"] = row_imputation_hint
+                rec["_row_population_hint"] = row_population_hint
+                rec["_row_sample_size_hint"] = row_sample_size_hint
+                rec["Analysis group"] = table_group_label or sub["label"]
                 rec["Phenotype-derived"] = sub["label"].split("(")[-1].replace(")", "").strip() if sub["label"] else rec.get("Phenotype-derived", "")
                 rec["_confidence"] = 0.55 if rsid != "NR" else 0.4
-                rec["_needs_review"] = True
-                rec["_evidence"] = f"Row text: {row_text[:340]}"
+                low_map = [f"{c}:{m['score']}" for c, m in col_mapping.items() if m.get("needs_review")]
+                rec["_needs_review"] = bool(low_map) or (rsid == "NR")
+                rec["_evidence"] = (
+                    f"Row text: {row_text[:340]}\n"
+                    f"[column_mapping] {json.dumps(col_mapping, ensure_ascii=False)[:700]}"
+                )
                 records.append(rec)
 
     return records
@@ -984,14 +1750,32 @@ def run_pipeline(pdf_or_url: Optional[str],
         pdf_path = "input_paper.pdf"
         download_pdf(pdf_or_url, pdf_path)
 
-    # 2) Extract full text
-    full_text = extract_full_text(pdf_path) if pdf_path else ""
+    # 2) Extract full text with fallback:
+    # pdfplumber -> Docling -> OCR(+rotation), only when section signal is weak.
+    if pdf_path:
+        full_text, fulltext_source = extract_full_text_with_fallback(pdf_path)
+    else:
+        full_text, fulltext_source = "", "none"
+    section_text = _sectionize_text(full_text)
+    # ID policy: do not infer from paper text; use table filename only.
+    resolved_pmid = infer_pmid_from_source_name(pdf_or_url, table_input)
+    ids_evidence = f"PMID inferred from source filename -> {resolved_pmid}" if resolved_pmid != "NR" else ""
+    # Per current requirement, keep PMCID empty.
+    resolved_pmcid = ""
+    section_scoped_text = "\n".join([
+        section_text.get("methods", ""),
+        section_text.get("results", ""),
+        section_text.get("supplement", ""),
+    ]).strip() or full_text
 
-    # 3) Infer global fields (Stage / Model / Assoc type / Imputation)
-    stage_val, stage_audit = infer_stage(full_text)
-    assoc_val, assoc_audit = infer_association_type(full_text)
-    model_val, model_audit = infer_model_type(full_text)
-    imp_val, imp_audit = infer_imputation(full_text)
+    # 3) Infer global fields (Stage / Model / Assoc type / Imputation / Population / Sample size)
+    stage_val, stage_audit = infer_stage(section_scoped_text)
+    assoc_val, assoc_audit = infer_association_type(section_scoped_text)
+    model_val, model_audit = infer_model_type(section_scoped_text)
+    imp_val, imp_audit = infer_imputation(section_scoped_text)
+    pop_val, pop_audit = infer_population(section_text)
+    sample_size_val, sample_size_audit = infer_sample_size(section_text)
+    imp_val = to_canonical_imputation_codes(imp_val)
     meta_joint = classify_meta_joint(stage_val)
 
     # 4) Extract tables
@@ -1019,9 +1803,12 @@ def run_pipeline(pdf_or_url: Optional[str],
     audits: Dict[str, Any] = {
         "paper": {
             "paper_id": paper_id,
-            "pmcid": pmcid,
+            "pmcid": resolved_pmcid,
+            "pmid": resolved_pmid,
             "pdf": pdf_path,
             "table_input": table_input or "NR",
+            "full_text_source": fulltext_source,
+            "id_evidence": ids_evidence,
         },
         "table_source_errors": table_source_errors,
         "global_field_audit": [
@@ -1029,6 +1816,8 @@ def run_pipeline(pdf_or_url: Optional[str],
             asdict(assoc_audit),
             asdict(model_audit),
             asdict(imp_audit),
+            asdict(pop_audit),
+            asdict(sample_size_audit),
         ],
         "record_field_audit": []
     }
@@ -1048,7 +1837,7 @@ def run_pipeline(pdf_or_url: Optional[str],
         else:
             table_link = pdf_or_url if (pdf_or_url and pdf_or_url.lower().startswith("http")) else "local_pdf"
 
-        recs = extract_records_from_table(df, logical_idx, paper_id, pmcid, table_ref, table_link)
+        recs = extract_records_from_table(df, logical_idx, paper_id, resolved_pmcid, table_ref, table_link)
         for r in recs:
             # Apply global inferred values as pre-fill
             r["Stage"] = stage_val
@@ -1056,19 +1845,53 @@ def run_pipeline(pdf_or_url: Optional[str],
             r["Analyses type"] = assoc_val
             r["Model type"] = model_val
             r["Meta/Joint"] = meta_joint
-            r["Imputation_simple2"] = imp_val
+            row_imp = to_canonical_imputation_codes(r.get("_row_imputation_hint", ""))
+            r["Imputation_simple2"] = row_imp if row_imp != "NR" else imp_val
+            r["PMCID"] = resolved_pmcid if resolved_pmcid != "NR" else r.get("PMCID", "")
+            r["Pubmed PMID"] = resolved_pmid if resolved_pmid != "NR" else r.get("Pubmed PMID", "")
+            row_pop = _normalize_cell_text(r.get("_row_population_hint", ""))
+            r["Population"] = row_pop if row_pop else pop_val
+            row_sample = _normalize_cell_text(r.get("_row_sample_size_hint", ""))
+            r["Sample size"] = row_sample if row_sample else sample_size_val
+
+            cohort_val, cohort_conf, cohort_evidence, cohort_needs_review = infer_cohort_from_row_and_text(
+                r, full_text, table_ref
+            )
+            row_hint = to_canonical_cohort_codes(r.get("_row_cohort_hint", ""))
+            inferred = to_canonical_cohort_codes(cohort_val)
+            merged_cohorts = []
+            for part in (row_hint, inferred):
+                if part and part != "NR":
+                    merged_cohorts.extend([x for x in part.split(";") if x])
+            if merged_cohorts:
+                dedup = []
+                seen = set()
+                for c in merged_cohorts:
+                    if c not in seen:
+                        dedup.append(c)
+                        seen.add(c)
+                cohort_val = ";".join(dedup)
+            else:
+                cohort_val = "NR"
+
+            r["Cohort"] = cohort_val
+            r["Cohort_simplified (no counts)"] = cohort_val if cohort_val != "NR" else ""
 
             # Conservative flags: if global inference uncertain, propagate review
-            global_conf = min(stage_audit.confidence, assoc_audit.confidence, model_audit.confidence, imp_audit.confidence)
-            r["_confidence"] = float(r.get("_confidence", 0.4)) * 0.5 + global_conf * 0.5
-            if stage_audit.needs_review or assoc_audit.needs_review or model_audit.needs_review or imp_audit.needs_review:
+            global_conf = min(stage_audit.confidence, assoc_audit.confidence, model_audit.confidence, imp_audit.confidence, pop_audit.confidence, sample_size_audit.confidence)
+            r["_confidence"] = float(r.get("_confidence", 0.4)) * 0.4 + global_conf * 0.4 + cohort_conf * 0.2
+            if stage_audit.needs_review or assoc_audit.needs_review or model_audit.needs_review or imp_audit.needs_review or pop_audit.needs_review or sample_size_audit.needs_review or cohort_needs_review:
                 r["_needs_review"] = True
 
             # Add short evidence
             r["_evidence"] = (r.get("_evidence", "") + "\n" +
                              f"[Stage evidence] {stage_audit.evidence[:240]}\n" +
                              f"[Model evidence] {model_audit.evidence[:240]}\n" +
-                             f"[Imputation evidence] {imp_audit.evidence[:240]}").strip()
+                             f"[Imputation evidence] {imp_audit.evidence[:240]}\n" +
+                             f"[Population evidence] {pop_audit.evidence[:240]}\n" +
+                             f"[Sample size evidence] {sample_size_audit.evidence[:240]}\n" +
+                             f"[Cohort evidence] {cohort_evidence[:240]}\n" +
+                             f"[ID evidence] {ids_evidence[:240]}").strip()
 
             records.append(r)
 
@@ -1093,6 +1916,13 @@ def run_pipeline(pdf_or_url: Optional[str],
                                   model_audit.evidence[:260], model_audit.rule, model_audit.needs_review)),
                 asdict(FieldAudit("Imputation_simple2", r.get("Imputation_simple2", "NR"), imp_audit.confidence,
                                   imp_audit.evidence[:260], imp_audit.rule, imp_audit.needs_review)),
+                asdict(FieldAudit("Population", r.get("Population", "NR"), pop_audit.confidence,
+                                  pop_audit.evidence[:260], pop_audit.rule, pop_audit.needs_review)),
+                asdict(FieldAudit("Sample size", r.get("Sample size", "NR"), sample_size_audit.confidence,
+                                  sample_size_audit.evidence[:260], sample_size_audit.rule, sample_size_audit.needs_review)),
+                asdict(FieldAudit("Cohort", r.get("Cohort", "NR"),
+                                  0.8 if r.get("Cohort", "NR") not in ("", "NR") else 0.25,
+                                  r.get("_evidence", "")[:260], "cohort keyword mapping", r.get("Cohort", "NR") in ("", "NR"))),
             ]
         })
 
@@ -1101,12 +1931,15 @@ def run_pipeline(pdf_or_url: Optional[str],
         shell = {k: "NR" for k in CURATED_COLUMNS}
         shell["PaperIDX"] = paper_id
         shell["RecordID"] = f"{paper_id}_R00001"
-        shell["PMCID"] = pmcid
+        shell["PMCID"] = resolved_pmcid
+        shell["Pubmed PMID"] = resolved_pmid
         shell["Stage"] = stage_val
         shell["Analyses type"] = assoc_val
         shell["Model type"] = model_val
         shell["Imputation_simple2"] = imp_val
-        shell["_confidence"] = min(stage_audit.confidence, assoc_audit.confidence, model_audit.confidence, imp_audit.confidence)
+        shell["Population"] = pop_val
+        shell["Sample size"] = sample_size_val
+        shell["_confidence"] = min(stage_audit.confidence, assoc_audit.confidence, model_audit.confidence, imp_audit.confidence, pop_audit.confidence, sample_size_audit.confidence)
         shell["_needs_review"] = True
         shell["_evidence"] = (
             "No extractable association records from tables. "

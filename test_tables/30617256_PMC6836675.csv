@@ -1,4 +1,4 @@
-Pubmed PMID,SNP,RA,P-value,Effect,Chr,Pos,Cohort,Population
+Pubmed PMID,SNP,RA,P-value,Effect,Chr,Position,Cohort,Population
 30617256,rs10792832,G,1.12e-17,,11.0,86156833,"ADSP, IGAP, PGC-ALZ",Caucasian
 30617256,rs10933431,G,2.51e-06,,2.0,233117202,UKBB,Caucasian
 30617256,rs10933431,G,1.67e-06,,2.0,233117202,"ADSP, IGAP, PGC-ALZ",Caucasian

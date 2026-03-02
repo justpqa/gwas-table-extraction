@@ -1,173 +1,349 @@
-SNP,Chr,Position,RA,AF,P-value,Effect,Population,Cohort,P-value notes
-rs4417745,2.0,,A,,0.0273,,,,Min Cond FDR
-rs7664889,4.0,,T,,0.0323,,,,Min Cond FDR
-rs676768,10.0,,T,,0.0425,,,,Min Cond FDR
-rs1328032,13.0,,A,,0.0138,,,,Min Cond FDR
-rs2446406,15.0,,A,,0.0259,,,,Min Cond FDR
-rs7184882,16.0,,T,,0.0424,,,,Min Cond FDR
-rs199528,17.0,,T,,0.0179,,,,Min Cond FDR
-rs1358071,17.0,,A,,0.0201,,,,Min Cond FDR
-rs12964543,18.0,,A,,0.0271,,,,Min Cond FDR
-rs6857,19.0,,T,,0.0469,,,,Min Cond FDR
-rs405509,19.0,,T,,0.00526,,,,Min Cond FDR
-rs4417745,2.0,,A,,2.52e-05,,,,IFGC phase I p-value
-rs7664889,4.0,,T,,0.000175,,,,IFGC phase I p-value
-rs676768,10.0,,T,,0.000312,,,,IFGC phase I p-value
-rs1328032,13.0,,A,,1.93e-07,,,,IFGC phase I p-value
-rs2446406,15.0,,A,,7.18e-07,,,,IFGC phase I p-value
-rs7184882,16.0,,T,,6.64e-07,,,,IFGC phase I p-value
-rs199528,17.0,,T,,4.09e-05,,,,IFGC phase I p-value
-rs1358071,17.0,,A,,4.96e-05,,,,IFGC phase I p-value
-rs12964543,18.0,,A,,0.000112,,,,IFGC phase I p-value
-rs6857,19.0,,T,,7.03e-07,,,,IFGC phase I p-value
-rs405509,19.0,,T,,1.25e-05,,,,IFGC phase I p-value
-rs4417745,2.0,,A,,0.47,,,,IFGC phase II p-value
-rs7664889,4.0,,T,,0.82,,,,IFGC phase II p-value
-rs676768,10.0,,T,,0.55,,,,IFGC phase II p-value
-rs1328032,13.0,,A,,0.34,,,,IFGC phase II p-value
-rs2446406,15.0,,A,,0.4,,,,IFGC phase II p-value
-rs7184882,16.0,,T,,0.08,,,,IFGC phase II p-value
-rs199528,17.0,,T,,0.03,,,,IFGC phase II p-value
-rs1358071,17.0,,A,,0.001,,,,IFGC phase II p-value
-rs12964543,18.0,,A,,0.24,,,,IFGC phase II p-value
-rs6857,19.0,,T,,4.46e-07,,,,IFGC phase II p-value
-rs405509,19.0,,T,,0.93,,,,IFGC phase II p-value
-rs4417745,2.0,,A,,0.00032,,,,Meta-analysis p-value
-rs7664889,4.0,,T,,0.00318,,,,Meta-analysis p-value
-rs676768,10.0,,T,,0.0024,,,,Meta-analysis p-value
-rs1328032,13.0,,A,,7.39e-05,,,,Meta-analysis p-value
-rs2446406,15.0,,A,,2.24e-05,,,,Meta-analysis p-value
-rs7184882,16.0,,T,,3.08e-06,,,,Meta-analysis p-value
-rs199528,17.0,,T,,9.59e-06,,,,Meta-analysis p-value
-rs1358071,17.0,,A,,4.91e-07,,,,Meta-analysis p-value
-rs12964543,18.0,,A,,0.00091,,,,Meta-analysis p-value
-rs6857,19.0,,T,,2.21e-12,,,,Meta-analysis p-value
-rs405509,19.0,,T,,5.98e-05,,,,Meta-analysis p-value
-rs9268877,6.0,32431147,A,,3.1e-05,,,,eQTL | Braineac | p-value
-rs199528,17.0,44843136,C,,3e-06,,,,eQTL | Braineac | p-value
-rs199528,17.0,44843136,C,,,,,,eQTL | Braineac | p-value
-rs199528,17.0,44843136,C,,1e-05,,,,eQTL | Braineac | p-value
-rs1358071,17.0,43803189,A,,,,,,eQTL | Braineac | p-value
-rs1358071,17.0,43803189,A,,,,,,eQTL | Braineac | p-value
-rs1358071,17.0,43803189,A,,,,,,eQTL | Braineac | p-value
-rs1358071,17.0,43803189,A,,2.8999999999999998e-06,,,,eQTL | Braineac | p-value
-rs9268877,6.0,32431147,A,,,,,,eQTL | GTEx | p-value
-rs199528,17.0,44843136,C,,,,,,eQTL | GTEx | p-value
-rs199528,17.0,44843136,C,,,,,,eQTL | GTEx | p-value
-rs199528,17.0,44843136,C,,,,,,eQTL | GTEx | p-value
-rs1358071,17.0,43803189,A,,,,,,eQTL | GTEx | p-value
-rs1358071,17.0,43803189,A,,,,,,eQTL | GTEx | p-value
-rs1358071,17.0,43803189,A,,,,,,eQTL | GTEx | p-value
-rs1358071,17.0,43803189,A,,,,,,eQTL | GTEx | p-value
-rs9268877,6.0,32431147,A,,3.1e-05,,,,Braineac.p-value
-rs676768 rs10784359 rs2893253,1012.0,116030773 40445750 107067203,/ /,,3.1e-05,,,,Braineac.p-value
-rs199528,1317.0,44843136,/ C,,3e-06,,,,Braineac.p-value
-rs199528,17.0,44843136,C,,3e-06,,,,Braineac.p-value
-rs199528,17.0,44843136,C,,1e-05,,,,Braineac.p-value
-rs9268877,6.0,32431147,A,,,,,,p-value
-rs676768 rs10784359 rs2893253,1012.0,116030773 40445750 107067203,/ /,,,,,,p-value
-rs199528,1317.0,44843136,/ C,,,,,,p-value
-rs199528,17.0,44843136,C,,,,,,p-value
-rs199528,17.0,44843136,C,,,,,,p-value
-rs4417745,2.0,,A,,0.0273,,,,Min Cond FDR
-rs7664889,4.0,,T,,0.0323,,,,Min Cond FDR
-rs676768,10.0,,T,,0.0425,,,,Min Cond FDR
-rs1328032,13.0,,A,,0.0138,,,,Min Cond FDR
-rs2446406,15.0,,A,,0.0259,,,,Min Cond FDR
-rs7184882,16.0,,T,,0.0424,,,,Min Cond FDR
-rs199528,17.0,,T,,0.0179,,,,Min Cond FDR
-rs1358071,17.0,,A,,0.0201,,,,Min Cond FDR
-rs12964543,18.0,,A,,0.0271,,,,Min Cond FDR
-rs6857,19.0,,T,,0.0469,,,,Min Cond FDR
-rs405509,19.0,,T,,0.00526,,,,Min Cond FDR
-rs4417745,2.0,,A,,2.52e-05,,,,IFGC phase I p-value
-rs7664889,4.0,,T,,0.000175,,,,IFGC phase I p-value
-rs676768,10.0,,T,,0.000312,,,,IFGC phase I p-value
-rs1328032,13.0,,A,,1.93e-07,,,,IFGC phase I p-value
-rs2446406,15.0,,A,,7.18e-07,,,,IFGC phase I p-value
-rs7184882,16.0,,T,,6.64e-07,,,,IFGC phase I p-value
-rs199528,17.0,,T,,4.09e-05,,,,IFGC phase I p-value
-rs1358071,17.0,,A,,4.96e-05,,,,IFGC phase I p-value
-rs12964543,18.0,,A,,0.000112,,,,IFGC phase I p-value
-rs6857,19.0,,T,,7.03e-07,,,,IFGC phase I p-value
-rs405509,19.0,,T,,1.25e-05,,,,IFGC phase I p-value
-rs4417745,2.0,,A,,0.47,,,,IFGC phase II p-value
-rs7664889,4.0,,T,,0.82,,,,IFGC phase II p-value
-rs676768,10.0,,T,,0.55,,,,IFGC phase II p-value
-rs1328032,13.0,,A,,0.34,,,,IFGC phase II p-value
-rs2446406,15.0,,A,,0.4,,,,IFGC phase II p-value
-rs7184882,16.0,,T,,0.08,,,,IFGC phase II p-value
-rs199528,17.0,,T,,0.03,,,,IFGC phase II p-value
-rs1358071,17.0,,A,,0.001,,,,IFGC phase II p-value
-rs12964543,18.0,,A,,0.24,,,,IFGC phase II p-value
-rs6857,19.0,,T,,4.46e-07,,,,IFGC phase II p-value
-rs405509,19.0,,T,,0.93,,,,IFGC phase II p-value
-rs4417745,2.0,,A,,0.00032,,,,Meta-analysis p-value
-rs7664889,4.0,,T,,0.00318,,,,Meta-analysis p-value
-rs676768,10.0,,T,,0.0024,,,,Meta-analysis p-value
-rs1328032,13.0,,A,,7.39e-05,,,,Meta-analysis p-value
-rs2446406,15.0,,A,,2.24e-05,,,,Meta-analysis p-value
-rs7184882,16.0,,T,,3.08e-06,,,,Meta-analysis p-value
-rs199528,17.0,,T,,9.59e-06,,,,Meta-analysis p-value
-rs1358071,17.0,,A,,4.91e-07,,,,Meta-analysis p-value
-rs12964543,18.0,,A,,0.00091,,,,Meta-analysis p-value
-rs6857,19.0,,T,,2.21e-12,,,,Meta-analysis p-value
-rs405509,19.0,,T,,5.98e-05,,,,Meta-analysis p-value
-rs7664889,4.0,,,,0.0484,,,,Min Conj FDR
-rs9268877,6.0,,,,0.0484,,,,Min Conj FDR
-rs676768,10.0,,,,0.0427,,,,Min Conj FDR
-rs10784359,12.0,,,,0.0326,,,,Min Conj FDR
-rs2893253,13.0,,,,0.0355,,,,Min Conj FDR
-rs199528,17.0,,,,0.018,,,,Min Conj FDR
-rs1358071,17.0,,,,0.0202,,,,Min Conj FDR
-rs12964543,18.0,,,,0.0273,,,,Min Conj FDR
-rs405509,19.0,,,,0.00522,,,,Min Conj FDR
-rs7664889,4.0,,,,0.000175,,,,FTD p-value
-rs9268877,6.0,,,,1.04e-10,,,,FTD p-value
-rs676768,10.0,,,,0.000312,,,,FTD p-value
-rs10784359,12.0,,,,0.000158,,,,FTD p-value
-rs2893253,13.0,,,,0.000202,,,,FTD p-value
-rs199528,17.0,,,,4.09e-05,,,,FTD p-value
-rs1358071,17.0,,,,4.96e-05,,,,FTD p-value
-rs12964543,18.0,,,,0.000112,,,,FTD p-value
-rs405509,19.0,,,,1.25e-05,,,,FTD p-value
-rs7664889,4.0,,,,0.000888,,,,Associated phenotype p-value
-rs9268877,6.0,,,,0.000741,,,,Associated phenotype p-value
-rs676768,10.0,,,,0.000614,,,,Associated phenotype p-value
-rs10784359,12.0,,,,7.47e-05,,,,Associated phenotype p-value
-rs2893253,13.0,,,,0.000111,,,,Associated phenotype p-value
-rs199528,17.0,,,,9.82e-16,,,,Associated phenotype p-value
-rs1358071,17.0,,,,7.76e-15,,,,Associated phenotype p-value
-rs12964543,18.0,,,,0.000308,,,,Associated phenotype p-value
-rs405509,19.0,,,,6.16e-70,,,,Associated phenotype p-value
-6 026 384,,,,,,,,,
-Illumina NeuroX Chip,,,,,,,,,
-7 055 881,,,,,,,,,
-7 689 524,,,,,,,,,
-rs7664889,4.0,,,,0.0484,,,,Min Conj FDR
-rs9268877,6.0,,,,0.0484,,,,Min Conj FDR
-rs676768,10.0,,,,0.0427,,,,Min Conj FDR
-rs10784359,12.0,,,,0.0326,,,,Min Conj FDR
-rs2893253,13.0,,,,0.0355,,,,Min Conj FDR
-rs199528,17.0,,,,0.018,,,,Min Conj FDR
-rs1358071,17.0,,,,0.0202,,,,Min Conj FDR
-rs12964543,18.0,,,,0.0273,,,,Min Conj FDR
-rs405509,19.0,,,,0.00522,,,,Min Conj FDR
-rs7664889,4.0,,,,0.000175,,,,FTD p-value
-rs9268877,6.0,,,,1.04e-10,,,,FTD p-value
-rs676768,10.0,,,,0.000312,,,,FTD p-value
-rs10784359,12.0,,,,0.000158,,,,FTD p-value
-rs2893253,13.0,,,,0.000202,,,,FTD p-value
-rs199528,17.0,,,,4.09e-05,,,,FTD p-value
-rs1358071,17.0,,,,4.96e-05,,,,FTD p-value
-rs12964543,18.0,,,,0.000112,,,,FTD p-value
-rs405509,19.0,,,,1.25e-05,,,,FTD p-value
-rs7664889,4.0,,,,0.000888,,,,Associated phenotype p-value
-rs9268877,6.0,,,,0.000741,,,,Associated phenotype p-value
-rs676768,10.0,,,,0.000614,,,,Associated phenotype p-value
-rs10784359,12.0,,,,7.47e-05,,,,Associated phenotype p-value
-rs2893253,13.0,,,,0.000111,,,,Associated phenotype p-value
-rs199528,17.0,,,,9.82e-16,,,,Associated phenotype p-value
-rs1358071,17.0,,,,7.76e-15,,,,Associated phenotype p-value
-rs12964543,18.0,,,,0.000308,,,,Associated phenotype p-value
-rs405509,19.0,,,,6.160000000000001e-70,,,,Associated phenotype p-value
+P-value,Effect,AF,SNP,Chr,Position,RA,Population,Cohort,P-value notes,Effect notes
+0.0273,,,rs4417745,2.0,241 225 364,A,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0273,,,rs4417745,2.0,241 225 364,A,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0273,,,rs4417745,2.0,241 225 364,A,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0323,,,rs7664889,4.0,77 087 704,T,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0323,,,rs7664889,4.0,77 087 704,T,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0323,,,rs7664889,4.0,77 087 704,T,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0425,,,rs676768,10.0,116 030 773,T,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0425,,,rs676768,10.0,116 030 773,T,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0425,,,rs676768,10.0,116 030 773,T,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0138,,,rs1328032,13.0,71 420 424,A,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0138,,,rs1328032,13.0,71 420 424,A,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0138,,,rs1328032,13.0,71 420 424,A,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0259,,,rs2446406,15.0,51 679 783,A,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0259,,,rs2446406,15.0,51 679 783,A,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0259,,,rs2446406,15.0,51 679 783,A,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0424,,,rs7184882,16.0,73 737 373,T,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0424,,,rs7184882,16.0,73 737 373,T,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0424,,,rs7184882,16.0,73 737 373,T,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0179,,,rs199528,17.0,44 843 136,T,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0179,,,rs199528,17.0,44 843 136,T,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0179,,,rs199528,17.0,44 843 136,T,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0201,,,rs1358071,17.0,43 803 189,A,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0201,,,rs1358071,17.0,43 803 189,A,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0201,,,rs1358071,17.0,43 803 189,A,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0271,,,rs12964543,18.0,56 543 095,A,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0271,,,rs12964543,18.0,56 543 095,A,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0271,,,rs12964543,18.0,56 543 095,A,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0469,,,rs6857,19.0,45 392 254,T,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0469,,,rs6857,19.0,45 392 254,T,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0469,,,rs6857,19.0,45 392 254,T,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.00526,,,rs405509,19.0,45 408 836,T,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.00526,,,rs405509,19.0,45 408 836,T,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.00526,,,rs405509,19.0,45 408 836,T,,,Min Cond FDR,Meta-analysis OR (95% CI)
+2.52e-05,,,rs4417745,2.0,241 225 364,A,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+2.52e-05,,,rs4417745,2.0,241 225 364,A,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+2.52e-05,,,rs4417745,2.0,241 225 364,A,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+0.000175,,,rs7664889,4.0,77 087 704,T,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+0.000175,,,rs7664889,4.0,77 087 704,T,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+0.000175,,,rs7664889,4.0,77 087 704,T,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+0.000312,,,rs676768,10.0,116 030 773,T,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+0.000312,,,rs676768,10.0,116 030 773,T,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+0.000312,,,rs676768,10.0,116 030 773,T,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+1.93e-07,,,rs1328032,13.0,71 420 424,A,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+1.93e-07,,,rs1328032,13.0,71 420 424,A,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+1.93e-07,,,rs1328032,13.0,71 420 424,A,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+7.18e-07,,,rs2446406,15.0,51 679 783,A,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+7.18e-07,,,rs2446406,15.0,51 679 783,A,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+7.18e-07,,,rs2446406,15.0,51 679 783,A,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+6.64e-07,,,rs7184882,16.0,73 737 373,T,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+6.64e-07,,,rs7184882,16.0,73 737 373,T,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+6.64e-07,,,rs7184882,16.0,73 737 373,T,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+4.09e-05,,,rs199528,17.0,44 843 136,T,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+4.09e-05,,,rs199528,17.0,44 843 136,T,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+4.09e-05,,,rs199528,17.0,44 843 136,T,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+4.96e-05,,,rs1358071,17.0,43 803 189,A,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+4.96e-05,,,rs1358071,17.0,43 803 189,A,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+4.96e-05,,,rs1358071,17.0,43 803 189,A,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+0.000112,,,rs12964543,18.0,56 543 095,A,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+0.000112,,,rs12964543,18.0,56 543 095,A,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+0.000112,,,rs12964543,18.0,56 543 095,A,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+7.03e-07,,,rs6857,19.0,45 392 254,T,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+7.03e-07,,,rs6857,19.0,45 392 254,T,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+7.03e-07,,,rs6857,19.0,45 392 254,T,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+1.25e-05,,,rs405509,19.0,45 408 836,T,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+1.25e-05,,,rs405509,19.0,45 408 836,T,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+1.25e-05,,,rs405509,19.0,45 408 836,T,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+0.47,,,rs4417745,2.0,241 225 364,A,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.47,,,rs4417745,2.0,241 225 364,A,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.47,,,rs4417745,2.0,241 225 364,A,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.82,,,rs7664889,4.0,77 087 704,T,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.82,,,rs7664889,4.0,77 087 704,T,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.82,,,rs7664889,4.0,77 087 704,T,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.55,,,rs676768,10.0,116 030 773,T,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.55,,,rs676768,10.0,116 030 773,T,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.55,,,rs676768,10.0,116 030 773,T,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.34,,,rs1328032,13.0,71 420 424,A,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.34,,,rs1328032,13.0,71 420 424,A,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.34,,,rs1328032,13.0,71 420 424,A,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.4,,,rs2446406,15.0,51 679 783,A,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.4,,,rs2446406,15.0,51 679 783,A,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.4,,,rs2446406,15.0,51 679 783,A,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.08,,,rs7184882,16.0,73 737 373,T,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.08,,,rs7184882,16.0,73 737 373,T,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.08,,,rs7184882,16.0,73 737 373,T,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.03,,,rs199528,17.0,44 843 136,T,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.03,,,rs199528,17.0,44 843 136,T,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.03,,,rs199528,17.0,44 843 136,T,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.001,,,rs1358071,17.0,43 803 189,A,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.001,,,rs1358071,17.0,43 803 189,A,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.001,,,rs1358071,17.0,43 803 189,A,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.24,,,rs12964543,18.0,56 543 095,A,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.24,,,rs12964543,18.0,56 543 095,A,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.24,,,rs12964543,18.0,56 543 095,A,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+4.46e-07,,,rs6857,19.0,45 392 254,T,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+4.46e-07,,,rs6857,19.0,45 392 254,T,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+4.46e-07,,,rs6857,19.0,45 392 254,T,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.93,,,rs405509,19.0,45 408 836,T,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.93,,,rs405509,19.0,45 408 836,T,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.93,,,rs405509,19.0,45 408 836,T,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.00032,,,rs4417745,2.0,241 225 364,A,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+0.00032,,,rs4417745,2.0,241 225 364,A,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+0.00032,,,rs4417745,2.0,241 225 364,A,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+0.00318,,,rs7664889,4.0,77 087 704,T,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+0.00318,,,rs7664889,4.0,77 087 704,T,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+0.00318,,,rs7664889,4.0,77 087 704,T,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+0.0024,,,rs676768,10.0,116 030 773,T,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+0.0024,,,rs676768,10.0,116 030 773,T,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+0.0024,,,rs676768,10.0,116 030 773,T,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+7.39e-05,,,rs1328032,13.0,71 420 424,A,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+7.39e-05,,,rs1328032,13.0,71 420 424,A,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+7.39e-05,,,rs1328032,13.0,71 420 424,A,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+2.24e-05,,,rs2446406,15.0,51 679 783,A,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+2.24e-05,,,rs2446406,15.0,51 679 783,A,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+2.24e-05,,,rs2446406,15.0,51 679 783,A,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+3.08e-06,,,rs7184882,16.0,73 737 373,T,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+3.08e-06,,,rs7184882,16.0,73 737 373,T,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+3.08e-06,,,rs7184882,16.0,73 737 373,T,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+9.59e-06,,,rs199528,17.0,44 843 136,T,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+9.59e-06,,,rs199528,17.0,44 843 136,T,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+9.59e-06,,,rs199528,17.0,44 843 136,T,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+4.91e-07,,,rs1358071,17.0,43 803 189,A,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+4.91e-07,,,rs1358071,17.0,43 803 189,A,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+4.91e-07,,,rs1358071,17.0,43 803 189,A,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+0.00091,,,rs12964543,18.0,56 543 095,A,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+0.00091,,,rs12964543,18.0,56 543 095,A,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+0.00091,,,rs12964543,18.0,56 543 095,A,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+2.21e-12,,,rs6857,19.0,45 392 254,T,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+2.21e-12,,,rs6857,19.0,45 392 254,T,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+2.21e-12,,,rs6857,19.0,45 392 254,T,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+5.98e-05,,,rs405509,19.0,45 408 836,T,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+5.98e-05,,,rs405509,19.0,45 408 836,T,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+5.98e-05,,,rs405509,19.0,45 408 836,T,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+3.1e-05,,,rs9268877,6.0,32431147,A,,,eQTL | Braineac | p-value,
+3e-06,,,rs199528,17.0,44843136,C,,,eQTL | Braineac | p-value,
+,,,rs199528,17.0,44843136,C,,,eQTL | Braineac | p-value,
+1e-05,,,rs199528,17.0,44843136,C,,,eQTL | Braineac | p-value,
+,,,rs1358071,17.0,43803189,A,,,eQTL | Braineac | p-value,
+,,,rs1358071,17.0,43803189,A,,,eQTL | Braineac | p-value,
+,,,rs1358071,17.0,43803189,A,,,eQTL | Braineac | p-value,
+2.8999999999999998e-06,,,rs1358071,17.0,43803189,A,,,eQTL | Braineac | p-value,
+,,,rs9268877,6.0,32431147,A,,,eQTL | GTEx | p-value,
+,,,rs199528,17.0,44843136,C,,,eQTL | GTEx | p-value,
+,,,rs199528,17.0,44843136,C,,,eQTL | GTEx | p-value,
+,,,rs199528,17.0,44843136,C,,,eQTL | GTEx | p-value,
+,,,rs1358071,17.0,43803189,A,,,eQTL | GTEx | p-value,
+,,,rs1358071,17.0,43803189,A,,,eQTL | GTEx | p-value,
+,,,rs1358071,17.0,43803189,A,,,eQTL | GTEx | p-value,
+,,,rs1358071,17.0,43803189,A,,,eQTL | GTEx | p-value,
+3.1e-05,,,rs9268877,6.0,32431147,A,,,Braineac.p-value,
+3.1e-05,,,rs676768 rs10784359 rs2893253,1012.0,116030773 40445750 107067203,/ /,,,Braineac.p-value,
+3e-06,,,rs199528,1317.0,44843136,/ C,,,Braineac.p-value,
+3e-06,,,rs199528,17.0,44843136,C,,,Braineac.p-value,
+1e-05,,,rs199528,17.0,44843136,C,,,Braineac.p-value,
+,,,rs9268877,6.0,32431147,A,,,p-value,
+,,,rs676768 rs10784359 rs2893253,1012.0,116030773 40445750 107067203,/ /,,,p-value,
+,,,rs199528,1317.0,44843136,/ C,,,p-value,
+,,,rs199528,17.0,44843136,C,,,p-value,
+,,,rs199528,17.0,44843136,C,,,p-value,
+0.0273,,,rs4417745,2.0,241 225 364,A,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0273,,,rs4417745,2.0,241 225 364,A,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0273,,,rs4417745,2.0,241 225 364,A,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0323,,,rs7664889,4.0,77 087 704,T,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0323,,,rs7664889,4.0,77 087 704,T,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0323,,,rs7664889,4.0,77 087 704,T,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0425,,,rs676768,10.0,116 030 773,T,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0425,,,rs676768,10.0,116 030 773,T,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0425,,,rs676768,10.0,116 030 773,T,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0138,,,rs1328032,13.0,71 420 424,A,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0138,,,rs1328032,13.0,71 420 424,A,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0138,,,rs1328032,13.0,71 420 424,A,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0259,,,rs2446406,15.0,51 679 783,A,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0259,,,rs2446406,15.0,51 679 783,A,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0259,,,rs2446406,15.0,51 679 783,A,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0424,,,rs7184882,16.0,73 737 373,T,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0424,,,rs7184882,16.0,73 737 373,T,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0424,,,rs7184882,16.0,73 737 373,T,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0179,,,rs199528,17.0,44 843 136,T,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0179,,,rs199528,17.0,44 843 136,T,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0179,,,rs199528,17.0,44 843 136,T,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0201,,,rs1358071,17.0,43 803 189,A,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0201,,,rs1358071,17.0,43 803 189,A,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0201,,,rs1358071,17.0,43 803 189,A,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0271,,,rs12964543,18.0,56 543 095,A,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0271,,,rs12964543,18.0,56 543 095,A,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0271,,,rs12964543,18.0,56 543 095,A,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.0469,,,rs6857,19.0,45 392 254,T,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.0469,,,rs6857,19.0,45 392 254,T,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.0469,,,rs6857,19.0,45 392 254,T,,,Min Cond FDR,Meta-analysis OR (95% CI)
+0.00526,,,rs405509,19.0,45 408 836,T,,,Min Cond FDR,IFGC phase I OR (95% CI)
+0.00526,,,rs405509,19.0,45 408 836,T,,,Min Cond FDR,IFGC phase II OR (95% CI)
+0.00526,,,rs405509,19.0,45 408 836,T,,,Min Cond FDR,Meta-analysis OR (95% CI)
+2.52e-05,,,rs4417745,2.0,241 225 364,A,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+2.52e-05,,,rs4417745,2.0,241 225 364,A,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+2.52e-05,,,rs4417745,2.0,241 225 364,A,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+0.000175,,,rs7664889,4.0,77 087 704,T,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+0.000175,,,rs7664889,4.0,77 087 704,T,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+0.000175,,,rs7664889,4.0,77 087 704,T,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+0.000312,,,rs676768,10.0,116 030 773,T,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+0.000312,,,rs676768,10.0,116 030 773,T,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+0.000312,,,rs676768,10.0,116 030 773,T,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+1.93e-07,,,rs1328032,13.0,71 420 424,A,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+1.93e-07,,,rs1328032,13.0,71 420 424,A,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+1.93e-07,,,rs1328032,13.0,71 420 424,A,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+7.18e-07,,,rs2446406,15.0,51 679 783,A,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+7.18e-07,,,rs2446406,15.0,51 679 783,A,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+7.18e-07,,,rs2446406,15.0,51 679 783,A,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+6.64e-07,,,rs7184882,16.0,73 737 373,T,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+6.64e-07,,,rs7184882,16.0,73 737 373,T,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+6.64e-07,,,rs7184882,16.0,73 737 373,T,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+4.09e-05,,,rs199528,17.0,44 843 136,T,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+4.09e-05,,,rs199528,17.0,44 843 136,T,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+4.09e-05,,,rs199528,17.0,44 843 136,T,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+4.96e-05,,,rs1358071,17.0,43 803 189,A,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+4.96e-05,,,rs1358071,17.0,43 803 189,A,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+4.96e-05,,,rs1358071,17.0,43 803 189,A,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+0.000112,,,rs12964543,18.0,56 543 095,A,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+0.000112,,,rs12964543,18.0,56 543 095,A,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+0.000112,,,rs12964543,18.0,56 543 095,A,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+7.03e-07,,,rs6857,19.0,45 392 254,T,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+7.03e-07,,,rs6857,19.0,45 392 254,T,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+7.03e-07,,,rs6857,19.0,45 392 254,T,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+1.25e-05,,,rs405509,19.0,45 408 836,T,,,IFGC phase I p-value,IFGC phase I OR (95% CI)
+1.25e-05,,,rs405509,19.0,45 408 836,T,,,IFGC phase I p-value,IFGC phase II OR (95% CI)
+1.25e-05,,,rs405509,19.0,45 408 836,T,,,IFGC phase I p-value,Meta-analysis OR (95% CI)
+0.47,,,rs4417745,2.0,241 225 364,A,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.47,,,rs4417745,2.0,241 225 364,A,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.47,,,rs4417745,2.0,241 225 364,A,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.82,,,rs7664889,4.0,77 087 704,T,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.82,,,rs7664889,4.0,77 087 704,T,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.82,,,rs7664889,4.0,77 087 704,T,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.55,,,rs676768,10.0,116 030 773,T,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.55,,,rs676768,10.0,116 030 773,T,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.55,,,rs676768,10.0,116 030 773,T,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.34,,,rs1328032,13.0,71 420 424,A,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.34,,,rs1328032,13.0,71 420 424,A,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.34,,,rs1328032,13.0,71 420 424,A,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.4,,,rs2446406,15.0,51 679 783,A,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.4,,,rs2446406,15.0,51 679 783,A,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.4,,,rs2446406,15.0,51 679 783,A,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.08,,,rs7184882,16.0,73 737 373,T,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.08,,,rs7184882,16.0,73 737 373,T,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.08,,,rs7184882,16.0,73 737 373,T,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.03,,,rs199528,17.0,44 843 136,T,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.03,,,rs199528,17.0,44 843 136,T,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.03,,,rs199528,17.0,44 843 136,T,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.001,,,rs1358071,17.0,43 803 189,A,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.001,,,rs1358071,17.0,43 803 189,A,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.001,,,rs1358071,17.0,43 803 189,A,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.24,,,rs12964543,18.0,56 543 095,A,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.24,,,rs12964543,18.0,56 543 095,A,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.24,,,rs12964543,18.0,56 543 095,A,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+4.46e-07,,,rs6857,19.0,45 392 254,T,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+4.46e-07,,,rs6857,19.0,45 392 254,T,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+4.46e-07,,,rs6857,19.0,45 392 254,T,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.93,,,rs405509,19.0,45 408 836,T,,,IFGC phase II p-value,IFGC phase I OR (95% CI)
+0.93,,,rs405509,19.0,45 408 836,T,,,IFGC phase II p-value,IFGC phase II OR (95% CI)
+0.93,,,rs405509,19.0,45 408 836,T,,,IFGC phase II p-value,Meta-analysis OR (95% CI)
+0.00032,,,rs4417745,2.0,241 225 364,A,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+0.00032,,,rs4417745,2.0,241 225 364,A,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+0.00032,,,rs4417745,2.0,241 225 364,A,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+0.00318,,,rs7664889,4.0,77 087 704,T,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+0.00318,,,rs7664889,4.0,77 087 704,T,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+0.00318,,,rs7664889,4.0,77 087 704,T,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+0.0024,,,rs676768,10.0,116 030 773,T,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+0.0024,,,rs676768,10.0,116 030 773,T,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+0.0024,,,rs676768,10.0,116 030 773,T,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+7.39e-05,,,rs1328032,13.0,71 420 424,A,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+7.39e-05,,,rs1328032,13.0,71 420 424,A,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+7.39e-05,,,rs1328032,13.0,71 420 424,A,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+2.24e-05,,,rs2446406,15.0,51 679 783,A,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+2.24e-05,,,rs2446406,15.0,51 679 783,A,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+2.24e-05,,,rs2446406,15.0,51 679 783,A,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+3.08e-06,,,rs7184882,16.0,73 737 373,T,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+3.08e-06,,,rs7184882,16.0,73 737 373,T,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+3.08e-06,,,rs7184882,16.0,73 737 373,T,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+9.59e-06,,,rs199528,17.0,44 843 136,T,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+9.59e-06,,,rs199528,17.0,44 843 136,T,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+9.59e-06,,,rs199528,17.0,44 843 136,T,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+4.91e-07,,,rs1358071,17.0,43 803 189,A,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+4.91e-07,,,rs1358071,17.0,43 803 189,A,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+4.91e-07,,,rs1358071,17.0,43 803 189,A,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+0.00091,,,rs12964543,18.0,56 543 095,A,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+0.00091,,,rs12964543,18.0,56 543 095,A,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+0.00091,,,rs12964543,18.0,56 543 095,A,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+2.21e-12,,,rs6857,19.0,45 392 254,T,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+2.21e-12,,,rs6857,19.0,45 392 254,T,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+2.21e-12,,,rs6857,19.0,45 392 254,T,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+5.98e-05,,,rs405509,19.0,45 408 836,T,,,Meta-analysis p-value,IFGC phase I OR (95% CI)
+5.98e-05,,,rs405509,19.0,45 408 836,T,,,Meta-analysis p-value,IFGC phase II OR (95% CI)
+5.98e-05,,,rs405509,19.0,45 408 836,T,,,Meta-analysis p-value,Meta-analysis OR (95% CI)
+0.0484,,,rs7664889,4.0,77 087 704,,,,Min Conj FDR,
+0.0484,,,rs9268877,6.0,32 431 147,,,,Min Conj FDR,
+0.0427,,,rs676768,10.0,116 030 773,,,,Min Conj FDR,
+0.0326,,,rs10784359,12.0,40 445 750,,,,Min Conj FDR,
+0.0355,,,rs2893253,13.0,107 067 203,,,,Min Conj FDR,
+0.018,,,rs199528,17.0,44 843 136,,,,Min Conj FDR,
+0.0202,,,rs1358071,17.0,43 803 189,,,,Min Conj FDR,
+0.0273,,,rs12964543,18.0,56 543 095,,,,Min Conj FDR,
+0.00522,,,rs405509,19.0,45 408 836,,,,Min Conj FDR,
+0.000175,,,rs7664889,4.0,77 087 704,,,,FTD p-value,
+1.04e-10,,,rs9268877,6.0,32 431 147,,,,FTD p-value,
+0.000312,,,rs676768,10.0,116 030 773,,,,FTD p-value,
+0.000158,,,rs10784359,12.0,40 445 750,,,,FTD p-value,
+0.000202,,,rs2893253,13.0,107 067 203,,,,FTD p-value,
+4.09e-05,,,rs199528,17.0,44 843 136,,,,FTD p-value,
+4.96e-05,,,rs1358071,17.0,43 803 189,,,,FTD p-value,
+0.000112,,,rs12964543,18.0,56 543 095,,,,FTD p-value,
+1.25e-05,,,rs405509,19.0,45 408 836,,,,FTD p-value,
+0.000888,,,rs7664889,4.0,77 087 704,,,,Associated phenotype p-value,
+0.000741,,,rs9268877,6.0,32 431 147,,,,Associated phenotype p-value,
+0.000614,,,rs676768,10.0,116 030 773,,,,Associated phenotype p-value,
+7.47e-05,,,rs10784359,12.0,40 445 750,,,,Associated phenotype p-value,
+0.000111,,,rs2893253,13.0,107 067 203,,,,Associated phenotype p-value,
+9.82e-16,,,rs199528,17.0,44 843 136,,,,Associated phenotype p-value,
+7.76e-15,,,rs1358071,17.0,43 803 189,,,,Associated phenotype p-value,
+0.000308,,,rs12964543,18.0,56 543 095,,,,Associated phenotype p-value,
+6.16e-70,,,rs405509,19.0,45 408 836,,,,Associated phenotype p-value,
+,,,,,6 026 384,,,,,
+,,,,,Illumina NeuroX Chip,,,,,
+,,,,,7 055 881,,,,,
+,,,,,7 689 524,,,,,
+0.0484,,,rs7664889,4.0,77 087 704,,,,Min Conj FDR,
+0.0484,,,rs9268877,6.0,32 431 147,,,,Min Conj FDR,
+0.0427,,,rs676768,10.0,116 030 773,,,,Min Conj FDR,
+0.0326,,,rs10784359,12.0,40 445 750,,,,Min Conj FDR,
+0.0355,,,rs2893253,13.0,107 067 203,,,,Min Conj FDR,
+0.018,,,rs199528,17.0,44 843 136,,,,Min Conj FDR,
+0.0202,,,rs1358071,17.0,43 803 189,,,,Min Conj FDR,
+0.0273,,,rs12964543,18.0,56 543 095,,,,Min Conj FDR,
+0.00522,,,rs405509,19.0,45 408 836,,,,Min Conj FDR,
+0.000175,,,rs7664889,4.0,77 087 704,,,,FTD p-value,
+1.04e-10,,,rs9268877,6.0,32 431 147,,,,FTD p-value,
+0.000312,,,rs676768,10.0,116 030 773,,,,FTD p-value,
+0.000158,,,rs10784359,12.0,40 445 750,,,,FTD p-value,
+0.000202,,,rs2893253,13.0,107 067 203,,,,FTD p-value,
+4.09e-05,,,rs199528,17.0,44 843 136,,,,FTD p-value,
+4.96e-05,,,rs1358071,17.0,43 803 189,,,,FTD p-value,
+0.000112,,,rs12964543,18.0,56 543 095,,,,FTD p-value,
+1.25e-05,,,rs405509,19.0,45 408 836,,,,FTD p-value,
+0.000888,,,rs7664889,4.0,77 087 704,,,,Associated phenotype p-value,
+0.000741,,,rs9268877,6.0,32 431 147,,,,Associated phenotype p-value,
+0.000614,,,rs676768,10.0,116 030 773,,,,Associated phenotype p-value,
+7.47e-05,,,rs10784359,12.0,40 445 750,,,,Associated phenotype p-value,
+0.000111,,,rs2893253,13.0,107 067 203,,,,Associated phenotype p-value,
+9.82e-16,,,rs199528,17.0,44 843 136,,,,Associated phenotype p-value,
+7.76e-15,,,rs1358071,17.0,43 803 189,,,,Associated phenotype p-value,
+0.000308,,,rs12964543,18.0,56 543 095,,,,Associated phenotype p-value,
+6.160000000000001e-70,,,rs405509,19.0,45 408 836,,,,Associated phenotype p-value,

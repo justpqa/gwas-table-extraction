@@ -1,4 +1,4 @@
-Pubmed PMID,SNP,RA,P-value,Effect,Chr,Pos,Cohort,Population
+Pubmed PMID,SNP,RA,P-value,Effect,Chr,Position,Cohort,Population
 29274321,rs10775009,T,1.59e-09,1.66529,12.0,118952720,ADNI,Caucasian
 29274321,rs111882035,G,2.74e-08,0.394554,4.0,85495401,ADNI,Caucasian
 29274321,rs12268753,C,2.01e-08,1.34986,10.0,52058389,ADNI,Caucasian

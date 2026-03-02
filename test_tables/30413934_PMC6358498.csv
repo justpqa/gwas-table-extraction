@@ -1,4 +1,4 @@
-Pubmed PMID,SNP,RA,P-value,Effect,Chr,Pos,Cohort,Population
+Pubmed PMID,SNP,RA,P-value,Effect,Chr,Position,Cohort,Population
 30413934,rs1048365,T,0.945,1.0,7.0,101161149,UKBB,Caucasian
 30413934,rs1048365,T,0.000222,,7.0,101161149,GIANT,Caucasian
 30413934,rs1048365,T,7.84e-05,,7.0,101161149,IGAP,Caucasian

@@ -1,4 +1,4 @@
-Pubmed PMID,SNP,RA,P-value,Effect,Chr,Pos,Cohort,Population
+Pubmed PMID,SNP,RA,P-value,Effect,Chr,Position,Cohort,Population
 30820047,rs10467994,C,4.3e-07,0.94,15.0,50716490,"ADGC, CHARGE, EADI, GERAD",Non-Hispanic Caucasian
 30820047,rs10467994,C,3.9e-07,0.94,15.0,50716490,"ADGC, CHARGE, EADI, GERAD",Non-Hispanic Caucasian
 30820047,rs10467994,C,0.62,0.97,15.0,50716490,"ADGC, CHARGE, EADI, GERAD",Non-Hispanic Caucasian

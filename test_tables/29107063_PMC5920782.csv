@@ -1,4 +1,4 @@
-Pubmed PMID,SNP,RA,P-value,Effect,Chr,Pos,Cohort,Population
+Pubmed PMID,SNP,RA,P-value,Effect,Chr,Position,Cohort,Population
 29107063,rs115881343,C,2.03e-09,,19.0,44899959,HRS,Multi-ethnic
 29107063,rs12721046,A,4.87e-09,2.2,19.0,44917997,CHARGE,Caucasian
 29107063,rs12721046,G,2.39e-14,,19.0,44917997,CHARGE,Multi-ethnic
