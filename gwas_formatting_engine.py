@@ -1,5 +1,6 @@
 import re
 import json
+from copy import deepcopy
 from typing import List, Union, Tuple, Dict
 from collections.abc import Iterable
 import numpy as np
@@ -8,13 +9,27 @@ import torch
 import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModel, AutoModelForCausalLM, BitsAndBytesConfig, LogitsProcessor, LogitsProcessorList
     
-class GWASColumnMatchingEngine:
+# class SingleTokenBiasProcessor(LogitsProcessor):
+#     def __init__(self, token_ids, bias_value):
+#         self.token_ids = token_ids
+#         self.bias_value = bias_value
+
+#     def __call__(self, input_ids, scores):
+#         # Create a mask for allowed tokens
+#         mask = torch.full_like(scores, -float("inf"))
+#         for tid in self.token_ids:
+#             mask[:, tid] = self.bias_value
+#         return scores + mask
+    
+class GWASFormattingEngine:
     def __init__(self, referencing_col_df: pd.DataFrame, embeddings_model_name: str = "NeuML/pubmedbert-base-embeddings"):
         # df of referencing col
         self.referencing_col_lst = referencing_col_df["column"].to_list()
         self.referencing_col_context_lst = referencing_col_df.apply(lambda x: x["column"] if pd.isna(x["description"]) else x["column"] + ": " + x["description"], axis = 1).to_list()
         self.referencing_col_example_lst = referencing_col_df["example"].to_list()
         # self.referencing_col_group_lst = referencing_col_df["group"].to_list()
+        self.referencing_col_with_multiple_copies = referencing_col_df[referencing_col_df["has_multiple_copies"]]["column"].tolist()
+        # self.referencing_col_numeric = referencing_col_df[referencing_col_df["is_numeric"]]["column"].tolist()
 
         # Try to first convert any abbreviation, then we match column with right semantic
         self.gwas_abbreviation_dict = {
@@ -37,7 +52,7 @@ class GWASColumnMatchingEngine:
             "RAF": "Risk Allele Frequency",
             "EAF": "Effect Allele Frequency",
             "MAF": "Minor Allele Frequency",
-            "BETA": "Effect size (regression coefficient)",
+            "BETA": "Effect",
             "OR": "Odds Ratio",
             "SE": "Standard Error of effect estimate",
             "Z": "Z-score statistic",
@@ -116,6 +131,15 @@ class GWASColumnMatchingEngine:
         # self.model.eval()
         # self.device = "mps"
 
+        # self.llm_model_tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen3.5-0.8B")
+        # self.llm_model = AutoModelForCausalLM.from_pretrained(
+        #     "Qwen/Qwen3.5-0.8B"
+        # ).to("mps")
+        # self.llm_model.eval()
+
+        # # device
+        # self.device = "mps"
+
     def clean_col(self, col: str) -> str:
         """
         Clean a column by replacing any possible abbreviation with their actual meaning for better semantic matching
@@ -186,6 +210,71 @@ class GWASColumnMatchingEngine:
 
 #         return torch.argmax(logits, dim=-1).item()
 
+#     def reranking_with_llm(self, col: str, candidates: List[str]) -> str:
+#         """
+#         LLM acts as a re-ranker to pick the best match from a list of candidates.
+#         """
+#         # Format the candidates as a numbered list for the LLM
+
+#         prompt = f"""Task: Map clinical table headers to GWAS standard ontology, return a single number for the best choice, or 0 if nothing works
+
+# Header: "p-value: 0.001, 5e-8, 0.43"
+# Candidates: 
+#     1. P-value: The statistical significance of the association. Keywords: P, P-value, P_adj, FDR. Examples: 5.0E-08, 0.0012, 1.2 x 10^-5, 0.05.
+#     2. Effect Size: The magnitude and direction of the association. Keywords: Beta, OR, HR, Estimate. Examples: Beta=0.25, OR=1.45, HR=1.12, Log(OR)=0.37.
+#     3. SNP: Variant identifier, or snp idenifier, or chr:pos. Keywords: chr:position, chr:pos, Variant, rsID, RS number, MarkerName, rs. Examples: rs12345, 20:45269867, 19:45411941:T:C, chr19:45411941, rs429358 (APOE ε4).
+# Best Match: 1
+
+# Header: "rs_number: rs123, rs456, rs789"
+# Candidates: 
+#     1. Chr: Genomic chromosome identifier. Keywords: CHR, Chrom, Chromosome. Examples: 1, 19, X, chr19, chrX.
+#     2. Position: Genomic coordinate location. Keywords: BP, POS, Base Pair, start, end. Examples: 45411941, 10240500:10248600 (range), build 37.
+#     3. SNP: Variant identifier, or snp idenifier, or chr:pos. Keywords: chr:position, chr:pos, Variant, rsID, RS number, MarkerName, rs. Examples: rs12345, 20:45269867, 19:45411941:T:C, chr19:45411941, rs429358 (APOE ε4).
+# Best Match: 2
+
+# Header: "Position: 40051948,71398604,150713594,50716490,58753575"
+# Candidates: 
+#     1. P-value: The statistical significance of the association. Keywords: P, P-value, P_adj, FDR. Examples: 5.0E-08, 0.0012, 1.2 x 10^-5, 0.05.
+#     2. SNP: Variant identifier, or snp idenifier, or chr:pos. Keywords: chr:position, chr:pos, Variant, rsID, RS number, MarkerName, rs. Examples: rs12345, 20:45269867, 19:45411941:T:C, chr19:45411941, rs429358 (APOE ε4).
+#     3. Cohort: The specific study or database name. Keywords: Study, Dataset, Discovery. Examples: ADNI, IGAP, UK Biobank, ADGC, CHARGE, EADI.
+# Best Match: 0
+
+# Header: "{col}"
+# Candidates: 
+#     - {candidates[0]}
+#     - {candidates[1]}
+#     - {candidates[2]}
+# Best Match: """
+
+#         allowed_indices = [str(i) for i in range(len(candidates) + 1)]
+#         allowed_token_ids = [self.llm_model_tokenizer.encode(idx, add_special_tokens=False)[0] for idx in allowed_indices]
+        
+#         # logit bias to limit tokens that can be output
+#         bias_processor = SingleTokenBiasProcessor(allowed_token_ids, 100.0)
+#         logits_processor = LogitsProcessorList([bias_processor])
+
+#         # 4. Generate exactly ONE token
+#         inputs = self.llm_model_tokenizer(prompt, return_tensors="pt").to(self.device)
+        
+#         with torch.no_grad():
+#             output = self.llm_model.generate(
+#                 **inputs,
+#                 max_new_tokens=1,      # Force exactly one token
+#                 logits_processor=logits_processor, # Force it to be one of our numbers
+#                 pad_token_id=self.llm_model_tokenizer.eos_token_id,
+#                 do_sample=False        # Greedy decoding for consistency
+#             )
+
+#         # 5. Extract and Convert to Integer
+#         new_token = output[0][-1]
+#         predicted_text = self.llm_model_tokenizer.decode(new_token).strip()
+        
+#         try:
+#             idx = int(predicted_text) - 1 # Convert back to 0-based list index
+#             return idx if idx >= 0 else None
+#         except (ValueError, IndexError):
+#             return None
+        
     def match_single_col_to_ref_col(self, col: str, col_example: str) -> Tuple[str, float]:
         """
         match a single column to reference col given column, the list of referencing col and their embeddings
@@ -366,7 +455,7 @@ class GWASColumnMatchingEngine:
                 # matching for best col
                 ref_col, score = self.match_single_col_to_ref_col(cleaned_col, cleaned_col_example)
                 # if we still get same col
-                if ref_col == cleaned_col_prompt: 
+                if ref_col == cleaned_col: 
                     ref_col = col
                 if ref_col not in ref_col_to_col_lst:
                     ref_col_to_col_lst[ref_col] = []
@@ -390,6 +479,7 @@ class GWASColumnMatchingEngine:
     #         # extract values needed for prompt
     #         cleaned_col = self.clean_col(col)
     #         example_values = df[col].unique().tolist()
+    #         cleaned_col_prompt, cleaned_col_example = self.make_col_prompt(cleaned_col, example_values)
     #         # prompt: {col}: example, need to delete all : first
 
     #         if re.search(multi_index_pattern_1, cleaned_col.strip()):
@@ -407,11 +497,10 @@ class GWASColumnMatchingEngine:
     #             all_candidates.sort(key = lambda x: x[1], reverse = True)
     #             if len(all_candidates) >= 3:
     #                 candidates_ref_col = [self.referencing_col_lst[all_candidates[i][0]] for i in range(3)]
-    #                 candidates_ref_col_score = [candidates[i][1] for i in range(3)]
+    #                 candidates_ref_col_score = [all_candidates[i][1] for i in range(3)]
     #                 candidates = [self.referencing_col_context_lst[all_candidates[i][0]] for i in range(3)]
-    #                 prompt = self.make_prompt(cleaned_col, candidates)
-    #                 ref_col_inx = self.predict_class(prompt)
-    #                 if ref_col_inx == 3:
+    #                 ref_col_inx = self.reranking_with_llm(cleaned_col_prompt, candidates)
+    #                 if ref_col_inx is None:
     #                     ref_col = col
     #                     ref_col_score = 1
     #                 else:
@@ -437,11 +526,10 @@ class GWASColumnMatchingEngine:
     #             all_candidates.sort(key = lambda x: x[1], reverse = True)
     #             if len(all_candidates) >= 3:
     #                 candidates_ref_col = [self.referencing_col_lst[all_candidates[i][0]] for i in range(3)]
-    #                 candidates_ref_col_score = [candidates[i][1] for i in range(3)]
+    #                 candidates_ref_col_score = [all_candidates[i][1] for i in range(3)]
     #                 candidates = [self.referencing_col_context_lst[all_candidates[i][0]] for i in range(3)]
-    #                 prompt = self.make_prompt(cleaned_col, candidates)
-    #                 ref_col_inx = self.predict_class(prompt)
-    #                 if ref_col_inx == 3:
+    #                 ref_col_inx = self.reranking_with_llm(cleaned_col_prompt, candidates)
+    #                 if ref_col_inx is None:
     #                     ref_col = col
     #                     ref_col_score = 1
     #                 else:
@@ -467,9 +555,8 @@ class GWASColumnMatchingEngine:
     #                 candidates_ref_col = [self.referencing_col_lst[candidates[i][0]] for i in range(3)]
     #                 candidates_ref_col_score = [candidates[i][1] for i in range(3)]
     #                 candidates = [self.referencing_col_context_lst[candidates[i][0]] for i in range(3)]
-    #                 prompt = self.make_prompt(cleaned_col, candidates)
-    #                 ref_col_inx = self.predict_class(prompt)
-    #                 if ref_col_inx == 3:
+    #                 ref_col_inx = self.reranking_with_llm(cleaned_col_prompt, candidates)
+    #                 if ref_col_inx is None:
     #                     ref_col = col
     #                     ref_col_score = 1
     #                 else:
@@ -488,3 +575,130 @@ class GWASColumnMatchingEngine:
     #         # ref_col_to_col_lst[ref_col].append((col, cleaned_col_prompt, score))
 
     #     return ref_col_to_col_lst
+
+    def format_original_table_from_col_matching(self, df: pd.DataFrame, new_col_to_old_col_lst: dict, remove_unique_col: bool = False):
+        """
+        Format final table by melt/make extra copies of reference columns, or simply rename column to reference column name
+        """
+        # possible_ref_col_to_melt = ["P-value", "Effect", "AF"]
+        # map the columns
+        # new_col_to_old_col_lst = gwas_column_matching_engine.match_many_col_to_ref_col(df)
+        df_with_ref_col = None
+        new_col_to_not_melt = [] # list of columns that are stable and not need to be melt
+        new_col_to_old_col_lst_to_melt = {}
+        for new_col in new_col_to_old_col_lst:
+            if len(new_col_to_old_col_lst[new_col]) == 1:
+                # check if we remove unique col or not and if yes, is this a case of a col map to itself (score = 1)
+                if (not remove_unique_col) or (remove_unique_col and new_col_to_old_col_lst[new_col][0][1] != 1):
+                    if df_with_ref_col is None:
+                        df_with_ref_col = df[[new_col_to_old_col_lst[new_col][0][0]]]
+                        df_with_ref_col = df_with_ref_col.rename({new_col_to_old_col_lst[new_col][0][0]: new_col}, axis = 1)
+                    else:
+                        df_with_ref_col[new_col] = df[new_col_to_old_col_lst[new_col][0][0]]
+                    # add these single col to the list of not melt
+                    new_col_to_not_melt.append(new_col)
+            else:
+                # if new_col in possible_ref_col_to_melt:
+                #     old_col_lst = []
+                #     for col, _ in new_col_to_old_col_lst[new_col]:
+                #         # NOTE: special case, if col is the same as new_col, then melt will get error
+                #         if col in new_col_to_old_col_lst:
+                #             old_col_lst.append(col + " ")
+                #         else:
+                #             old_col_lst.append(col)
+                #         if df_with_ref_col is None:
+                #             if col in new_col_to_old_col_lst:
+                #                 df_with_ref_col = df[[col]].rename({col: col + " "}, axis = 1)
+                #             else:
+                #                 df_with_ref_col = df[[col]]
+                #         else:
+                #             if col in new_col_to_old_col_lst:
+                #                 df_with_ref_col[col + " "] = df[col]
+                #             else:
+                #                 df_with_ref_col[col] = df[col]
+                #     new_col_to_old_col_lst_to_melt[new_col] = old_col_lst.copy()
+                # else:
+                #     # make multiple copies with notes
+                #     for inx, (col, _) in enumerate(new_col_to_old_col_lst[new_col]):
+                #         if df_with_ref_col is None:
+                #             df_with_ref_col = df[[col]]
+                #             df_with_ref_col = df_with_ref_col.rename({col: f"{new_col}_{inx + 1}"}, axis = 1)
+                #         else:
+                #             df_with_ref_col[f"{new_col}_{inx + 1}"] = df[col]
+                #         df_with_ref_col[f"{new_col}_{inx + 1} notes"] = col
+                #         # add these cols in group but not need to melt
+                #         new_col_to_not_melt.append(f"{new_col}_{inx + 1}")
+                #         new_col_to_not_melt.append(f"{new_col}_{inx + 1} notes")
+                old_col_lst = []
+                for col, _ in new_col_to_old_col_lst[new_col]:
+                    # NOTE: special case, if col is the same as new_col, then melt will get error
+                    if col in new_col_to_old_col_lst:
+                        old_col_lst.append(col + " ")
+                    else:
+                        old_col_lst.append(col)
+                    if df_with_ref_col is None:
+                        if col in new_col_to_old_col_lst:
+                            df_with_ref_col = df[[col]].rename({col: col + " "}, axis = 1)
+                        else:
+                            df_with_ref_col = df[[col]]
+                    else:
+                        if col in new_col_to_old_col_lst:
+                            df_with_ref_col[col + " "] = df[col]
+                        else:
+                            df_with_ref_col[col] = df[col]
+                new_col_to_old_col_lst_to_melt[new_col] = old_col_lst.copy()
+        # Melting stage
+        if len(new_col_to_old_col_lst_to_melt) > 0:
+            # now melting column in same groups
+            # Instead of keep melting, for each group, we make a new dataset of 
+            # [stable col] + [to be melt col] => melt them as a new df
+            # do this for each gorup and then join together based on stable col
+            df_with_melt_col = None 
+            for new_col in new_col_to_old_col_lst_to_melt:
+                temp_df = deepcopy(df_with_ref_col[new_col_to_not_melt + new_col_to_old_col_lst_to_melt[new_col]])
+                # create a temp row id for stable join
+                temp_df["_row_id"] = np.arange(temp_df.shape[0])
+                temp_df = temp_df.melt(
+                    id_vars = new_col_to_not_melt + ["_row_id"],    
+                    value_vars = new_col_to_old_col_lst_to_melt[new_col], 
+                    var_name = f"{new_col} notes",      
+                    value_name = f"{new_col}"
+                )
+                if df_with_melt_col is None:
+                    df_with_melt_col = deepcopy(temp_df)
+                else:
+                    df_with_melt_col = df_with_melt_col.merge(temp_df, how = "inner", on = ["_row_id"] + new_col_to_not_melt)
+            df_with_melt_col = df_with_melt_col.drop("_row_id", axis = 1)
+            return df_with_melt_col
+        else:
+            # special case when all col are unique
+            if df_with_ref_col is None:
+                return pd.DataFrame()
+            else:
+                return df_with_ref_col
+
+    def format_original_table(self, df: pd.DataFrame, remove_unique_col: bool = False):
+        """
+        Format final table by running pipeline of col matching -> final format
+        """
+        # first do matching
+        ref_col_to_col_lst = self.match_many_col_to_ref_col(df)
+
+        # finally, filter col that cannot have multiple copies
+        for ref_col in ref_col_to_col_lst:
+            if ref_col not in self.referencing_col_with_multiple_copies and len(ref_col_to_col_lst[ref_col]) > 1:
+                best_col, best_score = None, float("-inf")
+                for col, score in ref_col_to_col_lst[ref_col]:
+                    if score > best_score:
+                        best_col = col
+                        best_score = score
+                ref_col_to_col_lst[ref_col] = [(best_col, best_score)]
+
+        # then do final melt
+        final_df = self.format_original_table_from_col_matching(df, ref_col_to_col_lst, remove_unique_col)
+
+        # columns that is not in referencing col list will be created later
+        for col in self.referencing_col_lst:
+            if col not in final_df.columns:
+                final_df[col] = pd.NA
+        return final_df

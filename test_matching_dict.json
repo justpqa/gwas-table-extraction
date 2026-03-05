@@ -3,41 +3,45 @@
         "SNP": [
             [
                 "IGAP SNP | SNP | SNP",
-                0.6446783542633057
-            ],
-            [
-                "IGAP SNP | Closest gene | Closest gene",
-                0.4799412488937378
-            ],
-            [
-                "IGAP SNP | ADGC a | OR",
-                0.5189125537872314
+                0.723322868347168
             ],
             [
                 "Exonic SNP | SNP ID | SNP ID",
-                0.6635932922363281
+                0.6262033581733704
+            ]
+        ],
+        "IGAP SNP | Closest gene | Closest gene": [
+            [
+                "IGAP SNP | Closest gene | Closest gene",
+                1.0
+            ]
+        ],
+        "Effect": [
+            [
+                "IGAP SNP | ADGC a | OR",
+                0.5034226179122925
             ],
             [
                 "Exonic SNP | ADGC a | OR",
-                0.609904944896698
+                0.5081081390380859
             ],
             [
                 "Exonic SNP | ADSP b | OR",
-                0.6003086566925049
+                0.5148085355758667
             ]
         ],
         "P-value": [
             [
                 "IGAP SNP | ADGC a | P-value",
-                0.752504825592041
+                0.6303266882896423
             ],
             [
                 "Exonic SNP | ADGC a | P-value",
-                0.7648813724517822
+                0.6122616529464722
             ],
             [
                 "Exonic SNP | ADSP b | P-value",
-                0.7647982835769653
+                0.6091422438621521
             ]
         ]
     },
@@ -45,7 +49,7 @@
         "SNP": [
             [
                 "IGAP SNP | IGAP SNP",
-                0.5941115617752075
+                0.6784640550613403
             ]
         ],
         "Closest gene | Closest gene": [
@@ -57,27 +61,29 @@
         "Position": [
             [
                 "Probe set ID a | Probe set ID a",
-                0.5362222790718079
-            ],
+                0.5196821689605713
+            ]
+        ],
+        "Gene | Gene": [
             [
                 "Gene | Gene",
-                0.41137322783470154
+                1.0
             ]
         ],
         "Effect": [
             [
                 "eQTL association | \u03b2^",
-                0.5098397731781006
+                0.6667296886444092
             ]
         ],
         "P-value": [
             [
                 "eQTL association | P-valueb",
-                0.7653515338897705
+                0.7182183265686035
             ],
             [
                 "AD association | P-value c",
-                0.7758418321609497
+                0.6312751770019531
             ]
         ]
     },
@@ -85,7 +91,7 @@
         "SNP": [
             [
                 "IGAP SNP",
-                0.579810380935669
+                0.56630939245224
             ]
         ],
         "Closest  gene": [
@@ -97,7 +103,7 @@
         "Position": [
             [
                 "Probe set ID a",
-                0.4994127154350281
+                0.42108261585235596
             ]
         ],
         "Gene  expression": [
@@ -115,13 +121,13 @@
         "Effect": [
             [
                 "\u03b2^",
-                0.4993380904197693
+                0.6031671762466431
             ]
         ],
         "P-value": [
             [
                 "P-value b",
-                0.7425382137298584
+                0.681892991065979
             ]
         ]
     },
@@ -129,301 +135,135 @@
         "Position": [
             [
                 "Probe set ID a | Probe set ID a",
-                0.49349552392959595
+                0.4469459652900696
             ]
         ],
-        "EC | \u03b2^": [
+        "Effect": [
             [
                 "EC | \u03b2^",
-                1.0
+                0.5899072885513306
+            ],
+            [
+                "FCTX | \u03b2^",
+                0.5878970623016357
+            ],
+            [
+                "HIPP | \u03b2^",
+                0.5958865880966187
+            ],
+            [
+                "TCTX | \u03b2^",
+                0.6051647663116455
             ]
         ],
         "P-value": [
             [
                 "EC | P-value",
-                0.78243088722229
+                0.7522554397583008
             ],
             [
                 "FCTX | P-value",
-                0.6986386179924011
+                0.680659294128418
             ],
             [
                 "HIPP | P-value",
-                0.7636691927909851
+                0.7239100933074951
             ],
             [
                 "TCTX | P-value",
-                0.7670282125473022
-            ]
-        ],
-        "FCTX | \u03b2^": [
-            [
-                "FCTX | \u03b2^",
-                1.0
-            ]
-        ],
-        "HIPP | \u03b2^": [
-            [
-                "HIPP | \u03b2^",
-                1.0
-            ]
-        ],
-        "Effect": [
-            [
-                "TCTX | \u03b2^",
-                0.4023553729057312
+                0.7291043400764465
             ]
         ]
     },
     "30979435_PMC6783343_T1_from_pmc.xlsx": {
-        "SNP": [
+        "Unnamed: 0_level_0 | Gene": [
             [
                 "Unnamed: 0_level_0 | Gene",
-                0.4393678605556488
-            ],
-            [
-                "Top SNP in gene | Top SNP in gene",
-                0.6773247718811035
+                1.0
             ]
         ],
         "Chr": [
             [
                 "Unnamed: 1_level_0 | Chr",
-                0.6727339029312134
+                0.52382493019104
             ]
         ],
         "P-value": [
             [
                 "P value | P value",
-                0.7387067079544067
+                0.5817373394966125
             ],
             [
                 "Age 60\u201379 years (younger) | P value",
-                0.7423481941223145
+                0.6868941187858582
             ],
             [
                 "Age \u2265 80 years (older) | P value",
-                0.7745984792709351
+                0.6785179376602173
             ],
             [
                 "Heterogeneity between the younger & older age groups | P value",
-                0.7703710794448853
+                0.6857695579528809
+            ]
+        ],
+        "SNP": [
+            [
+                "Top SNP in gene | Top SNP in gene",
+                0.6514889001846313
             ]
         ],
         "RA": [
             [
                 "A1/A2 | A1/A2",
-                0.604888916015625
+                0.730343759059906
             ]
         ],
         "AF": [
             [
                 "Age 60\u201379 years (younger) | Frq",
-                0.4497758150100708
+                0.5291823148727417
             ],
             [
                 "Age \u2265 80 years (older) | Frq",
-                0.4339182376861572
-            ]
-        ],
-        "Age 60\u201379 years (younger) | N": [
-            [
-                "Age 60\u201379 years (younger) | N",
-                1.0
+                0.5280488729476929
             ]
         ],
         "Effect": [
             [
+                "Age 60\u201379 years (younger) | N",
+                0.5184243321418762
+            ],
+            [
                 "Age 60\u201379 years (younger) | OR (95%CI)",
-                0.4995565414428711
+                0.5069254636764526
+            ],
+            [
+                "Age \u2265 80 years (older) | N",
+                0.5020005106925964
             ],
             [
                 "Age \u2265 80 years (older) | OR (95%CI)",
-                0.506210207939148
-            ]
-        ],
-        "Age \u2265 80 years (older) | N": [
-            [
-                "Age \u2265 80 years (older) | N",
-                1.0
+                0.530691385269165
             ]
         ]
     },
-    "30979435_PMC6783343_0_from_pdf.csv": {
+    "28247064_PMC5613285_T4_from_pmc.xlsx": {
+        "Analyte": [
+            [
+                "Analyte",
+                1.0
+            ]
+        ],
         "SNP": [
             [
-                "Gene",
-                0.4393678605556488
-            ],
-            [
-                "Top SNP in gene.",
-                0.6773247718811035
+                "SNP",
+                0.6469998359680176
             ]
         ],
-        "Chr": [
+        "Tissue/cell type": [
             [
-                "Chr",
-                0.6727339029312134
-            ]
-        ],
-        "P-value": [
-            [
-                "p value.",
-                0.40752965211868286
-            ],
-            [
-                "Age 60 e 79 y (younger).p value",
-                0.4264649450778961
-            ],
-            [
-                "Age /C21 80 y (older).p value",
-                0.5158348083496094
-            ],
-            [
-                "Heterogeneity between the younger & older age groups.p value",
-                0.5418776273727417
-            ]
-        ],
-        "RA": [
-            [
-                "A1/A2.",
-                0.6531671285629272
-            ]
-        ],
-        "AF": [
-            [
-                "Age 60 e 79 y (younger).Frq",
-                0.4497758150100708
-            ],
-            [
-                "Age /C21 80 y (older).Frq",
-                0.4339182376861572
-            ]
-        ],
-        "Age 60 e 79 y (younger).N": [
-            [
-                "Age 60 e 79 y (younger).N",
+                "Tissue/cell type",
                 1.0
-            ]
-        ],
-        "Effect": [
-            [
-                "Age 60 e 79 y (younger).OR (95% CI)",
-                0.4995565414428711
-            ],
-            [
-                "Age /C21 80 y (older).OR (95% CI)",
-                0.506210207939148
-            ]
-        ],
-        "Age /C21 80 y (older).N": [
-            [
-                "Age /C21 80 y (older).N",
-                1.0
-            ]
-        ]
-    },
-    "30617256_PMC6836675_T1_from_pmc.xlsx": {
-        "SNP": [
-            [
-                "Region | Locus",
-                0.4804741144180298
-            ],
-            [
-                "Case-control status (Phase 1) | SNP",
-                0.6476064920425415
-            ],
-            [
-                "AD-by-proxy (Phase 2) | SNP",
-                0.6603268384933472
-            ],
-            [
-                "Overall (Phase 3) | SNP",
-                0.660340428352356
-            ]
-        ],
-        "Chr": [
-            [
-                "Region | Chr",
-                0.6408736705780029
-            ]
-        ],
-        "Region | Gene": [
-            [
-                "Region | Gene",
-                1.0
-            ]
-        ],
-        "P-value": [
-            [
-                "Case-control status (Phase 1) | p",
-                0.6874815821647644
-            ],
-            [
-                "AD-by-proxy (Phase 2) | p",
-                0.7377603650093079
-            ],
-            [
-                "Overall (Phase 3) | Z",
-                0.40366894006729126
-            ],
-            [
-                "Overall (Phase 3) | p",
-                0.7129616737365723
-            ]
-        ],
-        "Position": [
-            [
-                "Overall (Phase 3) | bp",
-                0.6496379375457764
-            ]
-        ],
-        "RA": [
-            [
-                "Overall (Phase 3) | A1",
-                0.6727954149246216
-            ],
-            [
-                "Overall (Phase 3) | A2",
-                0.6641620993614197
-            ]
-        ],
-        "AF": [
-            [
-                "Overall (Phase 3) | MAF",
-                0.6496443152427673
-            ]
-        ],
-        "Overall (Phase 3) | direction": [
-            [
-                "Overall (Phase 3) | direction",
-                1.0
-            ]
-        ]
-    },
-    "30617256_PMC6836675_0_from_pdf.csv": {
-        "SNP": [
-            [
-                "Region.Locus",
-                0.4804741144180298
-            ],
-            [
-                "Case-control status (phase 1).SNP",
-                0.6476064920425415
-            ],
-            [
-                "AD-by-proxy (phase 2).SNP",
-                0.6603268384933472
-            ],
-            [
-                "Overall (phase 3).SNP",
-                0.660340428352356
-            ]
-        ],
-        "Chr": [
-            [
-                "Chr",
-                0.6408736705780029
             ]
         ],
         "Gene": [
@@ -432,55 +272,275 @@
                 1.0
             ]
         ],
-        "Case-control status (phase 1).P": [
+        "Effect": [
             [
-                "Case-control status (phase 1).P",
-                1.0
-            ]
-        ],
-        "AD-by-proxy (phase 2).P": [
-            [
-                "AD-by-proxy (phase 2).P",
-                1.0
-            ]
-        ],
-        "Position": [
-            [
-                "Overall (phase 3).bp",
-                0.6496379375457764
-            ]
-        ],
-        "RA": [
-            [
-                "A1",
-                0.6727954149246216
-            ],
-            [
-                "A2",
-                0.6641620993614197
-            ]
-        ],
-        "AF": [
-            [
-                "MAF",
-                0.6490474939346313
-            ]
-        ],
-        "Z": [
-            [
-                "Z",
-                1.0
+                "Effect size",
+                0.6514979600906372
             ]
         ],
         "P": [
             [
                 "P",
+                0.7167489528656006
+            ]
+        ],
+        "Position": [
+            [
+                "References",
+                0.4577583372592926
+            ]
+        ]
+    },
+    "28247064_PMC5613285_T3_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "SNP [effect allele] | SNP [effect allele] | SNP [effect allele]",
+                0.5578591823577881
+            ]
+        ],
+        "Gene | Gene | Gene": [
+            [
+                "Gene | Gene | Gene",
                 1.0
             ]
         ],
-        "Direction": [
+        "AF": [
             [
-                "Direction",
+                "MAF | MAF | MAF",
+                0.4989309310913086
+            ]
+        ],
+        "CSF levels n = 3146 | Unnamed: 3_level_1 | \u03b2": [
+            [
+                "CSF levels n = 3146 | Unnamed: 3_level_1 | \u03b2",
+                1.0
+            ]
+        ],
+        "P-value": [
+            [
+                "CSF levels n = 3146 | Unnamed: 4_level_1 | P",
+                0.6091785430908203
+            ],
+            [
+                "AD risk [48] n = 74,026 | Unnamed: 6_level_1 | P",
+                0.5949705243110657
+            ],
+            [
+                "Progression n = 1530 | Unnamed: 8_level_1 | P",
+                0.6026731729507446
+            ],
+            [
+                "AAO n = 39,855 | Unnamed: 10_level_1 | P",
+                0.6026508808135986
+            ]
+        ],
+        "AD risk [48] n = 74,026 | Unnamed: 5_level_1 | OR": [
+            [
+                "AD risk [48] n = 74,026 | Unnamed: 5_level_1 | OR",
+                1.0
+            ]
+        ],
+        "Progression n = 1530 | Unnamed: 7_level_1 | \u03b2": [
+            [
+                "Progression n = 1530 | Unnamed: 7_level_1 | \u03b2",
+                1.0
+            ]
+        ],
+        "AAO n = 39,855 | Unnamed: 9_level_1 | \u03b2": [
+            [
+                "AAO n = 39,855 | Unnamed: 9_level_1 | \u03b2",
+                1.0
+            ]
+        ]
+    },
+    "28247064_PMC5613285_T2_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "HGVS | HGVS",
+                0.43397119641304016
+            ],
+            [
+                "SNP[effect allele] | SNP[effect allele]",
+                0.666502058506012
+            ]
+        ],
+        "Gene | Gene": [
+            [
+                "Gene | Gene",
+                1.0
+            ]
+        ],
+        "Function | Function": [
+            [
+                "Function | Function",
+                1.0
+            ]
+        ],
+        "AF": [
+            [
+                "MAF | MAF",
+                0.6388195157051086
+            ]
+        ],
+        "Effect": [
+            [
+                "CSFA\u03b242 | Beta (SE)",
+                0.5875295400619507
+            ],
+            [
+                "CSF ptau181 | Beta (SE)",
+                0.6033244132995605
+            ],
+            [
+                "CSF tau | Beta (SE)",
+                0.59839928150177
+            ]
+        ],
+        "P-value": [
+            [
+                "CSFA\u03b242 | P",
+                0.7255232334136963
+            ],
+            [
+                "CSF ptau181 | P",
+                0.7322821617126465
+            ],
+            [
+                "CSF tau | P",
+                0.7266724109649658
+            ]
+        ]
+    },
+    "28247064_PMC5613285_T1_from_pmc.xlsx": {
+        "Unnamed: 0": [
+            [
+                "Unnamed: 0",
+                1.0
+            ]
+        ],
+        "Position": [
+            [
+                "Knight ADRC",
+                0.4305644631385803
+            ],
+            [
+                "BIOCARD",
+                0.41520899534225464
+            ],
+            [
+                "UPENN",
+                0.4551493525505066
+            ],
+            [
+                "UW",
+                0.4968979060649872
+            ]
+        ],
+        "Cohort": [
+            [
+                "ADNI1",
+                0.44691652059555054
+            ],
+            [
+                "ADNI2",
+                0.45871642231941223
+            ]
+        ],
+        "HB": [
+            [
+                "HB",
+                1.0
+            ]
+        ],
+        "M AYO": [
+            [
+                "M AYO",
+                1.0
+            ]
+        ],
+        "SWEDEN": [
+            [
+                "SWEDEN",
+                1.0
+            ]
+        ]
+    },
+    "30617256_PMC6836675_T1_from_pmc.xlsx": {
+        "Chr": [
+            [
+                "Region | Locus",
+                0.46877047419548035
+            ],
+            [
+                "Region | Chr",
+                0.6092196106910706
+            ]
+        ],
+        "Region | Gene": [
+            [
+                "Region | Gene",
+                1.0
+            ]
+        ],
+        "SNP": [
+            [
+                "Case-control status (Phase 1) | SNP",
+                0.7053149938583374
+            ],
+            [
+                "AD-by-proxy (Phase 2) | SNP",
+                0.7052665948867798
+            ],
+            [
+                "Overall (Phase 3) | SNP",
+                0.708545982837677
+            ]
+        ],
+        "P-value": [
+            [
+                "Case-control status (Phase 1) | p",
+                0.794587254524231
+            ],
+            [
+                "AD-by-proxy (Phase 2) | p",
+                0.7492377758026123
+            ],
+            [
+                "Overall (Phase 3) | p",
+                0.7668288350105286
+            ]
+        ],
+        "Position": [
+            [
+                "Overall (Phase 3) | bp",
+                0.6940136551856995
+            ]
+        ],
+        "RA": [
+            [
+                "Overall (Phase 3) | A1",
+                0.7889375686645508
+            ],
+            [
+                "Overall (Phase 3) | A2",
+                0.7643613219261169
+            ]
+        ],
+        "AF": [
+            [
+                "Overall (Phase 3) | MAF",
+                0.6775966882705688
+            ]
+        ],
+        "Effect": [
+            [
+                "Overall (Phase 3) | Z",
+                0.5678219795227051
+            ]
+        ],
+        "Overall (Phase 3) | direction": [
+            [
+                "Overall (Phase 3) | direction",
                 1.0
             ]
         ]
@@ -492,28 +552,28 @@
                 1.0
             ]
         ],
-        "P-value": [
+        "Effect": [
             [
                 "No. of genes in the pathway in the dataset",
-                0.4602929651737213
+                0.505199134349823
+            ]
+        ],
+        "P-value": [
+            [
+                "Common variant Pa",
+                0.4487806558609009
             ],
             [
                 "Common variant q value",
-                0.5543541312217712
+                0.5503631830215454
             ],
             [
                 "Rare variant Pa",
-                0.49039527773857117
+                0.4522273540496826
             ],
             [
                 "Rare variant q value",
-                0.5576223134994507
-            ]
-        ],
-        "AF": [
-            [
-                "Common variant Pa",
-                0.48021554946899414
+                0.5935842990875244
             ]
         ],
         "Pathway description": [
@@ -536,114 +596,28 @@
                 1.0
             ]
         ],
-        "SNP": [
+        "Effect": [
             [
                 "No. of genes",
-                0.40037208795547485
+                0.5086395740509033
             ]
         ],
         "P-value": [
             [
                 "Common variant P 0 kb",
-                0.6393244862556458
+                0.6477687954902649
             ],
             [
                 "Common variant P 35\u201310 kb",
-                0.6460230350494385
+                0.6562928557395935
             ],
             [
                 "Rare variant P 0 kb",
-                0.6320345401763916
+                0.6710048317909241
             ],
             [
                 "Rare variant P 35\u201310 kb",
-                0.6215927600860596
-            ]
-        ]
-    },
-    "30820047_PMC6463297_0_from_pdf.csv": {
-        "SNP": [
-            [
-                "Unnamed: 0",
-                0.6157842874526978
-            ],
-            [
-                "Closest gene c.Closest gene",
-                0.4196028709411621
-            ]
-        ],
-        "Chr": [
-            [
-                "Chr..Chr.",
-                0.7319314479827881
-            ]
-        ],
-        "Position": [
-            [
-                "Position b.Position",
-                0.505919873714447
-            ]
-        ],
-        "RA": [
-            [
-                "Major/ minor alleles.Major/ minor alleles",
-                0.5726288557052612
-            ]
-        ],
-        "AF": [
-            [
-                "MAF d.MAF",
-                0.6273393630981445
-            ]
-        ],
-        "Effect": [
-            [
-                "stage 1 discovery ( n /thinspace = /thinspace63,926).OR",
-                0.5467532873153687
-            ],
-            [
-                "stage 2 ( n /thinspace = /thinspace18,845).OR",
-                0.552829384803772
-            ],
-            [
-                "stage 2 ( n /thinspace = /thinspace18,845).95%Ci",
-                0.413716584444046
-            ],
-            [
-                "Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).OR",
-                0.5527629852294922
-            ],
-            [
-                "Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).95%Ci",
-                0.4075172543525696
-            ]
-        ],
-        "Cohort": [
-            [
-                "stage 1 discovery ( n /thinspace = /thinspace63,926).95%Ci",
-                0.4682961106300354
-            ]
-        ],
-        "stage 1 discovery ( n /thinspace = /thinspace63,926).P": [
-            [
-                "stage 1 discovery ( n /thinspace = /thinspace63,926).P",
-                1.0
-            ]
-        ],
-        "P-value": [
-            [
-                "stage 2 ( n /thinspace = /thinspace18,845).P",
-                0.406902551651001
-            ],
-            [
-                "Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).Meta P",
-                0.5404720306396484
-            ]
-        ],
-        "Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).I 2 (%), P": [
-            [
-                "Overall stage 1/thinspace + /thinspacestage 2 ( n /thinspace = /thinspace82,771).I 2 (%), P",
-                1.0
+                0.6637345552444458
             ]
         ]
     },
@@ -651,81 +625,83 @@
         "SNP": [
             [
                 "Unnamed: 0_level_0 | Variant a",
-                0.6092921495437622
-            ],
-            [
-                "Unnamed: 3_level_0 | Closest genec",
-                0.42540985345840454
+                0.4463507831096649
             ]
         ],
         "Chr": [
             [
                 "Unnamed: 1_level_0 | chr.",
-                0.6713723540306091
+                0.46391355991363525
             ]
         ],
-        "Position": [
+        "Unnamed: 2_level_0 | Positionb": [
             [
                 "Unnamed: 2_level_0 | Positionb",
-                0.460541307926178
+                1.0
+            ]
+        ],
+        "Unnamed: 3_level_0 | Closest genec": [
+            [
+                "Unnamed: 3_level_0 | Closest genec",
+                1.0
             ]
         ],
         "RA": [
             [
                 "Unnamed: 4_level_0 | Major/minor alleles",
-                0.5726288557052612
+                0.5865197777748108
             ]
         ],
         "AF": [
             [
                 "Unnamed: 5_level_0 | MAFd",
-                0.6067736148834229
+                0.45424342155456543
             ]
         ],
-        "Effect": [
+        "Stage": [
             [
                 "Stage 1 discovery (n = 63,926) | OR",
-                0.5467532873153687
+                0.44909313321113586
             ],
             [
-                "Stage 2 (n = 18,845) | OR",
-                0.552829384803772
+                "Stage 1 discovery (n = 63,926) | 95% CIe",
+                0.46001362800598145
             ],
             [
                 "Stage 2 (n = 18,845) | 95% CIe",
-                0.428217351436615
-            ],
-            [
-                "Overall stage 1 + stage 2 (n = 82,771) | OR",
-                0.5527629852294922
+                0.40464115142822266
             ],
             [
                 "Overall stage 1 + stage 2 (n = 82,771) | 95% CIe",
-                0.41855481266975403
-            ]
-        ],
-        "Cohort": [
-            [
-                "Stage 1 discovery (n = 63,926) | 95% CIe",
-                0.4740443825721741
+                0.4083200991153717
             ]
         ],
         "P-value": [
             [
                 "Stage 1 discovery (n = 63,926) | P",
-                0.6850153207778931
+                0.6100801229476929
             ],
             [
                 "Stage 2 (n = 18,845) | P",
-                0.7078959941864014
+                0.6106358766555786
             ],
             [
                 "Overall stage 1 + stage 2 (n = 82,771) | Meta P",
-                0.7093628644943237
+                0.6085134148597717
             ],
             [
                 "Overall stage 1 + stage 2 (n = 82,771) | I2 (%), Pf",
-                0.44838494062423706
+                0.4095533490180969
+            ]
+        ],
+        "Effect": [
+            [
+                "Stage 2 (n = 18,845) | OR",
+                0.4339657723903656
+            ],
+            [
+                "Overall stage 1 + stage 2 (n = 82,771) | OR",
+                0.4340514540672302
             ]
         ]
     },
@@ -733,19 +709,19 @@
         "SNP": [
             [
                 "Stage 3A | SNPa",
-                0.6320605874061584
+                0.6297479867935181
             ]
         ],
         "Chr": [
             [
                 "Stage 3A | Chr.",
-                0.6610638499259949
+                0.6239511370658875
             ]
         ],
         "Position": [
             [
                 "Stage 3A | Positionb",
-                0.4355379045009613
+                0.6183885335922241
             ]
         ],
         "Stage 3A | Closest genec": [
@@ -757,57 +733,53 @@
         "RA": [
             [
                 "Stage 3A | Major/ minor allele",
-                0.5520792007446289
+                0.7603269815444946
             ]
         ],
         "AF": [
             [
                 "Stage 3A | MAFe",
-                0.5512399077415466
+                0.5676009654998779
             ]
         ],
         "Effect": [
             [
                 "Stage 1 + 2 (n = 82,771) | OR",
-                0.5274256467819214
+                0.6419175267219543
+            ],
+            [
+                "Stage 1 + 2 (n = 82,771) | 95% CIf",
+                0.5458498001098633
             ],
             [
                 "Stage 3A (n = 11,666) | OR",
-                0.5295467376708984
+                0.6383293867111206
+            ],
+            [
+                "Stage 3A (n = 11,666) | 95% CIf",
+                0.5056186318397522
             ],
             [
                 "Overall (n = 94,437) | OR",
-                0.5265882015228271
+                0.6296553611755371
             ],
             [
                 "Overall (n = 94,437) | 95% CIf",
-                0.43378937244415283
-            ]
-        ],
-        "Stage 1 + 2 (n = 82,771) | 95% CIf": [
-            [
-                "Stage 1 + 2 (n = 82,771) | 95% CIf",
-                1.0
+                0.5290071964263916
             ]
         ],
         "P-value": [
             [
                 "Stage 1 + 2 (n = 82,771) | P",
-                0.6551910638809204
+                0.7174157500267029
             ],
             [
                 "Stage 3A (n = 11,666) | P",
-                0.6951203346252441
+                0.7233023643493652
             ],
             [
                 "Overall (n = 94,437) | Meta P",
-                0.6941023468971252
-            ]
-        ],
-        "Stage 3A (n = 11,666) | 95% CIf": [
-            [
-                "Stage 3A (n = 11,666) | 95% CIf",
-                1.0
+                0.7185088396072388
             ]
         ]
     },
@@ -821,45 +793,45 @@
         "Effect": [
             [
                 "RNA-Seq | CER | \u03b2 value (SE)",
-                0.5518528819084167
+                0.6501646041870117
             ],
             [
                 "RNA-Seq | TCX | \u03b2 value (SE)",
-                0.5505595207214355
+                0.6525872349739075
             ],
             [
                 "Microarray | CER | \u03b2 value (SE)",
-                0.5405893325805664
+                0.6166638135910034
             ],
             [
                 "Microarray | DLPFC | \u03b2 value (SE)",
-                0.5470578670501709
+                0.6178883910179138
             ],
             [
                 "Microarray | VCX | \u03b2 value (SE)",
-                0.5440120697021484
+                0.6173049807548523
             ]
         ],
         "P-value": [
             [
                 "RNA-Seq | CER | P value",
-                0.6992135047912598
+                0.6535040140151978
             ],
             [
                 "RNA-Seq | TCX | P value",
-                0.7278379201889038
+                0.76115882396698
             ],
             [
                 "Microarray | CER | P value",
-                0.6855233907699585
+                0.7343604564666748
             ],
             [
                 "Microarray | DLPFC | P value",
-                0.7761914730072021
+                0.73335200548172
             ],
             [
                 "Microarray | VCX | P value",
-                0.7395997643470764
+                0.746350884437561
             ]
         ]
     },
@@ -867,17 +839,17 @@
         "Chr": [
             [
                 "Unnamed: 0_level_0 | Chromosome",
-                0.7091495394706726
+                0.5875873565673828
             ]
         ],
         "Position": [
             [
                 "Unnamed: 1_level_0 | Start",
-                0.44859829545021057
+                0.6194944977760315
             ],
             [
                 "Unnamed: 2_level_0 | End",
-                0.42227524518966675
+                0.571348249912262
             ]
         ],
         "Unnamed: 3_level_0 | Gene": [
@@ -889,27 +861,27 @@
         "P-value": [
             [
                 "Univariate gene-based tests | NP",
-                0.6765689849853516
+                0.599892795085907
             ],
             [
                 "Univariate gene-based tests | NFT",
-                0.6564352512359619
+                0.6007578372955322
             ],
             [
                 "Univariate gene-based tests | CAA",
-                0.6834650039672852
+                0.5957504510879517
             ],
             [
                 "Pleiotropy gene-based tests | NP + NFT",
-                0.6245255470275879
+                0.5736726522445679
             ],
             [
                 "Pleiotropy gene-based tests | NP + CAA",
-                0.6190827488899231
+                0.5916905403137207
             ],
             [
                 "Pleiotropy gene-based tests | NFT + CAA",
-                0.6207631826400757
+                0.5529683232307434
             ]
         ]
     },
@@ -917,13 +889,13 @@
         "Chr": [
             [
                 "Unnamed: 0_level_0 | Unnamed: 0_level_1 | Chromosome",
-                0.6997159719467163
+                0.6311327219009399
             ]
         ],
         "SNP": [
             [
                 "Unnamed: 1_level_0 | Unnamed: 1_level_1 | SNP",
-                0.5977967977523804
+                0.6775579452514648
             ]
         ],
         "Unnamed: 2_level_0 | Unnamed: 2_level_1 | Gene": [
@@ -935,63 +907,65 @@
         "RA": [
             [
                 "Unnamed: 3_level_0 | Unnamed: 3_level_1 | EA",
-                0.6905543804168701
+                0.5389503240585327
             ],
             [
                 "Unnamed: 4_level_0 | Unnamed: 4_level_1 | RA",
-                0.738206148147583
-            ],
+                0.6731707453727722
+            ]
+        ],
+        "AF": [
             [
                 "Unnamed: 5_level_0 | Unnamed: 5_level_1 | EAF",
-                0.6688244938850403
+                0.6420698165893555
             ]
         ],
         "Effect": [
             [
                 "Univariate models | AD status | \u03b2 value (SE)",
-                0.5610911250114441
+                0.6558738350868225
             ],
             [
                 "Univariate models | NP | \u03b2 value (SE)",
-                0.5615378618240356
+                0.66092848777771
             ],
             [
                 "Univariate models | NFT | \u03b2 value (SE)",
-                0.5532022714614868
+                0.6616836786270142
             ],
             [
                 "Univariate models | CAA | \u03b2 value (SE)",
-                0.5440844893455505
+                0.6517279744148254
             ]
         ],
         "P-value": [
             [
                 "Univariate models | AD status | P value",
-                0.7916383743286133
+                0.7447885870933533
             ],
             [
                 "Univariate models | NP | P value",
-                0.7796822190284729
+                0.7495327591896057
             ],
             [
                 "Univariate models | NFT | P value",
-                0.7360464334487915
+                0.7110902667045593
             ],
             [
                 "Univariate models | CAA | P value",
-                0.7738890051841736
+                0.734493613243103
             ],
             [
                 "Joint models | NP + NFT | P value",
-                0.7385224103927612
+                0.7237727642059326
             ],
             [
                 "Joint models | NP + CAA | P value",
-                0.7189385294914246
+                0.6889280080795288
             ],
             [
                 "Joint models | NFT + CAA | P value",
-                0.7261147499084473
+                0.7171180248260498
             ]
         ],
         "Joint models | NP + NFT | Direction": [
@@ -1013,129 +987,63 @@
             ]
         ]
     },
-    "29777097_PMC5959890_0_from_pdf.csv": {
-        "SNP": [
-            [
-                "Locus",
-                0.48603811860084534
-            ],
-            [
-                "Lead SNP",
-                0.6666811108589172
-            ]
-        ],
-        "Chr": [
-            [
-                "Chr",
-                0.6158106327056885
-            ]
-        ],
-        "RA": [
-            [
-                "A1",
-                0.7011879086494446
-            ],
-            [
-                "A2",
-                0.6578723192214966
-            ]
-        ],
-        "Position": [
-            [
-                "BP",
-                0.6574130654335022
-            ],
-            [
-                "Locus start",
-                0.6360223293304443
-            ],
-            [
-                "Locus end",
-                0.6217386722564697
-            ]
-        ],
-        "AF": [
-            [
-                "Freq",
-                0.4226173162460327
-            ]
-        ],
-        "Effect": [
-            [
-                "OR 95% CI",
-                0.5052474141120911
-            ]
-        ],
-        "P-value": [
-            [
-                "P",
-                0.614004909992218
-            ]
-        ],
-        "Direction": [
-            [
-                "Direction",
-                1.0
-            ]
-        ]
-    },
     "29777097_PMC5959890_Tab1_from_pmc.xlsx": {
-        "SNP": [
-            [
-                "Locus",
-                0.48603811860084534
-            ],
-            [
-                "Lead SNP",
-                0.6666811108589172
-            ]
-        ],
         "Chr": [
             [
+                "Locus",
+                0.46004655957221985
+            ],
+            [
                 "Chr",
-                0.6158106327056885
+                0.6520841121673584
+            ]
+        ],
+        "SNP": [
+            [
+                "Lead SNP",
+                0.6980034708976746
             ]
         ],
         "RA": [
             [
                 "A1",
-                0.7011879086494446
+                0.6523103713989258
             ],
             [
                 "A2",
-                0.6578723192214966
+                0.55690997838974
             ]
         ],
         "Position": [
             [
                 "BP",
-                0.6574130654335022
+                0.7055317163467407
             ],
             [
                 "Locus start",
-                0.6360223293304443
+                0.7294394969940186
             ],
             [
                 "Locus end",
-                0.6217386722564697
+                0.7084878087043762
             ]
         ],
         "AF": [
             [
                 "Freq",
-                0.4226173162460327
+                0.5150303840637207
             ]
         ],
         "Effect": [
             [
                 "OR 95% CI",
-                0.5052474141120911
+                0.5528038740158081
             ]
         ],
-        "P-value": [
+        "P": [
             [
                 "P",
-                0.7578873038291931
+                0.7669540643692017
             ]
         ],
         "Directiona": [
@@ -1145,60 +1053,168 @@
             ]
         ]
     },
-    "30930738_PMC6425305_0_from_pdf.csv": {
-        "SNP": [
+    "28780673_PMC5693762_T2_from_pmc.xlsx": {
+        "Trait 1": [
             [
-                "SNP",
-                0.5985006093978882
+                "Trait 1",
+                1.0
             ]
         ],
-        "Chr": [
+        "Trait 2: Cancer": [
             [
-                "Chr. region",
-                0.6595807075500488
+                "Trait 2: Cancer",
+                1.0
             ]
         ],
         "Position": [
             [
-                "Position",
-                0.5084048509597778
-            ],
-            [
-                "Location relative to the closest gene",
-                0.5840801000595093
+                "#SNPsc",
+                0.6466748714447021
             ]
         ],
-        "Closest gene": [
+        "Effect": [
             [
-                "Closest gene",
-                1.0
+                "co-h2 (SE)",
+                0.6192946434020996
+            ],
+            [
+                "rg",
+                0.46957388520240784
+            ],
+            [
+                "rg SE",
+                0.5978626012802124
             ]
         ],
         "P-value": [
             [
-                "P -value . AD /",
-                0.7532057762145996
-            ],
+                "p-value",
+                0.6779569983482361
+            ]
+        ]
+    },
+    "28780673_PMC5693762_T1_from_pmc.xlsx": {
+        "Dataset": [
             [
-                "P -value . BIP /",
-                0.7504416704177856
+                "Dataset",
+                1.0
             ]
         ],
-        "conjFDR . AD & BIP /": [
+        "SNP": [
             [
-                "conjFDR . AD & BIP /",
+                "#SNPs",
+                0.518792986869812
+            ]
+        ],
+        "Cohort": [
+            [
+                "#Studya",
+                0.4342830181121826
+            ]
+        ],
+        "#Casea": [
+            [
+                "#Casea",
                 1.0
+            ]
+        ],
+        "#Controla": [
+            [
+                "#Controla",
+                1.0
+            ]
+        ],
+        "#Total samples": [
+            [
+                "#Total samples",
+                1.0
+            ]
+        ],
+        "Imputation QC": [
+            [
+                "Imputation QC",
+                1.0
+            ]
+        ]
+    },
+    "28780673_PMC5693762_T3_from_pmc.xlsx": {
+        "SNP": [
+            [
+                "SNP | SNP",
+                0.8081223368644714
+            ]
+        ],
+        "Chr": [
+            [
+                "CHR | CHR",
+                0.7474137544631958
+            ]
+        ],
+        "Position": [
+            [
+                "Position | Position",
+                0.6277512311935425
+            ],
+            [
+                "CPMA stat | CPMA stat",
+                0.44587403535842896
             ]
         ],
         "RA": [
             [
-                "Effective/ other allele",
-                0.5892931222915649
+                "Eff allele | Eff allele",
+                0.6907051801681519
+            ],
+            [
+                "Ref allele | Ref allele",
+                0.6942606568336487
             ]
         ],
-        "Direction of effect in AD/BIP": [
+        "Effect": [
             [
-                "Direction of effect in AD/BIP",
+                "AD | z-score",
+                0.45933470129966736
+            ],
+            [
+                "Breast cancer (overall) | z-score",
+                0.5262089967727661
+            ],
+            [
+                "Lung cancer (overall) | z-score",
+                0.5335229635238647
+            ]
+        ],
+        "P-value": [
+            [
+                "AD | p-value",
+                0.7772114872932434
+            ],
+            [
+                "Breast cancer (overall) | p-value",
+                0.759398341178894
+            ],
+            [
+                "Lung cancer (overall) | p-value",
+                0.8079897165298462
+            ],
+            [
+                "CPMA p-value | CPMA p-value",
+                0.737718939781189
+            ],
+            [
+                "FDR | FDR",
+                0.6893339157104492
+            ]
+        ],
+        "Gene | Gene": [
+            [
+                "Gene | Gene",
+                1.0
+            ]
+        ],
+        "Nearest gene | Nearest gene": [
+            [
+                "Nearest gene | Nearest gene",
                 1.0
             ]
         ]
@@ -1207,23 +1223,19 @@
         "SNP": [
             [
                 "SNP",
-                0.5985006093978882
+                0.6790033578872681
             ]
         ],
         "Chr": [
             [
                 "Chr. region",
-                0.6595807075500488
+                0.503944456577301
             ]
         ],
         "Position": [
             [
                 "Position",
-                0.5084048509597778
-            ],
-            [
-                "Location relative to the closest gene",
-                0.5840801000595093
+                0.6053907871246338
             ]
         ],
         "Closest gene": [
@@ -1232,32 +1244,36 @@
                 1.0
             ]
         ],
+        "Location relative to the closest gene": [
+            [
+                "Location relative to the closest gene",
+                1.0
+            ]
+        ],
         "P-value": [
             [
                 "P-value(AD)",
-                0.7007535696029663
+                0.7548113465309143
             ],
             [
                 "P-value(BIP)",
-                0.7201761603355408
+                0.7383111715316772
             ]
         ],
-        "conjFDR(AD&BIP)": [
+        "Effect": [
             [
                 "conjFDR(AD&BIP)",
-                1.0
+                0.41244909167289734
+            ],
+            [
+                "Direction of effect in AD/BIP",
+                0.4116894602775574
             ]
         ],
         "RA": [
             [
                 "Effective/ other allele",
-                0.5892931222915649
-            ]
-        ],
-        "Direction of effect in AD/BIP": [
-            [
-                "Direction of effect in AD/BIP",
-                1.0
+                0.6799830794334412
             ]
         ]
     },
@@ -1268,78 +1284,40 @@
                 1.0
             ]
         ],
-        "SNP": [
+        "Effect": [
             [
                 "rs405509-TT | \u03b54/\u03b54 vs. \u03b53/\u03b53 (n = 175) | F-value",
-                0.677034318447113
-            ],
-            [
-                "rs405509-TT | \u03b54/\u03b54 vs. \u03b53/\u03b53 (n = 175) | p",
-                0.6425552368164062
+                0.5177398920059204
             ],
             [
                 "rs405509-TT | \u03b53/\u03b54 vs. \u03b53/\u03b53 (n = 239) | F-value",
-                0.6470715999603271
+                0.5629723072052002
             ],
             [
                 "rs405509-TT | \u03b53/\u03b54 vs. \u03b53/\u03b53 (n = 239) | p",
-                0.6092088222503662
+                0.580157995223999
             ],
             [
                 "rs405509-GG | \u03b54/\u03b54 vs. \u03b53/\u03b53 (n = 128) | F-value",
-                0.6377052664756775
+                0.575849175453186
             ],
             [
                 "rs405509-GG | \u03b54/\u03b54 vs. \u03b53/\u03b53 (n = 128) | p",
-                0.5986692309379578
+                0.583666980266571
             ],
             [
                 "rs405509-GG | \u03b53/\u03b54 vs. \u03b53/\u03b53 (n = 161) | F-value",
-                0.6229746341705322
+                0.6037869453430176
             ],
             [
                 "rs405509-GG | \u03b53/\u03b54 vs. \u03b53/\u03b53 (n = 161) | p",
-                0.5975654721260071
-            ]
-        ]
-    },
-    "31426376_PMC6723529_0_from_pdf.csv": {
-        "\u03b5 4/ \u03b5 4.Population": [
-            [
-                "\u03b5 4/ \u03b5 4.Population",
-                1.0
-            ]
-        ],
-        "SNP": [
-            [
-                "individuals,.rs405509 Table 2. Modifying",
-                0.4521670341491699
-            ],
-            [
-                "consistent.n",
-                0.5388578176498413
-            ],
-            [
-                "\u03b5 3 / \u03b5 3 \u03b5 3 with our association analysis..Odds (95% effect of rs405509 on Alzheimer's",
-                0.5656271576881409
-            ],
-            [
-                "\u03b5 4 / \u03b5 4.Ratio (apolipoprotein genotype",
-                0.4559527337551117
+                0.5944425463676453
             ]
         ],
         "P-value": [
             [
-                "\u03b5 3 / \u03b5 3 \u03b5 3 with our association analysis..Ratio CI) association",
-                0.4773952066898346
-            ],
-            [
-                "p Odds (95% CI) of APOE E) disease.",
-                0.4779778718948364
-            ],
-            [
-                "\u03b5 4 / \u03b5 4.p and",
-                0.4909486770629883
+                "rs405509-TT | \u03b54/\u03b54 vs. \u03b53/\u03b53 (n = 175) | p",
+                0.6371042132377625
             ]
         ]
     },
@@ -1347,41 +1325,39 @@
         "Population": [
             [
                 "Population | Population",
-                0.8110930919647217
+                0.5152016878128052
             ]
         ],
-        "N | N": [
+        "Position": [
             [
                 "N | N",
-                1.0
+                0.5004469156265259
             ]
         ],
-        "Cohort": [
+        "Control/AD | Control/AD": [
             [
                 "Control/AD | Control/AD",
-                0.4549925625324249
+                1.0
             ]
         ],
         "Effect": [
             [
                 "\u03b53/\u03b54 | OR (95% CI) a",
-                0.4754531979560852
+                0.5266739726066589
+            ],
+            [
+                "\u03b54/\u03b54 | OR (95% CI) a",
+                0.5328525900840759
             ]
         ],
         "P-value": [
             [
                 "\u03b53/\u03b54 | p",
-                0.7346789836883545
+                0.7401489615440369
             ],
             [
                 "\u03b54/\u03b54 | p",
-                0.699268639087677
-            ]
-        ],
-        "SNP": [
-            [
-                "\u03b54/\u03b54 | OR (95% CI) a",
-                0.5042496919631958
+                0.7357407212257385
             ]
         ]
     },
@@ -1389,19 +1365,19 @@
         "Population": [
             [
                 "Population | Population",
-                0.7923392653465271
+                0.5134913921356201
             ]
         ],
         "RA": [
             [
                 "rs405509 | rs405509",
-                0.45288923382759094
+                0.4965548813343048
             ]
         ],
-        "n | n": [
+        "Position": [
             [
                 "n | n",
-                1.0
+                0.5326316356658936
             ]
         ],
         "\u03b53/\u03b53 | Unnamed: 3_level_1": [
@@ -1410,24 +1386,26 @@
                 1.0
             ]
         ],
-        "SNP": [
+        "Effect": [
             [
                 "\u03b53/\u03b54 | Odds Ratio (95% CI)",
-                0.48314768075942993
-            ],
-            [
-                "\u03b54/\u03b54 | Odds Ratio (95% CI)",
-                0.4436047077178955
+                0.4788523018360138
             ]
         ],
         "P-value": [
             [
                 "\u03b53/\u03b54 | p",
-                0.7167975902557373
+                0.7431455850601196
             ],
             [
                 "\u03b54/\u03b54 | p",
-                0.7116461396217346
+                0.7346348762512207
+            ]
+        ],
+        "\u03b54/\u03b54 | Odds Ratio (95% CI)": [
+            [
+                "\u03b54/\u03b54 | Odds Ratio (95% CI)",
+                1.0
             ]
         ]
     },
@@ -1435,13 +1413,13 @@
         "SNP": [
             [
                 "SNP | SNP",
-                0.6473381519317627
+                0.7881399393081665
             ]
         ],
         "Chr": [
             [
                 "Chr | Chr",
-                0.7671300768852234
+                0.5463252663612366
             ]
         ],
         "Gene+ | Gene+": [
@@ -1459,83 +1437,29 @@
         "Effect": [
             [
                 "CSF A\u03b242 | Male \u03b2 (SE)",
-                0.5415565967559814
+                0.4934161901473999
             ],
             [
                 "CSF A\u03b242 | Female \u03b2 (SE)",
-                0.5340784788131714
+                0.47755423188209534
             ],
             [
                 "CSF A\u03b242 | Interaction \u03b2 (SE)",
-                0.564649760723114
+                0.4779578447341919
             ]
         ],
         "P-value": [
             [
                 "CSF A\u03b242 | Male P",
-                0.6272653341293335
+                0.557650089263916
             ],
             [
                 "CSF A\u03b242 | Female P",
-                0.6797189116477966
+                0.5736501216888428
             ],
             [
                 "CSF A\u03b242 | Interaction P",
-                0.6544767022132874
-            ]
-        ]
-    },
-    "29967939_PMC6280657_2_from_pdf.csv": {
-        "SNP": [
-            [
-                "SNP",
-                0.6455113291740417
-            ]
-        ],
-        "Chr": [
-            [
-                "Chr",
-                0.6677352786064148
-            ]
-        ],
-        "Gene +": [
-            [
-                "Gene +",
-                1.0
-            ]
-        ],
-        "Function": [
-            [
-                "Function",
-                1.0
-            ]
-        ],
-        "Effect": [
-            [
-                "Amyloid Burden.Male \u03b2 (SE)",
-                0.5523277521133423
-            ],
-            [
-                "Amyloid Burden.Female \u03b2 (SE)",
-                0.5365384817123413
-            ],
-            [
-                "Amyloid Burden.Interaction \u03b2 (SE)",
-                0.5837619304656982
-            ]
-        ],
-        "P-value": [
-            [
-                "Amyloid Burden.Male P",
-                0.5703554153442383
-            ],
-            [
-                "Amyloid Burden.Female P",
-                0.6178828477859497
-            ],
-            [
-                "Amyloid Burden.Interaction P",
-                0.6766873598098755
+                0.5975654125213623
             ]
         ]
     },
@@ -1543,13 +1467,13 @@
         "SNP": [
             [
                 "SNP | SNP",
-                0.646466076374054
+                0.7885242700576782
             ]
         ],
         "Chr": [
             [
                 "Chr | Chr",
-                0.7660539150238037
+                0.552894115447998
             ]
         ],
         "Gene+ | Gene+": [
@@ -1567,29 +1491,29 @@
         "Effect": [
             [
                 "Amyloid Burden | Male \u03b2 (SE)",
-                0.549487829208374
+                0.4620959162712097
             ],
             [
                 "Amyloid Burden | Female \u03b2 (SE)",
-                0.5344898104667664
+                0.44689321517944336
             ],
             [
                 "Amyloid Burden | Interaction \u03b2 (SE)",
-                0.5807574987411499
+                0.43282848596572876
             ]
         ],
         "P-value": [
             [
                 "Amyloid Burden | Male P",
-                0.5703554153442383
+                0.5509889125823975
             ],
             [
                 "Amyloid Burden | Female P",
-                0.6178828477859497
+                0.5689661502838135
             ],
             [
                 "Amyloid Burden | Interaction P",
-                0.6766873598098755
+                0.5755264759063721
             ]
         ]
     },
@@ -1600,76 +1524,20 @@
                 1.0
             ]
         ],
-        "Males": [
+        "AF": [
             [
                 "Males",
-                1.0
-            ]
-        ],
-        "Females": [
+                0.4290265440940857
+            ],
             [
                 "Females",
-                1.0
+                0.4287237524986267
             ]
         ],
-        "P-value": [
+        "P": [
             [
                 "P",
-                0.662028431892395
-            ]
-        ]
-    },
-    "29967939_PMC6280657_1_from_pdf.csv": {
-        "SNP": [
-            [
-                "SNP",
-                0.6453831195831299
-            ]
-        ],
-        "Chr": [
-            [
-                "Chr",
-                0.6678159832954407
-            ]
-        ],
-        "Gene +": [
-            [
-                "Gene +",
-                1.0
-            ]
-        ],
-        "Function": [
-            [
-                "Function",
-                1.0
-            ]
-        ],
-        "Effect": [
-            [
-                "CSF A \u03b2 42.Male \u03b2 (SE)",
-                0.5483425855636597
-            ],
-            [
-                "CSF A \u03b2 42.Female \u03b2 (SE)",
-                0.5348609685897827
-            ],
-            [
-                "CSF A \u03b2 42.Interaction \u03b2 (SE)",
-                0.5739923119544983
-            ]
-        ],
-        "P-value": [
-            [
-                "CSF A \u03b2 42.Male P",
-                0.6272653341293335
-            ],
-            [
-                "CSF A \u03b2 42.Female P",
-                0.6001835465431213
-            ],
-            [
-                "CSF A \u03b2 42.Interaction P",
-                0.6544767022132874
+                0.7210210561752319
             ]
         ]
     },
@@ -1677,17 +1545,19 @@
         "SNP": [
             [
                 "SNP | SNP",
-                0.6569358110427856
-            ],
-            [
-                "Gene+ | Gene+",
-                0.46797773241996765
+                0.7972699999809265
             ]
         ],
         "Chr": [
             [
                 "Chr | Chr",
-                0.7855592966079712
+                0.5688672065734863
+            ]
+        ],
+        "Gene+ | Gene+": [
+            [
+                "Gene+ | Gene+",
+                1.0
             ]
         ],
         "Function | Function": [
@@ -1699,151 +1569,79 @@
         "Effect": [
             [
                 "CSF A\u03b242 | Original \u03b2 (SE)",
-                0.5123798847198486
+                0.45632341504096985
             ],
             [
                 "CSF A\u03b242 | Male \u03b2 (SE)",
-                0.5298094749450684
+                0.47752732038497925
             ],
             [
                 "CSF A\u03b242 | Female \u03b2 (SE)",
-                0.5191820859909058
+                0.46739462018013
             ],
             [
                 "CSF A\u03b242 | Interaction \u03b2 (SE)",
-                0.5770491361618042
+                0.4830743074417114
             ]
         ],
         "P-value": [
             [
                 "CSF A\u03b242 | Original P",
-                0.6979579925537109
+                0.614361047744751
             ],
             [
                 "CSF A\u03b242 | Male P",
-                0.6897827386856079
+                0.5858430862426758
             ],
             [
                 "CSF A\u03b242 | Female P",
-                0.6671126484870911
+                0.5692259669303894
             ],
             [
                 "CSF A\u03b242 | Interaction P",
-                0.6628069281578064
-            ]
-        ]
-    },
-    "29967939_PMC6280657_0_from_pdf.csv": {
-        "SNP": [
-            [
-                "SNP",
-                0.6541145443916321
-            ],
-            [
-                "Gene +",
-                0.46797773241996765
-            ]
-        ],
-        "Chr": [
-            [
-                "Chr",
-                0.6919460892677307
-            ]
-        ],
-        "Function": [
-            [
-                "Function",
-                1.0
-            ]
-        ],
-        "Effect": [
-            [
-                "CSF A \u03b2 42.Original \u03b2 (SE)",
-                0.5232388973236084
-            ],
-            [
-                "CSF A \u03b2 42.Male \u03b2 (SE)",
-                0.5346149802207947
-            ],
-            [
-                "CSF A \u03b2 42.Female \u03b2 (SE)",
-                0.5200867652893066
-            ],
-            [
-                "CSF A \u03b2 42.Interaction \u03b2 (SE)",
-                0.5874515175819397
-            ]
-        ],
-        "P-value": [
-            [
-                "CSF A \u03b2 42.Original P",
-                0.6343168020248413
-            ],
-            [
-                "CSF A \u03b2 42.Male P",
-                0.6163921356201172
-            ],
-            [
-                "CSF A \u03b2 42.Female P",
-                0.6027655601501465
-            ],
-            [
-                "CSF A \u03b2 42.Interaction P",
-                0.6628069281578064
+                0.5960425138473511
             ]
         ]
     },
     "29107063_PMC5920782_T1_from_pmc.xlsx": {
-        "By gender | Dataset | Dataset": [
+        "Cohort": [
             [
                 "By gender | Dataset | Dataset",
-                1.0
+                0.4985008239746094
             ]
         ],
-        "By gender | Before QC | #Samples": [
+        "Position": [
             [
                 "By gender | Before QC | #Samples",
-                1.0
-            ]
-        ],
-        "By gender | Before QC | #Males": [
+                0.5531299114227295
+            ],
             [
                 "By gender | Before QC | #Males",
-                1.0
-            ]
-        ],
-        "By gender | Before QC | #Females": [
+                0.46467381715774536
+            ],
             [
                 "By gender | Before QC | #Females",
-                1.0
-            ]
-        ],
-        "SNP": [
+                0.47451871633529663
+            ],
             [
                 "By gender | Before QC | #SNPs",
-                0.6098766922950745
+                0.6166608333587646
+            ],
+            [
+                "By gender | After QC | #Samples",
+                0.5450340509414673
+            ],
+            [
+                "By gender | After QC | #Males",
+                0.4738321006298065
+            ],
+            [
+                "By gender | After QC | #Females",
+                0.463593065738678
             ],
             [
                 "By gender | After QC | #SNPs",
-                0.6478742361068726
-            ]
-        ],
-        "By gender | After QC | #Samples": [
-            [
-                "By gender | After QC | #Samples",
-                1.0
-            ]
-        ],
-        "By gender | After QC | #Males": [
-            [
-                "By gender | After QC | #Males",
-                1.0
-            ]
-        ],
-        "By gender | After QC | #Females": [
-            [
-                "By gender | After QC | #Females",
-                1.0
+                0.6397603750228882
             ]
         ]
     },
@@ -1851,23 +1649,7 @@
         "SNP": [
             [
                 "SNP",
-                0.6738146543502808
-            ],
-            [
-                "LD with (0.4 \u2264 r2; D\u2032 > 0.7)",
-                0.5971317291259766
-            ],
-            [
-                "eQTL (SNP influences expression of)",
-                0.4996066093444824
-            ],
-            [
-                "SNP is in enhancer region in",
-                0.4796966314315796
-            ],
-            [
-                "SNP was previously associated with",
-                0.5371873378753662
+                0.7092462778091431
             ]
         ],
         "Closest gene (involved in, associated with)": [
@@ -1876,168 +1658,204 @@
                 1.0
             ]
         ],
-        "References": [
+        "LD with (0.4 \u2264 r2; D\u2032 > 0.7)": [
+            [
+                "LD with (0.4 \u2264 r2; D\u2032 > 0.7)",
+                1.0
+            ]
+        ],
+        "eQTL (SNP influences expression of)": [
+            [
+                "eQTL (SNP influences expression of)",
+                1.0
+            ]
+        ],
+        "SNP is in enhancer region in": [
+            [
+                "SNP is in enhancer region in",
+                1.0
+            ]
+        ],
+        "SNP was previously associated with": [
+            [
+                "SNP was previously associated with",
+                1.0
+            ]
+        ],
+        "Position": [
             [
                 "References",
-                1.0
+                0.44803524017333984
             ]
         ]
     },
     "29107063_PMC5920782_T2_from_pmc.xlsx": {
-        "By race | Dataset | Dataset": [
+        "Cohort": [
             [
                 "By race | Dataset | Dataset",
-                1.0
+                0.5153910517692566
             ]
         ],
-        "Population": [
+        "Position": [
             [
                 "By race | Before QC | #White",
-                0.4214968681335449
+                0.5457412004470825
             ],
             [
                 "By race | Before QC | #Black",
-                0.475042462348938
+                0.5150766372680664
             ],
             [
                 "By race | Before QC | #Others",
-                0.44700878858566284
-            ],
-            [
-                "By race | Before QC | Unnamed: 4_level_2",
-                0.4147476553916931
+                0.4619002044200897
             ],
             [
                 "By race | After QC | #White",
-                0.4195128083229065
+                0.5374611020088196
             ],
             [
                 "By race | After QC | #Black",
-                0.45383110642433167
+                0.5178032517433167
             ],
             [
                 "By race | After QC | #Others",
-                0.4460841417312622
-            ],
+                0.4581632912158966
+            ]
+        ],
+        "By race | Before QC | Unnamed: 4_level_2": [
+            [
+                "By race | Before QC | Unnamed: 4_level_2",
+                1.0
+            ]
+        ],
+        "By race | After QC | Unnamed: 8_level_2": [
             [
                 "By race | After QC | Unnamed: 8_level_2",
-                0.4147476553916931
+                1.0
             ]
         ]
     },
     "29107063_PMC5920782_T3_from_pmc.xlsx": {
-        "Dataset": [
+        "Cohort": [
             [
                 "Dataset",
-                1.0
+                0.4985008239746094
             ]
         ],
         "SNP": [
             [
                 "SNP",
-                0.6657114028930664
-            ],
-            [
-                "Gene",
-                0.4853285849094391
-            ],
-            [
-                "Location",
-                0.6311641931533813
+                0.7067914009094238
             ]
         ],
         "P-value": [
             [
                 "p-Value",
-                0.7215082049369812
+                0.7403917908668518
             ]
         ],
         "Effect": [
             [
                 "OR",
-                0.5309467911720276
+                0.6770768761634827
             ]
         ],
         "Chr": [
             [
                 "Chr",
-                0.6995686292648315
+                0.6189694404602051
             ]
         ],
         "RA": [
             [
                 "Minor",
-                0.42649075388908386
+                0.5708882808685303
             ],
             [
                 "Major",
-                0.43686550855636597
+                0.5524805784225464
             ]
         ],
         "AF": [
             [
                 "MAF case",
-                0.6450169086456299
+                0.7048660516738892
             ],
             [
                 "MAF contr",
-                0.592670202255249
+                0.6963182687759399
+            ]
+        ],
+        "Gene": [
+            [
+                "Gene",
+                1.0
+            ]
+        ],
+        "Location": [
+            [
+                "Location",
+                1.0
             ]
         ]
     },
     "29107063_PMC5920782_T4_from_pmc.xlsx": {
-        "Dataset": [
+        "Cohort": [
             [
                 "Dataset",
-                1.0
+                0.5017445683479309
             ]
         ],
         "SNP": [
             [
                 "SNP",
-                0.674237847328186
-            ],
-            [
-                "Gene",
-                0.48492422699928284
-            ],
-            [
-                "Location",
-                0.644636332988739
+                0.7094402313232422
             ]
         ],
         "P-value": [
             [
                 "p-Value",
-                0.7206288576126099
+                0.74908047914505
             ]
         ],
         "Effect": [
             [
                 "HR",
-                0.5646812915802002
+                0.7184785604476929
             ]
         ],
         "Chr": [
             [
                 "Chr",
-                0.6995686292648315
+                0.6189694404602051
             ]
         ],
         "RA": [
             [
                 "Ref",
-                0.4681693911552429
+                0.6584358215332031
             ],
             [
                 "Alt",
-                0.4874271750450134
+                0.7267535924911499
             ]
         ],
         "AF": [
             [
                 "MAF",
-                0.639016330242157
+                0.690912663936615
+            ]
+        ],
+        "Gene": [
+            [
+                "Gene",
+                1.0
+            ]
+        ],
+        "Location": [
+            [
+                "Location",
+                1.0
             ]
         ]
     },
@@ -2057,53 +1875,53 @@
         "Chr": [
             [
                 "CHR",
-                0.6680134534835815
+                0.7344525456428528
             ]
         ],
         "Position": [
             [
                 "BP",
-                0.6693691611289978
+                0.7051620483398438
+            ],
+            [
+                "Closest Genes",
+                0.4086747467517853
             ]
         ],
         "SNP": [
             [
                 "SNP",
-                0.6498023271560669
+                0.707770586013794
             ]
         ],
         "RA": [
             [
                 "MA",
-                0.4317367672920227
+                0.5572525262832642
             ]
         ],
         "AF": [
             [
                 "MAF",
-                0.6360485553741455
+                0.6862615942955017
+            ]
+        ],
+        "BETA": [
+            [
+                "BETA",
+                0.6260936260223389
             ]
         ],
         "Effect": [
             [
-                "BETA",
-                0.5519554615020752
-            ],
-            [
                 "SE",
-                0.5137288570404053
+                0.638190507888794
             ]
         ],
-        "P-value": [
+        "P": [
             [
                 "P",
-                0.6994024515151978
-            ]
-        ],
-        "Closest Genes": [
-            [
-                "Closest Genes",
-                1.0
+                0.6801998615264893
             ]
         ],
         "Unnamed: 11": [
@@ -2117,31 +1935,33 @@
         "SNP": [
             [
                 "eQTL | eQTL | eQTL",
-                0.5942931175231934
-            ],
-            [
-                "Gene | Gene | Gene",
-                0.4057675302028656
+                0.7205278277397156
             ]
         ],
         "RA": [
             [
                 "EA | EA | EA",
-                0.6782784461975098
+                0.7101162672042847
             ],
             [
                 "RA | RA | RA",
-                0.7328085899353027
+                0.6909055709838867
+            ]
+        ],
+        "Gene | Gene | Gene": [
+            [
+                "Gene | Gene | Gene",
+                1.0
             ]
         ],
         "P-value": [
             [
                 "eSNP Association Summary | Hippocampus | P-value (\u03b2)",
-                0.7335914373397827
+                0.699878454208374
             ],
             [
                 "eSNP Association Summary | Other brain region | P-value (\u03b2)",
-                0.7376546859741211
+                0.7131322622299194
             ]
         ],
         "eSNP Association Summary | Other brain region | Region": [
@@ -2170,92 +1990,32 @@
                 1.0
             ]
         ],
-        "P-value": [
-            [
-                "MTUS1 | \u03b2",
-                0.40497633814811707
-            ],
-            [
-                "MTUS1 | P",
-                0.7292892336845398
-            ],
-            [
-                "C14orf79 | P",
-                0.7359699010848999
-            ]
-        ],
         "Effect": [
             [
+                "MTUS1 | \u03b2",
+                0.6455556750297546
+            ],
+            [
                 "MTUS1 | SE",
-                0.45585572719573975
+                0.6180102825164795
+            ],
+            [
+                "C14orf79 | \u03b2",
+                0.5836576223373413
             ],
             [
                 "C14orf79 | SE",
-                0.4576316475868225
-            ]
-        ],
-        "C14orf79 | \u03b2": [
-            [
-                "C14orf79 | \u03b2",
-                1.0
-            ]
-        ]
-    },
-    "30413934_PMC6358498_2_from_pdf.csv": {
-        "Unnamed: 0": [
-            [
-                "Unnamed: 0",
-                1.0
-            ]
-        ],
-        "SNP": [
-            [
-                "SNP",
-                0.646356999874115
-            ]
-        ],
-        "Chr": [
-            [
-                "Chr",
-                0.6440418362617493
-            ]
-        ],
-        "Position": [
-            [
-                "Closest Gene",
-                0.4095243215560913
-            ],
-            [
-                "BP",
-                0.6585681438446045
-            ]
-        ],
-        "RA": [
-            [
-                "A1",
-                0.6727954149246216
-            ]
-        ],
-        "NMISS": [
-            [
-                "NMISS",
-                1.0
+                0.6197595596313477
             ]
         ],
         "P-value": [
             [
-                "P",
-                0.6843857765197754
-            ]
-        ],
-        "Effect": [
-            [
-                "OR",
-                0.5293822288513184
+                "MTUS1 | P",
+                0.7499821186065674
             ],
             [
-                "CIs",
-                0.40478819608688354
+                "C14orf79 | P",
+                0.7388426065444946
             ]
         ]
     },
@@ -2272,46 +2032,40 @@
                 1.0
             ]
         ],
-        "Sample size": [
+        "Effect": [
             [
                 "Sample size",
-                1.0
+                0.5593456029891968
             ]
         ],
-        "Cases": [
+        "Position": [
             [
                 "Cases",
-                1.0
-            ]
-        ],
-        "Controls": [
+                0.4695768654346466
+            ],
             [
                 "Controls",
-                1.0
-            ]
-        ],
-        "References": [
+                0.5054202675819397
+            ],
             [
                 "References",
-                1.0
+                0.4493394196033478
+            ],
+            [
+                "SNPs",
+                0.6200215220451355
             ]
         ],
-        "Cohort": [
+        "URL": [
             [
                 "URL",
-                0.4675033390522003
+                1.0
             ]
         ],
         "Population": [
             [
                 "Ethnicities included",
-                0.7003945112228394
-            ]
-        ],
-        "SNP": [
-            [
-                "SNPs",
-                0.5986727476119995
+                0.42996156215667725
             ]
         ],
         "Covariate adjustments": [
@@ -2331,25 +2085,25 @@
         "SNP": [
             [
                 "SNP",
-                0.6346052289009094
+                0.697451114654541
             ]
         ],
         "Chr": [
             [
                 "Chr",
-                0.6440418362617493
+                0.5928452014923096
             ]
         ],
-        "Closest gene": [
+        "Position": [
             [
                 "Closest gene",
-                1.0
+                0.42706525325775146
             ]
         ],
         "RA": [
             [
                 "A1",
-                0.6725916862487793
+                0.7889375686645508
             ]
         ],
         "Reference trait": [
@@ -2361,93 +2115,15 @@
         "P-value": [
             [
                 "Min ConjFDR",
-                0.4374805986881256
+                0.48818090558052063
             ],
             [
                 "AD p value",
-                0.7033088207244873
+                0.7294082641601562
             ],
             [
                 "Reference trait p value",
-                0.6897056102752686
-            ]
-        ]
-    },
-    "30413934_PMC6358498_1_from_pdf.csv": {
-        "SNP": [
-            [
-                "SNP",
-                0.5565608739852905
-            ],
-            [
-                "Chr",
-                0.6846515536308289
-            ]
-        ],
-        "Position": [
-            [
-                "Closest gene",
-                0.43439364433288574
-            ]
-        ],
-        "RA": [
-            [
-                "A1",
-                0.6725916862487793
-            ]
-        ],
-        "Unnamed: 4": [
-            [
-                "Unnamed: 4",
-                1.0
-            ]
-        ],
-        "AF": [
-            [
-                "Ref trait",
-                0.45014089345932007
-            ],
-            [
-                "IGAP 1 and 2 p value IGAP OR",
-                0.42274534702301025
-            ]
-        ],
-        "P-value": [
-            [
-                "ADGC 2 p value",
-                0.6364734172821045
-            ],
-            [
-                "ADGC 2 95% CI",
-                0.44047874212265015
-            ],
-            [
-                "Meta- p value",
-                0.7143787145614624
-            ]
-        ],
-        "Effect": [
-            [
-                "ADGC 2 OR",
-                0.47382551431655884
-            ],
-            [
-                "1 and 2",
-                0.40863072872161865
-            ],
-            [
-                "Meta-OR",
-                0.5999581217765808
-            ],
-            [
-                "Meta-95% CI",
-                0.4739150106906891
-            ]
-        ],
-        "1 and 2 IGAP 95% CI": [
-            [
-                "1 and 2 IGAP 95% CI",
-                1.0
+                0.7026811838150024
             ]
         ]
     },
@@ -2461,25 +2137,25 @@
         "SNP": [
             [
                 "SNP",
-                0.6284253001213074
+                0.6965044736862183
             ]
         ],
         "Chr": [
             [
                 "Chr",
-                0.6468435525894165
+                0.614587664604187
             ]
         ],
-        "Closest gene": [
+        "Position": [
             [
                 "Closest gene",
-                1.0
+                0.428228497505188
             ]
         ],
         "RA": [
             [
                 "A1",
-                0.6725916862487793
+                0.790804386138916
             ]
         ],
         "Ref trait": [
@@ -2491,99 +2167,43 @@
         "P-value": [
             [
                 "ADGC2 p value",
-                0.738639235496521
+                0.7728334665298462
             ],
             [
                 "IGAP 1 and 2 p value",
-                0.5798231363296509
+                0.649958610534668
             ],
             [
                 "Meta-p value",
-                0.7182613611221313
+                0.7690302133560181
             ]
         ],
         "Effect": [
             [
                 "ADGC2 OR",
-                0.4891945719718933
+                0.6510252952575684
+            ],
+            [
+                "IGAP 1 and 2 OR",
+                0.6238077282905579
             ],
             [
                 "Meta-OR",
-                0.6054844260215759
+                0.7188745141029358
             ],
             [
                 "Meta-95 % CI",
-                0.4617251455783844
-            ]
-        ],
-        "ADGC2 95% CI": [
-            [
-                "ADGC2 95% CI",
-                1.0
+                0.4974684417247772
             ]
         ],
         "AF": [
             [
-                "IGAP 1 and 2 OR",
-                0.41580814123153687
-            ]
-        ],
-        "IGAP 1 and 2 95% CI": [
+                "ADGC2 95% CI",
+                0.481867253780365
+            ],
             [
                 "IGAP 1 and 2 95% CI",
-                1.0
-            ]
-        ]
-    },
-    "30413934_PMC6358498_0_from_pdf.csv": {
-        "Unnamed: 0": [
-            [
-                "Unnamed: 0",
-                1.0
-            ]
-        ],
-        "SNP": [
-            [
-                "SNP",
-                0.645302951335907
-            ]
-        ],
-        "Chr": [
-            [
-                "Chr",
-                0.6440418362617493
-            ]
-        ],
-        "Closest gene": [
-            [
-                "Closest gene",
-                1.0
-            ]
-        ],
-        "RA": [
-            [
-                "A1",
-                0.6727954149246216
-            ]
-        ],
-        "Reference trait": [
-            [
-                "Reference trait",
-                1.0
-            ]
-        ],
-        "P-value": [
-            [
-                "Min ConjFDR",
-                0.4477042555809021
-            ],
-            [
-                "AD p value",
-                0.6653871536254883
-            ],
-            [
-                "Reference trait p value",
-                0.6725289821624756
+                0.4866693615913391
             ]
         ]
     },
@@ -2597,53 +2217,51 @@
         "SNP": [
             [
                 "SNP",
-                0.635873556137085
+                0.6973938941955566
             ]
         ],
         "Chr": [
             [
                 "Chr",
-                0.6440418362617493
+                0.5928452014923096
             ]
         ],
         "Position": [
             [
                 "Closest Gene",
-                0.44389238953590393
+                0.46445393562316895
             ],
             [
                 "BP",
-                0.6794754862785339
+                0.7145005464553833
+            ],
+            [
+                "NMfSS",
+                0.45891284942626953
             ]
         ],
         "RA": [
             [
                 "A1",
-                0.6727954149246216
+                0.7889375686645508
             ]
         ],
-        "NMfSS": [
-            [
-                "NMfSS",
-                1.0
-            ]
-        ],
-        "P-value": [
+        "P": [
             [
                 "P",
-                0.7072122097015381
+                0.7605590224266052
             ]
         ],
         "Effect": [
             [
                 "OR",
-                0.5316587686538696
+                0.6814314126968384
             ]
         ],
-        "Cfs": [
+        "AF": [
             [
                 "Cfs",
-                1.0
+                0.4420510530471802
             ]
         ]
     },
@@ -2660,32 +2278,28 @@
                 1.0
             ]
         ],
-        "Rg": [
+        "Effect": [
             [
                 "Rg",
-                1.0
+                0.4686533510684967
+            ],
+            [
+                "Rg_SE",
+                0.599172055721283
+            ],
+            [
+                "H2",
+                0.46906566619873047
+            ],
+            [
+                "H2_SE",
+                0.6203396320343018
             ]
         ],
         "P-value": [
             [
-                "Rg_SE",
-                0.44767022132873535
-            ],
-            [
                 "P-value",
-                0.6997421383857727
-            ]
-        ],
-        "H2": [
-            [
-                "H2",
-                1.0
-            ]
-        ],
-        "Effect": [
-            [
-                "H2_SE",
-                0.5362504720687866
+                0.6605141758918762
             ]
         ]
     },
@@ -2693,51 +2307,51 @@
         "SNP": [
             [
                 "SNP | SNP",
-                0.6738010048866272
-            ],
-            [
-                "Position | Position",
-                0.7209118604660034
-            ],
-            [
-                "Genes within clumping region | Genes within clumping region",
-                0.5210080146789551
+                0.8021283149719238
             ]
         ],
         "Chr": [
             [
                 "CHR | CHR",
-                0.7720402479171753
-            ]
-        ],
-        "N | N": [
-            [
-                "N | N",
-                1.0
+                0.687192440032959
             ]
         ],
         "Effect": [
             [
-                "AD | BETA",
-                0.5103996992111206
+                "N | N",
+                0.4672473669052124
+            ]
+        ],
+        "Position": [
+            [
+                "Position | Position",
+                0.4440131187438965
             ],
             [
-                "Fasting Glucose | BETA",
-                0.4710950553417206
+                "Genes within clumping region | Genes within clumping region",
+                0.4275873899459839
             ]
         ],
         "P-value": [
             [
+                "AD | BETA",
+                0.4290016293525696
+            ],
+            [
                 "AD | P",
-                0.7212966680526733
+                0.6780428886413574
+            ],
+            [
+                "Fasting Glucose | BETA",
+                0.44560402631759644
             ],
             [
                 "Fasting Glucose | P",
-                0.7269186973571777
+                0.676714301109314
             ],
             [
                 "CPASSOC P | CPASSOC P",
-                0.734079122543335
+                0.6991956233978271
             ]
         ],
         "pQTL | pQTL": [
@@ -2751,53 +2365,53 @@
         "SNP": [
             [
                 "SNP | SNP",
-                0.6472965478897095
-            ],
-            [
-                "Position | Position",
-                0.7157695293426514
+                0.7965953350067139
             ]
         ],
         "Chr": [
             [
                 "CHR | CHR",
-                0.7971235513687134
-            ]
-        ],
-        "N | N": [
+                0.715121865272522
+            ],
             [
                 "N | N",
-                1.0
+                0.43565285205841064
+            ]
+        ],
+        "Position": [
+            [
+                "Position | Position",
+                0.4562056064605713
             ]
         ],
         "Effect": [
             [
                 "AD | BETA",
-                0.5178446173667908
-            ],
-            [
-                "Fasting insulin | BETA",
-                0.5195198059082031
+                0.5847964286804199
             ]
         ],
         "P-value": [
             [
                 "AD | P",
-                0.752618670463562
+                0.6837635040283203
+            ],
+            [
+                "Fasting insulin | BETA",
+                0.4789735674858093
             ],
             [
                 "Fasting insulin | P",
-                0.683460533618927
+                0.682471752166748
             ],
             [
                 "CPASSOC P | CPASSOC P",
-                0.7268149256706238
+                0.6745245456695557
             ]
         ],
-        "Position": [
+        "Genes within clumping region | Genes within clumping region": [
             [
                 "Genes within clumping region | Genes within clumping region",
-                0.44402170181274414
+                1.0
             ]
         ],
         "pQTL | pQTL": [
@@ -2807,15 +2421,11 @@
             ]
         ]
     },
-    "30636644_PMC6330399_2_from_pdf.csv": {
-        "SNP": [
+    "30636644_PMC6330399_Tab5_from_pmc.xlsx": {
+        "Probe ID": [
             [
                 "Probe ID",
-                0.49476903676986694
-            ],
-            [
-                "Top eQTL",
-                0.6032364964485168
+                1.0
             ]
         ],
         "Gene": [
@@ -2824,130 +2434,62 @@
                 1.0
             ]
         ],
-        "Chr": [
-            [
-                "Chromosomal region",
-                0.5968391299247742
-            ]
-        ],
-        "Position": [
-            [
-                "Position",
-                1.0
-            ]
-        ],
-        "RA": [
-            [
-                "A1",
-                0.6757611036300659
-            ]
-        ],
-        "AF": [
-            [
-                "A1 Freq",
-                0.6371830701828003
-            ]
-        ],
-        "P-value": [
-            [
-                "P GWAS",
-                0.7611950635910034
-            ],
-            [
-                "P eQTL",
-                0.5787495374679565
-            ],
-            [
-                "P SMR",
-                0.7143710255622864
-            ],
-            [
-                "P HEIDI",
-                0.5817813873291016
-            ]
-        ],
-        "Effect": [
-            [
-                "b SMR",
-                0.4265369474887848
-            ],
-            [
-                "SE SMR",
-                0.5465536117553711
-            ]
-        ],
-        "Brain region": [
-            [
-                "Brain region",
-                1.0
-            ]
-        ]
-    },
-    "30636644_PMC6330399_Tab5_from_pmc.xlsx": {
-        "Position": [
-            [
-                "Probe ID",
-                0.4201710820198059
-            ],
-            [
-                "Position",
-                0.5201720595359802
-            ]
-        ],
         "SNP": [
             [
-                "Gene",
-                0.4091133773326874
-            ],
-            [
                 "Top eQTL",
-                0.5826698541641235
+                0.6278084516525269
             ]
         ],
         "Chr": [
             [
                 "Chromosomal region",
-                0.5851404070854187
+                0.5275136232376099
+            ]
+        ],
+        "Position": [
+            [
+                "Position",
+                0.4978373944759369
             ]
         ],
         "RA": [
             [
                 "A1",
-                0.672467052936554
+                0.5306419134140015
             ]
         ],
         "AF": [
             [
                 "A1 Freq",
-                0.6395040154457092
-            ]
-        ],
-        "P-value": [
-            [
-                "P GWAS",
-                0.7409454584121704
-            ],
-            [
-                "P eQTL",
-                0.5908845663070679
+                0.6441364288330078
             ],
             [
                 "SESMR",
-                0.4060789942741394
+                0.431693971157074
+            ]
+        ],
+        "P-value": [
+            [
+                "P GWAS",
+                0.7160485982894897
+            ],
+            [
+                "P eQTL",
+                0.5833523869514465
             ],
             [
                 "P SMR",
-                0.7398136854171753
+                0.6815488338470459
             ],
             [
                 "P HEIDI",
-                0.6135331988334656
+                0.612769603729248
             ]
         ],
         "Effect": [
             [
                 "b SMR",
-                0.4195499122142792
+                0.5030572414398193
             ]
         ]
     },
@@ -2955,49 +2497,43 @@
         "Cohort": [
             [
                 "Cohort",
-                1.0
+                0.45916157960891724
             ]
         ],
-        "Total": [
+        "Position": [
             [
                 "Total",
-                1.0
+                0.4983285367488861
             ]
         ],
-        "Female%": [
+        "Effect": [
             [
                 "Female%",
-                1.0
-            ]
-        ],
-        "Case%": [
+                0.414892315864563
+            ],
             [
                 "Case%",
-                1.0
-            ]
-        ],
-        "AgeCase (SD)": [
+                0.46581023931503296
+            ],
             [
                 "AgeCase (SD)",
-                1.0
-            ]
-        ],
-        "AgeControl (SD)": [
+                0.4351823329925537
+            ],
             [
                 "AgeControl (SD)",
-                1.0
+                0.48663508892059326
             ]
         ]
     },
     "30636644_PMC6330399_Tab6_from_pmc.xlsx": {
-        "SNP": [
+        "Position": [
             [
                 "Probe ID",
-                0.5372647047042847
+                0.45886141061782837
             ],
             [
-                "Top eQTL",
-                0.6032364964485168
+                "Position",
+                1.0
             ]
         ],
         "Gene": [
@@ -3006,56 +2542,58 @@
                 1.0
             ]
         ],
+        "SNP": [
+            [
+                "Top eQTL",
+                0.5253893733024597
+            ]
+        ],
         "Chr": [
             [
                 "Chromosomal region",
-                0.5968391299247742
-            ]
-        ],
-        "Position": [
-            [
-                "Position",
-                0.5297496318817139
+                0.5045174956321716
             ]
         ],
         "RA": [
             [
                 "A1",
-                0.6757611036300659
+                0.48403477668762207
             ]
         ],
         "AF": [
             [
                 "A1 Freq",
-                0.6371830701828003
+                0.5667164325714111
             ]
         ],
         "P-value": [
             [
                 "P GWAS",
-                0.7664703130722046
+                0.6584255695343018
             ],
             [
                 "P eQTL",
-                0.5929688215255737
-            ],
-            [
-                "SESMR",
-                0.42937329411506653
+                0.5290425419807434
             ],
             [
                 "P SMR",
-                0.7162749767303467
+                0.6284958720207214
             ],
             [
                 "P HEIDI",
-                0.6020667552947998
+                0.5494232177734375
             ]
         ],
         "Effect": [
             [
                 "b SMR",
-                0.44088393449783325
+                0.4343000650405884
+            ]
+        ],
+        "SESMR": [
+            [
+                "SESMR",
+                1.0
             ]
         ],
         "Brain region": [
@@ -3069,33 +2607,29 @@
         "Chr": [
             [
                 "Chromosome",
-                0.6002672910690308
+                0.5467472076416016
             ]
         ],
         "Position": [
             [
                 "Closest gene",
-                0.4167148172855377
+                0.4012739062309265
             ],
             [
                 "Position",
-                0.5057457685470581
+                0.4764043986797333
             ]
         ],
         "SNP": [
             [
                 "SNP",
-                0.6418663263320923
-            ],
-            [
-                "Gene?",
-                0.4053785800933838
+                0.6250302791595459
             ]
         ],
         "RA": [
             [
                 "A1",
-                0.6782984733581543
+                0.6007407903671265
             ]
         ],
         "Sig?": [
@@ -3107,19 +2641,19 @@
         "P-value": [
             [
                 "P min",
-                0.6722911596298218
+                0.6603133678436279
             ],
             [
                 "P meta",
-                0.6658141016960144
+                0.6794395446777344
             ],
             [
                 "P q",
-                0.5807701945304871
+                0.603256344795227
             ],
             [
                 "P abs",
-                0.6479284763336182
+                0.6378927230834961
             ]
         ],
         "Effects": [
@@ -3131,22 +2665,28 @@
         "AF": [
             [
                 "Freq",
-                0.4293767213821411
+                0.46877047419548035
             ]
         ],
         "Effect": [
             [
                 "OR (se)",
-                0.6026962995529175
+                0.6025118827819824
             ],
             [
                 "i 2",
-                0.43887826800346375
+                0.41565582156181335
             ]
         ],
         "Proxy?": [
             [
                 "Proxy?",
+                1.0
+            ]
+        ],
+        "Gene?": [
+            [
+                "Gene?",
                 1.0
             ]
         ],
@@ -3167,55 +2707,47 @@
         "Chr": [
             [
                 "Chromosomal region | Chromosomal region",
-                0.6156142950057983
+                0.4872879385948181
             ]
         ],
         "Position": [
             [
                 "Start | Start",
-                0.43364471197128296
+                0.6115360260009766
             ],
             [
                 "End | End",
-                0.4166404902935028
-            ]
-        ],
-        "SNP": [
+                0.5636067986488342
+            ],
             [
                 "Number of SNPs | Number of SNPs",
-                0.5177576541900635
-            ]
-        ],
-        "Plan 1 (males and females) | \u03c7 2": [
+                0.5046138763427734
+            ],
             [
                 "Plan 1 (males and females) | \u03c7 2",
-                1.0
+                0.4517434537410736
             ]
         ],
         "P-value": [
             [
                 "Plan 1 (males and females) | p value",
-                0.7154093980789185
+                0.7292239665985107
+            ],
+            [
+                "Plan 2 (only males) | \u03c7 2",
+                0.42309120297431946
             ],
             [
                 "Plan 2 (only males) | p value",
-                0.6666579842567444
+                0.7132630944252014
+            ],
+            [
+                "Plan 3 (only females) | \u03c7 2",
+                0.4201435148715973
             ],
             [
                 "Plan 3 (only females) | p value",
-                0.6907579302787781
-            ]
-        ],
-        "Plan 2 (only males) | \u03c7 2": [
-            [
-                "Plan 2 (only males) | \u03c7 2",
-                1.0
-            ]
-        ],
-        "Plan 3 (only females) | \u03c7 2": [
-            [
-                "Plan 3 (only females) | \u03c7 2",
-                1.0
+                0.7219096422195435
             ]
         ]
     },
@@ -3226,208 +2758,40 @@
                 1.0
             ]
         ],
-        "Pathway GSEA ID | Pathway GSEA ID": [
-            [
-                "Pathway GSEA ID | Pathway GSEA ID",
-                1.0
-            ]
-        ],
         "Position": [
             [
+                "Pathway GSEA ID | Pathway GSEA ID",
+                0.45496639609336853
+            ],
+            [
                 "Number of genes | Number of genes",
-                0.43304455280303955
-            ]
-        ],
-        "Plan 1 (males and females) | \u03c7 2": [
+                0.5136639475822449
+            ],
             [
                 "Plan 1 (males and females) | \u03c7 2",
-                1.0
+                0.48277243971824646
+            ],
+            [
+                "Plan 2 (only males) | \u03c7 2",
+                0.4714442491531372
+            ],
+            [
+                "Plan 3 (only females) | \u03c7 2",
+                0.4903757572174072
             ]
         ],
         "P-value": [
             [
                 "Plan 1 (males and females) | p value",
-                0.6986051797866821
+                0.7061824798583984
             ],
             [
                 "Plan 2 (only males) | p value",
-                0.6990891695022583
+                0.7221672534942627
             ],
             [
                 "Plan 3 (only females) | p value",
-                0.6973185539245605
-            ]
-        ],
-        "Plan 2 (only males) | \u03c7 2": [
-            [
-                "Plan 2 (only males) | \u03c7 2",
-                1.0
-            ]
-        ],
-        "Plan 3 (only females) | \u03c7 2": [
-            [
-                "Plan 3 (only females) | \u03c7 2",
-                1.0
-            ]
-        ]
-    },
-    "30636644_PMC6330399_1_from_pdf.csv": {
-        "Position": [
-            [
-                "Probe ID",
-                0.4201710820198059
-            ],
-            [
-                "Position",
-                1.0
-            ]
-        ],
-        "SNP": [
-            [
-                "Gene",
-                0.4091133773326874
-            ],
-            [
-                "Top eQTL",
-                0.5826698541641235
-            ]
-        ],
-        "Chr": [
-            [
-                "Chromosomal region",
-                0.5851404070854187
-            ]
-        ],
-        "RA": [
-            [
-                "A1",
-                0.672467052936554
-            ]
-        ],
-        "AF": [
-            [
-                "A1 Freq",
-                0.6395040154457092
-            ]
-        ],
-        "P-value": [
-            [
-                "P GWAS",
-                0.7387075424194336
-            ],
-            [
-                "P eQTL",
-                0.5751847624778748
-            ],
-            [
-                "P SMR",
-                0.7366060614585876
-            ],
-            [
-                "P HEIDI",
-                0.5959377288818359
-            ]
-        ],
-        "Effect": [
-            [
-                "b SMR",
-                0.4116019308567047
-            ],
-            [
-                "SE SMR",
-                0.5515961647033691
-            ]
-        ]
-    },
-    "30636644_PMC6330399_0_from_pdf.csv": {
-        "Chr": [
-            [
-                "Chromosome",
-                0.6002672910690308
-            ]
-        ],
-        "Position": [
-            [
-                "Closest gene",
-                0.4167148172855377
-            ],
-            [
-                "Position",
-                0.41096746921539307
-            ]
-        ],
-        "SNP": [
-            [
-                "SNP",
-                0.6441397666931152
-            ],
-            [
-                "Gene?",
-                0.4053785800933838
-            ]
-        ],
-        "RA": [
-            [
-                "A1",
-                0.6782984733581543
-            ]
-        ],
-        "Sig?": [
-            [
-                "Sig?",
-                1.0
-            ]
-        ],
-        "P-value": [
-            [
-                "P min",
-                0.6564116477966309
-            ],
-            [
-                "P meta",
-                0.6654287576675415
-            ],
-            [
-                "P",
-                0.6832579374313354
-            ],
-            [
-                "P abs",
-                0.6451974511146545
-            ]
-        ],
-        "Effects": [
-            [
-                "Effects",
-                1.0
-            ]
-        ],
-        "AF": [
-            [
-                "Freq",
-                0.4293767213821411
-            ]
-        ],
-        "Effect": [
-            [
-                "OR (se)",
-                0.6026962995529175
-            ],
-            [
-                "i 2",
-                0.43887826800346375
-            ]
-        ],
-        "Proxy?": [
-            [
-                "Proxy?",
-                1.0
-            ]
-        ],
-        "Region?": [
-            [
-                "Region?",
-                1.0
+                0.7115438580513
             ]
         ]
     },
@@ -3435,13 +2799,13 @@
         "SNP": [
             [
                 "SNP",
-                0.6455006003379822
+                0.7023739814758301
             ]
         ],
         "Chr": [
             [
                 "Chr",
-                0.6944001317024231
+                0.7017327547073364
             ]
         ],
         "Gene": [
@@ -3453,29 +2817,27 @@
         "AF": [
             [
                 "MAF",
-                0.6237070560455322
-            ]
-        ],
-        "Coefficient": [
-            [
-                "Coefficient",
-                1.0
+                0.6685812473297119
             ]
         ],
         "Effect": [
             [
+                "Coefficient",
+                0.5638346672058105
+            ],
+            [
                 "SE",
-                0.5174520015716553
+                0.6677520275115967
             ]
         ],
         "P-value": [
             [
                 "F value",
-                0.4569544792175293
+                0.5139652490615845
             ],
             [
                 "P value",
-                0.6932398080825806
+                0.6970524787902832
             ]
         ]
     },
@@ -3483,29 +2845,29 @@
         "SNP": [
             [
                 "SNP",
-                0.6690664291381836
+                0.7063233852386475
             ],
             [
                 "Nearest gene",
-                0.49522942304611206
+                0.40564924478530884
             ]
         ],
         "Position": [
             [
                 "Position",
-                1.0
+                0.536566972732544
             ]
         ],
         "Chr": [
             [
                 "Chr",
-                0.672945499420166
+                0.7150349020957947
             ]
         ],
         "RA": [
             [
                 "Reference allele",
-                0.5889571309089661
+                0.605968713760376
             ]
         ],
         "Associated phenotype": [
@@ -3517,37 +2879,33 @@
         "P-value": [
             [
                 "Min Cond FDR",
-                0.5451606512069702
+                0.6306654214859009
             ],
             [
                 "IFGC phase I p-value",
-                0.5753830075263977
+                0.7132536172866821
             ],
             [
                 "IFGC phase II p-value",
-                0.532479465007782
+                0.5556138753890991
             ],
             [
                 "Meta-analysis p-value",
-                0.6895135641098022
-            ]
-        ],
-        "IFGC phase I OR (95% CI)": [
-            [
-                "IFGC phase I OR (95% CI)",
-                1.0
-            ]
-        ],
-        "IFGC phase II OR (95% CI)": [
-            [
-                "IFGC phase II OR (95% CI)",
-                1.0
+                0.7405082583427429
             ]
         ],
         "Effect": [
             [
+                "IFGC phase I OR (95% CI)",
+                0.5022561550140381
+            ],
+            [
+                "IFGC phase II OR (95% CI)",
+                0.5030643939971924
+            ],
+            [
                 "Meta-analysis OR (95% CI)",
-                0.5192468166351318
+                0.5767942070960999
             ]
         ]
     },
@@ -3555,38 +2913,52 @@
         "SNP": [
             [
                 "Unnamed: 0_level_0 | Unnamed: 0_level_1 | SNP",
-                0.6337406039237976
+                0.6924470663070679
             ],
             [
-                "Unnamed: 5_level_0 | Unnamed: 5_level_1 | Nearest gene",
-                0.4177436828613281
+                "eQTL | Braineac | Gene",
+                0.43262559175491333
+            ],
+            [
+                "eQTL | GTEx | Gene",
+                0.4048856496810913
             ]
         ],
         "Position": [
             [
                 "Unnamed: 1_level_0 | Unnamed: 1_level_1 | bp",
-                0.6563348770141602
-            ],
-            [
-                "Unnamed: 4_level_0 | Unnamed: 4_level_1 | Location",
-                0.5765767693519592
+                0.7182954549789429
             ]
         ],
         "RA": [
             [
                 "Unnamed: 2_level_0 | Unnamed: 2_level_1 | Risk allele",
-                0.7626799941062927
+                0.7484083771705627
+            ],
+            [
+                "eQTL | Braineac | Effect of risk allele",
+                0.428535133600235
+            ],
+            [
+                "eQTL | GTEx | Effect of risk allele",
+                0.40318506956100464
             ]
         ],
         "Chr": [
             [
                 "Unnamed: 3_level_0 | Unnamed: 3_level_1 | Chr",
-                0.674493670463562
+                0.7153022885322571
             ]
         ],
-        "eQTL | Braineac | Gene": [
+        "Unnamed: 4_level_0 | Unnamed: 4_level_1 | Location": [
             [
-                "eQTL | Braineac | Gene",
+                "Unnamed: 4_level_0 | Unnamed: 4_level_1 | Location",
+                1.0
+            ]
+        ],
+        "Unnamed: 5_level_0 | Unnamed: 5_level_1 | Nearest gene": [
+            [
+                "Unnamed: 5_level_0 | Unnamed: 5_level_1 | Nearest gene",
                 1.0
             ]
         ],
@@ -3599,236 +2971,16 @@
         "P-value": [
             [
                 "eQTL | Braineac | p-value",
-                0.6932602524757385
+                0.6713802814483643
             ],
             [
                 "eQTL | GTEx | p-value",
-                0.6234985589981079
-            ]
-        ],
-        "eQTL | Braineac | Effect of risk allele": [
-            [
-                "eQTL | Braineac | Effect of risk allele",
-                1.0
-            ]
-        ],
-        "eQTL | GTEx | Gene": [
-            [
-                "eQTL | GTEx | Gene",
-                1.0
+                0.5887760519981384
             ]
         ],
         "eQTL | GTEx | Brain region": [
             [
                 "eQTL | GTEx | Brain region",
-                1.0
-            ]
-        ],
-        "eQTL | GTEx | Effect of risk allele": [
-            [
-                "eQTL | GTEx | Effect of risk allele",
-                1.0
-            ]
-        ]
-    },
-    "27899424_PMC5237405_2_from_pdf.csv": {
-        "SNP": [
-            [
-                "Table 4..SNP",
-                0.6206298470497131
-            ],
-            [
-                "Braineac.Gene",
-                0.46259605884552
-            ]
-        ],
-        "Position": [
-            [
-                "Summary..bp",
-                0.6732580661773682
-            ]
-        ],
-        "RA": [
-            [
-                "of eQTL in brain from..Risk allele",
-                0.7023634314537048
-            ],
-            [
-                "Braineac.Effect of risk allele",
-                0.5300402641296387
-            ]
-        ],
-        "Chr": [
-            [
-                "Chr",
-                0.637913703918457
-            ]
-        ],
-        "Braineac..Location": [
-            [
-                "Braineac..Location",
-                1.0
-            ]
-        ],
-        "and GTEx..Nearest gene": [
-            [
-                "and GTEx..Nearest gene",
-                1.0
-            ]
-        ],
-        "Braineac.Brain region": [
-            [
-                "Braineac.Brain region",
-                1.0
-            ]
-        ],
-        "P-value": [
-            [
-                "Braineac.p-value",
-                0.7318260669708252
-            ],
-            [
-                "p-value",
-                0.6242814660072327
-            ]
-        ],
-        "GTEx Gene..": [
-            [
-                "GTEx Gene..",
-                1.0
-            ]
-        ],
-        "Brain region": [
-            [
-                "Brain region",
-                1.0
-            ]
-        ],
-        "Effect of risk allele": [
-            [
-                "Effect of risk allele",
-                1.0
-            ]
-        ]
-    },
-    "27899424_PMC5237405_1_from_pdf.csv": {
-        "SNP": [
-            [
-                "SNP",
-                0.6690664291381836
-            ],
-            [
-                "Nearest gene",
-                0.49522942304611206
-            ]
-        ],
-        "Position": [
-            [
-                "Position",
-                1.0
-            ]
-        ],
-        "Chr": [
-            [
-                "Chr",
-                0.672945499420166
-            ]
-        ],
-        "RA": [
-            [
-                "Reference allele",
-                0.5889571309089661
-            ]
-        ],
-        "Associated phenotype": [
-            [
-                "Associated phenotype",
-                1.0
-            ]
-        ],
-        "P-value": [
-            [
-                "Min Cond FDR",
-                0.5451606512069702
-            ],
-            [
-                "IFGC phase I p-value",
-                0.5678069591522217
-            ],
-            [
-                "IFGC phase II p-value",
-                0.5328464508056641
-            ],
-            [
-                "Meta-analysis p-value",
-                0.6895135641098022
-            ]
-        ],
-        "IFGC phase I OR (95% CI)": [
-            [
-                "IFGC phase I OR (95% CI)",
-                1.0
-            ]
-        ],
-        "IFGC phase II OR (95% CI)": [
-            [
-                "IFGC phase II OR (95% CI)",
-                1.0
-            ]
-        ],
-        "Effect": [
-            [
-                "Meta-analysis OR (95% CI)",
-                0.5192468166351318
-            ]
-        ]
-    },
-    "27899424_PMC5237405_0_from_pdf.csv": {
-        "SNP": [
-            [
-                "SNP",
-                0.63079434633255
-            ],
-            [
-                "Location; nearest gene",
-                0.5385081768035889
-            ]
-        ],
-        "Position": [
-            [
-                "Position",
-                1.0
-            ]
-        ],
-        "Chr": [
-            [
-                "Chr",
-                0.6533175706863403
-            ]
-        ],
-        "Associated phenotype": [
-            [
-                "Associated phenotype",
-                1.0
-            ]
-        ],
-        "P-value": [
-            [
-                "Min Conj FDR",
-                0.5803457498550415
-            ],
-            [
-                "FTD p-value",
-                0.6780552864074707
-            ],
-            [
-                "Associated phenotype p-value",
-                0.697276771068573
-            ]
-        ],
-        "Direction of effect": [
-            [
-                "Direction of effect",
                 1.0
             ]
         ]
@@ -3846,10 +2998,10 @@
                 1.0
             ]
         ],
-        "SNP": [
+        "Position": [
             [
                 "# SNPs",
-                0.5300339460372925
+                0.43684685230255127
             ]
         ],
         "Reference": [
@@ -3863,23 +3015,23 @@
         "SNP": [
             [
                 "SNP",
-                0.63079434633255
+                0.6924470663070679
             ],
             [
                 "Location; nearest gene",
-                0.5385081768035889
+                0.47054263949394226
             ]
         ],
         "Position": [
             [
                 "Position",
-                1.0
+                0.5439138412475586
             ]
         ],
         "Chr": [
             [
                 "Chr",
-                0.6533175706863403
+                0.7153022885322571
             ]
         ],
         "Associated phenotype": [
@@ -3891,21 +3043,21 @@
         "P-value": [
             [
                 "Min Conj FDR",
-                0.6550523638725281
+                0.560670018196106
             ],
             [
                 "FTD p-value",
-                0.693922758102417
+                0.7605284452438354
             ],
             [
                 "Associated phenotype p-value",
-                0.7081254720687866
+                0.7751997709274292
             ]
         ],
-        "Direction of effect": [
+        "Effect": [
             [
                 "Direction of effect",
-                1.0
+                0.45691144466400146
             ]
         ]
     }
