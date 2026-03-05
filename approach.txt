@@ -1,5 +1,7 @@
-- Extract table using Docling (for OCR power => accurate extract) and PMC API (for referencing on if we need to rotate page)
-- Clean any non-row (row with out SNP id) + cell and index with the subscript for extra info (like 0.123290 a)
+- Extract table using 
+    + First use PMC api script
+    + if cannot find anything, use Docling (for OCR power => accurate extract) and PMC API (for referencing on if we need to rotate page)
+- Clean any non-row (row with out SNP id) (might not need this since there is some difference in how PMC and Pubmed paper construct their SNP)
 - Mapping columns => reference columns 
     + Make the reference column prompt as: {reference col}: {description and examples}
     + Convert any abbreviation in the name => actual meaning
@@ -14,3 +16,4 @@
             => add to final table temporarily
             => For each group to be melt, we melt the table with (not melt col) + (melt col in curr group)
             => Later join all these tables on (not melt col)
+    + Need to think about postprocessing in number related col (p-value: rounding, Effect: remove CI, SE)

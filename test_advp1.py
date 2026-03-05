@@ -53,8 +53,9 @@ def test_unique_snp(dir_path: str):
         if "SNP" not in curr_df.columns:
             failed_table.append((file_name, f"Table {file_name} does not have SNP column"))
         else:
-            curr_unique_snp = set(curr_df["SNP"].unique())
-            test_unique_snp = set(test_df["SNP"].unique())
+            curr_unique_snp = set(curr_df[["SNP"]].dropna()["SNP"].unique())
+            test_unique_snp = set(test_df[["SNP"]].dropna()["SNP"].unique())
+            # if curr_unique_snp != test_unique_snp:
             if test_unique_snp.intersection(curr_unique_snp) != test_unique_snp:
                 failed_table.append((file_name, f"Table {file_name} do not contain all snp, missing: {test_unique_snp - curr_unique_snp}"))
     try:
@@ -73,7 +74,7 @@ def test_num_record_snp(dir_path: str):
         if "SNP" not in curr_df.columns:
             failed_table.append((file_name, f"Table {file_name} does not have SNP column"))
         else:
-            test_unique_snp = test_df["SNP"].unique()
+            test_unique_snp = test_df[["SNP"]].dropna()["SNP"].unique()
             missed_snp = [] # we record exactly how much error do we make on a table
             for snp in test_unique_snp:
                 curr_snp_df = curr_df[curr_df["SNP"] == snp]
@@ -97,6 +98,14 @@ def check_lst1_contains_lst2(lst1: Iterable, lst2: Iterable):
     counter2 = Counter(lst2)
     return counter2 <= counter1
 
+def check_lst1_equals_lst2(lst1: Iterable, lst2: Iterable):
+    counter1 = Counter(lst1)
+    counter2 = Counter(lst2)
+    return counter2 == counter1
+
+# NOTE: since we do not consider NAs value, 
+# there will be cases where extracted table do not contain an SNP
+# and target table has that SNP but have all NAs => 2 counter are the same
 def get_failed_table_for_test(dir_path: str, col: str, is_numeric: bool = False):
     failed_table = []
     for file_name in os.listdir(dir_path):
@@ -107,7 +116,7 @@ def get_failed_table_for_test(dir_path: str, col: str, is_numeric: bool = False)
             if col not in curr_df.columns:
                 failed_table.append((file_name, f"Table {file_name} does not have {col} column"))
             else:
-                test_unique_snp = test_df["SNP"].unique()
+                test_unique_snp = test_df[["SNP"]].dropna()["SNP"].unique()
                 missed_snp = []
                 for snp in test_unique_snp:
                     # NOTE: since Counter in python treat each NaN as a different value since NaN != NaN in pandas, we need to remove them first
@@ -157,11 +166,11 @@ def get_failed_table_for_test(dir_path: str, col: str, is_numeric: bool = False)
 #         raise AssertionError(f"Failed test_snp_ra on {len(failed_table)} tables")
 
 def test_snp_af(dir_path: str):
-    failed_table = get_failed_table_for_test(dir_path, "AF", is_numeric = True)
+    failed_table = get_failed_table_for_test(dir_path, "AF")
     try:
         assert len(failed_table) == 0
     except AssertionError:
-        with open("test_logs/test_snp_ra.json", "w") as f:
+        with open("test_logs/test_snp_af.json", "w") as f:
             json.dump(failed_table, f, indent=2)
         raise AssertionError(f"Failed test_snp_af on {len(failed_table)} tables")
 
@@ -175,15 +184,15 @@ def test_snp_chr(dir_path: str):
             json.dump(failed_table, f, indent=2)
         raise AssertionError(f"Failed test_snp_chr on {len(failed_table)} tables")
 
-def test_snp_locus(dir_path: str):
-    # test for each table and for each snp we have right set of Chr
-    failed_table = get_failed_table_for_test(dir_path, "Locus")
-    try:
-        assert len(failed_table) == 0
-    except AssertionError:
-        with open("test_logs/test_snp_locus.json", "w") as f:
-            json.dump(failed_table, f, indent=2)
-        raise AssertionError(f"Failed test_snp_locus on {len(failed_table)} tables")
+# def test_snp_locus(dir_path: str):
+#     # test for each table and for each snp we have right set of Chr
+#     failed_table = get_failed_table_for_test(dir_path, "Locus")
+#     try:
+#         assert len(failed_table) == 0
+#     except AssertionError:
+#         with open("test_logs/test_snp_locus.json", "w") as f:
+#             json.dump(failed_table, f, indent=2)
+#         raise AssertionError(f"Failed test_snp_locus on {len(failed_table)} tables")
 
 # def test_snp_pos(dir_path: str):
 #     # test for each table and for each snp we have right set of Position

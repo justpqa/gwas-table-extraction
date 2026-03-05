@@ -1,12 +1,11 @@
-﻿column,description,example
-P-value,"The statistical significance of the association. Keywords: P, P-value, P_adj, FDR. Examples: 5.0E-08, 0.0012, 1.2 x 10^-5, 0.05.","1.2 x 10^-5,1e-3,<0.001,5.0E-08,0.0012"
-Effect,"The magnitude and direction of the association. Keywords: Beta, OR, HR, Estimate. Examples: Beta=0.25, OR=1.45, HR=1.12, Log(OR)=0.37.","1.06,0.95,8.0,0.82,2.0"
-AF,"Frequency of the reported allele in the sample. Keywords: EAF, MAF, RAF, Frequency. Examples: 0.12, 12%, 0.005 (rare), 0.45.","0.12,12%,0.005,0.45,40%"
-SNP,"Variant identifier, or snp idenifier, or chr:pos. Keywords: chr:position, chr:pos, Variant, rsID, RS number, MarkerName, rs. Examples: rs12345, 20:45269867, 19:45411941:T:C, chr19:45411941, rs429358 (APOE ε4).","rs10784359,rs1358071,rs199528,rs2446406,rs405509"
-Chr,"Genomic chromosome identifier. Keywords: CHR, Chrom, Chromosome. Examples: 1, 19, X, chr19, chrX.","12,18,13,16,9"
-Position,"Genomic coordinate location. Keywords: BP, POS, Base Pair, start, end. Examples: 45411941, 10240500:10248600 (range), build 37.","40051948,71398604,150713594,50716490,58753575"
-RA,"The allele associated with the effect or risk. Keywords: Effect Allele, Risk Allele, A1, EA. Examples: A, T, G, C, minor, major.","A,T,G,T,A"
-Population,"The ancestral group or ethnicity of the participants. Keywords: Ancestry, Race, Ethnic. Examples: European (EUR), African American (AA), East Asian (EAS), Caribbean Hispanic.","Caucasian,East Asian,Caribbean Hispanic.,African American,European"
-Cohort,"The specific study or database name. Keywords: Study, Dataset, Discovery. Examples: ADNI, IGAP, UK Biobank, ADGC, CHARGE, EADI.","ADGC,CHS,CHARGE,HRS,IGAP,MAGIC"
-Locus,"Genomic region representing an associated signal, often defined by chromosome and coordinate range or by the lead variant. Keywords: Locus, Region, Genomic region, Peak, Lead SNP region. Examples: chr19:44900000-45900000, 19q13.32, APOE locus, chr1:1234567 (lead SNP region).","chr19:44900000-45900000,19q13.32,APOE locus,chr1:1234567,2p16.3"
-Stage,"Study phase indicating whether results come from discovery, replication, meta-analysis, or combined analysis. Keywords: Stage, Phase, Discovery, Replication, Meta, Combined. Examples: Discovery, Replication, Stage 1, Stage 2, Meta-analysis, Joint analysis.","Discovery,Replication,Stage 1,Stage 2,Meta-analysis,Joint analysis"
+﻿column,description,example,has_multiple_copies,is_numeric
+P-value,"The statistical significance of the association. Keywords: P, P-value, P_adj, FDR. Examples: 5.0E-08, 0.0012, 1.2 x 10^-5, 0.05.","1.2 x 10^-5,1e-3,<0.001,5.0E-08,0.0012",True,True
+Effect,"The magnitude and direction of the association, or effect size. Keywords: Beta, OR, HR, Estimate, Effect. Examples: Beta=0.25, OR=1.45, HR=1.12, Log(OR)=0.37.","1.06,0.95,8.0,0.82,2.0",True,True
+AF,"Frequency of the reported allele in the sample. Keywords: EAF, MAF, RAF, Frequency. Examples: 0.12, 12%, 0.005 (rare), 0.45.","0.12,12%,0.005,0.45,40%",True,True
+SNP,"Variant identifier, or snp idenifier, or chr:pos. Keywords: chr:position, chr:pos, Variant, rsID, RS number, MarkerName, expression Quantitative Trait Locus, rs. Examples: rs12345, 20:45269867, 19:45411941:T:C, chr19:45411941, rs429358 (APOE ε4).","rs10784359,rs1358071,rs199528,rs2446406,rs405509",True,False
+Chr,"Genomic chromosome identifier. Keywords: CHR, Chrom, Chromosome. Examples: 1, 19, X, chr19, chrX.","12,18,13,16,9",False,False
+Position,"Genomic coordinate location. Keywords: BP, POS, Base Pair, start, end. Examples: 45411941, 10240500:10248600 (range), build 37.","40051948,71398604,150713594,50716490,58753575",False,False
+RA,"The allele associated with the effect or risk. Keywords: Effect Allele, Risk Allele, A1, EA. Examples: A, T, G, C, minor, major.","A,T,G,T,A",False,False
+Population,"The ancestral group or ethnicity of the participants. Keywords: Ancestry, Race, Ethnic. Examples: European (EUR), African American (AA), East Asian (EAS), Caribbean Hispanic.","Caucasian,East Asian,Caribbean Hispanic.,African American,European",False,False
+Cohort,"The specific study or database name. Keywords: Study, Dataset, Discovery. Examples: ADNI, IGAP, UK Biobank, ADGC, CHARGE, EADI.","ADGC,CHS,CHARGE,HRS,IGAP,MAGIC",False,False
+Stage,"Study phase indicating whether results come from discovery, replication, meta-analysis, or combined analysis. Keywords: Stage, Phase, Discovery, Replication, Meta, Combined. Examples: Discovery, Replication, Stage 1, Stage 2, Meta-analysis, Joint analysis.","Discovery,Replication,Stage 1,Stage 2,Meta-analysis,Joint analysis",False,False

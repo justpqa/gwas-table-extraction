@@ -6,3 +6,4 @@ train.jsonl
 biomedlm_seqcls_lora/
 test_tables/
 pred_tables/
+tables/
