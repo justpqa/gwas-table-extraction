@@ -4,6 +4,4 @@ __pycache__/
 .pytest_cache/
 train.jsonl
 biomedlm_seqcls_lora/
-test_tables/
-pred_tables/
-tables/
+test_tables/ADVP_1026_v3p8_extracted.txt

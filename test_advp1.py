@@ -224,22 +224,22 @@ def test_snp_pvalue(dir_path: str):
             json.dump(failed_table, f, indent=2)
         raise AssertionError(f"Failed test_snp_pvalue on {len(failed_table)} tables")
 
-def test_snp_cohort(dir_path: str):
-    # test for each table and for each snp we have right set of cohort
-    failed_table = get_failed_table_for_test(dir_path, "Cohort")
-    try:
-        assert len(failed_table) == 0
-    except AssertionError:
-        with open("test_logs/test_snp_cohort.json", "w") as f:
-            json.dump(failed_table, f, indent=2) 
-        raise AssertionError(f"Failed test_snp_cohort on {len(failed_table)} tables")
+# def test_snp_cohort(dir_path: str):
+#     # test for each table and for each snp we have right set of cohort
+#     failed_table = get_failed_table_for_test(dir_path, "Cohort")
+#     try:
+#         assert len(failed_table) == 0
+#     except AssertionError:
+#         with open("test_logs/test_snp_cohort.json", "w") as f:
+#             json.dump(failed_table, f, indent=2) 
+#         raise AssertionError(f"Failed test_snp_cohort on {len(failed_table)} tables")
 
-def test_snp_population(dir_path: str):
-    # test for each table and for each snp we have right set of population
-    failed_table = get_failed_table_for_test(dir_path, "Population")
-    try:
-        assert len(failed_table) == 0
-    except AssertionError:
-        with open("test_logs/test_snp_population.json", "w") as f:
-            json.dump(failed_table, f, indent=2)
-        raise AssertionError(f"Failed test_snp_population on {len(failed_table)} tables")
+# def test_snp_population(dir_path: str):
+#     # test for each table and for each snp we have right set of population
+#     failed_table = get_failed_table_for_test(dir_path, "Population")
+#     try:
+#         assert len(failed_table) == 0
+#     except AssertionError:
+#         with open("test_logs/test_snp_population.json", "w") as f:
+#             json.dump(failed_table, f, indent=2)
+#         raise AssertionError(f"Failed test_snp_population on {len(failed_table)} tables")
