@@ -27,7 +27,7 @@ class GWASFormattingEngine:
         self.referencing_col_lst = referencing_col_df["column"].to_list()
         self.referencing_col_context_lst = referencing_col_df.apply(lambda x: x["column"] if pd.isna(x["description"]) else x["column"] + ": " + x["description"], axis = 1).to_list()
         self.referencing_col_example_lst = referencing_col_df["example"].to_list()
-        # self.referencing_col_group_lst = referencing_col_df["group"].to_list()
+        self.referencing_col_group_lst = referencing_col_df["group"].to_list()
         self.referencing_col_with_multiple_copies = referencing_col_df[referencing_col_df["has_multiple_copies"]]["column"].tolist()
         # self.referencing_col_numeric = referencing_col_df[referencing_col_df["is_numeric"]]["column"].tolist()
 
@@ -318,17 +318,17 @@ class GWASFormattingEngine:
         # best_ref_col, best_ref_col_scores = reranking_from_model(col, candidates, candidates_scores)
         # return (best_ref_col, best_ref_col_scores)
 
-        if best_score >= 0.4:
-            return (self.referencing_col_lst[best_inx], best_score)
-        else:
-            return (col, 1)
-        
-        # if best_score < 0.4:
-        #     return (col, 1)
+        # if best_score >= 0.4:
+        #     return (self.referencing_col_lst[best_inx], best_score)
         # else:
-        #     candidates = [(self.referencing_col_lst[inx], scores[inx] - (3 - self.referencing_col_group_lst[inx]) * 0.1) for inx in top_k_indices if scores[inx] >= 0.4]
-        #     candidates.sort(key = lambda x: x[1], reverse = True)
-        #     return (candidates[0][0], candidates[0][1])
+        #     return (col, 1)
+        
+        if best_score < 0.4:
+            return (col, 1)
+        else:
+            candidates = [(self.referencing_col_lst[inx], scores[inx] - (self.referencing_col_group_lst[inx]) * 0.1) for inx in top_k_indices if scores[inx] >= 0.4]
+            candidates.sort(key = lambda x: x[1], reverse = True)
+            return (candidates[0][0], candidates[0][1])
 
     # def match_single_col_to_ref_col(self, col: str, col_example: str) -> Tuple[str, float]:
     #     """

@@ -23,3 +23,10 @@ pytest
 openpyxl
 xlrd
 beautifulsoup4
+chromadb
+langchain
+langchain-chroma
+langchain-huggingface 
+langchain_community
+langchain-text-splitters
+PyMuPDF

@@ -6,7 +6,7 @@ from collections import Counter
 from typing import Iterable
 
 # Script for testing, require a directory of resulting table, where each test case name is {pmid}_{pmcid}.csv
-# run by pytest test_advp1.py
+# run by pytest test_advp1.py --dir-test={insert your dir for all test tables}
 # Test log is in test_logs with detail of error for each table
 
 def import_table_and_test_table(dir_path: str, file_name: str):
@@ -156,14 +156,23 @@ def get_failed_table_for_test(dir_path: str, col: str, is_numeric: bool = False)
                     failed_table.append((file_name, f"Table {file_name} ({round(100 * (1 - len(missed_snp) / len(test_unique_snp)), 2)}) does not contain right set of {col} for SNP {missed_snp}"))
     return failed_table
 
-# def test_snp_ra(dir_path: str):
-#     failed_table = get_failed_table_for_test(dir_path, "RA")
-#     try:
-#         assert len(failed_table) == 0
-#     except AssertionError:
-#         with open("test_logs/test_snp_ra.json", "w") as f:
-#             json.dump(failed_table, f, indent=2)
-#         raise AssertionError(f"Failed test_snp_ra on {len(failed_table)} tables")
+def test_snp_ra1(dir_path: str):
+    failed_table = get_failed_table_for_test(dir_path, "RA1")
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_ra1.json", "w") as f:
+            json.dump(failed_table, f, indent=2)
+        raise AssertionError(f"Failed test_snp_ra on {len(failed_table)} tables")
+    
+def test_snp_ra2(dir_path: str):
+    failed_table = get_failed_table_for_test(dir_path, "RA2")
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_ra2.json", "w") as f:
+            json.dump(failed_table, f, indent=2)
+        raise AssertionError(f"Failed test_snp_ra2 on {len(failed_table)} tables")
 
 def test_snp_af(dir_path: str):
     failed_table = get_failed_table_for_test(dir_path, "AF")

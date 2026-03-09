@@ -113,9 +113,12 @@ def create_test_tables_from_advp_v2():
         "Effect Size (alt vs ref)": "Effect",
         "Effect Size Type (OR or Beta)": "Effect Type",
         "Cohort_simplified_no_counts": "Cohort",
-        "LocusName": "Locus"
+        "LocusName": "Locus",
+        "RA 1(Reported Allele 1)": "RA1",
+        "RA 2(Reported Allele 2)": "RA2",
+        "Table Ref in paper": "Table ID"
     }, axis = 1)[[
-        "Pubmed ID", "PMCID", "SNP", "Chr", "Locus", "AF", "P-value", "Effect", "Effect Type", "Population", "Cohort", "Stage",
+        "Pubmed ID", "PMCID", "Table ID", "SNP", "Chr", "RA1", "RA2", "AF", "P-value", "Effect", "Effect Type", "Population", "Cohort", "Stage",
     ]]
 
     # Update chr to right format

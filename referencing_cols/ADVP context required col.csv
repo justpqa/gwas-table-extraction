@@ -1,0 +1,4 @@
+column,description,example,has_multiple_copies,is_numeric,group
+Population,"The ancestral group or ethnicity of the participants. Keywords: Ancestry, Race, Ethnic. Examples: European (EUR), African American (AA), East Asian (EAS), Caribbean Hispanic.","Caucasian,East Asian,Caribbean Hispanic.,African American,European",False,False,1
+Cohort,"The specific study or database name. Keywords: Study, Dataset, Discovery. Examples: ADNI, IGAP, UK Biobank, ADGC, CHARGE, EADI.","ADGC,CHS,CHARGE,HRS,IGAP,MAGIC",False,False,1
+Stage,"Study phase indicating whether results come from discovery, replication, meta-analysis, or combined analysis. Keywords: Stage, Phase, Discovery, Replication, Meta, Combined. Examples: Discovery, Replication, Stage 1, Stage 2, Meta-analysis, Joint analysis.","Discovery,Replication,Stage 1,Stage 2,Meta-analysis,Joint analysis",False,False,1
