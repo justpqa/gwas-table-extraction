@@ -1,0 +1,217 @@
+{
+    "30448613-PMC6331247": {
+        "Population": [
+            "EUR"
+        ],
+        "Cohort": [],
+        "Stage": []
+    },
+    "30979435-PMC6783343": {
+        "Population": [
+            "European"
+        ],
+        "Cohort": [
+            "ADGC",
+            "CHARGE",
+            "MOEBUS"
+        ],
+        "Stage": [
+            "Discovery",
+            "Meta-analysis"
+        ]
+    },
+    "28247064-PMC5613285": {
+        "Population": [],
+        "Cohort": [
+            "ADNI",
+            "ADGC",
+            "UK Biobank",
+            "CHARGE",
+            "EADI"
+        ],
+        "Stage": []
+    },
+    "30617256-PMC6836675": {
+        "Population": [
+            "European"
+        ],
+        "Cohort": [
+            "ADSP",
+            "IGAP",
+            "UKB"
+        ],
+        "Stage": [
+            "Phase 1",
+            "Phase 2",
+            "Phase 3"
+        ]
+    },
+    "30820047-PMC6463297": {
+        "Population": [
+            "European (EUR)",
+            "African American (AA)",
+            "East Asian (EAS)"
+        ],
+        "Cohort": [
+            "ADGC",
+            "EADI",
+            "UK Biobank"
+        ],
+        "Stage": [
+            "Discovery",
+            "Meta-analysis"
+        ]
+    },
+    "29458411-PMC5819208": {
+        "Population": [
+            "European"
+        ],
+        "Cohort": [],
+        "Stage": []
+    },
+    "29777097-PMC5959890": {
+        "Population": [],
+        "Cohort": [
+            "UK Biobank"
+        ],
+        "Stage": []
+    },
+    "30651383-PMC6369905": {
+        "Population": [
+            "European",
+            "African",
+            "Hispanic",
+            "Malay"
+        ],
+        "Cohort": [
+            "ADGC",
+            "UK Biobank",
+            "CHARGE"
+        ],
+        "Stage": [
+            "Discovery",
+            "follow-up"
+        ]
+    },
+    "28780673-PMC5693762": {
+        "Population": [
+            "European"
+        ],
+        "Cohort": [
+            "ADNI",
+            "ADGC",
+            "IGAP",
+            "CHARGE"
+        ],
+        "Stage": [
+            "Discovery",
+            "Meta-analysis"
+        ]
+    },
+    "30930738-PMC6425305": {
+        "Population": [
+            "European"
+        ],
+        "Cohort": [],
+        "Stage": []
+    },
+    "31426376-PMC6723529": {
+        "Population": [
+            "east asian",
+            "african american",
+            "european ancestry"
+        ],
+        "Cohort": [
+            "ADNI"
+        ],
+        "Stage": []
+    },
+    "29967939-PMC6280657": {
+        "Population": [
+            "European"
+        ],
+        "Cohort": [
+            "upenn",
+            "mayo"
+        ],
+        "Stage": []
+    },
+    "29107063-PMC5920782": {
+        "Population": [
+            "EUR",
+            "AA",
+            "EAS",
+            "Caribbean Hispanic"
+        ],
+        "Cohort": [],
+        "Stage": []
+    },
+    "29274321-PMC5938137": {
+        "Population": [],
+        "Cohort": [
+            "ADNI"
+        ],
+        "Stage": []
+    },
+    "30413934-PMC6358498": {
+        "Population": [
+            "EUR"
+        ],
+        "Cohort": [
+            "igap stage 1",
+            "igap stage 2",
+            "indie project igap"
+        ],
+        "Stage": [
+            "meta-analysis",
+            "combined"
+        ]
+    },
+    "30805717-PMC7193309": {
+        "Population": [],
+        "Cohort": [
+            "charge consortium",
+            "magic consortium",
+            "engage consortium"
+        ],
+        "Stage": []
+    },
+    "30636644-PMC6330399": {
+        "Population": [],
+        "Cohort": [],
+        "Stage": [
+            "Discovery",
+            "Replication",
+            "Meta-analysis"
+        ]
+    },
+    "29752348-PMC5976227": {
+        "Population": [
+            "European"
+        ],
+        "Cohort": [
+            "CHARGE",
+            "UK Biobank"
+        ],
+        "Stage": []
+    },
+    "28560309-PMC5440281": {
+        "Population": [
+            "white"
+        ],
+        "Cohort": [
+            "ADNI-1",
+            "ADNI-2"
+        ],
+        "Stage": []
+    },
+    "27899424-PMC5237405": {
+        "Population": [],
+        "Cohort": [
+            "ifgc",
+            "ipdgc",
+            "igap"
+        ],
+        "Stage": []
+    }
+}

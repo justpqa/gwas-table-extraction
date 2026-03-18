@@ -3,7 +3,10 @@ import re
 import pandas as pd
 import json
 from collections import Counter
-from typing import Iterable
+from typing import Iterable, List, Tuple
+import torch
+import torch.nn.functional as F
+from transformers import AutoModel, AutoTokenizer, PreTrainedModel, PreTrainedTokenizer
 
 # Script for testing, require a directory of resulting table, where each test case name is {pmid}_{pmcid}.csv
 # run by pytest test_advp1.py --dir-test={insert your dir for all test tables}
@@ -103,10 +106,72 @@ def check_lst1_equals_lst2(lst1: Iterable, lst2: Iterable):
     counter2 = Counter(lst2)
     return counter2 == counter1
 
+# Necessary embeddings model and embeddings functionality
+# embeddings_model = AutoModel.from_pretrained("NeuML/pubmedbert-base-embeddings")
+# embeddings_model_tokenizer = AutoTokenizer.from_pretrained("NeuML/pubmedbert-base-embeddings")
+embeddings_model_lst = []
+embeddings_model_tokenizer_lst = []
+embeddings_model_name_lst = [
+    "michiyasunaga/BioLinkBERT-base", "NeuML/pubmedbert-base-embeddings", "BAAI/bge-base-en-v1.5"
+
+]
+for embedding_model_name in embeddings_model_name_lst:
+    embeddings_model = AutoModel.from_pretrained(embedding_model_name)
+    embeddings_model_lst.append(embeddings_model)
+    embeddings_model_tokenizer = AutoTokenizer.from_pretrained(embedding_model_name)
+    embeddings_model_tokenizer_lst.append(embeddings_model_tokenizer)
+
+def make_embeddings(sentences: str | List[str], embeddings_model: PreTrainedModel, embeddings_model_tokenizer: PreTrainedTokenizer) -> torch.Tensor:
+    inputs = embeddings_model_tokenizer(sentences, padding=True, truncation=True, return_tensors="pt")
+    # get token embeddings
+    with torch.no_grad():
+        outputs = embeddings_model(**inputs)
+    token_embeddings = outputs[0]
+    inputs_mask_expanded = inputs['attention_mask'].unsqueeze(-1).expand(token_embeddings.size()).float()
+    token_embeddings = torch.sum(token_embeddings * inputs_mask_expanded, 1) / torch.clamp(inputs_mask_expanded.sum(1), min=1e-9)
+    token_embeddings = F.normalize(token_embeddings, p = 2, dim = 1)
+    return token_embeddings # size # string * embeddings_size
+
+def find_best_match_with_score(s: str, lst: Iterable) -> Tuple[str, float]:
+    # find best match to a string with score of best match
+    similarity_score_all = torch.zeros(len(lst))
+    for embeddings_model, embeddings_model_tokenizer in zip(embeddings_model_lst, embeddings_model_tokenizer_lst):
+        s_embeddings = make_embeddings(s, embeddings_model, embeddings_model_tokenizer)
+        lst_embeddings = make_embeddings(s, embeddings_model, embeddings_model_tokenizer)
+        similarity_score = (s_embeddings @ lst_embeddings.T).reshape(-1)
+        similarity_score_all += similarity_score
+    similarity_score_all /= len(embeddings_model_name_lst)
+    best_match_inx = torch.argmax(similarity_score_all)
+    best_match, best_match_score = lst[best_match_inx], float(similarity_score_all[best_match_inx])
+    return best_match, best_match_score
+
+def check_lst1_contains_lst2_semantic(lst1: Iterable, lst2: Iterable, threshold: float = 0.4):
+    counter1 = dict(Counter(lst1))
+    counter2 = dict(Counter(lst2))
+    if len(counter2) == 0:
+        # nothing to contains => done
+        return True
+    # This function will try to check if lst1 have item semantically close to lst2 and contain them
+    # For each unique value in counter2, try to find best match in counter1 and substract the count from it
+    # if counter2 do not have any keys => done!
+    for item in counter2:
+        counter1_items = list(counter1.keys())
+        if len(counter1_items) > 0:
+            best_match, best_match_score = find_best_match_with_score(item, counter1_items)
+            if best_match_score >= threshold:
+                # remove the count from that string
+                count_to_remove = min(counter1[best_match], counter2[item])
+                counter1[best_match] -= count_to_remove
+                if counter1[best_match] == 0:
+                    del counter1[best_match]
+                counter2[item] -= count_to_remove
+    # check if all count of items in counter2 has become 0 => we did find all matches
+    return max(counter2.values()) == 0
+
 # NOTE: since we do not consider NAs value, 
 # there will be cases where extracted table do not contain an SNP
 # and target table has that SNP but have all NAs => 2 counter are the same
-def get_failed_table_for_test(dir_path: str, col: str, is_numeric: bool = False):
+def get_failed_table_for_test(dir_path: str, col: str, is_numeric: bool = False, use_semantic: bool = False):
     failed_table = []
     for file_name in os.listdir(dir_path):
         curr_df, test_df = import_table_and_test_table(dir_path, file_name)
@@ -150,8 +215,14 @@ def get_failed_table_for_test(dir_path: str, col: str, is_numeric: bool = False)
                     #             failed_table.append((file_name, f"Table {file_name} does not have the right single unique value of {col} for SNP {snp}: {curr_snp_col_value} vs {test_snp_col_value}"))
                     #             break
                     # else:
-                    if not check_lst1_contains_lst2(curr_snp_col, test_snp_col):
-                        missed_snp.append(snp)
+                    if use_semantic:
+                        curr_snp_col = list(map(str, curr_snp_col))
+                        test_snp_col = list(map(str, test_snp_col))
+                        if not check_lst1_contains_lst2_semantic(curr_snp_col, test_snp_col):
+                            missed_snp.append(snp)
+                    else:
+                        if not check_lst1_contains_lst2(curr_snp_col, test_snp_col):
+                            missed_snp.append(snp)
                 if len(missed_snp) > 0:
                     failed_table.append((file_name, f"Table {file_name} ({round(100 * (1 - len(missed_snp) / len(test_unique_snp)), 2)}) does not contain right set of {col} for SNP {missed_snp}"))
     return failed_table
@@ -233,22 +304,32 @@ def test_snp_pvalue(dir_path: str):
             json.dump(failed_table, f, indent=2)
         raise AssertionError(f"Failed test_snp_pvalue on {len(failed_table)} tables")
 
-# def test_snp_cohort(dir_path: str):
-#     # test for each table and for each snp we have right set of cohort
-#     failed_table = get_failed_table_for_test(dir_path, "Cohort")
-#     try:
-#         assert len(failed_table) == 0
-#     except AssertionError:
-#         with open("test_logs/test_snp_cohort.json", "w") as f:
-#             json.dump(failed_table, f, indent=2) 
-#         raise AssertionError(f"Failed test_snp_cohort on {len(failed_table)} tables")
+def test_snp_cohort(dir_path: str):
+    # test for each table and for each snp we have right set of cohort
+    failed_table = get_failed_table_for_test(dir_path, "Cohort", use_semantic = True)
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_cohort.json", "w") as f:
+            json.dump(failed_table, f, indent=2) 
+        raise AssertionError(f"Failed test_snp_cohort on {len(failed_table)} tables")
 
-# def test_snp_population(dir_path: str):
-#     # test for each table and for each snp we have right set of population
-#     failed_table = get_failed_table_for_test(dir_path, "Population")
-#     try:
-#         assert len(failed_table) == 0
-#     except AssertionError:
-#         with open("test_logs/test_snp_population.json", "w") as f:
-#             json.dump(failed_table, f, indent=2)
-#         raise AssertionError(f"Failed test_snp_population on {len(failed_table)} tables")
+def test_snp_population(dir_path: str):
+    # test for each table and for each snp we have right set of population
+    failed_table = get_failed_table_for_test(dir_path, "Population", use_semantic = True)
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_population.json", "w") as f:
+            json.dump(failed_table, f, indent=2)
+        raise AssertionError(f"Failed test_snp_population on {len(failed_table)} tables")
+    
+def test_snp_stage(dir_path: str):
+    # test for each table and for each snp we have right set of population
+    failed_table = get_failed_table_for_test(dir_path, "Stage", use_semantic = True)
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_stage.json", "w") as f:
+            json.dump(failed_table, f, indent=2)
+        raise AssertionError(f"Failed test_snp_stage on {len(failed_table)} tables")

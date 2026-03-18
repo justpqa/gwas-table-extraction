@@ -1,32 +1,32 @@
-Pubmed ID,PMCID,SNP,Chr,Locus,AF,P-value,Effect,Effect Type,Population,Cohort,Stage
-30979435.0,PMC6783343,rs12378268,9.0,OR2S2,,5.43e-06,1.14,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs12378268,9.0,OR2S2,,0.363,1.04,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs1834550,11.0,MS4A6A,,1.08e-05,0.89,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs1834550,11.0,MS4A6A,,0.000338,0.86,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs184909761,11.0,MS4A4E,,0.000553,0.85,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs184909761,11.0,MS4A4E,,1.45e-06,0.86,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs3818361,1.0,CR1,,5.41e-09,1.21,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs3818361,1.0,CR1,,0.027,1.12,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs4277762,4.0,MYOZ2,,2.05e-05,1.2,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs4277762,4.0,MYOZ2,,0.476,0.98,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs429358,19.0,APOE,,4.9e-286,3.93,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs429358,19.0,APOE,,3.9e-43,2.39,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs6002167,22.0,ST13,,0.502,1.04,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs6002167,22.0,ST13,,2.27e-05,0.67,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs639012,11.0,PICALM,,0.601,0.98,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs639012,11.0,PICALM,,1.86e-07,0.86,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs6431219,2.0,BIN1,,0.34,1.04,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs6431219,2.0,BIN1,,6.06e-14,1.23,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs73298734,14.0,GNPNAT1,,0.455,0.95,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,rs73298734,14.0,GNPNAT1,,1.69e-06,1.23,OR,European ancestry,ADGC,Joint-analysis
-30979435.0,PMC6783343,,19.0,APOE,,4.57e-30,,,European ancestry,ADGC,Meta-analysis
-30979435.0,PMC6783343,,4.0,MYOZ2,,4.13e-06,,,European ancestry,ADGC,Meta-analysis
-30979435.0,PMC6783343,,22.0,ST13,,2.82e-06,,,European ancestry,ADGC,Meta-analysis
-30979435.0,PMC6783343,,11.0,MS4A4E,,2.1e-06,,,European ancestry,ADGC,Meta-analysis
-30979435.0,PMC6783343,,19.0,APOE,,1.49e-154,,,European ancestry,ADGC,Meta-analysis
-30979435.0,PMC6783343,,9.0,OR2S2,,8.45e-07,,,European ancestry,ADGC,Meta-analysis
-30979435.0,PMC6783343,,2.0,BIN1,,3.67e-08,,,European ancestry,ADGC,Meta-analysis
-30979435.0,PMC6783343,,14.0,GNPNAT1,,4.16e-06,,,European ancestry,ADGC,Meta-analysis
-30979435.0,PMC6783343,,11.0,MS4A6A,,8.68e-06,,,European ancestry,ADGC,Meta-analysis
-30979435.0,PMC6783343,,1.0,CR1,,4.7e-06,,,European ancestry,ADGC,Meta-analysis
-30979435.0,PMC6783343,,11.0,PICALM,,8.9e-08,,,European ancestry,ADGC,Meta-analysis
+Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage
+30979435.0,PMC6783343,Table 1,rs12378268,9.0,,,,5.43e-06,1.14,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs12378268,9.0,,,,0.363,1.04,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs1834550,11.0,,,,1.08e-05,0.89,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs1834550,11.0,,,,0.000338,0.86,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs184909761,11.0,,,,0.000553,0.85,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs184909761,11.0,,,,1.45e-06,0.86,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs3818361,1.0,,,,5.41e-09,1.21,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs3818361,1.0,,,,0.027,1.12,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs4277762,4.0,,,,2.05e-05,1.2,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs4277762,4.0,,,,0.476,0.98,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs429358,19.0,,,,4.9e-286,3.93,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs429358,19.0,,,,3.9e-43,2.39,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs6002167,22.0,,,,0.502,1.04,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs6002167,22.0,,,,2.27e-05,0.67,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs639012,11.0,,,,0.601,0.98,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs639012,11.0,,,,1.86e-07,0.86,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs6431219,2.0,,,,0.34,1.04,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs6431219,2.0,,,,6.06e-14,1.23,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs73298734,14.0,,,,0.455,0.95,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,rs73298734,14.0,,,,1.69e-06,1.23,OR,European ancestry,ADGC,Joint-analysis
+30979435.0,PMC6783343,Table 1,,19.0,,,,4.57e-30,,,European ancestry,ADGC,Meta-analysis
+30979435.0,PMC6783343,Table 1,,4.0,,,,4.13e-06,,,European ancestry,ADGC,Meta-analysis
+30979435.0,PMC6783343,Table 1,,22.0,,,,2.82e-06,,,European ancestry,ADGC,Meta-analysis
+30979435.0,PMC6783343,Table 1,,11.0,,,,2.1e-06,,,European ancestry,ADGC,Meta-analysis
+30979435.0,PMC6783343,Table 1,,19.0,,,,1.49e-154,,,European ancestry,ADGC,Meta-analysis
+30979435.0,PMC6783343,Table 1,,9.0,,,,8.45e-07,,,European ancestry,ADGC,Meta-analysis
+30979435.0,PMC6783343,Table 1,,2.0,,,,3.67e-08,,,European ancestry,ADGC,Meta-analysis
+30979435.0,PMC6783343,Table 1,,14.0,,,,4.16e-06,,,European ancestry,ADGC,Meta-analysis
+30979435.0,PMC6783343,Table 1,,11.0,,,,8.68e-06,,,European ancestry,ADGC,Meta-analysis
+30979435.0,PMC6783343,Table 1,,1.0,,,,4.7e-06,,,European ancestry,ADGC,Meta-analysis
+30979435.0,PMC6783343,Table 1,,11.0,,,,8.9e-08,,,European ancestry,ADGC,Meta-analysis

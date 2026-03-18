@@ -38,9 +38,5 @@
   [
     "29752348_PMC5976227.csv",
     "Table 29752348_PMC5976227.csv (0.0) does not contain right set of Effect for SNP ['rs13164785', 'rs146896516', 'rs3744020', 'rs67827860']"
-  ],
-  [
-    "30820047_PMC6463297.csv",
-    "Table 30820047_PMC6463297.csv (58.82) does not contain right set of Effect for SNP ['rs10933431', 'rs11218343', 'rs12539172', 'rs138190086', 'rs17125924', 'rs190982', 'rs3740688', 'rs3752246', 'rs3851179', 'rs429358', 'rs4723711', 'rs4844610', 'rs6733839', 'rs75932628']"
   ]
 ]

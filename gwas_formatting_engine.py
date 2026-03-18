@@ -323,10 +323,11 @@ class GWASFormattingEngine:
         # else:
         #     return (col, 1)
         
-        if best_score < 0.4:
+        threshold = 0.4 # NOTE: best after trying different val
+        if best_score < threshold:
             return (col, 1)
         else:
-            candidates = [(self.referencing_col_lst[inx], scores[inx] - (self.referencing_col_group_lst[inx]) * 0.1) for inx in top_k_indices if scores[inx] >= 0.4]
+            candidates = [(self.referencing_col_lst[inx], scores[inx] - (self.referencing_col_group_lst[inx]) * 0.1) for inx in top_k_indices if scores[inx] >= threshold]
             candidates.sort(key = lambda x: x[1], reverse = True)
             return (candidates[0][0], candidates[0][1])
 

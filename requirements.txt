@@ -9,6 +9,8 @@ ipykernel
 requests
 # rich
 # xmltodict
+PyPDF2
+pypdf
 docling==2.73.1 # must be this version since 2.74.0 extract some uri and got error
 docling[vlm]
 sentence-transformers
@@ -30,3 +32,5 @@ langchain-huggingface
 langchain_community
 langchain-text-splitters
 PyMuPDF
+python-dotenv
+# pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/metal

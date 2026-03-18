@@ -7,3 +7,5 @@ biomedlm_seqcls_lora/
 referencing_cols/Rules for harmonizing ADVP papers - Main cols.xlsx
 test_tables/ADVP_1026_v3p8_extracted.txt
 chroma_db/
+.env
+*.gguf

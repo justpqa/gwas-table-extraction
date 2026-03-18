@@ -1,0 +1,249 @@
+{
+    "30448613-PMC6331247": {
+        "Population": [
+            "European",
+            "NHW"
+        ],
+        "Cohort": [
+            "ADGC",
+            "ADNI",
+            "NABEC",
+            "UKBEC"
+        ],
+        "Stage": [
+            "Joint-analysis"
+        ]
+    },
+    "30979435-PMC6783343": {
+        "Population": [
+            "European ancestry"
+        ],
+        "Cohort": [
+            "ADGC"
+        ],
+        "Stage": [
+            "Joint-analysis",
+            "Meta-analysis"
+        ]
+    },
+    "28247064-PMC5613285": {
+        "Population": [
+            "NHW"
+        ],
+        "Cohort": [
+            "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
+            "IGAP",
+            "ADNI, Knight-ADRC"
+        ],
+        "Stage": [
+            "Meta-analysis"
+        ]
+    },
+    "30617256-PMC6836675": {
+        "Population": [
+            "European ancestry"
+        ],
+        "Cohort": [
+            "ADSP, IGAP, PGC-ALZ",
+            "ADSP, IGAP, PGC-ALZ, UKBB",
+            "UKBB"
+        ],
+        "Stage": [
+            "Meta-analysis",
+            "Stage 2"
+        ]
+    },
+    "30820047-PMC6463297": {
+        "Population": [
+            "Non-Hispanic White"
+        ],
+        "Cohort": [
+            "ADGC, CHARGE, EADI, GERAD"
+        ],
+        "Stage": [
+            "Meta-analysis",
+            "Discovery, Stage 2, Stage 3A",
+            "Discovery",
+            "Stage 3B (Stage 2 + Stage 3A)",
+            "Stage 1, Stage 3B (Stage 2 + Stage 3A)"
+        ]
+    },
+    "29458411-PMC5819208": {
+        "Population": [
+            "European ancestry"
+        ],
+        "Cohort": [
+            "ADGC"
+        ],
+        "Stage": []
+    },
+    "29777097-PMC5959890": {
+        "Population": [
+            "NHW"
+        ],
+        "Cohort": [
+            "UKBB"
+        ],
+        "Stage": [
+            "Meta-analysis"
+        ]
+    },
+    "30651383-PMC6369905": {
+        "Population": [
+            "African American, Chinese, European, Hispanic, Malay",
+            "European",
+            "East Asian, European",
+            "African American, Chinese, East-Asian, European, Hispanic, Malay"
+        ],
+        "Cohort": [
+            "3C-Dijon, AGES+, ARIC, ASPS, CHAP, CHS, ERF, FHS, LBC1936, LLS, NOMAS, PROSPER, RSI, RSII, RSIII, SCES, SHIP, SiMES",
+            "ADGC",
+            "AGES+, ASCOG, CAGE, EVA, Gen3, OATS, SMART",
+            "3C-Dijon, AGES+, ARIC, ASPS, CAGE, CHAP, CHS, ERF, EVA, FHS, Gen3, LBC1936, LLS, NOMAS, OATS, PROSPER, RSI, RSII, RSIII, SCES, SHIP, SiMES, SMART, TASCOG",
+            "METASTROKE, SiGN, YLSDR",
+            "CHARGE, METASTROKE, SiGN"
+        ],
+        "Stage": []
+    },
+    "28780673-PMC5693762": {
+        "Population": [
+            "European ancestry"
+        ],
+        "Cohort": [
+            "GAME-ON",
+            "IGAP",
+            "IGAP, GAME-ON"
+        ],
+        "Stage": []
+    },
+    "30930738-PMC6425305": {
+        "Population": [
+            "European"
+        ],
+        "Cohort": [
+            "PGC2-BIP",
+            "IGAP"
+        ],
+        "Stage": []
+    },
+    "31426376-PMC6723529": {
+        "Population": [
+            "African ancestry",
+            "European ancestry",
+            "East Asian",
+            "East Asian, European ancestry"
+        ],
+        "Cohort": [
+            "ADGC",
+            "East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of Alzheimer\u00d5s Disease), Korean ( Korean Genome and Epidemiology Study) ",
+            "ADNI"
+        ],
+        "Stage": [
+            "Discovery"
+        ]
+    },
+    "29967939-PMC6280657": {
+        "Population": [],
+        "Cohort": [],
+        "Stage": []
+    },
+    "29107063-PMC5920782": {
+        "Population": [
+            "NHW",
+            "White, black, other"
+        ],
+        "Cohort": [
+            "FHS",
+            "LOADFS",
+            "CHS",
+            "HRS"
+        ],
+        "Stage": [
+            "Discovery"
+        ]
+    },
+    "29274321-PMC5938137": {
+        "Population": [
+            "European ancestry"
+        ],
+        "Cohort": [
+            "ADNI"
+        ],
+        "Stage": []
+    },
+    "30413934-PMC6358498": {
+        "Population": [
+            "European"
+        ],
+        "Cohort": [
+            "IGAP",
+            "ENGAGE",
+            "CARDIoGRAMplusC4D",
+            "GIANT, UKBB",
+            "DIAGRAM",
+            "GIANT",
+            "ADGC",
+            "ADGC, IGAP",
+            "UKBB"
+        ],
+        "Stage": [
+            "Replication/Validation",
+            "Joint-analysis",
+            "Meta-analysis"
+        ]
+    },
+    "30805717-PMC7193309": {
+        "Population": [
+            "European"
+        ],
+        "Cohort": [
+            "IGAP",
+            "MAGIC"
+        ],
+        "Stage": []
+    },
+    "30636644-PMC6330399": {
+        "Population": [
+            "NHW"
+        ],
+        "Cohort": [
+            "CHS, FHS, HRS, NIA-LOAD"
+        ],
+        "Stage": [
+            "Meta-analysis",
+            "Replication/Validation"
+        ]
+    },
+    "29752348-PMC5976227": {
+        "Population": [
+            "NHW"
+        ],
+        "Cohort": [
+            "UKBB"
+        ],
+        "Stage": []
+    },
+    "28560309-PMC5440281": {
+        "Population": [
+            "white"
+        ],
+        "Cohort": [
+            "ADNI"
+        ],
+        "Stage": []
+    },
+    "27899424-PMC5237405": {
+        "Population": [
+            "NHW"
+        ],
+        "Cohort": [
+            "IFGC",
+            "UKBEC"
+        ],
+        "Stage": [
+            "Meta-analysis",
+            "Discovery",
+            "Replication/Validation"
+        ]
+    }
+}
